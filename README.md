@@ -15,14 +15,13 @@ Output:
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+HeatFlux uses a number of open source projects to work properly:
 
-* [VTK] - HTML enhanced for web apps!
-* [LMX] - awesome web-based text editor
+* [VTK] - Visualization Toolkit from Kitware Inc.
+* [LMX] - Linked Matrix Methods library
 * [GSL] - GNU Scientific Library
 
-And of course HeatFlux itself is open source with a [public repository][HeatFlux]
- on GitHub.
+And of course HeatFlux itself is open source with a [public repository][HeatFlux] on GitHub.
 
 ### Documentation
 
@@ -55,7 +54,6 @@ You should have received a copy of the GNU General Public License along with HEa
 
 This software includes (in src/LMX/) the [LMX] library, which is distruted under the GNU LGPL v2.1 license. See COPYING and AUTHORS files in its respective directory.
 
-**Free Software, Hell Yeah!**
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
