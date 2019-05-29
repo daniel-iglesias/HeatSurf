@@ -1,0 +1,210 @@
+\hypertarget{classGeometry}{
+\section{Geometry Class Reference}
+\label{classGeometry}\index{Geometry@{Geometry}}
+}
+{\tt \#include $<$/home/dani/Programs/beam\_\-dump/src/geometry.h$>$}
+
+Inheritance diagram for Geometry:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=123pt]{classGeometry__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classGeometry_9f0fe2c1f7e8a6b0d6454f5065b4e606}{
+\textbf{Geometry} (std::string, int)}
+\label{classGeometry_9f0fe2c1f7e8a6b0d6454f5065b4e606}
+
+\item 
+\hypertarget{classGeometry_ee462b9ebbf2e943f8199d5ee8facc8c}{
+virtual void \textbf{computeEnergy} (double, std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&)=0}
+\label{classGeometry_ee462b9ebbf2e943f8199d5ee8facc8c}
+
+\item 
+\hypertarget{classGeometry_63a40c7e8ca800baa0203850bc96b295}{
+virtual void \textbf{computeIncrements} ()}
+\label{classGeometry_63a40c7e8ca800baa0203850bc96b295}
+
+\item 
+\hypertarget{classGeometry_ab2d4db916d7c8541af6624a82b2d4df}{
+virtual void \textbf{setSections} (double)=0}
+\label{classGeometry_ab2d4db916d7c8541af6624a82b2d4df}
+
+\item 
+\hypertarget{classGeometry_3e77ac889d1e440c24efbde630aa1933}{
+virtual void \textbf{computeGeometry} ()=0}
+\label{classGeometry_3e77ac889d1e440c24efbde630aa1933}
+
+\item 
+\hypertarget{classGeometry_8ba01f4e4d4c0bf0860eb948c6567642}{
+virtual void \textbf{computeNodalEnergy} ()}
+\label{classGeometry_8ba01f4e4d4c0bf0860eb948c6567642}
+
+\item 
+\hypertarget{classGeometry_340099102a94c6fcecd1b9a4f34f9d1e}{
+virtual void \textbf{computeNodalPower} ()}
+\label{classGeometry_340099102a94c6fcecd1b9a4f34f9d1e}
+
+\item 
+\hypertarget{classGeometry_f5fa359d8794cc8d54e0aeafdd3a50e3}{
+virtual void \textbf{computeNodalPower} (std::vector$<$ double $>$ \&)}
+\label{classGeometry_f5fa359d8794cc8d54e0aeafdd3a50e3}
+
+\item 
+\hypertarget{classGeometry_4f2e62b82b91402b4f9c8fbf26048974}{
+void \textbf{drawGeometry} ()}
+\label{classGeometry_4f2e62b82b91402b4f9c8fbf26048974}
+
+\item 
+\hypertarget{classGeometry_c19e292e9134717046f74f60ec1f8a97}{
+void \textbf{drawScalar} ()}
+\label{classGeometry_c19e292e9134717046f74f60ec1f8a97}
+
+\item 
+\hypertarget{classGeometry_e9a734546513a78cbf653ed190f5b6df}{
+virtual void \textbf{outputEnergyFile} ()=0}
+\label{classGeometry_e9a734546513a78cbf653ed190f5b6df}
+
+\item 
+\hypertarget{classGeometry_b01547dec4f04ba548f85f1b2ca4cebf}{
+virtual void \textbf{outputPowerFile} ()=0}
+\label{classGeometry_b01547dec4f04ba548f85f1b2ca4cebf}
+
+\item 
+\hypertarget{classGeometry_60e1424a222ba59284b81812aff34148}{
+virtual void \textbf{outputTable} ()=0}
+\label{classGeometry_60e1424a222ba59284b81812aff34148}
+
+\item 
+\hypertarget{classGeometry_565f5b7736c4b0894732900199903d54}{
+std::string \textbf{getType} ()}
+\label{classGeometry_565f5b7736c4b0894732900199903d54}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classGeometry_734ed6644e4e3b98f157e6707c30069a}{
+std::string \textbf{type}}
+\label{classGeometry_734ed6644e4e3b98f157e6707c30069a}
+
+\item 
+\hypertarget{classGeometry_0efc4bf9252077abca96c1c198eefa33}{
+int \textbf{sections}}
+\label{classGeometry_0efc4bf9252077abca96c1c198eefa33}
+
+\item 
+\hypertarget{classGeometry_5e34644bfae4c1df92cb6bf98a8c62c7}{
+int \textbf{sectors}}
+\label{classGeometry_5e34644bfae4c1df92cb6bf98a8c62c7}
+
+\item 
+\hypertarget{classGeometry_1a43a92c349f4ce1f2dc2438bd6cbe1e}{
+double \textbf{slope}}
+\label{classGeometry_1a43a92c349f4ce1f2dc2438bd6cbe1e}
+
+\item 
+\hypertarget{classGeometry_89deb9b2585c4f7b1f47c6568e78ba54}{
+std::map$<$ double, std::vector$<$ double $>$ $>$ \textbf{energies}}
+\label{classGeometry_89deb9b2585c4f7b1f47c6568e78ba54}
+
+\item 
+\hypertarget{classGeometry_6babe7f0fe2ceaf892042432c75c17ca}{
+std::map$<$ double, std::vector$<$ double $>$ $>$ \textbf{powers}}
+\label{classGeometry_6babe7f0fe2ceaf892042432c75c17ca}
+
+\item 
+\hypertarget{classGeometry_9f5642ca54e0353b871d733e25ccc56e}{
+std::map$<$ int, \hyperlink{classNode}{Node} $\ast$ $>$ \textbf{nodes}}
+\label{classGeometry_9f5642ca54e0353b871d733e25ccc56e}
+
+\item 
+\hypertarget{classGeometry_cef6e83971679a9c4672c3b610acb58e}{
+std::vector$<$ \hyperlink{classElement}{Element} $\ast$ $>$ \textbf{elements}}
+\label{classGeometry_cef6e83971679a9c4672c3b610acb58e}
+
+\item 
+\hypertarget{classGeometry_ed9f7f434ae099a62be5c20f9915be90}{
+std::string \textbf{plotTitle}}
+\label{classGeometry_ed9f7f434ae099a62be5c20f9915be90}
+
+\item 
+\hypertarget{classGeometry_ed47a80e867e618e98272e830d297deb}{
+vtkPoints $\ast$ \textbf{gridPoints}}
+\label{classGeometry_ed47a80e867e618e98272e830d297deb}
+
+\item 
+\hypertarget{classGeometry_49e66de69aa22b88759e903e1ae06c9b}{
+vtkFloatArray $\ast$ \textbf{scalar}}
+\label{classGeometry_49e66de69aa22b88759e903e1ae06c9b}
+
+\item 
+\hypertarget{classGeometry_ebabda9f0c07ecb986195857913b4ee8}{
+vtkUnstructuredGrid $\ast$ \textbf{grid}}
+\label{classGeometry_ebabda9f0c07ecb986195857913b4ee8}
+
+\item 
+\hypertarget{classGeometry_22b4feeba28c4834bc9ac42e838cb7bb}{
+vtkRenderWindow $\ast$ \textbf{renWin}}
+\label{classGeometry_22b4feeba28c4834bc9ac42e838cb7bb}
+
+\item 
+\hypertarget{classGeometry_994d1c4d7c8ce0622fcf7a96b5d234af}{
+vtkInteractorStyleTrackballCamera $\ast$ \textbf{style}}
+\label{classGeometry_994d1c4d7c8ce0622fcf7a96b5d234af}
+
+\item 
+\hypertarget{classGeometry_6563f9a823d1dcee59554a5d093d6c73}{
+vtkRenderWindowInteractor $\ast$ \textbf{iren}}
+\label{classGeometry_6563f9a823d1dcee59554a5d093d6c73}
+
+\item 
+\hypertarget{classGeometry_0893a3a686dc14327816c9648efe8662}{
+vtkRenderer $\ast$ \textbf{ren}}
+\label{classGeometry_0893a3a686dc14327816c9648efe8662}
+
+\item 
+\hypertarget{classGeometry_f314d57676056969da57788a60954926}{
+vtkDataSetMapper $\ast$ \textbf{aDataSetMapper}}
+\label{classGeometry_f314d57676056969da57788a60954926}
+
+\item 
+\hypertarget{classGeometry_86a213e57fee0c578d220d8015c2891b}{
+vtkActor $\ast$ \textbf{anActor}}
+\label{classGeometry_86a213e57fee0c578d220d8015c2891b}
+
+\item 
+\hypertarget{classGeometry_aabe40cbb12206d80e4376367568934b}{
+vtkLookupTable $\ast$ \textbf{table}}
+\label{classGeometry_aabe40cbb12206d80e4376367568934b}
+
+\item 
+\hypertarget{classGeometry_f87eb1e4ab0922d0475afc67061ae30a}{
+vtkScalarBarActor $\ast$ \textbf{barActor}}
+\label{classGeometry_f87eb1e4ab0922d0475afc67061ae30a}
+
+\item 
+\hypertarget{classGeometry_17c7a286dc0a428e8a32db4c8d54bb5e}{
+vtkAxesActor $\ast$ \textbf{axes}}
+\label{classGeometry_17c7a286dc0a428e8a32db4c8d54bb5e}
+
+\item 
+\hypertarget{classGeometry_d611799bc0eb8825c963bd6d56181d8c}{
+vtkOrientationMarkerWidget $\ast$ \textbf{widget}}
+\label{classGeometry_d611799bc0eb8825c963bd6d56181d8c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Daniel Iglesias $<$\href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.iglesias@ciemat.es}$>$ \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+src/\hyperlink{geometry_8h}{geometry.h}\item 
+src/geometry.cpp\end{CompactItemize}
