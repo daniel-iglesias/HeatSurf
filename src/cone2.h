@@ -67,7 +67,7 @@ public:
 
 
 protected:
-    double slope, initDiam, finalDiam;
+    double slope, initDiam, finalDiam, apparentLength;
 
 private:
     double x,y,z,vx,vy,vz;

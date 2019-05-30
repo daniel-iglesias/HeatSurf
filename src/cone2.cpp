@@ -38,9 +38,12 @@ Cone2::Cone2 ( std::string type_in,
              int sectors_in)
         : Geometry ( type_in, z0_in, sectors_in, length_in )
         , initDiam ( initDiam_in )
+        , finalDiam (finalDiam_in)
 {
     slope = atan2 ( (initDiam-finalDiam)/2., length );
     gridWidth = initDiam/2.;
+    apparentLength = (initDiam/2.)/tan(slope);
+    std::cout << initDiam << endl << finalDiam << endl << slope << endl;
 }
 
 
@@ -152,7 +155,7 @@ void Cone2::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
     double t = conf.readElement ( 0 );
     res.writeElement (
         ( pow ( x+vx*t,2 ) +pow ( y+vy*t,2 ) ) *pow ( cos ( slope ),2 )
-        -pow ( t- ( length+z0 ),2 ) *pow ( sin ( slope ),2 )
+        -pow ( t- ( apparentLength+z0 ),2 ) *pow ( sin ( slope ),2 )
         , 0
     );
 }
@@ -162,7 +165,7 @@ void Cone2::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
     double t = conf.readElement ( 0 );
     jac.writeElement (
         ( 2*vx* ( x+vx*t ) +2*vy* ( y+vy*t ) ) *pow ( cos ( slope ),2 )
-        -2* ( t- ( length+z0 ) ) *pow ( sin ( slope ),2 )
+        -2* ( t- ( apparentLength+z0 ) ) *pow ( sin ( slope ),2 )
         , 0
         , 0
     );
