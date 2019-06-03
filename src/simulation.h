@@ -70,7 +70,11 @@ private:
 
     void createParticles ( std::ifstream & );
 
-    void readTheoretical ( std::ifstream & );
+    void createDivertedParticles ( std::ifstream & );
+
+    void readBeamParameters ( std::ifstream & );
+
+    void readDivertedParameters ( std::ifstream & );
 
 private:
     std::vector<Geometry*> geometries;

@@ -53,7 +53,7 @@ void Simulation::read ( char * file_name )
     {
         if ( keyword == "GEOMETRY" ) readGeometry ( input );
         else if ( keyword == "PARTICLES" ) readParticles ( input );
-//     else if(keyword == "THEORETICAL") readTheoretical(input);
+//     else if(keyword == "THEORETICAL") readBeamParameters(input);
         else if ( keyword == "PARTICLEGENERATOR" ) createParticles ( input );
         else if ( keyword == "SHIFTPARTICLES" )
             input >> particle_shifting_x >> particle_shifting_y;
@@ -158,6 +158,15 @@ void Simulation::readGeometry ( std::ifstream & input )
 //    geometries.push_back( new Revolute("REVOLUTE", length, initDiam, sectors ) );
 //  }
 
+   else if(keyword == "PLATE"){
+     double length, initDiam, width, orientation;
+     int sectors;
+
+     input >> length >> initDiam >> sectors >> width >> orientation; // units [mm]
+
+     geometries.push_back( new Plate("PLATE", length, initDiam, sectors, width, orientation ) );
+   }
+
    else if(keyword == "2PLATES"){
      double length, initDiam, width, orientation;
      int sectors;
@@ -166,7 +175,6 @@ void Simulation::readGeometry ( std::ifstream & input )
 
      geometries.push_back( new TwoPlates("2PLATES", length, initDiam, sectors, width, orientation ) );
    }
-
 }
 
 
@@ -234,7 +242,7 @@ void Simulation::createParticles ( std::ifstream & input )
     input >> number_of_particles;
     std::cout << "number_of_particles: " << number_of_particles << endl;
 
-    this->readTheoretical ( input );
+    this->readBeamParameters ( input );
     // read energy, sigma_x, sigma_y, div_x, div_y, corr_x_xdiv, corr_y_ydiv
 
     double z_i = 0.;
@@ -301,7 +309,82 @@ void Simulation::createParticles ( std::ifstream & input )
     std::cout << "Particle size: " << particles.size() << std::endl;
 }
 
-void Simulation::readTheoretical ( std::ifstream & input )
+void Simulation::createDivertedParticles ( std::ifstream & input )
+{
+    std::ofstream output_p ( "diverted-particles.txt" );
+    double number_of_particles;
+
+    input >> number_of_particles;
+    std::cout << "number_of_particles: " << number_of_particles << endl;
+
+    this->readBeamParameters ( input );
+    // read energy, sigma_x, sigma_y, div_x, div_y, corr_x_xdiv, corr_y_ydiv
+
+    double z_i = 0.;
+    double s_x, s_y, sdiv_x, sdiv_y, corr_div_x, corr_div_y ;
+    double max_x, max_y;
+    double x, xdiv, y, ydiv, z ( 0 ), zdiv ( 0 ), time ( 0 ), phase ( 0 ), energy ( 9 ), loss ( 0 );
+    int i, j=0;
+    const gsl_rng_type * T;
+    gsl_rng * r;
+
+    // first line of file:
+    output_p << "x(mm), xdiv(mrad), y(mm), ydiv(mrad) "
+	     << "z(mm), zdiv(mrad), time(s), phase, energy(eV), loss" << endl;
+
+    /* create a generator chosen by the
+    environment variable GSL_RNG_TYPE */
+    gsl_rng_env_setup();
+
+    T = gsl_rng_default;
+    r = gsl_rng_alloc ( T );
+
+    energy = theoricParameters[0];
+    s_x = theoricParameters[1];
+    s_y = theoricParameters[2];
+    sdiv_x = theoricParameters[3];
+    sdiv_y = theoricParameters[4];
+    corr_div_x = theoricParameters[5];
+    corr_div_y = theoricParameters[6];
+    cout << "corrdiv_x = " << corr_div_x << endl;
+    max_x = 6*s_x;
+    max_y = 6*s_y;
+    for ( i=0; i<number_of_particles; ++i )
+    {
+        gsl_ran_bivariate_gaussian ( r, s_x, sdiv_x, corr_div_x, &x,  &xdiv );
+        gsl_ran_bivariate_gaussian ( r, s_y, sdiv_y, corr_div_y, &y,  &ydiv );
+        // trying only with circular beam...
+//         r = (min + (max-min) * (double)rand()/RAND_MAX);
+//         x = (1./2.*3.1416*std::pow(s_x,2))*std::exp(-std::pow(r,2)/(2.*std::pow(s_x,2)));
+//         r = (min + (max-min) * (double)rand()/RAND_MAX);
+//         y = (1./2.*3.1416*std::pow(s_y,2))*std::exp(-std::pow(r,2)/(2.*std::pow(s_y,2)));
+
+//     if( x < max_x || y < max_y ){
+        output_p << x << " " << xdiv << " "
+        << y << " " << ydiv << " "
+        << z << " " << zdiv << " "
+        << time << " " << phase << " "
+        << energy << " " << loss << endl; //units: [mm]
+        x += particle_shifting_x;
+        y += particle_shifting_y;
+        xdiv *= 1E-3;
+        ydiv *= 1E-3;
+        zdiv *= 1E-3;
+        particles.push_back ( new Particle ( x, xdiv,
+                                             y, ydiv,
+                                             z, zdiv,
+//                                          time, phase,
+                                             energy/*, loss*/ )
+                            );
+//     }
+//     else // particle too far, drop it!
+//       --i;
+    }
+    gsl_rng_free ( r );
+    std::cout << "Particle size: " << particles.size() << std::endl;
+}
+
+void Simulation::readBeamParameters ( std::ifstream & input )
 {
 //   std::string preffix, suffix;
 //   std::ostringstream file_name;
@@ -316,6 +399,30 @@ void Simulation::readTheoretical ( std::ifstream & input )
 //   char a;
 //   do{input_p.get(a);} while(a!='\n'); //thrash first line
 
+    double energy, sx0, sy0, div_x, div_y, div_corr_x, div_corr_y;
+    input >> energy >>
+    sx0 >> sy0 >>
+    div_x >> div_y >>
+    div_corr_x >> div_corr_y;
+    theoricParameters.push_back ( energy );
+    theoricParameters.push_back ( sx0 );
+    theoricParameters.push_back ( sy0 );
+    theoricParameters.push_back ( div_x );
+    theoricParameters.push_back ( div_y );
+    theoricParameters.push_back ( div_corr_x );
+    theoricParameters.push_back ( div_corr_y );
+    std::cout
+        << energy << " "
+        << sx0 << " "
+        << sy0 << " "
+        << div_x << " "
+        << div_y << " "
+        << div_corr_x << " "
+        << div_corr_y << std::endl;
+}
+
+void Simulation::readDivertedParameters ( std::ifstream & input )
+{
     double energy, sx0, sy0, div_x, div_y, div_corr_x, div_corr_y;
     input >> energy >>
     sx0 >> sy0 >>

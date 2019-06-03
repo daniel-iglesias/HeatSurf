@@ -1,0 +1,18 @@
+- Simulate one plate with beam and plasma
+-- Define Plane class
+-- Properties: 
+
+- Generate particles for plasma divertor
+-- readDivertedParameters (2D symmetric): 
+--- Computation: number_of_particles
+--- Magnetic: Br, Bz, Bphi, 
+--- Interface (particle generation surface): SPx, SPz, angle, 
+--- Plasma parameters: SOLpower, lambda_q, S, fx
+-- createDivertedParticles:
+--- Energy of particles defined by SOLpower and number of particles
+--- Density of particles defined by the power density radial function
+--- Divergence of particles defined by the magnetic properties
+--- 
+- Generate particles for plasma centre column
+- Simulate cone2 with plasma for ST40 IVC-1
+- Calculate two plates, one shadowing the other
