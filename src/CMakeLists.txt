@@ -27,7 +27,10 @@ SET(HeatSurfSrcs
   heatsurf.cpp
   cone.cpp
   cone2.cpp
+  cone3.cpp
   cylinder.cpp
+  cornerCylinder.cpp
+  edgeCylinder.cpp
   element.cpp
   geometry.cpp
   node.cpp
