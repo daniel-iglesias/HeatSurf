@@ -26,8 +26,12 @@
 
 #include "cone.h"
 #include "cone2.h"
+#include "cone3.h"
 #include "cylinder.h"
+#include "newCylinder.h"
+#include "ring.h"
 #include "ogive.h"
+#include "plate.h"
 //#include "revolute.h"
 #include "twoplates.h"
 

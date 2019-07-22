@@ -17,64 +17,56 @@
 //  *   Free Software Foundation, Inc.,                                       *
 //  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 //  ***************************************************************************/
- #ifndef TWOPLATES_H
- #define TWOPLATES_H
+ #ifndef PLATE_H
+ #define PLATE_H
 
- #include <geometry.h>
+#include "geometry.h"
 
- //////////////////////////////////////////// Doxygen file documentation entry:
-     /*!
-       \file twoplates.h
+//////////////////////////////////////////// Doxygen file documentation entry:
+/*!
+  \file Plate.h
 
-       \brief Two symmetrical plates geometry.
+  \brief Pure cylindrical geometry.
 
-       Geometry with origin in s=0 defined by s-length and initial plate
-       separation (constant slope).
+  Geometry with origin in s=0 defined by s-length and diameter.
 
-       \author Daniel Iglesias <daniel.iglesias@ciemat.es>
+  \author Daniel Iglesias <daniel.iglesias@ciemat.es>
 
-      */
- //////////////////////////////////////////// Doxygen file documentation (end)
+ */
+//////////////////////////////////////////// Doxygen file documentation (end)
 
- /**
-  @author Daniel Iglesias <daniel.iglesias@ciemat.es>
-  */
- class TwoPlates : public Geometry
- {
- public:
-     TwoPlates();
+/**
+ @author Daniel Iglesias <daniel.iglesias@ciemat.es>
+ */
+class Plate : public Geometry
+{
+public:
+    Plate();
 
-     TwoPlates( std::string, double, double, int, double, double );
+    Plate ( std::string, double, double, double, double, int );
 
-     ~TwoPlates();
+    ~Plate();
 
-     void setSections( double );
+    void setSections ( double );
 
-     void computeEnergy( double, std::vector<Particle*> &);
+    void computeGeometry( );
 
-     void computeGeometry( );
+    void residue ( lmx::Vector<double>&, lmx::Vector<double>& );
+    void jacobian ( lmx::Matrix<double>&, lmx::Vector<double>& );
+    void computeIntersection ( Particle* );
 
-     void residue ( lmx::Vector<double>&, lmx::Vector<double>& );
-     void jacobian ( lmx::Matrix<double>&, lmx::Vector<double>& );
-     void computeIntersection ( Particle* );
+    void computeNodalPower ( Particle* );
 
-     void computeNodalPower ( Particle* );
+    void outputTable( );
 
-     void outputTable( );
+    void outputPowerFile ( int );
 
-     void outputPowerFile( int );
+    void outputPowerDensityFile( );
 
-     void outputPowerDensityFile( );
 
-     double getLength(){ return length; }
-
-   protected:
-     double initSep, orientation, width, slope;
-     std::map< double, std::vector<double> > energies;
-     std::map< double, std::vector<double> > powers;
-
-  private:
+private:
+    double slope, initDiam, angle;
     double x,y,z,vx,vy,vz;
- };
+};
 
- #endif
+#endif

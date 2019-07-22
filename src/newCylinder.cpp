@@ -18,7 +18,7 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#include "cornerCylinder.h"
+#include "newCylinder.h"
 
 // #include <iomanip.h>
 
@@ -26,36 +26,42 @@
 #include <vtkUnstructuredGrid.h>
 #include <vtkCell.h>
 
-cornerCylinder::cornerCylinder()
+newCylinder::newCylinder()
 {
 }
 
-cornerCylinder::cornerCylinder ( std::string type_in,
-                     double par0_in,
-                     double par1_in,
-                     double par2_in,
-                     int par3_in )
-        : Geometry ( type_in, par0_in, par3_in, par1_in )
-        , initDiam ( par2_in )
+newCylinder::newCylinder ( std::string type_in,
+                     double z0_in,
+                     double length_in,
+                     double initDiam_in,
+                     double initialAngle_in,
+                     double finalAngle_in,
+                     int sectors_in )
+        : Geometry ( type_in, z0_in, sectors_in, length_in )
+        , initDiam ( initDiam_in )
+        , initialAngle ( initialAngle_in)
+        , finalAngle ( finalAngle_in)
 {
     slope = 0.;
     gridWidth = initDiam/2.;
+    initialAngle = initialAngle*(3.1416/180);
+    finalAngle = finalAngle*(3.1416/180);
 }
 
 
-cornerCylinder::~cornerCylinder()
+newCylinder::~newCylinder()
 {
 }
 
 
-void cornerCylinder::setSections ( double distance )
+void newCylinder::setSections ( double distance )
 {
     sections = length /distance + 1 ;
     std::cout << "Sections = " << sections << std::endl;
 }
 
 
-void cornerCylinder::computeGeometry()
+void newCylinder::computeGeometry()
 {
     int i, j;
     double pi = 3.1416;
@@ -63,6 +69,7 @@ void cornerCylinder::computeGeometry()
     double radius, ra, rb;
     double a, b, c;
     double x, y, z, zlocal;
+    double segmentSize = finalAngle - initialAngle;
     double sectionDif = length / ( sections - 1 );
 
     // nodes map is going to be filled to a size of i*j where
@@ -75,7 +82,7 @@ void cornerCylinder::computeGeometry()
 //     radius = (length + z0 - z) * tan(slope);
         for ( j=0; j<sectors; ++j )   //closed chain
         {
-            theta = 1.482 * j / sectors - pi; // angle between -pi and pi
+            theta = (segmentSize ) * j / sectors + initialAngle; // angle between -pi and pi
             x = radius * cos ( theta );
             y = radius * sin ( theta );
             nodes[i*sectors + j] = new Node ( x, y, z );
@@ -83,7 +90,7 @@ void cornerCylinder::computeGeometry()
         }
     }
 
-    theta = 1.482 / sectors; // angle between -pi and pi
+    theta = segmentSize / sectors; // angle between -pi and pi
 
     for ( i=0; i<sections-1; ++i )
     {
@@ -147,7 +154,7 @@ void cornerCylinder::computeGeometry()
 }
 
 
-void cornerCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
+void newCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     res.writeElement (
@@ -156,7 +163,7 @@ void cornerCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& co
     );
 }
 
-void cornerCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
+void newCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     jac.writeElement (
@@ -166,7 +173,7 @@ void cornerCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& c
     );
 }
 
-void cornerCylinder::computeIntersection ( Particle* particle )
+void newCylinder::computeIntersection ( Particle* particle )
 {
     x = particle->getX();
     y = particle->getY();
@@ -175,13 +182,13 @@ void cornerCylinder::computeIntersection ( Particle* particle )
     vy = particle->getYdiv();
     vz = particle->getZdiv();
     lmx::Vector<double> initialGuess ( 1 ); // zero
-    lmx::NLSolver<cornerCylinder> theSolver;
+    lmx::NLSolver<newCylinder> theSolver;
     theSolver.setInfo ( 0 );
     theSolver.setInitialConfiguration ( initialGuess );
     theSolver.setSystem ( *this );
-    theSolver.setResidue ( &cornerCylinder::residue );
-    theSolver.setJacobian ( &cornerCylinder::jacobian );
-//   theSolver.setConvergence( &cornerCylinder::myConvergence );
+    theSolver.setResidue ( &newCylinder::residue );
+    theSolver.setJacobian ( &newCylinder::jacobian );
+//   theSolver.setConvergence( &newCylinder::myConvergence );
 //   theSolver.setMaxIterations( 100 );
     theSolver.solve ( 100 );
 //   cout << theSolver.getSolution().readElement(0) << endl;
@@ -189,8 +196,9 @@ void cornerCylinder::computeIntersection ( Particle* particle )
 
 }
 
-void cornerCylinder::computeNodalPower ( Particle* particle )
+void newCylinder::computeNodalPower ( Particle* particle )
 {
+        double pi = 3.1416;
     if ( paramTrajectories.back() > ( z0-particle->getZ() ) &&
             paramTrajectories.back() <= ( z0-particle->getZ() +length ) )
     {
@@ -214,61 +222,63 @@ void cornerCylinder::computeNodalPower ( Particle* particle )
         = 1. - fmod ( z , length/ ( sections-1 ) ) / ( length/ ( sections-1 ) );
 //     cout << "section_back_factor = " << section_back_factor << endl;
         // We search the sector where it lies (between two nodes):
-        double theta = atan2 ( x,y );
-        double pi = 3.1416;
-        int sector_back = floor ( ( theta + pi ) * sectors / ( 2*pi ) );
-//     cout << "sector_back = " << sector_back << endl;
+        double theta = pi + atan2 ( x,y );
+        if (theta >= initialAngle && theta <= finalAngle){
+            double pi = 3.1416;
+            double segmentSize = finalAngle - initialAngle;
+            int sector_back = floor ( ( theta - initialAngle) / ( finalAngle -initialAngle ) /*+ pi*/ * sectors ); // BUG: not clear that this rotation is associated with any parameter. Should be clearer
+//      cout << "sector_back = " << sector_back << endl;
         // ... defining another proximity factor:
-        double sector_back_factor
-        = 1. - fmod ( ( theta + pi ) * sectors, ( 2*pi ) ) / ( 2*pi );
-//     cout << "sector_back_factor = " << sector_back_factor << endl;
+            double sector_back_factor =
+            1. - fmod ( ( theta /* + pi*/ ) * sectors, ( segmentSize ) ) / ( segmentSize );
+//      cout << "sector_back_factor = " << sector_back_factor << endl;
         // Now we distribute the energy of the particle between
         // the nodes in the back section:
-//     cout << nodes.size() << ", trying: " << section_back*sectors + sector_back << endl;
-        nodes[section_back*sectors + sector_back]
-        ->addScalar ( particle_power
+//      cout << nodes.size() << ", trying: " << section_back*sectors + sector_back << endl;
+            nodes[section_back*sectors + sector_back]
+            ->addScalar ( particle_power
                       * section_back_factor
                       * sector_back_factor
                     );
         // Doing the same for the next node:
-        int sector_front = sector_back+1;
+            int sector_front = sector_back+1;
         // check if we got into the last node of the section (last sector)
-        if ( sector_front >= sectors ) sector_front = 0; // Turn around singularity
-        nodes[section_back*sectors + sector_front]
-        ->addScalar ( particle_power
+            if ( sector_front >= sectors ) sector_front = 0; // Turn around singularity
+            nodes[section_back*sectors + sector_front]
+            ->addScalar ( particle_power
                       * section_back_factor
                       * ( 1.-sector_back_factor )
                     );
         // And the same for the next section (two other nodes):
-        int section_front = section_back+1;
+            int section_front = section_back+1;
         // Repeating the same:
-        sector_back = floor ( ( theta + pi ) * sectors / ( 2*pi ) );
-        nodes[section_front*sectors + sector_back]
-        ->addScalar ( particle_power
+            //sector_back = floor ( ( theta + pi ) * sectors / ( 2*pi ) );
+            nodes[section_front*sectors + sector_back]
+            ->addScalar ( particle_power
                       * ( 1.-section_back_factor )
                       * sector_back_factor
                     );
         // (bis) Doing the same for the next node:
-        sector_front = sector_back+1;
+            sector_front = sector_back+1;
         // (bis) check if we got into the last node of the section (last sector)
-        if ( sector_front >= sectors ) sector_front = 0; // Turn around singularity
+            if ( sector_front >= sectors ) sector_front = 0; // Turn around singularity
 //     cout << nodes.size() << ", trying: " << section_front*sectors + sector_front << endl;
-        nodes[section_front*sectors + sector_front]
-        ->addScalar ( particle_power
+            nodes[section_front*sectors + sector_front]
+            ->addScalar ( particle_power
                       * ( 1.-section_back_factor )
                       * ( 1.-sector_back_factor )
                     );
     }
 }
+}
 
-
-void cornerCylinder::outputTable()
+void newCylinder::outputTable()
 {
     std::ofstream out ( "top_table.txt" );
 }
 
 
-void cornerCylinder::outputPowerFile ( int particles )
+void newCylinder::outputPowerFile ( int particles )
 {
     std::ofstream outFile ( "total_power.dat" );
     double power2D, z, totalPower ( 0. );
@@ -293,7 +303,7 @@ void cornerCylinder::outputPowerFile ( int particles )
     cout << "Total Power = " << totalPower / particles << " MW" << endl;
 }
 
-void cornerCylinder::outputPowerDensityFile()
+void newCylinder::outputPowerDensityFile()
 {
     std::ofstream outFile ( "power.dat" );
     std::ofstream outFileParts ( "power_particles.dat" );

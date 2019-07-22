@@ -17,14 +17,14 @@
  *   Free Software Foundation, Inc.,                                       *
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
-#ifndef CORNERCYLINDER_H
-#define CORNERCYLINDER_H
+#ifndef NEWCYLINDER_H
+#define NEWCYLINDER_H
 
 #include "geometry.h"
 
 //////////////////////////////////////////// Doxygen file documentation entry:
 /*!
-  \file cornerCylinder.h
+  \file newCylinder.h
 
   \brief Pure cylindrical geometry.
 
@@ -38,14 +38,14 @@
 /**
  @author Daniel Iglesias <daniel.iglesias@ciemat.es>
  */
-class cornerCylinder : public Geometry
+class newCylinder : public Geometry
 {
 public:
-    cornerCylinder();
+    newCylinder();
 
-    cornerCylinder ( std::string, double, double, double, int );
+    newCylinder ( std::string, double, double, double, double, double, int );
 
-    ~cornerCylinder();
+    ~newCylinder();
 
     void setSections ( double );
 
@@ -65,7 +65,7 @@ public:
 
 
 private:
-    double slope, initDiam;
+    double slope, initDiam, initialAngle, finalAngle;
     double x,y,z,vx,vy,vz;
 };
 

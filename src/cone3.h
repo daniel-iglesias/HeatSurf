@@ -45,7 +45,7 @@ class Cone3 : public Geometry
 public:
     Cone3();
 
-    Cone3 ( std::string, double, double, double, double, int );
+    Cone3 ( std::string, double, double, double, double, double, double, int );
 
     ~Cone3();
 
@@ -67,7 +67,7 @@ public:
 
 
 protected:
-    double slope, initDiam, finalDiam, apparentLength;
+    double slope, initDiam, finalDiam, apparentLength, initialAngle, finalAngle;
 
 private:
     double x,y,z,vx,vy,vz;

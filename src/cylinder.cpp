@@ -71,7 +71,7 @@ void Cylinder::computeGeometry()
     for ( i=0; i<sections; ++i )
     {
         z = i * sectionDif + z0;
-        radius = ( initDiam/2. ) - ( z-z0 ) *tan ( slope );
+        radius = ( initDiam/2. ) - ( z-z0 ) *tan ( slope );//slope is zero
 //     radius = (length + z0 - z) * tan(slope);
         for ( j=0; j<sectors; ++j )   //closed chain
         {

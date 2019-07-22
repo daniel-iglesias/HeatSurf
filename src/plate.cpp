@@ -15,10 +15,10 @@
  *   You should have received a copy of the GNU General Public License     *
  *   along with this program; if not, write to the                         *
  *   Free Software Foundation, Inc.,                                       *
- *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ *   59 Temple Place - Suite 330, Boston, MA  0c2111-1307, USA.             *
  ***************************************************************************/
 
-#include "edgeCylinder.h"
+#include "plate.h"
 
 // #include <iomanip.h>
 
@@ -26,36 +26,38 @@
 #include <vtkUnstructuredGrid.h>
 #include <vtkCell.h>
 
-edgeCylinder::edgeCylinder()
+Plate::Plate()
 {
 }
 
-edgeCylinder::edgeCylinder ( std::string type_in,
+Plate::Plate ( std::string type_in,
                      double par0_in,
                      double par1_in,
                      double par2_in,
+                     double angle_in,
                      int par3_in )
         : Geometry ( type_in, par0_in, par3_in, par1_in )
         , initDiam ( par2_in )
+        , angle ( angle_in)
 {
     slope = 0.;
     gridWidth = initDiam/2.;
 }
 
 
-edgeCylinder::~edgeCylinder()
+Plate::~Plate()
 {
 }
 
 
-void edgeCylinder::setSections ( double distance )
+void Plate::setSections ( double distance )
 {
     sections = length /distance + 1 ;
     std::cout << "Sections = " << sections << std::endl;
 }
 
 
-void edgeCylinder::computeGeometry()
+void Plate::computeGeometry()
 {
     int i, j;
     double pi = 3.1416;
@@ -75,7 +77,7 @@ void edgeCylinder::computeGeometry()
 //     radius = (length + z0 - z) * tan(slope);
         for ( j=0; j<sectors; ++j )   //closed chain
         {
-            theta = 0.3915 * j / sectors - pi; // angle between -pi and pi
+            theta = angle * j / sectors - pi; // angle between -pi and pi
             x = radius * cos ( theta );
             y = radius * sin ( theta );
             nodes[i*sectors + j] = new Node ( x, y, z );
@@ -83,7 +85,7 @@ void edgeCylinder::computeGeometry()
         }
     }
 
-    theta = 0.3915 / sectors; // angle between -pi and pi
+    theta = angle / sectors; // angle between -pi and pi
 
     for ( i=0; i<sections-1; ++i )
     {
@@ -106,7 +108,7 @@ void edgeCylinder::computeGeometry()
             elements.back()->addNode ( ( i+1 ) *sectors + j );
             elements.back()->generateGeometry();
             elements.back()->setArea ( ( a + b ) /2 * c );
-//       cout << "a = "<< a << ", b = "<< b << ", Area = " << elements.back()->getArea() << endl;
+    //cout << "a = "<< a << ", b = "<< b << ", Area = " << elements.back()->getArea() << endl;
         }
         // the last sector:
         elements.push_back ( new Element ( 0 ) // type quad
@@ -147,7 +149,7 @@ void edgeCylinder::computeGeometry()
 }
 
 
-void edgeCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
+void Plate::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     res.writeElement (
@@ -156,7 +158,7 @@ void edgeCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf
     );
 }
 
-void edgeCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
+void Plate::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     jac.writeElement (
@@ -166,7 +168,7 @@ void edgeCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& con
     );
 }
 
-void edgeCylinder::computeIntersection ( Particle* particle )
+void Plate::computeIntersection ( Particle* particle )
 {
     x = particle->getX();
     y = particle->getY();
@@ -175,13 +177,13 @@ void edgeCylinder::computeIntersection ( Particle* particle )
     vy = particle->getYdiv();
     vz = particle->getZdiv();
     lmx::Vector<double> initialGuess ( 1 ); // zero
-    lmx::NLSolver<edgeCylinder> theSolver;
+    lmx::NLSolver<Plate> theSolver;
     theSolver.setInfo ( 0 );
     theSolver.setInitialConfiguration ( initialGuess );
     theSolver.setSystem ( *this );
-    theSolver.setResidue ( &edgeCylinder::residue );
-    theSolver.setJacobian ( &edgeCylinder::jacobian );
-//   theSolver.setConvergence( &edgeCylinder::myConvergence );
+    theSolver.setResidue ( &Plate::residue );
+    theSolver.setJacobian ( &Plate::jacobian );
+//   theSolver.setConvergence( &Plate::myConvergence );
 //   theSolver.setMaxIterations( 100 );
     theSolver.solve ( 100 );
 //   cout << theSolver.getSolution().readElement(0) << endl;
@@ -189,7 +191,7 @@ void edgeCylinder::computeIntersection ( Particle* particle )
 
 }
 
-void edgeCylinder::computeNodalPower ( Particle* particle )
+void Plate::computeNodalPower ( Particle* particle )
 {
     if ( paramTrajectories.back() > ( z0-particle->getZ() ) &&
             paramTrajectories.back() <= ( z0-particle->getZ() +length ) )
@@ -262,13 +264,13 @@ void edgeCylinder::computeNodalPower ( Particle* particle )
 }
 
 
-void edgeCylinder::outputTable()
+void Plate::outputTable()
 {
     std::ofstream out ( "top_table.txt" );
 }
 
 
-void edgeCylinder::outputPowerFile ( int particles )
+void Plate::outputPowerFile ( int particles )
 {
     std::ofstream outFile ( "total_power.dat" );
     double power2D, z, totalPower ( 0. );
@@ -293,7 +295,7 @@ void edgeCylinder::outputPowerFile ( int particles )
     cout << "Total Power = " << totalPower / particles << " MW" << endl;
 }
 
-void edgeCylinder::outputPowerDensityFile()
+void Plate::outputPowerDensityFile()
 {
     std::ofstream outFile ( "power.dat" );
     std::ofstream outFileParts ( "power_particles.dat" );

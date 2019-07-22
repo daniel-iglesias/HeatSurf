@@ -108,7 +108,31 @@ void Simulation::readGeometry ( std::ifstream & input )
         geometries.push_back ( new Cone2 ( "CONE2", z0, length, initDiam, finalDiam, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
-    /*  else if(keyword == "RING"){
+
+    //********************************************************************************************8
+    //Dan input here
+
+        if ( keyword == "CONE3" )
+    {
+        double z0, length, initDiam, finalDiam,initialAngle, finalAngle;
+        int sectors, section_distance;
+
+        input >> z0 >> length >> initDiam >> finalDiam >> initialAngle >> finalAngle >>  sectors >> section_distance; // [mm]
+        cout << "NEW CONE3: "
+		<< z0 << ", "
+		<< length << ", "
+		<< initDiam << ", "
+		<< finalDiam << ", "
+		<< initialAngle << ", "
+		<< finalAngle << ", "
+		<< sectors << ", "
+		<< section_distance << endl; // [mm]
+
+        geometries.push_back ( new Cone3 ( "CONE3", z0, length, initDiam, finalDiam, initialAngle, finalAngle,  sectors ) );
+        geometries.back()->setSections ( section_distance );
+    }
+
+    else if(keyword == "RING"){
         double z0, length, internalDiam, externalDiam;
         int sectors, section_distance;
 
@@ -118,7 +142,9 @@ void Simulation::readGeometry ( std::ifstream & input )
         geometries.push_back
             ( new Ring("RING", z0, externalDiam, internalDiam, sectors ) );
         geometries.back()->setSections(section_distance);
-      }*/
+      }
+
+
     else if ( keyword == "CYLINDER" )
     {
         double z0, length, initDiam;
@@ -133,6 +159,27 @@ void Simulation::readGeometry ( std::ifstream & input )
 
         geometries.push_back
         ( new Cylinder ( "CYLINDER", z0, length, initDiam, sectors ) );
+        geometries.back()->setSections ( section_distance );
+    }
+
+    //***********************************************************************************
+    //Dan input here
+    else if ( keyword == "NEWCYLINDER" )
+    {
+        double z0, length, initDiam, initialAngle, finalAngle;
+        int sectors, section_distance;
+
+        input >> z0 >> length >> initDiam >> initialAngle >> finalAngle >> sectors >> section_distance; // [mm]
+        cout << z0 << ", "
+             << length << ", "
+             << initDiam << ", "
+             << initialAngle << ", "
+             << finalAngle << ", "
+             << sectors << ", "
+             << section_distance <<  endl; // [mm]
+
+        geometries.push_back
+        ( new newCylinder ( "NEWCYLINDER", z0, length, initDiam, initialAngle, finalAngle, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
 
@@ -158,14 +205,25 @@ void Simulation::readGeometry ( std::ifstream & input )
 //    geometries.push_back( new Revolute("REVOLUTE", length, initDiam, sectors ) );
 //  }
 
-   else if(keyword == "PLATE"){
-     double length, initDiam, width, orientation;
-     int sectors;
 
-     input >> length >> initDiam >> sectors >> width >> orientation; // units [mm]
+   else if(keyword == "PLATE")
+    {
+        double z0, length, initDiam, angle;
+        int sectors, section_distance;
 
-     geometries.push_back( new Plate("PLATE", length, initDiam, sectors, width, orientation ) );
-   }
+        input >> z0 >> length >> initDiam >> angle >> sectors >> section_distance; // [mm]
+        cout << z0 << ", "
+             << length << ", "
+             << initDiam << ", "
+             << angle << ", "
+             << sectors << ", "
+             << section_distance <<  endl; // [mm]
+
+        geometries.push_back
+        ( new Plate ( "PLATE", z0, length, initDiam, angle, sectors ) );
+        geometries.back()->setSections ( section_distance );
+    }
+
 
    else if(keyword == "2PLATES"){
      double length, initDiam, width, orientation;
@@ -230,7 +288,7 @@ void Simulation::readParticles ( std::ifstream & input )
 //       particles[i].push_back( new Particle( x, y, z, energy) );
 //     }
     }
-    std::cout << "Particle size: " << particles.size() << std::endl;
+    std::cout << "Particle size: " << particles.size() <<   std::endl;
 }
 
 
@@ -450,7 +508,6 @@ void Simulation::compute()
 {
     std::vector< Geometry* >::iterator it_geom;
     std::vector< Particle* >::iterator it_part;
-
     for ( it_geom = geometries.begin();
             it_geom!= geometries.end();
             ++it_geom

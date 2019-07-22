@@ -18,7 +18,6 @@
 //  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 //  ***************************************************************************/
  #include "twoplates.h"
-
  #include <vtkPoints.h>
  #include <vtkUnstructuredGrid.h>
  #include <vtkCell.h>
@@ -30,14 +29,13 @@
 
 
  TwoPlates::TwoPlates(std::string type_in,
-                      double par1_in,
-                      double par2_in,
-                      int par3_in,
+                      double length,
+                      double initDiam,
+                      int sectors,
                       double width_in,
-                      double orientation_in
-                     )
-   : Geometry(type_in, 0.0, par3_in, par1_in)
-     , initSep(par2_in)
+                      double orientation_in)
+   : Geometry(type_in, 0.0, sectors, length)
+     , initSep(initDiam)
      , width(width_in)
      , orientation(orientation_in)
  {

@@ -44,7 +44,7 @@ Cone2::Cone2 ( std::string type_in,
     gridWidth = initDiam/2.;
     apparentLength = (initDiam/2.)/tan(slope);
     std::cout << initDiam << endl << finalDiam << endl << slope << endl;
-}
+    }
 
 
 Cone2::~Cone2()
@@ -204,6 +204,9 @@ void Cone2::computeNodalPower ( Particle* particle )
         x = particle->getX() + particle->getXdiv() * paramTrajectories.back();
         y = particle->getY() + particle->getYdiv() * paramTrajectories.back();
         z = /*particle->getZ() +*/ paramTrajectories.back() - z0;
+//     cout << "x = " << x << '\t';
+//     cout << "y = " << y << '\t';
+//     cout << "z = " << z << endl;
 //     cout << "particle->getZ() = " << particle->getZ() << endl;
         //   cout << "particle->getZdiv() = " << particle->getZdiv() << endl;
 //     cout << "paramTrajectories.back() = " << paramTrajectories.back() << endl;
@@ -220,9 +223,11 @@ void Cone2::computeNodalPower ( Particle* particle )
 //     cout << "section_back_factor = " << section_back_factor << endl;
         // We search the sector where it lies (between two nodes):
         double theta = atan2 ( x,y );
+
         double pi = 3.1416;
         int sector_back = floor ( ( theta + pi ) * sectors / ( 2*pi ) );
-//     cout << "sector_back = " << sector_back << endl;
+        cout << "sector_back = " << sector_back << endl;
+//             cout << theta << endl;
         // ... defining another proximity factor:
         double sector_back_factor
         = 1. - fmod ( ( theta + pi ) * sectors, ( 2*pi ) ) / ( 2*pi );

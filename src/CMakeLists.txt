@@ -29,13 +29,13 @@ SET(HeatSurfSrcs
   cone2.cpp
   cone3.cpp
   cylinder.cpp
-  cornerCylinder.cpp
-  edgeCylinder.cpp
   element.cpp
   geometry.cpp
+  newCylinder.cpp
   node.cpp
   ogive.cpp
   particle.cpp
+  plate.cpp
   ring.cpp
   simulation.cpp
   twoplates.cpp
