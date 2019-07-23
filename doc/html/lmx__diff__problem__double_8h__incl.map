@@ -1,0 +1,11 @@
+<map id="src/LMX/lmx_diff_problem_double.h" name="src/LMX/lmx_diff_problem_double.h">
+<area shape="rect" id="node3" href="$lmx__nlsolvers__double_8h.html" title="NLSolverDoubleDouble class implementation. " alt="" coords="13,285,165,312"/>
+<area shape="rect" id="node5" href="$lmx__diff__configuration_8h.html" title="Configuration variables and time. " alt="" coords="277,368,432,395"/>
+<area shape="rect" id="node13" href="$lmx__diff__integrator__ab_8h.html" title="IntegratorAB class implementation. " alt="" coords="512,195,669,221"/>
+<area shape="rect" id="node15" href="$lmx__diff__integrator__am_8h.html" title="IntegratorAM class implementation. " alt="" coords="229,104,389,131"/>
+<area shape="rect" id="node18" href="$lmx__diff__integrator__bdf_8h.html" title="IntegratorBDF class implementation. " alt="" coords="414,97,540,138"/>
+<area shape="rect" id="node19" href="$lmx__diff__integrator__centraldiff_8h.html" title="IntegratorCentralDiff class implementation. " alt="" coords="127,187,253,229"/>
+<area shape="rect" id="node6" href="$lmx__except_8h.html" title="Exception handling classes, functions and macros. " alt="" coords="323,443,420,469"/>
+<area shape="rect" id="node14" href="$lmx__diff__integrator__base_8h.html" title="IntegratorBase abstract class implementation. " alt="" coords="287,278,413,319"/>
+<area shape="rect" id="node17" href="$lmx__diff__integrator__base__implicit_8h.html" title="IntegratorBaseImplicit abstract class implementation. " alt="" coords="278,187,404,229"/>
+</map>

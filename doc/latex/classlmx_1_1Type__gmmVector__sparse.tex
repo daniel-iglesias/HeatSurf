@@ -1,0 +1,447 @@
+\hypertarget{classlmx_1_1Type__gmmVector__sparse}{\section{lmx\-:\-:Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Type__gmmVector__sparse}\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1Type__gmmVector__sparse}{Type\-\_\-gmm\-Vector\-\_\-sparse}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-mat\-\_\-type\-\_\-gmmvector\-\_\-sparse1.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classlmx_1_1Type__gmmVector__sparse__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classlmx_1_1Type__gmmVector__sparse__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Type__gmmVector__sparse_aca5ef746e665f2cbceab490b784aeffe}{Type\-\_\-gmm\-Vector\-\_\-sparse} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1Type__gmmVector__sparse_a1046b257443dfce605e0b381d1dc2916}{Type\-\_\-gmm\-Vector\-\_\-sparse} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{classlmx_1_1Type__gmmVector__sparse_af8b97536724aa2b7a4290411bfb32ade}{Type\-\_\-gmm\-Vector\-\_\-sparse} (char $\ast$input\-\_\-file)
+\item 
+\hyperlink{classlmx_1_1Type__gmmVector__sparse_abc2ed5b7b7f1ce44f263b72431c22211}{$\sim$\-Type\-\_\-gmm\-Vector\-\_\-sparse} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a4ce5a2d661451dfad3d61dcd6cceaa66}{resize} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+const T \& \hyperlink{classlmx_1_1Type__gmmVector__sparse_ac0079f08940635a93f1158727deb3049}{read\-Element} (const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&mrows, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&ncolumns) const 
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_ad5041be88871fcb7fc0f78303e184c13}{write\-Element} (T value, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&mrows, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&ncolumns)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a2362b786de94b584ee30b07b5a6e2951}{add\-Element} (T value, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&mrows, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&ncolumns)
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__gmmVector__sparse_a6998599dcc3097907717f5d7616f4ae3}{get\-Rows} () const 
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__gmmVector__sparse_aac929b84c92b84e9d9ed7476ca2d24a2}{get\-Cols} () const 
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_ad40a2793840d2053fce15b017524e4d7}{equals} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$vector\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_ac309aa177fd30def4598b3f19884a397}{add} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$vector\-\_\-in\-\_\-1)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a9f916d35ddafd3328d6c1a75372b3e2a}{substract} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$vector\-\_\-in\-\_\-1)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_ad6a694c0ff2c910c2c34b02ba6455450}{multiply\-Scalar} (const T \&scalar)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_ad122828c2ec742370534f19f5b86ee88}{multiply\-Elements} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$vector\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a6f9b445388c349959ecbf7c89b2b120c}{clean\-Below} (const double factor)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a8cdbdf44a2366bf9233fbee879e72e6e}{read\-Data\-File} (const char $\ast$input\-\_\-file)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a73766d175f2014fbe6d4497b1856edec}{write\-Data\-File} (const char $\ast$output\-\_\-file)
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a12581391ae3eece7b87ebebfdaa59e9d}{clear} ()
+\item 
+void \hyperlink{classlmx_1_1Type__gmmVector__sparse_a9c5345694e2e77e88858a773c69983b9}{reset} ()
+\item 
+gmm\-::wsvector$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1Type__gmmVector__sparse_a377f0060298ceebdfbf91755b9532a91}{data\-\_\-pointer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1Type__gmmVector__sparse}{Type\-\_\-gmm\-Vector\-\_\-sparse}. 
+
+This class implements the methods defined in virtual class data\-\_\-mat so the \hyperlink{classlmx_1_1Vector}{Vector} type \char`\"{}std\-::vector\char`\"{} can be used in lmx. For details about the caracteristics of this matrix type, see the S\-T\-L library manual and code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em contents} & Corresponds to a std\-::vector and it's the base of the methods implemented for this class.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_aca5ef746e665f2cbceab490b784aeffe}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!Type\-\_\-gmm\-Vector\-\_\-sparse@{Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\index{Type\-\_\-gmm\-Vector\-\_\-sparse@{Type\-\_\-gmm\-Vector\-\_\-sparse}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{Type\-\_\-gmm\-Vector\-\_\-sparse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::{\bf Type\-\_\-gmm\-Vector\-\_\-sparse} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Type__gmmVector__sparse_aca5ef746e665f2cbceab490b784aeffe}
+
+
+Empty constructor. 
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a1046b257443dfce605e0b381d1dc2916}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!Type\-\_\-gmm\-Vector\-\_\-sparse@{Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\index{Type\-\_\-gmm\-Vector\-\_\-sparse@{Type\-\_\-gmm\-Vector\-\_\-sparse}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{Type\-\_\-gmm\-Vector\-\_\-sparse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::{\bf Type\-\_\-gmm\-Vector\-\_\-sparse} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{rows, }
+\item[{{\bf size\-\_\-type}}]{columns}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Type__gmmVector__sparse_a1046b257443dfce605e0b381d1dc2916}
+Standard constructor. Creates a new object with parameter contents resized to (columns) dimension. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & New size of dense std\-Vector. \\
+\hline
+{\em columns} & Not used. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_af8b97536724aa2b7a4290411bfb32ade}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!Type\-\_\-gmm\-Vector\-\_\-sparse@{Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\index{Type\-\_\-gmm\-Vector\-\_\-sparse@{Type\-\_\-gmm\-Vector\-\_\-sparse}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{Type\-\_\-gmm\-Vector\-\_\-sparse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::{\bf Type\-\_\-gmm\-Vector\-\_\-sparse} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Type__gmmVector__sparse_af8b97536724aa2b7a4290411bfb32ade}
+Constructor from a data file. Creates a new object reading data from a file. 
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of file to read from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_abc2ed5b7b7f1ce44f263b72431c22211}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!$\sim$\-Type\-\_\-gmm\-Vector\-\_\-sparse@{$\sim$\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\index{$\sim$\-Type\-\_\-gmm\-Vector\-\_\-sparse@{$\sim$\-Type\-\_\-gmm\-Vector\-\_\-sparse}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{$\sim$\-Type\-\_\-gmm\-Vector\-\_\-sparse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::$\sim${\bf Type\-\_\-gmm\-Vector\-\_\-sparse} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Type__gmmVector__sparse_abc2ed5b7b7f1ce44f263b72431c22211}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_ac309aa177fd30def4598b3f19884a397}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!add@{add}}
+\index{add@{add}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{vector\-\_\-in\-\_\-1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_ac309aa177fd30def4598b3f19884a397}
+Add method. Adds the the input vector parameter's elements to the object's contents. Necessary for overloading the \char`\"{}+=\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em vector\-\_\-in\-\_\-1} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data}{Data}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a7e09e2e81661176a36eb82818610223a}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a2362b786de94b584ee30b07b5a6e2951}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::add\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{value, }
+\item[{const {\bf size\-\_\-type} \&}]{mrows, }
+\item[{const {\bf size\-\_\-type} \&}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a2362b786de94b584ee30b07b5a6e2951}
+Add element method. Implements a method for adding data on the Harwell-\/\-Boeing matrix. Copy-\/pasted from write\-Element. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in sparse matrix. \\
+\hline
+{\em ncolumns} & Column position in sparse matrix. \\
+\hline
+{\em value} & Numerical type value. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_ab99ee708ee4e9553be431d408eb2b43a}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a6f9b445388c349959ecbf7c89b2b120c}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!clean\-Below@{clean\-Below}}
+\index{clean\-Below@{clean\-Below}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{clean\-Below}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::clean\-Below (
+\begin{DoxyParamCaption}
+\item[{const double}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a6f9b445388c349959ecbf7c89b2b120c}
+Traspose method. Swaps elements with respect to the diagonal\-: A(i,j) = A(j,i) Clean below method. Makes equal to zero every element below given factor. 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Reference value for cleaning. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a706e90ec786d6133dd69edcbc6b37845}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a12581391ae3eece7b87ebebfdaa59e9d}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!clear@{clear}}
+\index{clear@{clear}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a12581391ae3eece7b87ebebfdaa59e9d}
+Clear method. Wipes all data. $<$ \hyperlink{classlmx_1_1Vector}{Vector} data contents. 
+
+Implements \hyperlink{classlmx_1_1Data_abab7ff41198c0fab10e2a7d739e47ecb}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a377f0060298ceebdfbf91755b9532a91}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!data\-\_\-pointer@{data\-\_\-pointer}}
+\index{data\-\_\-pointer@{data\-\_\-pointer}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{data\-\_\-pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ gmm\-::wsvector$<$T$>$$\ast$ {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::data\-\_\-pointer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Type__gmmVector__sparse_a377f0060298ceebdfbf91755b9532a91}
+\hyperlink{classlmx_1_1Data}{Data} pointer method Gives the direction in memory of (pointer to) the object. \begin{DoxyReturn}{Returns}
+A pointer to the vector's contents (\hyperlink{classlmx_1_1Type__gmmVector__sparse}{Type\-\_\-gmm\-Vector\-\_\-sparse}). 
+\end{DoxyReturn}
+
+
+Referenced by lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself().
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_ad40a2793840d2053fce15b017524e4d7}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!equals@{equals}}
+\index{equals@{equals}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::equals (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{vector\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_ad40a2793840d2053fce15b017524e4d7}
+Copy method. Equals the data in the object's contents to those given by the input vector's parameter. 
+\begin{DoxyParams}{Parameters}
+{\em vector\-\_\-in} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data}{Data}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a26ed4e8b9ba60ee57fc729e4cfcad356}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_aac929b84c92b84e9d9ed7476ca2d24a2}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!get\-Cols@{get\-Cols}}
+\index{get\-Cols@{get\-Cols}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{get\-Cols}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::get\-Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_aac929b84c92b84e9d9ed7476ca2d24a2}
+Method for knowing the number of data columns. \begin{DoxyReturn}{Returns}
+Number of columns. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data_a7dc130d0eba4c4d1dc4ce6e9a371251c}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a6998599dcc3097907717f5d7616f4ae3}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!get\-Rows@{get\-Rows}}
+\index{get\-Rows@{get\-Rows}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{get\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::get\-Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a6998599dcc3097907717f5d7616f4ae3}
+Method for knowing the number of data rows. \begin{DoxyReturn}{Returns}
+Number of rows. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data_a819b220b738028a01c5f861d059dd802}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_ad122828c2ec742370534f19f5b86ee88}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!multiply\-Elements@{multiply\-Elements}}
+\index{multiply\-Elements@{multiply\-Elements}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{multiply\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::multiply\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{vector\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_ad122828c2ec742370534f19f5b86ee88}
+Method multiplying element-\/by-\/element of two arrays. One would be the object's contents and the other the parameter's contents. Necessary for implementing \hyperlink{classlmx_1_1Vector}{Vector} to \hyperlink{classlmx_1_1Vector}{Vector} mult\-Elements. 
+\begin{DoxyParams}{Parameters}
+{\em vector\-\_\-in} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data}{Data}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a89fd82cd33955de1ee375a9d514f2860}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+References lmx\-::\-Data$<$ T $>$\-::read\-Element().
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_ad6a694c0ff2c910c2c34b02ba6455450}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!multiply\-Scalar@{multiply\-Scalar}}
+\index{multiply\-Scalar@{multiply\-Scalar}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{multiply\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::multiply\-Scalar (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_ad6a694c0ff2c910c2c34b02ba6455450}
+Multiply scalar method. Multiplies the object's vector (contents) with a scalar. Necessary for overloading the \char`\"{}$\ast$\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & A scalar factor of template's class. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a027c8e7cb440f16a828579acaf991262}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a8cdbdf44a2366bf9233fbee879e72e6e}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!read\-Data\-File@{read\-Data\-File}}
+\index{read\-Data\-File@{read\-Data\-File}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{read\-Data\-File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::read\-Data\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a8cdbdf44a2366bf9233fbee879e72e6e}
+Read data method. Opens the file specified and reads the vector's data in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data__vec_a32d6a9d26eb14ceec99e0ee0b6b33f47}{lmx\-::\-Data\-\_\-vec$<$ T $>$}.
+
+
+
+References lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$\-::resize().
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_ac0079f08940635a93f1158727deb3049}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!read\-Element@{read\-Element}}
+\index{read\-Element@{read\-Element}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{read\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T\& {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::read\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf size\-\_\-type} \&}]{mrows, }
+\item[{const {\bf size\-\_\-type} \&}]{ncolumns}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_ac0079f08940635a93f1158727deb3049}
+Read element method. Implements a method for reading data of the sparse matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in sparse matrix. \\
+\hline
+{\em ncolumns} & Column position in sparse matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of the element in the position given by the parameters. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data_a25cffd2f6d220d24e37b37a96205e0be}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a9c5345694e2e77e88858a773c69983b9}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!reset@{reset}}
+\index{reset@{reset}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a9c5345694e2e77e88858a773c69983b9}
+Reset method. 
+
+Implements \hyperlink{classlmx_1_1Data_a2d275a49db8c274e26b1d3bcbc23d964}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a4ce5a2d661451dfad3d61dcd6cceaa66}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!resize@{resize}}
+\index{resize@{resize}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{mrows, }
+\item[{{\bf size\-\_\-type}}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a4ce5a2d661451dfad3d61dcd6cceaa66}
+Resize method. Changes the size of the contents parameter. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & New value for size of \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+{\em ncolumns} & Not used. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a2ef906e5218e1bc6d4df355787caedfc}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+Referenced by lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$\-::read\-Data\-File().
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a9f916d35ddafd3328d6c1a75372b3e2a}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!substract@{substract}}
+\index{substract@{substract}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{substract}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::substract (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{vector\-\_\-in\-\_\-1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a9f916d35ddafd3328d6c1a75372b3e2a}
+Substract method. Substracts the the input vector parameter's elements to the object's contents. Necessary for overloading the \char`\"{}-\/=\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em vector\-\_\-in\-\_\-1} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data}{Data}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_aab240114cfc6ba8f342cc7154dcb298d}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_a73766d175f2014fbe6d4497b1856edec}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!write\-Data\-File@{write\-Data\-File}}
+\index{write\-Data\-File@{write\-Data\-File}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{write\-Data\-File}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::write\-Data\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{output\-\_\-file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_a73766d175f2014fbe6d4497b1856edec}
+Write data method. Opens the file specified and writes the vector's data in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\-\_\-file} & Name of the file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data__vec_a2df91dd20f0a882dffe0872110dfeb7f}{lmx\-::\-Data\-\_\-vec$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__gmmVector__sparse_ad5041be88871fcb7fc0f78303e184c13}{\index{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}!write\-Element@{write\-Element}}
+\index{write\-Element@{write\-Element}!lmx::Type_gmmVector_sparse@{lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}}
+\subsubsection[{write\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse}$<$ T $>$\-::write\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{value, }
+\item[{const {\bf size\-\_\-type} \&}]{mrows, }
+\item[{const {\bf size\-\_\-type} \&}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__gmmVector__sparse_ad5041be88871fcb7fc0f78303e184c13}
+Write element method. Implements a method for writing data on the sparse matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in sparse matrix. \\
+\hline
+{\em ncolumns} & Column position in sparse matrix. \\
+\hline
+{\em value} & Numerical type value. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a41a4d2e19d1e150caff0d2011113f0fd}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__type__gmmvector__sparse1_8h}{lmx\-\_\-mat\-\_\-type\-\_\-gmmvector\-\_\-sparse1.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1internal__error" kind="class" prot="public">
+    <compoundname>lmx::internal_error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">logic_error</basecompoundref>
+    <includes refid="lmx__except_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1internal__error_1ab64ccb781c353c632d0f1d6bcfc8c249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::internal_error::internal_error</definition>
+        <argsstring>(const std::string &amp;what_arg)</argsstring>
+        <name>internal_error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>what_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with one argument. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>what_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing error&apos;s information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="111" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="111" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages errors that occur inside LMX methods and functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="403">
+        <label>logic_error</label>
+      </node>
+      <node id="402">
+        <label>lmx::internal_error</label>
+        <link refid="classlmx_1_1internal__error"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="405">
+        <label>logic_error</label>
+      </node>
+      <node id="404">
+        <label>lmx::internal_error</label>
+        <link refid="classlmx_1_1internal__error"/>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="105" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="105" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1internal__error_1ab64ccb781c353c632d0f1d6bcfc8c249" prot="public" virt="non-virtual"><scope>lmx::internal_error</scope><name>internal_error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

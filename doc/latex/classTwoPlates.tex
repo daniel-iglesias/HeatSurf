@@ -1,74 +1,261 @@
-\hypertarget{classTwoPlates}{
-\section{TwoPlates Class Reference}
-\label{classTwoPlates}\index{TwoPlates@{TwoPlates}}
+\hypertarget{classTwoPlates}{\section{Two\-Plates Class Reference}
+\label{classTwoPlates}\index{Two\-Plates@{Two\-Plates}}
 }
-{\tt \#include $<$/home/dani/Programs/beam\_\-dump/src/twoplates.h$>$}
 
-Inheritance diagram for TwoPlates:\nopagebreak
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/twoplates.\-h$>$}
+
+
+
+Inheritance diagram for Two\-Plates\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=55pt]{classTwoPlates__inherit__graph}
+\includegraphics[width=142pt]{classTwoPlates__inherit__graph}
 \end{center}
 \end{figure}
-Collaboration diagram for TwoPlates:\nopagebreak
+
+
+Collaboration diagram for Two\-Plates\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=55pt]{classTwoPlates__coll__graph}
+\includegraphics[width=142pt]{classTwoPlates__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classTwoPlates_c1dfa39d5a74aad3e53b12c4bbdcff4e}{
-\textbf{TwoPlates} (std::string, double, double, int, double, double)}
-\label{classTwoPlates_c1dfa39d5a74aad3e53b12c4bbdcff4e}
-
+\hyperlink{classTwoPlates_a66e45a6d02f3b6026f8dd99ff5d4653e}{Two\-Plates} ()
 \item 
-\hypertarget{classTwoPlates_23168c87f9097b2c1a4fa8cac4b61049}{
-void \textbf{setSections} (double)}
-\label{classTwoPlates_23168c87f9097b2c1a4fa8cac4b61049}
-
+\hyperlink{classTwoPlates_ac1dfa39d5a74aad3e53b12c4bbdcff4e}{Two\-Plates} (std\-::string, double, double, int, double, double)
 \item 
-\hypertarget{classTwoPlates_68c5911a0b3c24f59c3df0335f1e6c94}{
-void \textbf{computeEnergy} (double, std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&)}
-\label{classTwoPlates_68c5911a0b3c24f59c3df0335f1e6c94}
-
+\hyperlink{classTwoPlates_af74b10840a05812ceb5aa94ceb7a76f6}{$\sim$\-Two\-Plates} ()
 \item 
-\hypertarget{classTwoPlates_890d6b6ec49ff021d5d34bf1c2a83099}{
-void \textbf{computeGeometry} ()}
-\label{classTwoPlates_890d6b6ec49ff021d5d34bf1c2a83099}
-
+void \hyperlink{classTwoPlates_a23168c87f9097b2c1a4fa8cac4b61049}{set\-Sections} (double)
 \item 
-\hypertarget{classTwoPlates_8688d978fd1845b370d3fc14d8737e9e}{
-void \textbf{outputTable} ()}
-\label{classTwoPlates_8688d978fd1845b370d3fc14d8737e9e}
-
+void \hyperlink{classTwoPlates_a68c5911a0b3c24f59c3df0335f1e6c94}{compute\-Energy} (double, std\-::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&)
 \item 
-\hypertarget{classTwoPlates_33685a28d22c33fc1ea5df7ce33bbd66}{
-void \textbf{outputEnergyFile} ()}
-\label{classTwoPlates_33685a28d22c33fc1ea5df7ce33bbd66}
-
+void \hyperlink{classTwoPlates_a890d6b6ec49ff021d5d34bf1c2a83099}{compute\-Geometry} ()
 \item 
-\hypertarget{classTwoPlates_e8a0aeb3b391f9663f0359ef82b01d60}{
-void \textbf{outputPowerFile} ()}
-\label{classTwoPlates_e8a0aeb3b391f9663f0359ef82b01d60}
-
+void \hyperlink{classTwoPlates_a71bf9bd3453782adb97e94addabe23ec}{residue} (lmx\-::\-Vector$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
 \item 
-\hypertarget{classTwoPlates_6bff308b65ed2bfe33098ae210626b30}{
-double \textbf{getLength} ()}
-\label{classTwoPlates_6bff308b65ed2bfe33098ae210626b30}
-
-\end{CompactItemize}
+void \hyperlink{classTwoPlates_ad1ae0ed441b0ec1f7650501f648ebfdb}{jacobian} (lmx\-::\-Matrix$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classTwoPlates_ac0d504d8b9d2cad3b6facd0cb260d7de}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classTwoPlates_a30eb56de2071f12cb1405057dda35329}{compute\-Nodal\-Power} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classTwoPlates_a8688d978fd1845b370d3fc14d8737e9e}{output\-Table} ()
+\item 
+void \hyperlink{classTwoPlates_a978c078774fe74e99b8f4064a6126e84}{output\-Power\-File} (int)
+\item 
+void \hyperlink{classTwoPlates_aec5195987f06df32b1bd1c4c3c0068f9}{output\-Power\-Density\-File} ()
+\item 
+double \hyperlink{classTwoPlates_a6bff308b65ed2bfe33098ae210626b30}{get\-Length} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-\begin{Desc}
-\item[Author:]Daniel Iglesias $<$\href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.iglesias@ciemat.es}$>$ \end{Desc}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
 
 
-The documentation for this class was generated from the following files:\begin{CompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTwoPlates_a66e45a6d02f3b6026f8dd99ff5d4653e}{\index{Two\-Plates@{Two\-Plates}!Two\-Plates@{Two\-Plates}}
+\index{Two\-Plates@{Two\-Plates}!TwoPlates@{Two\-Plates}}
+\subsubsection[{Two\-Plates}]{\setlength{\rightskip}{0pt plus 5cm}Two\-Plates\-::\-Two\-Plates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTwoPlates_a66e45a6d02f3b6026f8dd99ff5d4653e}
+\hypertarget{classTwoPlates_ac1dfa39d5a74aad3e53b12c4bbdcff4e}{\index{Two\-Plates@{Two\-Plates}!Two\-Plates@{Two\-Plates}}
+\index{Two\-Plates@{Two\-Plates}!TwoPlates@{Two\-Plates}}
+\subsubsection[{Two\-Plates}]{\setlength{\rightskip}{0pt plus 5cm}Two\-Plates\-::\-Two\-Plates (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-\_\-in, }
+\item[{double}]{par1\-\_\-in, }
+\item[{double}]{par2\-\_\-in, }
+\item[{int}]{par3\-\_\-in, }
+\item[{double}]{width\-\_\-in, }
+\item[{double}]{orientation\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classTwoPlates_ac1dfa39d5a74aad3e53b12c4bbdcff4e}
+
+
+References Geometry\-::length.
+
+\hypertarget{classTwoPlates_af74b10840a05812ceb5aa94ceb7a76f6}{\index{Two\-Plates@{Two\-Plates}!$\sim$\-Two\-Plates@{$\sim$\-Two\-Plates}}
+\index{$\sim$\-Two\-Plates@{$\sim$\-Two\-Plates}!TwoPlates@{Two\-Plates}}
+\subsubsection[{$\sim$\-Two\-Plates}]{\setlength{\rightskip}{0pt plus 5cm}Two\-Plates\-::$\sim$\-Two\-Plates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTwoPlates_af74b10840a05812ceb5aa94ceb7a76f6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTwoPlates_a68c5911a0b3c24f59c3df0335f1e6c94}{\index{Two\-Plates@{Two\-Plates}!compute\-Energy@{compute\-Energy}}
+\index{compute\-Energy@{compute\-Energy}!TwoPlates@{Two\-Plates}}
+\subsubsection[{compute\-Energy}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::compute\-Energy (
+\begin{DoxyParamCaption}
+\item[{double}]{section, }
+\item[{std\-::vector$<$ {\bf Particle} $\ast$ $>$ \&}]{particles}
+\end{DoxyParamCaption}
+)}}\label{classTwoPlates_a68c5911a0b3c24f59c3df0335f1e6c94}
+
+
+References Geometry\-::length, Geometry\-::sections, and Geometry\-::sectors.
+
+\hypertarget{classTwoPlates_a890d6b6ec49ff021d5d34bf1c2a83099}{\index{Two\-Plates@{Two\-Plates}!compute\-Geometry@{compute\-Geometry}}
+\index{compute\-Geometry@{compute\-Geometry}!TwoPlates@{Two\-Plates}}
+\subsubsection[{compute\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::compute\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_a890d6b6ec49ff021d5d34bf1c2a83099}
+
+
+Implements \hyperlink{classGeometry_a3e77ac889d1e440c24efbde630aa1933}{Geometry}.
+
+
+
+References Geometry\-::elements, Geometry\-::grid, Geometry\-::grid\-Points, Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, and Geometry\-::sectors.
+
+\hypertarget{classTwoPlates_ac0d504d8b9d2cad3b6facd0cb260d7de}{\index{Two\-Plates@{Two\-Plates}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!TwoPlates@{Two\-Plates}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_ac0d504d8b9d2cad3b6facd0cb260d7de}
+
+
+Implements \hyperlink{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}{Geometry}.
+
+
+
+References Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Particle\-::get\-Z(), Particle\-::get\-Zdiv(), jacobian(), Geometry\-::param\-Trajectories, and residue().
+
+\hypertarget{classTwoPlates_a30eb56de2071f12cb1405057dda35329}{\index{Two\-Plates@{Two\-Plates}!compute\-Nodal\-Power@{compute\-Nodal\-Power}}
+\index{compute\-Nodal\-Power@{compute\-Nodal\-Power}!TwoPlates@{Two\-Plates}}
+\subsubsection[{compute\-Nodal\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::compute\-Nodal\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_a30eb56de2071f12cb1405057dda35329}
+
+
+Implements \hyperlink{classGeometry_af60650f8ce6d5a220928ccd7395120df}{Geometry}.
+
+\hypertarget{classTwoPlates_a6bff308b65ed2bfe33098ae210626b30}{\index{Two\-Plates@{Two\-Plates}!get\-Length@{get\-Length}}
+\index{get\-Length@{get\-Length}!TwoPlates@{Two\-Plates}}
+\subsubsection[{get\-Length}]{\setlength{\rightskip}{0pt plus 5cm}double Two\-Plates\-::get\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTwoPlates_a6bff308b65ed2bfe33098ae210626b30}
+
+
+References Geometry\-::length.
+
+\hypertarget{classTwoPlates_ad1ae0ed441b0ec1f7650501f648ebfdb}{\index{Two\-Plates@{Two\-Plates}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!TwoPlates@{Two\-Plates}}
+\subsubsection[{jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::jacobian (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Matrix$<$ double $>$ \&}]{jac, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classTwoPlates_ad1ae0ed441b0ec1f7650501f648ebfdb}
+
+
+References Geometry\-::length, and Geometry\-::z0.
+
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classTwoPlates_aec5195987f06df32b1bd1c4c3c0068f9}{\index{Two\-Plates@{Two\-Plates}!output\-Power\-Density\-File@{output\-Power\-Density\-File}}
+\index{output\-Power\-Density\-File@{output\-Power\-Density\-File}!TwoPlates@{Two\-Plates}}
+\subsubsection[{output\-Power\-Density\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::output\-Power\-Density\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_aec5195987f06df32b1bd1c4c3c0068f9}
+
+
+Implements \hyperlink{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}{Geometry}.
+
+
+
+References Geometry\-::elements, Geometry\-::nodes, and Geometry\-::sectors.
+
+\hypertarget{classTwoPlates_a978c078774fe74e99b8f4064a6126e84}{\index{Two\-Plates@{Two\-Plates}!output\-Power\-File@{output\-Power\-File}}
+\index{output\-Power\-File@{output\-Power\-File}!TwoPlates@{Two\-Plates}}
+\subsubsection[{output\-Power\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::output\-Power\-File (
+\begin{DoxyParamCaption}
+\item[{int}]{particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_a978c078774fe74e99b8f4064a6126e84}
+
+
+Implements \hyperlink{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}{Geometry}.
+
+
+
+References Geometry\-::elements, and Geometry\-::sectors.
+
+\hypertarget{classTwoPlates_a8688d978fd1845b370d3fc14d8737e9e}{\index{Two\-Plates@{Two\-Plates}!output\-Table@{output\-Table}}
+\index{output\-Table@{output\-Table}!TwoPlates@{Two\-Plates}}
+\subsubsection[{output\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::output\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_a8688d978fd1845b370d3fc14d8737e9e}
+
+
+Implements \hyperlink{classGeometry_a60e1424a222ba59284b81812aff34148}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, and Geometry\-::sectors.
+
+\hypertarget{classTwoPlates_a71bf9bd3453782adb97e94addabe23ec}{\index{Two\-Plates@{Two\-Plates}!residue@{residue}}
+\index{residue@{residue}!TwoPlates@{Two\-Plates}}
+\subsubsection[{residue}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::residue (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{res, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classTwoPlates_a71bf9bd3453782adb97e94addabe23ec}
+
+
+References Geometry\-::length, and Geometry\-::z0.
+
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classTwoPlates_a23168c87f9097b2c1a4fa8cac4b61049}{\index{Two\-Plates@{Two\-Plates}!set\-Sections@{set\-Sections}}
+\index{set\-Sections@{set\-Sections}!TwoPlates@{Two\-Plates}}
+\subsubsection[{set\-Sections}]{\setlength{\rightskip}{0pt plus 5cm}void Two\-Plates\-::set\-Sections (
+\begin{DoxyParamCaption}
+\item[{double}]{distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classTwoPlates_a23168c87f9097b2c1a4fa8cac4b61049}
+
+
+Implements \hyperlink{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}{Geometry}.
+
+
+
+References Geometry\-::length, and Geometry\-::sections.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{twoplates_8h}{twoplates.h}\item 
-src/twoplates.cpp\end{CompactItemize}
+src/\hyperlink{twoplates_8h}{twoplates.\-h}\item 
+src/\hyperlink{twoplates_8cpp}{twoplates.\-cpp}\end{DoxyCompactItemize}

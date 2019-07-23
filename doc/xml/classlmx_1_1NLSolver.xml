@@ -1,0 +1,721 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1NLSolver" kind="class" prot="public">
+    <compoundname>lmx::NLSolver</compoundname>
+    <includes refid="lmx__nlsolvers_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Sys</declname>
+        <defname>Sys</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a1d601d015341349605138621991eea0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt;</type>
+        <definition>lmx::Vector&lt;T&gt; lmx::NLSolver&lt; Sys, T &gt;::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coordinates values for nl iterations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="190" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a61db6d3ea586fdf035e0361bf707bcd6" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt;</type>
+        <definition>lmx::Vector&lt;T&gt; lmx::NLSolver&lt; Sys, T &gt;::delta_q</definition>
+        <argsstring></argsstring>
+        <name>delta_q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coordinates values for nl iterations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="192" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a662e5db61854eadb1186f498c173a7bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt;</type>
+        <definition>lmx::Matrix&lt;T&gt; lmx::NLSolver&lt; Sys, T &gt;::jac_matrix</definition>
+        <argsstring></argsstring>
+        <name>jac_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jacobian -tangent- matrix (only used in Newton&apos;s method). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="194" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ad710d78c42a21c5170449e52008f7583" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt;</type>
+        <definition>lmx::Vector&lt;T&gt; lmx::NLSolver&lt; Sys, T &gt;::res_vector</definition>
+        <argsstring></argsstring>
+        <name>res_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Residual vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="196" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ae526d7f20b03ae10aba6d7ffb7ce8e23" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1LinearSystem" kindref="compound">lmx::LinearSystem</ref>&lt; T &gt; *</type>
+        <definition>lmx::LinearSystem&lt;T&gt;* lmx::NLSolver&lt; Sys, T &gt;::increment</definition>
+        <argsstring></argsstring>
+        <name>increment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="198" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a4dc301819689fa6e1eb902da27ea040c" prot="private" static="no" mutable="no">
+        <type>Sys *</type>
+        <definition>Sys* lmx::NLSolver&lt; Sys, T &gt;::theSystem</definition>
+        <argsstring></argsstring>
+        <name>theSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="200" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a61273a21c9d036540f90236634cecbd4" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::* lmx::NLSolver&lt; Sys, T &gt;::res)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="202" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a593e214b5e74b85c77a036085942fcd8" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::* lmx::NLSolver&lt; Sys, T &gt;::jac)(lmx::Matrix&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</definition>
+        <argsstring>)(lmx::Matrix&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</argsstring>
+        <name>jac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="204" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ac293e2f5d56ee5b5275f03ae8a96d163" prot="private" static="no" mutable="no">
+        <type>bool(Sys::*</type>
+        <definition>bool(Sys::* lmx::NLSolver&lt; Sys, T &gt;::conv1)(lmx::Vector&lt; T &gt; &amp;)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;)</argsstring>
+        <name>conv1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="206" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a6302fd7d39ad218b574c89d15ef77df6" prot="private" static="no" mutable="no">
+        <type>bool(Sys::*</type>
+        <definition>bool(Sys::* lmx::NLSolver&lt; Sys, T &gt;::conv2)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</argsstring>
+        <name>conv2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="208" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ae8bad881ba626c5700ded3f744de5a15" prot="private" static="no" mutable="no">
+        <type>bool(Sys::*</type>
+        <definition>bool(Sys::* lmx::NLSolver&lt; Sys, T &gt;::conv3)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;)</argsstring>
+        <name>conv3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="210" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a2bf0bbb4b43c7c556c26f337460e02c9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::NLSolver&lt; Sys, T &gt;::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="212" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a31e3639ab581795bb2b573f9264ef11b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::NLSolver&lt; Sys, T &gt;::energy_i</definition>
+        <argsstring></argsstring>
+        <name>energy_i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="212" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1af7760cc9007ab1cefcb7d53e19806c14" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::NLSolver&lt; Sys, T &gt;::energy_0</definition>
+        <argsstring></argsstring>
+        <name>energy_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="212" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ac01abac2ce5ecc4e34af163247a6f5a4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::NLSolver&lt; Sys, T &gt;::externalConvergence1</definition>
+        <argsstring></argsstring>
+        <name>externalConvergence1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="213" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ae8e6dbcb073212577cd52dbaaf748725" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::NLSolver&lt; Sys, T &gt;::externalConvergence2</definition>
+        <argsstring></argsstring>
+        <name>externalConvergence2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="214" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a99bf1c9daa1b46145a205669661ad572" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::NLSolver&lt; Sys, T &gt;::externalConvergence3</definition>
+        <argsstring></argsstring>
+        <name>externalConvergence3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="215" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1aab724289ad446e61009de0a62ed379d9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::NLSolver&lt; Sys, T &gt;::deltaInResidue</definition>
+        <argsstring></argsstring>
+        <name>deltaInResidue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="216" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1ab4fd91346e8c3a0cc8c73f56bd21a64e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::NLSolver&lt; Sys, T &gt;::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="217" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1NLSolver_1a93881badbcfe050e012a097327c70209" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::NLSolver&lt; Sys, T &gt;::iteration</definition>
+        <argsstring></argsstring>
+        <name>iteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="218" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a403859fcc0b6e85464243ea23c552f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::NLSolver&lt; Sys, T &gt;::NLSolver</definition>
+        <argsstring>()</argsstring>
+        <name>NLSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="59" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a5460815aa8d0f067fcb650871ab8f964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::NLSolver&lt; Sys, T &gt;::~NLSolver</definition>
+        <argsstring>()</argsstring>
+        <name>~NLSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="75" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a39a943c3a151c4b4d10cd429c1457038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setInfo</definition>
+        <argsstring>(int level)</argsstring>
+        <name>setInfo</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set information level. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="88" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="88" bodyend="88"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a01237e26f4df6145f5f27c059f71878a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class C</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setInitialConfiguration</definition>
+        <argsstring>(const lmx::Vector&lt; C &gt; &amp;q_in)</argsstring>
+        <name>setInitialConfiguration</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; C &gt; &amp;</type>
+          <declname>q_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Takes a <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref> for initial value guess and dimensioning the problem. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial guess values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="92" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="92" bodyend="103"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a4ae05d136ecb91323840ad8978203ed0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setSystem</definition>
+        <argsstring>(Sys &amp;system_in)</argsstring>
+        <name>setSystem</name>
+        <param>
+          <type>Sys &amp;</type>
+          <declname>system_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets witch Sys object is going to be used for member function calls. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Sys object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="105" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="105" bodyend="110"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a01792e660c969643a23b1547429cc63e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setDeltaInResidue</definition>
+        <argsstring>(bool state=1)</argsstring>
+        <name>setDeltaInResidue</name>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether the parameter in Residue function corresponds to the actual variables configuration or indicates the increment of those variables. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE (default) if the variable&apos;s increment is going to be passed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="112" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a9794630d37fe7463b1ab9e4cbe6914cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setResidue</definition>
+        <argsstring>(void(Sys::*residue_in)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;))</argsstring>
+        <name>setResidue</name>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;, <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;)</type>
+          <declname>residue_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the member function that computes the residue. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>residue_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue member function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="121" bodyend="126"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a8b448fdf2f56d4a4e0ca751fc87151c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setJacobian</definition>
+        <argsstring>(void(Sys::*jacobian_in)(lmx::Matrix&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;))</argsstring>
+        <name>setJacobian</name>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;, <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;)</type>
+          <declname>jacobian_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the member function that computes the tangent to the residue. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacobian_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jacobian member function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="128" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="128" bodyend="133"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1acf245c525c2ddbfd8f64e7f98854cf37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setConvergence</definition>
+        <argsstring>(double eps_in)</argsstring>
+        <name>setConvergence</name>
+        <param>
+          <type>double</type>
+          <declname>eps_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the epsilon value for the L2 norm. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the maximum L2 limit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="135" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="135" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a436576e5e3f62396ec36845528f4c3d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setConvergence</definition>
+        <argsstring>(bool(Sys::*convergence_in)(lmx::Vector&lt; T &gt; &amp;))</argsstring>
+        <name>setConvergence</name>
+        <param>
+          <type>bool(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;)</type>
+          <declname>convergence_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the optional member function for convergence evaluation with residue parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>convergence_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Convergence evaluation member function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="142" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="142" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1aac508bdd31eae153f3ffb2d18ebcf371" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setConvergence</definition>
+        <argsstring>(bool(Sys::*convergence_in)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;))</argsstring>
+        <name>setConvergence</name>
+        <param>
+          <type>bool(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;, <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;)</type>
+          <declname>convergence_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the optional member function for convergence evaluation with residue and configuration parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>convergence_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Convergence evaluation member function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="152" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="153" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a372b8c898ea4fe6b0bd17e4acf8474be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setConvergence</definition>
+        <argsstring>(bool(Sys::*convergence_in)(lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;, lmx::Vector&lt; T &gt; &amp;))</argsstring>
+        <name>setConvergence</name>
+        <param>
+          <type>bool(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;, <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;, <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;)</type>
+          <declname>convergence_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the optional member function for convergence evaluation with residue, configuration and increment vector parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>convergence_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Convergence evaluation member function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="163" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="163" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a152ef86802ca04b4717798855e3b0051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lmx::NLSolver&lt; Sys, T &gt;::convergence</definition>
+        <argsstring>()</argsstring>
+        <name>convergence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal convergence criteria. Is used if no external convergence function is set. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="174" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="229" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a5a62129861558b6ce4786ef85b23a232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::solve</definition>
+        <argsstring>(int max_iter=100)</argsstring>
+        <name>solve</name>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solve function. Initiates the nl-solver loop. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the maximun number of iterations for each iteration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="176" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="258" bodyend="337"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="namespacelmx_1a40253242519478100fc1164db7994957" compoundref="lmx__base__selector_8h" startline="102">lmx::nl_solver_type</references>
+        <references refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</references>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a02580887f19da89025137b9655c0735e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>lmx::Vector&lt;T&gt;&amp; lmx::NLSolver&lt; Sys, T &gt;::getSolution</definition>
+        <argsstring>()</argsstring>
+        <name>getSolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solution vector read-write access. <simplesect kind="return"><para>Reference to the solution vector. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="178" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="178" bodyend="183"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1NLSolver_1a361920d06d31fe5b606bec90b946d7de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::NLSolver&lt; Sys, T &gt;::setSparse</definition>
+        <argsstring>(std::vector&lt; size_type &gt; &amp;rows, std::vector&lt; size_type &gt; columns)</argsstring>
+        <name>setSparse</name>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt;</type>
+          <declname>columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="185" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="185" bodyend="187"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. Non-linear systems implementation: &quot;R(q) = 0&quot; . </para>    </briefdescription>
+    <detaileddescription>
+<para>This class permits the creation of a non-linear solver object.</para><para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_nlsolvers.h" bodystart="54" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1NLSolver_1ac293e2f5d56ee5b5275f03ae8a96d163" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>conv1</name></member>
+      <member refid="classlmx_1_1NLSolver_1a6302fd7d39ad218b574c89d15ef77df6" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>conv2</name></member>
+      <member refid="classlmx_1_1NLSolver_1ae8bad881ba626c5700ded3f744de5a15" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>conv3</name></member>
+      <member refid="classlmx_1_1NLSolver_1a152ef86802ca04b4717798855e3b0051" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>convergence</name></member>
+      <member refid="classlmx_1_1NLSolver_1a61db6d3ea586fdf035e0361bf707bcd6" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>delta_q</name></member>
+      <member refid="classlmx_1_1NLSolver_1aab724289ad446e61009de0a62ed379d9" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>deltaInResidue</name></member>
+      <member refid="classlmx_1_1NLSolver_1af7760cc9007ab1cefcb7d53e19806c14" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>energy_0</name></member>
+      <member refid="classlmx_1_1NLSolver_1a31e3639ab581795bb2b573f9264ef11b" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>energy_i</name></member>
+      <member refid="classlmx_1_1NLSolver_1a2bf0bbb4b43c7c556c26f337460e02c9" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>epsilon</name></member>
+      <member refid="classlmx_1_1NLSolver_1ac01abac2ce5ecc4e34af163247a6f5a4" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>externalConvergence1</name></member>
+      <member refid="classlmx_1_1NLSolver_1ae8e6dbcb073212577cd52dbaaf748725" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>externalConvergence2</name></member>
+      <member refid="classlmx_1_1NLSolver_1a99bf1c9daa1b46145a205669661ad572" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>externalConvergence3</name></member>
+      <member refid="classlmx_1_1NLSolver_1a02580887f19da89025137b9655c0735e" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>getSolution</name></member>
+      <member refid="classlmx_1_1NLSolver_1ae526d7f20b03ae10aba6d7ffb7ce8e23" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>increment</name></member>
+      <member refid="classlmx_1_1NLSolver_1ab4fd91346e8c3a0cc8c73f56bd21a64e" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>info</name></member>
+      <member refid="classlmx_1_1NLSolver_1a93881badbcfe050e012a097327c70209" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>iteration</name></member>
+      <member refid="classlmx_1_1NLSolver_1a593e214b5e74b85c77a036085942fcd8" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>jac</name></member>
+      <member refid="classlmx_1_1NLSolver_1a662e5db61854eadb1186f498c173a7bc" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>jac_matrix</name></member>
+      <member refid="classlmx_1_1NLSolver_1a403859fcc0b6e85464243ea23c552f68" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>NLSolver</name></member>
+      <member refid="classlmx_1_1NLSolver_1a1d601d015341349605138621991eea0b" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>q</name></member>
+      <member refid="classlmx_1_1NLSolver_1a61273a21c9d036540f90236634cecbd4" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>res</name></member>
+      <member refid="classlmx_1_1NLSolver_1ad710d78c42a21c5170449e52008f7583" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>res_vector</name></member>
+      <member refid="classlmx_1_1NLSolver_1acf245c525c2ddbfd8f64e7f98854cf37" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setConvergence</name></member>
+      <member refid="classlmx_1_1NLSolver_1a436576e5e3f62396ec36845528f4c3d3" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setConvergence</name></member>
+      <member refid="classlmx_1_1NLSolver_1aac508bdd31eae153f3ffb2d18ebcf371" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setConvergence</name></member>
+      <member refid="classlmx_1_1NLSolver_1a372b8c898ea4fe6b0bd17e4acf8474be" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setConvergence</name></member>
+      <member refid="classlmx_1_1NLSolver_1a01792e660c969643a23b1547429cc63e" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setDeltaInResidue</name></member>
+      <member refid="classlmx_1_1NLSolver_1a39a943c3a151c4b4d10cd429c1457038" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setInfo</name></member>
+      <member refid="classlmx_1_1NLSolver_1a01237e26f4df6145f5f27c059f71878a" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setInitialConfiguration</name></member>
+      <member refid="classlmx_1_1NLSolver_1a8b448fdf2f56d4a4e0ca751fc87151c9" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setJacobian</name></member>
+      <member refid="classlmx_1_1NLSolver_1a9794630d37fe7463b1ab9e4cbe6914cb" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setResidue</name></member>
+      <member refid="classlmx_1_1NLSolver_1a361920d06d31fe5b606bec90b946d7de" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setSparse</name></member>
+      <member refid="classlmx_1_1NLSolver_1a4ae05d136ecb91323840ad8978203ed0" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>setSystem</name></member>
+      <member refid="classlmx_1_1NLSolver_1a5a62129861558b6ce4786ef85b23a232" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>solve</name></member>
+      <member refid="classlmx_1_1NLSolver_1a4dc301819689fa6e1eb902da27ea040c" prot="private" virt="non-virtual"><scope>lmx::NLSolver</scope><name>theSystem</name></member>
+      <member refid="classlmx_1_1NLSolver_1a5460815aa8d0f067fcb650871ab8f964" prot="public" virt="non-virtual"><scope>lmx::NLSolver</scope><name>~NLSolver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="lmx::Data&lt; T &gt;" name="lmx::Data&lt; T &gt;">
+<area shape="rect" id="node2" href="$classlmx_1_1Data__mat.html" title="Template class Data_mat. Container for Matrix and Vector data. " alt="" coords="161,107,295,133"/>
+<area shape="rect" id="node7" href="$classlmx_1_1Data__vec.html" title="Template class Data_vec. Container for Vector data. " alt="" coords="162,216,294,243"/>
+<area shape="rect" id="node3" href="$classlmx_1_1Type__csc.html" title="Compressed Storaged by Columns matrix. " alt="" coords="371,5,504,32"/>
+<area shape="rect" id="node4" href="$classlmx_1_1Type__gmm.html" title="Template class Type_gmm. " alt="" coords="366,56,509,83"/>
+<area shape="rect" id="node5" href="$classlmx_1_1Type__gmm__sparse.html" title="Template class Type_gmm_sparse. " alt="" coords="344,107,531,133"/>
+<area shape="rect" id="node6" href="$classlmx_1_1Type__stdmatrix.html" title="Template class Type_stdmatrix. " alt="" coords="355,157,520,184"/>
+<area shape="rect" id="node8" href="$classlmx_1_1Type__gmmVector__sparse.html" title="Template class Type_gmmVector_sparse. " alt="" coords="363,209,512,250"/>
+<area shape="rect" id="node9" href="$classlmx_1_1Type__stdVector.html" title="Template class Type_stdVector. " alt="" coords="354,275,521,301"/>
+</map>

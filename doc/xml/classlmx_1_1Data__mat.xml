@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Data__mat" kind="class" prot="public" abstract="yes">
+    <compoundname>lmx::Data_mat</compoundname>
+    <basecompoundref refid="classlmx_1_1Data" prot="public" virt="non-virtual">lmx::Data&lt; T &gt;</basecompoundref>
+    <derivedcompoundref refid="classlmx_1_1Type__csc" prot="public" virt="non-virtual">lmx::Type_csc&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1Type__gmm" prot="public" virt="non-virtual">lmx::Type_gmm&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1Type__gmm__sparse" prot="public" virt="non-virtual">lmx::Type_gmm_sparse&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1Type__stdmatrix" prot="public" virt="non-virtual">lmx::Type_stdmatrix&lt; T &gt;</derivedcompoundref>
+    <includes refid="lmx__mat__data__blas_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1a03e90b0b3053c99ef6d2e183d763511e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Data_mat&lt; T &gt;::Data_mat</definition>
+        <argsstring>()</argsstring>
+        <name>Data_mat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1a0c57d9772b2eccf6f796e60f1e156964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual lmx::Data_mat&lt; T &gt;::~Data_mat</definition>
+        <argsstring>()</argsstring>
+        <name>~Data_mat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1a850c5fadc5139992f32bf15316309b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::multiply</definition>
+        <argsstring>(const Data&lt; T &gt; *, const Data&lt; T &gt; *)=0</argsstring>
+        <name>multiply</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a5f2764badb799b42b956cb6bd384b55f">multiply</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a46967449410f995dba61743d2819005e">multiply</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a81c1863c5a35508203ed5df0a05e5ba1">multiply</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8">multiply</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8">multiply</reimplementedby>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplication function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1afd492bb04f83b8b96b5964834436290a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::read_mm_file</definition>
+        <argsstring>(const char *)=0</argsstring>
+        <name>read_mm_file</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1adf2926b0afd5a318fdc730225d10d2aa">read_mm_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a28f293a101f7e860d1ea1a113a923864">read_mm_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a1fdc8733b30705aac2d86a43c4edfa1d">read_mm_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f">read_mm_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f">read_mm_file</reimplementedby>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> Market format method. Opens the file specified and reads the matrix&apos;s data in it, suposing it&apos;s stored in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> Market format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1add96428335bb5119c7f5126ebb07fb10" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::read_hb_file</definition>
+        <argsstring>(const char *)=0</argsstring>
+        <name>read_hb_file</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a167170de05513c15944e09722a29d699">read_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a7463e17cac7443907a717cbe4814bc8b">read_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1abd3bbdfd7c363a438edb65a6dedba1c2">read_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088">read_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088">read_hb_file</reimplementedby>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data in Harwell-Boeing format method. Opens the file specified and reads the matrix&apos;s data in it, suposing it&apos;s stored in Harwell-Boeing format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1adbbffb805ce19ca7e9d2a2f70d0f7bcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::write_hb_file</definition>
+        <argsstring>(const char *)=0</argsstring>
+        <name>write_hb_file</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a9b9007bdd388c37f469496d940be9416">write_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a03639818d7f55d592ec51e58b3ba0b87">write_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1ae5dedc139e0e75c851b11022226c35f4">write_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66">write_hb_file</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66">write_hb_file</reimplementedby>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data in Harwell-Boeing format method. Opens the file specified and writes the matrix&apos;s data in it. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1aace5fad359799ebcd14dd79c458b340e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::trn</definition>
+        <argsstring>()=0</argsstring>
+        <name>trn</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a77e01d8d8334bd448028d75c33e72f7f">trn</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a73b5260b87a6188af420f6288e1fc573">trn</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1af8756bbdf946d35e9130d921785f7dc9">trn</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0">trn</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0">trn</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Traspose matrix function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1aec8ef2dab6c85ad0461718eb2aafe6ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool lmx::Data_mat&lt; T &gt;::exists</definition>
+        <argsstring>(size_type, size_type)=0</argsstring>
+        <name>exists</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1af7a2ce6b3c1f7221759e5714be2a6ab2">exists</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a65cedef38a61900940cd3efe616d7182">exists</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1ad5185c1f7082e76afc2470f47462b4df">exists</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a737490a62d48b1694bdbd173bbf284d5">exists</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a737490a62d48b1694bdbd173bbf284d5">exists</reimplementedby>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns TRUE or FALSE depending of element existance. Needed for less expensive access to CSC matrices. <simplesect kind="return"><para>TRUE if the element exists in internal storage structure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1a1b94e36086c4c181f8001f277ed89bbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::factorize</definition>
+        <argsstring>()=0</argsstring>
+        <name>factorize</name>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a0bc2cb137b550114d39577510a018e97">factorize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a63603bd4b908d19c75e289f709d4a575">factorize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a84777801660805f7e6f1a93861d0c9ac">factorize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a84777801660805f7e6f1a93861d0c9ac">factorize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__csc_1acd31af597828197da686efaecc0b2cb7">factorize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1a8401959d4f7f008144de038293e24d5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::subsSolve</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;rhs)</argsstring>
+        <name>subsSolve</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a7b4cf55fb69d0bc365e41c47eee0a676">subsSolve</reimplementedby>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="96" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1ac599c952372bc78b03c01ed4c7ed5094" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::setSparsePattern</definition>
+        <argsstring>(Vector&lt; size_type &gt; &amp;, Vector&lt; size_type &gt; &amp;)</argsstring>
+        <name>setSparsePattern</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a3a9e534d84a2cf1265adfe87087904b6">setSparsePattern</reimplementedby>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepares the sparse structure of a CSC matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" bodystart="99" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__mat_1a58692a61f0d7b7c5c74225800a30da91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_mat&lt; T &gt;::setSparsePattern</definition>
+        <argsstring>(std::vector&lt; size_type &gt; &amp;, std::vector&lt; size_type &gt; &amp;)</argsstring>
+        <name>setSparsePattern</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a0d71c07fe7b4ded4eb8c4d70e8e21117">setSparsePattern</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepares the sparse structure of a CSC matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" line="103" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_mat.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>. Container for <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> data. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class represents the skeleton for the data container used by <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> classes. No parameter nor function implementation here, just pure virtual class. See derived classes for details in implementation. Also maybe useful to see how this class is used in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> classes.</para><para><simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="287">
+        <label>lmx::Type_stdmatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__stdmatrix"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>lmx::Data_mat&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__mat"/>
+        <childnode refid="283" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>lmx::Type_gmm&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmm"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>lmx::Type_gmm_sparse&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmm__sparse"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+      <node id="284">
+        <label>lmx::Type_csc&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__csc"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="288">
+        <label>lmx::Data_mat&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__mat"/>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="46" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>add</name></member>
+      <member refid="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>addElement</name></member>
+      <member refid="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>cleanBelow</name></member>
+      <member refid="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>clear</name></member>
+      <member refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" prot="public" virt="non-virtual"><scope>lmx::Data_mat</scope><name>Data</name></member>
+      <member refid="classlmx_1_1Data__mat_1a03e90b0b3053c99ef6d2e183d763511e" prot="public" virt="non-virtual"><scope>lmx::Data_mat</scope><name>Data_mat</name></member>
+      <member refid="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>equals</name></member>
+      <member refid="classlmx_1_1Data__mat_1aec8ef2dab6c85ad0461718eb2aafe6ae" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>exists</name></member>
+      <member refid="classlmx_1_1Data__mat_1a1b94e36086c4c181f8001f277ed89bbf" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>factorize</name></member>
+      <member refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>getCols</name></member>
+      <member refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>getRows</name></member>
+      <member refid="classlmx_1_1Data__mat_1a850c5fadc5139992f32bf15316309b52" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>multiply</name></member>
+      <member refid="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>multiplyElements</name></member>
+      <member refid="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>multiplyScalar</name></member>
+      <member refid="classlmx_1_1Data__mat_1add96428335bb5119c7f5126ebb07fb10" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>read_hb_file</name></member>
+      <member refid="classlmx_1_1Data__mat_1afd492bb04f83b8b96b5964834436290a" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>read_mm_file</name></member>
+      <member refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>readElement</name></member>
+      <member refid="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>reset</name></member>
+      <member refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>resize</name></member>
+      <member refid="classlmx_1_1Data__mat_1ac599c952372bc78b03c01ed4c7ed5094" prot="public" virt="virtual"><scope>lmx::Data_mat</scope><name>setSparsePattern</name></member>
+      <member refid="classlmx_1_1Data__mat_1a58692a61f0d7b7c5c74225800a30da91" prot="public" virt="virtual"><scope>lmx::Data_mat</scope><name>setSparsePattern</name></member>
+      <member refid="classlmx_1_1Data__mat_1a8401959d4f7f008144de038293e24d5e" prot="public" virt="virtual"><scope>lmx::Data_mat</scope><name>subsSolve</name></member>
+      <member refid="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>substract</name></member>
+      <member refid="classlmx_1_1Data__mat_1aace5fad359799ebcd14dd79c458b340e" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>trn</name></member>
+      <member refid="classlmx_1_1Data__mat_1adbbffb805ce19ca7e9d2a2f70d0f7bcd" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>write_hb_file</name></member>
+      <member refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" prot="public" virt="pure-virtual"><scope>lmx::Data_mat</scope><name>writeElement</name></member>
+      <member refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" prot="public" virt="virtual"><scope>lmx::Data_mat</scope><name>~Data</name></member>
+      <member refid="classlmx_1_1Data__mat_1a0c57d9772b2eccf6f796e60f1e156964" prot="public" virt="virtual"><scope>lmx::Data_mat</scope><name>~Data_mat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

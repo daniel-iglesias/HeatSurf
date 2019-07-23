@@ -1,1 +1,6 @@
-<area shape="rect" href="$simulation_8h.html" title="Two symmetrical plates geometry." alt="" coords="5,80,133,107">
+<map id="src/twoplates.h" name="src/twoplates.h">
+<area shape="rect" id="node2" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="78,80,188,107"/>
+<area shape="rect" id="node5" href="$twoplates_8cpp.html" title="src/twoplates.cpp" alt="" coords="213,80,333,107"/>
+<area shape="rect" id="node3" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="5,155,117,181"/>
+<area shape="rect" id="node4" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="143,155,268,181"/>
+</map>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1IntegratorBaseImplicit" kind="class" prot="public" abstract="yes">
+    <compoundname>lmx::IntegratorBaseImplicit</compoundname>
+    <basecompoundref refid="classlmx_1_1IntegratorBase" prot="public" virt="non-virtual">lmx::IntegratorBase&lt; T &gt;</basecompoundref>
+    <derivedcompoundref refid="classlmx_1_1IntegratorAM" prot="public" virt="non-virtual">lmx::IntegratorAM&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1IntegratorBDF" prot="public" virt="non-virtual">lmx::IntegratorBDF&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1IntegratorNEWMARK" prot="public" virt="non-virtual">lmx::IntegratorNEWMARK&lt; T &gt;</derivedcompoundref>
+    <includes refid="lmx__diff__integrator__base__implicit_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1IntegratorBaseImplicit_1a9ebebca6cd29dce17da68385085870be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorBaseImplicit&lt; T &gt;::IntegratorBaseImplicit</definition>
+        <argsstring>()</argsstring>
+        <name>IntegratorBaseImplicit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBaseImplicit_1a6b8b7489aead3b0634db14bbae16333f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual lmx::IntegratorBaseImplicit&lt; T &gt;::~IntegratorBaseImplicit</definition>
+        <argsstring>()</argsstring>
+        <name>~IntegratorBaseImplicit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBaseImplicit_1a142802380bd75f1118a8815b2d2f0c75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool lmx::IntegratorBaseImplicit&lt; T &gt;::isExplicit</definition>
+        <argsstring>()</argsstring>
+        <name>isExplicit</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a78adaaa37562ad47226ee2192fd44bd0">isExplicit</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns 1 (TRUE) if it is an explicit-scheme integrator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" bodystart="60" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBaseImplicit_1a8ee5ecd8b0bae40d8d79f48ca69f350f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double lmx::IntegratorBaseImplicit&lt; T &gt;::getPartialQdot</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPartialQdot</name>
+        <reimplementedby refid="classlmx_1_1IntegratorNEWMARK_1aef69029cf0cac5ce94ac218ffce77864">getPartialQdot</reimplementedby>
+        <reimplementedby refid="classlmx_1_1IntegratorBDF_1af4fc49737d760c485b74dda1308a18dc">getPartialQdot</reimplementedby>
+        <reimplementedby refid="classlmx_1_1IntegratorAM_1a12f749769e2f20545dbedbf744a3a314">getPartialQdot</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the factor <formula id="0">$ \frac{\partial qdot_n}{\partial q_n} $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBaseImplicit_1a8933718fdb3629e07d0972d846c92a8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double lmx::IntegratorBaseImplicit&lt; T &gt;::getPartialQddot</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPartialQddot</name>
+        <reimplementedby refid="classlmx_1_1IntegratorNEWMARK_1ad00ddd433a6b4835c1be9ace78c66f6f">getPartialQddot</reimplementedby>
+        <reimplementedby refid="classlmx_1_1IntegratorBDF_1a2277553d925ce0d7e0fabd855dcb629e">getPartialQddot</reimplementedby>
+        <reimplementedby refid="classlmx_1_1IntegratorAM_1ad29429e37ded23f55bad02ff5a8dc111">getPartialQddot</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the factor <formula id="1">$ \frac{\partial qddot_n}{\partial q_n} $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBaseImplicit_1aa7d97f0c3d139326a6b7ca28605f9681" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::IntegratorBaseImplicit&lt; T &gt;::integratorUpdate</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; delta)=0</argsstring>
+        <name>integratorUpdate</name>
+        <reimplementedby refid="classlmx_1_1IntegratorNEWMARK_1aec6f86f3fc8a7118e9e7ef49d5aaa9c0">integratorUpdate</reimplementedby>
+        <reimplementedby refid="classlmx_1_1IntegratorBDF_1a117816d08be3d2161b5ecaa9ae4294a3">integratorUpdate</reimplementedby>
+        <reimplementedby refid="classlmx_1_1IntegratorAM_1a820e76e8e905b0443cea0cce770057c7">integratorUpdate</reimplementedby>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt;</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actualizes variables applying an increment. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="70" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template abstract class <ref refid="classlmx_1_1IntegratorBaseImplicit" kindref="compound">IntegratorBaseImplicit</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Implicit integrator basic structure.</para><para><simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="380">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="383">
+        <label>lmx::IntegratorNEWMARK&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorNEWMARK"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>lmx::IntegratorBDF&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBDF"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>lmx::IntegratorBaseImplicit&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBaseImplicit"/>
+        <childnode refid="380" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>lmx::IntegratorAM&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorAM"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="385">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="384">
+        <label>lmx::IntegratorBaseImplicit&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBaseImplicit"/>
+        <childnode refid="385" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" line="49" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_base_implicit.h" bodystart="49" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1IntegratorBase_1ab671aed2798b57bd80e831dd2d0d49cf" prot="public" virt="pure-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>advance</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a8933718fdb3629e07d0972d846c92a8e" prot="public" virt="pure-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>getPartialQddot</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a8ee5ecd8b0bae40d8d79f48ca69f350f" prot="public" virt="pure-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>getPartialQdot</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1a9ddf427bbc2267c264222552d5fa47c6" prot="public" virt="pure-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>initialize</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1ac8fe7d9b211d6d86b4377a3ab57399fc" prot="public" virt="non-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a9ebebca6cd29dce17da68385085870be" prot="public" virt="non-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>IntegratorBaseImplicit</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1aa7d97f0c3d139326a6b7ca28605f9681" prot="public" virt="pure-virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>integratorUpdate</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a142802380bd75f1118a8815b2d2f0c75" prot="public" virt="virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>isExplicit</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1a44f52dfb85513d84a2d3e5a1dbd73b94" prot="public" virt="virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>~IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a6b8b7489aead3b0634db14bbae16333f" prot="public" virt="virtual"><scope>lmx::IntegratorBaseImplicit</scope><name>~IntegratorBaseImplicit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__except_8h" kind="file">
+    <compoundname>lmx_except.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">algorithm</includes>
+    <includedby refid="lmx__mat__matrix_8h" local="yes">src/LMX/lmx_mat_matrix.h</includedby>
+    <includedby refid="lmx_8h" local="yes">src/LMX/lmx.h</includedby>
+    <includedby refid="lmx__diff__configuration_8h" local="yes">src/LMX/lmx_diff_configuration.h</includedby>
+    <incdepgraph>
+      <node id="3852">
+        <label>stdexcept</label>
+      </node>
+      <node id="3853">
+        <label>string</label>
+      </node>
+      <node id="3851">
+        <label>exception</label>
+      </node>
+      <node id="3849">
+        <label>src/LMX/lmx_except.h</label>
+        <link refid="lmx_except.h"/>
+        <childnode refid="3850" relation="include">
+        </childnode>
+        <childnode refid="3851" relation="include">
+        </childnode>
+        <childnode refid="3852" relation="include">
+        </childnode>
+        <childnode refid="3853" relation="include">
+        </childnode>
+        <childnode refid="3854" relation="include">
+        </childnode>
+        <childnode refid="3855" relation="include">
+        </childnode>
+      </node>
+      <node id="3854">
+        <label>sstream</label>
+      </node>
+      <node id="3850">
+        <label>iostream</label>
+      </node>
+      <node id="3855">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3887">
+        <label>src/LMX/lmx_diff_problem_double.h</label>
+        <link refid="lmx__diff__problem__double_8h"/>
+        <childnode refid="3888" relation="include">
+        </childnode>
+      </node>
+      <node id="3871">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="3886">
+        <label>src/LMX/lmx_diff_problem_second.h</label>
+        <link refid="lmx__diff__problem__second_8h"/>
+      </node>
+      <node id="3883">
+        <label>src/LMX/lmx_diff_integrator_ab.h</label>
+        <link refid="lmx__diff__integrator__ab_8h"/>
+        <childnode refid="3884" relation="include">
+        </childnode>
+        <childnode refid="3887" relation="include">
+        </childnode>
+      </node>
+      <node id="3882">
+        <label>src/LMX/lmx_diff_integrator_base.h</label>
+        <link refid="lmx__diff__integrator__base_8h"/>
+        <childnode refid="3883" relation="include">
+        </childnode>
+        <childnode refid="3889" relation="include">
+        </childnode>
+        <childnode refid="3893" relation="include">
+        </childnode>
+      </node>
+      <node id="3884">
+        <label>src/LMX/lmx_diff_problem.h</label>
+        <link refid="lmx__diff__problem_8h"/>
+        <childnode refid="3885" relation="include">
+        </childnode>
+        <childnode refid="3886" relation="include">
+        </childnode>
+      </node>
+      <node id="3879">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="3880" relation="include">
+        </childnode>
+      </node>
+      <node id="3892">
+        <label>src/LMX/lmx_diff_integrator_newmark.h</label>
+        <link refid="lmx__diff__integrator__newmark_8h"/>
+        <childnode refid="3888" relation="include">
+        </childnode>
+        <childnode refid="3886" relation="include">
+        </childnode>
+      </node>
+      <node id="3888">
+        <label>src/LMX/lmx_diff_problem_first_second.h</label>
+        <link refid="lmx__diff__problem__first__second_8h"/>
+      </node>
+      <node id="3885">
+        <label>src/LMX/lmx_diff_problem_first.h</label>
+        <link refid="lmx__diff__problem__first_8h"/>
+      </node>
+      <node id="3893">
+        <label>src/LMX/lmx_diff_integrator_centraldiff.h</label>
+        <link refid="lmx__diff__integrator__centraldiff_8h"/>
+        <childnode refid="3884" relation="include">
+        </childnode>
+        <childnode refid="3887" relation="include">
+        </childnode>
+      </node>
+      <node id="3873">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="3890">
+        <label>src/LMX/lmx_diff_integrator_am.h</label>
+        <link refid="lmx__diff__integrator__am_8h"/>
+        <childnode refid="3884" relation="include">
+        </childnode>
+        <childnode refid="3887" relation="include">
+        </childnode>
+      </node>
+      <node id="3881">
+        <label>src/LMX/lmx_diff_configuration.h</label>
+        <link refid="lmx__diff__configuration_8h"/>
+        <childnode refid="3882" relation="include">
+        </childnode>
+        <childnode refid="3884" relation="include">
+        </childnode>
+        <childnode refid="3887" relation="include">
+        </childnode>
+      </node>
+      <node id="3856">
+        <label>src/LMX/lmx_except.h</label>
+        <link refid="lmx_except.h"/>
+        <childnode refid="3857" relation="include">
+        </childnode>
+        <childnode refid="3861" relation="include">
+        </childnode>
+        <childnode refid="3881" relation="include">
+        </childnode>
+      </node>
+      <node id="3874">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="3868">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="3861">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx_8h"/>
+        <childnode refid="3862" relation="include">
+        </childnode>
+      </node>
+      <node id="3876">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="3863">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="3864" relation="include">
+        </childnode>
+        <childnode refid="3865" relation="include">
+        </childnode>
+        <childnode refid="3866" relation="include">
+        </childnode>
+      </node>
+      <node id="3889">
+        <label>src/LMX/lmx_diff_integrator_base_implicit.h</label>
+        <link refid="lmx__diff__integrator__base__implicit_8h"/>
+        <childnode refid="3890" relation="include">
+        </childnode>
+        <childnode refid="3891" relation="include">
+        </childnode>
+        <childnode refid="3892" relation="include">
+        </childnode>
+      </node>
+      <node id="3859">
+        <label>src/LMX/lmx_linsolvers_system.h</label>
+        <link refid="lmx__linsolvers__system_8h"/>
+        <childnode refid="3860" relation="include">
+        </childnode>
+      </node>
+      <node id="3869">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="3870" relation="include">
+        </childnode>
+        <childnode refid="3871" relation="include">
+        </childnode>
+        <childnode refid="3866" relation="include">
+        </childnode>
+      </node>
+      <node id="3864">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="3872">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="3873" relation="include">
+        </childnode>
+        <childnode refid="3866" relation="include">
+        </childnode>
+      </node>
+      <node id="3878">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="3867">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="3875">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="3866" relation="include">
+        </childnode>
+        <childnode refid="3876" relation="include">
+        </childnode>
+      </node>
+      <node id="3858">
+        <label>src/LMX/lmx_mat_dense_matrix.h</label>
+        <link refid="lmx__mat__dense__matrix_8h"/>
+        <childnode refid="3859" relation="include">
+        </childnode>
+      </node>
+      <node id="3891">
+        <label>src/LMX/lmx_diff_integrator_bdf.h</label>
+        <link refid="lmx__diff__integrator__bdf_8h"/>
+        <childnode refid="3884" relation="include">
+        </childnode>
+        <childnode refid="3887" relation="include">
+        </childnode>
+      </node>
+      <node id="3880">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="3870">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="3865">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="3862">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="3863" relation="include">
+        </childnode>
+        <childnode refid="3869" relation="include">
+        </childnode>
+        <childnode refid="3872" relation="include">
+        </childnode>
+        <childnode refid="3874" relation="include">
+        </childnode>
+        <childnode refid="3875" relation="include">
+        </childnode>
+        <childnode refid="3877" relation="include">
+        </childnode>
+        <childnode refid="3879" relation="include">
+        </childnode>
+      </node>
+      <node id="3877">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="3866" relation="include">
+        </childnode>
+        <childnode refid="3878" relation="include">
+        </childnode>
+      </node>
+      <node id="3866">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="3867" relation="include">
+        </childnode>
+        <childnode refid="3868" relation="include">
+        </childnode>
+      </node>
+      <node id="3860">
+        <label>src/LMX/lmx_linsolvers.h</label>
+        <link refid="lmx__linsolvers_8h"/>
+        <childnode refid="3861" relation="include">
+        </childnode>
+      </node>
+      <node id="3857">
+        <label>src/LMX/lmx_mat_matrix.h</label>
+        <link refid="lmx__mat__matrix_8h"/>
+        <childnode refid="3858" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlmx_1_1dimension__error" prot="public">lmx::dimension_error</innerclass>
+    <innerclass refid="classlmx_1_1file__not__found__error" prot="public">lmx::file_not_found_error</innerclass>
+    <innerclass refid="classlmx_1_1internal__error" prot="public">lmx::internal_error</innerclass>
+    <innerclass refid="classlmx_1_1failure__error" prot="public">lmx::failure_error</innerclass>
+    <innerclass refid="classlmx_1_1to__be__done__error" prot="public">lmx::to_be_done_error</innerclass>
+    <innerclass refid="structlmx_1_1exception__callback" prot="public">lmx::exception_callback</innerclass>
+    <innerclass refid="structlmx_1_1exception__callback__debug" prot="public">lmx::exception_callback_debug</innerclass>
+    <innerclass refid="structlmx_1_1warning__level" prot="public">lmx::warning_level</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lmx__except_8h_1ae296e376a771f7ca2634868c901e41af" prot="public" static="no">
+        <name>LMX_STANDARD_CATCH_ERROR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for catching any error of STL error&apos;s hierarchy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="150" column="11" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmx__except_8h_1a84f50266fa2f7f28278bde6ea5f50d3d" prot="public" static="no">
+        <name>LMX_PRETTY_FUNCTION</name>
+        <initializer>&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable for storing the full function name where the error occurs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="249" column="11" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" prot="public" static="no">
+        <name>LMX_THROW</name>
+        <param><defname>type</defname></param>
+        <param><defname>thestr</defname></param>
+        <initializer>{                                    \
+    std::stringstream msg;                                           \
+    msg &lt;&lt; &quot;Error in &quot; __FILE__ &lt;&lt; &quot;, line &quot;                          \
+        &lt;&lt; __LINE__ &lt;&lt; &quot; &quot; &lt;&lt; <ref refid="lmx__except_8h_1a84f50266fa2f7f28278bde6ea5f50d3d" kindref="member">LMX_PRETTY_FUNCTION</ref> &lt;&lt; &quot;: \n&quot; &lt;&lt; thestr &lt;&lt; ends; \
+    lmx::exception_callback::do_exception_callback(msg.str());       \
+    throw (type)(msg.str());                                         \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>standard function for throwing errors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="253" column="9" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="253" bodyend="-1"/>
+        <referencedby refid="classlmx_1_1Vector_1ab972d613ec2d693759fce1339b7c2dd7" compoundref="lmx__mat__vector_8h" startline="641" endline="654">lmx::Vector&lt; T &gt;::add</referencedby>
+        <referencedby refid="classlmx_1_1IntegratorCentralDifference_1a6f53698ad68a151d804cfa2dd0dde465" compoundref="lmx__diff__integrator__centraldiff_8h" startline="89" endline="105">lmx::IntegratorCentralDifference&lt; T &gt;::advance</referencedby>
+        <referencedby refid="classMatrix_1ae8fb2cd5911c80ab80ab5d4cdfce8e4a" compoundref="lmx__mat__matrix_8h" startline="609" endline="627">Matrix&lt; T &gt;::fillIdentity</referencedby>
+        <referencedby refid="classlmx_1_1Gesv_1a158ad000c6d51dc107fa33043e8e9c24" compoundref="lmx__linsolvers__lapack_8h" startline="85" endline="110">lmx::Gesv&lt; T &gt;::Gesv</referencedby>
+        <referencedby refid="classlmx_1_1DiffProblemFirstSecond_1a13e52b8a33f4af805743a29e91ac578a" compoundref="lmx__diff__problem__first__second_8h" startline="556" endline="601">lmx::DiffProblemFirstSecond&lt; Sys, T &gt;::initialize</referencedby>
+        <referencedby refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" compoundref="lmx__mat__matrix_8h" startline="528" endline="568">Matrix&lt; T &gt;::initialize_type_matrix</referencedby>
+        <referencedby refid="classlmx_1_1LU_1a333753df17b4e937ca69a9f3fe4c0218" compoundref="lmx__linsolvers__lu_8h" startline="84" endline="105">lmx::LU&lt; T &gt;::LU</referencedby>
+        <referencedby refid="classlmx_1_1LU_1a7ebe0035cf0d15ebe2ca3812185eb714" compoundref="lmx__linsolvers__lu_8h" startline="157" endline="223">lmx::LU&lt; T &gt;::lu</referencedby>
+        <referencedby refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1ae68d2b9e72a8a6aa9431e9dcdb126fdc" compoundref="lmx__mat__vector_8h" startline="692" endline="736">lmx::Vector&lt; T &gt;::mult</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a1aefc241385130c01630fd1fa6e05c5d" compoundref="lmx__mat__vector_8h" startline="883" endline="896">lmx::Vector&lt; T &gt;::multElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" compoundref="lmx__mat__type__stdmatrix_8h" startline="154" endline="178">lmx::Type_stdmatrix&lt; double &gt;::multiply</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1ac65c4ff5646cf0245dfdb5d7ba97f2b5" compoundref="lmx__mat__vector_8h" startline="462" endline="474">lmx::Vector&lt; T &gt;::operator()</referencedby>
+        <referencedby refid="classMatrix_1a8c331926ec2fcc7ab5ba866f3f5dd370" compoundref="lmx__mat__matrix_8h" startline="693" endline="709">Matrix&lt; T &gt;::operator()</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a5b0ee4a4ff4ee19ea237f3935c7890bb" compoundref="lmx__mat__vector_8h" startline="244" endline="254">lmx::Vector&lt; int &gt;::operator*</referencedby>
+        <referencedby refid="namespacelmx_1a056662a18d83b06f907bd389b7001b35" compoundref="lmx__mat__vector_8h" startline="936" endline="948">lmx::operator*</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a218f21e3c90b9ca7a0b61917a2f5e443" compoundref="lmx__mat__vector_8h" startline="216" endline="223">lmx::Vector&lt; int &gt;::operator+</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a2c0a2fdbc85318a0b949d67bbae3c035" compoundref="lmx__mat__vector_8h" startline="538" endline="549">lmx::Vector&lt; T &gt;::operator+=</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a8e82d10ac24a5e899f4e36b81360b070" compoundref="lmx__mat__vector_8h" startline="230" endline="237">lmx::Vector&lt; int &gt;::operator-</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a786fa62693a1d4f990f55b98ce5b0ece" compoundref="lmx__mat__vector_8h" startline="557" endline="568">lmx::Vector&lt; T &gt;::operator-=</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a84e014345158da7a6b89a4879c8086c4" compoundref="lmx__mat__vector_8h" startline="497" endline="508">lmx::Vector&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1adf2926b0afd5a318fdc730225d10d2aa" compoundref="lmx__mat__type__csc_8h" startline="659" endline="695">lmx::Type_csc&lt; T &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" compoundref="lmx__mat__type__stdmatrix_8h" startline="212" endline="248">lmx::Type_stdmatrix&lt; double &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a4fc2d153c9436f3d377c1867b608ddd7" compoundref="lmx__mat__vector_8h" startline="145" endline="152">lmx::Vector&lt; int &gt;::readElement</referencedby>
+        <referencedby refid="classlmx_1_1Configuration_1af437ee887381048646611a1b7c79c80e" compoundref="lmx__diff__configuration_8h" startline="176" endline="206">lmx::Configuration&lt; T &gt;::setInitialCondition</referencedby>
+        <referencedby refid="lmx__mat__matrix_8h_1a823d86b23608feef8efa690e93241023" compoundref="lmx__base__selector_8h" startline="43" endline="58">setMatrixType</referencedby>
+        <referencedby refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" compoundref="lmx__diff__configuration_8h" startline="216" endline="246">lmx::Configuration&lt; T &gt;::setStoredSteps</referencedby>
+        <referencedby refid="namespacelmx_1a9dfd59f1cf0bfa5c7cc217f0201033e6" compoundref="lmx__base__selector_8h" startline="62" endline="77">lmx::setVectorType</referencedby>
+        <referencedby refid="classlmx_1_1Gesv_1ab1258532e8cecfca1c2fe8fad913bf4d" compoundref="lmx__linsolvers__lapack_8h" startline="134" endline="141">lmx::Gesv&lt; T &gt;::solve</referencedby>
+        <referencedby refid="classlmx_1_1NLSolver_1a5a62129861558b6ce4786ef85b23a232" compoundref="lmx__nlsolvers_8h" startline="258" endline="337">lmx::NLSolver&lt; Sys, T &gt;::solve</referencedby>
+        <referencedby refid="classlmx_1_1NLSolverDouble_1af5b1577ca5bfba51cc2aacb7c5858ccc" compoundref="lmx__nlsolvers__double_8h" startline="332" endline="427">lmx::NLSolverDouble&lt; Sys, T &gt;::solve</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a85c4b080918266b474fb39482bc14cc5" compoundref="lmx__linsolvers__system_8h" startline="490" endline="511">lmx::LinearSystem&lt; T &gt;::solveYourselfMatrix</referencedby>
+        <referencedby refid="classlmx_1_1DiffProblemFirstSecond_1ad53dc78b8c04c0a6cab59e35836d8e3e" compoundref="lmx__diff__problem__first__second_8h" startline="621" endline="636">lmx::DiffProblemFirstSecond&lt; Sys, T &gt;::stepSolve</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a2fb58669b0c17a07d358499500b994fd" compoundref="lmx__mat__vector_8h" startline="664" endline="677">lmx::Vector&lt; T &gt;::subs</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a39d6069675db4ecfc1ab81d440da759a" compoundref="lmx__mat__vector_8h" startline="308" endline="332">lmx::Vector&lt; T &gt;::Vector</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1a9b9007bdd388c37f469496d940be9416" compoundref="lmx__mat__type__csc_8h" startline="743" endline="780">lmx::Type_csc&lt; T &gt;::write_hb_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66" compoundref="lmx__mat__type__stdmatrix_8h" startline="288" endline="317">lmx::Type_stdmatrix&lt; double &gt;::write_hb_file</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="lmx__except_8h_1ac508419083d1a8bd869b5ca9184dca65" prot="public" static="no">
+        <name>LMX_INTERNAL_ERROR</name>
+        <param><defname>thestr</defname></param>
+        <initializer><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1internal__error" kindref="compound">lmx::internal_error</ref>, &quot;Internal error: &quot; &lt;&lt; thestr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>standard function for throwing internal errors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="268" column="11" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmx__except_8h_1a946b48df43463ed585a2ada2f0ec1cb5" prot="public" static="no">
+        <name>LMX_WARNING</name>
+        <param><defname>level_</defname></param>
+        <param><defname>thestr</defname></param>
+        <initializer>{                                 \
+    std::stringstream msg;                                            \
+    msg &lt;&lt; &quot;Level &quot; &lt;&lt; level_ &lt;&lt; &quot; Warning in &quot; __FILE__ &lt;&lt; &quot;, line &quot;  \
+        &lt;&lt; __LINE__ &lt;&lt; &quot; &quot; &lt;&lt; <ref refid="lmx__except_8h_1a84f50266fa2f7f28278bde6ea5f50d3d" kindref="member">LMX_PRETTY_FUNCTION</ref> &lt;&lt; &quot;: &quot; &lt;&lt; thestr &lt;&lt; ends; \
+    if ((level_) &lt;= <ref refid="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" kindref="member">lmx::warning_level::level</ref>())                      \
+       std::cerr &lt;&lt; msg.str() &lt;&lt; std::endl;                           \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user function for throwing warning messages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="292" column="9" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception handling classes, functions and macros. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Addapted by Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2006<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>*******************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Based<sp/>on<sp/>dal_except.h<sp/>in<sp/>gmm<sp/>library:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>*******************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Library<sp/>:<sp/><sp/>Dynamic<sp/>Array<sp/>Library<sp/>(dal)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>File<sp/><sp/><sp/><sp/>:<sp/><sp/>dal_except.h<sp/>:<sp/>Exceptions.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Date<sp/>:<sp/>September<sp/>01,<sp/>2002.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Author<sp/>:<sp/>Yves<sp/>Renard,<sp/>Yves.Renard@gmm.insa-tlse.fr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Julien<sp/>Pommier,<sp/>Julien.pommier@gmm.insa-tlse.fr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Copyright<sp/>(C)<sp/>2002<sp/><sp/>Yves<sp/>Renard.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>*******************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMX_EXCEPT_H__</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMX_EXCEPT_H__</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::endl;<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::cout;<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::cerr;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::ends;<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::cin;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***********************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>LMX<sp/>generic<sp/>errors.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***********************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>errors<sp/>definitions<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>using<sp/>std::invalid_argument;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classlmx_1_1dimension__error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1dimension__error" kindref="compound">dimension_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::logic_error<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83" refid="classlmx_1_1dimension__error_1a8dfe967116d5b890cf8937e9071577ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1dimension__error_1a8dfe967116d5b890cf8937e9071577ac" kindref="member">dimension_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>what_arg):<sp/>std::logic_error<sp/>(what_arg)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classlmx_1_1file__not__found__error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1file__not__found__error" kindref="compound">file_not_found_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::logic_error<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97" refid="classlmx_1_1file__not__found__error_1ad06c04c8fbdf470cabbf503c407d6c59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1file__not__found__error_1ad06c04c8fbdf470cabbf503c407d6c59" kindref="member">file_not_found_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>what_arg)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>std::logic_error<sp/>(what_arg)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classlmx_1_1internal__error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1internal__error" kindref="compound">internal_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::logic_error<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111" refid="classlmx_1_1internal__error_1ab64ccb781c353c632d0f1d6bcfc8c249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1internal__error_1ab64ccb781c353c632d0f1d6bcfc8c249" kindref="member">internal_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>what_arg)<sp/>:<sp/>std::logic_error<sp/>(what_arg)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classlmx_1_1failure__error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1failure__error" kindref="compound">failure_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::logic_error<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="125" refid="classlmx_1_1failure__error_1a9b5729627f3a4507530e42b42ed66b4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1failure__error_1a9b5729627f3a4507530e42b42ed66b4d" kindref="member">failure_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>what_arg)<sp/>:<sp/>std::logic_error<sp/>(what_arg)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>class<sp/>not_linear_error<sp/>:<sp/>public<sp/>std::logic_error<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>public:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>not_linear_error(const<sp/>std::string&amp;<sp/>what_arg)<sp/>:<sp/>std::logic_error<sp/>(what_arg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classlmx_1_1to__be__done__error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1to__be__done__error" kindref="compound">to_be_done_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::logic_error<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145" refid="classlmx_1_1to__be__done__error_1a4a297cb49a2dc1fd018f28b42552d5cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1to__be__done__error_1a4a297cb49a2dc1fd018f28b42552d5cb" kindref="member">to_be_done_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>what_arg)<sp/>:<sp/>std::logic_error<sp/>(what_arg)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="lmx__except_8h_1ae296e376a771f7ca2634868c901e41af" refkind="member"><highlight class="preprocessor"><sp/><sp/>#define<sp/>LMX_STANDARD_CATCH_ERROR<sp/><sp/><sp/>catch(std::logic_error<sp/>e)<sp/>\</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/><sp/><sp/><sp/><sp/>An<sp/>error<sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/><sp/><sp/><sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;\</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"><sp/><sp/>catch(std::runtime_error<sp/>e)\</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/><sp/><sp/><sp/><sp/>An<sp/>error<sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/><sp/><sp/><sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;\</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>exit(1);\</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"><sp/><sp/>catch(std::bad_alloc)<sp/>{\</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/>A<sp/>bad<sp/>allocation<sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>exit(1);\</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"><sp/><sp/>catch(std::bad_typeid)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/>A<sp/>bad<sp/>typeid<sp/><sp/><sp/><sp/><sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>exit(1);\</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"><sp/><sp/>catch(std::bad_exception)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/>A<sp/>bad<sp/>exception<sp/><sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>exit(1);\</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"><sp/><sp/>catch(std::bad_cast)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/><sp/><sp/>A<sp/>bad<sp/>cast<sp/><sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/><sp/><sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>exit(1);\</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"><sp/><sp/>catch(...)<sp/>{\</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/><sp/>An<sp/>unknown<sp/>error<sp/>has<sp/>been<sp/>detected<sp/>!!!<sp/><sp/>|\n&quot;;\</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;\</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>exit(1);\</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/><sp/><sp/>catch(ios_base::failure)<sp/>{<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;|<sp/>A<sp/>ios_base::failure<sp/>has<sp/>been<sp/>detected<sp/>!!!|\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;============================================\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>exit(1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>}<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="structlmx_1_1exception__callback" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref><sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref>(){}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//{};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref><sp/>*which_except(<ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref><sp/>*p<sp/>=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref><sp/>*exc_cback<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>!=<sp/>0)<sp/>exc_cback<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>exc_cback;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_exception_callback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(which_except())<sp/>which_except()-&gt;callback(msg);<sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a9ec7e30ade7c87eaf14dfee79807c402" kindref="member">set_exception_callback</ref>(<ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref><sp/>*e)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>which_except(e);<sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="structlmx_1_1exception__callback__debug" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlmx_1_1exception__callback__debug" kindref="compound">exception_callback_debug</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structlmx_1_1exception__callback" kindref="compound">lmx::exception_callback</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*virtual<sp/>*/</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>cerr<sp/>&lt;&lt;<sp/>msg<sp/>&lt;&lt;<sp/>endl;<sp/>*(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*)(0)<sp/>=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="namespacelmx_1a9ec7e30ade7c87eaf14dfee79807c402" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a9ec7e30ade7c87eaf14dfee79807c402" kindref="member">set_exception_callback</ref>(<ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref><sp/>*e)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>{<sp/>exception_callback::which_except(e);<sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_PRETTY_FUNCTION</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor">#<sp/><sp/>define<sp/>LMX_PRETTY_FUNCTION<sp/>__PRETTY_FUNCTION__</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else<sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="249" refid="lmx__except_8h_1a84f50266fa2f7f28278bde6ea5f50d3d" refkind="member"><highlight class="preprocessor">#<sp/><sp/>define<sp/>LMX_PRETTY_FUNCTION<sp/>&quot;&quot;</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="253" refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" refkind="member"><highlight class="preprocessor">#define<sp/>LMX_THROW(type,<sp/>thestr)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>std::stringstream<sp/>msg;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>msg<sp/>&lt;&lt;<sp/>&quot;Error<sp/>in<sp/>&quot;<sp/>__FILE__<sp/>&lt;&lt;<sp/>&quot;,<sp/>line<sp/>&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>__LINE__<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>LMX_PRETTY_FUNCTION<sp/>&lt;&lt;<sp/>&quot;:<sp/>\n&quot;<sp/>&lt;&lt;<sp/>thestr<sp/>&lt;&lt;<sp/>ends;<sp/>\</highlight></codeline>
+<codeline lineno="257"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>lmx::exception_callback::do_exception_callback(msg.str());<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>throw<sp/>(type)(msg.str());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG_MODE</highlight></codeline>
+<codeline lineno="262"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>LMX_INTERNAL_ERROR(thestr)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>&quot;Internal<sp/>error:<sp/>&quot;<sp/>&lt;&lt;<sp/>LMX_PRETTY_FUNCTION<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>thestr<sp/>&lt;&lt;<sp/>endl;<sp/>\</highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor"><sp/><sp/><sp/>::abort();<sp/>\</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="268" refid="lmx__except_8h_1ac508419083d1a8bd869b5ca9184dca65" refkind="member"><highlight class="preprocessor">#<sp/><sp/>define<sp/>LMX_INTERNAL_ERROR(thestr)<sp/>LMX_THROW(lmx::internal_error,<sp/>&quot;Internal<sp/>error:<sp/>&quot;<sp/>&lt;&lt;<sp/>thestr)</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="structlmx_1_1warning__level" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlmx_1_1warning__level" kindref="compound">warning_level</ref><sp/>{</highlight></codeline>
+<codeline lineno="282" refid="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" kindref="member">level</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>-2)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level_<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(l<sp/>!=<sp/>-2)<sp/>?<sp/>(level_<sp/>=<sp/>l)<sp/>:<sp/>level_;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="namespacelmx_1a8b100980a9fd681c507d233fc8e4250c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a8b100980a9fd681c507d233fc8e4250c" kindref="member">set_warning_level</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l)<sp/>{<sp/><ref refid="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" kindref="member">warning_level::level</ref>(std::max(0,l));<sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="lmx__except_8h_1a946b48df43463ed585a2ada2f0ec1cb5" refkind="member"><highlight class="preprocessor">#define<sp/>LMX_WARNING(level_,<sp/>thestr)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="293"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>std::stringstream<sp/>msg;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>msg<sp/>&lt;&lt;<sp/>&quot;Level<sp/>&quot;<sp/>&lt;&lt;<sp/>level_<sp/>&lt;&lt;<sp/>&quot;<sp/>Warning<sp/>in<sp/>&quot;<sp/>__FILE__<sp/>&lt;&lt;<sp/>&quot;,<sp/>line<sp/>&quot;<sp/><sp/>\</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>__LINE__<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>LMX_PRETTY_FUNCTION<sp/>&lt;&lt;<sp/>&quot;:<sp/>&quot;<sp/>&lt;&lt;<sp/>thestr<sp/>&lt;&lt;<sp/>ends;<sp/>\</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>((level_)<sp/>&lt;=<sp/>lmx::warning_level::level())<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="297"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>msg.str()<sp/>&lt;&lt;<sp/>std::endl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="299"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Warning<sp/>levels<sp/>:<sp/>0<sp/>always<sp/>printed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>very<sp/>important<sp/>:<sp/>specify<sp/>a<sp/>possible<sp/>error<sp/>in<sp/>the<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/>important<sp/>:<sp/>specify<sp/>a<sp/>default<sp/>of<sp/>optimization<sp/>for<sp/>inst.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/>remark</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/>ignored<sp/>by<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>namespace<sp/>lmx.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LMX_EXCEPT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<map id="src/LMX/lmx_mat_dense_matrix.h" name="src/LMX/lmx_mat_dense_matrix.h">
+<area shape="rect" id="node2" href="$lmx__mat__matrix_8h.html" title="This file contains both the declaration and implementation for Matrix class member and friend functio..." alt="" coords="767,96,889,123"/>
+<area shape="rect" id="node4" href="$lmx__except_8h.html" title="Exception handling classes, functions and macros. " alt="" coords="270,320,367,347"/>
+<area shape="rect" id="node11" href="$lmx__mat__type__stdmatrix_8h.html" title="This file contains both the declaration and implementation for type_stdmatrix (std::vector type) clas..." alt="" coords="804,171,975,197"/>
+<area shape="rect" id="node26" href="$lmx__mat__type__csc_8h.html" title="This file contains both the declaration and implementation for Type_csc class member functions..." alt="" coords="999,171,1137,197"/>
+<area shape="rect" id="node12" href="$lmx__mat__data__mat_8h.html" title="This file contains the declaration of the data_mat class&#39; pure virtual functions. ..." alt="" coords="963,245,1105,272"/>
+<area shape="rect" id="node16" href="$lmx__mat__vector_8h.html" title="This file contains both the declaration and implementation for Vector class member and friend functio..." alt="" coords="816,245,939,272"/>
+<area shape="rect" id="node23" href="$lmx__base__iohb_8h.html" title="This file contains functions for Harwell Boeing format file reading and writing. " alt="" coords="1131,245,1248,272"/>
+<area shape="rect" id="node14" href="$lmx__mat__data_8h.html" title="This file contains the declaration of the data class&#39; pure virtual functions. " alt="" coords="719,469,832,496"/>
+<area shape="rect" id="node15" href="$lmx__mat__data__blas_8h.html" title="Basic Linear Algebra Methods for Data_mat and Data_vec derived classes. " alt="" coords="609,544,751,571"/>
+<area shape="rect" id="node17" href="$lmx__mat__elem__ref_8h.html" title="This file contains both the declaration and implementation for Elem_ref class. " alt="" coords="859,320,997,347"/>
+<area shape="rect" id="node18" href="$lmx__mat__type__stdvector_8h.html" title="This file contains both the declaration and implementation for type_stdVector (dense vector) class me..." alt="" coords="664,320,835,347"/>
+<area shape="rect" id="node22" href="$lmx__mat__data__vec_8h.html" title="This file contains the declaration of the data_vec class&#39; pure virtual functions. ..." alt="" coords="522,395,661,421"/>
+</map>

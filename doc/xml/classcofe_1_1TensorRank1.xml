@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classcofe_1_1TensorRank1" kind="class" prot="public">
+    <compoundname>cofe::TensorRank1</compoundname>
+    <includes refid="cofe__TensorRank1_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>Dim</declname>
+        <defname>Dim</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T cofe::TensorRank1&lt; Dim, T &gt;::scalar_type</definition>
+        <argsstring></argsstring>
+        <name>scalar_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="27" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" prot="public" static="no">
+        <type><ref refid="classcofe_1_1TensorRank1" kindref="compound">cofe::TensorRank1</ref>&lt; Dim, T &gt;</type>
+        <definition>typedef cofe::TensorRank1&lt;Dim,T&gt; cofe::TensorRank1&lt; Dim, T &gt;::vector_type</definition>
+        <argsstring></argsstring>
+        <name>vector_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="28" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcofe_1_1TensorRank1_1a1cca644cefcf4dafe9196b7a3017811c" prot="public" static="no">
+        <type><ref refid="classcofe_1_1TensorRank2" kindref="compound">cofe::TensorRank2</ref>&lt; Dim, T &gt;</type>
+        <definition>typedef cofe::TensorRank2&lt;Dim,T&gt; cofe::TensorRank1&lt; Dim, T &gt;::tensor_type</definition>
+        <argsstring></argsstring>
+        <name>tensor_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="29" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" prot="public" static="no">
+        <type><ref refid="classcofe_1_1TensorRank1" kindref="compound">cofe::TensorRank1</ref>&lt; Dim, T &gt;</type>
+        <definition>typedef cofe::TensorRank1&lt;Dim,T&gt; cofe::TensorRank1&lt; Dim, T &gt;::own_type</definition>
+        <argsstring></argsstring>
+        <name>own_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="30" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcofe_1_1TensorRank1_1a99d6c8ee5a264ecaac00ed0cece3ed03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TensorRank2&lt; Dim, T &gt;</definition>
+        <argsstring></argsstring>
+        <name>TensorRank2&lt; Dim, T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="248" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref></type>
+        <definition>scalar_type cofe::TensorRank1&lt; Dim, T &gt;::com[Dim]</definition>
+        <argsstring>[Dim]</argsstring>
+        <name>com</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classcofe_1_1TensorRank2_1a570391f93730b60cd57cb05fdda5df29" compoundref="cofe__TensorRank2_8h" startline="338" endline="345">cofe::TensorRank2&lt; Dim, T &gt;::beProductOf</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank1_1a32678d6913a5f70191e2796d5acfa49a" compoundref="cofe__TensorRank1_8h" startline="221" endline="226">cofe::TensorRank1&lt; Dim, T &gt;::dot</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank2_1aa0f9fe988669a1b2234e1c4ad631c4c4" compoundref="cofe__TensorRank2_8h" startline="312" endline="319">cofe::TensorRank2&lt; Dim, T &gt;::operateOn</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank1_1ab39f015900a2b49b4f5e6c4cb9db7f2a" compoundref="cofe__TensorRank1_8h" startline="206" endline="209">cofe::TensorRank1&lt; Dim, T &gt;::operator+=</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank1_1afbacc3a72943faeebdbabf49a67c093a" compoundref="cofe__TensorRank1_8h" startline="213" endline="216">cofe::TensorRank1&lt; Dim, T &gt;::operator-=</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank1_1a0d6c5c0cd541e686632bed4ba111ec8d" compoundref="cofe__TensorRank1_8h" startline="184" endline="188">cofe::TensorRank1&lt; Dim, T &gt;::operator=</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank2_1af28aac212a14afce9e6e0554234cf3bb" compoundref="cofe__TensorRank2_8h" startline="429" endline="438">cofe::TensorRank2&lt; Dim, T &gt;::solve</referencedby>
+        <referencedby refid="classcofe_1_1TensorRank1_1a156638b46d19e815506ae3525d792194" compoundref="cofe__TensorRank1_8h" startline="101" endline="104">cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a30a16fb0f92c1afb2205756462a1a077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</definition>
+        <argsstring>()</argsstring>
+        <name>TensorRank1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="33" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1abdd47f9e43f6bcc20c3e2c3f6504df6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</definition>
+        <argsstring>(const T *ptr)</argsstring>
+        <name>TensorRank1</name>
+        <param>
+          <type>const T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="34" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1ad900a35a693cafd25af386fb49007b1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</definition>
+        <argsstring>(const T &amp;aValue)</argsstring>
+        <name>TensorRank1</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>aValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="35" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1ab99a1790a5206100890ebf30c6a44924" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</definition>
+        <argsstring>(const std::string &amp;stringOfComponents)</argsstring>
+        <name>TensorRank1</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>stringOfComponents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="36" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a1905f852a2a4870d31ccd4c362767cc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</definition>
+        <argsstring>(const char *c_s)</argsstring>
+        <name>TensorRank1</name>
+        <param>
+          <type>const char *</type>
+          <declname>c_s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="37" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a156638b46d19e815506ae3525d792194" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::TensorRank1</definition>
+        <argsstring>(const own_type &amp;inV)</argsstring>
+        <name>TensorRank1</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" kindref="member">own_type</ref> &amp;</type>
+          <declname>inV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="38" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="101" bodyend="104"/>
+        <references refid="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" compoundref="cofe__TensorRank1_8h" startline="60">cofe::TensorRank1&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1afd31985bb3aaa96d8755d1094f3e3afc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank1&lt; Dim, T &gt;::~TensorRank1</definition>
+        <argsstring>()</argsstring>
+        <name>~TensorRank1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="39" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a48e9f9252bca274e5971bcad88ec561d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cofe::TensorRank1&lt; Dim, T &gt;::initializeFrom</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>initializeFrom</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="40" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1adfb96355533d579a495cb1ea4737bd91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cofe::TensorRank1&lt; Dim, T &gt;::initializeFrom</definition>
+        <argsstring>(std::istream &amp;istre)</argsstring>
+        <name>initializeFrom</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>istre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="41" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a42a0392686bf3c1943bc732f28dc1604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cofe::TensorRank1&lt; Dim, T &gt;::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="42" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1aeb61804630a18e5543a8f81153c80d29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref> &amp;</type>
+        <definition>T &amp; cofe::TensorRank1&lt; Dim, T &gt;::operator()</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="43" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a38d0ed7810ceaa6487fc72efc2c375fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref> &amp;</type>
+        <definition>const T &amp; cofe::TensorRank1&lt; Dim, T &gt;::operator()</definition>
+        <argsstring>(int i) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a7fd7066eb9c98f386c7f509cb15a6737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::operator*=</definition>
+        <argsstring>(const scalar_type &amp;aValue)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref> &amp;</type>
+          <declname>aValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="45" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a904e050179ba0832caf7973d4f954515" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" kindref="member">own_type</ref> &amp;</type>
+        <definition>TensorRank1&lt; Dim, T &gt; &amp; cofe::TensorRank1&lt; Dim, T &gt;::operator=</definition>
+        <argsstring>(const scalar_type &amp;aValue)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref> &amp;</type>
+          <declname>aValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a6a21e0855a8e1d3e5eb78bc01446b021" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" kindref="member">own_type</ref> &amp;</type>
+        <definition>TensorRank1&lt; Dim, T &gt; &amp; cofe::TensorRank1&lt; Dim, T &gt;::operator=</definition>
+        <argsstring>(const std::string &amp;stringOfComponents)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>stringOfComponents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="47" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a2566b3123fe3f94a6b9676eb6b60936e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" kindref="member">own_type</ref> &amp;</type>
+        <definition>TensorRank1&lt; Dim, T &gt; &amp; cofe::TensorRank1&lt; Dim, T &gt;::operator=</definition>
+        <argsstring>(const char *c_s)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const char *</type>
+          <declname>c_s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="175" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a0d6c5c0cd541e686632bed4ba111ec8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" kindref="member">own_type</ref> &amp;</type>
+        <definition>TensorRank1&lt; Dim, T &gt; &amp; cofe::TensorRank1&lt; Dim, T &gt;::operator=</definition>
+        <argsstring>(const own_type &amp;inV)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" kindref="member">own_type</ref> &amp;</type>
+          <declname>inV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="49" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="184" bodyend="188"/>
+        <references refid="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" compoundref="cofe__TensorRank1_8h" startline="60">cofe::TensorRank1&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1aa568accf451f9bb5cff0407df5a1567d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1aa7eb281882a82f235ff4a7ca1dbc4146" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::copyFrom</definition>
+        <argsstring>(const scalar_type *ptr)</argsstring>
+        <name>copyFrom</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="51" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1ab39f015900a2b49b4f5e6c4cb9db7f2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::operator+=</definition>
+        <argsstring>(const vector_type aV)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" kindref="member">vector_type</ref></type>
+          <declname>aV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="206" bodyend="209"/>
+        <references refid="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" compoundref="cofe__TensorRank1_8h" startline="60">cofe::TensorRank1&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1afbacc3a72943faeebdbabf49a67c093a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::operator-=</definition>
+        <argsstring>(const vector_type aV)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" kindref="member">vector_type</ref></type>
+          <declname>aV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="53" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="213" bodyend="216"/>
+        <references refid="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" compoundref="cofe__TensorRank1_8h" startline="60">cofe::TensorRank1&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a32678d6913a5f70191e2796d5acfa49a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" kindref="member">scalar_type</ref></type>
+        <definition>T cofe::TensorRank1&lt; Dim, T &gt;::dot</definition>
+        <argsstring>(const vector_type &amp;aVector) const </argsstring>
+        <name>dot</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" kindref="member">vector_type</ref> &amp;</type>
+          <declname>aVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="221" bodyend="226"/>
+        <references refid="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" compoundref="cofe__TensorRank1_8h" startline="60">cofe::TensorRank1&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1a55c60b81097f43aa6274288d77f17d7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::beProductOf</definition>
+        <argsstring>(const tensor_type &amp;aR2T, const vector_type &amp;aV)</argsstring>
+        <name>beProductOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a1cca644cefcf4dafe9196b7a3017811c" kindref="member">tensor_type</ref> &amp;</type>
+          <declname>aR2T</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" kindref="member">vector_type</ref> &amp;</type>
+          <declname>aV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="231" bodyend="235"/>
+        <references refid="classcofe_1_1TensorRank2_1aa0f9fe988669a1b2234e1c4ad631c4c4" compoundref="cofe__TensorRank2_8h" startline="312" endline="319">cofe::TensorRank2&lt; Dim, T &gt;::operateOn</references>
+        <referencedby refid="cofe__fmc_8h_1a465511e09713b3d9d197b97b849b0496" compoundref="cofe__fmc_8h" startline="66" endline="71">operator*</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank1_1add29081e2d5bcf9db8234944643211cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank1&lt; Dim, T &gt;::beSolutionOf</definition>
+        <argsstring>(const tensor_type &amp;aR2T, const vector_type &amp;aV)</argsstring>
+        <name>beSolutionOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a1cca644cefcf4dafe9196b7a3017811c" kindref="member">tensor_type</ref> &amp;</type>
+          <declname>aR2T</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" kindref="member">vector_type</ref> &amp;</type>
+          <declname>aV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="240" bodyend="244"/>
+        <references refid="classcofe_1_1TensorRank2_1af28aac212a14afce9e6e0554234cf3bb" compoundref="cofe__TensorRank2_8h" startline="429" endline="438">cofe::TensorRank2&lt; Dim, T &gt;::solve</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="23" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="22" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classcofe_1_1TensorRank1_1a55c60b81097f43aa6274288d77f17d7c" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>beProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank1_1add29081e2d5bcf9db8234944643211cc" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>beSolutionOf</name></member>
+      <member refid="classcofe_1_1TensorRank1_1abdb5cad4f516b76641384b815b2c6c66" prot="protected" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>com</name></member>
+      <member refid="classcofe_1_1TensorRank1_1aa7eb281882a82f235ff4a7ca1dbc4146" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>copyFrom</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a32678d6913a5f70191e2796d5acfa49a" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>dot</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a48e9f9252bca274e5971bcad88ec561d" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>initializeFrom</name></member>
+      <member refid="classcofe_1_1TensorRank1_1adfb96355533d579a495cb1ea4737bd91" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>initializeFrom</name></member>
+      <member refid="classcofe_1_1TensorRank1_1aeb61804630a18e5543a8f81153c80d29" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator()</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a38d0ed7810ceaa6487fc72efc2c375fc" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator()</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a7fd7066eb9c98f386c7f509cb15a6737" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator*=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1ab39f015900a2b49b4f5e6c4cb9db7f2a" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator+=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1afbacc3a72943faeebdbabf49a67c093a" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator-=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a904e050179ba0832caf7973d4f954515" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a6a21e0855a8e1d3e5eb78bc01446b021" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a2566b3123fe3f94a6b9676eb6b60936e" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a0d6c5c0cd541e686632bed4ba111ec8d" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank1_1aa4dd23616b69d69a174a7d52083f0d0c" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>own_type</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a10a89d234fbdb6695e1da39745f998c6" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>scalar_type</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a42a0392686bf3c1943bc732f28dc1604" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>size</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a1cca644cefcf4dafe9196b7a3017811c" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>tensor_type</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a30a16fb0f92c1afb2205756462a1a077" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank1</name></member>
+      <member refid="classcofe_1_1TensorRank1_1abdd47f9e43f6bcc20c3e2c3f6504df6e" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank1</name></member>
+      <member refid="classcofe_1_1TensorRank1_1ad900a35a693cafd25af386fb49007b1c" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank1</name></member>
+      <member refid="classcofe_1_1TensorRank1_1ab99a1790a5206100890ebf30c6a44924" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank1</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a1905f852a2a4870d31ccd4c362767cc1" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank1</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a156638b46d19e815506ae3525d792194" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank1</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a99d6c8ee5a264ecaac00ed0cece3ed03" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>TensorRank2&lt; Dim, T &gt;</name></member>
+      <member refid="classcofe_1_1TensorRank1_1a3224169c2fe2e9df2d6206df73748e68" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>vector_type</name></member>
+      <member refid="classcofe_1_1TensorRank1_1aa568accf451f9bb5cff0407df5a1567d" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>zero</name></member>
+      <member refid="classcofe_1_1TensorRank1_1afd31985bb3aaa96d8755d1094f3e3afc" prot="public" virt="non-virtual"><scope>cofe::TensorRank1</scope><name>~TensorRank1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

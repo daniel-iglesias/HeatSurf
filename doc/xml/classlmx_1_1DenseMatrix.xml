@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1DenseMatrix" kind="class" prot="public">
+    <compoundname>lmx::DenseMatrix</compoundname>
+    <basecompoundref refid="classlmx_1_1Matrix" prot="public" virt="non-virtual">lmx::Matrix&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__mat__dense__matrix_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1DenseMatrix_1a56c930883db63c32738c7830b808cd45" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::DenseMatrix&lt; T &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DenseMatrix_1a68209742f6c983aa29657504a47e73f1" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref>&lt; T &gt; *</type>
+        <definition>Type_stdmatrix&lt;T&gt;* lmx::DenseMatrix&lt; T &gt;::std_matrix</definition>
+        <argsstring></argsstring>
+        <name>std_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1ada75efeb7bf6c5220f1f7e718fe3311b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::DenseMatrix&lt; T &gt;::DenseMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>DenseMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="148" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a240cb7ac78e3d1e29d65e08060dccf5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::DenseMatrix&lt; T &gt;::DenseMatrix</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>DenseMatrix</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>rows</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>columns</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows in <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns in <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a34e6c5c76b6b6f729a745c48a4ce78a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::DenseMatrix&lt; T &gt;::DenseMatrix</definition>
+        <argsstring>(const DenseMatrix &amp;)</argsstring>
+        <name>DenseMatrix</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> &amp;</type>
+          <defname>A</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> to copy from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="168" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a8b7a868fe29aa399d104cf46213158fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::DenseMatrix&lt; T &gt;::~DenseMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>~DenseMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="67" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1aea3df37602013fd216dc9a895f71d7b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> &amp;</type>
+        <definition>DenseMatrix&lt; T &gt; &amp; lmx::DenseMatrix&lt; T &gt;::mult</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;, const Matrix&lt; T &gt; &amp;)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <defname>A</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> objects multiplication, with result storing in the <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to multiplication result in <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="224" bodyend="228"/>
+        <references refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1abc141337e70e9fee9c56bc4966705f76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> &amp;</type>
+        <definition>DenseMatrix&lt; T &gt; &amp; lmx::DenseMatrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <defname>A</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for equaling every element between a <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> and a <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object of the same type. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> to be equal to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="192" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a2ecef4d0da9409fe1f02f0bcadf78222" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> &amp;</type>
+        <definition>DenseMatrix&lt; T &gt; &amp; lmx::DenseMatrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal product between matrices. Multiplies each element of object to its equivalent in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> B. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> to multiply to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to internal product result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="73" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="236" bodyend="240"/>
+        <references refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" compoundref="lmx__mat__data__blas_8h" startline="143" endline="151">lmx::mat_mat_multElements</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a13fbcfd9a36eda49d800ea4f75226223" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> &amp;</type>
+        <definition>DenseMatrix&lt; T &gt; &amp; lmx::DenseMatrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;, const Matrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <defname>A</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal product between two <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> objects. Multiplies each element in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> A to its equivalent in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> B and saves the result in object from whitch the function is invoked. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> to multiply. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> to multiply. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to internal product result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="249" bodyend="253"/>
+        <references refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" compoundref="lmx__mat__data__blas_8h" startline="143" endline="151">lmx::mat_mat_multElements</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a2b27d8130aea5d145ec83d81e346e6b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref></type>
+        <definition>DenseMatrix lmx::DenseMatrix&lt; T &gt;::operator+</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for adding elements between a <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> and a <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="79" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a1a80039a17afadbcf71529ddf4324ccc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref></type>
+        <definition>DenseMatrix lmx::DenseMatrix&lt; T &gt;::operator-</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for adding elements between a <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> and a <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="88" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a99abe2af4a4f29c52a1ac81b349f959f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt;</type>
+        <definition>DenseMatrix&lt;T&gt; lmx::DenseMatrix&lt; T &gt;::operator*</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for multiplying <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> and <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="97" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="97" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a3e3551eb4f7f09d28e0966108a02276d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; lmx::DenseMatrix&lt; T &gt;::readElement</definition>
+        <argsstring>(size_type m, size_type n) const </argsstring>
+        <name>readElement</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that returns the value in specified position of <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="115" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="115" bodyend="116"/>
+        <referencedby refid="classlmx_1_1Vector_1a324cd467e73f7d05e83840da974f2128" compoundref="lmx__mat__vector_8h" startline="751" endline="770">lmx::Vector&lt; T &gt;::mult</referencedby>
+        <referencedby refid="classlmx_1_1DenseMatrix_1a99abe2af4a4f29c52a1ac81b349f959f" compoundref="lmx__mat__dense__matrix_8h" startline="97" endline="110">lmx::DenseMatrix&lt; double &gt;::operator*</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1a7c3702d29f2ceb974969eb9958e2ffcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DenseMatrix&lt; T &gt;::writeElement</definition>
+        <argsstring>(T theValue, size_type m, size_type n) const </argsstring>
+        <name>writeElement</name>
+        <param>
+          <type>T</type>
+          <declname>theValue</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function writes the value in specified position of <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="121" bodyend="122"/>
+        <referencedby refid="classlmx_1_1DenseMatrix_1a99abe2af4a4f29c52a1ac81b349f959f" compoundref="lmx__mat__dense__matrix_8h" startline="97" endline="110">lmx::DenseMatrix&lt; double &gt;::operator*</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1ac5eaf745aa3eee21569ce04284ed6449" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DenseMatrix&lt; T &gt;::addElement</definition>
+        <argsstring>(const T theValue, size_type m, size_type n) const </argsstring>
+        <name>addElement</name>
+        <param>
+          <type>const T</type>
+          <declname>theValue</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function adds the value in specified position of <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="127" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="127" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DenseMatrix_1ad42b0105c37cdd71f696bf939b105c4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DenseMatrix&lt; T &gt;::writeSparsePattern</definition>
+        <argsstring>(std::vector&lt; size_type &gt; &amp;, std::vector&lt; size_type &gt; &amp;) const </argsstring>
+        <name>writeSparsePattern</name>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>nRows</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>nCols</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes in two STL vectors the HB column and row indexes of the Non-zeros. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="132" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="257" bodyend="270"/>
+        <referencedby refid="classlmx_1_1DiffProblemSecond_1adae3bb6c6e7dd3762a66ff4bbed44016" compoundref="lmx__diff__problem__second_8h" startline="184" endline="187">lmx::DiffProblemSecond&lt; Sys, T &gt;::setSparsePatternJacobian</referencedby>
+        <referencedby refid="classlmx_1_1DiffProblemFirstSecond_1ae56a582d46ca18f5c1c7d8d74b469144" compoundref="lmx__diff__problem__first__second_8h" startline="176" endline="179">lmx::DiffProblemFirstSecond&lt; Sys, T &gt;::setSparsePatternJacobian1</referencedby>
+        <referencedby refid="classlmx_1_1DiffProblemFirstSecond_1a359944b699d9c45363f65b1f6f06a634" compoundref="lmx__diff__problem__first__second_8h" startline="180" endline="183">lmx::DiffProblemFirstSecond&lt; Sys, T &gt;::setSparsePatternJacobian2</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class allows the creation of dense matrix objects. A <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> object owns two parameters, nrows and mcolumns, that store the dimension of the matrix container. The data is stored in an atribute (*type_matrix) that points to some class which derives from the <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows of the <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> Container (<ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns of the <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> Container (<ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An <ref refid="classlmx_1_1Elem__ref" kindref="compound">Elem_ref</ref> object for r/w data access. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*type_matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the matrix data container.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="297">
+        <label>lmx::Matrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Matrix"/>
+      </node>
+      <node id="296">
+        <label>lmx::DenseMatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1DenseMatrix"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="299">
+        <label>lmx::Matrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Matrix"/>
+      </node>
+      <node id="298">
+        <label>lmx::DenseMatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1DenseMatrix"/>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="54" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1DenseMatrix_1ac5eaf745aa3eee21569ce04284ed6449" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>addElement</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1ada75efeb7bf6c5220f1f7e718fe3311b" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>DenseMatrix</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a240cb7ac78e3d1e29d65e08060dccf5a" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>DenseMatrix</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a34e6c5c76b6b6f729a745c48a4ce78a9" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>DenseMatrix</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1aea3df37602013fd216dc9a895f71d7b5" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>mult</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a2ecef4d0da9409fe1f02f0bcadf78222" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>multElements</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a13fbcfd9a36eda49d800ea4f75226223" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>multElements</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a99abe2af4a4f29c52a1ac81b349f959f" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>operator*</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a2b27d8130aea5d145ec83d81e346e6b1" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>operator+</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a1a80039a17afadbcf71529ddf4324ccc" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>operator-</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1abc141337e70e9fee9c56bc4966705f76" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>operator=</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a3e3551eb4f7f09d28e0966108a02276d" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>readElement</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a68209742f6c983aa29657504a47e73f1" prot="private" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>std_matrix</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a56c930883db63c32738c7830b808cd45" prot="private" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>type</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a7c3702d29f2ceb974969eb9958e2ffcd" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>writeElement</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1ad42b0105c37cdd71f696bf939b105c4c" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>writeSparsePattern</name></member>
+      <member refid="classlmx_1_1DenseMatrix_1a8b7a868fe29aa399d104cf46213158fb" prot="public" virt="non-virtual"><scope>lmx::DenseMatrix</scope><name>~DenseMatrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

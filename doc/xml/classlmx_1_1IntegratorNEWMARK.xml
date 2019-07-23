@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1IntegratorNEWMARK" kind="class" prot="public">
+    <compoundname>lmx::IntegratorNEWMARK</compoundname>
+    <basecompoundref refid="classlmx_1_1IntegratorBaseImplicit" prot="public" virt="non-virtual">lmx::IntegratorBaseImplicit&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__diff__integrator__newmark_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1IntegratorNEWMARK_1a7db31c656a23fb8bff4a2ea83ebb5124" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::IntegratorNEWMARK&lt; T &gt;::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorNEWMARK_1aea2efa0e13f01bdb27ff2a6301ff3d44" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::IntegratorNEWMARK&lt; T &gt;::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorNEWMARK_1a8f8516e87cc6c73c0c4144ee4712b1c1" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+        <definition>Configuration&lt;T&gt;* lmx::IntegratorNEWMARK&lt; T &gt;::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="87" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorNEWMARK&lt; T &gt;::IntegratorNEWMARK</definition>
+        <argsstring>()</argsstring>
+        <name>IntegratorNEWMARK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1a75cc12a6848df78b87c656447069c5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorNEWMARK&lt; T &gt;::IntegratorNEWMARK</definition>
+        <argsstring>(double beta, double gamma)</argsstring>
+        <name>IntegratorNEWMARK</name>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1af0fcb3a6122141515aaccf4a207058aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorNEWMARK&lt; T &gt;::~IntegratorNEWMARK</definition>
+        <argsstring>()</argsstring>
+        <name>~IntegratorNEWMARK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1a2aa5136a1c112e7ac31c2bd3cb516988" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorNEWMARK&lt; T &gt;::initialize</definition>
+        <argsstring>(Configuration&lt; T &gt; *)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a9ddf427bbc2267c264222552d5fa47c6">initialize</reimplements>
+        <param>
+          <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+          <defname>configuration_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize integration function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="105" bodyend="109"/>
+        <references refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" compoundref="lmx__diff__configuration_8h" startline="216" endline="246">lmx::Configuration&lt; T &gt;::setStoredSteps</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1a8e02bf1560e75a9bfa6c9d47edfe9f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorNEWMARK&lt; T &gt;::advance</definition>
+        <argsstring>()</argsstring>
+        <name>advance</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1ab671aed2798b57bd80e831dd2d0d49cf">advance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance to next time-step function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="113" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1aec6f86f3fc8a7118e9e7ef49d5aaa9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorNEWMARK&lt; T &gt;::integratorUpdate</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; delta)</argsstring>
+        <name>integratorUpdate</name>
+        <reimplements refid="classlmx_1_1IntegratorBaseImplicit_1aa7d97f0c3d139326a6b7ca28605f9681">integratorUpdate</reimplements>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt;</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actualize with delta in actual time-step. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="128" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1aef69029cf0cac5ce94ac218ffce77864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double lmx::IntegratorNEWMARK&lt; T &gt;::getPartialQdot</definition>
+        <argsstring>()</argsstring>
+        <name>getPartialQdot</name>
+        <reimplements refid="classlmx_1_1IntegratorBaseImplicit_1a8ee5ecd8b0bae40d8d79f48ca69f350f">getPartialQdot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the factor <formula id="0">$ \frac{\partial qdot_n}{\partial q_n} $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorNEWMARK_1ad00ddd433a6b4835c1be9ace78c66f6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double lmx::IntegratorNEWMARK&lt; T &gt;::getPartialQddot</definition>
+        <argsstring>()</argsstring>
+        <name>getPartialQddot</name>
+        <reimplements refid="classlmx_1_1IntegratorBaseImplicit_1a8933718fdb3629e07d0972d846c92a8e">getPartialQddot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the factor <formula id="1">$ \frac{\partial qddot_n}{\partial q_n} $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="80" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1IntegratorNEWMARK" kindref="compound">IntegratorNEWMARK</ref>. Gear&apos;s BDF integrator implementation for ODE systems. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="398">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="396">
+        <label>lmx::IntegratorNEWMARK&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorNEWMARK"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>lmx::IntegratorBaseImplicit&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBaseImplicit"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="401">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="399">
+        <label>lmx::IntegratorNEWMARK&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorNEWMARK"/>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>lmx::IntegratorBaseImplicit&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBaseImplicit"/>
+        <childnode refid="401" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h" bodystart="51" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1a8e02bf1560e75a9bfa6c9d47edfe9f86" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>advance</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1a7db31c656a23fb8bff4a2ea83ebb5124" prot="private" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>beta</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1aea2efa0e13f01bdb27ff2a6301ff3d44" prot="private" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>gamma</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1ad00ddd433a6b4835c1be9ace78c66f6f" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>getPartialQddot</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1aef69029cf0cac5ce94ac218ffce77864" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>getPartialQdot</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1a2aa5136a1c112e7ac31c2bd3cb516988" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>initialize</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1ac8fe7d9b211d6d86b4377a3ab57399fc" prot="public" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a9ebebca6cd29dce17da68385085870be" prot="public" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>IntegratorBaseImplicit</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" prot="public" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>IntegratorNEWMARK</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1a75cc12a6848df78b87c656447069c5cc" prot="public" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>IntegratorNEWMARK</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1aec6f86f3fc8a7118e9e7ef49d5aaa9c0" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>integratorUpdate</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a142802380bd75f1118a8815b2d2f0c75" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>isExplicit</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1a8f8516e87cc6c73c0c4144ee4712b1c1" prot="private" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>q</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1a44f52dfb85513d84a2d3e5a1dbd73b94" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>~IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a6b8b7489aead3b0634db14bbae16333f" prot="public" virt="virtual"><scope>lmx::IntegratorNEWMARK</scope><name>~IntegratorBaseImplicit</name></member>
+      <member refid="classlmx_1_1IntegratorNEWMARK_1af0fcb3a6122141515aaccf4a207058aa" prot="public" virt="non-virtual"><scope>lmx::IntegratorNEWMARK</scope><name>~IntegratorNEWMARK</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespacecofe" kind="namespace">
+    <compoundname>cofe</compoundname>
+    <innerclass refid="classcofe_1_1CofeUtils" prot="public">cofe::CofeUtils</innerclass>
+    <innerclass refid="classcofe_1_1TensorRank2" prot="public">cofe::TensorRank2</innerclass>
+    <innerclass refid="classcofe_1_1TensorRank1" prot="public">cofe::TensorRank1</innerclass>
+    <innerclass refid="classcofe_1_1AbstractTensorRank4SS" prot="public">cofe::AbstractTensorRank4SS</innerclass>
+    <innerclass refid="classcofe_1_1TensorRank2Sym" prot="public">cofe::TensorRank2Sym</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecofe_1a0e56d8696cb0405dc99575cedd504e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double cofe::norm</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>norm</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_CofeUtils.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_CofeUtils.h" bodystart="48" bodyend="48"/>
+        <referencedby refid="classlmx_1_1Vector_1ab671ff37259e9f166954a17db0f90abd" compoundref="lmx__mat__vector_8h" startline="903" endline="910">lmx::Vector&lt; T &gt;::norm1</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1aca60cec2ef0c54e2fe8164b0c842a3d9" compoundref="lmx__mat__vector_8h" startline="915" endline="921">lmx::Vector&lt; T &gt;::norm2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecofe_1a5d5b0de16aea3255de1d90d382190948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cofe::gausselim</definition>
+        <argsstring>(T a[N][N], T b[N])</argsstring>
+        <name>gausselim</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+          <array>[N][N]</array>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_gausselim.h" line="14" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_gausselim.h" bodystart="18" bodyend="44"/>
+        <references refid="classcofe_1_1CofeUtils_1a580314f9895cd59dca7803dfd1afd687" compoundref="cofe__CofeUtils_8h" startline="32" endline="37">cofe::CofeUtils::error</references>
+        <referencedby refid="classcofe_1_1TensorRank2_1af28aac212a14afce9e6e0554234cf3bb" compoundref="cofe__TensorRank2_8h" startline="429" endline="438">cofe::TensorRank2&lt; Dim, T &gt;::solve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecofe_1afaaf31804fece6c0f775b00617b06d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cofe::jacobi</definition>
+        <argsstring>(T a[N][N], T d[N], T v[N][N], int &amp;nrot)</argsstring>
+        <name>jacobi</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+          <array>[N][N]</array>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>d</declname>
+          <array>[N]</array>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>v</declname>
+          <array>[N][N]</array>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nrot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_jpjacobi.h" line="15" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_jpjacobi.h" bodystart="37" bodyend="109"/>
+        <references refid="classcofe_1_1CofeUtils_1a580314f9895cd59dca7803dfd1afd687" compoundref="cofe__CofeUtils_8h" startline="32" endline="37">cofe::CofeUtils::error</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecofe_1a478fccba3e4f3ac5306de274a92fc35c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cofe::rot</definition>
+        <argsstring>(T a[N][N], T s, T tau, int i, int j, int k, int l)</argsstring>
+        <name>rot</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+          <array>[N][N]</array>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>tau</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_jpjacobi.h" line="22" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_jpjacobi.h" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecofe_1ab6bccc99cdd1fd8eed53cd333f1f864f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>Dim</declname>
+            <defname>Dim</defname>
+          </param>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; cofe::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const cofe::TensorRank1&lt; Dim, T &gt; &amp;a)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1" kindref="compound">cofe::TensorRank1</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" line="248" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank1.h" bodystart="248" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecofe_1a232b6c35445601838612838ee6b7e8d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>Dim</declname>
+            <defname>Dim</defname>
+          </param>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; cofe::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const cofe::TensorRank2&lt; Dim, T &gt; &amp;a)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2" kindref="compound">cofe::TensorRank2</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2.h" line="500" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2.h" bodystart="500" bodyend="509"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Continuum Oriented Finite Elements. </para>    </briefdescription>
+    <detaileddescription>
+<para>{}</para><para>This namespace contains all the Tensor related facilities.</para><para><simplesect kind="author"><para>Jaime Planas &amp; J. M. Sancho. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_CofeUtils.h" line="18" column="1"/>
+  </compounddef>
+</doxygen>

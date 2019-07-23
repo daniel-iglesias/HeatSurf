@@ -1,0 +1,1382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classGeometry" kind="class" prot="public" abstract="yes">
+    <compoundname>Geometry</compoundname>
+    <derivedcompoundref refid="classCone" prot="public" virt="non-virtual">Cone</derivedcompoundref>
+    <derivedcompoundref refid="classCone2" prot="public" virt="non-virtual">Cone2</derivedcompoundref>
+    <derivedcompoundref refid="classCylinder" prot="public" virt="non-virtual">Cylinder</derivedcompoundref>
+    <derivedcompoundref refid="classOgive" prot="public" virt="non-virtual">Ogive</derivedcompoundref>
+    <derivedcompoundref refid="classRing" prot="public" virt="non-virtual">Ring</derivedcompoundref>
+    <derivedcompoundref refid="classTwoPlates" prot="public" virt="non-virtual">TwoPlates</derivedcompoundref>
+    <includes refid="geometry_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Geometry::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="116" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a565f5b7736c4b0894732900199903d54" compoundref="geometry_8h" startline="107" endline="107">getType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Geometry::sections</definition>
+        <argsstring></argsstring>
+        <name>sections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="117" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classTwoPlates_1a68c5911a0b3c24f59c3df0335f1e6c94" compoundref="twoplates_8cpp" startline="54" endline="103">TwoPlates::computeEnergy</referencedby>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" compoundref="geometry_8cpp" startline="632" endline="700">outputBackscattering</referencedby>
+        <referencedby refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c" compoundref="ring_8cpp" startline="294" endline="399">Ring::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" compoundref="cylinder_8cpp" startline="296" endline="405">Cylinder::outputPowerDensityFile</referencedby>
+        <referencedby refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" compoundref="ogive_8cpp" startline="332" endline="441">Ogive::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone_1a435a6b46c506758157f2ed0d3213461f" compoundref="cone_8cpp" startline="297" endline="407">Cone::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone2_1af259aae6fd151e82482ee9232b63af31" compoundref="cone2_8cpp" startline="301" endline="411">Cone2::outputPowerDensityFile</referencedby>
+        <referencedby refid="classRing_1a3634ff6b0684ff0a0eb172751eef83a9" compoundref="ring_8cpp" startline="269" endline="292">Ring::outputPowerFile</referencedby>
+        <referencedby refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" compoundref="cylinder_8cpp" startline="271" endline="294">Cylinder::outputPowerFile</referencedby>
+        <referencedby refid="classOgive_1a260f5f7945194147784025aaf7fe0a72" compoundref="ogive_8cpp" startline="307" endline="330">Ogive::outputPowerFile</referencedby>
+        <referencedby refid="classCone2_1a947c9976494227e12730843c77a9b241" compoundref="cone2_8cpp" startline="276" endline="299">Cone2::outputPowerFile</referencedby>
+        <referencedby refid="classCone_1a9928e7033ce28a13e7d770a1620e096e" compoundref="cone_8cpp" startline="272" endline="295">Cone::outputPowerFile</referencedby>
+        <referencedby refid="classRing_1a4e11fdcade67b41f38a7ec4458afdd8d" compoundref="ring_8cpp" startline="51" endline="55">Ring::setSections</referencedby>
+        <referencedby refid="classOgive_1a925beac2c2c2ee5f7ad6654a4f1048e5" compoundref="ogive_8cpp" startline="54" endline="58">Ogive::setSections</referencedby>
+        <referencedby refid="classCylinder_1ad75a4b81272ef8b27b3163bf0aa49efd" compoundref="cylinder_8cpp" startline="51" endline="55">Cylinder::setSections</referencedby>
+        <referencedby refid="classTwoPlates_1a23168c87f9097b2c1a4fa8cac4b61049" compoundref="twoplates_8cpp" startline="106" endline="110">TwoPlates::setSections</referencedby>
+        <referencedby refid="classCone_1a52fd80b6c484449a8d24d1471e21873c" compoundref="cone_8cpp" startline="51" endline="55">Cone::setSections</referencedby>
+        <referencedby refid="classCone2_1a7aeaee918b84b78b5b00f9572bedd349" compoundref="cone2_8cpp" startline="55" endline="59">Cone2::setSections</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Geometry::sections3D</definition>
+        <argsstring></argsstring>
+        <name>sections3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="117" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" compoundref="geometry_8cpp" startline="539" endline="615">outputAnsys3D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Geometry::sectors</definition>
+        <argsstring></argsstring>
+        <name>sectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="118" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classTwoPlates_1a68c5911a0b3c24f59c3df0335f1e6c94" compoundref="twoplates_8cpp" startline="54" endline="103">TwoPlates::computeEnergy</referencedby>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" compoundref="geometry_8cpp" startline="632" endline="700">outputBackscattering</referencedby>
+        <referencedby refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c" compoundref="ring_8cpp" startline="294" endline="399">Ring::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" compoundref="cylinder_8cpp" startline="296" endline="405">Cylinder::outputPowerDensityFile</referencedby>
+        <referencedby refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" compoundref="ogive_8cpp" startline="332" endline="441">Ogive::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone2_1af259aae6fd151e82482ee9232b63af31" compoundref="cone2_8cpp" startline="301" endline="411">Cone2::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone_1a435a6b46c506758157f2ed0d3213461f" compoundref="cone_8cpp" startline="297" endline="407">Cone::outputPowerDensityFile</referencedby>
+        <referencedby refid="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9" compoundref="twoplates_8cpp" startline="316" endline="378">TwoPlates::outputPowerDensityFile</referencedby>
+        <referencedby refid="classRing_1a3634ff6b0684ff0a0eb172751eef83a9" compoundref="ring_8cpp" startline="269" endline="292">Ring::outputPowerFile</referencedby>
+        <referencedby refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" compoundref="cylinder_8cpp" startline="271" endline="294">Cylinder::outputPowerFile</referencedby>
+        <referencedby refid="classOgive_1a260f5f7945194147784025aaf7fe0a72" compoundref="ogive_8cpp" startline="307" endline="330">Ogive::outputPowerFile</referencedby>
+        <referencedby refid="classCone_1a9928e7033ce28a13e7d770a1620e096e" compoundref="cone_8cpp" startline="272" endline="295">Cone::outputPowerFile</referencedby>
+        <referencedby refid="classCone2_1a947c9976494227e12730843c77a9b241" compoundref="cone2_8cpp" startline="276" endline="299">Cone2::outputPowerFile</referencedby>
+        <referencedby refid="classTwoPlates_1a978c078774fe74e99b8f4064a6126e84" compoundref="twoplates_8cpp" startline="292" endline="314">TwoPlates::outputPowerFile</referencedby>
+        <referencedby refid="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e" compoundref="twoplates_8cpp" startline="254" endline="289">TwoPlates::outputTable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Geometry::sectors3D</definition>
+        <argsstring></argsstring>
+        <name>sectors3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="118" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" compoundref="geometry_8cpp" startline="539" endline="615">outputAnsys3D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Geometry::z0</definition>
+        <argsstring></argsstring>
+        <name>z0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="119" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classCone2_1a94d852542a6c22427333b484f30658c2" compoundref="cone2-bak_8cpp" startline="63" endline="72">Cone2::jacobian</referencedby>
+        <referencedby refid="classOgive_1a3260fd40c32dbb4e1c5f17f7903e7c20" compoundref="ogive_8cpp" startline="178" endline="194">Ogive::jacobian</referencedby>
+        <referencedby refid="classCone_1a5443c4cbf223ee931f0626e92c353008" compoundref="cone_8cpp" startline="159" endline="168">Cone::jacobian</referencedby>
+        <referencedby refid="classTwoPlates_1ad1ae0ed441b0ec1f7650501f648ebfdb" compoundref="twoplates_8cpp" startline="215" endline="224">TwoPlates::jacobian</referencedby>
+        <referencedby refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c" compoundref="ring_8cpp" startline="294" endline="399">Ring::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" compoundref="cylinder_8cpp" startline="296" endline="405">Cylinder::outputPowerDensityFile</referencedby>
+        <referencedby refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" compoundref="ogive_8cpp" startline="332" endline="441">Ogive::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone_1a435a6b46c506758157f2ed0d3213461f" compoundref="cone_8cpp" startline="297" endline="407">Cone::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone2_1af259aae6fd151e82482ee9232b63af31" compoundref="cone2_8cpp" startline="301" endline="411">Cone2::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" compoundref="cone2-bak_8cpp" startline="52" endline="60">Cone2::residue</referencedby>
+        <referencedby refid="classOgive_1a849470be3cd2e0db95fd191b0d41f0f5" compoundref="ogive_8cpp" startline="154" endline="176">Ogive::residue</referencedby>
+        <referencedby refid="classCone_1a4c292bca1debd7c22f7e6cba03e50f46" compoundref="cone_8cpp" startline="149" endline="157">Cone::residue</referencedby>
+        <referencedby refid="classTwoPlates_1a71bf9bd3453782adb97e94addabe23ec" compoundref="twoplates_8cpp" startline="205" endline="213">TwoPlates::residue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Geometry::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="119" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classTwoPlates_1a68c5911a0b3c24f59c3df0335f1e6c94" compoundref="twoplates_8cpp" startline="54" endline="103">TwoPlates::computeEnergy</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classCone_1a28e740791e735a80d44ccb98ce9c5579" compoundref="cone_8cpp" startline="33" endline="43">Cone::Cone</referencedby>
+        <referencedby refid="classCone2_1a65867efad22fe7b708dd76b7a2621577" compoundref="cone2-bak_8cpp" startline="33" endline="44">Cone2::Cone2</referencedby>
+        <referencedby refid="classTwoPlates_1a6bff308b65ed2bfe33098ae210626b30" compoundref="twoplates_8h" startline="69" endline="69">TwoPlates::getLength</referencedby>
+        <referencedby refid="classCone2_1a94d852542a6c22427333b484f30658c2" compoundref="cone2-bak_8cpp" startline="63" endline="72">Cone2::jacobian</referencedby>
+        <referencedby refid="classCone_1a5443c4cbf223ee931f0626e92c353008" compoundref="cone_8cpp" startline="159" endline="168">Cone::jacobian</referencedby>
+        <referencedby refid="classTwoPlates_1ad1ae0ed441b0ec1f7650501f648ebfdb" compoundref="twoplates_8cpp" startline="215" endline="224">TwoPlates::jacobian</referencedby>
+        <referencedby refid="classOgive_1a4cc1f5beafcd2259677c4053d1ce38d1" compoundref="ogive_8cpp" startline="33" endline="46">Ogive::Ogive</referencedby>
+        <referencedby refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" compoundref="geometry_8cpp" startline="632" endline="700">outputBackscattering</referencedby>
+        <referencedby refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c" compoundref="ring_8cpp" startline="294" endline="399">Ring::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" compoundref="cylinder_8cpp" startline="296" endline="405">Cylinder::outputPowerDensityFile</referencedby>
+        <referencedby refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" compoundref="ogive_8cpp" startline="332" endline="441">Ogive::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone2_1af259aae6fd151e82482ee9232b63af31" compoundref="cone2_8cpp" startline="301" endline="411">Cone2::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone_1a435a6b46c506758157f2ed0d3213461f" compoundref="cone_8cpp" startline="297" endline="407">Cone::outputPowerDensityFile</referencedby>
+        <referencedby refid="classRing_1a3634ff6b0684ff0a0eb172751eef83a9" compoundref="ring_8cpp" startline="269" endline="292">Ring::outputPowerFile</referencedby>
+        <referencedby refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" compoundref="cylinder_8cpp" startline="271" endline="294">Cylinder::outputPowerFile</referencedby>
+        <referencedby refid="classOgive_1a260f5f7945194147784025aaf7fe0a72" compoundref="ogive_8cpp" startline="307" endline="330">Ogive::outputPowerFile</referencedby>
+        <referencedby refid="classCone_1a9928e7033ce28a13e7d770a1620e096e" compoundref="cone_8cpp" startline="272" endline="295">Cone::outputPowerFile</referencedby>
+        <referencedby refid="classCone2_1a947c9976494227e12730843c77a9b241" compoundref="cone2_8cpp" startline="276" endline="299">Cone2::outputPowerFile</referencedby>
+        <referencedby refid="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e" compoundref="twoplates_8cpp" startline="254" endline="289">TwoPlates::outputTable</referencedby>
+        <referencedby refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" compoundref="cone2-bak_8cpp" startline="52" endline="60">Cone2::residue</referencedby>
+        <referencedby refid="classCone_1a4c292bca1debd7c22f7e6cba03e50f46" compoundref="cone_8cpp" startline="149" endline="157">Cone::residue</referencedby>
+        <referencedby refid="classTwoPlates_1a71bf9bd3453782adb97e94addabe23ec" compoundref="twoplates_8cpp" startline="205" endline="213">TwoPlates::residue</referencedby>
+        <referencedby refid="classCylinder_1ad75a4b81272ef8b27b3163bf0aa49efd" compoundref="cylinder_8cpp" startline="51" endline="55">Cylinder::setSections</referencedby>
+        <referencedby refid="classOgive_1a925beac2c2c2ee5f7ad6654a4f1048e5" compoundref="ogive_8cpp" startline="54" endline="58">Ogive::setSections</referencedby>
+        <referencedby refid="classTwoPlates_1a23168c87f9097b2c1a4fa8cac4b61049" compoundref="twoplates_8cpp" startline="106" endline="110">TwoPlates::setSections</referencedby>
+        <referencedby refid="classCone_1a52fd80b6c484449a8d24d1471e21873c" compoundref="cone_8cpp" startline="51" endline="55">Cone::setSections</referencedby>
+        <referencedby refid="classCone2_1a7aeaee918b84b78b5b00f9572bedd349" compoundref="cone2_8cpp" startline="55" endline="59">Cone2::setSections</referencedby>
+        <referencedby refid="classTwoPlates_1ac1dfa39d5a74aad3e53b12c4bbdcff4e" compoundref="twoplates_8cpp" startline="32" endline="46">TwoPlates::TwoPlates</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Geometry::gridWidth</definition>
+        <argsstring></argsstring>
+        <name>gridWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="120" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classCone_1a28e740791e735a80d44ccb98ce9c5579" compoundref="cone_8cpp" startline="33" endline="43">Cone::Cone</referencedby>
+        <referencedby refid="classCone2_1a65867efad22fe7b708dd76b7a2621577" compoundref="cone2-bak_8cpp" startline="33" endline="44">Cone2::Cone2</referencedby>
+        <referencedby refid="classCylinder_1af6f22d1e11f65fc230f270c16e25385a" compoundref="cylinder_8cpp" startline="33" endline="43">Cylinder::Cylinder</referencedby>
+        <referencedby refid="classOgive_1a4cc1f5beafcd2259677c4053d1ce38d1" compoundref="ogive_8cpp" startline="33" endline="46">Ogive::Ogive</referencedby>
+        <referencedby refid="classRing_1a0ed22778579e271562469b62c1ed5230" compoundref="ring_8cpp" startline="33" endline="43">Ring::Ring</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Geometry::gridSpacing</definition>
+        <argsstring></argsstring>
+        <name>gridSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="120" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; Geometry::paramTrajectories</definition>
+        <argsstring></argsstring>
+        <name>paramTrajectories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; int, <ref refid="classNode" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::map&lt;int, Node*&gt; Geometry::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="122" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+        <referencedby refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" compoundref="geometry_8cpp" startline="632" endline="700">outputBackscattering</referencedby>
+        <referencedby refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c" compoundref="ring_8cpp" startline="294" endline="399">Ring::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" compoundref="cylinder_8cpp" startline="296" endline="405">Cylinder::outputPowerDensityFile</referencedby>
+        <referencedby refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" compoundref="ogive_8cpp" startline="332" endline="441">Ogive::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone2_1af259aae6fd151e82482ee9232b63af31" compoundref="cone2_8cpp" startline="301" endline="411">Cone2::outputPowerDensityFile</referencedby>
+        <referencedby refid="classCone_1a435a6b46c506758157f2ed0d3213461f" compoundref="cone_8cpp" startline="297" endline="407">Cone::outputPowerDensityFile</referencedby>
+        <referencedby refid="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9" compoundref="twoplates_8cpp" startline="316" endline="378">TwoPlates::outputPowerDensityFile</referencedby>
+        <referencedby refid="classRing_1a3634ff6b0684ff0a0eb172751eef83a9" compoundref="ring_8cpp" startline="269" endline="292">Ring::outputPowerFile</referencedby>
+        <referencedby refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" compoundref="cylinder_8cpp" startline="271" endline="294">Cylinder::outputPowerFile</referencedby>
+        <referencedby refid="classOgive_1a260f5f7945194147784025aaf7fe0a72" compoundref="ogive_8cpp" startline="307" endline="330">Ogive::outputPowerFile</referencedby>
+        <referencedby refid="classCone_1a9928e7033ce28a13e7d770a1620e096e" compoundref="cone_8cpp" startline="272" endline="295">Cone::outputPowerFile</referencedby>
+        <referencedby refid="classCone2_1a947c9976494227e12730843c77a9b241" compoundref="cone2_8cpp" startline="276" endline="299">Cone2::outputPowerFile</referencedby>
+        <referencedby refid="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e" compoundref="twoplates_8cpp" startline="254" endline="289">TwoPlates::outputTable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a64335b4700461be035cf7e89b7782cb6" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; int, <ref refid="classNode" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::map&lt;int, Node*&gt; Geometry::grid3Dnodes</definition>
+        <argsstring></argsstring>
+        <name>grid3Dnodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="123" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+        <referencedby refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" compoundref="geometry_8cpp" startline="539" endline="615">outputAnsys3D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1acef6e83971679a9c4672c3b610acb58e" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classElement" kindref="compound">Element</ref> * &gt;</type>
+        <definition>std::vector&lt; Element* &gt; Geometry::elements</definition>
+        <argsstring></argsstring>
+        <name>elements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="124" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+        <referencedby refid="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9" compoundref="twoplates_8cpp" startline="316" endline="378">TwoPlates::outputPowerDensityFile</referencedby>
+        <referencedby refid="classTwoPlates_1a978c078774fe74e99b8f4064a6126e84" compoundref="twoplates_8cpp" startline="292" endline="314">TwoPlates::outputPowerFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classElement" kindref="compound">Element</ref> * &gt;</type>
+        <definition>std::vector&lt; Element* &gt; Geometry::grid3D</definition>
+        <argsstring></argsstring>
+        <name>grid3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="125" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" compoundref="geometry_8cpp" startline="175" endline="299">computePowerDensity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Geometry::plotTitle</definition>
+        <argsstring></argsstring>
+        <name>plotTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="126" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aed47a80e867e618e98272e830d297deb" prot="protected" static="no" mutable="no">
+        <type>vtkPoints *</type>
+        <definition>vtkPoints* Geometry::gridPoints</definition>
+        <argsstring></argsstring>
+        <name>gridPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="128" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" prot="protected" static="no" mutable="no">
+        <type>vtkFloatArray *</type>
+        <definition>vtkFloatArray* Geometry::scalar</definition>
+        <argsstring></argsstring>
+        <name>scalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="129" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" prot="protected" static="no" mutable="no">
+        <type>vtkUnstructuredGrid *</type>
+        <definition>vtkUnstructuredGrid* Geometry::grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="130" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" compoundref="ring_8cpp" startline="58" endline="143">Ring::computeGeometry</referencedby>
+        <referencedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" compoundref="cylinder_8cpp" startline="58" endline="147">Cylinder::computeGeometry</referencedby>
+        <referencedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" compoundref="ogive_8cpp" startline="61" endline="151">Ogive::computeGeometry</referencedby>
+        <referencedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" compoundref="cone2_8cpp" startline="62" endline="150">Cone2::computeGeometry</referencedby>
+        <referencedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" compoundref="cone_8cpp" startline="58" endline="146">Cone::computeGeometry</referencedby>
+        <referencedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" compoundref="twoplates_8cpp" startline="113" endline="202">TwoPlates::computeGeometry</referencedby>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+        <referencedby refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" compoundref="geometry_8cpp" startline="617" endline="629">outputVTKfiles</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1afd79778e7c244df18be79a39419190c8" prot="protected" static="no" mutable="no">
+        <type>vtkPoints *</type>
+        <definition>vtkPoints* Geometry::grid3DPoints</definition>
+        <argsstring></argsstring>
+        <name>grid3DPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="132" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" prot="protected" static="no" mutable="no">
+        <type>vtkFloatArray *</type>
+        <definition>vtkFloatArray* Geometry::grid3Dscalar</definition>
+        <argsstring></argsstring>
+        <name>grid3Dscalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="133" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" prot="protected" static="no" mutable="no">
+        <type>vtkUnstructuredGrid *</type>
+        <definition>vtkUnstructuredGrid* Geometry::gridCubes</definition>
+        <argsstring></argsstring>
+        <name>gridCubes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="134" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" compoundref="geometry_8cpp" startline="73" endline="172">computeGrid3D</referencedby>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+        <referencedby refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" compoundref="geometry_8cpp" startline="617" endline="629">outputVTKfiles</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" prot="protected" static="no" mutable="no">
+        <type>vtkRenderWindow *</type>
+        <definition>vtkRenderWindow* Geometry::renWin</definition>
+        <argsstring></argsstring>
+        <name>renWin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="136" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" prot="protected" static="no" mutable="no">
+        <type>vtkInteractorStyleTrackballCamera *</type>
+        <definition>vtkInteractorStyleTrackballCamera* Geometry::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="137" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" prot="protected" static="no" mutable="no">
+        <type>vtkRenderWindowInteractor *</type>
+        <definition>vtkRenderWindowInteractor* Geometry::iren</definition>
+        <argsstring></argsstring>
+        <name>iren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="138" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a0893a3a686dc14327816c9648efe8662" prot="protected" static="no" mutable="no">
+        <type>vtkRenderer *</type>
+        <definition>vtkRenderer* Geometry::ren</definition>
+        <argsstring></argsstring>
+        <name>ren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="139" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1af314d57676056969da57788a60954926" prot="protected" static="no" mutable="no">
+        <type>vtkDataSetMapper *</type>
+        <definition>vtkDataSetMapper* Geometry::aDataSetMapper</definition>
+        <argsstring></argsstring>
+        <name>aDataSetMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="140" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="140" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a86a213e57fee0c578d220d8015c2891b" prot="protected" static="no" mutable="no">
+        <type>vtkActor *</type>
+        <definition>vtkActor* Geometry::anActor</definition>
+        <argsstring></argsstring>
+        <name>anActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="141" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" prot="protected" static="no" mutable="no">
+        <type>vtkRenderWindow *</type>
+        <definition>vtkRenderWindow* Geometry::grid3DrenWin</definition>
+        <argsstring></argsstring>
+        <name>grid3DrenWin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="143" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="143" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" prot="protected" static="no" mutable="no">
+        <type>vtkInteractorStyleTrackballCamera *</type>
+        <definition>vtkInteractorStyleTrackballCamera* Geometry::grid3Dstyle</definition>
+        <argsstring></argsstring>
+        <name>grid3Dstyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="144" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" prot="protected" static="no" mutable="no">
+        <type>vtkRenderWindowInteractor *</type>
+        <definition>vtkRenderWindowInteractor* Geometry::grid3Diren</definition>
+        <argsstring></argsstring>
+        <name>grid3Diren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="145" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" prot="protected" static="no" mutable="no">
+        <type>vtkRenderer *</type>
+        <definition>vtkRenderer* Geometry::grid3Dren</definition>
+        <argsstring></argsstring>
+        <name>grid3Dren</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="146" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="146" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" prot="protected" static="no" mutable="no">
+        <type>vtkDataSetMapper *</type>
+        <definition>vtkDataSetMapper* Geometry::grid3DDataSetMapper</definition>
+        <argsstring></argsstring>
+        <name>grid3DDataSetMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="147" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a2bf0d89ae708392842128430e08b0e32" prot="protected" static="no" mutable="no">
+        <type>vtkActor *</type>
+        <definition>vtkActor* Geometry::grid3DActor</definition>
+        <argsstring></argsstring>
+        <name>grid3DActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="148" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1aaabe40cbb12206d80e4376367568934b" prot="protected" static="no" mutable="no">
+        <type>vtkLookupTable *</type>
+        <definition>vtkLookupTable* Geometry::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="150" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="150" bodyend="-1"/>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" prot="protected" static="no" mutable="no">
+        <type>vtkScalarBarActor *</type>
+        <definition>vtkScalarBarActor* Geometry::barActor</definition>
+        <argsstring></argsstring>
+        <name>barActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="151" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="151" bodyend="-1"/>
+        <referencedby refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" compoundref="geometry_8cpp" startline="370" endline="410">drawScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" prot="protected" static="no" mutable="no">
+        <type>vtkLookupTable *</type>
+        <definition>vtkLookupTable* Geometry::grid3Dtable</definition>
+        <argsstring></argsstring>
+        <name>grid3Dtable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="153" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1af384c0e243c658c029afe53df9e59fd2" prot="protected" static="no" mutable="no">
+        <type>vtkScalarBarActor *</type>
+        <definition>vtkScalarBarActor* Geometry::grid3DbarActor</definition>
+        <argsstring></argsstring>
+        <name>grid3DbarActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="154" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" prot="protected" static="no" mutable="no">
+        <type>vtkAxesActor *</type>
+        <definition>vtkAxesActor* Geometry::axes</definition>
+        <argsstring></argsstring>
+        <name>axes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="156" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="156" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" prot="protected" static="no" mutable="no">
+        <type>vtkOrientationMarkerWidget *</type>
+        <definition>vtkOrientationMarkerWidget* Geometry::widget</definition>
+        <argsstring></argsstring>
+        <name>widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="157" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="157" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" compoundref="geometry_8cpp" startline="302" endline="368">drawGeometry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" prot="protected" static="no" mutable="no">
+        <type>vtkAxesActor *</type>
+        <definition>vtkAxesActor* Geometry::grid3Daxes</definition>
+        <argsstring></argsstring>
+        <name>grid3Daxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="159" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="159" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" prot="protected" static="no" mutable="no">
+        <type>vtkOrientationMarkerWidget *</type>
+        <definition>vtkOrientationMarkerWidget* Geometry::grid3Dwidget</definition>
+        <argsstring></argsstring>
+        <name>grid3Dwidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="160" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="160" bodyend="-1"/>
+        <referencedby refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" compoundref="geometry_8cpp" startline="413" endline="479">drawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" prot="protected" static="no" mutable="no">
+        <type>vtkPlane *</type>
+        <definition>vtkPlane* Geometry::plane</definition>
+        <argsstring></argsstring>
+        <name>plane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="162" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="162" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1afa017d6536259e954e4ca10337b4353b" prot="protected" static="no" mutable="no">
+        <type>vtkCutter *</type>
+        <definition>vtkCutter* Geometry::planeCut</definition>
+        <argsstring></argsstring>
+        <name>planeCut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="163" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1ae6a74274d05291746f520af8083a26e7" prot="protected" static="no" mutable="no">
+        <type>vtkPolyDataMapper *</type>
+        <definition>vtkPolyDataMapper* Geometry::cutMapper</definition>
+        <argsstring></argsstring>
+        <name>cutMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="164" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="164" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" prot="protected" static="no" mutable="no">
+        <type>vtkActor *</type>
+        <definition>vtkActor* Geometry::cutActor</definition>
+        <argsstring></argsstring>
+        <name>cutActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="165" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="165" bodyend="-1"/>
+        <referencedby refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" compoundref="geometry_8cpp" startline="481" endline="536">drawGridScalar</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Geometry::Geometry</definition>
+        <argsstring>()</argsstring>
+        <name>Geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Geometry::Geometry</definition>
+        <argsstring>(std::string, double, int, double)</argsstring>
+        <name>Geometry</name>
+        <param>
+          <type>std::string</type>
+          <defname>type_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>z0_in</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>sectors_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>length_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="57" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1ad55e832122ab3a2833dcaa6507867678" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Geometry::~Geometry</definition>
+        <argsstring>()</argsstring>
+        <name>~Geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="79" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::setSections</definition>
+        <argsstring>(double)=0</argsstring>
+        <name>setSections</name>
+        <reimplementedby refid="classRing_1a4e11fdcade67b41f38a7ec4458afdd8d">setSections</reimplementedby>
+        <reimplementedby refid="classOgive_1a925beac2c2c2ee5f7ad6654a4f1048e5">setSections</reimplementedby>
+        <reimplementedby refid="classCylinder_1ad75a4b81272ef8b27b3163bf0aa49efd">setSections</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1a23168c87f9097b2c1a4fa8cac4b61049">setSections</reimplementedby>
+        <reimplementedby refid="classCone2_1a7aeaee918b84b78b5b00f9572bedd349">setSections</reimplementedby>
+        <reimplementedby refid="classCone_1a52fd80b6c484449a8d24d1471e21873c">setSections</reimplementedby>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a3e77ac889d1e440c24efbde630aa1933" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::computeGeometry</definition>
+        <argsstring>()=0</argsstring>
+        <name>computeGeometry</name>
+        <reimplementedby refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6">computeGeometry</reimplementedby>
+        <reimplementedby refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72">computeGeometry</reimplementedby>
+        <reimplementedby refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa">computeGeometry</reimplementedby>
+        <reimplementedby refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55">computeGeometry</reimplementedby>
+        <reimplementedby refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891">computeGeometry</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099">computeGeometry</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::computeGrid3D</definition>
+        <argsstring>()</argsstring>
+        <name>computeGrid3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="85" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="73" bodyend="172"/>
+        <references refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" compoundref="geometry_8h" startline="125">grid3D</references>
+        <references refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" compoundref="geometry_8h" startline="123">grid3Dnodes</references>
+        <references refid="classGeometry_1afd79778e7c244df18be79a39419190c8" compoundref="geometry_8h" startline="132">grid3DPoints</references>
+        <references refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" compoundref="geometry_8h" startline="134">gridCubes</references>
+        <references refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" compoundref="geometry_8h" startline="120">gridWidth</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">length</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">sections</references>
+        <references refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" compoundref="geometry_8h" startline="117">sections3D</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">sectors</references>
+        <references refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" compoundref="geometry_8h" startline="118">sectors3D</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::computeIntersection</definition>
+        <argsstring>(Particle *)=0</argsstring>
+        <name>computeIntersection</name>
+        <reimplementedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46">computeIntersection</reimplementedby>
+        <reimplementedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78">computeIntersection</reimplementedby>
+        <reimplementedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9">computeIntersection</reimplementedby>
+        <reimplementedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e">computeIntersection</reimplementedby>
+        <reimplementedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46">computeIntersection</reimplementedby>
+        <reimplementedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f">computeIntersection</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de">computeIntersection</reimplementedby>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1af60650f8ce6d5a220928ccd7395120df" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::computeNodalPower</definition>
+        <argsstring>(Particle *)=0</argsstring>
+        <name>computeNodalPower</name>
+        <reimplementedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61">computeNodalPower</reimplementedby>
+        <reimplementedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef">computeNodalPower</reimplementedby>
+        <reimplementedby refid="classOgive_1a1f076226bfd547f46542d02c49399693">computeNodalPower</reimplementedby>
+        <reimplementedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2">computeNodalPower</reimplementedby>
+        <reimplementedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1">computeNodalPower</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1a30eb56de2071f12cb1405057dda35329">computeNodalPower</reimplementedby>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1adc19b7de33b16179c874dc536f58c31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::computePowerDensity</definition>
+        <argsstring>(int)</argsstring>
+        <name>computePowerDensity</name>
+        <param>
+          <type>int</type>
+          <defname>numParticles</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="91" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="175" bodyend="299"/>
+        <references refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" compoundref="geometry_8h" startline="124">elements</references>
+        <references refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" compoundref="geometry_8h" startline="125">grid3D</references>
+        <references refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" compoundref="geometry_8h" startline="123">grid3Dnodes</references>
+        <references refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" compoundref="geometry_8h" startline="120">gridWidth</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">sections</references>
+        <references refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" compoundref="geometry_8h" startline="117">sections3D</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">sectors</references>
+        <references refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" compoundref="geometry_8h" startline="118">sectors3D</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::drawGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>drawGeometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="93" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="302" bodyend="368"/>
+        <references refid="classGeometry_1af314d57676056969da57788a60954926" compoundref="geometry_8h" startline="140">aDataSetMapper</references>
+        <references refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" compoundref="geometry_8h" startline="141">anActor</references>
+        <references refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" compoundref="geometry_8h" startline="156">axes</references>
+        <references refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" compoundref="geometry_8h" startline="130">grid</references>
+        <references refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" compoundref="geometry_8h" startline="138">iren</references>
+        <references refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" compoundref="geometry_8h" startline="139">ren</references>
+        <references refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" compoundref="geometry_8h" startline="136">renWin</references>
+        <references refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" compoundref="geometry_8h" startline="137">style</references>
+        <references refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" compoundref="geometry_8h" startline="157">widget</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::drawScalar</definition>
+        <argsstring>(bool)</argsstring>
+        <name>drawScalar</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="95" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="370" bodyend="410"/>
+        <references refid="classGeometry_1af314d57676056969da57788a60954926" compoundref="geometry_8h" startline="140">aDataSetMapper</references>
+        <references refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" compoundref="geometry_8h" startline="151">barActor</references>
+        <references refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" compoundref="geometry_8h" startline="130">grid</references>
+        <references refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" compoundref="geometry_8h" startline="138">iren</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">nodes</references>
+        <references refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" compoundref="geometry_8h" startline="126">plotTitle</references>
+        <references refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" compoundref="geometry_8h" startline="139">ren</references>
+        <references refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" compoundref="geometry_8h" startline="129">scalar</references>
+        <references refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" compoundref="geometry_8h" startline="150">table</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::drawGrid</definition>
+        <argsstring>()</argsstring>
+        <name>drawGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="97" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="413" bodyend="479"/>
+        <references refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" compoundref="geometry_8h" startline="148">grid3DActor</references>
+        <references refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" compoundref="geometry_8h" startline="159">grid3Daxes</references>
+        <references refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" compoundref="geometry_8h" startline="147">grid3DDataSetMapper</references>
+        <references refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" compoundref="geometry_8h" startline="145">grid3Diren</references>
+        <references refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" compoundref="geometry_8h" startline="146">grid3Dren</references>
+        <references refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" compoundref="geometry_8h" startline="143">grid3DrenWin</references>
+        <references refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" compoundref="geometry_8h" startline="144">grid3Dstyle</references>
+        <references refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" compoundref="geometry_8h" startline="160">grid3Dwidget</references>
+        <references refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" compoundref="geometry_8h" startline="134">gridCubes</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a95d761cd11aa2261380e10b66c261670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::drawGridScalar</definition>
+        <argsstring>(bool)</argsstring>
+        <name>drawGridScalar</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="481" bodyend="536"/>
+        <references refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" compoundref="geometry_8h" startline="165">cutActor</references>
+        <references refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" compoundref="geometry_8h" startline="164">cutMapper</references>
+        <references refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" compoundref="geometry_8h" startline="154">grid3DbarActor</references>
+        <references refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" compoundref="geometry_8h" startline="147">grid3DDataSetMapper</references>
+        <references refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" compoundref="geometry_8h" startline="145">grid3Diren</references>
+        <references refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" compoundref="geometry_8h" startline="123">grid3Dnodes</references>
+        <references refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" compoundref="geometry_8h" startline="146">grid3Dren</references>
+        <references refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" compoundref="geometry_8h" startline="133">grid3Dscalar</references>
+        <references refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" compoundref="geometry_8h" startline="153">grid3Dtable</references>
+        <references refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" compoundref="geometry_8h" startline="134">gridCubes</references>
+        <references refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" compoundref="geometry_8h" startline="162">plane</references>
+        <references refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" compoundref="geometry_8h" startline="163">planeCut</references>
+        <references refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" compoundref="geometry_8h" startline="126">plotTitle</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::outputPowerFile</definition>
+        <argsstring>(int)=0</argsstring>
+        <name>outputPowerFile</name>
+        <reimplementedby refid="classRing_1a3634ff6b0684ff0a0eb172751eef83a9">outputPowerFile</reimplementedby>
+        <reimplementedby refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd">outputPowerFile</reimplementedby>
+        <reimplementedby refid="classOgive_1a260f5f7945194147784025aaf7fe0a72">outputPowerFile</reimplementedby>
+        <reimplementedby refid="classCone2_1a947c9976494227e12730843c77a9b241">outputPowerFile</reimplementedby>
+        <reimplementedby refid="classCone_1a9928e7033ce28a13e7d770a1620e096e">outputPowerFile</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1a978c078774fe74e99b8f4064a6126e84">outputPowerFile</reimplementedby>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::outputPowerDensityFile</definition>
+        <argsstring>()=0</argsstring>
+        <name>outputPowerDensityFile</name>
+        <reimplementedby refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c">outputPowerDensityFile</reimplementedby>
+        <reimplementedby refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125">outputPowerDensityFile</reimplementedby>
+        <reimplementedby refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc">outputPowerDensityFile</reimplementedby>
+        <reimplementedby refid="classCone2_1af259aae6fd151e82482ee9232b63af31">outputPowerDensityFile</reimplementedby>
+        <reimplementedby refid="classCone_1a435a6b46c506758157f2ed0d3213461f">outputPowerDensityFile</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9">outputPowerDensityFile</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a60e1424a222ba59284b81812aff34148" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Geometry::outputTable</definition>
+        <argsstring>()=0</argsstring>
+        <name>outputTable</name>
+        <reimplementedby refid="classRing_1a6f6508a51866f6189aae6a09772b7cd5">outputTable</reimplementedby>
+        <reimplementedby refid="classCylinder_1a33abcb99e6c881b867a0bb6c0dfcabae">outputTable</reimplementedby>
+        <reimplementedby refid="classOgive_1a5febe7a8e9601801d634067213d5c6f9">outputTable</reimplementedby>
+        <reimplementedby refid="classCone2_1a89b20ddec7e0a6b1bd9478a8036c9ad0">outputTable</reimplementedby>
+        <reimplementedby refid="classCone_1aa026083e1c8ecfd1f589eb1939b302c1">outputTable</reimplementedby>
+        <reimplementedby refid="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e">outputTable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a565f5b7736c4b0894732900199903d54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Geometry::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="107" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="107" bodyend="107"/>
+        <references refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" compoundref="geometry_8h" startline="116">type</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a1324967baeb20a489a913a5bd854aa79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::outputAnsys3D</definition>
+        <argsstring>()</argsstring>
+        <name>outputAnsys3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="109" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="539" bodyend="615"/>
+        <references refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" compoundref="geometry_8h" startline="123">grid3Dnodes</references>
+        <references refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" compoundref="geometry_8h" startline="117">sections3D</references>
+        <references refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" compoundref="geometry_8h" startline="118">sectors3D</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::outputVTKfiles</definition>
+        <argsstring>()</argsstring>
+        <name>outputVTKfiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="111" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="617" bodyend="629"/>
+        <references refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" compoundref="geometry_8h" startline="130">grid</references>
+        <references refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" compoundref="geometry_8h" startline="134">gridCubes</references>
+      </memberdef>
+      <memberdef kind="function" id="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Geometry::outputBackscattering</definition>
+        <argsstring>(double)</argsstring>
+        <name>outputBackscattering</name>
+        <param>
+          <type>double</type>
+          <defname>precision</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="113" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp" bodystart="632" bodyend="700"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">sectors</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="65">
+        <label>Ring</label>
+        <link refid="classRing"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Cylinder</label>
+        <link refid="classCylinder"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+      <node id="66">
+        <label>TwoPlates</label>
+        <link refid="classTwoPlates"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Ogive</label>
+        <link refid="classOgive"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Cone2</label>
+        <link refid="classCone2"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Cone</label>
+        <link refid="classCone"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" line="73" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h" bodystart="72" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classGeometry_1af314d57676056969da57788a60954926" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>aDataSetMapper</name></member>
+      <member refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>anActor</name></member>
+      <member refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>axes</name></member>
+      <member refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>barActor</name></member>
+      <member refid="classGeometry_1a3e77ac889d1e440c24efbde630aa1933" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>computeGeometry</name></member>
+      <member refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" prot="public" virt="non-virtual"><scope>Geometry</scope><name>computeGrid3D</name></member>
+      <member refid="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>computeIntersection</name></member>
+      <member refid="classGeometry_1af60650f8ce6d5a220928ccd7395120df" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>computeNodalPower</name></member>
+      <member refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" prot="public" virt="non-virtual"><scope>Geometry</scope><name>computePowerDensity</name></member>
+      <member refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>cutActor</name></member>
+      <member refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>cutMapper</name></member>
+      <member refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" prot="public" virt="non-virtual"><scope>Geometry</scope><name>drawGeometry</name></member>
+      <member refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" prot="public" virt="non-virtual"><scope>Geometry</scope><name>drawGrid</name></member>
+      <member refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" prot="public" virt="non-virtual"><scope>Geometry</scope><name>drawGridScalar</name></member>
+      <member refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" prot="public" virt="non-virtual"><scope>Geometry</scope><name>drawScalar</name></member>
+      <member refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>elements</name></member>
+      <member refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" prot="public" virt="non-virtual"><scope>Geometry</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" prot="public" virt="non-virtual"><scope>Geometry</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a565f5b7736c4b0894732900199903d54" prot="public" virt="non-virtual"><scope>Geometry</scope><name>getType</name></member>
+      <member refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid</name></member>
+      <member refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3D</name></member>
+      <member refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3DActor</name></member>
+      <member refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Daxes</name></member>
+      <member refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3DbarActor</name></member>
+      <member refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3DDataSetMapper</name></member>
+      <member refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Diren</name></member>
+      <member refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Dnodes</name></member>
+      <member refid="classGeometry_1afd79778e7c244df18be79a39419190c8" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3DPoints</name></member>
+      <member refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Dren</name></member>
+      <member refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3DrenWin</name></member>
+      <member refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Dscalar</name></member>
+      <member refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Dstyle</name></member>
+      <member refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Dtable</name></member>
+      <member refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>grid3Dwidget</name></member>
+      <member refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>gridCubes</name></member>
+      <member refid="classGeometry_1aed47a80e867e618e98272e830d297deb" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>gridPoints</name></member>
+      <member refid="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>gridSpacing</name></member>
+      <member refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>gridWidth</name></member>
+      <member refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>iren</name></member>
+      <member refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>length</name></member>
+      <member refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>nodes</name></member>
+      <member refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" prot="public" virt="non-virtual"><scope>Geometry</scope><name>outputAnsys3D</name></member>
+      <member refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" prot="public" virt="non-virtual"><scope>Geometry</scope><name>outputBackscattering</name></member>
+      <member refid="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>outputPowerDensityFile</name></member>
+      <member refid="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>outputPowerFile</name></member>
+      <member refid="classGeometry_1a60e1424a222ba59284b81812aff34148" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>outputTable</name></member>
+      <member refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" prot="public" virt="non-virtual"><scope>Geometry</scope><name>outputVTKfiles</name></member>
+      <member refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>paramTrajectories</name></member>
+      <member refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>plane</name></member>
+      <member refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>planeCut</name></member>
+      <member refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>plotTitle</name></member>
+      <member refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>ren</name></member>
+      <member refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>renWin</name></member>
+      <member refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>scalar</name></member>
+      <member refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>sections</name></member>
+      <member refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>sections3D</name></member>
+      <member refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>sectors</name></member>
+      <member refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>sectors3D</name></member>
+      <member refid="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df" prot="public" virt="pure-virtual"><scope>Geometry</scope><name>setSections</name></member>
+      <member refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>style</name></member>
+      <member refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>table</name></member>
+      <member refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>type</name></member>
+      <member refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>widget</name></member>
+      <member refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" prot="protected" virt="non-virtual"><scope>Geometry</scope><name>z0</name></member>
+      <member refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" prot="public" virt="virtual"><scope>Geometry</scope><name>~Geometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

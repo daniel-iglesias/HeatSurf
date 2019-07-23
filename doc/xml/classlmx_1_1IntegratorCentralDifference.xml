@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1IntegratorCentralDifference" kind="class" prot="public">
+    <compoundname>lmx::IntegratorCentralDifference</compoundname>
+    <basecompoundref refid="classlmx_1_1IntegratorBase" prot="public" virt="non-virtual">lmx::IntegratorBase&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__diff__integrator__centraldiff_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1IntegratorCentralDifference_1a5efa5574938e9a1efd48ce2d5877d0ed" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+        <definition>Configuration&lt;T&gt;* lmx::IntegratorCentralDifference&lt; T &gt;::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorCentralDifference_1abcebde66530517c20f7ec121e4d2d473" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::IntegratorCentralDifference&lt; T &gt;::firstIteration</definition>
+        <argsstring></argsstring>
+        <name>firstIteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1IntegratorCentralDifference_1ab93700bf872da897544042ff4539c71c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorCentralDifference&lt; T &gt;::IntegratorCentralDifference</definition>
+        <argsstring>()</argsstring>
+        <name>IntegratorCentralDifference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="54" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorCentralDifference_1aa9229e1bd5f3293727f2d6239fe297d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorCentralDifference&lt; T &gt;::~IntegratorCentralDifference</definition>
+        <argsstring>()</argsstring>
+        <name>~IntegratorCentralDifference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="58" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorCentralDifference_1a01d92b7c9ec60e6680ce0d7f3624bfbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorCentralDifference&lt; T &gt;::initialize</definition>
+        <argsstring>(Configuration&lt; T &gt; *)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a9ddf427bbc2267c264222552d5fa47c6">initialize</reimplements>
+        <param>
+          <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="82" bodyend="86"/>
+        <references refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" compoundref="lmx__diff__configuration_8h" startline="216" endline="246">lmx::Configuration&lt; T &gt;::setStoredSteps</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorCentralDifference_1ad54d65c95ed196ac8d8265e99de3d1c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool lmx::IntegratorCentralDifference&lt; T &gt;::isExplicit</definition>
+        <argsstring>()</argsstring>
+        <name>isExplicit</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a78adaaa37562ad47226ee2192fd44bd0">isExplicit</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns 1 (TRUE) if it is an explicit-scheme integrator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="63" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorCentralDifference_1a6f53698ad68a151d804cfa2dd0dde465" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorCentralDifference&lt; T &gt;::advance</definition>
+        <argsstring>()</argsstring>
+        <name>advance</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1ab671aed2798b57bd80e831dd2d0d49cf">advance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance to next time-step function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="67" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="89" bodyend="105"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1IntegratorCentralDifference" kindref="compound">IntegratorCentralDifference</ref>. Central difference integrator implementation for ODE systems. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="393">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="392">
+        <label>lmx::IntegratorCentralDifference&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorCentralDifference"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="395">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="394">
+        <label>lmx::IntegratorCentralDifference&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorCentralDifference"/>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_centraldiff.h" bodystart="49" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1a6f53698ad68a151d804cfa2dd0dde465" prot="public" virt="virtual"><scope>lmx::IntegratorCentralDifference</scope><name>advance</name></member>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1abcebde66530517c20f7ec121e4d2d473" prot="private" virt="non-virtual"><scope>lmx::IntegratorCentralDifference</scope><name>firstIteration</name></member>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1a01d92b7c9ec60e6680ce0d7f3624bfbe" prot="public" virt="virtual"><scope>lmx::IntegratorCentralDifference</scope><name>initialize</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1ac8fe7d9b211d6d86b4377a3ab57399fc" prot="public" virt="non-virtual"><scope>lmx::IntegratorCentralDifference</scope><name>IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1ab93700bf872da897544042ff4539c71c" prot="public" virt="non-virtual"><scope>lmx::IntegratorCentralDifference</scope><name>IntegratorCentralDifference</name></member>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1ad54d65c95ed196ac8d8265e99de3d1c1" prot="public" virt="virtual"><scope>lmx::IntegratorCentralDifference</scope><name>isExplicit</name></member>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1a5efa5574938e9a1efd48ce2d5877d0ed" prot="private" virt="non-virtual"><scope>lmx::IntegratorCentralDifference</scope><name>q</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1a44f52dfb85513d84a2d3e5a1dbd73b94" prot="public" virt="virtual"><scope>lmx::IntegratorCentralDifference</scope><name>~IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorCentralDifference_1aa9229e1bd5f3293727f2d6239fe297d9" prot="public" virt="non-virtual"><scope>lmx::IntegratorCentralDifference</scope><name>~IntegratorCentralDifference</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

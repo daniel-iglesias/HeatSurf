@@ -1,0 +1,152 @@
+\hypertarget{classlmx_1_1IntegratorBDF}{\section{lmx\-:\-:Integrator\-B\-D\-F$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1IntegratorBDF}\index{lmx\-::\-Integrator\-B\-D\-F$<$ T $>$@{lmx\-::\-Integrator\-B\-D\-F$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1IntegratorBDF}{Integrator\-B\-D\-F}. Gear's B\-D\-F integrator implementation for O\-D\-E systems.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-diff\-\_\-integrator\-\_\-bdf.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Integrator\-B\-D\-F$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classlmx_1_1IntegratorBDF__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Integrator\-B\-D\-F$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classlmx_1_1IntegratorBDF__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1IntegratorBDF_a44fd3d08ac8623287b4bea3019991154}{Integrator\-B\-D\-F} ()
+\item 
+\hyperlink{classlmx_1_1IntegratorBDF_a7c9463d51e5bc52fa01c4cc38774fecb}{Integrator\-B\-D\-F} (int ord)
+\item 
+\hyperlink{classlmx_1_1IntegratorBDF_ab84c9f712d342b834694e2667cf06b1d}{$\sim$\-Integrator\-B\-D\-F} ()
+\item 
+void \hyperlink{classlmx_1_1IntegratorBDF_a5ce2c4b88ec3dd23dce5b61122edfbe2}{initialize} (\hyperlink{classlmx_1_1Configuration}{Configuration}$<$ T $>$ $\ast$)
+\item 
+void \hyperlink{classlmx_1_1IntegratorBDF_a2b64844c160725add2f97ae58cb8b923}{advance} ()
+\item 
+void \hyperlink{classlmx_1_1IntegratorBDF_a117816d08be3d2161b5ecaa9ae4294a3}{integrator\-Update} (\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ delta)
+\item 
+double \hyperlink{classlmx_1_1IntegratorBDF_af4fc49737d760c485b74dda1308a18dc}{get\-Partial\-Qdot} ()
+\item 
+double \hyperlink{classlmx_1_1IntegratorBDF_a2277553d925ce0d7e0fabd855dcb629e}{get\-Partial\-Qddot} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class lmx\-::\-Integrator\-B\-D\-F$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1IntegratorBDF}{Integrator\-B\-D\-F}. Gear's B\-D\-F integrator implementation for O\-D\-E systems. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1IntegratorBDF_a44fd3d08ac8623287b4bea3019991154}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!Integrator\-B\-D\-F@{Integrator\-B\-D\-F}}
+\index{Integrator\-B\-D\-F@{Integrator\-B\-D\-F}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{Integrator\-B\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::{\bf Integrator\-B\-D\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1IntegratorBDF_a44fd3d08ac8623287b4bea3019991154}
+Empty constructor. \hypertarget{classlmx_1_1IntegratorBDF_a7c9463d51e5bc52fa01c4cc38774fecb}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!Integrator\-B\-D\-F@{Integrator\-B\-D\-F}}
+\index{Integrator\-B\-D\-F@{Integrator\-B\-D\-F}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{Integrator\-B\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::{\bf Integrator\-B\-D\-F} (
+\begin{DoxyParamCaption}
+\item[{int}]{ord}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1IntegratorBDF_a7c9463d51e5bc52fa01c4cc38774fecb}
+Standard constructor. \hypertarget{classlmx_1_1IntegratorBDF_ab84c9f712d342b834694e2667cf06b1d}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!$\sim$\-Integrator\-B\-D\-F@{$\sim$\-Integrator\-B\-D\-F}}
+\index{$\sim$\-Integrator\-B\-D\-F@{$\sim$\-Integrator\-B\-D\-F}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{$\sim$\-Integrator\-B\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::$\sim${\bf Integrator\-B\-D\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1IntegratorBDF_ab84c9f712d342b834694e2667cf06b1d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1IntegratorBDF_a2b64844c160725add2f97ae58cb8b923}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!advance@{advance}}
+\index{advance@{advance}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{advance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::advance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorBDF_a2b64844c160725add2f97ae58cb8b923}
+Advance to next time-\/step function. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBase_ab671aed2798b57bd80e831dd2d0d49cf}{lmx\-::\-Integrator\-Base$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorBDF_a2277553d925ce0d7e0fabd855dcb629e}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!get\-Partial\-Qddot@{get\-Partial\-Qddot}}
+\index{get\-Partial\-Qddot@{get\-Partial\-Qddot}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{get\-Partial\-Qddot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ double {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::get\-Partial\-Qddot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorBDF_a2277553d925ce0d7e0fabd855dcb629e}
+Calculates the factor $ \frac{\partial qddot_n}{\partial q_n} $. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBaseImplicit_a8933718fdb3629e07d0972d846c92a8e}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorBDF_af4fc49737d760c485b74dda1308a18dc}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!get\-Partial\-Qdot@{get\-Partial\-Qdot}}
+\index{get\-Partial\-Qdot@{get\-Partial\-Qdot}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{get\-Partial\-Qdot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ double {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::get\-Partial\-Qdot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorBDF_af4fc49737d760c485b74dda1308a18dc}
+Calculates the factor $ \frac{\partial qdot_n}{\partial q_n} $. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBaseImplicit_a8ee5ecd8b0bae40d8d79f48ca69f350f}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorBDF_a5ce2c4b88ec3dd23dce5b61122edfbe2}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!initialize@{initialize}}
+\index{initialize@{initialize}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration}$<$ T $>$ $\ast$}]{configuration\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorBDF_a5ce2c4b88ec3dd23dce5b61122edfbe2}
+Initialize integration function. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBase_a9ddf427bbc2267c264222552d5fa47c6}{lmx\-::\-Integrator\-Base$<$ T $>$}.
+
+
+
+References lmx\-::\-Configuration$<$ T $>$\-::set\-Stored\-Steps().
+
+\hypertarget{classlmx_1_1IntegratorBDF_a117816d08be3d2161b5ecaa9ae4294a3}{\index{lmx\-::\-Integrator\-B\-D\-F@{lmx\-::\-Integrator\-B\-D\-F}!integrator\-Update@{integrator\-Update}}
+\index{integrator\-Update@{integrator\-Update}!lmx::IntegratorBDF@{lmx\-::\-Integrator\-B\-D\-F}}
+\subsubsection[{integrator\-Update}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Integrator\-B\-D\-F}$<$ T $>$\-::integrator\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorBDF_a117816d08be3d2161b5ecaa9ae4294a3}
+Actualize with delta in actual time-\/step. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBaseImplicit_aa7d97f0c3d139326a6b7ca28605f9681}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__diff__integrator__bdf_8h}{lmx\-\_\-diff\-\_\-integrator\-\_\-bdf.\-h}\end{DoxyCompactItemize}

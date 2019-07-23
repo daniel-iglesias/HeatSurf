@@ -1,0 +1,1244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__mat__matrix_8h" kind="file">
+    <compoundname>lmx_mat_matrix.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes refid="lmx__except_8h" local="yes">lmx_except.h</includes>
+    <includes refid="lmx__mat__type__stdmatrix_8h" local="yes">lmx_mat_type_stdmatrix.h</includes>
+    <includes refid="lmx__mat__type__csc_8h" local="yes">lmx_mat_type_csc.h</includes>
+    <includedby refid="lmx__mat__dense__matrix_8h" local="yes">src/LMX/lmx_mat_dense_matrix.h</includedby>
+    <incdepgraph>
+      <node id="4290">
+        <label>cmath</label>
+      </node>
+      <node id="4294">
+        <label>stdexcept</label>
+      </node>
+      <node id="4313">
+        <label>lmx_mat_type_csc.h</label>
+        <link refid="lmx__mat__type__csc_8h"/>
+        <childnode refid="4299" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+      </node>
+      <node id="4295">
+        <label>string</label>
+      </node>
+      <node id="4305">
+        <label>lmx_mat_type_stdvector.h</label>
+        <link refid="lmx__mat__type__stdvector_8h"/>
+        <childnode refid="4306" relation="include">
+        </childnode>
+        <childnode refid="4292" relation="include">
+        </childnode>
+        <childnode refid="4307" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4308" relation="include">
+        </childnode>
+        <childnode refid="4309" relation="include">
+        </childnode>
+      </node>
+      <node id="4293">
+        <label>exception</label>
+      </node>
+      <node id="4306">
+        <label>fstream</label>
+      </node>
+      <node id="4309">
+        <label>lmx_mat_data_vec.h</label>
+        <link refid="lmx__mat__data__vec_8h"/>
+        <childnode refid="4301" relation="include">
+        </childnode>
+      </node>
+      <node id="4291">
+        <label>lmx_except.h</label>
+        <link refid="lmx__except_8h"/>
+        <childnode refid="4292" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+        <childnode refid="4295" relation="include">
+        </childnode>
+        <childnode refid="4296" relation="include">
+        </childnode>
+        <childnode refid="4297" relation="include">
+        </childnode>
+      </node>
+      <node id="4302">
+        <label>lmx_mat_data_blas.h</label>
+        <link refid="lmx__mat__data__blas_8h"/>
+        <childnode refid="4297" relation="include">
+        </childnode>
+      </node>
+      <node id="4303">
+        <label>lmx_mat_vector.h</label>
+        <link refid="lmx__mat__vector_8h"/>
+        <childnode refid="4304" relation="include">
+        </childnode>
+        <childnode refid="4305" relation="include">
+        </childnode>
+      </node>
+      <node id="4308">
+        <label>string.h</label>
+      </node>
+      <node id="4301">
+        <label>lmx_mat_data.h</label>
+        <link refid="lmx__mat__data_8h"/>
+        <childnode refid="4302" relation="include">
+        </childnode>
+      </node>
+      <node id="4300">
+        <label>vector</label>
+      </node>
+      <node id="4296">
+        <label>sstream</label>
+      </node>
+      <node id="4299">
+        <label>lmx_mat_data_mat.h</label>
+        <link refid="lmx__mat__data__mat_8h"/>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+      </node>
+      <node id="4307">
+        <label>cstdlib</label>
+      </node>
+      <node id="4292">
+        <label>iostream</label>
+      </node>
+      <node id="4298">
+        <label>lmx_mat_type_stdmatrix.h</label>
+        <link refid="lmx__mat__type__stdmatrix_8h"/>
+        <childnode refid="4299" relation="include">
+        </childnode>
+        <childnode refid="4303" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+      </node>
+      <node id="4312">
+        <label>complex</label>
+      </node>
+      <node id="4310">
+        <label>lmx_base_iohb.h</label>
+        <link refid="lmx__base__iohb_8h"/>
+        <childnode refid="4311" relation="include">
+        </childnode>
+        <childnode refid="4312" relation="include">
+        </childnode>
+      </node>
+      <node id="4297">
+        <label>algorithm</label>
+      </node>
+      <node id="4304">
+        <label>lmx_mat_elem_ref.h</label>
+        <link refid="lmx__mat__elem__ref_8h"/>
+        <childnode refid="4301" relation="include">
+        </childnode>
+      </node>
+      <node id="4311">
+        <label>stdio.h</label>
+      </node>
+      <node id="4289">
+        <label>src/LMX/lmx_mat_matrix.h</label>
+        <link refid="lmx_mat_matrix.h"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4291" relation="include">
+        </childnode>
+        <childnode refid="4298" relation="include">
+        </childnode>
+        <childnode refid="4313" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4328">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="4336">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="4337" relation="include">
+        </childnode>
+      </node>
+      <node id="4330">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="4331">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="4325">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="4318">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx_8h"/>
+        <childnode refid="4319" relation="include">
+        </childnode>
+      </node>
+      <node id="4333">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="4320">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="4321" relation="include">
+        </childnode>
+        <childnode refid="4322" relation="include">
+        </childnode>
+        <childnode refid="4323" relation="include">
+        </childnode>
+      </node>
+      <node id="4316">
+        <label>src/LMX/lmx_linsolvers_system.h</label>
+        <link refid="lmx__linsolvers__system_8h"/>
+        <childnode refid="4317" relation="include">
+        </childnode>
+      </node>
+      <node id="4326">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="4327" relation="include">
+        </childnode>
+        <childnode refid="4328" relation="include">
+        </childnode>
+        <childnode refid="4323" relation="include">
+        </childnode>
+      </node>
+      <node id="4321">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="4329">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="4330" relation="include">
+        </childnode>
+        <childnode refid="4323" relation="include">
+        </childnode>
+      </node>
+      <node id="4335">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="4324">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="4332">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="4323" relation="include">
+        </childnode>
+        <childnode refid="4333" relation="include">
+        </childnode>
+      </node>
+      <node id="4315">
+        <label>src/LMX/lmx_mat_dense_matrix.h</label>
+        <link refid="lmx__mat__dense__matrix_8h"/>
+        <childnode refid="4316" relation="include">
+        </childnode>
+      </node>
+      <node id="4337">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="4327">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="4322">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="4319">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="4320" relation="include">
+        </childnode>
+        <childnode refid="4326" relation="include">
+        </childnode>
+        <childnode refid="4329" relation="include">
+        </childnode>
+        <childnode refid="4331" relation="include">
+        </childnode>
+        <childnode refid="4332" relation="include">
+        </childnode>
+        <childnode refid="4334" relation="include">
+        </childnode>
+        <childnode refid="4336" relation="include">
+        </childnode>
+      </node>
+      <node id="4334">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="4323" relation="include">
+        </childnode>
+        <childnode refid="4335" relation="include">
+        </childnode>
+      </node>
+      <node id="4323">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="4324" relation="include">
+        </childnode>
+        <childnode refid="4325" relation="include">
+        </childnode>
+      </node>
+      <node id="4317">
+        <label>src/LMX/lmx_linsolvers.h</label>
+        <link refid="lmx__linsolvers_8h"/>
+        <childnode refid="4318" relation="include">
+        </childnode>
+      </node>
+      <node id="4314">
+        <label>src/LMX/lmx_mat_matrix.h</label>
+        <link refid="lmx_mat_matrix.h"/>
+        <childnode refid="4315" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classVector" prot="public">Vector</innerclass>
+    <innerclass refid="classLinearSystem" prot="public">LinearSystem</innerclass>
+    <innerclass refid="classMatrix" prot="public">Matrix</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lmx__mat__matrix_8h_1a823d86b23608feef8efa690e93241023" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int setMatrixType</definition>
+        <argsstring>(int)</argsstring>
+        <name>setMatrixType</name>
+        <param>
+          <type>int</type>
+          <defname>type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that changes the type of matrix container that will be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="43" bodyend="58"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <referencedby refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" compoundref="lmx__base__selector_8h" startline="91" endline="91">getMatrixType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int getMatrixType</definition>
+        <argsstring>()</argsstring>
+        <name>getMatrixType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function reads the type of <ref refid="classMatrix" kindref="compound">Matrix</ref> container that is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="91" bodyend="91"/>
+        <references refid="namespacelmx_1aed2ebd81147c916e464de06ee37aa756" compoundref="lmx__base__selector_8h" startline="43" endline="58">lmx::setMatrixType</references>
+        <referencedby refid="classlmx_1_1LinearSystem_1ad9a2d56c7ea53a201d0820c58549ea7c" compoundref="lmx__linsolvers__system_8h" startline="399" endline="422">lmx::LinearSystem&lt; T &gt;::factorize</referencedby>
+        <referencedby refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" compoundref="lmx__mat__matrix_8h" startline="461" endline="464">Matrix&lt; T &gt;::Matrix</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1ae68d2b9e72a8a6aa9431e9dcdb126fdc" compoundref="lmx__mat__vector_8h" startline="692" endline="736">lmx::Vector&lt; T &gt;::mult</referencedby>
+        <referencedby refid="classMatrix_1a3f2deb42b24254e639bca3ea50e2cdd5" compoundref="lmx__mat__matrix_8h" startline="753" endline="777">Matrix&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a986906a2f375fc8ba39f43c927f39078" compoundref="lmx__linsolvers__system_8h" startline="379" endline="396">lmx::LinearSystem&lt; T &gt;::setA</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1ac85310aca10575dc1cb27dbd1e38da6b" compoundref="lmx__linsolvers__system_8h" startline="364" endline="376">lmx::LinearSystem&lt; T &gt;::setb</referencedby>
+        <referencedby refid="namespacelmx_1a992f0b2fbca043dfcda66af0ab4e0c22" compoundref="lmx__linsolvers_8h" startline="51" endline="91">lmx::solveLinear</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a1595022f65961d5cfb5c7c9a9a85ee06" compoundref="lmx__linsolvers__system_8h" startline="425" endline="437">lmx::LinearSystem&lt; T &gt;::subsSolve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="lmx__mat__matrix_8h_1a8e69fc63120e846c50bd1f992e188a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void latexPrint</definition>
+        <argsstring>(std::ofstream &amp;os, char *mat_name, Matrix&lt; C &gt; &amp;mat, int prec)</argsstring>
+        <name>latexPrint</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mat_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains both the declaration and implementation for <ref refid="classMatrix" kindref="compound">Matrix</ref> class member and friend functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMXMATRIX_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMXMATRIX_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="lmx__except_8h" kindref="compound">lmx_except.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="lmx__mat__type__stdmatrix_8h" kindref="compound">lmx_mat_type_stdmatrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="lmx__mat__type__csc_8h" kindref="compound">lmx_mat_type_csc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include&quot;<ref refid="lmx__mat__type__gmm__sparse1_8h" kindref="compound">lmx_mat_type_gmm_sparse1.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="35"></codeline>
+<codeline lineno="44"></codeline>
+<codeline lineno="47"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">cofe{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Dim,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TensorRank2;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TensorRank2&lt;3,<sp/>double&gt;<sp/>Tensor;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classVector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classVector" kindref="compound">Vector</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classLinearSystem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLinearSystem" kindref="compound">LinearSystem</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LMXTester;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1aed2ebd81147c916e464de06ee37aa756" kindref="member">setMatrixType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" kindref="member">getMatrixType</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>C&gt;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1ad4464704dd30fa4aa45fef794428ab35" kindref="member">latexPrint</ref>(<sp/>std::ofstream&amp;<sp/>os,<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>mat_name,<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;C&gt;</ref>&amp;<sp/>mat,<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prec</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classMatrix" refkind="compound"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMatrix" kindref="compound">Matrix</ref>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>mrows,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref>;<sp/></highlight></codeline>
+<codeline lineno="90" refid="classMatrix_1a0294600ba30c0665efcaeb77bbcad7fa" refkind="member"><highlight class="normal"><sp/><sp/>Elem_ref&lt;T&gt;*<sp/><ref refid="classMatrix_1a0294600ba30c0665efcaeb77bbcad7fa" kindref="member">reference</ref>;<sp/></highlight></codeline>
+<codeline lineno="91" refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" refkind="member"><highlight class="normal"><sp/><sp/>Data_mat&lt;T&gt;*<sp/><ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98" refid="classMatrix_1a07857ea092bfd5d08a811e05ad544204" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classVector" kindref="compound">Vector</ref>&lt;T&gt;;</highlight></codeline>
+<codeline lineno="99" refid="classMatrix_1a5b3d3d3d338fdb2c08f91dfe38d425bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DenseMatrix&lt;T&gt;;</highlight></codeline>
+<codeline lineno="100" refid="classMatrix_1a95e5ab4da3326ece35572b4c41f61d15" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLinearSystem" kindref="compound">LinearSystem</ref>&lt;T&gt;;</highlight></codeline>
+<codeline lineno="101" refid="classMatrix_1a83ba0257c792f88b9da29aacaad2b47d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LMXTester;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>~<ref refid="classMatrix" kindref="compound">Matrix</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_type_matrix(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/><ref refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" kindref="member">rows</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;mrows;<sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/><ref refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" kindref="member">cols</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;ncolumns;<sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>matrixMarketLoad(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>harwellBoeingLoad(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>harwellBoeingSave(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fillIdentity(<sp/>T<sp/>factor<sp/>=<sp/>static_cast&lt;T&gt;(1)<sp/>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fillRandom(<sp/><sp/>T<sp/>factor<sp/>=<sp/>static_cast&lt;T&gt;(1)<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//needs<sp/>documentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sparsePattern(<sp/><ref refid="classVector" kindref="compound">Vector&lt;size_type&gt;</ref>&amp;,<sp/><ref refid="classVector" kindref="compound">Vector&lt;size_type&gt;</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//needs<sp/>documentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sparsePattern(<sp/>std::vector&lt;size_type&gt;&amp;<sp/>,<sp/>std::vector&lt;size_type&gt;&amp;<sp/>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//needs<sp/>documentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sparsePattern(<sp/>DenseMatrix&lt;T&gt;&amp;<sp/>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Elem_ref&lt;T&gt;<sp/>operator<sp/>()<sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>C&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>operator<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;C&gt;</ref>&amp;);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>template<sp/>&lt;typename<sp/>C&gt;<sp/>inline<sp/>Matrix&lt;T&gt;&amp;<sp/>operator<sp/>=<sp/>(const<sp/>DenseMatrix&lt;C&gt;&amp;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>+=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>+=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>-=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>-=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>*=<sp/>(T);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>operator<sp/>/=<sp/>(T);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>subs(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>subs(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>subs(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>mult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>mult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>mult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>mult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>multElements(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>multElements(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>multElements(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>multElements(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>multElements(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>multElements(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classMatrix_1a1225e5428e19fc4ae3fcb664fbdecb6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="classMatrix_1a1225e5428e19fc4ae3fcb664fbdecb6b" kindref="member">readElement</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>m,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>n)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="206"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;type_matrix-&gt;readElement(m,n);<sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" kindref="member">writeElement</ref>(T<sp/>theValue,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>m,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>n)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="212"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/>this-&gt;type_matrix-&gt;writeElement(theValue,<sp/>m,<sp/>n);<sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="classMatrix_1a160e129270712b87969f7efee086fb53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a160e129270712b87969f7efee086fb53" kindref="member">addElement</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>theValue,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>m,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>n)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="218"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/>this-&gt;type_matrix-&gt;addElement(theValue,<sp/>m,<sp/>n);<sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="classMatrix_1a1344fb1e24060a6be2e530447582affa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a1344fb1e24060a6be2e530447582affa" kindref="member">clean</ref>(T<sp/>factor)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>this-&gt;type_matrix-&gt;cleanBelow(factor);<sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//needs<sp/>documentation</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classMatrix_1ad39022f082bfee09e24d098796e14e10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1ad39022f082bfee09e24d098796e14e10" kindref="member">clear</ref>()</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>this-&gt;type_matrix-&gt;clear();<sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//begin<sp/>JCGO<sp/>18/03/09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//needs<sp/>documentation</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="classMatrix_1af40e280112b61f6a37b54d2e5ef02e5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1af40e280112b61f6a37b54d2e5ef02e5b" kindref="member">reset</ref>()</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>this-&gt;type_matrix-&gt;reset();<sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="classMatrix_1a2a591b90d5553c7d097cb27f8d8ce29a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a2a591b90d5553c7d097cb27f8d8ce29a" kindref="member">resize</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>mrows<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ncolumns<sp/>=<sp/>j;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>type_matrix-&gt;resize(mrows,<sp/>ncolumns);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="classMatrix_1af21f3044dc958a53f9f22f40b70a1ad1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1af21f3044dc958a53f9f22f40b70a1ad1" kindref="member">resize</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>mat<sp/>)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>mrows<sp/>=<sp/>mat.<ref refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" kindref="member">rows</ref>();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ncolumns<sp/>=<sp/>mat.<ref refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" kindref="member">cols</ref>();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>type_matrix-&gt;resize(mrows,<sp/>ncolumns);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="classMatrix_1accfd52f77ce100b5ffa35a434eec4eb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/><ref refid="classMatrix_1accfd52f77ce100b5ffa35a434eec4eb1" kindref="member">transpose</ref>()</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;trn();</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mrows<sp/>=<sp/>this-&gt;type_matrix-&gt;getRows();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ncolumns<sp/>=<sp/>this-&gt;type_matrix-&gt;getCols();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="classMatrix_1a4d2d081f23b22321941c9584b89e0cf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref><sp/><ref refid="cofe__fmc_8h_1ad2cca540a179aadefb1ea9986e02a150" kindref="member">operator + </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="278"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//Scheme:<sp/>res<sp/>=<sp/>*this;<sp/>res<sp/>+=<sp/>B;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>+=<sp/>B;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="classMatrix_1aae75f71f4a42101b068fc6ae023c3ac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref><sp/><ref refid="cofe__fmc_8h_1ad2cca540a179aadefb1ea9986e02a150" kindref="member">operator + </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="287"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//Scheme:<sp/>res<sp/>=<sp/>*this;<sp/>res<sp/>+=<sp/>B;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>+=<sp/>B;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="classMatrix_1a6e7f2dccf069eb1df036ad7ff3756789" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/><ref refid="namespacelmx_1a5e17aca45e56e69469e6b3e58ce074e5" kindref="member">operator - </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="296"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//Scheme:<sp/>res<sp/>=<sp/>*this;<sp/>res<sp/>-=<sp/>B;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>-=<sp/>B;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="classMatrix_1adb6f17017ec3598c84d933e5ee762b90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref><sp/><ref refid="namespacelmx_1a5e17aca45e56e69469e6b3e58ce074e5" kindref="member">operator - </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="305"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//Scheme:<sp/>res<sp/>=<sp/>*this;<sp/>res<sp/>+=<sp/>B;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>-=<sp/>B;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="classMatrix_1a24d516d845a1b9ba87706566e5604588" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/><ref refid="namespacelmx_1ad723ad98140948b6fc56bf5d0193c1a1" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="315"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>this-&gt;mrows,<sp/>B.<ref refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" kindref="member">cols</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res.<ref refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" kindref="member">mult</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>B);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classMatrix_1a08bd824b1d3e5b02ffcabf2d70f518d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/><ref refid="namespacelmx_1ad723ad98140948b6fc56bf5d0193c1a1" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="324"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>this-&gt;mrows,<sp/>B.cols()<sp/>);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.mult(*this,<sp/>B);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;ncolumns;<sp/>++j){</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>k=0;<sp/>k<sp/>&lt;<sp/>this-&gt;ncolumns;<sp/>++k){</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.<ref refid="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" kindref="member">writeElement</ref>(res.readElement(i,j)<sp/>+<sp/>this-&gt;readElement(i,k)<sp/>*<sp/>B.readElement(k,j),<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="classMatrix_1a48967ad505c540147f116fa0b3050bac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/><ref refid="namespacelmx_1ad723ad98140948b6fc56bf5d0193c1a1" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scalar)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="340"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classMatrix_1a5ac0a39b36bc04e4cedfde09dfe01105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a5ac0a39b36bc04e4cedfde09dfe01105" kindref="member">exists</ref>(<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>row,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>col<sp/>)</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;type_matrix-&gt;exists(row,<sp/>col);<sp/>}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="classMatrix_1aed9270dd5f211e6e1a5989d61184e744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1aed9270dd5f211e6e1a5989d61184e744" kindref="member">checkSymmetry</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;i;<sp/>++j){</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>this-&gt;readElement(i,j)<sp/>!=<sp/>this-&gt;readElement(j,i)<sp/>){</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>result<sp/>==<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="373" refid="classMatrix_1a5ccbd055f0ae0377196ddabb0d1b03f7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a5ccbd055f0ae0377196ddabb0d1b03f7" kindref="member">factorize</ref>(){</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;factorize();</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="classMatrix_1a22d183d83bb9bf1cd5feea309f3a665e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a22d183d83bb9bf1cd5feea309f3a665e" kindref="member">subsSolve</ref>(<sp/><ref refid="classVector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>rhs<sp/>){</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;type_matrix-&gt;subsSolve(<sp/>rhs<sp/>);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="384"></codeline>
+<codeline lineno="389" refid="classMatrix_1a3d4080c30637166c1b14268400d0fecd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref><sp/><ref refid="classMatrix_1a3d4080c30637166c1b14268400d0fecd" kindref="member">transposed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>mat_in)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/>{<sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>transpose_out(mat_in);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>transpose_out.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;trn();</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>transpose_out.<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref><sp/>=<sp/>transpose_out.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;getRows();</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>transpose_out.<ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref><sp/>=<sp/>transpose_out.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;getCols();</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>transpose_out;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>C&gt;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1ad4464704dd30fa4aa45fef794428ab35" kindref="member">lmx::latexPrint</ref>(std::ofstream&amp;<sp/>os,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>mat_name,<sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;C&gt;</ref>&amp;<sp/>mat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prec);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator<sp/>&lt;&lt;<sp/>(std::ostream&amp;<sp/>os,<sp/>const<sp/>Matrix&lt;cofe::Tensor&gt;&amp;<sp/>mat);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>C&gt;</highlight></codeline>
+<codeline lineno="420" refid="namespacelmx_1ad4464704dd30fa4aa45fef794428ab35" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1ad4464704dd30fa4aa45fef794428ab35" kindref="member">latexPrint</ref>(std::ofstream&amp;<sp/>os,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>mat_name,<sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;C&gt;</ref>&amp;<sp/>mat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prec)</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/>{<sp/>os.precision(prec);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\\[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat_name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\\left(<sp/>\\begin{array}{&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;mat.ncolumns;<sp/>++j)<sp/>{<sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;c&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;mat.mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;mat.ncolumns;<sp/>++j){</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(j<sp/>!=<sp/>mat.ncolumns-1)<sp/>{<sp/>os<sp/>&lt;&lt;<sp/>mat(i,j)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&amp;<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>!=<sp/>mat.mrows-1)<sp/>{<sp/>os<sp/>&lt;&lt;<sp/>mat(i,j)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>\\\\<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>os<sp/>&lt;&lt;<sp/>mat(i,j)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>\\end{array}<sp/>\\right)<sp/>\\]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;<sp/>}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kindref="member">Matrix&lt;T&gt;::Matrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type_in)<sp/>:<sp/>mrows(0),<sp/>ncolumns(0)</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>initialize_type_matrix(type_in);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kindref="member">Matrix&lt;T&gt;::Matrix</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>rows,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>columns,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type_in)<sp/>:<sp/>mrows(rows),<sp/>ncolumns(columns)</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/>initialize_type_matrix(type_in);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>type_matrix-&gt;resize(mrows,<sp/>ncolumns);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="461" refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kindref="member">Matrix&lt;T&gt;::Matrix</ref>()<sp/>:<sp/>mrows(0),<sp/>ncolumns(0)</highlight></codeline>
+<codeline lineno="462"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" kindref="member">initialize_type_matrix</ref>(<ref refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" kindref="member">getMatrixType</ref>());</highlight></codeline>
+<codeline lineno="464"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kindref="member">Matrix&lt;T&gt;::Matrix</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>rows,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>columns)<sp/>:<sp/>mrows(rows),<sp/>ncolumns(columns)</highlight></codeline>
+<codeline lineno="471"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" kindref="member">initialize_type_matrix</ref>(<ref refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" kindref="member">getMatrixType</ref>());</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;resize(<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref>,<sp/><ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref>);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kindref="member">Matrix&lt;T&gt;::Matrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A)<sp/>:</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/>mrows(A.mrows),<sp/>ncolumns(A.ncolumns)</highlight></codeline>
+<codeline lineno="483"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" kindref="member">initialize_type_matrix</ref>(<sp/><ref refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" kindref="member">getMatrixType</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;resize(<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref>,<sp/><ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref>);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;equals(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="487"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kindref="member">Matrix&lt;T&gt;::Matrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A)<sp/>:</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>mrows(A.mrows),<sp/>ncolumns(A.ncolumns)</highlight></codeline>
+<codeline lineno="495"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" kindref="member">initialize_type_matrix</ref>(<sp/><ref refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" kindref="member">getMatrixType</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;resize(<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref>,<sp/><ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref>);<sp/></highlight><highlight class="comment">//can<sp/>be<sp/>time<sp/>consuming<sp/>for<sp/>CSC<sp/>(check)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" kindref="member">getMatrixType</ref>()<sp/>==<sp/>1<sp/>){<sp/></highlight><highlight class="comment">//<sp/>Type<sp/>is<sp/>CSC:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;<sp/>ia,ja;</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>A.writeSparsePattern(<sp/>ia,<sp/>ja<sp/>);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>-&gt;setSparsePattern(<sp/>ia,<sp/>ja<sp/>);</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref>;<sp/>++i){</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;<ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref>;<sp/>++j){</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" kindref="member">writeElement</ref>(<sp/>A.readElement(i,j),<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="508"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="514" refid="classMatrix_1a91aa704de674203e96aece9e1955ccd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix_1a91aa704de674203e96aece9e1955ccd3" kindref="member">Matrix&lt;T&gt;::~Matrix</ref>()</highlight></codeline>
+<codeline lineno="515"><highlight class="normal">{<sp/></highlight><highlight class="comment">//<sp/>implementar<sp/>los<sp/>delete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;reference;</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;reference<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;type_matrix;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;type_matrix<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528" refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" kindref="member">Matrix&lt;T&gt;::initialize_type_matrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
+<codeline lineno="529"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0<sp/>:</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>type_matrix<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type_stdmatrix&lt;<sp/>T<sp/>&gt;;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1<sp/>:</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>type_matrix<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type_csc&lt;<sp/>T<sp/>&gt;;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2<sp/>:</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="541"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>type_matrix<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type_gmm&lt;<sp/>T<sp/>&gt;;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="543"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gmm++<sp/>not<sp/>defined.\nYou<sp/>must<sp/>set<sp/>\&quot;#define<sp/>HAVE_GMM\&quot;<sp/>in<sp/>your<sp/>file<sp/>in<sp/>order<sp/>to<sp/>use<sp/>this<sp/>library.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(failure_error,<sp/>message.str()<sp/>);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="549"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3<sp/>:</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="553"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>type_matrix<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type_gmm_sparse&lt;<sp/>T<sp/>&gt;;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="555"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gmm++<sp/>not<sp/>defined.\nYou<sp/>must<sp/>set<sp/>\&quot;#define<sp/>HAVE_GMM\&quot;<sp/>in<sp/>your<sp/>file<sp/>in<sp/>order<sp/>to<sp/>use<sp/>this<sp/>library.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(failure_error,<sp/>message.str()<sp/>);</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="561"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/>reference<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Elem_ref&lt;T&gt;(type_matrix);</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="575" refid="classMatrix_1a93687e829e58842640899351998eb6d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a93687e829e58842640899351998eb6d7" kindref="member">Matrix&lt;T&gt;::matrixMarketLoad</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>input_file)</highlight></codeline>
+<codeline lineno="576"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;read_mm_file(input_file);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/>this-&gt;mrows<sp/>=<sp/>this-&gt;type_matrix-&gt;getRows();</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/>this-&gt;ncolumns<sp/>=<sp/>this-&gt;type_matrix-&gt;getCols();</highlight></codeline>
+<codeline lineno="580"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="587" refid="classMatrix_1a1033ffed8225aa5b3b8d4ffd326d4372" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a1033ffed8225aa5b3b8d4ffd326d4372" kindref="member">Matrix&lt;T&gt;::harwellBoeingLoad</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>input_file)</highlight></codeline>
+<codeline lineno="588"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;read_hb_file(input_file);</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/>this-&gt;mrows<sp/>=<sp/>this-&gt;type_matrix-&gt;getRows();</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/>this-&gt;ncolumns<sp/>=<sp/>this-&gt;type_matrix-&gt;getCols();</highlight></codeline>
+<codeline lineno="592"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="598" refid="classMatrix_1a268e0e10c50ba9d384bb9b27b1d0ddff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a268e0e10c50ba9d384bb9b27b1d0ddff" kindref="member">Matrix&lt;T&gt;::harwellBoeingSave</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>input_file)</highlight></codeline>
+<codeline lineno="599"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;write_hb_file(input_file);</highlight></codeline>
+<codeline lineno="601"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="609" refid="classMatrix_1ae8fb2cd5911c80ab80ab5d4cdfce8e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1ae8fb2cd5911c80ab80ab5d4cdfce8e4a" kindref="member">Matrix&lt;T&gt;::fillIdentity</ref>(<sp/>T<sp/>factor<sp/>)</highlight></codeline>
+<codeline lineno="610"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;ncolumns<sp/>!=<sp/>this-&gt;mrows){</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>make<sp/>identity<sp/>a<sp/>non-squared<sp/>matrix.\nSize<sp/>of<sp/>matrix(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;mrows<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;ncolumns<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;).&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(dimension_error,<sp/>message.str()<sp/>);</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;this-&gt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;this-&gt;ncolumns;<sp/>++j){</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;writeElement(static_cast&lt;T&gt;(0),i,j);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;this-&gt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;writeElement(static_cast&lt;T&gt;(<sp/>factor<sp/>),i,i);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="634" refid="classMatrix_1a42385f8505361bda72faf28e4de0a3bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a42385f8505361bda72faf28e4de0a3bf" kindref="member">Matrix&lt;T&gt;::fillRandom</ref>(<sp/>T<sp/>factor<sp/>)</highlight></codeline>
+<codeline lineno="635"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;this-&gt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;this-&gt;ncolumns;<sp/>++j){</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;writeElement(<sp/>factor<sp/>*<sp/>static_cast&lt;T&gt;(<sp/>std::rand()<sp/>)<sp/>/<sp/>static_cast&lt;T&gt;(RAND_MAX),i,j);</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="641"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a0d950cdbf1dc0727fe4d63a4c56546d5" kindref="member">Matrix&lt;T&gt;::sparsePattern</ref>(<sp/><ref refid="classVector" kindref="compound">Vector&lt;size_type&gt;</ref>&amp;<sp/>row_index,</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVector" kindref="compound">Vector&lt;size_type&gt;</ref>&amp;<sp/>col_index<sp/></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="654"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;setSparsePattern(<sp/>row_index,<sp/>col_index<sp/>);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a0d950cdbf1dc0727fe4d63a4c56546d5" kindref="member">Matrix&lt;T&gt;::sparsePattern</ref>(<sp/>std::vector&lt;size_type&gt;&amp;<sp/>row_index,</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>col_index</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="669"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;setSparsePattern(<sp/>row_index,<sp/>col_index<sp/>);</highlight></codeline>
+<codeline lineno="671"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMatrix_1a0d950cdbf1dc0727fe4d63a4c56546d5" kindref="member">Matrix&lt;T&gt;::sparsePattern</ref>(<sp/><ref refid="classlmx_1_1DenseMatrix" kindref="compound">lmx::DenseMatrix&lt;T&gt;</ref>&amp;<sp/>aDenseMatrix<sp/>)</highlight></codeline>
+<codeline lineno="681"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/>std::vector&lt;size_type&gt;<sp/>row_index,<sp/>col_index;</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/>aDenseMatrix.<ref refid="classlmx_1_1DenseMatrix_1ad42b0105c37cdd71f696bf939b105c4c" kindref="member">writeSparsePattern</ref>(<sp/>row_index,<sp/>col_index<sp/>);</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;setSparsePattern(<sp/>row_index,<sp/>col_index<sp/>);</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="693" refid="classMatrix_1a8c331926ec2fcc7ab5ba866f3f5dd370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Elem_ref&lt;T&gt;<sp/><ref refid="classMatrix_1a8c331926ec2fcc7ab5ba866f3f5dd370" kindref="member">Matrix&lt;T&gt;::operator () </ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>m,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>n)</highlight></codeline>
+<codeline lineno="694"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m<sp/>&gt;=<sp/>this-&gt;mrows){</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Row<sp/>index<sp/>exceeds<sp/>matrix<sp/>dimensions.<sp/>Trying<sp/>to<sp/>access<sp/>element<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>n<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;of<sp/>matrix<sp/>with<sp/>dimension<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;mrows<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;ncolumns<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(dimension_error,<sp/>message.str()<sp/>);</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&gt;=<sp/>this-&gt;ncolumns){</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Column<sp/>index<sp/>exceeds<sp/>matrix<sp/>dimensions.<sp/>Trying<sp/>to<sp/>access<sp/>element<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>n<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;of<sp/>matrix<sp/>with<sp/>dimension<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;mrows<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;ncolumns<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(dimension_error,<sp/>message.str()<sp/>);</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/>reference-&gt;write_pos(m,n);</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*reference;</highlight></codeline>
+<codeline lineno="709"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="717" refid="classMatrix_1a0d9e03ae35ffa4667afa1075f2684a64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a98a12ff384603dcb37d3fc2e56fd747e" kindref="member">Matrix&lt;T&gt;::operator = </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="718"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/>mrows<sp/>=<sp/>A.<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref>;</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/>ncolumns<sp/>=<sp/>A.<ref refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" kindref="member">ncolumns</ref>;</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/>type_matrix-&gt;equals(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="723"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="729"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>C&gt;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="732" refid="classMatrix_1a07c1d963d1e98ff20ac96711d357f42d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a98a12ff384603dcb37d3fc2e56fd747e" kindref="member">Matrix&lt;T&gt;::operator = </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;C&gt;</ref>&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="733"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/>mrows<sp/>=<sp/>A.<ref refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" kindref="member">rows</ref>();</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/>ncolumns<sp/>=<sp/>A.<ref refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" kindref="member">cols</ref>();</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;resize(mrows,ncolumns);</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;mrows<sp/>;<sp/>++i){</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;ncolumns<sp/>;<sp/>++j){</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;operator<sp/>(<sp/>)(i,j)<sp/>=<sp/>A.<ref refid="classMatrix_1a1225e5428e19fc4ae3fcb664fbdecb6b" kindref="member">readElement</ref>(i,j);</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="744"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"></highlight></codeline>
+<codeline lineno="751"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="753" refid="classMatrix_1a3f2deb42b24254e639bca3ea50e2cdd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a98a12ff384603dcb37d3fc2e56fd747e" kindref="member">Matrix&lt;T&gt;::operator = </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="754"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/>mrows<sp/>=<sp/>A.<ref refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" kindref="member">mrows</ref>;</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/>ncolumns<sp/>=<sp/>A.ncolumns;</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<sp/><ref refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" kindref="member">getMatrixType</ref>()<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>case<sp/>0<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="760"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1<sp/>:</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>copy&lt;T&gt;(<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">Type_stdmatrix&lt;T&gt;*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(A.type_matrix),</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">Type_csc&lt;T&gt;*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;type_matrix)<sp/>);</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;mrows;<sp/>++j){</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;writeElement(A.readElement(i,j),<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="777"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a675f0713a95f8320bda2d583bf79e7d9" kindref="member">Matrix&lt;T&gt;::operator += </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="786"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="787"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Scheme<sp/>of<sp/>function:<sp/>(*this.type_matrix)<sp/>+<sp/>A.type_matrix,<sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/>type_matrix-&gt;<ref refid="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" kindref="member">add</ref>(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="790"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight></codeline>
+<codeline lineno="796"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a675f0713a95f8320bda2d583bf79e7d9" kindref="member">Matrix&lt;T&gt;::operator += </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="799"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Scheme<sp/>of<sp/>function:<sp/>(*this.type_matrix)<sp/>+<sp/>A.type_matrix,<sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;mrows;<sp/>++j){</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;writeElement(this-&gt;readElement(i,j)<sp/>+<sp/>A.readElement(i,j),<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="807"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"></highlight></codeline>
+<codeline lineno="813"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="815"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a22f1dad5c5fb9f37459517743442bbbd" kindref="member">Matrix&lt;T&gt;::operator -= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix</ref>&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="816"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="817"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Scheme<sp/>of<sp/>function:<sp/>(*this.type_matrix)<sp/>-<sp/>A.type_matrix,<sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/>type_matrix-&gt;substract(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="820"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="821"><highlight class="normal"></highlight></codeline>
+<codeline lineno="826"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a22f1dad5c5fb9f37459517743442bbbd" kindref="member">Matrix&lt;T&gt;::operator -= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A)</highlight></codeline>
+<codeline lineno="829"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Scheme<sp/>of<sp/>function:<sp/>(*this.type_matrix)<sp/>+<sp/>A.type_matrix,<sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mrows;<sp/>++i){</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;mrows;<sp/>++j){</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;writeElement(this-&gt;readElement(i,j)<sp/>-<sp/>A.readElement(i,j),<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="837"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"></highlight></codeline>
+<codeline lineno="844"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="845" refid="classMatrix_1ac610da076cedafce9a3f65475cb3e8b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1ac610da076cedafce9a3f65475cb3e8b5" kindref="member">Matrix&lt;T&gt;::operator *= </ref>(T<sp/>scalar)</highlight></codeline>
+<codeline lineno="846"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/>type_matrix-&gt;multiplyScalar(scalar);</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="849"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"></highlight></codeline>
+<codeline lineno="856"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="857" refid="classMatrix_1aa8abca2bdd8d1a858a44520cf75ebf8b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1aa8abca2bdd8d1a858a44520cf75ebf8b" kindref="member">Matrix&lt;T&gt;::operator /= </ref>(T<sp/>scalar)</highlight></codeline>
+<codeline lineno="858"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/>T<sp/>div<sp/>=<sp/>(T)(1./div);</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/>type_matrix-&gt;multiplyScalar(div);</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="862"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="863"><highlight class="normal"></highlight></codeline>
+<codeline lineno="870"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" kindref="member">Matrix&lt;T&gt;::add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="872"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="873"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;equals(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;<ref refid="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" kindref="member">add</ref>(B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="876"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" kindref="member">Matrix&lt;T&gt;::add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="886"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" kindref="member">mat_mat_add</ref>(<sp/>A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="889"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="897"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="898"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" kindref="member">Matrix&lt;T&gt;::add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="899"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" kindref="member">mat_mat_add</ref>(<sp/>A.type_matrix,<sp/>B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="901"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="902"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="903"><highlight class="normal"></highlight></codeline>
+<codeline lineno="904"><highlight class="normal"></highlight></codeline>
+<codeline lineno="911"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1aaee38bfbbbda0e76f1cb51d4bff11d66" kindref="member">Matrix&lt;T&gt;::subs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="913"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;equals(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;substract(B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="917"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"></highlight></codeline>
+<codeline lineno="925"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1aaee38bfbbbda0e76f1cb51d4bff11d66" kindref="member">Matrix&lt;T&gt;::subs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="927"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" kindref="member">mat_mat_subs</ref>(<sp/>A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="929"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="930"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="931"><highlight class="normal"></highlight></codeline>
+<codeline lineno="938"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1aaee38bfbbbda0e76f1cb51d4bff11d66" kindref="member">Matrix&lt;T&gt;::subs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="940"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" kindref="member">mat_mat_subs</ref>(<sp/>A.type_matrix,<sp/>B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="943"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="944"><highlight class="normal"></highlight></codeline>
+<codeline lineno="951"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="952"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" kindref="member">Matrix&lt;T&gt;::mult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="953"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="954"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;multiply(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="955"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="956"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="957"><highlight class="normal"></highlight></codeline>
+<codeline lineno="964"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" kindref="member">Matrix&lt;T&gt;::mult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="966"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" kindref="member">mat_mat_mult</ref>(<sp/>A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="968"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="969"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"></highlight></codeline>
+<codeline lineno="977"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="978"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" kindref="member">Matrix&lt;T&gt;::mult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="979"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="980"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" kindref="member">mat_mat_mult</ref>(<sp/>A.type_matrix,<sp/>B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="981"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="982"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="983"><highlight class="normal"></highlight></codeline>
+<codeline lineno="990"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="991" refid="classMatrix_1a05d60787d4280ce70e4bfdf9a778feec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" kindref="member">Matrix&lt;T&gt;::mult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="992"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="993"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" kindref="member">mat_mat_mult</ref>(<sp/>A.type_matrix,<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="994"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="995"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="996"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1002"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" kindref="member">Matrix&lt;T&gt;::multElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"><sp/><sp/>this-&gt;type_matrix-&gt;multiplyElements(B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="1006"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1007"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1014"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" kindref="member">Matrix&lt;T&gt;::multElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1016"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" kindref="member">mat_mat_multElements</ref>(<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="1018"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1019"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1020"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1021"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1028"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" kindref="member">Matrix&lt;T&gt;::multElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1030"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1031"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Must<sp/>select<sp/>the<sp/>matrix<sp/>to<sp/>multiply<sp/>to<sp/>because<sp/>can<sp/>be<sp/>the<sp/>same<sp/>object!<sp/>so...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1032"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;type_matrix<sp/>==<sp/>A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>)</highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;multiplyElements(B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="1034"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;type_matrix<sp/>==<sp/>B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>)</highlight></codeline>
+<codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;multiplyElements(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="1036"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//<sp/>no<sp/>problem<sp/>different<sp/>matrices...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;equals(A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="1038"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type_matrix-&gt;multiplyElements(B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>);</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1040"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1041"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1042"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1050"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" kindref="member">Matrix&lt;T&gt;::multElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1052"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1053"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" kindref="member">mat_mat_multElements</ref>(<sp/>A.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="1054"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1055"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1056"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1064"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1065"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" kindref="member">Matrix&lt;T&gt;::multElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1066"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1067"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" kindref="member">mat_mat_multElements</ref>(<sp/>A.type_matrix,<sp/>B.<ref refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" kindref="member">type_matrix</ref>,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="1068"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1069"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1070"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1078"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/><ref refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" kindref="member">Matrix&lt;T&gt;::multElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseMatrix&lt;T&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1080"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1081"><highlight class="normal"><sp/><sp/><ref refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" kindref="member">mat_mat_multElements</ref>(<sp/>A.type_matrix,<sp/>B.type_matrix,<sp/>this-&gt;type_matrix<sp/>);</highlight></codeline>
+<codeline lineno="1082"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1083"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1084"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1085"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1086"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1088"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Overloaded<sp/>operators<sp/>with<sp/>Matrix<sp/>as<sp/>rvalue:<sp/><sp/>//////////////////</highlight></codeline>
+<codeline lineno="1090"><highlight class="comment"></highlight></codeline>
+<codeline lineno="1094"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="1095" refid="namespacelmx_1a12fd7ce454c4b736867bcebc9f7ac84c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/><ref refid="cofe__fmc_8h_1ac32b6eaf91b59407872e58b8da61f998" kindref="member">operator - </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1096"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1098"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>res(B);</highlight></codeline>
+<codeline lineno="1099"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline lineno="1100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="1101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="1107" refid="namespacelmx_1ad723ad98140948b6fc56bf5d0193c1a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/><ref refid="cofe__fmc_8h_1a804b2b968d5303078e68826d6a0760d3" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scalar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;T&gt;</ref>&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="1108"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix&lt;T&gt;</ref><sp/>mult(B);</highlight></codeline>
+<codeline lineno="1111"><highlight class="normal"><sp/><sp/><sp/><sp/>mult<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="1112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mult;</highlight></codeline>
+<codeline lineno="1113"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="1121" refid="namespacelmx_1a4593e2a6c2c72cba0b1c556c0f306b3c" refkind="member"><highlight class="normal"><sp/><sp/>std::ostream&amp;<sp/>operator<sp/>&lt;&lt;<sp/>(std::ostream&amp;<sp/>os,<sp/>const<sp/>Matrix&lt;T&gt;&amp;<sp/>mat)</highlight></codeline>
+<codeline lineno="1122"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1123"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Matrix<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.rows()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.cols()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="1124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!mat.rows()<sp/>&amp;&amp;<sp/>!mat.cols()<sp/>)<sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;void&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mat.rows();<sp/>++i)</highlight></codeline>
+<codeline lineno="1126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="1128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;mat.cols();<sp/>++j)</highlight></codeline>
+<codeline lineno="1129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>mat.readElement(i,j)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1131"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="1132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="1133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="1142" refid="namespacelmx_1ac08b14163726a57e0acae786c74bc6ee" refkind="member"><highlight class="normal"><sp/><sp/>std::ostream&amp;<sp/>operator<sp/>&lt;&lt;<sp/>(std::ostream&amp;<sp/>os,<sp/>const<sp/>Matrix&lt;<sp/>cofe::TensorRank2&lt;3,<sp/>T&gt;<sp/>&gt;&amp;<sp/>mat)</highlight></codeline>
+<codeline lineno="1143"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1144"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Matriz<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.rows()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.cols()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="1145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!mat.rows()<sp/>&amp;&amp;<sp/>!mat.cols()<sp/>)<sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;void&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="1147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i&lt;mat.rows();<sp/>++i)</highlight></codeline>
+<codeline lineno="1148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j&lt;mat.cols();<sp/>++j)</highlight></codeline>
+<codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>mat.readElement(i,j)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="1155"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1157"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h"/>
+  </compounddef>
+</doxygen>

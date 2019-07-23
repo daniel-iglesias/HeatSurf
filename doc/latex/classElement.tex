@@ -1,78 +1,191 @@
-\hypertarget{classElement}{
-\section{Element Class Reference}
+\hypertarget{classElement}{\section{Element Class Reference}
 \label{classElement}\index{Element@{Element}}
 }
-{\tt \#include $<$/home/dani/Programs/beam\_\-dump/src/element.h$>$}
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/element.\-h$>$}
 
 \subsection*{Public Member Functions}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classElement_4e6e261243d3b4580ae7b4c266d5ce5f}{
-\textbf{Element} (int type\_\-in)}
-\label{classElement_4e6e261243d3b4580ae7b4c266d5ce5f}
-
+\hyperlink{classElement_ab0d0e20be9a36ae676202db753faeec9}{Element} ()
 \item 
-\hypertarget{classElement_c9e6cfa50bdbdbe7fa8895fec7490c89}{
-void \textbf{setNumber} (int number\_\-in)}
-\label{classElement_c9e6cfa50bdbdbe7fa8895fec7490c89}
-
+\hyperlink{classElement_a4e6e261243d3b4580ae7b4c266d5ce5f}{Element} (int type\-\_\-in)
 \item 
-\hypertarget{classElement_bf8a7a490cad2431443286d7ee615aa7}{
-void \textbf{setArea} (double area\_\-in)}
-\label{classElement_bf8a7a490cad2431443286d7ee615aa7}
-
+\hyperlink{classElement_a13d54ba9c08b6bec651402f1c2bb002c}{$\sim$\-Element} ()
 \item 
-\hypertarget{classElement_a838e2bc18a65fffaa3a74da5767650c}{
-void \textbf{addNode} (int node\_\-number)}
-\label{classElement_a838e2bc18a65fffaa3a74da5767650c}
-
+void \hyperlink{classElement_ac9e6cfa50bdbdbe7fa8895fec7490c89}{set\-Number} (int number\-\_\-in)
 \item 
-\hypertarget{classElement_8bd9315dc4eb7b59f47410347375bf0e}{
-int \textbf{getType} ()}
-\label{classElement_8bd9315dc4eb7b59f47410347375bf0e}
-
+void \hyperlink{classElement_abf8a7a490cad2431443286d7ee615aa7}{set\-Area} (double area\-\_\-in)
 \item 
-\hypertarget{classElement_8de2b9d656140b6178581da489edf199}{
-int \textbf{getNumber} ()}
-\label{classElement_8de2b9d656140b6178581da489edf199}
-
+void \hyperlink{classElement_aa838e2bc18a65fffaa3a74da5767650c}{add\-Node} (int node\-\_\-number)
 \item 
-\hypertarget{classElement_227a96bf84d82893af37a14650561eee}{
-double \textbf{getArea} ()}
-\label{classElement_227a96bf84d82893af37a14650561eee}
-
+void \hyperlink{classElement_a0fcde2c599efe04b0a04623b362972fc}{add\-Density} (double dens\-\_\-in)
 \item 
-\hypertarget{classElement_54738e08d76563f2ffb5b6aef0f38981}{
-int \textbf{getNumberOfNodes} ()}
-\label{classElement_54738e08d76563f2ffb5b6aef0f38981}
-
+void \hyperlink{classElement_a9101c3a58134bb2fd736429976727e79}{add\-Density3\-D} (double dens\-\_\-in)
 \item 
-\hypertarget{classElement_c6df9864bc31d99d8942e7c85533e9aa}{
-std::vector$<$ int $>$ \& \textbf{getConnectivity} ()}
-\label{classElement_c6df9864bc31d99d8942e7c85533e9aa}
-
+int \hyperlink{classElement_a8bd9315dc4eb7b59f47410347375bf0e}{get\-Type} ()
 \item 
-\hypertarget{classElement_bd3cfd73fd15f802578207411d2740bb}{
-void \textbf{generateGeometry} ()}
-\label{classElement_bd3cfd73fd15f802578207411d2740bb}
-
-\end{CompactItemize}
+int \hyperlink{classElement_a8de2b9d656140b6178581da489edf199}{get\-Number} ()
+\item 
+double \hyperlink{classElement_a227a96bf84d82893af37a14650561eee}{get\-Area} ()
+\item 
+double \hyperlink{classElement_a171ad7737d0015969b05cd21a17ec078}{get\-Density} ()
+\item 
+double \hyperlink{classElement_ac53449729ec1381c44958bcf6ae7a797}{get\-Density3\-D} ()
+\item 
+int \hyperlink{classElement_a54738e08d76563f2ffb5b6aef0f38981}{get\-Number\-Of\-Nodes} ()
+\item 
+std\-::vector$<$ int $>$ \& \hyperlink{classElement_ac6df9864bc31d99d8942e7c85533e9aa}{get\-Connectivity} ()
+\item 
+void \hyperlink{classElement_abd3cfd73fd15f802578207411d2740bb}{generate\-Geometry} ()
+\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classElement_3c475b7e8da464c6aa746ed2ae79ab3f}{
-vtkCell $\ast$ \textbf{geometry}}
-\label{classElement_3c475b7e8da464c6aa746ed2ae79ab3f}
-
-\end{CompactItemize}
+vtk\-Cell $\ast$ \hyperlink{classElement_a3c475b7e8da464c6aa746ed2ae79ab3f}{geometry}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\begin{Desc}
-\item[Author:]Daniel Iglesias $<$\href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.iglesias@ciemat.es}$>$ \end{Desc}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
 
 
-The documentation for this class was generated from the following files:\begin{CompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classElement_ab0d0e20be9a36ae676202db753faeec9}{\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classElement_ab0d0e20be9a36ae676202db753faeec9}
+\hypertarget{classElement_a4e6e261243d3b4580ae7b4c266d5ce5f}{\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{type\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a4e6e261243d3b4580ae7b4c266d5ce5f}
+\hypertarget{classElement_a13d54ba9c08b6bec651402f1c2bb002c}{\index{Element@{Element}!$\sim$\-Element@{$\sim$\-Element}}
+\index{$\sim$\-Element@{$\sim$\-Element}!Element@{Element}}
+\subsubsection[{$\sim$\-Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::$\sim$\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classElement_a13d54ba9c08b6bec651402f1c2bb002c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classElement_a0fcde2c599efe04b0a04623b362972fc}{\index{Element@{Element}!add\-Density@{add\-Density}}
+\index{add\-Density@{add\-Density}!Element@{Element}}
+\subsubsection[{add\-Density}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::add\-Density (
+\begin{DoxyParamCaption}
+\item[{double}]{dens\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a0fcde2c599efe04b0a04623b362972fc}
+\hypertarget{classElement_a9101c3a58134bb2fd736429976727e79}{\index{Element@{Element}!add\-Density3\-D@{add\-Density3\-D}}
+\index{add\-Density3\-D@{add\-Density3\-D}!Element@{Element}}
+\subsubsection[{add\-Density3\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::add\-Density3\-D (
+\begin{DoxyParamCaption}
+\item[{double}]{dens\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a9101c3a58134bb2fd736429976727e79}
+\hypertarget{classElement_aa838e2bc18a65fffaa3a74da5767650c}{\index{Element@{Element}!add\-Node@{add\-Node}}
+\index{add\-Node@{add\-Node}!Element@{Element}}
+\subsubsection[{add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::add\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{node\-\_\-number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_aa838e2bc18a65fffaa3a74da5767650c}
+\hypertarget{classElement_abd3cfd73fd15f802578207411d2740bb}{\index{Element@{Element}!generate\-Geometry@{generate\-Geometry}}
+\index{generate\-Geometry@{generate\-Geometry}!Element@{Element}}
+\subsubsection[{generate\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::generate\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classElement_abd3cfd73fd15f802578207411d2740bb}
+
+
+References geometry.
+
+\hypertarget{classElement_a227a96bf84d82893af37a14650561eee}{\index{Element@{Element}!get\-Area@{get\-Area}}
+\index{get\-Area@{get\-Area}!Element@{Element}}
+\subsubsection[{get\-Area}]{\setlength{\rightskip}{0pt plus 5cm}double Element\-::get\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a227a96bf84d82893af37a14650561eee}
+\hypertarget{classElement_ac6df9864bc31d99d8942e7c85533e9aa}{\index{Element@{Element}!get\-Connectivity@{get\-Connectivity}}
+\index{get\-Connectivity@{get\-Connectivity}!Element@{Element}}
+\subsubsection[{get\-Connectivity}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$\& Element\-::get\-Connectivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_ac6df9864bc31d99d8942e7c85533e9aa}
+\hypertarget{classElement_a171ad7737d0015969b05cd21a17ec078}{\index{Element@{Element}!get\-Density@{get\-Density}}
+\index{get\-Density@{get\-Density}!Element@{Element}}
+\subsubsection[{get\-Density}]{\setlength{\rightskip}{0pt plus 5cm}double Element\-::get\-Density (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a171ad7737d0015969b05cd21a17ec078}
+\hypertarget{classElement_ac53449729ec1381c44958bcf6ae7a797}{\index{Element@{Element}!get\-Density3\-D@{get\-Density3\-D}}
+\index{get\-Density3\-D@{get\-Density3\-D}!Element@{Element}}
+\subsubsection[{get\-Density3\-D}]{\setlength{\rightskip}{0pt plus 5cm}double Element\-::get\-Density3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classElement_ac53449729ec1381c44958bcf6ae7a797}
+\hypertarget{classElement_a8de2b9d656140b6178581da489edf199}{\index{Element@{Element}!get\-Number@{get\-Number}}
+\index{get\-Number@{get\-Number}!Element@{Element}}
+\subsubsection[{get\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int Element\-::get\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a8de2b9d656140b6178581da489edf199}
+\hypertarget{classElement_a54738e08d76563f2ffb5b6aef0f38981}{\index{Element@{Element}!get\-Number\-Of\-Nodes@{get\-Number\-Of\-Nodes}}
+\index{get\-Number\-Of\-Nodes@{get\-Number\-Of\-Nodes}!Element@{Element}}
+\subsubsection[{get\-Number\-Of\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}int Element\-::get\-Number\-Of\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a54738e08d76563f2ffb5b6aef0f38981}
+\hypertarget{classElement_a8bd9315dc4eb7b59f47410347375bf0e}{\index{Element@{Element}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Element@{Element}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Element\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_a8bd9315dc4eb7b59f47410347375bf0e}
+\hypertarget{classElement_abf8a7a490cad2431443286d7ee615aa7}{\index{Element@{Element}!set\-Area@{set\-Area}}
+\index{set\-Area@{set\-Area}!Element@{Element}}
+\subsubsection[{set\-Area}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Area (
+\begin{DoxyParamCaption}
+\item[{double}]{area\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_abf8a7a490cad2431443286d7ee615aa7}
+\hypertarget{classElement_ac9e6cfa50bdbdbe7fa8895fec7490c89}{\index{Element@{Element}!set\-Number@{set\-Number}}
+\index{set\-Number@{set\-Number}!Element@{Element}}
+\subsubsection[{set\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Number (
+\begin{DoxyParamCaption}
+\item[{int}]{number\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classElement_ac9e6cfa50bdbdbe7fa8895fec7490c89}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classElement_a3c475b7e8da464c6aa746ed2ae79ab3f}{\index{Element@{Element}!geometry@{geometry}}
+\index{geometry@{geometry}!Element@{Element}}
+\subsubsection[{geometry}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Cell$\ast$ Element\-::geometry}}\label{classElement_a3c475b7e8da464c6aa746ed2ae79ab3f}
+
+
+Referenced by generate\-Geometry().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{element_8h}{element.h}\item 
-src/element.cpp\end{CompactItemize}
+src/\hyperlink{element_8h}{element.\-h}\item 
+src/\hyperlink{element_8cpp}{element.\-cpp}\end{DoxyCompactItemize}

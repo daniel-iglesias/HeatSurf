@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Configuration" kind="class" prot="public">
+    <compoundname>lmx::Configuration</compoundname>
+    <includes refid="lmx__diff__configuration_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1aa20927f6ba8facb438206351b2f0a362" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Configuration&lt; T &gt;::vectorSize</definition>
+        <argsstring></argsstring>
+        <name>vectorSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1a2a2b39abdad0357f70e9e63f03f890a4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::unique_ptr&lt; <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::unique_ptr&lt;lmx::Vector&lt;T&gt; &gt; &gt; &gt; lmx::Configuration&lt; T &gt;::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1ab52c2c4ebc1e4bd895e14bf076a86a15" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;lmx::Vector&lt;T&gt; &gt; lmx::Configuration&lt; T &gt;::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1ae7025c757872f87bd3254b2037163023" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::Configuration&lt; T &gt;::lastStepSize</definition>
+        <argsstring></argsstring>
+        <name>lastStepSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1a7e60182a10635f96e118d7d5e7052b67" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::Configuration&lt; T &gt;::presentTime</definition>
+        <argsstring></argsstring>
+        <name>presentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1a72a7829ae18b05c9436f2ffdb0cee39e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Configuration&lt; T &gt;::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="64" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Configuration_1aec0d356060c256942c996f2a5de0e972" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::Configuration&lt; T &gt;::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a7554019ac3c088cf4043e28a2e69a9b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Configuration&lt; T &gt;::Configuration</definition>
+        <argsstring>()</argsstring>
+        <name>Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="70" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a840f3a27367514da1e9735550cebe7f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Configuration&lt; T &gt;::Configuration</definition>
+        <argsstring>(double t_o)</argsstring>
+        <name>Configuration</name>
+        <param>
+          <type>double</type>
+          <declname>t_o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time at first step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a9537a1dbac192b364e35edb4d14114ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Configuration&lt; T &gt;::~Configuration</definition>
+        <argsstring>()</argsstring>
+        <name>~Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="92" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="92" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a2820c2dd1a2c0879391a9fc4184e8d33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Configuration&lt; T &gt;::quiet</definition>
+        <argsstring>()</argsstring>
+        <name>quiet</name>
+        <briefdescription>
+<para>Needed to improve the output of <ref refid="classlmx_1_1DiffProblemFirstSecond" kindref="compound">DiffProblemFirstSecond</ref> runs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="107" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a78a886ffbf9c2f3614066667374effd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Configuration&lt; T &gt;::nextStep</definition>
+        <argsstring>(double &amp;stepSize)</argsstring>
+        <name>nextStep</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>stepSize</declname>
+          <defname>step_size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reshapes storing vectors to the required dimension for last steps storage. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>step_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time increment between last and next step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="109" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="253" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1ab4b84750deaab4d7041e9e6b7de5e71f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lmx::Configuration&lt; T &gt;::getTime</definition>
+        <argsstring>(int step=0)</argsstring>
+        <name>getTime</name>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the (actual - step) time step. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The time value of the step. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="115" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a8e703f449981bc50ec13c14b4fc03382" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::Configuration&lt; T &gt;::getTimeSize</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access to size of time line. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="122" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1af40c6ec05472dbca4a4a80ffd6db6e51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lmx::Configuration&lt; T &gt;::getLastStepSize</definition>
+        <argsstring>()</argsstring>
+        <name>getLastStepSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Value of last time increment. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="129" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a06ae75f9c8c797bd3801f60e8861ac97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>const lmx::Vector&lt;T&gt;&amp; lmx::Configuration&lt; T &gt;::getConf</definition>
+        <argsstring>(int order, int step=0)</argsstring>
+        <name>getConf</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Differential order of configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the (actual - step) time step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The configuration of the diff-order and step specified. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="136" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a2bfdf6ac49d60696c0d2924210af6f0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::Configuration&lt; T &gt;::getDiffOrder</definition>
+        <argsstring>()</argsstring>
+        <name>getDiffOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Maximum differential order of stored configuration. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="141" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1af910b7f153fc73967221cbf95b2f02e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Configuration&lt; T &gt;::setTime</definition>
+        <argsstring>(double &amp;time_in)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>time_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the time of actual (last) time step. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of time to be set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="148" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1af437ee887381048646611a1b7c79c80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Configuration&lt; T &gt;::setInitialCondition</definition>
+        <argsstring>(int diff_order, lmx::Vector&lt; T &gt; &amp;q_o)</argsstring>
+        <name>setInitialCondition</name>
+        <param>
+          <type>int</type>
+          <declname>diff_order</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>q_o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diff_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Order of differential system. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q_o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of initial condition to be set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="155" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="176" bodyend="206"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" compoundref="lmx__mat__vector_8h" startline="89" endline="89">lmx::Vector&lt; T &gt;::size</references>
+        <referencedby refid="classlmx_1_1DiffProblem_1a61dcb7fdf68cdd5a93a1c756d5fbbba2" compoundref="lmx__diff__problem_8h" startline="233" endline="241">lmx::DiffProblem&lt; Sys, T &gt;::setInitialConfiguration</referencedby>
+        <referencedby refid="classlmx_1_1DiffProblemDouble_1a3904b3ac77d965496dbfa34bd40710a9" compoundref="lmx__diff__problem__double_8h" startline="305" endline="313">lmx::DiffProblemDouble&lt; Sys, T &gt;::setInitialConfiguration1</referencedby>
+        <referencedby refid="classlmx_1_1DiffProblemDouble_1aeb674ac0fae825ba27739389da86d690" compoundref="lmx__diff__problem__double_8h" startline="321" endline="331">lmx::DiffProblemDouble&lt; Sys, T &gt;::setInitialConfiguration2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Configuration&lt; T &gt;::setStoredSteps</definition>
+        <argsstring>(int steps_q_o, int steps_q_i, int steps_q_n)</argsstring>
+        <name>setStoredSteps</name>
+        <param>
+          <type>int</type>
+          <declname>steps_q_o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>steps_q_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>steps_q_n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reshapes storing vectors to the required dimension for last steps storage. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps_q_o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of steps to store the basic variable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>steps_q_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of steps to store from first to (n-1) derivatives. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>steps_q_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of steps to store the n derivative. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="157" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="216" bodyend="246"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <referencedby refid="classlmx_1_1IntegratorCentralDifference_1a01d92b7c9ec60e6680ce0d7f3624bfbe" compoundref="lmx__diff__integrator__centraldiff_8h" startline="82" endline="86">lmx::IntegratorCentralDifference&lt; T &gt;::initialize</referencedby>
+        <referencedby refid="classlmx_1_1IntegratorAB_1a6aa7035ce0b6a896054175a32a0baf60" compoundref="lmx__diff__integrator__ab_8h" startline="119" endline="127">lmx::IntegratorAB&lt; T &gt;::initialize</referencedby>
+        <referencedby refid="classlmx_1_1IntegratorNEWMARK_1a2aa5136a1c112e7ac31c2bd3cb516988" compoundref="lmx__diff__integrator__newmark_8h" startline="105" endline="109">lmx::IntegratorNEWMARK&lt; T &gt;::initialize</referencedby>
+        <referencedby refid="classlmx_1_1IntegratorBDF_1a5ce2c4b88ec3dd23dce5b61122edfbe2" compoundref="lmx__diff__integrator__bdf_8h" startline="137" endline="141">lmx::IntegratorBDF&lt; T &gt;::initialize</referencedby>
+        <referencedby refid="classlmx_1_1IntegratorAM_1a931654fc8a6a5c516d54981f2d3ea8f4" compoundref="lmx__diff__integrator__am_8h" startline="126" endline="132">lmx::IntegratorAM&lt; T &gt;::initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1a3bd19b906326293cb5cecbd000121c3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Configuration&lt; T &gt;::setConf</definition>
+        <argsstring>(int diff_order, Vector&lt; T &gt; values, int time_step=0)</argsstring>
+        <name>setConf</name>
+        <param>
+          <type>int</type>
+          <declname>diff_order</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>time_step</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diff_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Differential order of configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Values of configuration to be set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the (actual - step) time step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="164" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Configuration_1ac9a6b4a9ec19c4af12a4181b8feeb3bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; lmx::Configuration&lt; T &gt;::setConf</definition>
+        <argsstring>(int diff_order, int time_step=0)</argsstring>
+        <name>setConf</name>
+        <param>
+          <type>int</type>
+          <declname>diff_order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>time_step</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diff_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Differential order of configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the (actual - step) time step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Values of configuration. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="171" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Basic variables, derivatives and time. The data is stored in the last steps, which number depends on integrator type.</para><para><simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" line="53" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h" bodystart="52" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Configuration_1a7554019ac3c088cf4043e28a2e69a9b8" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>Configuration</name></member>
+      <member refid="classlmx_1_1Configuration_1a840f3a27367514da1e9735550cebe7f5" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>Configuration</name></member>
+      <member refid="classlmx_1_1Configuration_1a06ae75f9c8c797bd3801f60e8861ac97" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>getConf</name></member>
+      <member refid="classlmx_1_1Configuration_1a2bfdf6ac49d60696c0d2924210af6f0c" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>getDiffOrder</name></member>
+      <member refid="classlmx_1_1Configuration_1af40c6ec05472dbca4a4a80ffd6db6e51" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>getLastStepSize</name></member>
+      <member refid="classlmx_1_1Configuration_1ab4b84750deaab4d7041e9e6b7de5e71f" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>getTime</name></member>
+      <member refid="classlmx_1_1Configuration_1a8e703f449981bc50ec13c14b4fc03382" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>getTimeSize</name></member>
+      <member refid="classlmx_1_1Configuration_1ae7025c757872f87bd3254b2037163023" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>lastStepSize</name></member>
+      <member refid="classlmx_1_1Configuration_1a78a886ffbf9c2f3614066667374effd7" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>nextStep</name></member>
+      <member refid="classlmx_1_1Configuration_1a7e60182a10635f96e118d7d5e7052b67" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>presentTime</name></member>
+      <member refid="classlmx_1_1Configuration_1a2a2b39abdad0357f70e9e63f03f890a4" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>q</name></member>
+      <member refid="classlmx_1_1Configuration_1a2820c2dd1a2c0879391a9fc4184e8d33" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>quiet</name></member>
+      <member refid="classlmx_1_1Configuration_1a3bd19b906326293cb5cecbd000121c3a" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>setConf</name></member>
+      <member refid="classlmx_1_1Configuration_1ac9a6b4a9ec19c4af12a4181b8feeb3bf" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>setConf</name></member>
+      <member refid="classlmx_1_1Configuration_1af437ee887381048646611a1b7c79c80e" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>setInitialCondition</name></member>
+      <member refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>setStoredSteps</name></member>
+      <member refid="classlmx_1_1Configuration_1af910b7f153fc73967221cbf95b2f02e6" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>setTime</name></member>
+      <member refid="classlmx_1_1Configuration_1a72a7829ae18b05c9436f2ffdb0cee39e" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>steps</name></member>
+      <member refid="classlmx_1_1Configuration_1ab52c2c4ebc1e4bd895e14bf076a86a15" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>temp</name></member>
+      <member refid="classlmx_1_1Configuration_1aa20927f6ba8facb438206351b2f0a362" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>vectorSize</name></member>
+      <member refid="classlmx_1_1Configuration_1aec0d356060c256942c996f2a5de0e972" prot="private" virt="non-virtual"><scope>lmx::Configuration</scope><name>verbose</name></member>
+      <member refid="classlmx_1_1Configuration_1a9537a1dbac192b364e35edb4d14114ba" prot="public" virt="non-virtual"><scope>lmx::Configuration</scope><name>~Configuration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

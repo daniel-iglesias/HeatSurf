@@ -1,5 +1,22 @@
-<area shape="rect" href="$geometry_8h.html" title="Facet planar geometry for graphical representation purposes." alt="" coords="115,80,237,107">
-<area shape="rect" href="$cone_8h.html" title="Base class for the different geometries." alt="" coords="5,155,96,181">
-<area shape="rect" href="$cylinder_8h.html" title="Base class for the different geometries." alt="" coords="120,155,232,181">
-<area shape="rect" href="$twoplates_8h.html" title="Base class for the different geometries." alt="" coords="256,155,379,181">
-<area shape="rect" href="$simulation_8h.html" title="Pure conical geometry." alt="" coords="112,229,240,256">
+<map id="src/element.h" name="src/element.h">
+<area shape="rect" id="node2" href="$geometry_8h.html" title="Base class for the different geometries. " alt="" coords="675,80,781,107"/>
+<area shape="rect" id="node21" href="$element_8cpp.html" title="src/element.cpp" alt="" coords="806,80,919,107"/>
+<area shape="rect" id="node3" href="$cone_8h.html" title="Pure conical geometry. " alt="" coords="247,155,328,181"/>
+<area shape="rect" id="node9" href="$cone2_8h.html" title="src/cone2.h" alt="" coords="429,155,517,181"/>
+<area shape="rect" id="node12" href="$cylinder_8h.html" title="Pure cylindrical geometry. " alt="" coords="565,155,661,181"/>
+<area shape="rect" id="node14" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="924,155,1044,181"/>
+<area shape="rect" id="node15" href="$ogive_8h.html" title="src/ogive.h" alt="" coords="687,155,769,181"/>
+<area shape="rect" id="node17" href="$twoplates_8h.html" title="Two symmetrical plates geometry. " alt="" coords="793,155,900,181"/>
+<area shape="rect" id="node19" href="$ring_8h.html" title="Anular geometry. " alt="" coords="1075,155,1149,181"/>
+<area shape="rect" id="node4" href="$cone_8cpp.html" title="src/cone.cpp" alt="" coords="142,229,236,256"/>
+<area shape="rect" id="node5" href="$cone2-bak_8h.html" title="src/cone2&#45;bak.h" alt="" coords="5,229,117,256"/>
+<area shape="rect" id="node6" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="673,229,783,256"/>
+<area shape="rect" id="node7" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="599,304,712,331"/>
+<area shape="rect" id="node8" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="737,304,863,331"/>
+<area shape="rect" id="node10" href="$cone2-bak_8cpp.html" title="src/cone2&#45;bak.cpp" alt="" coords="387,229,513,256"/>
+<area shape="rect" id="node11" href="$cone2_8cpp.html" title="src/cone2.cpp" alt="" coords="261,229,363,256"/>
+<area shape="rect" id="node13" href="$cylinder_8cpp.html" title="src/cylinder.cpp" alt="" coords="538,229,648,256"/>
+<area shape="rect" id="node16" href="$ogive_8cpp.html" title="src/ogive.cpp" alt="" coords="807,229,904,256"/>
+<area shape="rect" id="node18" href="$twoplates_8cpp.html" title="src/twoplates.cpp" alt="" coords="929,229,1049,256"/>
+<area shape="rect" id="node20" href="$ring_8cpp.html" title="src/ring.cpp" alt="" coords="1075,229,1163,256"/>
+</map>

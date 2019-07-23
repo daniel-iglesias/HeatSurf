@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__mat__type__stdmatrix_8h" kind="file">
+    <compoundname>lmx_mat_type_stdmatrix.h</compoundname>
+    <includes refid="lmx__mat__data__mat_8h" local="yes">lmx_mat_data_mat.h</includes>
+    <includes refid="lmx__mat__vector_8h" local="yes">lmx_mat_vector.h</includes>
+    <includes refid="lmx__base__iohb_8h" local="yes">lmx_base_iohb.h</includes>
+    <includedby refid="lmx__mat__matrix_8h" local="yes">src/LMX/lmx_mat_matrix.h</includedby>
+    <incdepgraph>
+      <node id="4402">
+        <label>lmx_mat_type_stdvector.h</label>
+        <link refid="lmx__mat__type__stdvector_8h"/>
+        <childnode refid="4403" relation="include">
+        </childnode>
+        <childnode refid="4404" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4396" relation="include">
+        </childnode>
+        <childnode refid="4406" relation="include">
+        </childnode>
+        <childnode refid="4407" relation="include">
+        </childnode>
+      </node>
+      <node id="4403">
+        <label>fstream</label>
+      </node>
+      <node id="4407">
+        <label>lmx_mat_data_vec.h</label>
+        <link refid="lmx__mat__data__vec_8h"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+      </node>
+      <node id="4398">
+        <label>lmx_mat_data_blas.h</label>
+        <link refid="lmx__mat__data__blas_8h"/>
+        <childnode refid="4399" relation="include">
+        </childnode>
+      </node>
+      <node id="4400">
+        <label>lmx_mat_vector.h</label>
+        <link refid="lmx__mat__vector_8h"/>
+        <childnode refid="4401" relation="include">
+        </childnode>
+        <childnode refid="4402" relation="include">
+        </childnode>
+      </node>
+      <node id="4406">
+        <label>string.h</label>
+      </node>
+      <node id="4397">
+        <label>lmx_mat_data.h</label>
+        <link refid="lmx__mat__data_8h"/>
+        <childnode refid="4398" relation="include">
+        </childnode>
+      </node>
+      <node id="4396">
+        <label>vector</label>
+      </node>
+      <node id="4395">
+        <label>lmx_mat_data_mat.h</label>
+        <link refid="lmx__mat__data__mat_8h"/>
+        <childnode refid="4396" relation="include">
+        </childnode>
+        <childnode refid="4397" relation="include">
+        </childnode>
+      </node>
+      <node id="4405">
+        <label>cstdlib</label>
+      </node>
+      <node id="4404">
+        <label>iostream</label>
+      </node>
+      <node id="4394">
+        <label>src/LMX/lmx_mat_type_stdmatrix.h</label>
+        <link refid="lmx_mat_type_stdmatrix.h"/>
+        <childnode refid="4395" relation="include">
+        </childnode>
+        <childnode refid="4400" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4410">
+        <label>complex</label>
+      </node>
+      <node id="4408">
+        <label>lmx_base_iohb.h</label>
+        <link refid="lmx__base__iohb_8h"/>
+        <childnode refid="4409" relation="include">
+        </childnode>
+        <childnode refid="4410" relation="include">
+        </childnode>
+      </node>
+      <node id="4399">
+        <label>algorithm</label>
+      </node>
+      <node id="4401">
+        <label>lmx_mat_elem_ref.h</label>
+        <link refid="lmx__mat__elem__ref_8h"/>
+        <childnode refid="4397" relation="include">
+        </childnode>
+      </node>
+      <node id="4409">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4426">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="4434">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="4435" relation="include">
+        </childnode>
+      </node>
+      <node id="4428">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="4429">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="4423">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="4416">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx_8h"/>
+        <childnode refid="4417" relation="include">
+        </childnode>
+      </node>
+      <node id="4431">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="4418">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="4419" relation="include">
+        </childnode>
+        <childnode refid="4420" relation="include">
+        </childnode>
+        <childnode refid="4421" relation="include">
+        </childnode>
+      </node>
+      <node id="4414">
+        <label>src/LMX/lmx_linsolvers_system.h</label>
+        <link refid="lmx__linsolvers__system_8h"/>
+        <childnode refid="4415" relation="include">
+        </childnode>
+      </node>
+      <node id="4424">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="4425" relation="include">
+        </childnode>
+        <childnode refid="4426" relation="include">
+        </childnode>
+        <childnode refid="4421" relation="include">
+        </childnode>
+      </node>
+      <node id="4419">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="4427">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="4428" relation="include">
+        </childnode>
+        <childnode refid="4421" relation="include">
+        </childnode>
+      </node>
+      <node id="4433">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="4422">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="4430">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="4421" relation="include">
+        </childnode>
+        <childnode refid="4431" relation="include">
+        </childnode>
+      </node>
+      <node id="4413">
+        <label>src/LMX/lmx_mat_dense_matrix.h</label>
+        <link refid="lmx__mat__dense__matrix_8h"/>
+        <childnode refid="4414" relation="include">
+        </childnode>
+      </node>
+      <node id="4435">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="4425">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="4420">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="4417">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="4418" relation="include">
+        </childnode>
+        <childnode refid="4424" relation="include">
+        </childnode>
+        <childnode refid="4427" relation="include">
+        </childnode>
+        <childnode refid="4429" relation="include">
+        </childnode>
+        <childnode refid="4430" relation="include">
+        </childnode>
+        <childnode refid="4432" relation="include">
+        </childnode>
+        <childnode refid="4434" relation="include">
+        </childnode>
+      </node>
+      <node id="4432">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="4421" relation="include">
+        </childnode>
+        <childnode refid="4433" relation="include">
+        </childnode>
+      </node>
+      <node id="4421">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="4422" relation="include">
+        </childnode>
+        <childnode refid="4423" relation="include">
+        </childnode>
+      </node>
+      <node id="4411">
+        <label>src/LMX/lmx_mat_type_stdmatrix.h</label>
+        <link refid="lmx_mat_type_stdmatrix.h"/>
+        <childnode refid="4412" relation="include">
+        </childnode>
+      </node>
+      <node id="4415">
+        <label>src/LMX/lmx_linsolvers.h</label>
+        <link refid="lmx__linsolvers_8h"/>
+        <childnode refid="4416" relation="include">
+        </childnode>
+      </node>
+      <node id="4412">
+        <label>src/LMX/lmx_mat_matrix.h</label>
+        <link refid="lmx__mat__matrix_8h"/>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlmx_1_1Type__stdmatrix" prot="public">lmx::Type_stdmatrix</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+    <briefdescription>
+<para>This file contains both the declaration and implementation for type_stdmatrix (std::vector type) class member functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMXTYPE_STDMATRIX_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMXTYPE_STDMATRIX_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__mat__data__mat_8h" kindref="compound">lmx_mat_data_mat.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__mat__vector_8h" kindref="compound">lmx_mat_vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__base__iohb_8h" kindref="compound">lmx_base_iohb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Type_stdmatrix<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Data_mat&lt;T&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>rows,<sp/>cols;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;T&gt;<sp/>&gt;<sp/>contents;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy&lt;&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Type_stdmatrix&lt;T&gt;<sp/>*,<sp/>Type_csc&lt;T&gt;<sp/>*);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classlmx_1_1Type__stdmatrix_1a5b3d3d3d338fdb2c08f91dfe38d425bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt;T&gt;;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67" refid="classlmx_1_1Type__stdmatrix_1a16876ff97d835d125990ac31b0e2dfcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a16876ff97d835d125990ac31b0e2dfcf" kindref="member">Type_stdmatrix</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rows<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cols<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a16876ff97d835d125990ac31b0e2dfcf" kindref="member">Type_stdmatrix</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classlmx_1_1Type__stdmatrix_1a2f98496533ad90a0563e794af503d182" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a2f98496533ad90a0563e794af503d182" kindref="member">~Type_stdmatrix</ref>()</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classlmx_1_1Type__stdmatrix_1a84777801660805f7e6f1a93861d0c9ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a84777801660805f7e6f1a93861d0c9ac" kindref="member">factorize</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classlmx_1_1Type__stdmatrix_1a7441d3f1a35bb8ebcdd99f7455186bcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="classlmx_1_1Type__stdmatrix_1a7441d3f1a35bb8ebcdd99f7455186bcc" kindref="member">readElement</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>mrows,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>ncolumns)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>contents[mrows][ncolumns];<sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classlmx_1_1Type__stdmatrix_1a90b9f72528b9bd122463611c3628a18c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a90b9f72528b9bd122463611c3628a18c" kindref="member">writeElement</ref>(T<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>mrows,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>ncolumns)<sp/>{<sp/>contents[mrows][ncolumns]<sp/>=<sp/>value;<sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classlmx_1_1Type__stdmatrix_1ad77ae15ae864751d41b57be6cb9d3279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1ad77ae15ae864751d41b57be6cb9d3279" kindref="member">addElement</ref>(T<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>mrows,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>ncolumns)<sp/>{<sp/>contents[mrows][ncolumns]<sp/>+=<sp/>value;<sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classlmx_1_1Type__stdmatrix_1a894217af1bea253ba832af0369edc87d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a894217af1bea253ba832af0369edc87d" kindref="member">getRows</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rows;<sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classlmx_1_1Type__stdmatrix_1a54d79383c4486c1eb457a1aec6f93689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a54d79383c4486c1eb457a1aec6f93689" kindref="member">getCols</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cols;<sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classlmx_1_1Type__stdmatrix_1abc40ccc0128617c4bbea2d3eeb5c695c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1abc40ccc0128617c4bbea2d3eeb5c695c" kindref="member">equals</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data&lt;T&gt;</ref><sp/>*<sp/>matrix_in)<sp/>{<sp/>contents<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(matrix_in)-&gt;contents;<sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classlmx_1_1Type__stdmatrix_1a0e3195992632635c8e050ff63fba8a1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a0e3195992632635c8e050ff63fba8a1b" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data&lt;T&gt;</ref><sp/>*<sp/>matrix_in_1)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>+=<sp/>matrix_in_1-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,<sp/>j);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classlmx_1_1Type__stdmatrix_1a0ee06b70a259e488d6ac3ef53c8f68d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a0ee06b70a259e488d6ac3ef53c8f68d9" kindref="member">substract</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data&lt;T&gt;</ref><sp/>*<sp/>matrix_in_1)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>-=<sp/>matrix_in_1-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,<sp/>j);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" kindref="member">multiply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data&lt;T&gt;</ref><sp/>*<sp/>matrix_in_1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data&lt;T&gt;</ref><sp/>*<sp/>matrix_in_2)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Emmit<sp/>an<sp/>error<sp/>if<sp/>called<sp/>over<sp/>self<sp/>data...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>matrix_in_1<sp/>||<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>matrix_in_2)<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>multiply<sp/>and<sp/>save<sp/>results<sp/>on<sp/>same<sp/>data<sp/>at<sp/>the<sp/>same<sp/>time.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>This<sp/>cannot<sp/>be<sp/>done.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1failure__error" kindref="compound">failure_error</ref>,<sp/>message.str());</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>can<sp/>have<sp/>a<sp/>good<sp/>optimization...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(matrix_in_1-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>(),<sp/>matrix_in_2-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>());</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>=<sp/>T(0);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>matrix_in_2-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>cols;<sp/>++k)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][k]<sp/>+=<sp/>matrix_in_1-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,<sp/>j)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>matrix_in_2-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(j,<sp/>k);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classlmx_1_1Type__stdmatrix_1ab36305d296f62f54bc36f49ee51c6922" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1ab36305d296f62f54bc36f49ee51c6922" kindref="member">multiplyScalar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scalar)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>*=<sp/>scalar;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classlmx_1_1Type__stdmatrix_1a2001b3ba02dab4b5574076d4c58ac274" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a2001b3ba02dab4b5574076d4c58ac274" kindref="member">multiplyElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data&lt;T&gt;</ref><sp/>*<sp/>matrix_in)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>*=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,<sp/>j);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" kindref="member">read_mm_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>input_file)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---------------------------------------------\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;We<sp/>are<sp/>very<sp/>very<sp/>sorry<sp/>but<sp/>this<sp/>feature<sp/>(read_mm_file)<sp/>requires<sp/>at<sp/>the<sp/>moment<sp/>the<sp/>use<sp/>of<sp/>\nthe<sp/>gmm++<sp/>library.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;If<sp/>you<sp/>really<sp/>feel<sp/>that<sp/>it<sp/>is<sp/>important<sp/>to<sp/>have<sp/>the<sp/>Matrix<sp/>Market<sp/>file<sp/>reading<sp/>\nas<sp/>a<sp/>built<sp/>in<sp/>feature,<sp/>you<sp/>can<sp/>post<sp/>it<sp/>into<sp/>our<sp/>web<sp/>page:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;w3.mecanica.upm.es/lmx\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Thank<sp/>you<sp/>very<sp/>much<sp/>for<sp/>your<sp/>interest<sp/>and<sp/>help<sp/>in<sp/>setting<sp/>our<sp/>priorities<sp/>in<sp/>the<sp/>\ndevelopment<sp/>schedule.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---------------------------------------------\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gmm++<sp/>not<sp/>defined.\nYou<sp/>must<sp/>set<sp/>\&quot;#define<sp/>HAVE_GMM\&quot;<sp/>in<sp/>your<sp/>file<sp/>in<sp/>order<sp/>to<sp/>use<sp/>this<sp/>library.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1failure__error" kindref="compound">failure_error</ref>,<sp/>message.str());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm::csc_matrix&lt;double&gt;<sp/>cscmat;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm::col_matrix&lt;<sp/>gmm::wsvector&lt;double&gt;<sp/>&gt;<sp/>matrix_loaded;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm::MatrixMarket_load(input_file,<sp/>matrix_loaded);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>gmm::resize(contents,<sp/>gmm::mat_nrows(matrix_loaded),<sp/>gmm::mat_ncols(matrix_loaded));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelmx_1ab8da9d846c786511bc3954fbbc996ff7" kindref="member">gmm::copy</ref>(matrix_loaded,<sp/>cscmat);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(cscmat.nr,<sp/>cscmat.nc);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>col_count;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>elem_count=0;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0<sp/>;<sp/>j<sp/>&lt;<sp/>rows+1<sp/>;<sp/>++j){</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col_count<sp/>=<sp/>cscmat.jc[j];</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m<sp/>=<sp/>cscmat.jc[j];<sp/>m<sp/>&lt;<sp/>cscmat.jc[j+1];<sp/>++m){</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;contents<sp/>[<sp/>cscmat.ir[elem_count]<sp/>]<sp/>[<sp/>j<sp/>]<sp/>=<sp/>cscmat.pr[elem_count];</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++elem_count;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>col_count<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088" kindref="member">read_hb_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>input_file)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>M;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nonzeros;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>colptr;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>rowind;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>val;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlmx_1_1HarwellBoeing__IO" kindref="compound">HarwellBoeing_IO</ref><sp/>h(input_file);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h.read(M,<sp/>N,<sp/>nonzeros,<sp/>colptr,<sp/>rowind,<sp/>val);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(M,<sp/>N);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>elem_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>N<sp/>+<sp/>1;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m<sp/>=<sp/>colptr[j];<sp/>m<sp/>&lt;<sp/>colptr[j<sp/>+<sp/>1];<sp/>++m)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;contents[rowind[elem_count]<sp/>-<sp/>1][j]<sp/>=<sp/>val[elem_count];</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++elem_count;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66" kindref="member">write_hb_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>input_file)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---------------------------------------------\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;We<sp/>are<sp/>very<sp/>very<sp/>sorry<sp/>but<sp/>this<sp/>feature<sp/>(write_hb_file)<sp/>requires<sp/>at<sp/>the<sp/>moment<sp/>the<sp/>use<sp/>of<sp/>\nthe<sp/>gmm++<sp/>library.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;If<sp/>you<sp/>really<sp/>feel<sp/>that<sp/>it<sp/>is<sp/>important<sp/>to<sp/>have<sp/>the<sp/>Matrix<sp/>Market<sp/>file<sp/>reading<sp/>\nas<sp/>a<sp/>built<sp/>in<sp/>feature,<sp/>you<sp/>can<sp/>post<sp/>it<sp/>into<sp/>our<sp/>web<sp/>page:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;w3.mecanica.upm.es/lmx\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Thank<sp/>you<sp/>very<sp/>much<sp/>for<sp/>your<sp/>interest<sp/>and<sp/>help<sp/>in<sp/>setting<sp/>our<sp/>priorities<sp/>in<sp/>the<sp/>\ndevelopment<sp/>schedule.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---------------------------------------------\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;gmm++<sp/>not<sp/>defined.\nYou<sp/>must<sp/>set<sp/>\&quot;#define<sp/>HAVE_GMM\&quot;<sp/>in<sp/>your<sp/>file<sp/>in<sp/>order<sp/>to<sp/>use<sp/>this<sp/>library.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1failure__error" kindref="compound">failure_error</ref>,<sp/>message.str());</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm::dense_matrix&lt;T&gt;<sp/>gmm_dense_matrix(<sp/>rows<sp/>,<sp/>cols<sp/>);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm::csc_matrix&lt;T&gt;<sp/>cscmat(<sp/>rows<sp/>,<sp/>cols<sp/>);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i&lt;rows;<sp/>++i){</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j&lt;cols;<sp/>++j){</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm_dense_matrix(i,j)<sp/>=<sp/>this-&gt;contents[i][j];</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelmx_1ab8da9d846c786511bc3954fbbc996ff7" kindref="member">gmm::copy</ref>(<sp/>gmm_dense_matrix,<sp/>cscmat<sp/>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gmm::Harwell_Boeing_save(input_file,<sp/>cscmat);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="317"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0" kindref="member">trn</ref>()</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;T&gt;<sp/>&gt;<sp/>temp;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>old_rows;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp.resize(cols);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>cols;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[i].resize(rows);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[j][i]<sp/>=<sp/>contents[i][j];</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(cols,<sp/>rows);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>cols;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>rows;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>=<sp/>temp[i][j];</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>old_rows<sp/>=<sp/>rows;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rows<sp/>=<sp/>cols;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cols<sp/>=<sp/>old_rows;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="classlmx_1_1Type__stdmatrix_1ac83e09e52bf7fa7a82d7ca4dcb10f9de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1ac83e09e52bf7fa7a82d7ca4dcb10f9de" kindref="member">cleanBelow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>factor)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(contents[i][j])<sp/>&lt;<sp/>std::abs(static_cast&lt;T&gt;(factor)))<sp/>contents[i][j]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694" kindref="member">clear</ref>()</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents.clear();</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(rows,<sp/>cols);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//begin<sp/>JCGO<sp/>18/03/09</highlight></codeline>
+<codeline lineno="373" refid="classlmx_1_1Type__stdmatrix_1aaa3747be745b171bd13044d60f169c42" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1aaa3747be745b171bd13044d60f169c42" kindref="member">reset</ref>()</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i][j]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387" refid="classlmx_1_1Type__stdmatrix_1aac3ac685acb8ac1b64f5136eb0e575b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;T&gt;<sp/>&gt;<sp/>*<sp/><ref refid="classlmx_1_1Type__stdmatrix_1aac3ac685acb8ac1b64f5136eb0e575b1" kindref="member">data_pointer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;(this-&gt;contents);<sp/>}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389" refid="classlmx_1_1Type__stdmatrix_1a737490a62d48b1694bdbd173bbf284d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1a737490a62d48b1694bdbd173bbf284d5" kindref="member">exists</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;<sp/>}</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>Type_stdmatrix<sp/>definitions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"></codeline>
+<codeline lineno="399"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="400" refid="classlmx_1_1Type__stdmatrix_1a104d1354bb30a767884614ae0fd6f2b5" refkind="member"><highlight class="normal"><ref refid="classlmx_1_1Type__stdmatrix_1a16876ff97d835d125990ac31b0e2dfcf" kindref="member">Type_stdmatrix&lt;T&gt;::Type_stdmatrix</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>rows_in,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>columns_in)<sp/>:</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt;T&gt;(),<sp/>rows(rows_in),<sp/>cols(columns_in)<sp/>{<sp/><ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">resize</ref>(rows_in,<sp/>columns_in);<sp/>}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="408" refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" kindref="member">Type_stdmatrix&lt;T&gt;::resize</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>mrows,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>ncolumns)</highlight></codeline>
+<codeline lineno="409"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mrows<sp/>!=<sp/>this-&gt;rows<sp/>||<sp/>ncolumns<sp/>!=<sp/>this-&gt;cols)<sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>this-&gt;rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i].resize(ncolumns);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents.resize(mrows);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>rows;<sp/>i<sp/>&lt;<sp/>mrows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i]<sp/>=<sp/>std::vector&lt;T&gt;(ncolumns);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="422"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(size_type<sp/>i<sp/>=<sp/>this-&gt;rows;<sp/>i<sp/>&lt;<sp/>mrows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="423"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contents[i].resize(ncolumns);</highlight></codeline>
+<codeline lineno="424"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="425"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rows<sp/>=<sp/>mrows;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cols<sp/>=<sp/>ncolumns;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h"/>
+  </compounddef>
+</doxygen>

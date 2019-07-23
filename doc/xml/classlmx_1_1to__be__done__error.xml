@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1to__be__done__error" kind="class" prot="public">
+    <compoundname>lmx::to_be_done_error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">logic_error</basecompoundref>
+    <includes refid="lmx__except_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1to__be__done__error_1a4a297cb49a2dc1fd018f28b42552d5cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::to_be_done_error::to_be_done_error</definition>
+        <argsstring>(const std::string &amp;what_arg)</argsstring>
+        <name>to_be_done_error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>what_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with one argument. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>what_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing error&apos;s information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="145" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="145" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages errors in methods witch implementation is not finished. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="449">
+        <label>logic_error</label>
+      </node>
+      <node id="448">
+        <label>lmx::to_be_done_error</label>
+        <link refid="classlmx_1_1to__be__done__error"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="451">
+        <label>logic_error</label>
+      </node>
+      <node id="450">
+        <label>lmx::to_be_done_error</label>
+        <link refid="classlmx_1_1to__be__done__error"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="139" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="139" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1to__be__done__error_1a4a297cb49a2dc1fd018f28b42552d5cb" prot="public" virt="non-virtual"><scope>lmx::to_be_done_error</scope><name>to_be_done_error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

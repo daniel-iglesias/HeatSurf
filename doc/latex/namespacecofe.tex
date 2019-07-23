@@ -1,0 +1,119 @@
+\hypertarget{namespacecofe}{\section{cofe Namespace Reference}
+\label{namespacecofe}\index{cofe@{cofe}}
+}
+
+
+Continuum Oriented Finite Elements.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcofe_1_1CofeUtils}{Cofe\-Utils}
+\item 
+class \hyperlink{classcofe_1_1TensorRank2}{Tensor\-Rank2}
+\item 
+class \hyperlink{classcofe_1_1TensorRank1}{Tensor\-Rank1}
+\item 
+class \hyperlink{classcofe_1_1AbstractTensorRank4SS}{Abstract\-Tensor\-Rank4\-S\-S}
+\item 
+class \hyperlink{classcofe_1_1TensorRank2Sym}{Tensor\-Rank2\-Sym}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\double \hyperlink{namespacecofe_a0e56d8696cb0405dc99575cedd504e1b}{norm} (const T \&a)
+\item 
+{\footnotesize template$<$int N, class T $>$ }\\void \hyperlink{namespacecofe_a5d5b0de16aea3255de1d90d382190948}{gausselim} (T a\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, T b\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$int N, class T $>$ }\\void \hyperlink{namespacecofe_afaaf31804fece6c0f775b00617b06d3c}{jacobi} (T a\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, T d\mbox{[}N\mbox{]}, T v\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int \&nrot)
+\item 
+{\footnotesize template$<$int N, class T $>$ }\\void \hyperlink{namespacecofe_a478fccba3e4f3ac5306de274a92fc35c}{rot} (T a\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, T s, T tau, int i, int j, int k, int l)
+\item 
+{\footnotesize template$<$int Dim, class T $>$ }\\std\-::ostream \& \hyperlink{namespacecofe_ab6bccc99cdd1fd8eed53cd333f1f864f}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classcofe_1_1TensorRank1}{cofe\-::\-Tensor\-Rank1}$<$ Dim, T $>$ \&a)
+\item 
+{\footnotesize template$<$int Dim, class T $>$ }\\std\-::ostream \& \hyperlink{namespacecofe_a232b6c35445601838612838ee6b7e8d2}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$ \&a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Continuum Oriented Finite Elements. \{\}
+
+This namespace contains all the Tensor related facilities.
+
+\begin{DoxyAuthor}{Author}
+Jaime Planas \& J. M. Sancho. 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecofe_a5d5b0de16aea3255de1d90d382190948}{\index{cofe@{cofe}!gausselim@{gausselim}}
+\index{gausselim@{gausselim}!cofe@{cofe}}
+\subsubsection[{gausselim}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, class T $>$ void cofe\-::gausselim (
+\begin{DoxyParamCaption}
+\item[{T}]{a\mbox{[}\-N\mbox{]}\mbox{[}\-N\mbox{]}, }
+\item[{T}]{b\mbox{[}\-N\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{namespacecofe_a5d5b0de16aea3255de1d90d382190948}
+
+
+References cofe\-::\-Cofe\-Utils\-::error().
+
+
+
+Referenced by cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::solve().
+
+\hypertarget{namespacecofe_afaaf31804fece6c0f775b00617b06d3c}{\index{cofe@{cofe}!jacobi@{jacobi}}
+\index{jacobi@{jacobi}!cofe@{cofe}}
+\subsubsection[{jacobi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, class T $>$ void cofe\-::jacobi (
+\begin{DoxyParamCaption}
+\item[{T}]{a\mbox{[}\-N\mbox{]}\mbox{[}\-N\mbox{]}, }
+\item[{T}]{d\mbox{[}\-N\mbox{]}, }
+\item[{T}]{v\mbox{[}\-N\mbox{]}\mbox{[}\-N\mbox{]}, }
+\item[{int \&}]{nrot}
+\end{DoxyParamCaption}
+)}}\label{namespacecofe_afaaf31804fece6c0f775b00617b06d3c}
+
+
+References cofe\-::\-Cofe\-Utils\-::error().
+
+\hypertarget{namespacecofe_a0e56d8696cb0405dc99575cedd504e1b}{\index{cofe@{cofe}!norm@{norm}}
+\index{norm@{norm}!cofe@{cofe}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ double cofe\-::norm (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{namespacecofe_a0e56d8696cb0405dc99575cedd504e1b}
+
+
+Referenced by lmx\-::\-Vector$<$ T $>$\-::norm1(), and lmx\-::\-Vector$<$ T $>$\-::norm2().
+
+\hypertarget{namespacecofe_ab6bccc99cdd1fd8eed53cd333f1f864f}{\index{cofe@{cofe}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cofe@{cofe}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ std\-::ostream\& cofe\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf cofe\-::\-Tensor\-Rank1}$<$ Dim, T $>$ \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{namespacecofe_ab6bccc99cdd1fd8eed53cd333f1f864f}
+\hypertarget{namespacecofe_a232b6c35445601838612838ee6b7e8d2}{\index{cofe@{cofe}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cofe@{cofe}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ std\-::ostream\& cofe\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$ \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{namespacecofe_a232b6c35445601838612838ee6b7e8d2}
+\hypertarget{namespacecofe_a478fccba3e4f3ac5306de274a92fc35c}{\index{cofe@{cofe}!rot@{rot}}
+\index{rot@{rot}!cofe@{cofe}}
+\subsubsection[{rot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int N, class T $>$ void cofe\-::rot (
+\begin{DoxyParamCaption}
+\item[{T}]{a\mbox{[}\-N\mbox{]}\mbox{[}\-N\mbox{]}, }
+\item[{T}]{s, }
+\item[{T}]{tau, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{k, }
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}}\label{namespacecofe_a478fccba3e4f3ac5306de274a92fc35c}

@@ -1,0 +1,619 @@
+\hypertarget{classcofe_1_1TensorRank2}{\section{cofe\-:\-:Tensor\-Rank2$<$ Dim, T $>$ Class Template Reference}
+\label{classcofe_1_1TensorRank2}\index{cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$@{cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$}}
+}
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/cofe\-\_\-\-Tensor\-Rank1.\-h$>$}
+
+
+
+Inheritance diagram for cofe\-:\-:Tensor\-Rank2$<$ Dim, T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classcofe_1_1TensorRank2__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type}
+\item 
+typedef \hyperlink{classcofe_1_1TensorRank1}{cofe\-::\-Tensor\-Rank1}$<$ Dim, T $>$ \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type}
+\item 
+typedef \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$ \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type}
+\item 
+typedef \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$ \hyperlink{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{own\-\_\-type}
+\item 
+typedef \\*
+\hyperlink{classcofe_1_1AbstractTensorRank4SS}{cofe\-::\-Abstract\-Tensor\-Rank4\-S\-S}\\*
+$<$ Dim, T $>$ \hyperlink{classcofe_1_1TensorRank2_ae3f28ba9fd3ccd7afe9c5976b6e5178b}{ar4tensor\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a224848030ac161c4962376c189450a42}{Tensor\-Rank2} ()
+\item 
+\hyperlink{classcofe_1_1TensorRank2_ac7cdeb09ca5cf60fb0ecf9c2ad72ff0e}{Tensor\-Rank2} (const T ptr\mbox{[}Dim\mbox{]}\mbox{[}Dim\mbox{]})
+\item 
+\hyperlink{classcofe_1_1TensorRank2_adb070405bdf51413255ebd736516cfb8}{Tensor\-Rank2} (const T \&a\-Value)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a63a8348ee7fea2cec9345d0474e1b577}{Tensor\-Rank2} (const std\-::string \&string\-Of\-Components)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a405b0de39bca1744a285fb08cf189228}{Tensor\-Rank2} (const char $\ast$c\-\_\-string\-Of\-Components)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a5c10f45abc4b4c34016e0af1d54a565d}{Tensor\-Rank2} (const \hyperlink{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{own\-\_\-type} \&a\-Ten)
+\item 
+virtual \hyperlink{classcofe_1_1TensorRank2_aea3bdfe6a4751a76c034e4fc350ddae4}{$\sim$\-Tensor\-Rank2} ()
+\item 
+bool \hyperlink{classcofe_1_1TensorRank2_a191fa7ce4804287b6496066a5df2a799}{initialize\-From} (const std\-::string \&s)
+\item 
+bool \hyperlink{classcofe_1_1TensorRank2_a91c568920d4b5f5f9f6f8bdafab7bc95}{initialize\-From} (std\-::istream \&istre)
+\item 
+int \hyperlink{classcofe_1_1TensorRank2_a56346adecab6c8e74def3fb980eea29e}{size} ()
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \& \hyperlink{classcofe_1_1TensorRank2_a70ce7c8bfbe7e4bfd396d10bcfa1f99b}{operator()} (int i, int j)
+\item 
+const \hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \& \hyperlink{classcofe_1_1TensorRank2_a4d33fccaf8405418f327fbeaa578eac1}{operator()} (int i, int j) const 
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \hyperlink{classcofe_1_1TensorRank2_a3f6357e9fb217490cd9d959887163328}{trace} () const 
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \& \hyperlink{classcofe_1_1TensorRank2_a974de1ac866a442b71c7585f93d7b700}{operator=} (const T \&a\-Value)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \& \hyperlink{classcofe_1_1TensorRank2_aa13f3b43175c50377dc7be1b3b4ba0e1}{operator=} (const std\-::string \&string\-Of\-Components)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \& \hyperlink{classcofe_1_1TensorRank2_a06e9b0f1029f40caef19846aac685229}{operator=} (const char $\ast$c\-\_\-string\-Of\-Components)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \& \hyperlink{classcofe_1_1TensorRank2_a67244381f61e945177a82d50954fcb9c}{operator=} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&a\-Ten)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a7f85e87ad4469c630444074f245bfe85}{zero} ()
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a4fd70229db0582dbefb468643e67edd5}{operator$\ast$=} (const \hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} a\-Value)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_ae48aa87bd29405aad324ec5d3e593b26}{operator+=} (const \hyperlink{classcofe_1_1TensorRank2}{Tensor\-Rank2}$<$ Dim, T $>$ a)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a87cadb5aaf319212f4948516c0152e61}{operator-\/=} (const \hyperlink{classcofe_1_1TensorRank2}{Tensor\-Rank2}$<$ Dim, T $>$ a)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \hyperlink{classcofe_1_1TensorRank2_af21522a579144b568613c850c6856ce1}{dot} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&a\-Tensor) const 
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_aa0f9fe988669a1b2234e1c4ad631c4c4}{operate\-On} (const \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&operand, \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&answer) const 
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_adeb45423a4fcf114cee11c399fe23326}{be\-Transpose\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&Ten)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a323eb1ab146ace337487ebc240a6fcc1}{be\-Product\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&left\-Vec, const \hyperlink{classcofe_1_1TensorRank2_ae3f28ba9fd3ccd7afe9c5976b6e5178b}{ar4tensor\-\_\-type} \&r4\-T, const \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&right\-Vec)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a570391f93730b60cd57cb05fdda5df29}{be\-Product\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&left\-Vec, const \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&right\-Vec)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a3edc1495fa6318c924d122b43ae35296}{be\-Product\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&left\-Ten, const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&right\-Ten)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_afc7fa48bc56f6a2784481758e16761c2}{be\-Tra\-Product\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&left\-Ten, const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&right\-Ten)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a50e2406d1358dd9c4a1d95aba6cd7375}{be\-Product\-Tra\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&left\-Ten, const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&right\-Ten)
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_ae57410d40bcb8f8b0fabe31acc478ad2}{be\-Unity\-Tensor} ()
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_af28aac212a14afce9e6e0554234cf3bb}{solve} (const \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&operand, \hyperlink{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{vector\-\_\-type} \&answer) const 
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a5bb4a7f811368240ecf93ff89da64fb7}{be\-Inverse\-Of} (const \hyperlink{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{tensor\-\_\-type} \&atensor)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \hyperlink{classcofe_1_1TensorRank2_a6201d2f1f6491c789bfb77a914ee7354}{determinant} () const 
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \hyperlink{classcofe_1_1TensorRank2_a043df152939c4a51e9804b56395736c0}{second\-Invariant} () const 
+\item 
+\hyperlink{classcofe_1_1TensorRank2_ac44f4cc0b8489564a74cb3544677bc51}{Tensor\-Rank2} (const int \&a\-Value)
+\item 
+std\-::ostream \& \hyperlink{classcofe_1_1TensorRank2_ad139dabcd7509b655c11c06b453e4e46}{print\-\_\-row} (std\-::ostream \&, const \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$ \&, int) const 
+\item 
+bool \hyperlink{classcofe_1_1TensorRank2_ae34c4793ec388270b417d717a1624efd}{operator==} (const T \&a\-Value) const 
+\item 
+bool \hyperlink{classcofe_1_1TensorRank2_a87093b92ee8219d1aeb7bfae06035a71}{operator!=} (const T \&a\-Value) const 
+\item 
+void \hyperlink{classcofe_1_1TensorRank2_a328a64fd8f4f688ad9689c94d815f985}{operator$\ast$=} (const \hyperlink{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{own\-\_\-type} a\-Tensor)
+\item 
+\hyperlink{classcofe_1_1TensorRank2_ab39e8b2dbb0866f8a861e42129895256}{operator T} ()
+\item 
+{\footnotesize template$<$$>$ }\\double \hyperlink{classcofe_1_1TensorRank2_aefe719d34b9be7ae253816fac48e6638}{determinant} () const
+\item 
+{\footnotesize template$<$$>$ }\\double \hyperlink{classcofe_1_1TensorRank2_a76949c747b16d53913a508e16ac14cbd}{determinant} () const
+\item 
+{\footnotesize template$<$$>$ }\\void \hyperlink{classcofe_1_1TensorRank2_ac44ed3575539ab2a418407db1ecba9be}{solve} (const \hyperlink{classcofe_1_1TensorRank1}{cofe\-::\-Tensor\-Rank1}$<$ 2, double $>$ \&rh, \hyperlink{classcofe_1_1TensorRank1}{cofe\-::\-Tensor\-Rank1}$<$ 2, double $>$ \&lh) const
+\item 
+{\footnotesize template$<$$>$ }\\void \hyperlink{classcofe_1_1TensorRank2_a695bdbb2f78d143642bd79bf07a6a770}{be\-Inverse\-Of} (const \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ 2, double $>$ \&a\-T)
+\item 
+{\footnotesize template$<$$>$ }\\void \hyperlink{classcofe_1_1TensorRank2_a287c066e522677f57aa945d99455abbf}{be\-Inverse\-Of} (const \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ 3, double $>$ \&T)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{scalar\-\_\-type} \hyperlink{classcofe_1_1TensorRank2_aa180922c86462cd1ecf2950f9c1ed80e}{com} \mbox{[}Dim\mbox{]}\mbox{[}Dim\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcofe_1_1TensorRank2_a08e40e4ff7ed027f27ae8669ae3f5908}{Tensor\-Rank1$<$ Dim, T $>$}
+\item 
+\hyperlink{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{own\-\_\-type} \hyperlink{classcofe_1_1TensorRank2_a94728a8371137490602713c44f6d3e52}{operator$\ast$} (const \hyperlink{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{own\-\_\-type} \&T1, const \hyperlink{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{own\-\_\-type} \&T2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcofe_1_1TensorRank2_ae3f28ba9fd3ccd7afe9c5976b6e5178b}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!ar4tensor\-\_\-type@{ar4tensor\-\_\-type}}
+\index{ar4tensor\-\_\-type@{ar4tensor\-\_\-type}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{ar4tensor\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ typedef {\bf cofe\-::\-Abstract\-Tensor\-Rank4\-S\-S}$<$Dim, T$>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf ar4tensor\-\_\-type}}}\label{classcofe_1_1TensorRank2_ae3f28ba9fd3ccd7afe9c5976b6e5178b}
+\hypertarget{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!own\-\_\-type@{own\-\_\-type}}
+\index{own\-\_\-type@{own\-\_\-type}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{own\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ typedef {\bf cofe\-::\-Tensor\-Rank2}$<$Dim,T$>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf own\-\_\-type}}}\label{classcofe_1_1TensorRank2_afef4f2c69f8a804d795c334bc382dc5f}
+\hypertarget{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!scalar\-\_\-type@{scalar\-\_\-type}}
+\index{scalar\-\_\-type@{scalar\-\_\-type}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{scalar\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ typedef T {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf scalar\-\_\-type}}}\label{classcofe_1_1TensorRank2_a3dce726b0c34912c6549a5911f478eaf}
+\hypertarget{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!tensor\-\_\-type@{tensor\-\_\-type}}
+\index{tensor\-\_\-type@{tensor\-\_\-type}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{tensor\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ typedef {\bf cofe\-::\-Tensor\-Rank2}$<$Dim,T$>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf tensor\-\_\-type}}}\label{classcofe_1_1TensorRank2_a3af9468088af4836c93808edaceb03b0}
+\hypertarget{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!vector\-\_\-type@{vector\-\_\-type}}
+\index{vector\-\_\-type@{vector\-\_\-type}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{vector\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ typedef {\bf cofe\-::\-Tensor\-Rank1}$<$Dim,T$>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf vector\-\_\-type}}}\label{classcofe_1_1TensorRank2_a5c3ced2bb8f6574ba2ce2e1dab9d2c0b}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcofe_1_1TensorRank2_a224848030ac161c4962376c189450a42}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a224848030ac161c4962376c189450a42}
+\hypertarget{classcofe_1_1TensorRank2_ac7cdeb09ca5cf60fb0ecf9c2ad72ff0e}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+\item[{const T}]{ptr\mbox{[}\-Dim\mbox{]}\mbox{[}\-Dim\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ac7cdeb09ca5cf60fb0ecf9c2ad72ff0e}
+\hypertarget{classcofe_1_1TensorRank2_adb070405bdf51413255ebd736516cfb8}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_adb070405bdf51413255ebd736516cfb8}
+\hypertarget{classcofe_1_1TensorRank2_a63a8348ee7fea2cec9345d0474e1b577}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{string\-Of\-Components}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a63a8348ee7fea2cec9345d0474e1b577}
+\hypertarget{classcofe_1_1TensorRank2_a405b0de39bca1744a285fb08cf189228}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{c\-\_\-string\-Of\-Components}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a405b0de39bca1744a285fb08cf189228}
+\hypertarget{classcofe_1_1TensorRank2_a5c10f45abc4b4c34016e0af1d54a565d}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+\item[{const {\bf own\-\_\-type} \&}]{a\-Ten}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a5c10f45abc4b4c34016e0af1d54a565d}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_aea3bdfe6a4751a76c034e4fc350ddae4}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!$\sim$\-Tensor\-Rank2@{$\sim$\-Tensor\-Rank2}}
+\index{$\sim$\-Tensor\-Rank2@{$\sim$\-Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{$\sim$\-Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::$\sim${\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcofe_1_1TensorRank2_aea3bdfe6a4751a76c034e4fc350ddae4}
+\hypertarget{classcofe_1_1TensorRank2_ac44f4cc0b8489564a74cb3544677bc51}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank2@{Tensor\-Rank2}}
+\index{Tensor\-Rank2@{Tensor\-Rank2}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::{\bf Tensor\-Rank2} (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{a\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ac44f4cc0b8489564a74cb3544677bc51}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcofe_1_1TensorRank2_a5bb4a7f811368240ecf93ff89da64fb7}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Inverse\-Of@{be\-Inverse\-Of}}
+\index{be\-Inverse\-Of@{be\-Inverse\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Inverse\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Inverse\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{atensor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a5bb4a7f811368240ecf93ff89da64fb7}
+\hypertarget{classcofe_1_1TensorRank2_a695bdbb2f78d143642bd79bf07a6a770}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Inverse\-Of@{be\-Inverse\-Of}}
+\index{be\-Inverse\-Of@{be\-Inverse\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Inverse\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ 2, double $>$\-::be\-Inverse\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf cofe\-::\-Tensor\-Rank2}$<$ 2, double $>$ \&}]{a\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a695bdbb2f78d143642bd79bf07a6a770}
+\hypertarget{classcofe_1_1TensorRank2_a287c066e522677f57aa945d99455abbf}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Inverse\-Of@{be\-Inverse\-Of}}
+\index{be\-Inverse\-Of@{be\-Inverse\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Inverse\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ 3, double $>$\-::be\-Inverse\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf cofe\-::\-Tensor\-Rank2}$<$ 3, double $>$ \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a287c066e522677f57aa945d99455abbf}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::determinant(), and cofe\-::\-Cofe\-Utils\-::error().
+
+\hypertarget{classcofe_1_1TensorRank2_a323eb1ab146ace337487ebc240a6fcc1}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Product\-Of@{be\-Product\-Of}}
+\index{be\-Product\-Of@{be\-Product\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Product\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Product\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector\-\_\-type} \&}]{left\-Vec, }
+\item[{const {\bf ar4tensor\-\_\-type} \&}]{r4\-T, }
+\item[{const {\bf vector\-\_\-type} \&}]{right\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a323eb1ab146ace337487ebc240a6fcc1}
+
+
+Referenced by operator$\ast$().
+
+\hypertarget{classcofe_1_1TensorRank2_a570391f93730b60cd57cb05fdda5df29}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Product\-Of@{be\-Product\-Of}}
+\index{be\-Product\-Of@{be\-Product\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Product\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Product\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector\-\_\-type} \&}]{left\-Vec, }
+\item[{const {\bf vector\-\_\-type} \&}]{right\-Vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a570391f93730b60cd57cb05fdda5df29}
+
+
+References cofe\-::\-Tensor\-Rank1$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a3edc1495fa6318c924d122b43ae35296}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Product\-Of@{be\-Product\-Of}}
+\index{be\-Product\-Of@{be\-Product\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Product\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Product\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{left\-Ten, }
+\item[{const {\bf tensor\-\_\-type} \&}]{right\-Ten}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a3edc1495fa6318c924d122b43ae35296}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a50e2406d1358dd9c4a1d95aba6cd7375}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Product\-Tra\-Of@{be\-Product\-Tra\-Of}}
+\index{be\-Product\-Tra\-Of@{be\-Product\-Tra\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Product\-Tra\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Product\-Tra\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{left\-Ten, }
+\item[{const {\bf tensor\-\_\-type} \&}]{right\-Ten}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a50e2406d1358dd9c4a1d95aba6cd7375}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_adeb45423a4fcf114cee11c399fe23326}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Transpose\-Of@{be\-Transpose\-Of}}
+\index{be\-Transpose\-Of@{be\-Transpose\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Transpose\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Transpose\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{Ten}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_adeb45423a4fcf114cee11c399fe23326}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+
+
+Referenced by transpose\-Of().
+
+\hypertarget{classcofe_1_1TensorRank2_afc7fa48bc56f6a2784481758e16761c2}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Tra\-Product\-Of@{be\-Tra\-Product\-Of}}
+\index{be\-Tra\-Product\-Of@{be\-Tra\-Product\-Of}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Tra\-Product\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Tra\-Product\-Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{left\-Ten, }
+\item[{const {\bf tensor\-\_\-type} \&}]{right\-Ten}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_afc7fa48bc56f6a2784481758e16761c2}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_ae57410d40bcb8f8b0fabe31acc478ad2}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!be\-Unity\-Tensor@{be\-Unity\-Tensor}}
+\index{be\-Unity\-Tensor@{be\-Unity\-Tensor}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{be\-Unity\-Tensor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::be\-Unity\-Tensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ae57410d40bcb8f8b0fabe31acc478ad2}
+
+
+Referenced by cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::be\-Hydrostatic\-Part\-Of().
+
+\hypertarget{classcofe_1_1TensorRank2_a6201d2f1f6491c789bfb77a914ee7354}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!determinant@{determinant}}
+\index{determinant@{determinant}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ T {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::determinant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a6201d2f1f6491c789bfb77a914ee7354}
+
+
+Referenced by cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::be\-Inverse\-Of(), and inverse\-Of().
+
+\hypertarget{classcofe_1_1TensorRank2_aefe719d34b9be7ae253816fac48e6638}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!determinant@{determinant}}
+\index{determinant@{determinant}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ double {\bf cofe\-::\-Tensor\-Rank2}$<$ 2, double $>$\-::determinant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_aefe719d34b9be7ae253816fac48e6638}
+\hypertarget{classcofe_1_1TensorRank2_a76949c747b16d53913a508e16ac14cbd}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!determinant@{determinant}}
+\index{determinant@{determinant}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ double {\bf cofe\-::\-Tensor\-Rank2}$<$ 3, double $>$\-::determinant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a76949c747b16d53913a508e16ac14cbd}
+\hypertarget{classcofe_1_1TensorRank2_af21522a579144b568613c850c6856ce1}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!dot@{dot}}
+\index{dot@{dot}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ T {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{a\-Tensor}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_af21522a579144b568613c850c6856ce1}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a191fa7ce4804287b6496066a5df2a799}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!initialize\-From@{initialize\-From}}
+\index{initialize\-From@{initialize\-From}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{initialize\-From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ bool {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::initialize\-From (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a191fa7ce4804287b6496066a5df2a799}
+\hypertarget{classcofe_1_1TensorRank2_a91c568920d4b5f5f9f6f8bdafab7bc95}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!initialize\-From@{initialize\-From}}
+\index{initialize\-From@{initialize\-From}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{initialize\-From}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ bool {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::initialize\-From (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{istre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a91c568920d4b5f5f9f6f8bdafab7bc95}
+\hypertarget{classcofe_1_1TensorRank2_aa0f9fe988669a1b2234e1c4ad631c4c4}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operate\-On@{operate\-On}}
+\index{operate\-On@{operate\-On}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operate\-On}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operate\-On (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector\-\_\-type} \&}]{operand, }
+\item[{{\bf vector\-\_\-type} \&}]{answer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_aa0f9fe988669a1b2234e1c4ad631c4c4}
+
+
+References cofe\-::\-Tensor\-Rank1$<$ Dim, T $>$\-::com.
+
+
+
+Referenced by cofe\-::\-Tensor\-Rank1$<$ Dim, T $>$\-::be\-Product\-Of().
+
+\hypertarget{classcofe_1_1TensorRank2_ab39e8b2dbb0866f8a861e42129895256}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator T@{operator T}}
+\index{operator T@{operator T}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ab39e8b2dbb0866f8a861e42129895256}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a87093b92ee8219d1aeb7bfae06035a71}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ bool {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a87093b92ee8219d1aeb7bfae06035a71}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a70ce7c8bfbe7e4bfd396d10bcfa1f99b}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator()@{operator()}}
+\index{operator()@{operator()}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ T \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a70ce7c8bfbe7e4bfd396d10bcfa1f99b}
+\hypertarget{classcofe_1_1TensorRank2_a4d33fccaf8405418f327fbeaa578eac1}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator()@{operator()}}
+\index{operator()@{operator()}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ const T \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a4d33fccaf8405418f327fbeaa578eac1}
+\hypertarget{classcofe_1_1TensorRank2_a4fd70229db0582dbefb468643e67edd5}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf scalar\-\_\-type}}]{a\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a4fd70229db0582dbefb468643e67edd5}
+\hypertarget{classcofe_1_1TensorRank2_a328a64fd8f4f688ad9689c94d815f985}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf own\-\_\-type}}]{a\-Tensor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a328a64fd8f4f688ad9689c94d815f985}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_ae48aa87bd29405aad324ec5d3e593b26}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor\-Rank2}$<$ Dim, T $>$}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ae48aa87bd29405aad324ec5d3e593b26}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a87cadb5aaf319212f4948516c0152e61}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor\-Rank2}$<$ Dim, T $>$}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a87cadb5aaf319212f4948516c0152e61}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_a974de1ac866a442b71c7585f93d7b700}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator=@{operator=}}
+\index{operator=@{operator=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf Tensor\-Rank2}$<$ Dim, T $>$ \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a974de1ac866a442b71c7585f93d7b700}
+
+
+Referenced by cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::operator=().
+
+\hypertarget{classcofe_1_1TensorRank2_aa13f3b43175c50377dc7be1b3b4ba0e1}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator=@{operator=}}
+\index{operator=@{operator=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf Tensor\-Rank2}$<$ Dim, T $>$ \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{string\-Of\-Components}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_aa13f3b43175c50377dc7be1b3b4ba0e1}
+\hypertarget{classcofe_1_1TensorRank2_a06e9b0f1029f40caef19846aac685229}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator=@{operator=}}
+\index{operator=@{operator=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf Tensor\-Rank2}$<$ Dim, T $>$ \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{c\-\_\-string\-Of\-Components}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a06e9b0f1029f40caef19846aac685229}
+\hypertarget{classcofe_1_1TensorRank2_a67244381f61e945177a82d50954fcb9c}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator=@{operator=}}
+\index{operator=@{operator=}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ {\bf Tensor\-Rank2}$<$ Dim, T $>$ \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf tensor\-\_\-type} \&}]{a\-Ten}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a67244381f61e945177a82d50954fcb9c}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_ae34c4793ec388270b417d717a1624efd}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator==@{operator==}}
+\index{operator==@{operator==}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ bool {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ae34c4793ec388270b417d717a1624efd}
+
+
+References cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com.
+
+\hypertarget{classcofe_1_1TensorRank2_ad139dabcd7509b655c11c06b453e4e46}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!print\-\_\-row@{print\-\_\-row}}
+\index{print\-\_\-row@{print\-\_\-row}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{print\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ std\-::ostream \& {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::print\-\_\-row (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$ \&}]{a, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+) const}}\label{classcofe_1_1TensorRank2_ad139dabcd7509b655c11c06b453e4e46}
+\hypertarget{classcofe_1_1TensorRank2_a043df152939c4a51e9804b56395736c0}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!second\-Invariant@{second\-Invariant}}
+\index{second\-Invariant@{second\-Invariant}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{second\-Invariant}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, typename T $>$ T {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::second\-Invariant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a043df152939c4a51e9804b56395736c0}
+\hypertarget{classcofe_1_1TensorRank2_a56346adecab6c8e74def3fb980eea29e}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!size@{size}}
+\index{size@{size}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ int {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a56346adecab6c8e74def3fb980eea29e}
+\hypertarget{classcofe_1_1TensorRank2_af28aac212a14afce9e6e0554234cf3bb}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!solve@{solve}}
+\index{solve@{solve}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector\-\_\-type} \&}]{operand, }
+\item[{{\bf vector\-\_\-type} \&}]{answer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_af28aac212a14afce9e6e0554234cf3bb}
+
+
+References cofe\-::\-Tensor\-Rank1$<$ Dim, T $>$\-::com, cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::com, and cofe\-::gausselim().
+
+
+
+Referenced by cofe\-::\-Tensor\-Rank1$<$ Dim, T $>$\-::be\-Solution\-Of().
+
+\hypertarget{classcofe_1_1TensorRank2_ac44ed3575539ab2a418407db1ecba9be}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!solve@{solve}}
+\index{solve@{solve}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ 2, double $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf cofe\-::\-Tensor\-Rank1}$<$ 2, double $>$ \&}]{rh, }
+\item[{{\bf cofe\-::\-Tensor\-Rank1}$<$ 2, double $>$ \&}]{lh}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_ac44ed3575539ab2a418407db1ecba9be}
+\hypertarget{classcofe_1_1TensorRank2_a3f6357e9fb217490cd9d959887163328}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!trace@{trace}}
+\index{trace@{trace}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{trace}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ T {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::trace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a3f6357e9fb217490cd9d959887163328}
+
+
+Referenced by cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::be\-Hydrostatic\-Part\-Of().
+
+\hypertarget{classcofe_1_1TensorRank2_a7f85e87ad4469c630444074f245bfe85}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!zero@{zero}}
+\index{zero@{zero}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{zero}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T $>$ void {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcofe_1_1TensorRank2_a7f85e87ad4469c630444074f245bfe85}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classcofe_1_1TensorRank2_a94728a8371137490602713c44f6d3e52}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ {\bf own\-\_\-type} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf own\-\_\-type} \&}]{T1, }
+\item[{const {\bf own\-\_\-type} \&}]{T2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classcofe_1_1TensorRank2_a94728a8371137490602713c44f6d3e52}
+\hypertarget{classcofe_1_1TensorRank2_a08e40e4ff7ed027f27ae8669ae3f5908}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!Tensor\-Rank1$<$ Dim, T $>$@{Tensor\-Rank1$<$ Dim, T $>$}}
+\index{Tensor\-Rank1$<$ Dim, T $>$@{Tensor\-Rank1$<$ Dim, T $>$}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{Tensor\-Rank1$<$ Dim, T $>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ friend class {\bf Tensor\-Rank1}$<$ Dim, T $>$\hspace{0.3cm}{\ttfamily [friend]}}}\label{classcofe_1_1TensorRank2_a08e40e4ff7ed027f27ae8669ae3f5908}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcofe_1_1TensorRank2_aa180922c86462cd1ecf2950f9c1ed80e}{\index{cofe\-::\-Tensor\-Rank2@{cofe\-::\-Tensor\-Rank2}!com@{com}}
+\index{com@{com}!cofe::TensorRank2@{cofe\-::\-Tensor\-Rank2}}
+\subsubsection[{com}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dim, class T$>$ {\bf scalar\-\_\-type} {\bf cofe\-::\-Tensor\-Rank2}$<$ Dim, T $>$\-::com\mbox{[}Dim\mbox{]}\mbox{[}Dim\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcofe_1_1TensorRank2_aa180922c86462cd1ecf2950f9c1ed80e}
+
+
+Referenced by cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::be\-Product\-Of(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::be\-Product\-Tra\-Of(), cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::be\-Symmetric\-Part\-Of(), cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::be\-Sym\-Product\-Of(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::be\-Transpose\-Of(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::be\-Tra\-Product\-Of(), cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::check\-Symmetry(), cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::compute\-Max\-Principal\-Direction(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::dot(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator T(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator!=(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator$\ast$=(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator+=(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator-\/=(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator=(), cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::operator=(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::operator==(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::solve(), cofe\-::\-Tensor\-Rank2$<$ Dim, T $>$\-::\-Tensor\-Rank2(), and cofe\-::\-Tensor\-Rank2\-Sym$<$ Dim, T $>$\-::\-Tensor\-Rank2\-Sym().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{cofe__TensorRank1_8h}{cofe\-\_\-\-Tensor\-Rank1.\-h}\item 
+src/\-L\-M\-X/\hyperlink{cofe__TensorRank2_8h}{cofe\-\_\-\-Tensor\-Rank2.\-h}\end{DoxyCompactItemize}

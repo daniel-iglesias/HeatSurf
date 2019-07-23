@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classNode" kind="class" prot="public">
+    <compoundname>Node</compoundname>
+    <includes refid="node_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/node.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNode_1a1082fca4b71cc3cc02d78c35108f9059" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Node::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a441d3c5ba86597f4c391408d9fe6d242" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Node::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a8797bf8ce04cc01920b7fa33f1792a36" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Node::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a1bf4d6787d30acbaef6bd357d24791b0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Node::scalar</definition>
+        <argsstring></argsstring>
+        <name>scalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a1798ff3d6650de7d528e96a563f664e8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Node::density</definition>
+        <argsstring></argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1af2d852e4e98516a1b64fcb87a46f8900" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::n_densities3D</definition>
+        <argsstring></argsstring>
+        <name>n_densities3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="87" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a8db2bf4c8effe7cff6c1de42eb901247" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::n_densities</definition>
+        <argsstring></argsstring>
+        <name>n_densities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="87" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNode_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ab67eabb0fef1465a1d7d1e11997ddd4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>(double, double, double)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>double</type>
+          <defname>x_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>y_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>z_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.cpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1aa0840c3cb5c7159be6d992adecd2097c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a93d1fc91852d3698d94625f0178df03f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setScalar</definition>
+        <argsstring>(double scalar_in)</argsstring>
+        <name>setScalar</name>
+        <param>
+          <type>double</type>
+          <declname>scalar_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="50" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1aaa144bb5a91e238a24714f9c21e1f691" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::addScalar</definition>
+        <argsstring>(double scalar_in)</argsstring>
+        <name>addScalar</name>
+        <param>
+          <type>double</type>
+          <declname>scalar_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="53" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a30669c547c3613eb296358270fa034fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::addDensity3D</definition>
+        <argsstring>(double dens_in)</argsstring>
+        <name>addDensity3D</name>
+        <param>
+          <type>double</type>
+          <declname>dens_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1aaa123501583ea9775583c2c46f755c8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Node::getScalar</definition>
+        <argsstring>()</argsstring>
+        <name>getScalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ad1eeb7e6ca4fc6d627ca6ff662f8e442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::addDensity</definition>
+        <argsstring>(double density_in)</argsstring>
+        <name>addDensity</name>
+        <param>
+          <type>double</type>
+          <declname>density_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="64" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a586272c977653ba24e1292b4dc42f8c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Node::getDensity</definition>
+        <argsstring>()</argsstring>
+        <name>getDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a8d8ccf6a6da7717ea6aa67e52c7c9017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Node::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a8877121bf44537ccbe2f3c441fa3b664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Node::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ab26d80e97604621eab868ebacda71304" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Node::getZ</definition>
+        <argsstring>()</argsstring>
+        <name>getZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="83" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" line="42" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/node.h" bodystart="41" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classNode_1ad1eeb7e6ca4fc6d627ca6ff662f8e442" prot="public" virt="non-virtual"><scope>Node</scope><name>addDensity</name></member>
+      <member refid="classNode_1a30669c547c3613eb296358270fa034fb" prot="public" virt="non-virtual"><scope>Node</scope><name>addDensity3D</name></member>
+      <member refid="classNode_1aaa144bb5a91e238a24714f9c21e1f691" prot="public" virt="non-virtual"><scope>Node</scope><name>addScalar</name></member>
+      <member refid="classNode_1a1798ff3d6650de7d528e96a563f664e8" prot="private" virt="non-virtual"><scope>Node</scope><name>density</name></member>
+      <member refid="classNode_1a586272c977653ba24e1292b4dc42f8c6" prot="public" virt="non-virtual"><scope>Node</scope><name>getDensity</name></member>
+      <member refid="classNode_1aaa123501583ea9775583c2c46f755c8f" prot="public" virt="non-virtual"><scope>Node</scope><name>getScalar</name></member>
+      <member refid="classNode_1a8d8ccf6a6da7717ea6aa67e52c7c9017" prot="public" virt="non-virtual"><scope>Node</scope><name>getX</name></member>
+      <member refid="classNode_1a8877121bf44537ccbe2f3c441fa3b664" prot="public" virt="non-virtual"><scope>Node</scope><name>getY</name></member>
+      <member refid="classNode_1ab26d80e97604621eab868ebacda71304" prot="public" virt="non-virtual"><scope>Node</scope><name>getZ</name></member>
+      <member refid="classNode_1a8db2bf4c8effe7cff6c1de42eb901247" prot="private" virt="non-virtual"><scope>Node</scope><name>n_densities</name></member>
+      <member refid="classNode_1af2d852e4e98516a1b64fcb87a46f8900" prot="private" virt="non-virtual"><scope>Node</scope><name>n_densities3D</name></member>
+      <member refid="classNode_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="classNode_1ab67eabb0fef1465a1d7d1e11997ddd4d" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="classNode_1a1bf4d6787d30acbaef6bd357d24791b0" prot="private" virt="non-virtual"><scope>Node</scope><name>scalar</name></member>
+      <member refid="classNode_1a93d1fc91852d3698d94625f0178df03f" prot="public" virt="non-virtual"><scope>Node</scope><name>setScalar</name></member>
+      <member refid="classNode_1a1082fca4b71cc3cc02d78c35108f9059" prot="private" virt="non-virtual"><scope>Node</scope><name>x</name></member>
+      <member refid="classNode_1a441d3c5ba86597f4c391408d9fe6d242" prot="private" virt="non-virtual"><scope>Node</scope><name>y</name></member>
+      <member refid="classNode_1a8797bf8ce04cc01920b7fa33f1792a36" prot="private" virt="non-virtual"><scope>Node</scope><name>z</name></member>
+      <member refid="classNode_1aa0840c3cb5c7159be6d992adecd2097c" prot="public" virt="non-virtual"><scope>Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1041 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespacelmx" kind="namespace">
+    <compoundname>lmx</compoundname>
+    <innerclass refid="structlmx_1_1HarwellBoeing__IO" prot="public">lmx::HarwellBoeing_IO</innerclass>
+    <innerclass refid="classlmx_1_1Stopwatch" prot="public">lmx::Stopwatch</innerclass>
+    <innerclass refid="classlmx_1_1ExactStopwatch" prot="public">lmx::ExactStopwatch</innerclass>
+    <innerclass refid="classlmx_1_1Configuration" prot="public">lmx::Configuration</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorAB" prot="public">lmx::IntegratorAB</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorAM" prot="public">lmx::IntegratorAM</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorBase" prot="public">lmx::IntegratorBase</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorBaseImplicit" prot="public">lmx::IntegratorBaseImplicit</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorBDF" prot="public">lmx::IntegratorBDF</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorCentralDifference" prot="public">lmx::IntegratorCentralDifference</innerclass>
+    <innerclass refid="classlmx_1_1IntegratorNEWMARK" prot="public">lmx::IntegratorNEWMARK</innerclass>
+    <innerclass refid="classlmx_1_1DiffProblem" prot="public">lmx::DiffProblem</innerclass>
+    <innerclass refid="classlmx_1_1DiffProblemDouble" prot="public">lmx::DiffProblemDouble</innerclass>
+    <innerclass refid="classlmx_1_1DiffProblemFirst" prot="public">lmx::DiffProblemFirst</innerclass>
+    <innerclass refid="classlmx_1_1DiffProblemFirstSecond" prot="public">lmx::DiffProblemFirstSecond</innerclass>
+    <innerclass refid="classlmx_1_1DiffProblemSecond" prot="public">lmx::DiffProblemSecond</innerclass>
+    <innerclass refid="classlmx_1_1dimension__error" prot="public">lmx::dimension_error</innerclass>
+    <innerclass refid="classlmx_1_1file__not__found__error" prot="public">lmx::file_not_found_error</innerclass>
+    <innerclass refid="classlmx_1_1internal__error" prot="public">lmx::internal_error</innerclass>
+    <innerclass refid="classlmx_1_1failure__error" prot="public">lmx::failure_error</innerclass>
+    <innerclass refid="classlmx_1_1to__be__done__error" prot="public">lmx::to_be_done_error</innerclass>
+    <innerclass refid="structlmx_1_1exception__callback" prot="public">lmx::exception_callback</innerclass>
+    <innerclass refid="structlmx_1_1exception__callback__debug" prot="public">lmx::exception_callback_debug</innerclass>
+    <innerclass refid="structlmx_1_1warning__level" prot="public">lmx::warning_level</innerclass>
+    <innerclass refid="classlmx_1_1Cg" prot="public">lmx::Cg</innerclass>
+    <innerclass refid="classlmx_1_1Gesv" prot="public">lmx::Gesv</innerclass>
+    <innerclass refid="classlmx_1_1LU" prot="public">lmx::LU</innerclass>
+    <innerclass refid="classlmx_1_1Superlu" prot="public">lmx::Superlu</innerclass>
+    <innerclass refid="classlmx_1_1LinearSystem" prot="public">lmx::LinearSystem</innerclass>
+    <innerclass refid="classlmx_1_1Data" prot="public">lmx::Data</innerclass>
+    <innerclass refid="classlmx_1_1Data__mat" prot="public">lmx::Data_mat</innerclass>
+    <innerclass refid="classlmx_1_1Data__vec" prot="public">lmx::Data_vec</innerclass>
+    <innerclass refid="classlmx_1_1Type__stdmatrix" prot="public">lmx::Type_stdmatrix</innerclass>
+    <innerclass refid="classlmx_1_1Type__csc" prot="public">lmx::Type_csc</innerclass>
+    <innerclass refid="classlmx_1_1Type__stdVector" prot="public">lmx::Type_stdVector</innerclass>
+    <innerclass refid="classlmx_1_1Vector" prot="public">lmx::Vector</innerclass>
+    <innerclass refid="classlmx_1_1Matrix" prot="public">lmx::Matrix</innerclass>
+    <innerclass refid="classlmx_1_1DenseMatrix" prot="public">lmx::DenseMatrix</innerclass>
+    <innerclass refid="classlmx_1_1Elem__ref" prot="public">lmx::Elem_ref</innerclass>
+    <innerclass refid="classlmx_1_1Type__gmm" prot="public">lmx::Type_gmm</innerclass>
+    <innerclass refid="classlmx_1_1Type__gmm__sparse" prot="public">lmx::Type_gmm_sparse</innerclass>
+    <innerclass refid="classlmx_1_1Type__gmmVector__sparse" prot="public">lmx::Type_gmmVector_sparse</innerclass>
+    <innerclass refid="classlmx_1_1NLSolver" prot="public">lmx::NLSolver</innerclass>
+    <innerclass refid="classlmx_1_1NLSolverDouble" prot="public">lmx::NLSolverDouble</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelmx_1a40253242519478100fc1164db7994957" prot="public" static="no" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int lmx::nl_solver_type</definition>
+        <argsstring></argsstring>
+        <name>nl_solver_type</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable switches between different types of non-linear solvers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="102" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classlmx_1_1NLSolver_1a5a62129861558b6ce4786ef85b23a232" compoundref="lmx__nlsolvers_8h" startline="258" endline="337">lmx::NLSolver&lt; Sys, T &gt;::solve</referencedby>
+        <referencedby refid="classlmx_1_1NLSolverDouble_1af5b1577ca5bfba51cc2aacb7c5858ccc" compoundref="lmx__nlsolvers__double_8h" startline="332" endline="427">lmx::NLSolverDouble&lt; Sys, T &gt;::solve</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelmx_1aed2ebd81147c916e464de06ee37aa756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::setMatrixType</definition>
+        <argsstring>(int type)</argsstring>
+        <name>setMatrixType</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that changes the type of matrix container that will be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="43" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="43" bodyend="58"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <referencedby refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" compoundref="lmx__base__selector_8h" startline="91" endline="91">getMatrixType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a9dfd59f1cf0bfa5c7cc217f0201033e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::setVectorType</definition>
+        <argsstring>(int type)</argsstring>
+        <name>setVectorType</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that changes the type of vector container that will be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="62" bodyend="77"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <referencedby refid="namespacelmx_1a65ad7b9cfa290037192cc3147ca508d5" compoundref="lmx__base__selector_8h" startline="95" endline="95">getVectorType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a3b4317f361bcc93a74ead7490f0265a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::setLinSolverType</definition>
+        <argsstring>(int type)</argsstring>
+        <name>setLinSolverType</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that changes the type of linear solver that will be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="81" bodyend="87"/>
+        <referencedby refid="namespacelmx_1a92e4bebee5d9aabe5807c30fab96e192" compoundref="lmx__base__selector_8h" startline="99" endline="99">getLinSolverType</referencedby>
+        <referencedby refid="namespacelmx_1a992f0b2fbca043dfcda66af0ab4e0c22" compoundref="lmx__linsolvers_8h" startline="51" endline="91">solveLinear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::getMatrixType</definition>
+        <argsstring>()</argsstring>
+        <name>getMatrixType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function reads the type of <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> container that is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="91" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="91" bodyend="91"/>
+        <references refid="namespacelmx_1aed2ebd81147c916e464de06ee37aa756" compoundref="lmx__base__selector_8h" startline="43" endline="58">setMatrixType</references>
+        <referencedby refid="classlmx_1_1LinearSystem_1ad9a2d56c7ea53a201d0820c58549ea7c" compoundref="lmx__linsolvers__system_8h" startline="399" endline="422">lmx::LinearSystem&lt; T &gt;::factorize</referencedby>
+        <referencedby refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" compoundref="lmx__mat__matrix_8h" startline="461" endline="464">Matrix&lt; T &gt;::Matrix</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1ae68d2b9e72a8a6aa9431e9dcdb126fdc" compoundref="lmx__mat__vector_8h" startline="692" endline="736">lmx::Vector&lt; T &gt;::mult</referencedby>
+        <referencedby refid="classMatrix_1a3f2deb42b24254e639bca3ea50e2cdd5" compoundref="lmx__mat__matrix_8h" startline="753" endline="777">Matrix&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a986906a2f375fc8ba39f43c927f39078" compoundref="lmx__linsolvers__system_8h" startline="379" endline="396">lmx::LinearSystem&lt; T &gt;::setA</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1ac85310aca10575dc1cb27dbd1e38da6b" compoundref="lmx__linsolvers__system_8h" startline="364" endline="376">lmx::LinearSystem&lt; T &gt;::setb</referencedby>
+        <referencedby refid="namespacelmx_1a992f0b2fbca043dfcda66af0ab4e0c22" compoundref="lmx__linsolvers_8h" startline="51" endline="91">solveLinear</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a1595022f65961d5cfb5c7c9a9a85ee06" compoundref="lmx__linsolvers__system_8h" startline="425" endline="437">lmx::LinearSystem&lt; T &gt;::subsSolve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a65ad7b9cfa290037192cc3147ca508d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::getVectorType</definition>
+        <argsstring>()</argsstring>
+        <name>getVectorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function reads the type of <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> container that is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="95" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="95" bodyend="95"/>
+        <references refid="namespacelmx_1a9dfd59f1cf0bfa5c7cc217f0201033e6" compoundref="lmx__base__selector_8h" startline="62" endline="77">setVectorType</references>
+        <referencedby refid="classlmx_1_1Vector_1ae68d2b9e72a8a6aa9431e9dcdb126fdc" compoundref="lmx__mat__vector_8h" startline="692" endline="736">lmx::Vector&lt; T &gt;::mult</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</referencedby>
+        <referencedby refid="classlmx_1_1Vector_1a39d6069675db4ecfc1ab81d440da759a" compoundref="lmx__mat__vector_8h" startline="308" endline="332">lmx::Vector&lt; T &gt;::Vector</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a92e4bebee5d9aabe5807c30fab96e192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::getLinSolverType</definition>
+        <argsstring>()</argsstring>
+        <name>getLinSolverType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function reads the type of <ref refid="classlmx_1_1LinearSystem" kindref="compound">LinearSystem</ref> that is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_selector.h" bodystart="99" bodyend="99"/>
+        <references refid="namespacelmx_1a3b4317f361bcc93a74ead7490f0265a4" compoundref="lmx__base__selector_8h" startline="81" endline="87">setLinSolverType</references>
+        <referencedby refid="namespacelmx_1a992f0b2fbca043dfcda66af0ab4e0c22" compoundref="lmx__linsolvers_8h" startline="51" endline="91">solveLinear</referencedby>
+        <referencedby refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a9ec7e30ade7c87eaf14dfee79807c402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::set_exception_callback</definition>
+        <argsstring>(exception_callback *e)</argsstring>
+        <name>set_exception_callback</name>
+        <param>
+          <type><ref refid="structlmx_1_1exception__callback" kindref="compound">exception_callback</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User&apos;s function for changing the default exception callback <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new exception callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="241" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="241" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a8b100980a9fd681c507d233fc8e4250c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::set_warning_level</definition>
+        <argsstring>(int l)</argsstring>
+        <name>set_warning_level</name>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user function for changing the level warning. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="289" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="289" bodyend="289"/>
+        <references refid="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" compoundref="lmx__except_8h" startline="282" endline="285">lmx::warning_level::level</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a992f0b2fbca043dfcda66af0ab4e0c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::solveLinear</definition>
+        <argsstring>(Matrix&lt; T &gt; &amp;A, Vector&lt; T &gt; &amp;x, Vector&lt; T &gt; &amp;b)</argsstring>
+        <name>solveLinear</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Automatized driver for solving a linear system. </para>        </briefdescription>
+        <detaileddescription>
+<para>Tries to guess the solver that better fits the system. It&apos;s use is intended for fast developing of non-optimized applications. For better performance and control of application, use the <ref refid="classlmx_1_1LinearSystem" kindref="compound">LinearSystem</ref> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of unknowns. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers.h" line="51" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers.h" bodystart="51" bodyend="91"/>
+        <references refid="namespacelmx_1a92e4bebee5d9aabe5807c30fab96e192" compoundref="lmx__base__selector_8h" startline="99" endline="99">getLinSolverType</references>
+        <references refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" compoundref="lmx__base__selector_8h" startline="91" endline="91">getMatrixType</references>
+        <references refid="namespacelmx_1a3b4317f361bcc93a74ead7490f0265a4" compoundref="lmx__base__selector_8h" startline="81" endline="87">setLinSolverType</references>
+        <references refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::mat_mat_add</definition>
+        <argsstring>(const Data_mat&lt; T &gt; *A, const Data_mat&lt; T &gt; *B, Data_mat&lt; T &gt; *C)</argsstring>
+        <name>mat_mat_add</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> compatible addition. Calculates the operation A+B = C. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result Data_mat&lt;T&gt;, C=A+B. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="69" bodyend="78"/>
+        <references refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">lmx::Data&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">lmx::Data&lt; T &gt;::getRows</references>
+        <references refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">lmx::Data&lt; T &gt;::readElement</references>
+        <references refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">lmx::Data&lt; T &gt;::writeElement</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::mat_mat_subs</definition>
+        <argsstring>(const Data_mat&lt; T &gt; *A, const Data_mat&lt; T &gt; *B, Data_mat&lt; T &gt; *C)</argsstring>
+        <name>mat_mat_subs</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> compatible substraction. Calculates the operation A-B = C. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result Data_mat&lt;T&gt;, C=A-B. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="88" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="88" bodyend="97"/>
+        <references refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">lmx::Data&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">lmx::Data&lt; T &gt;::getRows</references>
+        <references refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">lmx::Data&lt; T &gt;::readElement</references>
+        <references refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">lmx::Data&lt; T &gt;::writeElement</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::mat_mat_mult</definition>
+        <argsstring>(const Data_mat&lt; T &gt; *A, const Data_mat&lt; T &gt; *B, Data_mat&lt; T &gt; *C)</argsstring>
+        <name>mat_mat_mult</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> compatible multiplication. Calculates the product A*B = C. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result Data_mat&lt;T&gt;, C=A*B. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="107" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="107" bodyend="134"/>
+        <references refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">lmx::Data&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">lmx::Data&lt; T &gt;::getRows</references>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">lmx::Data&lt; T &gt;::readElement</references>
+        <references refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc">lmx::Data&lt; T &gt;::resize</references>
+        <references refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">lmx::Data&lt; T &gt;::writeElement</references>
+        <referencedby refid="classlmx_1_1DenseMatrix_1aea3df37602013fd216dc9a895f71d7b5" compoundref="lmx__mat__dense__matrix_8h" startline="224" endline="228">lmx::DenseMatrix&lt; T &gt;::mult</referencedby>
+        <referencedby refid="classMatrix_1a05d60787d4280ce70e4bfdf9a778feec" compoundref="lmx__mat__matrix_8h" startline="991" endline="995">Matrix&lt; T &gt;::mult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a56cc87866206c207bc234d4c97927e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::mat_mat_multElements</definition>
+        <argsstring>(const Data_mat&lt; T &gt; *A, Data_mat&lt; T &gt; *C)</argsstring>
+        <name>mat_mat_multElements</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> compatible element-by-element multiplication with one operand. Calculates the operation C(i,j) *= A(i,j). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="143" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="143" bodyend="151"/>
+        <references refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">lmx::Data&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">lmx::Data&lt; T &gt;::getRows</references>
+        <references refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">lmx::Data&lt; T &gt;::readElement</references>
+        <references refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">lmx::Data&lt; T &gt;::writeElement</references>
+        <referencedby refid="classlmx_1_1DenseMatrix_1a2ecef4d0da9409fe1f02f0bcadf78222" compoundref="lmx__mat__dense__matrix_8h" startline="236" endline="240">lmx::DenseMatrix&lt; T &gt;::multElements</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1af1b580875370f953da3267438d3fa186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::mat_mat_multElements</definition>
+        <argsstring>(const Data_mat&lt; T &gt; *A, const Data_mat&lt; T &gt; *B, Data_mat&lt; T &gt; *C)</argsstring>
+        <name>mat_mat_multElements</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>&lt; T &gt; *</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> compatible element-by-element multiplication. Calculates the operation A(i,j) * B(i,j) = C(i,j). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result Data_mat&lt;T&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="161" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="161" bodyend="170"/>
+        <references refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">lmx::Data&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">lmx::Data&lt; T &gt;::getRows</references>
+        <references refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">lmx::Data&lt; T &gt;::readElement</references>
+        <references refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">lmx::Data&lt; T &gt;::writeElement</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a6d30cefa412621b55332f3521b828010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::mat_vec_mult</definition>
+        <argsstring>(const Type_csc&lt; T &gt; *matrix_in, const Type_stdVector&lt; T &gt; *vector_in, Type_stdVector&lt; T &gt; *vector_out)</argsstring>
+        <name>mat_vec_mult</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref>&lt; T &gt; *</type>
+          <declname>matrix_in</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref>&lt; T &gt; *</type>
+          <declname>vector_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref>&lt; T &gt; *</type>
+          <declname>vector_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> vector (pre)multiplication, specialized for <ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref> <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref> (matrix) and <ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref> (STL vector) formats. Calculates the product A*b = c using pointers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref> *Matrix A. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vector_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref> *Vector b. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vector_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref> *Vector c = A*b. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="183" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="184" bodyend="211"/>
+        <references refid="classlmx_1_1Type__csc_1a189ee6941a05a6e49f11e4ddee205ca6" compoundref="lmx__mat__type__csc_8h" startline="60">lmx::Type_csc&lt; T &gt;::aa</references>
+        <references refid="classlmx_1_1Type__csc_1adc1754239031a024f0126008cca8257c" compoundref="lmx__mat__type__csc_8h" startline="425" endline="428">lmx::Type_csc&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Type__csc_1a7d04d6b93337ead44534da43fb5d2b40" compoundref="lmx__mat__type__csc_8h" startline="415" endline="418">lmx::Type_csc&lt; T &gt;::getRows</references>
+        <references refid="classlmx_1_1Type__csc_1ad149a245b902861d26367af5a98d38c2" compoundref="lmx__mat__type__csc_8h" startline="61">lmx::Type_csc&lt; T &gt;::ia</references>
+        <references refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" compoundref="lmx__mat__type__csc_8h" startline="62">lmx::Type_csc&lt; T &gt;::ja</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1ab8da9d846c786511bc3954fbbc996ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::copy</definition>
+        <argsstring>(const Type_stdmatrix&lt; T &gt; *dense_matrix_in, Type_csc&lt; T &gt; *matrix_in)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref>&lt; T &gt; *</type>
+          <declname>dense_matrix_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref>&lt; T &gt; *</type>
+          <declname>matrix_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> vector (pre)multiplication, specialized for <ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref> <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref> (matrix) and <ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref> (STL vector) formats. Calculates the product A*b = c using pointers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dense_matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type_stdMatrix *Matrix B. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref> *Matrix A. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="281" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="281" bodyend="309"/>
+        <references refid="classlmx_1_1Type__csc_1a189ee6941a05a6e49f11e4ddee205ca6" compoundref="lmx__mat__type__csc_8h" startline="60">lmx::Type_csc&lt; T &gt;::aa</references>
+        <references refid="classlmx_1_1Type__csc_1adc1754239031a024f0126008cca8257c" compoundref="lmx__mat__type__csc_8h" startline="425" endline="428">lmx::Type_csc&lt; T &gt;::getCols</references>
+        <references refid="classlmx_1_1Type__csc_1a7d04d6b93337ead44534da43fb5d2b40" compoundref="lmx__mat__type__csc_8h" startline="415" endline="418">lmx::Type_csc&lt; T &gt;::getRows</references>
+        <references refid="classlmx_1_1Type__csc_1ad149a245b902861d26367af5a98d38c2" compoundref="lmx__mat__type__csc_8h" startline="61">lmx::Type_csc&lt; T &gt;::ia</references>
+        <references refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" compoundref="lmx__mat__type__csc_8h" startline="62">lmx::Type_csc&lt; T &gt;::ja</references>
+        <references refid="classlmx_1_1Type__csc_1ac201c80e090b62791f8a95d6f1e3b07c" compoundref="lmx__mat__type__csc_8h" startline="65">lmx::Type_csc&lt; T &gt;::Ncol</references>
+        <references refid="classlmx_1_1Type__csc_1ade9e149ea4925d6cc97727bbf07f080e" compoundref="lmx__mat__type__csc_8h" startline="63">lmx::Type_csc&lt; T &gt;::Nnze</references>
+        <references refid="classlmx_1_1Type__csc_1a2c5ef8a3a2cd3a79d7b747f8cace105f" compoundref="lmx__mat__type__csc_8h" startline="64">lmx::Type_csc&lt; T &gt;::Nrow</references>
+        <referencedby refid="classlmx_1_1Type__gmm_1a7463e17cac7443907a717cbe4814bc8b" compoundref="lmx__mat__type__gmm_8h" startline="178" endline="184">lmx::Type_gmm&lt; T &gt;::read_hb_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm__sparse_1abd3bbdfd7c363a438edb65a6dedba1c2" compoundref="lmx__mat__type__gmm__sparse1_8h" startline="182" endline="187">lmx::Type_gmm_sparse&lt; T &gt;::read_hb_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1adf2926b0afd5a318fdc730225d10d2aa" compoundref="lmx__mat__type__csc_8h" startline="659" endline="695">lmx::Type_csc&lt; T &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm_1a28f293a101f7e860d1ea1a113a923864" compoundref="lmx__mat__type__gmm_8h" startline="165" endline="170">lmx::Type_gmm&lt; T &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm__sparse_1a1fdc8733b30705aac2d86a43c4edfa1d" compoundref="lmx__mat__type__gmm__sparse1_8h" startline="170" endline="175">lmx::Type_gmm_sparse&lt; T &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" compoundref="lmx__mat__type__stdmatrix_8h" startline="212" endline="248">lmx::Type_stdmatrix&lt; double &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm_1a73b5260b87a6188af420f6288e1fc573" compoundref="lmx__mat__type__gmm_8h" startline="201" endline="208">lmx::Type_gmm&lt; T &gt;::trn</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm__sparse_1af8756bbdf946d35e9130d921785f7dc9" compoundref="lmx__mat__type__gmm__sparse1_8h" startline="205" endline="212">lmx::Type_gmm_sparse&lt; T &gt;::trn</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm_1a03639818d7f55d592ec51e58b3ba0b87" compoundref="lmx__mat__type__gmm_8h" startline="192" endline="197">lmx::Type_gmm&lt; T &gt;::write_hb_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm__sparse_1ae5dedc139e0e75c851b11022226c35f4" compoundref="lmx__mat__type__gmm__sparse1_8h" startline="195" endline="200">lmx::Type_gmm_sparse&lt; T &gt;::write_hb_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66" compoundref="lmx__mat__type__stdmatrix_8h" startline="288" endline="317">lmx::Type_stdmatrix&lt; double &gt;::write_hb_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a5e17aca45e56e69469e6b3e58ce074e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt;</type>
+        <definition>DenseMatrix&lt;T&gt; lmx::operator-</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;B)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload operator for negation. </para>        </detaileddescription>
+        <inbodydescription>
+<para>Scheme of function: res=1*-A, return res; </para>        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="208" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="208" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1ad4464704dd30fa4aa45fef794428ab35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lmx::latexPrint</definition>
+        <argsstring>(std::ofstream &amp;os, char *mat_name, Matrix&lt; C &gt; &amp;mat, int prec)</argsstring>
+        <name>latexPrint</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mat_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="420" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="420" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a12fd7ce454c4b736867bcebc9f7ac84c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; lmx::operator-</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload operator for negation. </para>        </detaileddescription>
+        <inbodydescription>
+<para>Scheme of function: res=1*-A, return res; </para>        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="1095" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="1095" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1ad723ad98140948b6fc56bf5d0193c1a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; lmx::operator*</definition>
+        <argsstring>(const T &amp;scalar, const Matrix&lt; T &gt; &amp;B)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload operator for multiplying a scalar and a <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+<para>Scheme of function: mult=A*B, return B; </para>        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="1107" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="1107" bodyend="1113"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a4593e2a6c2c72cba0b1c556c0f306b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; lmx::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Matrix&lt; T &gt; &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator that prints a Matrix&lt;T&gt; object into the output stream selected. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix&lt;T&gt; reference to the object that is going to be printed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An output std stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(<emphasis>os</emphasis> ) The stream that was passed as a parameter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="1121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="1121" bodyend="1133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1ac08b14163726a57e0acae786c74bc6ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; lmx::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Matrix&lt; cofe::TensorRank2&lt; 3, T &gt; &gt; &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; <ref refid="classcofe_1_1TensorRank2" kindref="compound">cofe::TensorRank2</ref>&lt; 3, T &gt; &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator that prints a Matrix&lt;T&gt; object into the output stream selected. Specialized for cofe::TensorRank2&lt;3&gt; order 2 Tensors. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix&lt;T&gt; reference to the object that is going to be printed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An output std stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(<emphasis>os</emphasis> ) The stream that was passed as a parameter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="1142" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="1142" bodyend="1155"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a056662a18d83b06f907bd389b7001b35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; lmx::operator*</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;A, const Vector&lt; T &gt; &amp;b)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator for multiplying <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> objects. Performs typical vector operation: A * b = c, where b &amp; c are vectors and A is a <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> reference for first LHS term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> reference for second LHS term. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> (c = A*b). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" line="936" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" bodystart="936" bodyend="948"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="classlmx_1_1Vector_1ae68d2b9e72a8a6aa9431e9dcdb126fdc" compoundref="lmx__mat__vector_8h" startline="692" endline="736">lmx::Vector&lt; T &gt;::mult</references>
+        <references refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" compoundref="lmx__mat__vector_8h" startline="89" endline="89">lmx::Vector&lt; T &gt;::size</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a77129091804126ffb475a3e086be8612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; lmx::operator*</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;A, const Vector&lt; T &gt; &amp;b)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator for multiplying <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> objects. Performs typical vector operation: A * b = c, where b &amp; c are vectors and A is a <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref> reference for first LHS term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> reference for second LHS term. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> (c = A*b). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" line="958" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" bodystart="958" bodyend="970"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="classlmx_1_1Vector_1ae68d2b9e72a8a6aa9431e9dcdb126fdc" compoundref="lmx__mat__vector_8h" startline="692" endline="736">lmx::Vector&lt; T &gt;::mult</references>
+        <references refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" compoundref="lmx__mat__vector_8h" startline="89" endline="89">lmx::Vector&lt; T &gt;::size</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1aa216d870ef9e604a7ef9bd3266e148f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; lmx::operator*</definition>
+        <argsstring>(const T &amp;a, const Vector&lt; T &gt; &amp;B)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload operator for multiplying a scalar and a <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar reference. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> reference for second LHS term. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> (mult = a*b). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" line="979" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" bodystart="979" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmx_1a9a344d9925b2c2536ad9a92115170e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; lmx::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector&lt; T &gt; &amp;vec)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator that prints a <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> object into the output stream selected. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> reference to the object that is going to be printed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An output std stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(<emphasis>os</emphasis> ) The stream that was passed as a parameter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" line="993" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_vector.h" bodystart="993" bodyend="1004"/>
+        <references refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" compoundref="lmx__mat__vector_8h" startline="89" endline="89">lmx::Vector&lt; T &gt;::size</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Linked MatriX methods library uses lmx namespace. </para>    </briefdescription>
+    <detaileddescription>
+<para>{}</para><para>This is the namespace that contains LMX-lite. </para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx.h" line="43" column="1"/>
+  </compounddef>
+</doxygen>

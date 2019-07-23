@@ -1,1 +1,7 @@
-<area shape="rect" href="$simulation_8h.html" title="Pure conical geometry." alt="" coords="5,80,133,107">
+<map id="src/cone.h" name="src/cone.h">
+<area shape="rect" id="node2" href="$cone_8cpp.html" title="src/cone.cpp" alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" href="$cone2-bak_8h.html" title="src/cone2&#45;bak.h" alt="" coords="123,80,236,107"/>
+<area shape="rect" id="node4" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="261,80,371,107"/>
+<area shape="rect" id="node5" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="187,155,300,181"/>
+<area shape="rect" id="node6" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="325,155,451,181"/>
+</map>

@@ -1,0 +1,59 @@
+\hypertarget{lmx__base__selector_8h}{\section{src/\-L\-M\-X/lmx\-\_\-base\-\_\-selector.h File Reference}
+\label{lmx__base__selector_8h}\index{src/\-L\-M\-X/lmx\-\_\-base\-\_\-selector.\-h@{src/\-L\-M\-X/lmx\-\_\-base\-\_\-selector.\-h}}
+}
+
+
+This file contains set-\/get functions for switching between the \hyperlink{classMatrix}{Matrix}, \hyperlink{classVector}{Vector} and Linear Solvers types.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+Include dependency graph for lmx\-\_\-base\-\_\-selector.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{lmx__base__selector_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__base__selector_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelmx}{lmx}
+\begin{DoxyCompactList}\small\item\em Linked Matri\-X methods library uses lmx namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacelmx_aed2ebd81147c916e464de06ee37aa756}{lmx\-::set\-Matrix\-Type} (int type)
+\item 
+int \hyperlink{namespacelmx_a9dfd59f1cf0bfa5c7cc217f0201033e6}{lmx\-::set\-Vector\-Type} (int type)
+\item 
+int \hyperlink{namespacelmx_a3b4317f361bcc93a74ead7490f0265a4}{lmx\-::set\-Lin\-Solver\-Type} (int type)
+\item 
+int \hyperlink{namespacelmx_a2aca178888955f2289a8d3d6e5c58fd0}{lmx\-::get\-Matrix\-Type} ()
+\item 
+int \hyperlink{namespacelmx_a65ad7b9cfa290037192cc3147ca508d5}{lmx\-::get\-Vector\-Type} ()
+\item 
+int \hyperlink{namespacelmx_a92e4bebee5d9aabe5807c30fab96e192}{lmx\-::get\-Lin\-Solver\-Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr int \hyperlink{namespacelmx_a40253242519478100fc1164db7994957}{lmx\-::nl\-\_\-solver\-\_\-type} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains set-\/get functions for switching between the \hyperlink{classMatrix}{Matrix}, \hyperlink{classVector}{Vector} and Linear Solvers types. Selector class is not usually instantiated. Instead, its friend functions are used by \hyperlink{classMatrix}{Matrix}, \hyperlink{classVector}{Vector} and \hyperlink{classLinearSystem}{Linear\-System} objects for getting the type that is being used.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}

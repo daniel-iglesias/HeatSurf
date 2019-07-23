@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classTwoPlates" kind="class" prot="public">
+    <compoundname>TwoPlates</compoundname>
+    <basecompoundref refid="classGeometry" prot="public" virt="non-virtual">Geometry</basecompoundref>
+    <includes refid="twoplates_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTwoPlates_1aeb2774b6c8278733d13fb38fd99e0457" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::initSep</definition>
+        <argsstring></argsstring>
+        <name>initSep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="72" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a4edfa95628ad1bcbd5af91aae6605aec" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="72" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1af60449c834d8ac116206c162c61cc829" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="72" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1abcbc650696c2a076984cced444c6acaa" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::slope</definition>
+        <argsstring></argsstring>
+        <name>slope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="72" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a48de343ae98f8a8307661292a06021ef" prot="private" static="no" mutable="no">
+        <type>std::map&lt; double, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::map&lt; double, std::vector&lt;double&gt; &gt; TwoPlates::energies</definition>
+        <argsstring></argsstring>
+        <name>energies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="73" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a45e58b3382191936641fd96a175d98bf" prot="private" static="no" mutable="no">
+        <type>std::map&lt; double, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::map&lt; double, std::vector&lt;double&gt; &gt; TwoPlates::powers</definition>
+        <argsstring></argsstring>
+        <name>powers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a1d72728b08b160048e68c2f8faac309f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a11af5c6151378ee12e2e203a522689db" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a83dbc696598622d32c10b67af9879f72" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1adb19dec8048029b06c6a65cf1d93e48c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::vx</definition>
+        <argsstring></argsstring>
+        <name>vx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1a81a1227b97596c4b6b18c8ef2895f44b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::vy</definition>
+        <argsstring></argsstring>
+        <name>vy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTwoPlates_1ad88ce89c445cdb8a333e2dc8b1286550" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TwoPlates::vz</definition>
+        <argsstring></argsstring>
+        <name>vz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTwoPlates_1a66e45a6d02f3b6026f8dd99ff5d4653e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TwoPlates::TwoPlates</definition>
+        <argsstring>()</argsstring>
+        <name>TwoPlates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="45" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1ac1dfa39d5a74aad3e53b12c4bbdcff4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TwoPlates::TwoPlates</definition>
+        <argsstring>(std::string, double, double, int, double, double)</argsstring>
+        <name>TwoPlates</name>
+        <param>
+          <type>std::string</type>
+          <defname>type_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par1_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par2_in</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>par3_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>width_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>orientation_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="47" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="32" bodyend="46"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1af74b10840a05812ceb5aa94ceb7a76f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TwoPlates::~TwoPlates</definition>
+        <argsstring>()</argsstring>
+        <name>~TwoPlates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="49" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a23168c87f9097b2c1a4fa8cac4b61049" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::setSections</definition>
+        <argsstring>(double)</argsstring>
+        <name>setSections</name>
+        <reimplements refid="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df">setSections</reimplements>
+        <param>
+          <type>double</type>
+          <defname>distance</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="51" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="106" bodyend="110"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a68c5911a0b3c24f59c3df0335f1e6c94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoPlates::computeEnergy</definition>
+        <argsstring>(double, std::vector&lt; Particle * &gt; &amp;)</argsstring>
+        <name>computeEnergy</name>
+        <param>
+          <type>double</type>
+          <defname>section</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classParticle" kindref="compound">Particle</ref> * &gt; &amp;</type>
+          <defname>particles</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="53" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="54" bodyend="103"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::computeGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>computeGeometry</name>
+        <reimplements refid="classGeometry_1a3e77ac889d1e440c24efbde630aa1933">computeGeometry</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="113" bodyend="202"/>
+        <references refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" compoundref="geometry_8h" startline="124">Geometry::elements</references>
+        <references refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" compoundref="geometry_8h" startline="130">Geometry::grid</references>
+        <references refid="classGeometry_1aed47a80e867e618e98272e830d297deb" compoundref="geometry_8h" startline="128">Geometry::gridPoints</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a71bf9bd3453782adb97e94addabe23ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoPlates::residue</definition>
+        <argsstring>(lmx::Vector&lt; double &gt; &amp;, lmx::Vector&lt; double &gt; &amp;)</argsstring>
+        <name>residue</name>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>res</defname>
+        </param>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="205" bodyend="213"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1ad1ae0ed441b0ec1f7650501f648ebfdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoPlates::jacobian</definition>
+        <argsstring>(lmx::Matrix&lt; double &gt; &amp;, lmx::Vector&lt; double &gt; &amp;)</argsstring>
+        <name>jacobian</name>
+        <param>
+          <type>lmx::Matrix&lt; double &gt; &amp;</type>
+          <defname>jac</defname>
+        </param>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="58" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="215" bodyend="224"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::computeIntersection</definition>
+        <argsstring>(Particle *)</argsstring>
+        <name>computeIntersection</name>
+        <reimplements refid="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881">computeIntersection</reimplements>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="226" bodyend="247"/>
+        <references refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" compoundref="particle_8h" startline="54" endline="54">Particle::getX</references>
+        <references refid="classParticle_1a0813b73b2d08f57f05607df530684e14" compoundref="particle_8h" startline="58" endline="58">Particle::getXdiv</references>
+        <references refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" compoundref="particle_8h" startline="55" endline="55">Particle::getY</references>
+        <references refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" compoundref="particle_8h" startline="59" endline="59">Particle::getYdiv</references>
+        <references refid="classParticle_1a1b287734891b40546e06e17db8589fca" compoundref="particle_8h" startline="56" endline="56">Particle::getZ</references>
+        <references refid="classParticle_1a9435d915d86f9df46203f9b5c72888d0" compoundref="particle_8h" startline="60" endline="60">Particle::getZdiv</references>
+        <references refid="classTwoPlates_1ad1ae0ed441b0ec1f7650501f648ebfdb" compoundref="twoplates_8cpp" startline="215" endline="224">jacobian</references>
+        <references refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" compoundref="geometry_8h" startline="121">Geometry::paramTrajectories</references>
+        <references refid="classTwoPlates_1a71bf9bd3453782adb97e94addabe23ec" compoundref="twoplates_8cpp" startline="205" endline="213">residue</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a30eb56de2071f12cb1405057dda35329" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::computeNodalPower</definition>
+        <argsstring>(Particle *)</argsstring>
+        <name>computeNodalPower</name>
+        <reimplements refid="classGeometry_1af60650f8ce6d5a220928ccd7395120df">computeNodalPower</reimplements>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::outputTable</definition>
+        <argsstring>()</argsstring>
+        <name>outputTable</name>
+        <reimplements refid="classGeometry_1a60e1424a222ba59284b81812aff34148">outputTable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="254" bodyend="289"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a978c078774fe74e99b8f4064a6126e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::outputPowerFile</definition>
+        <argsstring>(int)</argsstring>
+        <name>outputPowerFile</name>
+        <reimplements refid="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56">outputPowerFile</reimplements>
+        <param>
+          <type>int</type>
+          <defname>particles</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="292" bodyend="314"/>
+        <references refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" compoundref="geometry_8h" startline="124">Geometry::elements</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TwoPlates::outputPowerDensityFile</definition>
+        <argsstring>()</argsstring>
+        <name>outputPowerDensityFile</name>
+        <reimplements refid="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9">outputPowerDensityFile</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="67" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.cpp" bodystart="316" bodyend="378"/>
+        <references refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" compoundref="geometry_8h" startline="124">Geometry::elements</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classTwoPlates_1a6bff308b65ed2bfe33098ae210626b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TwoPlates::getLength</definition>
+        <argsstring>()</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="69" bodyend="69"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="83">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+      <node id="82">
+        <label>TwoPlates</label>
+        <link refid="classTwoPlates"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="85">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+      <node id="84">
+        <label>TwoPlates</label>
+        <link refid="classTwoPlates"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" line="43" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/twoplates.h" bodystart="42" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classGeometry_1af314d57676056969da57788a60954926" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>aDataSetMapper</name></member>
+      <member refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>anActor</name></member>
+      <member refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>axes</name></member>
+      <member refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>barActor</name></member>
+      <member refid="classTwoPlates_1a68c5911a0b3c24f59c3df0335f1e6c94" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>computeEnergy</name></member>
+      <member refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" prot="public" virt="virtual"><scope>TwoPlates</scope><name>computeGeometry</name></member>
+      <member refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>computeGrid3D</name></member>
+      <member refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" prot="public" virt="virtual"><scope>TwoPlates</scope><name>computeIntersection</name></member>
+      <member refid="classTwoPlates_1a30eb56de2071f12cb1405057dda35329" prot="public" virt="virtual"><scope>TwoPlates</scope><name>computeNodalPower</name></member>
+      <member refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>computePowerDensity</name></member>
+      <member refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>cutActor</name></member>
+      <member refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>cutMapper</name></member>
+      <member refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>drawGeometry</name></member>
+      <member refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>drawGrid</name></member>
+      <member refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>drawGridScalar</name></member>
+      <member refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>drawScalar</name></member>
+      <member refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>elements</name></member>
+      <member refid="classTwoPlates_1a48de343ae98f8a8307661292a06021ef" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>energies</name></member>
+      <member refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>Geometry</name></member>
+      <member refid="classTwoPlates_1a6bff308b65ed2bfe33098ae210626b30" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>getLength</name></member>
+      <member refid="classGeometry_1a565f5b7736c4b0894732900199903d54" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>getType</name></member>
+      <member refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid</name></member>
+      <member refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3D</name></member>
+      <member refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3DActor</name></member>
+      <member refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Daxes</name></member>
+      <member refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3DbarActor</name></member>
+      <member refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3DDataSetMapper</name></member>
+      <member refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Diren</name></member>
+      <member refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Dnodes</name></member>
+      <member refid="classGeometry_1afd79778e7c244df18be79a39419190c8" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3DPoints</name></member>
+      <member refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Dren</name></member>
+      <member refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3DrenWin</name></member>
+      <member refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Dscalar</name></member>
+      <member refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Dstyle</name></member>
+      <member refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Dtable</name></member>
+      <member refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>grid3Dwidget</name></member>
+      <member refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>gridCubes</name></member>
+      <member refid="classGeometry_1aed47a80e867e618e98272e830d297deb" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>gridPoints</name></member>
+      <member refid="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>gridSpacing</name></member>
+      <member refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>gridWidth</name></member>
+      <member refid="classTwoPlates_1aeb2774b6c8278733d13fb38fd99e0457" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>initSep</name></member>
+      <member refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>iren</name></member>
+      <member refid="classTwoPlates_1ad1ae0ed441b0ec1f7650501f648ebfdb" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>jacobian</name></member>
+      <member refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>length</name></member>
+      <member refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>nodes</name></member>
+      <member refid="classTwoPlates_1a4edfa95628ad1bcbd5af91aae6605aec" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>orientation</name></member>
+      <member refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>outputAnsys3D</name></member>
+      <member refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>outputBackscattering</name></member>
+      <member refid="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9" prot="public" virt="virtual"><scope>TwoPlates</scope><name>outputPowerDensityFile</name></member>
+      <member refid="classTwoPlates_1a978c078774fe74e99b8f4064a6126e84" prot="public" virt="virtual"><scope>TwoPlates</scope><name>outputPowerFile</name></member>
+      <member refid="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e" prot="public" virt="virtual"><scope>TwoPlates</scope><name>outputTable</name></member>
+      <member refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>outputVTKfiles</name></member>
+      <member refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>paramTrajectories</name></member>
+      <member refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>plane</name></member>
+      <member refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>planeCut</name></member>
+      <member refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>plotTitle</name></member>
+      <member refid="classTwoPlates_1a45e58b3382191936641fd96a175d98bf" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>powers</name></member>
+      <member refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>ren</name></member>
+      <member refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>renWin</name></member>
+      <member refid="classTwoPlates_1a71bf9bd3453782adb97e94addabe23ec" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>residue</name></member>
+      <member refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>scalar</name></member>
+      <member refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>sections</name></member>
+      <member refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>sections3D</name></member>
+      <member refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>sectors</name></member>
+      <member refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>sectors3D</name></member>
+      <member refid="classTwoPlates_1a23168c87f9097b2c1a4fa8cac4b61049" prot="public" virt="virtual"><scope>TwoPlates</scope><name>setSections</name></member>
+      <member refid="classTwoPlates_1abcbc650696c2a076984cced444c6acaa" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>slope</name></member>
+      <member refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>style</name></member>
+      <member refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>table</name></member>
+      <member refid="classTwoPlates_1a66e45a6d02f3b6026f8dd99ff5d4653e" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>TwoPlates</name></member>
+      <member refid="classTwoPlates_1ac1dfa39d5a74aad3e53b12c4bbdcff4e" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>TwoPlates</name></member>
+      <member refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>type</name></member>
+      <member refid="classTwoPlates_1adb19dec8048029b06c6a65cf1d93e48c" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>vx</name></member>
+      <member refid="classTwoPlates_1a81a1227b97596c4b6b18c8ef2895f44b" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>vy</name></member>
+      <member refid="classTwoPlates_1ad88ce89c445cdb8a333e2dc8b1286550" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>vz</name></member>
+      <member refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>widget</name></member>
+      <member refid="classTwoPlates_1af60449c834d8ac116206c162c61cc829" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>width</name></member>
+      <member refid="classTwoPlates_1a1d72728b08b160048e68c2f8faac309f" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>x</name></member>
+      <member refid="classTwoPlates_1a11af5c6151378ee12e2e203a522689db" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>y</name></member>
+      <member refid="classTwoPlates_1a83dbc696598622d32c10b67af9879f72" prot="private" virt="non-virtual"><scope>TwoPlates</scope><name>z</name></member>
+      <member refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" prot="protected" virt="non-virtual"><scope>TwoPlates</scope><name>z0</name></member>
+      <member refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" prot="public" virt="virtual"><scope>TwoPlates</scope><name>~Geometry</name></member>
+      <member refid="classTwoPlates_1af74b10840a05812ceb5aa94ceb7a76f6" prot="public" virt="non-virtual"><scope>TwoPlates</scope><name>~TwoPlates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structlmx_1_1HarwellBoeing__IO" kind="struct" prot="public">
+    <compoundname>lmx::HarwellBoeing_IO</compoundname>
+    <includes refid="lmx__base__iohb_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1ae1b53ffe6d25127bef8c1811ceed02ae" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* lmx::HarwellBoeing_IO::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="133" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a4fd91ccd97d72295bf5a8c7166cf2861" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Title[73]</definition>
+        <argsstring>[73]</argsstring>
+        <name>Title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="134" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1accccb3b5b6b412cb7d91da7eae491a67" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Key[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>Key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="134" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a12f3ae2e20eed7c19a4566eecb7235b3" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Rhstype[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>Rhstype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="134" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a34e82b849f5491fc49a6bb3e1cf8a23c" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Type[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="134" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a64143685e59d73b330f55192dd8f21e5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Nrow</definition>
+        <argsstring></argsstring>
+        <name>Nrow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="135" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1ad397b9e77c921dbd32e2ee11d85e115c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Ncol</definition>
+        <argsstring></argsstring>
+        <name>Ncol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="135" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1ae87ce77d8d991a86a1510e8ee59c2817" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Nnzero</definition>
+        <argsstring></argsstring>
+        <name>Nnzero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="135" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a3eadf0c4b141f942bca8f60b88c53797" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Nrhs</definition>
+        <argsstring></argsstring>
+        <name>Nrhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="135" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a91f6b9d1749e044a1dc63ef837fb024b" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Ptrfmt[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>Ptrfmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="136" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a883cb174191fc1e22d55c48668f8a772" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Indfmt[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>Indfmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="136" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a04a28dc595c1cdeebba51116e09e5593" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Valfmt[21]</definition>
+        <argsstring>[21]</argsstring>
+        <name>Valfmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="136" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1acf452a9ca694432cb550cec8c3cc6c87" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::HarwellBoeing_IO::Rhsfmt[21]</definition>
+        <argsstring>[21]</argsstring>
+        <name>Rhsfmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="136" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1adb6ed843f3a36e4ff7d91591b8f4442c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Ptrcrd</definition>
+        <argsstring></argsstring>
+        <name>Ptrcrd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="137" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1aa709f4448e23c1cb9358e7e4596e5dca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Indcrd</definition>
+        <argsstring></argsstring>
+        <name>Indcrd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="137" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1aa7808711b0cb5e82600ef609a85aa022" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Valcrd</definition>
+        <argsstring></argsstring>
+        <name>Valcrd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="137" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1a1826fb99176d0c22109561c0034c31d8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::Rhscrd</definition>
+        <argsstring></argsstring>
+        <name>Rhscrd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="137" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmx_1_1HarwellBoeing__IO_1ad552f59798ea8597c45144a48ce5ec6c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::lcount</definition>
+        <argsstring></argsstring>
+        <name>lcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="138" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structlmx_1_1HarwellBoeing__IO_1a9365773028f2f2824679b634240680a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::HarwellBoeing_IO::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="141" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="141" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="structlmx_1_1HarwellBoeing__IO_1aa0c780ccc0f50c7141488bd13536f5ec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::HarwellBoeing_IO::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="147" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="147" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="structlmx_1_1HarwellBoeing__IO_1a6de895166888d46a86a983c2d0c85652" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* lmx::HarwellBoeing_IO::getline</definition>
+        <argsstring>(char *buf)</argsstring>
+        <name>getline</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="157" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="157" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="structlmx_1_1HarwellBoeing__IO_1aa1a6c6478709917fd4ee29528e604551" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::substrtoi</definition>
+        <argsstring>(const char *p, size_type len)</argsstring>
+        <name>substrtoi</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="165" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="165" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="structlmx_1_1HarwellBoeing__IO_1ac938417dd6b0d131250867c7fc9402d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lmx::HarwellBoeing_IO::substrtod</definition>
+        <argsstring>(const char *p, size_type len, int Valflag)</argsstring>
+        <name>substrtod</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Valflag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="174" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="174" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="structlmx_1_1HarwellBoeing__IO_1a122b2725f212cfddcda499f94b7f2c95" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IND_TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int lmx::HarwellBoeing_IO::readHB_data</definition>
+        <argsstring>(IND_TYPE colptr[], IND_TYPE rowind[], double val[])</argsstring>
+        <name>readHB_data</name>
+        <param>
+          <type>IND_TYPE</type>
+          <declname>colptr</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>IND_TYPE</type>
+          <declname>rowind</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="195" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="195" bodyend="277"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>matrix input/output for Harwell-Boeing format </para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" line="96" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_iohb.h" bodystart="95" bodyend="278"/>
+    <listofallmembers>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1aa0c780ccc0f50c7141488bd13536f5ec" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>clear</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a9365773028f2f2824679b634240680a4" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>close</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1ae1b53ffe6d25127bef8c1811ceed02ae" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>f</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a6de895166888d46a86a983c2d0c85652" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>getline</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1aa709f4448e23c1cb9358e7e4596e5dca" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Indcrd</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a883cb174191fc1e22d55c48668f8a772" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Indfmt</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1accccb3b5b6b412cb7d91da7eae491a67" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Key</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1ad552f59798ea8597c45144a48ce5ec6c" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>lcount</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1ad397b9e77c921dbd32e2ee11d85e115c" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Ncol</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1ae87ce77d8d991a86a1510e8ee59c2817" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Nnzero</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a3eadf0c4b141f942bca8f60b88c53797" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Nrhs</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a64143685e59d73b330f55192dd8f21e5" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Nrow</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1adb6ed843f3a36e4ff7d91591b8f4442c" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Ptrcrd</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a91f6b9d1749e044a1dc63ef837fb024b" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Ptrfmt</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a122b2725f212cfddcda499f94b7f2c95" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>readHB_data</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a1826fb99176d0c22109561c0034c31d8" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Rhscrd</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1acf452a9ca694432cb550cec8c3cc6c87" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Rhsfmt</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a12f3ae2e20eed7c19a4566eecb7235b3" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Rhstype</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1ac938417dd6b0d131250867c7fc9402d6" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>substrtod</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1aa1a6c6478709917fd4ee29528e604551" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>substrtoi</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a4fd91ccd97d72295bf5a8c7166cf2861" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Title</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a34e82b849f5491fc49a6bb3e1cf8a23c" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Type</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1aa7808711b0cb5e82600ef609a85aa022" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Valcrd</name></member>
+      <member refid="structlmx_1_1HarwellBoeing__IO_1a04a28dc595c1cdeebba51116e09e5593" prot="private" virt="non-virtual"><scope>lmx::HarwellBoeing_IO</scope><name>Valfmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

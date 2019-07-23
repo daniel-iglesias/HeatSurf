@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Type__gmmVector__sparse" kind="class" prot="public">
+    <compoundname>lmx::Type_gmmVector_sparse</compoundname>
+    <basecompoundref refid="classlmx_1_1Data__vec" prot="public" virt="non-virtual">lmx::Data_vec&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__mat__type__gmmvector__sparse1_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1Type__gmmVector__sparse_1af181fd806d7693bee17247296906a945" prot="private" static="no" mutable="no">
+        <type>gmm::wsvector&lt; T &gt;</type>
+        <definition>gmm::wsvector&lt;T&gt; lmx::Type_gmmVector_sparse&lt; T &gt;::contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> data contents </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1aca5ef746e665f2cbceab490b784aeffe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_gmmVector_sparse&lt; T &gt;::Type_gmmVector_sparse</definition>
+        <argsstring>()</argsstring>
+        <name>Type_gmmVector_sparse</name>
+        <briefdescription>
+<para>Empty constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a1046b257443dfce605e0b381d1dc2916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_gmmVector_sparse&lt; T &gt;::Type_gmmVector_sparse</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>Type_gmmVector_sparse</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>rows</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>columns</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. Creates a new object with parameter contents resized to (columns) dimension. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size of dense stdVector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="253" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1af8b97536724aa2b7a4290411bfb32ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_gmmVector_sparse&lt; T &gt;::Type_gmmVector_sparse</definition>
+        <argsstring>(char *input_file)</argsstring>
+        <name>Type_gmmVector_sparse</name>
+        <param>
+          <type>char *</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor from a data file. Creates a new object reading data from a file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of file to read from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1abc2ed5b7b7f1ce44f263b72431c22211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_gmmVector_sparse&lt; T &gt;::~Type_gmmVector_sparse</definition>
+        <argsstring>()</argsstring>
+        <name>~Type_gmmVector_sparse</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a4ce5a2d661451dfad3d61dcd6cceaa66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::resize</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>resize</name>
+        <reimplements refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc">resize</reimplements>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>mrows</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>ncolumns</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize method. Changes the size of the contents parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value for size of <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="268" bodyend="271"/>
+        <referencedby refid="classlmx_1_1Type__gmmVector__sparse_1a8cdbdf44a2366bf9233fbee879e72e6e" compoundref="lmx__mat__type__gmmvector__sparse1_8h" startline="174" endline="198">lmx::Type_gmmVector_sparse&lt; T &gt;::readDataFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1ac0079f08940635a93f1158727deb3049" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; lmx::Type_gmmVector_sparse&lt; T &gt;::readElement</definition>
+        <argsstring>(const size_type &amp;mrows, const size_type &amp;ncolumns) const </argsstring>
+        <name>readElement</name>
+        <reimplements refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">readElement</reimplements>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>mrows</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>ncolumns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read element method. Implements a method for reading data of the sparse matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position in sparse matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the element in the position given by the parameters. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1ad5041be88871fcb7fc0f78303e184c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::writeElement</definition>
+        <argsstring>(T value, const size_type &amp;mrows, const size_type &amp;ncolumns)</argsstring>
+        <name>writeElement</name>
+        <reimplements refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">writeElement</reimplements>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>mrows</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>ncolumns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write element method. Implements a method for writing data on the sparse matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numerical type value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="87" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="87" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a2362b786de94b584ee30b07b5a6e2951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::addElement</definition>
+        <argsstring>(T value, const size_type &amp;mrows, const size_type &amp;ncolumns)</argsstring>
+        <name>addElement</name>
+        <reimplements refid="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a">addElement</reimplements>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>mrows</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>ncolumns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add element method. Implements a method for adding data on the Harwell-Boeing matrix. Copy-pasted from writeElement. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numerical type value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="96" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="96" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a6998599dcc3097907717f5d7616f4ae3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Type_gmmVector_sparse&lt; T &gt;::getRows</definition>
+        <argsstring>() const </argsstring>
+        <name>getRows</name>
+        <reimplements refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">getRows</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for knowing the number of data rows. <simplesect kind="return"><para>Number of rows. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="102" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="102" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1aac929b84c92b84e9d9ed7476ca2d24a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Type_gmmVector_sparse&lt; T &gt;::getCols</definition>
+        <argsstring>() const </argsstring>
+        <name>getCols</name>
+        <reimplements refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">getCols</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for knowing the number of data columns. <simplesect kind="return"><para>Number of columns. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="108" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="108" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1ad40a2793840d2053fce15b017524e4d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::equals</definition>
+        <argsstring>(const Data&lt; T &gt; *vector_in)</argsstring>
+        <name>equals</name>
+        <reimplements refid="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356">equals</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>vector_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy method. Equals the data in the object&apos;s contents to those given by the input vector&apos;s parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="114" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="114" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1ac309aa177fd30def4598b3f19884a397" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::add</definition>
+        <argsstring>(const Data&lt; T &gt; *vector_in_1)</argsstring>
+        <name>add</name>
+        <reimplements refid="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a">add</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>vector_in_1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add method. Adds the the input vector parameter&apos;s elements to the object&apos;s contents. Necessary for overloading the &quot;+=&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_in_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="121" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a9f916d35ddafd3328d6c1a75372b3e2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::substract</definition>
+        <argsstring>(const Data&lt; T &gt; *vector_in_1)</argsstring>
+        <name>substract</name>
+        <reimplements refid="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d">substract</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>vector_in_1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Substract method. Substracts the the input vector parameter&apos;s elements to the object&apos;s contents. Necessary for overloading the &quot;-=&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_in_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="128" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1ad6a694c0ff2c910c2c34b02ba6455450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::multiplyScalar</definition>
+        <argsstring>(const T &amp;scalar)</argsstring>
+        <name>multiplyScalar</name>
+        <reimplements refid="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262">multiplyScalar</reimplements>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiply scalar method. Multiplies the object&apos;s vector (contents) with a scalar. Necessary for overloading the &quot;*&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A scalar factor of template&apos;s class. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="138" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1ad122828c2ec742370534f19f5b86ee88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::multiplyElements</definition>
+        <argsstring>(const Data&lt; T &gt; *vector_in)</argsstring>
+        <name>multiplyElements</name>
+        <reimplements refid="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860">multiplyElements</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>vector_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method multiplying element-by-element of two arrays. One would be the object&apos;s contents and the other the parameter&apos;s contents. Necessary for implementing <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> to <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> multElements. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="146" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="146" bodyend="150"/>
+        <references refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">lmx::Data&lt; T &gt;::readElement</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a6f9b445388c349959ecbf7c89b2b120c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::cleanBelow</definition>
+        <argsstring>(const double factor)</argsstring>
+        <name>cleanBelow</name>
+        <reimplements refid="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845">cleanBelow</reimplements>
+        <param>
+          <type>const double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Traspose method. Swaps elements with respect to the diagonal: A(i,j) = A(j,i) Clean below method. Makes equal to zero every element below given factor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference value for cleaning. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="165" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a8cdbdf44a2366bf9233fbee879e72e6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::readDataFile</definition>
+        <argsstring>(const char *input_file)</argsstring>
+        <name>readDataFile</name>
+        <reimplements refid="classlmx_1_1Data__vec_1a32d6a9d26eb14ceec99e0ee0b6b33f47">readDataFile</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data method. Opens the file specified and reads the vector&apos;s data in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="174" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="174" bodyend="198"/>
+        <references refid="classlmx_1_1Type__gmmVector__sparse_1a4ce5a2d661451dfad3d61dcd6cceaa66" compoundref="lmx__mat__type__gmmvector__sparse1_8h" startline="268" endline="271">lmx::Type_gmmVector_sparse&lt; T &gt;::resize</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a73766d175f2014fbe6d4497b1856edec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::writeDataFile</definition>
+        <argsstring>(const char *output_file)</argsstring>
+        <name>writeDataFile</name>
+        <reimplements refid="classlmx_1_1Data__vec_1a2df91dd20f0a882dffe0872110dfeb7f">writeDataFile</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>output_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data method. Opens the file specified and writes the vector&apos;s data in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="205" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="205" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a12581391ae3eece7b87ebebfdaa59e9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <reimplements refid="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb">clear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear method. Wipes all data. </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> data contents. </para>        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="221" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a9c5345694e2e77e88858a773c69983b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_gmmVector_sparse&lt; T &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplements refid="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="230" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__gmmVector__sparse_1a377f0060298ceebdfbf91755b9532a91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>gmm::wsvector&lt; T &gt; *</type>
+        <definition>gmm::wsvector&lt;T&gt;* lmx::Type_gmmVector_sparse&lt; T &gt;::data_pointer</definition>
+        <argsstring>()</argsstring>
+        <name>data_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Data" kindref="compound">Data</ref> pointer method Gives the direction in memory of (pointer to) the object. <simplesect kind="return"><para>A pointer to the vector&apos;s contents (<ref refid="classlmx_1_1Type__gmmVector__sparse" kindref="compound">Type_gmmVector_sparse</ref>). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="240" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="240" bodyend="241"/>
+        <referencedby refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" compoundref="lmx__linsolvers__system_8h" startline="517" endline="957">lmx::LinearSystem&lt; T &gt;::solveYourself</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Type__gmmVector__sparse" kindref="compound">Type_gmmVector_sparse</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements the methods defined in virtual class data_mat so the <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> type &quot;std::vector&quot; can be used in lmx. For details about the caracteristics of this matrix type, see the STL library manual and code.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Corresponds to a std::vector and it&apos;s the base of the methods implemented for this class.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="475">
+        <label>lmx::Data_vec&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__vec"/>
+        <childnode refid="476" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>lmx::Type_gmmVector_sparse&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmmVector__sparse"/>
+        <childnode refid="475" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="478">
+        <label>lmx::Data_vec&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__vec"/>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>lmx::Type_gmmVector_sparse&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmmVector__sparse"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" line="53" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_gmmvector_sparse1.h" bodystart="52" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1ac309aa177fd30def4598b3f19884a397" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>add</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a2362b786de94b584ee30b07b5a6e2951" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>addElement</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a6f9b445388c349959ecbf7c89b2b120c" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>cleanBelow</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a12581391ae3eece7b87ebebfdaa59e9d" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>clear</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1af181fd806d7693bee17247296906a945" prot="private" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>contents</name></member>
+      <member refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>Data</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a377f0060298ceebdfbf91755b9532a91" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>data_pointer</name></member>
+      <member refid="classlmx_1_1Data__vec_1a4df811d60407578d5c83a43030e604f1" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>Data_vec</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1ad40a2793840d2053fce15b017524e4d7" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>equals</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1aac929b84c92b84e9d9ed7476ca2d24a2" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>getCols</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a6998599dcc3097907717f5d7616f4ae3" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>getRows</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1ad122828c2ec742370534f19f5b86ee88" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>multiplyElements</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1ad6a694c0ff2c910c2c34b02ba6455450" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>multiplyScalar</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a8cdbdf44a2366bf9233fbee879e72e6e" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>readDataFile</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1ac0079f08940635a93f1158727deb3049" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>readElement</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a9c5345694e2e77e88858a773c69983b9" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>reset</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a4ce5a2d661451dfad3d61dcd6cceaa66" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>resize</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a9f916d35ddafd3328d6c1a75372b3e2a" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>substract</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1aca5ef746e665f2cbceab490b784aeffe" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>Type_gmmVector_sparse</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a1046b257443dfce605e0b381d1dc2916" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>Type_gmmVector_sparse</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1af8b97536724aa2b7a4290411bfb32ade" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>Type_gmmVector_sparse</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1a73766d175f2014fbe6d4497b1856edec" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>writeDataFile</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1ad5041be88871fcb7fc0f78303e184c13" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>writeElement</name></member>
+      <member refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>~Data</name></member>
+      <member refid="classlmx_1_1Data__vec_1a956beb5c5795e66ef418d7fabab3f578" prot="public" virt="virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>~Data_vec</name></member>
+      <member refid="classlmx_1_1Type__gmmVector__sparse_1abc2ed5b7b7f1ce44f263b72431c22211" prot="public" virt="non-virtual"><scope>lmx::Type_gmmVector_sparse</scope><name>~Type_gmmVector_sparse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

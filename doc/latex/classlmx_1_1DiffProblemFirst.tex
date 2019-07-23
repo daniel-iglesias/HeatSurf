@@ -1,0 +1,249 @@
+\hypertarget{classlmx_1_1DiffProblemFirst}{\section{lmx\-:\-:Diff\-Problem\-First$<$ Sys, T $>$ Class Template Reference}
+\label{classlmx_1_1DiffProblemFirst}\index{lmx\-::\-Diff\-Problem\-First$<$ Sys, T $>$@{lmx\-::\-Diff\-Problem\-First$<$ Sys, T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1DiffProblemFirst}{Diff\-Problem\-First}. Implementation for First Order O\-D\-E system solvers.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-diff\-\_\-problem\-\_\-first.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Diff\-Problem\-First$<$ Sys, T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classlmx_1_1DiffProblemFirst__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Diff\-Problem\-First$<$ Sys, T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classlmx_1_1DiffProblemFirst__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1DiffProblemFirst_aaf0fde08317bd8971b7459ef16849608}{Diff\-Problem\-First} ()
+\item 
+\hyperlink{classlmx_1_1DiffProblemFirst_adaaf9fbfa61386b0cb8b4663d59a8730}{$\sim$\-Diff\-Problem\-First} ()
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_ae53840b52a86da742f8876c3ce9d84e5}{set\-Residue} (void(Sys\-::$\ast$residue\-\_\-in)(\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&residue, const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q, const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&qdot, double time))
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_ad92bfc9ce19b1d9dde21174b8293ee87}{set\-Jacobian} (void(Sys\-::$\ast$jacobian\-\_\-in)(\hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix}$<$ T $>$ \&tangent, const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q, double partial\-\_\-qdot, double time))
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a89d10f2e411120f28b018373dc71cabd}{set\-Evaluation} (void(Sys\-::$\ast$eval\-\_\-in)(const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&qdot, double time))
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_ab27dd5720adba4e053df6466475f26c6}{set\-Convergence} (double eps\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a385369f5042104f942a424c265cd0e48}{set\-Convergence} (bool(Sys\-::$\ast$convergence)(const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q, const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&qdot, double time))
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a511df5ff67cf74cf91889c0f0583f611}{set\-Step\-Triggered} (void(Sys\-::$\ast$step\-Triggered\-\_\-in)())
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a535b9ed53d511d0cce05279e19505e3f}{iteration\-Residue} (\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&residue, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q\-\_\-current)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a41a1e8c20fd4ef8aff4202f895be8b51}{iteration\-Jacobian} (\hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix}$<$ T $>$ \&jacobian, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q\-\_\-current)
+\item 
+bool \hyperlink{classlmx_1_1DiffProblemFirst_afa938181b5a6cfeee0b9584ae22f1756}{iteration\-Convergence} (\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q\-\_\-current)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_ac08b98b65d0eabe6ab28536fa5ab14f7}{initialize} ()
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a9f49697369b6d27dc281b17626ddcd54}{solve} ()
+\item 
+void \hyperlink{classlmx_1_1DiffProblemFirst_a95a3a5d4f23d727859f20f58b9f345ba}{step\-Solve} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Sys, typename T = double$>$class lmx\-::\-Diff\-Problem\-First$<$ Sys, T $>$}
+
+Template class \hyperlink{classlmx_1_1DiffProblemFirst}{Diff\-Problem\-First}. Implementation for First Order O\-D\-E system solvers. 
+
+This class implements methods for defining and solving initial value problems described by a Total\-Diff class' derivided object, and initial conditions in the form $ q(t_o) = q_o $.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1DiffProblemFirst_aaf0fde08317bd8971b7459ef16849608}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!Diff\-Problem\-First@{Diff\-Problem\-First}}
+\index{Diff\-Problem\-First@{Diff\-Problem\-First}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{Diff\-Problem\-First}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::{\bf Diff\-Problem\-First} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemFirst_aaf0fde08317bd8971b7459ef16849608}
+Empty constructor. \hypertarget{classlmx_1_1DiffProblemFirst_adaaf9fbfa61386b0cb8b4663d59a8730}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!$\sim$\-Diff\-Problem\-First@{$\sim$\-Diff\-Problem\-First}}
+\index{$\sim$\-Diff\-Problem\-First@{$\sim$\-Diff\-Problem\-First}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{$\sim$\-Diff\-Problem\-First}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::$\sim${\bf Diff\-Problem\-First} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemFirst_adaaf9fbfa61386b0cb8b4663d59a8730}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1DiffProblemFirst_ac08b98b65d0eabe6ab28536fa5ab14f7}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!initialize@{initialize}}
+\index{initialize@{initialize}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1DiffProblemFirst_ac08b98b65d0eabe6ab28536fa5ab14f7}
+Initialize solving function 
+
+Implements \hyperlink{classlmx_1_1DiffProblem_a63b0e232de28374afb9bb3b1389f689a}{lmx\-::\-Diff\-Problem$<$ Sys, T $>$}.
+
+\hypertarget{classlmx_1_1DiffProblemFirst_afa938181b5a6cfeee0b9584ae22f1756}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!iteration\-Convergence@{iteration\-Convergence}}
+\index{iteration\-Convergence@{iteration\-Convergence}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{iteration\-Convergence}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ bool {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::iteration\-Convergence (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{q\-\_\-current}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_afa938181b5a6cfeee0b9584ae22f1756}
+Function for \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} convergence evaluation. 
+\begin{DoxyParams}{Parameters}
+{\em q\-\_\-current} & \hyperlink{classlmx_1_1Configuration}{Configuration} computed by the \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_a41a1e8c20fd4ef8aff4202f895be8b51}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!iteration\-Jacobian@{iteration\-Jacobian}}
+\index{iteration\-Jacobian@{iteration\-Jacobian}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{iteration\-Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::iteration\-Jacobian (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Matrix}$<$ T $>$ \&}]{jacobian, }
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{q\-\_\-current}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_a41a1e8c20fd4ef8aff4202f895be8b51}
+Function for \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} jacobian computation. 
+\begin{DoxyParams}{Parameters}
+{\em jacobian} & Tangent matrix. \\
+\hline
+{\em q\-\_\-current} & \hyperlink{classlmx_1_1Configuration}{Configuration} computed by the \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_a535b9ed53d511d0cce05279e19505e3f}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!iteration\-Residue@{iteration\-Residue}}
+\index{iteration\-Residue@{iteration\-Residue}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{iteration\-Residue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::iteration\-Residue (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{residue, }
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{q\-\_\-current}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_a535b9ed53d511d0cce05279e19505e3f}
+Function for \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} residue computation. 
+\begin{DoxyParams}{Parameters}
+{\em residue} & Residue vector. \\
+\hline
+{\em q\-\_\-current} & \hyperlink{classlmx_1_1Configuration}{Configuration} computed by the \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_ab27dd5720adba4e053df6466475f26c6}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!set\-Convergence@{set\-Convergence}}
+\index{set\-Convergence@{set\-Convergence}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{set\-Convergence}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::set\-Convergence (
+\begin{DoxyParamCaption}
+\item[{double}]{eps\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemFirst_ab27dd5720adba4e053df6466475f26c6}
+Backward resolution of mother function. 
+\begin{DoxyParams}{Parameters}
+{\em L2} & norm maximum residual. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::\-Diff\-Problem$<$ Sys, T $>$\-::set\-Convergence().
+
+\hypertarget{classlmx_1_1DiffProblemFirst_a385369f5042104f942a424c265cd0e48}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!set\-Convergence@{set\-Convergence}}
+\index{set\-Convergence@{set\-Convergence}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{set\-Convergence}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::set\-Convergence (
+\begin{DoxyParamCaption}
+\item[{bool(Sys\-::$\ast$)(const {\bf lmx\-::\-Vector}$<$ T $>$ \&q, const {\bf lmx\-::\-Vector}$<$ T $>$ \&qdot, double time)}]{conv\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_a385369f5042104f942a424c265cd0e48}
+Sets the external function that implements a different convergence criteria from those available in L\-M\-X. Must be a Sys member function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conv\-\_\-in} & The convergence evaluation function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_a89d10f2e411120f28b018373dc71cabd}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!set\-Evaluation@{set\-Evaluation}}
+\index{set\-Evaluation@{set\-Evaluation}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{set\-Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::set\-Evaluation (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)(const {\bf lmx\-::\-Vector}$<$ T $>$ \&q, {\bf lmx\-::\-Vector}$<$ T $>$ \&qdot, double time)}]{eval\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_a89d10f2e411120f28b018373dc71cabd}
+Sets the external (first order configuration) evaluation function. Must be a Sys member function. 
+\begin{DoxyParams}{Parameters}
+{\em eval\-\_\-in} & The acceleration function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_ad92bfc9ce19b1d9dde21174b8293ee87}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!set\-Jacobian@{set\-Jacobian}}
+\index{set\-Jacobian@{set\-Jacobian}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{set\-Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::set\-Jacobian (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)({\bf lmx\-::\-Matrix}$<$ T $>$ \&tangent, const {\bf lmx\-::\-Vector}$<$ T $>$ \&q, double partial\-\_\-qdot, double time)}]{jacobian\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_ad92bfc9ce19b1d9dde21174b8293ee87}
+Sets the external function for tangent to q. Must be a Sys member function. \-:\-::change documentation\-:\-:\-: 
+\begin{DoxyParams}{Parameters}
+{\em jacobian\-\_\-in} & Tangent function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_ae53840b52a86da742f8876c3ce9d84e5}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!set\-Residue@{set\-Residue}}
+\index{set\-Residue@{set\-Residue}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{set\-Residue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::set\-Residue (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)({\bf lmx\-::\-Vector}$<$ T $>$ \&residue, const {\bf lmx\-::\-Vector}$<$ T $>$ \&q, const {\bf lmx\-::\-Vector}$<$ T $>$ \&qdot, double time)}]{residue\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_ae53840b52a86da742f8876c3ce9d84e5}
+Sets the external function for residue evaluation. Must be a Sys member function. 
+\begin{DoxyParams}{Parameters}
+{\em residue\-\_\-in} & Residue function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemFirst_a511df5ff67cf74cf91889c0f0583f611}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!set\-Step\-Triggered@{set\-Step\-Triggered}}
+\index{set\-Step\-Triggered@{set\-Step\-Triggered}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{set\-Step\-Triggered}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::set\-Step\-Triggered (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)()}]{step\-Triggered\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemFirst_a511df5ff67cf74cf91889c0f0583f611}
+Defines a function call between time steps. \hypertarget{classlmx_1_1DiffProblemFirst_a9f49697369b6d27dc281b17626ddcd54}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!solve@{solve}}
+\index{solve@{solve}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1DiffProblemFirst_a9f49697369b6d27dc281b17626ddcd54}
+Solve main function 
+
+Implements \hyperlink{classlmx_1_1DiffProblem_a287dc44a62a249feb8855bd10098ecac}{lmx\-::\-Diff\-Problem$<$ Sys, T $>$}.
+
+\hypertarget{classlmx_1_1DiffProblemFirst_a95a3a5d4f23d727859f20f58b9f345ba}{\index{lmx\-::\-Diff\-Problem\-First@{lmx\-::\-Diff\-Problem\-First}!step\-Solve@{step\-Solve}}
+\index{step\-Solve@{step\-Solve}!lmx::DiffProblemFirst@{lmx\-::\-Diff\-Problem\-First}}
+\subsubsection[{step\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-First}$<$ Sys, T $>$\-::step\-Solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1DiffProblemFirst_a95a3a5d4f23d727859f20f58b9f345ba}
+Solve only one step 
+
+Implements \hyperlink{classlmx_1_1DiffProblem_a81e9c22909edbe06b00210c6b2caac58}{lmx\-::\-Diff\-Problem$<$ Sys, T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__diff__problem__first_8h}{lmx\-\_\-diff\-\_\-problem\-\_\-first.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{classlmx_1_1Gesv}{\section{lmx\-:\-:Gesv$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Gesv}\index{lmx\-::\-Gesv$<$ T $>$@{lmx\-::\-Gesv$<$ T $>$}}
+}
+
+
+Template class for lapack ?gesv routine.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-linsolvers\-\_\-lapack.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Gesv_ab356e79c38de4c7a8e2ce96ffb57d168}{Gesv} ()
+\item 
+\hyperlink{classlmx_1_1Gesv_a158ad000c6d51dc107fa33043e8e9c24}{Gesv} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ $\ast$, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ $\ast$, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ $\ast$)
+\item 
+\hyperlink{classlmx_1_1Gesv_ae7e96df048df537bad3274b358f3876c}{$\sim$\-Gesv} ()
+\item 
+void \hyperlink{classlmx_1_1Gesv_ab1258532e8cecfca1c2fe8fad913bf4d}{solve} ()
+\item 
+{\footnotesize template$<$$>$ }\\void \hyperlink{classlmx_1_1Gesv_a2234bdb4da0bddaac06aca68e134f8df}{solve} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Gesv$<$ T $>$}
+
+Template class for lapack ?gesv routine. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Gesv_ab356e79c38de4c7a8e2ce96ffb57d168}{\index{lmx\-::\-Gesv@{lmx\-::\-Gesv}!Gesv@{Gesv}}
+\index{Gesv@{Gesv}!lmx::Gesv@{lmx\-::\-Gesv}}
+\subsubsection[{Gesv}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf lmx\-::\-Gesv}$<$ T $>$\-::{\bf Gesv} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Gesv_ab356e79c38de4c7a8e2ce96ffb57d168}
+Empty constructor. \hypertarget{classlmx_1_1Gesv_a158ad000c6d51dc107fa33043e8e9c24}{\index{lmx\-::\-Gesv@{lmx\-::\-Gesv}!Gesv@{Gesv}}
+\index{Gesv@{Gesv}!lmx::Gesv@{lmx\-::\-Gesv}}
+\subsubsection[{Gesv}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Gesv}$<$ T $>$\-::{\bf Gesv} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ $\ast$}]{a\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ $\ast$}]{x\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ $\ast$}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Gesv_a158ad000c6d51dc107fa33043e8e9c24}
+Standard constructor. 
+\begin{DoxyParams}{Parameters}
+{\em a\-\_\-in} & Pointer to \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+{\em x\-\_\-in} & Pointer to solution \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+{\em b\-\_\-in} & Pointer to rhs \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::read\-Element().
+
+\hypertarget{classlmx_1_1Gesv_ae7e96df048df537bad3274b358f3876c}{\index{lmx\-::\-Gesv@{lmx\-::\-Gesv}!$\sim$\-Gesv@{$\sim$\-Gesv}}
+\index{$\sim$\-Gesv@{$\sim$\-Gesv}!lmx::Gesv@{lmx\-::\-Gesv}}
+\subsubsection[{$\sim$\-Gesv}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Gesv}$<$ T $>$\-::$\sim${\bf Gesv} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Gesv_ae7e96df048df537bad3274b358f3876c}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Gesv_ab1258532e8cecfca1c2fe8fad913bf4d}{\index{lmx\-::\-Gesv@{lmx\-::\-Gesv}!solve@{solve}}
+\index{solve@{solve}!lmx::Gesv@{lmx\-::\-Gesv}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Gesv}$<$ T $>$\-::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Gesv_ab1258532e8cecfca1c2fe8fad913bf4d}
+Solve system \begin{DoxyReturn}{Returns}
+Reference to solution vector. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+
+
+Referenced by lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself().
+
+\hypertarget{classlmx_1_1Gesv_a2234bdb4da0bddaac06aca68e134f8df}{\index{lmx\-::\-Gesv@{lmx\-::\-Gesv}!solve@{solve}}
+\index{solve@{solve}!lmx::Gesv@{lmx\-::\-Gesv}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ void {\bf lmx\-::\-Gesv}$<$ double $>$\-::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Gesv_a2234bdb4da0bddaac06aca68e134f8df}
+Solve system, specialized for double data type. \begin{DoxyReturn}{Returns}
+Reference to solution vector. 
+\end{DoxyReturn}
+
+
+References dgesv\-\_\-().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__linsolvers__lapack_8h}{lmx\-\_\-linsolvers\-\_\-lapack.\-h}\end{DoxyCompactItemize}

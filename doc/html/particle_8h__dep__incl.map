@@ -1,5 +1,22 @@
-<area shape="rect" href="$geometry_8h.html" title="Represents each of the finite charged particles." alt="" coords="175,80,297,107">
-<area shape="rect" href="$simulation_8h.html" title="Pure conical geometry." alt="" coords="183,229,311,256">
-<area shape="rect" href="$cone_8h.html" title="Base class for the different geometries." alt="" coords="5,155,96,181">
-<area shape="rect" href="$cylinder_8h.html" title="Base class for the different geometries." alt="" coords="120,155,232,181">
-<area shape="rect" href="$twoplates_8h.html" title="Base class for the different geometries." alt="" coords="256,155,379,181">
+<map id="src/particle.h" name="src/particle.h">
+<area shape="rect" id="node2" href="$geometry_8h.html" title="Base class for the different geometries. " alt="" coords="501,80,608,107"/>
+<area shape="rect" id="node6" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="417,229,527,256"/>
+<area shape="rect" id="node21" href="$particle_8cpp.html" title="src/particle.cpp" alt="" coords="632,80,741,107"/>
+<area shape="rect" id="node3" href="$cone_8h.html" title="Pure conical geometry. " alt="" coords="941,155,1021,181"/>
+<area shape="rect" id="node9" href="$cone2_8h.html" title="src/cone2.h" alt="" coords="160,155,248,181"/>
+<area shape="rect" id="node12" href="$cylinder_8h.html" title="Pure cylindrical geometry. " alt="" coords="333,155,429,181"/>
+<area shape="rect" id="node14" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="692,155,812,181"/>
+<area shape="rect" id="node15" href="$ogive_8h.html" title="src/ogive.h" alt="" coords="455,155,537,181"/>
+<area shape="rect" id="node17" href="$twoplates_8h.html" title="Two symmetrical plates geometry. " alt="" coords="561,155,668,181"/>
+<area shape="rect" id="node19" href="$ring_8h.html" title="Anular geometry. " alt="" coords="836,155,911,181"/>
+<area shape="rect" id="node4" href="$cone_8cpp.html" title="src/cone.cpp" alt="" coords="1069,229,1163,256"/>
+<area shape="rect" id="node5" href="$cone2-bak_8h.html" title="src/cone2&#45;bak.h" alt="" coords="931,229,1044,256"/>
+<area shape="rect" id="node7" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="343,304,456,331"/>
+<area shape="rect" id="node8" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="481,304,607,331"/>
+<area shape="rect" id="node10" href="$cone2-bak_8cpp.html" title="src/cone2&#45;bak.cpp" alt="" coords="131,229,257,256"/>
+<area shape="rect" id="node11" href="$cone2_8cpp.html" title="src/cone2.cpp" alt="" coords="5,229,107,256"/>
+<area shape="rect" id="node13" href="$cylinder_8cpp.html" title="src/cylinder.cpp" alt="" coords="282,229,392,256"/>
+<area shape="rect" id="node16" href="$ogive_8cpp.html" title="src/ogive.cpp" alt="" coords="551,229,648,256"/>
+<area shape="rect" id="node18" href="$twoplates_8cpp.html" title="src/twoplates.cpp" alt="" coords="673,229,793,256"/>
+<area shape="rect" id="node20" href="$ring_8cpp.html" title="src/ring.cpp" alt="" coords="819,229,907,256"/>
+</map>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="cone_8cpp">cone.cpp</innerfile>
+    <innerfile refid="cone_8h">cone.h</innerfile>
+    <innerfile refid="cone2-bak_8cpp">cone2-bak.cpp</innerfile>
+    <innerfile refid="cone2-bak_8h">cone2-bak.h</innerfile>
+    <innerfile refid="cone2_8cpp">cone2.cpp</innerfile>
+    <innerfile refid="cone2_8h">cone2.h</innerfile>
+    <innerfile refid="cylinder_8cpp">cylinder.cpp</innerfile>
+    <innerfile refid="cylinder_8h">cylinder.h</innerfile>
+    <innerfile refid="element_8cpp">element.cpp</innerfile>
+    <innerfile refid="element_8h">element.h</innerfile>
+    <innerfile refid="geometry_8cpp">geometry.cpp</innerfile>
+    <innerfile refid="geometry_8h">geometry.h</innerfile>
+    <innerfile refid="heatsurf_8cpp">heatsurf.cpp</innerfile>
+    <innerfile refid="node_8cpp">node.cpp</innerfile>
+    <innerfile refid="node_8h">node.h</innerfile>
+    <innerfile refid="ogive_8cpp">ogive.cpp</innerfile>
+    <innerfile refid="ogive_8h">ogive.h</innerfile>
+    <innerfile refid="particle_8cpp">particle.cpp</innerfile>
+    <innerfile refid="particle_8h">particle.h</innerfile>
+    <innerfile refid="ring_8cpp">ring.cpp</innerfile>
+    <innerfile refid="ring_8h">ring.h</innerfile>
+    <innerfile refid="simulation_8cpp">simulation.cpp</innerfile>
+    <innerfile refid="simulation_8h">simulation.h</innerfile>
+    <innerfile refid="twoplates_8cpp">twoplates.cpp</innerfile>
+    <innerfile refid="twoplates_8h">twoplates.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__linsolvers__superlu__interface_8h" kind="file">
+    <compoundname>lmx_linsolvers_superlu_interface.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="yes">slu_ddefs.h</includes>
+    <incdepgraph>
+      <node id="4009">
+        <label>slu_ddefs.h</label>
+      </node>
+      <node id="4007">
+        <label>src/LMX/lmx_linsolvers_superlu_interface.h</label>
+        <link refid="lmx_linsolvers_superlu_interface.h"/>
+        <childnode refid="4008" relation="include">
+        </childnode>
+        <childnode refid="4009" relation="include">
+        </childnode>
+      </node>
+      <node id="4008">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classlmx_1_1Superlu" prot="public">lmx::Superlu</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+    <briefdescription>
+<para>Implementation of class Superlu for using this library linear solver. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SUPERLU_INTERFACE_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SUPERLU_INTERFACE_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;dsp_defs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;slu_ddefs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="52" refid="classlmx_1_1Superlu" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Superlu" kindref="compound">Superlu</ref>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>equed[1];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>yes_no_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>equil;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>trans_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trans;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>SuperMatrix<sp/><sp/><sp/><sp/>A,<sp/>A1,<sp/>L,<sp/>U;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>SuperMatrix<sp/><sp/><sp/><sp/>B,<sp/>B1,<sp/>X;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>SuperMatrix<sp/><sp/><sp/><sp/>A,<sp/>L,<sp/>U;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>SuperMatrix<sp/><sp/><sp/><sp/>B,<sp/>X;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>NCformat<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Astore;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>NCformat<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Ustore;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>SCformat<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Lstore;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>double<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*a,<sp/>*a1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*asub,<sp/>*xa,<sp/>*asub1,<sp/>*xa1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*a;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*asub,<sp/>*xa;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*perm_r;<sp/></highlight><highlight class="comment">/*<sp/>row<sp/>permutations<sp/>from<sp/>partial<sp/>pivoting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*perm_c;<sp/></highlight><highlight class="comment">/*<sp/>column<sp/>permutation<sp/>vector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*etree;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*work;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info,<sp/>lwork,<sp/>nrhs,<sp/>ldx;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i,<sp/>j,<sp/>m,<sp/>n,<sp/>nnz;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>double<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*rhsb,<sp/>*rhsb1,<sp/>*rhsx,<sp/>*xact;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*rhsb,<sp/>*rhsx,<sp/>*xact;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*R,<sp/>*C;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*ferr,<sp/>*berr;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u,<sp/>rpg,<sp/>rcond;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>mem_usage_t<sp/><sp/><sp/><sp/>mem_usage;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>superlu_options_t<sp/>options;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>SuperLUStat_t<sp/>stat;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;,<sp/>T<sp/>*,<sp/>T<sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*,<sp/>T<sp/>*,<sp/>T<sp/>*,<sp/>T<sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*,<sp/>T<sp/>*,<sp/>std::vector&lt;T&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;<sp/>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1ab0d48784ef7552c05279dd566ed59d04" kindref="member">~Superlu</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classlmx_1_1Superlu_1a450f46f145bbe53084ced59430b3ccec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a450f46f145bbe53084ced59430b3ccec" kindref="member">init</ref>(){<sp/><ref refid="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" kindref="member">initMatrix</ref>();<sp/><ref refid="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" kindref="member">initVectors</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" kindref="member">initMatrix</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" kindref="member">initVectors</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>void<sp/>reinit(size_type&amp;,<sp/>size_type&amp;,<sp/>size_type&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;size_type&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;,<sp/>std::vector&lt;T&gt;&amp;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a91e191a919f26888fb4fded4de8e477e" kindref="member">calc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1adb214bf9ef4ea3bce33011671f078df2" kindref="member">recalc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" kindref="member">get_solution</ref>(std::vector&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" kindref="member">get_solution</ref>(<ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1aa9a5857bcc40fab4933a916df751bedd" kindref="member">setVectors</ref>(<ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>b_in);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO<sp/>01/04/09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" kindref="member">setb</ref>(T<sp/>*);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" kindref="member">setb</ref>(std::vector&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a9e025d75b97197ea9b1700c3bad8fccd" kindref="member">setA</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>asub_in,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>xa_in,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>a_in<sp/>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1ae2e382f67055727a58919e43e27055f0" kindref="member">recalc1</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a2c3ec43812db1c7c2d9d09a0a41c9885" kindref="member">recalc2</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a24cc99c5023690b19e4512592153b0cf" kindref="member">factorize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a2bf4d209e3e5033f5e442289dc5cdb2a" kindref="member">subsSolve</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1ac5c29cc525a8deed07172d8950f9b95c" kindref="member">get_solutionB</ref>(std::vector&lt;T&gt;&amp;);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>superlu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="148" refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu&lt;T&gt;::Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>asub_in,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>xa_in,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>a_in)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>:<sp/>m(m_in),<sp/>n(n_in),<sp/>nnz(nnz_in)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>m_in<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>n_in<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>nnz_in<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(a<sp/>=<sp/>doubleMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>a[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(asub<sp/>=<sp/>intMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>asub[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(xa<sp/>=<sp/>intMalloc(n+1))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>xa[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnz;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>asub[i]<sp/>=<sp/>asub_in[i]<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n+1;<sp/>++i)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>xa[i]<sp/>=<sp/>xa_in[i]<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="180" refid="classlmx_1_1Superlu_1a1120b63d96216983b6708564a50681eb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu&lt;T&gt;::Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>asub_in,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>xa_in,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>a_in,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>x_in,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>b_in)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>:<sp/>m(m_in),<sp/>n(n_in),<sp/>nnz(nnz_in)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>m_in<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>n_in<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>nnz_in<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(a<sp/>=<sp/>doubleMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>a[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(asub<sp/>=<sp/>intMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>asub[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(xa<sp/>=<sp/>intMalloc(n+1))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>xa[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnz;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>asub[i]<sp/>=<sp/>asub_in[i]<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n+1;<sp/>++i)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>xa[i]<sp/>=<sp/>xa_in[i]<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(rhsx<sp/>=<sp/>doubleMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>rhsx[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(rhsb<sp/>=<sp/>doubleMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>rhsb[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhsx[i]<sp/>=<sp/>x_in[i];</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhsb[i]<sp/>=<sp/>b_in[i];</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>DEPRECATED:<sp/>TO<sp/>DELETE<sp/>WITH<sp/>CAUTION...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="223" refid="classlmx_1_1Superlu_1a2b2959dbac2e0a28b825562b9e22b843" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu&lt;T&gt;::Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>asub_in,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>xa_in,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>a_in,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>x_in,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>b_in)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>:<sp/>m(m_in),<sp/>n(n_in),<sp/>nnz(nnz_in)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(a<sp/>=<sp/>doubleMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>a[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(asub<sp/>=<sp/>intMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>asub[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(xa<sp/>=<sp/>intMalloc(n+1))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>xa[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnz;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>asub[i]<sp/>=<sp/>asub_in[i]<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n+1;<sp/>++i)<sp/><sp/>xa[i]<sp/>=<sp/>xa_in[i]<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(rhsx<sp/>=<sp/>doubleMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>rhsx[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(rhsb<sp/>=<sp/>doubleMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>rhsb[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhsx[i]<sp/>=<sp/>x_in[i];</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhsb[i]<sp/>=<sp/>b_in[i];</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DEPRECATED:<sp/>TO<sp/>DELETE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="264" refid="classlmx_1_1Superlu_1aa1a7e499e4e69e7ae9abaf9613ef955d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu&lt;T&gt;::Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*<sp/>asub_in,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*<sp/>xa_in,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*<sp/>a_in,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*<sp/>x_in,</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*<sp/>b_in)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>:<sp/>m(m_in),<sp/>n(n_in),<sp/>nnz(nnz_in)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(a<sp/>=<sp/>doubleMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>a[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(asub<sp/>=<sp/>intMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>asub[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(xa<sp/>=<sp/>intMalloc(n+1))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>xa[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnz;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>asub[i]<sp/>=<sp/>asub_in[i];</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n+1;<sp/>++i)</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>xa[i]<sp/>=<sp/>xa_in[i];</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>Guardar<sp/>b_in<sp/>y<sp/>x_in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>DEPRECATED:<sp/>TO<sp/>DELETE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="301" refid="classlmx_1_1Superlu_1a1fb4602b567b3279a04d881402a693d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" kindref="member">Superlu&lt;T&gt;::Superlu</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*<sp/>asub_in,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>*<sp/>xa_in,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*<sp/>a_in,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>x_in,</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>b_in)</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>:<sp/>m(m_in),<sp/>n(n_in),<sp/>nnz(nnz_in)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(a<sp/>=<sp/>doubleMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>a[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(asub<sp/>=<sp/>intMalloc(nnz))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>asub[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(xa<sp/>=<sp/>intMalloc(n+1))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>xa[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnz;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>asub[i]<sp/>=<sp/>asub_in[i];</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n+1;<sp/>++i)</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>xa[i]<sp/>=<sp/>xa_in[i];</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Guardar<sp/>b_in<sp/>y<sp/>x_in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="329" refid="classlmx_1_1Superlu_1ab0d48784ef7552c05279dd566ed59d04" refkind="member"><highlight class="normal"><ref refid="classlmx_1_1Superlu_1ab0d48784ef7552c05279dd566ed59d04" kindref="member">Superlu&lt;T&gt;::~Superlu</ref>()</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>StatFree(&amp;stat);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(xact);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(etree);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(perm_r);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(perm_c);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(R);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(C);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(ferr);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>SUPERLU_FREE<sp/>(berr);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>Destroy_CompCol_Matrix(&amp;A);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>Destroy_Dense_Matrix(&amp;B);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>Destroy_Dense_Matrix(&amp;X);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>lwork<sp/>&gt;=<sp/>0<sp/>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>Deallocate<sp/>storage<sp/>associated<sp/>with<sp/>L<sp/>and<sp/>U.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy_SuperNode_Matrix(&amp;L);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy_CompCol_Matrix(&amp;U);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="355" refid="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" kindref="member">Superlu&lt;T&gt;::initMatrix</ref>()</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#if<sp/>(<sp/>DEBUGlevel&gt;=1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>CHECK_MALLOC(&quot;Enter<sp/>main()&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Defaults<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>lwork<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>nrhs<sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>equil<sp/>=<sp/>YES;<sp/><sp/></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>u<sp/><sp/><sp/><sp/><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>trans<sp/>=<sp/>NOTRANS;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>default<sp/>input<sp/>options:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>options.Fact<sp/>=<sp/>DOFACT;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>options.Equil<sp/>=<sp/>YES;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>options.ColPerm<sp/>=<sp/>COLAMD;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>options.DiagPivotThresh<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>options.Trans<sp/>=<sp/>NOTRANS;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>options.IterRefine<sp/>=<sp/>NOREFINE;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>options.SymmetricMode<sp/>=<sp/>NO;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>options.PivotGrowth<sp/>=<sp/>NO;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>options.ConditionNumber<sp/>=<sp/>NO;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>options.PrintStat<sp/>=<sp/>YES;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>set_default_options(&amp;options);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>options.ColPerm<sp/>=<sp/>MMD_ATA;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>options.Equil<sp/>=<sp/>equil;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>options.DiagPivotThresh<sp/>=<sp/>u;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>options.Trans<sp/>=<sp/>trans;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>lwork<sp/>&gt;<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>work<sp/>=<sp/>SUPERLU_MALLOC(lwork);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!work<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ABORT(</highlight><highlight class="stringliteral">&quot;DLINSOLX:<sp/>cannot<sp/>allocate<sp/>work[]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>dCreate_CompCol_Matrix(&amp;A,<sp/>m,<sp/>n,<sp/>nnz,<sp/>a,<sp/>asub,<sp/>xa,<sp/>SLU_NC,<sp/>SLU_D,<sp/>SLU_GE);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Astore<sp/>=<sp/>A.Store;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>printf(&quot;Dimension<sp/>%dx%d;<sp/>#<sp/>nonzeros<sp/>%d\n&quot;,<sp/>A.nrow,<sp/>A.ncol,<sp/>Astore-&gt;nnz);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/>xact<sp/>=<sp/>doubleMalloc(n<sp/>*<sp/>nrhs);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/>ldx<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/>dGenXtrue(n,<sp/>nrhs,<sp/>xact,<sp/>ldx);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(perm_c<sp/>=<sp/>intMalloc(n))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>perm_c[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(perm_r<sp/>=<sp/>intMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>perm_r[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(etree<sp/>=<sp/>intMalloc(n))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>etree[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(R<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>SUPERLU_MALLOC(A.nrow<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)))<sp/>)<sp/></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>ABORT(</highlight><highlight class="stringliteral">&quot;SUPERLU_MALLOC<sp/>fails<sp/>for<sp/>R[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(C<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>SUPERLU_MALLOC(A.ncol<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)))<sp/>)</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>ABORT(</highlight><highlight class="stringliteral">&quot;SUPERLU_MALLOC<sp/>fails<sp/>for<sp/>C[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>statistics<sp/>variables.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/>StatInit(&amp;stat);</highlight></codeline>
+<codeline lineno="412"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="418" refid="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" kindref="member">Superlu&lt;T&gt;::initVectors</ref>()</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>dCreate_Dense_Matrix(&amp;B,<sp/>m,<sp/>nrhs,<sp/>rhsb,<sp/>m,<sp/>SLU_DN,<sp/>SLU_D,<sp/>SLU_GE);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>dCreate_Dense_Matrix(&amp;X,<sp/>m,<sp/>nrhs,<sp/>rhsx,<sp/>m,<sp/>SLU_DN,<sp/>SLU_D,<sp/>SLU_GE);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(ferr<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>SUPERLU_MALLOC(nrhs<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)))<sp/>)</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ABORT(</highlight><highlight class="stringliteral">&quot;SUPERLU_MALLOC<sp/>fails<sp/>for<sp/>ferr[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(berr<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>SUPERLU_MALLOC(nrhs<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)))<sp/>)<sp/></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ABORT(</highlight><highlight class="stringliteral">&quot;SUPERLU_MALLOC<sp/>fails<sp/>for<sp/>berr[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>statistics<sp/>variables.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>StatInit(&amp;stat);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="438" refid="classlmx_1_1Superlu_1a91e191a919f26888fb4fded4de8e477e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a91e191a919f26888fb4fded4de8e477e" kindref="member">Superlu&lt;T&gt;::calc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noisy)<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------</highlight></codeline>
+<codeline lineno="441"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WE<sp/>SOLVE<sp/>THE<sp/>LINEAR<sp/>SYSTEM<sp/>FOR<sp/>THE<sp/>FIRST<sp/>TIME:<sp/>AX<sp/>=<sp/>B</highlight></codeline>
+<codeline lineno="442"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>dgssv(&amp;options,<sp/>&amp;A,<sp/>perm_c,<sp/>perm_r,<sp/>&amp;L,<sp/>&amp;U,<sp/>&amp;B,<sp/>&amp;stat,<sp/>&amp;info);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/>dgssvx(&amp;options,<sp/>&amp;A,<sp/>perm_c,<sp/>perm_r,<sp/>etree,<sp/>equed,<sp/>R,<sp/>C,</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;L,<sp/>&amp;U,<sp/>work,<sp/>lwork,<sp/>&amp;B,<sp/>&amp;X,<sp/>&amp;rpg,<sp/>&amp;rcond,<sp/>ferr,<sp/>berr,</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;mem_usage,<sp/>&amp;stat,<sp/>&amp;info);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>printf(&quot;First<sp/>system:<sp/>dgssvx()<sp/>returns<sp/>info<sp/>%d\n&quot;,<sp/>info);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(noisy<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>info<sp/>==<sp/>0<sp/>||<sp/>info<sp/>==<sp/>n+1<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.PivotGrowth<sp/>)<sp/>printf(</highlight><highlight class="stringliteral">&quot;Recip.<sp/>pivot<sp/>growth<sp/>=<sp/>%e\n&quot;</highlight><highlight class="normal">,<sp/>rpg);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.ConditionNumber<sp/>)</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Recip.<sp/>condition<sp/>number<sp/>=<sp/>%e\n&quot;</highlight><highlight class="normal">,<sp/>rcond);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Lstore<sp/>=<sp/>(SCformat<sp/>*)<sp/>L.Store;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Ustore<sp/>=<sp/>(NCformat<sp/>*)<sp/>U.Store;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>of<sp/>nonzeros<sp/>in<sp/>factor<sp/>L<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>Lstore-&gt;nnz);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>of<sp/>nonzeros<sp/>in<sp/>factor<sp/>U<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>Ustore-&gt;nnz);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>of<sp/>nonzeros<sp/>in<sp/>L+U<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>Lstore-&gt;nnz<sp/>+<sp/>Ustore-&gt;nnz<sp/>-<sp/>n);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;L\\U<sp/>MB<sp/>%.3f\ttotal<sp/>MB<sp/>needed<sp/>%.3f\texpansions<sp/>%d\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mem_usage.for_lu/1e6,<sp/>mem_usage.total_needed/1e6,</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mem_usage.expansions);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.IterRefine<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Iterative<sp/>Refinement:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%8s%8s%16s%16s\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rhsb&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Steps&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FERR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BERR&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nrhs;<sp/>++i)</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%8d%8d%16e%16e\n&quot;</highlight><highlight class="normal">,<sp/>i+1,<sp/>stat.RefineSteps,<sp/>ferr[i],<sp/>berr[i]);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stdout);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>info<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>lwork<sp/>==<sp/>-1<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;**<sp/>Estimated<sp/>memory:<sp/>%d<sp/>bytes\n&quot;</highlight><highlight class="normal">,<sp/>info<sp/>-<sp/>n);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.PrintStat<sp/>)<sp/>StatPrint(&amp;stat);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="487" refid="classlmx_1_1Superlu_1ae2e382f67055727a58919e43e27055f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1ae2e382f67055727a58919e43e27055f0" kindref="member">Superlu&lt;T&gt;::recalc1</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noisy)</highlight></codeline>
+<codeline lineno="488"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.Fact<sp/>=<sp/>SamePattern_SameRowPerm;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>options.Fact<sp/>=<sp/>SamePattern;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recalc(noisy);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="495" refid="classlmx_1_1Superlu_1a2c3ec43812db1c7c2d9d09a0a41c9885" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a2c3ec43812db1c7c2d9d09a0a41c9885" kindref="member">Superlu&lt;T&gt;::recalc2</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noisy)</highlight></codeline>
+<codeline lineno="496"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.Fact<sp/>=<sp/>FACTORED;</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recalc(noisy);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="502" refid="classlmx_1_1Superlu_1a24cc99c5023690b19e4512592153b0cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a24cc99c5023690b19e4512592153b0cf" kindref="member">Superlu&lt;T&gt;::factorize</ref>()</highlight></codeline>
+<codeline lineno="503"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SuperMatrix<sp/>AC;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_default_options(&amp;options);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StatInit(&amp;stat);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>drop_tol<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>relax,<sp/>panel_size;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="511"><highlight class="comment">*<sp/>Get<sp/>column<sp/>permutation<sp/>vector<sp/>perm_c[],<sp/>according<sp/>to<sp/>permc_spec:<sp/></highlight></codeline>
+<codeline lineno="512"><highlight class="comment">*<sp/>permc_spec<sp/>=<sp/>0:<sp/>natural<sp/>ordering<sp/></highlight></codeline>
+<codeline lineno="513"><highlight class="comment">*<sp/>permc_spec<sp/>=<sp/>1:<sp/>minimum<sp/>degree<sp/>on<sp/>structure<sp/>of<sp/>A’*A<sp/></highlight></codeline>
+<codeline lineno="514"><highlight class="comment">*<sp/>permc_spec<sp/>=<sp/>2:<sp/>minimum<sp/>degree<sp/>on<sp/>structure<sp/>of<sp/>A’+A<sp/></highlight></codeline>
+<codeline lineno="515"><highlight class="comment">*<sp/>permc_spec<sp/>=<sp/>3:<sp/>approximate<sp/>minimum<sp/>degree<sp/>for<sp/>unsymmetric<sp/>matrices<sp/></highlight></codeline>
+<codeline lineno="516"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>permc_spec<sp/>=<sp/>3;<sp/></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_perm_c(permc_spec,<sp/>&amp;A,<sp/>perm_c);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sp_preorder(&amp;options,<sp/>&amp;A,<sp/>perm_c,<sp/>etree,<sp/>&amp;AC);<sp/></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>panel_size<sp/>=<sp/>sp_ienv(1);<sp/></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>relax<sp/>=<sp/>sp_ienv(2);<sp/></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dgstrf(&amp;options,<sp/>&amp;AC,<sp/>drop_tol,<sp/>relax,<sp/>panel_size,<sp/>etree,<sp/>NULL,<sp/>0,<sp/>perm_c,<sp/>perm_r,<sp/>&amp;L,<sp/>&amp;U,<sp/>&amp;stat,&amp;info);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="531" refid="classlmx_1_1Superlu_1a2bf4d209e3e5033f5e442289dc5cdb2a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a2bf4d209e3e5033f5e442289dc5cdb2a" kindref="member">Superlu&lt;T&gt;::subsSolve</ref>()</highlight></codeline>
+<codeline lineno="532"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StatInit(&amp;stat);</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="535"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>struct<sp/>{<sp/></highlight></codeline>
+<codeline lineno="536"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SuperMatrix<sp/>*L;<sp/></highlight></codeline>
+<codeline lineno="537"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SuperMatrix<sp/>*U;<sp/></highlight></codeline>
+<codeline lineno="538"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>*perm_c;<sp/></highlight></codeline>
+<codeline lineno="539"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>*perm_r;</highlight></codeline>
+<codeline lineno="540"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>factors_t;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="541"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="542"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>factors_t<sp/>*LUfactors;</highlight></codeline>
+<codeline lineno="543"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="544"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LUfactors<sp/>=<sp/>(factors_t*)<sp/>factors[0];<sp/></highlight></codeline>
+<codeline lineno="545"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L<sp/>=<sp/>LUfactors-&gt;L;<sp/></highlight></codeline>
+<codeline lineno="546"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>U<sp/>=<sp/>LUfactors-&gt;U;<sp/></highlight></codeline>
+<codeline lineno="547"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perm_c<sp/>=<sp/>LUfactors-&gt;perm_c;<sp/></highlight></codeline>
+<codeline lineno="548"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perm_r<sp/>=<sp/>LUfactors-&gt;perm_r;<sp/></highlight></codeline>
+<codeline lineno="549"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dgstrs<sp/>(trans,<sp/>&amp;L,<sp/>&amp;U,<sp/>perm_c,<sp/>perm_r,<sp/>&amp;B,<sp/>&amp;stat,<sp/>&amp;info);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>rhsx<sp/>=<sp/>rhsb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>dCreate_Dense_Matrix(&amp;X,<sp/>m,<sp/>nrhs,<sp/>rhsx,<sp/>m,<sp/>SLU_DN,<sp/>SLU_D,<sp/>SLU_GE);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="564" refid="classlmx_1_1Superlu_1adb214bf9ef4ea3bce33011671f078df2" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1adb214bf9ef4ea3bce33011671f078df2" kindref="member">Superlu&lt;T&gt;::recalc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noisy)<sp/>{</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------</highlight></codeline>
+<codeline lineno="567"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOW<sp/>WE<sp/>SOLVE<sp/>ANOTHER<sp/>LINEAR<sp/>SYSTEM:<sp/>A1*X<sp/>=<sp/>B1</highlight></codeline>
+<codeline lineno="568"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ONLY<sp/>THE<sp/>SPARSITY<sp/>PATTERN<sp/>OF<sp/>A1<sp/>IS<sp/>THE<sp/>SAME<sp/>AS<sp/>THAT<sp/>OF<sp/>A.</highlight></codeline>
+<codeline lineno="569"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>options.Fact<sp/>=<sp/>SamePattern;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>options.Fact<sp/>=<sp/>SamePattern_SameRowPerm;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>B.ncol<sp/>=<sp/>nrhs;<sp/><sp/>/*<sp/>Set<sp/>the<sp/>number<sp/>of<sp/>right-hand<sp/>side<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/>StatInit(&amp;stat);<sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>statistics<sp/>variables.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>dCreate_CompCol_Matrix(&amp;A1,<sp/>m,<sp/>n,<sp/>nnz,<sp/>a1,<sp/>asub1,<sp/>xa1,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SLU_NC,<sp/>SLU_D,<sp/>SLU_GE);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>dCreate_Dense_Matrix(&amp;B1,<sp/>m,<sp/>nrhs,<sp/>rhsb1,<sp/>m,<sp/>SLU_DN,<sp/>SLU_D,<sp/>SLU_GE);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/>dgssvx(&amp;options,<sp/>&amp;A,<sp/>perm_c,<sp/>perm_r,<sp/>etree,<sp/>equed,<sp/>R,<sp/>C,</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;L,<sp/>&amp;U,<sp/>work,<sp/>lwork,<sp/>&amp;B,<sp/>&amp;X,<sp/>&amp;rpg,<sp/>&amp;rcond,<sp/>ferr,<sp/>berr,</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;mem_usage,<sp/>&amp;stat,<sp/>&amp;info);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(noisy<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight><highlight class="comment">//begin<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>printf(&quot;\n<sp/>Resolving<sp/>system:<sp/>dgssvx()<sp/>returns<sp/>info<sp/>%d\n&quot;,<sp/>info);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>Solving<sp/>system:<sp/>dgssvx()<sp/>returns<sp/>info<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>info);</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>info<sp/>==<sp/>0<sp/>||<sp/>info<sp/>==<sp/>n+1<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>how<sp/>you<sp/>could<sp/>access<sp/>the<sp/>solution<sp/>matrix.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>*sol<sp/>=<sp/>(double*)<sp/>((DNformat*)<sp/>X.Store)-&gt;nzval;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.PivotGrowth<sp/>)<sp/>printf(</highlight><highlight class="stringliteral">&quot;Recip.<sp/>pivot<sp/>growth<sp/>=<sp/>%e\n&quot;</highlight><highlight class="normal">,<sp/>rpg);</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.ConditionNumber<sp/>)</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Recip.<sp/>condition<sp/>number<sp/>=<sp/>%e\n&quot;</highlight><highlight class="normal">,<sp/>rcond);</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Lstore<sp/>=<sp/>(SCformat<sp/>*)<sp/>L.Store;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ustore<sp/>=<sp/>(NCformat<sp/>*)<sp/>U.Store;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>of<sp/>nonzeros<sp/>in<sp/>factor<sp/>L<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>Lstore-&gt;nnz);</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>of<sp/>nonzeros<sp/>in<sp/>factor<sp/>U<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>Ustore-&gt;nnz);</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;No<sp/>of<sp/>nonzeros<sp/>in<sp/>L+U<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>Lstore-&gt;nnz<sp/>+<sp/>Ustore-&gt;nnz<sp/>-<sp/>n);</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;L\\U<sp/>MB<sp/>%.3f\ttotal<sp/>MB<sp/>needed<sp/>%.3f\texpansions<sp/>%d\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mem_usage.for_lu/1e6,<sp/>mem_usage.total_needed/1e6,</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mem_usage.expansions);</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.IterRefine<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Iterative<sp/>Refinement:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%8s%8s%16s%16s\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rhs&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Steps&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FERR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BERR&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nrhs;<sp/>++i)</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%8d%8d%16e%16e\n&quot;</highlight><highlight class="normal">,<sp/>i+1,<sp/>stat.RefineSteps,<sp/>ferr[i],<sp/>berr[i]);</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/>fflush(stdout);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>info<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>lwork<sp/>==<sp/>-1<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;**<sp/>Estimated<sp/>memory:<sp/>%d<sp/>bytes\n&quot;</highlight><highlight class="normal">,<sp/>info<sp/>-<sp/>n);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>options.PrintStat<sp/>)<sp/>StatPrint(&amp;stat);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#if<sp/>(<sp/>DEBUGlevel&gt;=1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>CHECK_MALLOC(&quot;Exit<sp/>main()&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="634" refid="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" kindref="member">Superlu&lt;T&gt;::get_solution</ref>(std::vector&lt;T&gt;&amp;<sp/>x_out)</highlight></codeline>
+<codeline lineno="635"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/>rhsx<sp/>=<sp/>(T*)<sp/>((DNformat*)<sp/>X.Store)-&gt;nzval;</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)<sp/>x_out[i]<sp/>=<sp/>rhsx[i];</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="644" refid="classlmx_1_1Superlu_1a275e7d970b887661ff4bd301c42d14ef" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" kindref="member">Superlu&lt;T&gt;::get_solution</ref>(<ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>x_out)</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/>rhsx<sp/>=<sp/>(T*)<sp/>((DNformat*)<sp/>B.Store)-&gt;nzval;</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)<sp/>x_out.<ref refid="classlmx_1_1Vector_1a6ec5ff5f7a9c2b558fcb09a95210b18a" kindref="member">writeElement</ref>(rhsx[i],<sp/>i);</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//begin<sp/><sp/>JCGO<sp/>01/04/09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="655" refid="classlmx_1_1Superlu_1ac5c29cc525a8deed07172d8950f9b95c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1ac5c29cc525a8deed07172d8950f9b95c" kindref="member">Superlu&lt;T&gt;::get_solutionB</ref>(std::vector&lt;T&gt;&amp;<sp/>x_out)</highlight></codeline>
+<codeline lineno="656"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/>rhsx<sp/>=<sp/>(T*)<sp/>((DNformat*)<sp/>B.Store)-&gt;nzval;</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)<sp/>x_out[i]<sp/>=<sp/>rhsx[i];</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="665" refid="classlmx_1_1Superlu_1aa9a5857bcc40fab4933a916df751bedd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1aa9a5857bcc40fab4933a916df751bedd" kindref="member">Superlu&lt;T&gt;::setVectors</ref>(<ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>b_in)</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(rhsx<sp/>=<sp/>doubleMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>rhsx[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!(rhsb<sp/>=<sp/>doubleMalloc(m))<sp/>)<sp/>ABORT(</highlight><highlight class="stringliteral">&quot;Malloc<sp/>fails<sp/>for<sp/>rhsb[].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhsx[i]<sp/>=<sp/>b_in.<ref refid="classlmx_1_1Vector_1a4fc2d153c9436f3d377c1867b608ddd7" kindref="member">readElement</ref>(i);</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhsb[i]<sp/>=<sp/>b_in.<ref refid="classlmx_1_1Vector_1a4fc2d153c9436f3d377c1867b608ddd7" kindref="member">readElement</ref>(i);</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="677" refid="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" kindref="member">Superlu&lt;T&gt;::setb</ref>(T<sp/>*<sp/>b_in)</highlight></codeline>
+<codeline lineno="678"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="679"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"></highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="682" refid="classlmx_1_1Superlu_1a3dd3cefcc50d4569e6b4cf8502a0c366" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" kindref="member">Superlu&lt;T&gt;::setb</ref>(std::vector&lt;T&gt;&amp;<sp/>b_in)</highlight></codeline>
+<codeline lineno="683"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="685"><highlight class="comment"><sp/><sp/><sp/><sp/>SuperMatrix<sp/>Baux;</highlight></codeline>
+<codeline lineno="686"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/><sp/>*rhsbAux;</highlight></codeline>
+<codeline lineno="687"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)</highlight></codeline>
+<codeline lineno="688"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="689"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhsbAux[i]<sp/>=<sp/>b_in[i];</highlight></codeline>
+<codeline lineno="690"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="691"><highlight class="comment"><sp/><sp/><sp/><sp/>dCreate_Dense_Matrix(&amp;Baux,<sp/>m,<sp/>nrhs,<sp/>rhsbAux,<sp/>m,<sp/>SLU_DN,<sp/>SLU_D,<sp/>SLU_GE);</highlight></codeline>
+<codeline lineno="692"><highlight class="comment"><sp/><sp/><sp/><sp/>B<sp/>=<sp/>Baux;</highlight></codeline>
+<codeline lineno="693"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//It<sp/>is<sp/>assumed<sp/>that<sp/>m<sp/>is<sp/>correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m;<sp/>++i)</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhsb[i]<sp/>=<sp/>b_in[i];</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dCreate_Dense_Matrix(&amp;B,<sp/>m,<sp/>nrhs,<sp/>rhsb,<sp/>m,<sp/>SLU_DN,<sp/>SLU_D,<sp/>SLU_GE);</highlight></codeline>
+<codeline lineno="701"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="704" refid="classlmx_1_1Superlu_1a9e025d75b97197ea9b1700c3bad8fccd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Superlu_1a9e025d75b97197ea9b1700c3bad8fccd" kindref="member">Superlu&lt;T&gt;::setA</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>m_in,</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>n_in,</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;<sp/>nnz_in,</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>asub_in,</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_type&gt;&amp;<sp/>xa_in,</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;&amp;<sp/>a_in<sp/>)</highlight></codeline>
+<codeline lineno="710"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="712"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SuperMatrix<sp/>AAux;</highlight></codeline>
+<codeline lineno="713"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>mAux<sp/>=<sp/>m_in;<sp/></highlight></codeline>
+<codeline lineno="714"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>nAux<sp/>=<sp/>n_in;</highlight></codeline>
+<codeline lineno="715"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>nnzAux<sp/>=<sp/>nnz_in;</highlight></codeline>
+<codeline lineno="716"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>*aAux;</highlight></codeline>
+<codeline lineno="717"><highlight class="comment"><sp/><sp/><sp/><sp/>int<sp/><sp/>*asubAux,<sp/>*xaAux;</highlight></codeline>
+<codeline lineno="718"><highlight class="comment"></highlight></codeline>
+<codeline lineno="719"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(<sp/>!(aAux<sp/>=<sp/>doubleMalloc(nnzAux))<sp/>)<sp/>ABORT(&quot;Malloc<sp/>fails<sp/>for<sp/>aAux[].&quot;);</highlight></codeline>
+<codeline lineno="720"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(<sp/>!(asubAux<sp/>=<sp/>intMalloc(nnzAux))<sp/>)<sp/>ABORT(&quot;Malloc<sp/>fails<sp/>for<sp/>asubAux[].&quot;);</highlight></codeline>
+<codeline lineno="721"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(<sp/>!(xaAux<sp/>=<sp/>intMalloc(nAux+1))<sp/>)<sp/>ABORT(&quot;Malloc<sp/>fails<sp/>for<sp/>xaAux[].&quot;);</highlight></codeline>
+<codeline lineno="722"><highlight class="comment"></highlight></codeline>
+<codeline lineno="723"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnzAux;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="724"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>aAux[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="725"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>asubAux[i]<sp/>=<sp/>asub_in[i]-1;</highlight></codeline>
+<codeline lineno="726"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="727"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="728"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nAux+1;<sp/>++i)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xaAux[i]<sp/>=<sp/>xa_in[i]-1;</highlight></codeline>
+<codeline lineno="729"><highlight class="comment"></highlight></codeline>
+<codeline lineno="730"><highlight class="comment"><sp/><sp/><sp/><sp/>dCreate_CompCol_Matrix(&amp;AAux,<sp/>mAux,<sp/>nAux,<sp/>nnzAux,<sp/>aAux,<sp/>asubAux,<sp/>xaAux,SLU_NC,<sp/>SLU_D,<sp/>SLU_GE);<sp/></highlight></codeline>
+<codeline lineno="731"><highlight class="comment"><sp/><sp/></highlight></codeline>
+<codeline lineno="732"><highlight class="comment"><sp/><sp/><sp/><sp/>A<sp/>=<sp/>AAux;</highlight></codeline>
+<codeline lineno="733"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//It<sp/>is<sp/>assumed<sp/>that<sp/>m,<sp/>n<sp/>and<sp/>nnz<sp/>are<sp/>correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nnz;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>a_in[i];</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>asub[i]<sp/>=<sp/>asub_in[i]-1;</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n+1;<sp/>++i)<sp/><sp/><sp/>xa[i]<sp/>=<sp/>xa_in[i]-1;</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/>dCreate_CompCol_Matrix(&amp;A,<sp/>m,<sp/>n,<sp/>nnz,<sp/>a,<sp/>asub,<sp/>xa,SLU_NC,<sp/>SLU_D,<sp/>SLU_GE);</highlight></codeline>
+<codeline lineno="742"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="744"><highlight class="normal"></highlight></codeline>
+<codeline lineno="745"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"></highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h"/>
+  </compounddef>
+</doxygen>

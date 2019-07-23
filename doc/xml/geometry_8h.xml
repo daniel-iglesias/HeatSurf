@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="geometry_8h" kind="file">
+    <compoundname>geometry.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">LMX/lmx.h</includes>
+    <includes local="no">LMX/lmx_nlsolvers.h</includes>
+    <includes refid="particle_8h" local="yes">particle.h</includes>
+    <includes refid="element_8h" local="yes">element.h</includes>
+    <includes refid="node_8h" local="yes">node.h</includes>
+    <includedby refid="cone_8h" local="yes">src/cone.h</includedby>
+    <includedby refid="cone2_8h" local="yes">src/cone2.h</includedby>
+    <includedby refid="cylinder_8h" local="yes">src/cylinder.h</includedby>
+    <includedby refid="geometry_8cpp" local="yes">src/geometry.cpp</includedby>
+    <includedby refid="ogive_8h" local="yes">src/ogive.h</includedby>
+    <includedby refid="twoplates_8h" local="no">src/twoplates.h</includedby>
+    <includedby refid="ring_8h" local="yes">src/ring.h</includedby>
+    <incdepgraph>
+      <node id="633">
+        <label>LMX/lmx_nlsolvers.h</label>
+      </node>
+      <node id="635">
+        <label>element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="629" relation="include">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>particle.h</label>
+        <link refid="particle_8h"/>
+        <childnode refid="628" relation="include">
+        </childnode>
+      </node>
+      <node id="631">
+        <label>cmath</label>
+      </node>
+      <node id="630">
+        <label>map</label>
+      </node>
+      <node id="629">
+        <label>vector</label>
+      </node>
+      <node id="636">
+        <label>node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="628" relation="include">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>LMX/lmx.h</label>
+      </node>
+      <node id="628">
+        <label>iostream</label>
+      </node>
+      <node id="627">
+        <label>src/geometry.h</label>
+        <link refid="geometry.h"/>
+        <childnode refid="628" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+        <childnode refid="630" relation="include">
+        </childnode>
+        <childnode refid="631" relation="include">
+        </childnode>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="634" relation="include">
+        </childnode>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="646">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="654">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="655" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="649">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="643">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="651">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="638">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="647">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="642">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="650">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="645">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="640">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="637">
+        <label>src/geometry.h</label>
+        <link refid="geometry.h"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+      </node>
+      <node id="652">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+      </node>
+      <node id="641">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGeometry" prot="public">Geometry</innerclass>
+    <briefdescription>
+<para>Base class for the different geometries. </para>    </briefdescription>
+    <detaileddescription>
+<para>Abstract class, cannot be instantiated.</para><para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2007<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>daniel.iglesias@ciemat.es<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GEOMETRY_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GEOMETRY_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LMX/lmx.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LMX/lmx_nlsolvers.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="particle_8h" kindref="compound">particle.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="element_8h" kindref="compound">element.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="node_8h" kindref="compound">node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkPoints;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkFloatArray;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkUnstructuredGrid;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkRenderWindow;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkInteractorStyleTrackballCamera;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkRenderWindowInteractor;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkRenderer;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkDataSetMapper;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkActor;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkLookupTable;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkScalarBarActor;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkAxesActor;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkOrientationMarkerWidget;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkPlane;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkCutter;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">vtkPolyDataMapper;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classGeometry" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGeometry" kindref="compound">Geometry</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" kindref="member">Geometry</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" kindref="member">Geometry</ref><sp/>(<sp/>std::string,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" kindref="member">~Geometry</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df" kindref="member">setSections</ref><sp/>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a3e77ac889d1e440c24efbde630aa1933" kindref="member">computeGeometry</ref>(<sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" kindref="member">computeGrid3D</ref>(<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881" kindref="member">computeIntersection</ref><sp/>(<sp/><ref refid="classParticle" kindref="compound">Particle</ref>*<sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1af60650f8ce6d5a220928ccd7395120df" kindref="member">computeNodalPower</ref><sp/>(<sp/><ref refid="classParticle" kindref="compound">Particle</ref>*<sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" kindref="member">computePowerDensity</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" kindref="member">drawGeometry</ref>(<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" kindref="member">drawScalar</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" kindref="member">drawGrid</ref>(<sp/>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" kindref="member">drawGridScalar</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56" kindref="member">outputPowerFile</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9" kindref="member">outputPowerDensityFile</ref>(<sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a60e1424a222ba59284b81812aff34148" kindref="member">outputTable</ref>(<sp/>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classGeometry_1a565f5b7736c4b0894732900199903d54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classGeometry_1a565f5b7736c4b0894732900199903d54" kindref="member">getType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" kindref="member">type</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" kindref="member">outputAnsys3D</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" kindref="member">outputVTKfiles</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" kindref="member">outputBackscattering</ref><sp/>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116" refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="117" refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" kindref="member">sections</ref>,<sp/><ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref>;</highlight></codeline>
+<codeline lineno="118" refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>,<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;</highlight></codeline>
+<codeline lineno="119" refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" kindref="member">z0</ref>,<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="120" refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kindref="member">gridWidth</ref>,<sp/><ref refid="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" kindref="member">gridSpacing</ref>;</highlight></codeline>
+<codeline lineno="121" refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>double<sp/>&gt;<sp/><ref refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" kindref="member">paramTrajectories</ref>;</highlight></codeline>
+<codeline lineno="122" refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>Node*&gt;<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>;</highlight></codeline>
+<codeline lineno="123" refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>Node*&gt;<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>;</highlight></codeline>
+<codeline lineno="124" refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>Element*<sp/>&gt;<sp/><ref refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" kindref="member">elements</ref>;</highlight></codeline>
+<codeline lineno="125" refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>Element*<sp/>&gt;<sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>;</highlight></codeline>
+<codeline lineno="126" refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" kindref="member">plotTitle</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classGeometry_1aed47a80e867e618e98272e830d297deb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkPoints*<sp/><ref refid="classGeometry_1aed47a80e867e618e98272e830d297deb" kindref="member">gridPoints</ref>;</highlight></codeline>
+<codeline lineno="129" refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkFloatArray*<sp/><ref refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kindref="member">scalar</ref>;</highlight></codeline>
+<codeline lineno="130" refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkUnstructuredGrid*<sp/><ref refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" kindref="member">grid</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classGeometry_1afd79778e7c244df18be79a39419190c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkPoints*<sp/><ref refid="classGeometry_1afd79778e7c244df18be79a39419190c8" kindref="member">grid3DPoints</ref>;</highlight></codeline>
+<codeline lineno="133" refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkFloatArray*<sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref>;</highlight></codeline>
+<codeline lineno="134" refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkUnstructuredGrid*<sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkRenderWindow*<sp/><ref refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" kindref="member">renWin</ref>;</highlight></codeline>
+<codeline lineno="137" refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkInteractorStyleTrackballCamera*<sp/><ref refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" kindref="member">style</ref>;</highlight></codeline>
+<codeline lineno="138" refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkRenderWindowInteractor*<sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref>;</highlight></codeline>
+<codeline lineno="139" refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkRenderer*<sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>;</highlight></codeline>
+<codeline lineno="140" refid="classGeometry_1af314d57676056969da57788a60954926" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkDataSetMapper*<sp/><ref refid="classGeometry_1af314d57676056969da57788a60954926" kindref="member">aDataSetMapper</ref>;</highlight></codeline>
+<codeline lineno="141" refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkActor*<sp/><ref refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" kindref="member">anActor</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkRenderWindow*<sp/><ref refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" kindref="member">grid3DrenWin</ref>;</highlight></codeline>
+<codeline lineno="144" refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkInteractorStyleTrackballCamera*<sp/><ref refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" kindref="member">grid3Dstyle</ref>;</highlight></codeline>
+<codeline lineno="145" refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkRenderWindowInteractor*<sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkRenderer*<sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>;</highlight></codeline>
+<codeline lineno="147" refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkDataSetMapper*<sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref>;</highlight></codeline>
+<codeline lineno="148" refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkActor*<sp/><ref refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" kindref="member">grid3DActor</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkLookupTable*<sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref>;</highlight></codeline>
+<codeline lineno="151" refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkScalarBarActor*<sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkLookupTable*<sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref>;</highlight></codeline>
+<codeline lineno="154" refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkScalarBarActor*<sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkAxesActor*<sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>;</highlight></codeline>
+<codeline lineno="157" refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkOrientationMarkerWidget*<sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkAxesActor*<sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>;</highlight></codeline>
+<codeline lineno="160" refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkOrientationMarkerWidget*<sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkPlane*<sp/><ref refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" kindref="member">plane</ref>;</highlight></codeline>
+<codeline lineno="163" refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkCutter*<sp/><ref refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" kindref="member">planeCut</ref>;</highlight></codeline>
+<codeline lineno="164" refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkPolyDataMapper*<sp/><ref refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" kindref="member">cutMapper</ref>;</highlight></codeline>
+<codeline lineno="165" refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkActor*<sp/><ref refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" kindref="member">cutActor</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.h"/>
+  </compounddef>
+</doxygen>

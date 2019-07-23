@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Stopwatch" kind="class" prot="public">
+    <compoundname>lmx::Stopwatch</compoundname>
+    <includes refid="lmx__base__stopwatch_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1Stopwatch_1aee27b1c57c234f1cfe916a59f2a61c33" prot="private" static="no" mutable="no">
+        <type>std::clock_t</type>
+        <definition>std::clock_t lmx::Stopwatch::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="127" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Stopwatch_1ae23806438136099afc904e13f2653619" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Stopwatch::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="128" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Stopwatch_1ac3e1e5af26700cdf39dc89a6e2539efb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::Stopwatch::new_out</definition>
+        <argsstring></argsstring>
+        <name>new_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="129" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Stopwatch_1afce030940a6dbe5ecf8c4671d714e609" prot="private" static="no" mutable="no">
+        <type>std::ostream *</type>
+        <definition>std::ostream* lmx::Stopwatch::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="130" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Stopwatch_1ae62ceeec915247ff0d92de3f02abf7c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Stopwatch::Stopwatch</definition>
+        <argsstring>()</argsstring>
+        <name>Stopwatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="72" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Stopwatch_1a9c533ef6df594d2548561c202c3184fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Stopwatch::Stopwatch</definition>
+        <argsstring>(char *file_name)</argsstring>
+        <name>Stopwatch</name>
+        <param>
+          <type>char *</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with name of file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="79" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Stopwatch_1a173f161dbaf4d5790e4517361f358b08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Stopwatch::~Stopwatch</definition>
+        <argsstring>()</argsstring>
+        <name>~Stopwatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="88" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="88" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Stopwatch_1a71d629530005931376c776b32c2cff61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lmx::Stopwatch::getTime</definition>
+        <argsstring>()</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time count access.</para><para><simplesect kind="return"><para>value of the counter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="112" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Stopwatch_1adbd2c1eeef2fd57381e88c6ab6665fb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Stopwatch::setQuiet</definition>
+        <argsstring>()</argsstring>
+        <name>setQuiet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns off the default time info message. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class <ref refid="classlmx_1_1Stopwatch" kindref="compound">Stopwatch</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is used to measure the time that it takes to do a group of operations. Those operations must be consecutive. The usage is very simple: just put the operations you want to measure inside a block (use braces) and create an empty <ref refid="classlmx_1_1Stopwatch" kindref="compound">Stopwatch</ref> object before any operation takes place.</para><para>WARNING: If using more than one core (processor) in execution, use class ExactStopWatch instead.</para><para>Inspired by Danny Kalev&apos;s recipe. More info in: <ulink url="http://www.informit.com/guides/content.asp?g=cplusplus&amp;seqNum=156">http://www.informit.com/guides/content.asp?g=cplusplus&amp;seqNum=156</ulink></para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="64" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Stopwatch_1a71d629530005931376c776b32c2cff61" prot="public" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>getTime</name></member>
+      <member refid="classlmx_1_1Stopwatch_1ac3e1e5af26700cdf39dc89a6e2539efb" prot="private" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>new_out</name></member>
+      <member refid="classlmx_1_1Stopwatch_1afce030940a6dbe5ecf8c4671d714e609" prot="private" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>out</name></member>
+      <member refid="classlmx_1_1Stopwatch_1adbd2c1eeef2fd57381e88c6ab6665fb2" prot="public" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>setQuiet</name></member>
+      <member refid="classlmx_1_1Stopwatch_1aee27b1c57c234f1cfe916a59f2a61c33" prot="private" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>start</name></member>
+      <member refid="classlmx_1_1Stopwatch_1ae62ceeec915247ff0d92de3f02abf7c2" prot="public" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>Stopwatch</name></member>
+      <member refid="classlmx_1_1Stopwatch_1a9c533ef6df594d2548561c202c3184fb" prot="public" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>Stopwatch</name></member>
+      <member refid="classlmx_1_1Stopwatch_1ae23806438136099afc904e13f2653619" prot="private" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>verbose</name></member>
+      <member refid="classlmx_1_1Stopwatch_1a173f161dbaf4d5790e4517361f358b08" prot="public" virt="non-virtual"><scope>lmx::Stopwatch</scope><name>~Stopwatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

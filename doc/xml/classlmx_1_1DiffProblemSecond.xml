@@ -1,0 +1,1160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1DiffProblemSecond" kind="class" prot="public">
+    <compoundname>lmx::DiffProblemSecond</compoundname>
+    <basecompoundref refid="classlmx_1_1DiffProblem" prot="public" virt="non-virtual">lmx::DiffProblem&lt; Sys, T &gt;</basecompoundref>
+    <includes refid="lmx__diff__problem__second_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Sys</type>
+      </param>
+      <param>
+        <type>typename T</type>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1aa0bc60caaeff15423643b1cd62f55efd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::b_solveInitialEquilibrium</definition>
+        <argsstring></argsstring>
+        <name>b_solveInitialEquilibrium</name>
+        <briefdescription>
+<para>default TRUE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="214" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1ae4650b5077146a0d1abdcdc9a3fb9fc8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::b_residueByParts</definition>
+        <argsstring></argsstring>
+        <name>b_residueByParts</name>
+        <briefdescription>
+<para>0 if setResidue is called, 1 if setResidueByParts is called. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="215" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a4e863500ef08e2fae3240a952c11382d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::b_jacobianByParts</definition>
+        <argsstring></argsstring>
+        <name>b_jacobianByParts</name>
+        <briefdescription>
+<para>0 if setJacobian is called, 1 if setJacobianByParts is called. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="216" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a1399a42cd25522214c8e266f2a8201f9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::b_alpha</definition>
+        <argsstring></argsstring>
+        <name>b_alpha</name>
+        <briefdescription>
+<para>1 if HHT-alpha integrator is set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="217" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a2bb24a8ee2168dac8ce8fc6b44800a21" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::b_convergence</definition>
+        <argsstring></argsstring>
+        <name>b_convergence</name>
+        <briefdescription>
+<para>1 if external convergence function is set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="218" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a2212a06cbe46d6cdb553903152ae4596" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::b_sparse</definition>
+        <argsstring></argsstring>
+        <name>b_sparse</name>
+        <briefdescription>
+<para>1 if sparse pattern is defined for jacobian matrix. Only for implicit integrators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="219" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a5e4ea64496f766ddf4411a436a14afbf" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::DiffProblemSecond&lt; Sys, T &gt;::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="220" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1aaf16f5c50c9f4a41ee3d09cbe7f5099b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; * &gt;</type>
+        <definition>std::vector&lt; lmx::Vector&lt;T&gt;* &gt; lmx::DiffProblemSecond&lt; Sys, T &gt;::residueParts</definition>
+        <argsstring></argsstring>
+        <name>residueParts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="221" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1afb6de34e00cbba5fdab424c8783e9e8c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; * &gt;</type>
+        <definition>std::vector&lt; lmx::Matrix&lt;T&gt;* &gt; lmx::DiffProblemSecond&lt; Sys, T &gt;::jacobianParts</definition>
+        <argsstring></argsstring>
+        <name>jacobianParts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="222" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a9db5e177d892fcaabb4ee0a5be2f0076" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt;</type>
+        <definition>std::vector&lt;size_type&gt; lmx::DiffProblemSecond&lt; Sys, T &gt;::v_rows</definition>
+        <argsstring></argsstring>
+        <name>v_rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="223" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a970fd8f13bf8c857da01b90fe25d1662" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt;</type>
+        <definition>std::vector&lt;size_type&gt; lmx::DiffProblemSecond&lt; Sys, T &gt;::v_cols</definition>
+        <argsstring></argsstring>
+        <name>v_cols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="223" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a1b5100d300b6583e170397823948f2ea" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>&lt; <ref refid="classlmx_1_1DiffProblemSecond" kindref="compound">DiffProblemSecond</ref>&lt; Sys, T &gt;, T &gt;</type>
+        <definition>NLSolver&lt; DiffProblemSecond&lt;Sys, T&gt;, T &gt; lmx::DiffProblemSecond&lt; Sys, T &gt;::theNLSolver</definition>
+        <argsstring></argsstring>
+        <name>theNLSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="224" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1ac5e0fb9e8038d4d8bebe7e9f38cf5f7f" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::res)(lmx::Vector&lt; T &gt; &amp;residue, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, const lmx::Vector&lt; T &gt; &amp;qddot, double time)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;residue, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, const lmx::Vector&lt; T &gt; &amp;qddot, double time)</argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="225" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a4cd0f7ccd99dbb98a404fa58a3342f51" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::res_q_qdot)(lmx::Vector&lt; T &gt; &amp;res_q_qdot, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;res_q_qdot, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot)</argsstring>
+        <name>res_q_qdot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="231" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1ad73108fdad582da26531689c92950b80" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::res_qddot)(lmx::Vector&lt; T &gt; &amp;res_qddot, const lmx::Vector&lt; T &gt; &amp;qddot)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;res_qddot, const lmx::Vector&lt; T &gt; &amp;qddot)</argsstring>
+        <name>res_qddot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="235" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a15966b1b256f8562d6704570112a3ae5" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::res_time)(lmx::Vector&lt; T &gt; &amp;res_time, double time)</definition>
+        <argsstring>)(lmx::Vector&lt; T &gt; &amp;res_time, double time)</argsstring>
+        <name>res_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="238" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a13ba778637dc26e95accfa8a5a1156f6" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::jac)(lmx::Matrix&lt; T &gt; &amp;jacobian, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, double partial_qdot, double partial_qddot, double time)</definition>
+        <argsstring>)(lmx::Matrix&lt; T &gt; &amp;jacobian, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, double partial_qdot, double partial_qddot, double time)</argsstring>
+        <name>jac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="241" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a3723899cfb404113b1f88857b9894b57" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::jac_q_qdot)(lmx::Matrix&lt; T &gt; &amp;jac_q_qdot, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, double partial_qdot, double time)</definition>
+        <argsstring>)(lmx::Matrix&lt; T &gt; &amp;jac_q_qdot, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, double partial_qdot, double time)</argsstring>
+        <name>jac_q_qdot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="248" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a971caa57045868d8a2386eba84a41bfc" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::jac_qddot)(lmx::Matrix&lt; T &gt; &amp;jac_qddot, double partial_qddot, double time)</definition>
+        <argsstring>)(lmx::Matrix&lt; T &gt; &amp;jac_qddot, double partial_qddot, double time)</argsstring>
+        <name>jac_qddot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="254" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1aac1c26d9352beed30e2be70df44630bd" prot="private" static="no" mutable="no">
+        <type>void(Sys::*</type>
+        <definition>void(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::eval)(const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, lmx::Vector&lt; T &gt; &amp;qddot, double time)</definition>
+        <argsstring>)(const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, lmx::Vector&lt; T &gt; &amp;qddot, double time)</argsstring>
+        <name>eval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="258" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1DiffProblemSecond_1a3c88c8eac0390d7f2ede8e66b0fcc5ef" prot="private" static="no" mutable="no">
+        <type>bool(Sys::*</type>
+        <definition>bool(Sys::*  lmx::DiffProblemSecond&lt; Sys, T &gt;::conv)(const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, const lmx::Vector&lt; T &gt; &amp;qddot, double time)</definition>
+        <argsstring>)(const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, const lmx::Vector&lt; T &gt; &amp;qddot, double time)</argsstring>
+        <name>conv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="263" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a211dd07785bca2748566e9c540f94dda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::DiffProblemSecond&lt; Sys, T &gt;::DiffProblemSecond</definition>
+        <argsstring>()</argsstring>
+        <name>DiffProblemSecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="64" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1acc07cd56a95b7ce60240ca8431162f3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::DiffProblemSecond&lt; Sys, T &gt;::~DiffProblemSecond</definition>
+        <argsstring>()</argsstring>
+        <name>~DiffProblemSecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="74" bodyend="85"/>
+        <references refid="classlmx_1_1DiffProblem_1a219c62e356b88d5e2680a476f1c3f427" compoundref="lmx__diff__problem_8h" startline="143">lmx::DiffProblem&lt; Sys, T &gt;::p_delta_q</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1aad65044bcad25bc1094ca7a7e0557f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setResidue</definition>
+        <argsstring>(void(Sys::*residue_in)(lmx::Vector&lt; T &gt; &amp;residue, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, const lmx::Vector&lt; T &gt; &amp;qddot, double time))</argsstring>
+        <name>setResidue</name>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;residue, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;q, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qdot, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qddot, double time)</type>
+          <declname>residue_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the external function for residue evaluation. Must be a Sys member function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>residue_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="87" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="281" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a84b8d2884acb8013b1a9b5a16098751a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setResidueByParts</definition>
+        <argsstring>(void(Sys::*residue_q_qdot)(lmx::Vector&lt; T &gt; &amp;res_q_qdot, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot), void(Sys::*residue_qddot)(lmx::Vector&lt; T &gt; &amp;res_qddot, const lmx::Vector&lt; T &gt; &amp;qddot), void(Sys::*residue_time)(lmx::Vector&lt; T &gt; &amp;res_time, double time))</argsstring>
+        <name>setResidueByParts</name>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;res_q_qdot, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;q, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qdot)</type>
+          <declname>residue_q_qdot</declname>
+        </param>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;res_qddot, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qddot)</type>
+          <declname>residue_qddot</declname>
+        </param>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;res_time, double time)</type>
+          <declname>residue_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the external function for residue evaluation. Must be a Sys member function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>residue_q_qdot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue member function depending on <formula id="4">$ q $</formula> and <formula id="5">$ \frac{dq}{dt} $</formula> . </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residue_qddot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue member function depending on <formula id="6">$ \frac{d^2q}{dt^2} $</formula> . </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residue_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue member function depending on time, <formula id="7">$ t $</formula> . </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="96" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="302" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a5997efad5cf0b0a91899b7262cd6e31f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setJacobian</definition>
+        <argsstring>(void(Sys::*jacobian_in)(lmx::Matrix&lt; T &gt; &amp;jacobian, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, double partial_qdot, double partial_qddot, double time))</argsstring>
+        <name>setJacobian</name>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;jacobian, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;q, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qdot, double partial_qdot, double partial_qddot, double time)</type>
+          <declname>jacobian_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the external function for tangent to q. Must be a Sys member function. ::: change documentation ::: <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacobian_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tangent function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="109" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="328" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1abb7856200fac8d1a717ab2a6de0f4b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setJacobianByParts</definition>
+        <argsstring>(void(Sys::*jacobian_q_qdot)(lmx::Matrix&lt; T &gt; &amp;jac_q_qdot, const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, double partial_qdot, double time), void(Sys::*jacobian_qddot)(lmx::Matrix&lt; T &gt; &amp;jac_qddot, double partial_qddot, double time))</argsstring>
+        <name>setJacobianByParts</name>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;jac_q_qdot, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;q, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qdot, double partial_qdot, double time)</type>
+          <declname>jacobian_q_qdot</declname>
+        </param>
+        <param>
+          <type>void(Sys::*)(<ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;jac_qddot, double partial_qddot, double time)</type>
+          <declname>jacobian_qddot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the external function for residue evaluation. Must be a Sys member function. ::: change documentation ::: <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacobian_q_qdot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tangent member function depending on <formula id="4">$ q $</formula> and <formula id="5">$ \frac{dq}{dt} $</formula> . </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jacobian_qddot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tangent member function depending on <formula id="6">$ \frac{d^2q}{dt^2} $</formula> . </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="120" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="350" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a771ce07f6f05c7d92998887af61c1faa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setEvaluation</definition>
+        <argsstring>(void(Sys::*eval_in)(const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, lmx::Vector&lt; T &gt; &amp;qddot, double time))</argsstring>
+        <name>setEvaluation</name>
+        <param>
+          <type>void(Sys::*)(const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;q, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qdot, <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qddot, double time)</type>
+          <declname>eval_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the external (first order configuration) evaluation function. Must be a Sys member function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eval_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The acceleration function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="133" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="373" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a524e3b2e067de9404b99581f9a6f51aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setIntegrator</definition>
+        <argsstring>(int type, int opt1=0, int opt2=0)</argsstring>
+        <name>setIntegrator</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opt1</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opt2</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the integrator that will be used for configuration advance &amp; actualization. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of integrator family to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opt1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional value for some integrators (usually specifies the order). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opt2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional value for some integrators. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="147" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="147" bodyend="148"/>
+        <references refid="classlmx_1_1DiffProblem_1a668f2d36f68d2bf4a7047ab371cc3613" compoundref="lmx__diff__problem_8h" startline="164" endline="185">lmx::DiffProblem&lt; Sys, T &gt;::setIntegrator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1acc8b271e3ed6582fa122f723663efc81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setIntegrator</definition>
+        <argsstring>(const char *type, int opt2=0)</argsstring>
+        <name>setIntegrator</name>
+        <param>
+          <type>const char *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opt2</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the integrator that will be used for configuration advance &amp; actualization. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of integrator family to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opt2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional value for some integrators. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="155" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="155" bodyend="156"/>
+        <references refid="classlmx_1_1DiffProblem_1a668f2d36f68d2bf4a7047ab371cc3613" compoundref="lmx__diff__problem_8h" startline="164" endline="185">lmx::DiffProblem&lt; Sys, T &gt;::setIntegrator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a8a382a9849a8ceb06bee87ea0842af35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setIntegrator</definition>
+        <argsstring>(const char *type, double alpha_in)</argsstring>
+        <name>setIntegrator</name>
+        <param>
+          <type>const char *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the integrator that will be used for configuration advance &amp; actualization (Alpha version). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of integrator family to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HHT&apos;s alpha. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="158" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="391" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a3e6d19313d1c5be77b761c8822553829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setIntegrator</definition>
+        <argsstring>(const char *type, double beta, double gamma, double alpha=0)</argsstring>
+        <name>setIntegrator</name>
+        <param>
+          <type>const char *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <defname>beta_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+          <defname>gamma_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+          <defname>alpha_in</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the integrator that will be used for configuration advance &amp; actualization (Newmark and Alpha version). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of integrator family to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Newmark&apos;s beta. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Newmark&apos;s gamma. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HHT&apos;s alpha. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>std::pow(1+alpha,2) </para>        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="161" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="411" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a860157afdde2ff3987346d20f8974dcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setConvergence</definition>
+        <argsstring>(double eps_in)</argsstring>
+        <name>setConvergence</name>
+        <param>
+          <type>double</type>
+          <declname>eps_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backward resolution of mother function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>norm maximum residual. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="171" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="171" bodyend="172"/>
+        <references refid="classlmx_1_1DiffProblem_1aa85b140d95fb966f444845fcb02c5b8d" compoundref="lmx__diff__problem_8h" startline="104" endline="104">lmx::DiffProblem&lt; Sys, T &gt;::setConvergence</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a35f7d66e02aec70e4224d51710aa66fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setConvergence</definition>
+        <argsstring>(bool(Sys::*convergence)(const lmx::Vector&lt; T &gt; &amp;q, const lmx::Vector&lt; T &gt; &amp;qdot, const lmx::Vector&lt; T &gt; &amp;qddot, double time))</argsstring>
+        <name>setConvergence</name>
+        <param>
+          <type>bool(Sys::*)(const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;q, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qdot, const <ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;qddot, double time)</type>
+          <declname>convergence</declname>
+          <defname>conv_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the external function that implements a different convergence criteria from those available in LMX. Must be a Sys member function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conv_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The convergence evaluation function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="174" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="434" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1adae3bb6c6e7dd3762a66ff4bbed44016" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::setSparsePatternJacobian</definition>
+        <argsstring>(lmx::DenseMatrix&lt; T &gt; &amp;mat_sparse)</argsstring>
+        <name>setSparsePatternJacobian</name>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">lmx::DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>mat_sparse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="184" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="184" bodyend="187"/>
+        <references refid="classlmx_1_1DenseMatrix_1ad42b0105c37cdd71f696bf939b105c4c" compoundref="lmx__mat__dense__matrix_8h" startline="257" endline="270">lmx::DenseMatrix&lt; T &gt;::writeSparsePattern</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1ad3cd7fbf7ae65da6b2930e9317c33078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationResidue</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; &amp;residue, lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationResidue</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>residue</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> residue computation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>residue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="189" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="454" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a6f70e77038bde24fbf7e145b9fd68d11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationResidueByParts</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; &amp;residue, lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationResidueByParts</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>residue</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> residue computation. Used when ResidueByParts is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>residue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="191" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="474" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1aa4105b5701d95df754a990eaca6258f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationResidueForAlpha</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; &amp;residue, lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationResidueForAlpha</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>residue</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> residue computation. Used when ALPHA integrator is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>residue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="193" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="499" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a8384c52d627da6e6d45751ecbcc0e0c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationJacobian</definition>
+        <argsstring>(lmx::Matrix&lt; T &gt; &amp;jacobian, lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationJacobian</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>jacobian</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> jacobian computation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacobian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tangent matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="195" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="527" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1aa0d019a19db665b77f8e44f13437c048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationJacobianByParts</definition>
+        <argsstring>(lmx::Matrix&lt; T &gt; &amp;jacobian, lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationJacobianByParts</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>jacobian</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> jacobian computation. Used when ResidueByParts is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacobian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tangent matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="197" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="544" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1aa6eb85defb1b13bb15d9a890016b22fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationJacobianForAlpha</definition>
+        <argsstring>(lmx::Matrix&lt; T &gt; &amp;jacobian, lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationJacobianForAlpha</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">lmx::Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>jacobian</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> jacobian computation. Used when ALPHA integrator is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacobian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tangent matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="199" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="565" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a784538dfb6712b3606834df79bb32b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lmx::DiffProblemSecond&lt; Sys, T &gt;::iterationConvergence</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; &amp;delta_q)</argsstring>
+        <name>iterationConvergence</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>delta_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref> convergence evaluation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref> computed by the <ref refid="classlmx_1_1NLSolver" kindref="compound">NLSolver</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="201" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="585" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1ae5cbfe1812c68e4f488a71dfade3fd2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classlmx_1_1DiffProblem_1a63b0e232de28374afb9bb3b1389f689a">initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize solving function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="203" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="599" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1ac871f9e8c3ee70c2bbc908406eac1480" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::solve</definition>
+        <argsstring>()</argsstring>
+        <name>solve</name>
+        <reimplements refid="classlmx_1_1DiffProblem_1a287dc44a62a249feb8855bd10098ecac">solve</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solve main function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="205" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="668" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a8ad0c21a39238e01c957de51779ac17a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::stepSolve</definition>
+        <argsstring>()</argsstring>
+        <name>stepSolve</name>
+        <reimplements refid="classlmx_1_1DiffProblem_1a81e9c22909edbe06b00210c6b2caac58">stepSolve</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solve only one step </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="207" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="681" bodyend="686"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1a20769e063810affcaa763b822d51b7e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::stepSolveExplicit</definition>
+        <argsstring>()</argsstring>
+        <name>stepSolveExplicit</name>
+        <reimplements refid="classlmx_1_1DiffProblem_1a903615eaf6680edd0b54ff33e6552544">stepSolveExplicit</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Explicit time scheme solver. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="210" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="692" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1DiffProblemSecond_1afedd52fcc9046c129b05b30c36e27f28" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::DiffProblemSecond&lt; Sys, T &gt;::stepSolveImplicit</definition>
+        <argsstring>()</argsstring>
+        <name>stepSolveImplicit</name>
+        <reimplements refid="classlmx_1_1DiffProblem_1ae9d3c6912932bd555a432a1d003e95dc">stepSolveImplicit</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implicit time scheme solver. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="211" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="709" bodyend="717"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1DiffProblemSecond" kindref="compound">DiffProblemSecond</ref>. Implementation for Fist Order ODE system solvers. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements methods for defining and solving initial value problems described by a TotalDiff class&apos; derivided object, and initial conditions in the form <formula id="3">$ q(t_o) = q_o $</formula>.</para><para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="319">
+        <label>lmx::DiffProblemSecond&lt; Sys, T &gt;</label>
+        <link refid="classlmx_1_1DiffProblemSecond"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>lmx::DiffProblem&lt; Sys, T &gt;</label>
+        <link refid="classlmx_1_1DiffProblem"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="321">
+        <label>lmx::DiffProblemSecond&lt; Sys, T &gt;</label>
+        <link refid="classlmx_1_1DiffProblemSecond"/>
+        <childnode refid="322" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>lmx::DiffProblem&lt; Sys, T &gt;</label>
+        <link refid="classlmx_1_1DiffProblem"/>
+        <childnode refid="323" relation="usage">
+          <edgelabel>theNLSolver</edgelabel>
+        </childnode>
+      </node>
+      <node id="323">
+        <label>lmx::NLSolver&lt; T &gt;</label>
+        <link refid="classlmx_1_1NLSolver"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_problem_second.h" bodystart="58" bodyend="269"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1DiffProblem_1a456e836c8dd468f6b02def753d14218a" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>advance</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a5e4ea64496f766ddf4411a436a14afbf" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>alpha</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a1399a42cd25522214c8e266f2a8201f9" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_alpha</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a2bb24a8ee2168dac8ce8fc6b44800a21" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_convergence</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a4e863500ef08e2fae3240a952c11382d" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_jacobianByParts</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1ae4650b5077146a0d1abdcdc9a3fb9fc8" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_residueByParts</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aa0bc60caaeff15423643b1cd62f55efd" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_solveInitialEquilibrium</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a2212a06cbe46d6cdb553903152ae4596" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_sparse</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a3ef615eb960335f2ce95598d3860af07" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>b_steptriggered</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a3c88c8eac0390d7f2ede8e66b0fcc5ef" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>conv</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a33d21e901331098181a7403e22694058" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>DiffProblem</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a211dd07785bca2748566e9c540f94dda" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>DiffProblemSecond</name></member>
+      <member refid="classlmx_1_1DiffProblem_1aeb9570709f636d15d2636cbe5d6a8f5b" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>epsilon</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aac1c26d9352beed30e2be70df44630bd" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>eval</name></member>
+      <member refid="classlmx_1_1DiffProblem_1aed830db025433747c8190c8a77db75d5" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>fileOutMap</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a30189df0b3fb21bb133ae3f8605960ed" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>getConfiguration</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1ae5cbfe1812c68e4f488a71dfade3fd2b" prot="public" virt="virtual"><scope>lmx::DiffProblemSecond</scope><name>initialize</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a75a92da3686aa6b8807ad68eb79a86ea" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>isIntegratorExplicit</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a784538dfb6712b3606834df79bb32b0f" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationConvergence</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a8384c52d627da6e6d45751ecbcc0e0c7" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationJacobian</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aa0d019a19db665b77f8e44f13437c048" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationJacobianByParts</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aa6eb85defb1b13bb15d9a890016b22fc" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationJacobianForAlpha</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1ad3cd7fbf7ae65da6b2930e9317c33078" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationResidue</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a6f70e77038bde24fbf7e145b9fd68d11" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationResidueByParts</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aa4105b5701d95df754a990eaca6258f9" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>iterationResidueForAlpha</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a13ba778637dc26e95accfa8a5a1156f6" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>jac</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a3723899cfb404113b1f88857b9894b57" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>jac_q_qdot</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a971caa57045868d8a2386eba84a41bfc" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>jac_qddot</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1afb6de34e00cbba5fdab424c8783e9e8c" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>jacobianParts</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a219c62e356b88d5e2680a476f1c3f427" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>p_delta_q</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1ac5e0fb9e8038d4d8bebe7e9f38cf5f7f" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>res</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a4cd0f7ccd99dbb98a404fa58a3342f51" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>res_q_qdot</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1ad73108fdad582da26531689c92950b80" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>res_qddot</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a15966b1b256f8562d6704570112a3ae5" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>res_time</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aaf16f5c50c9f4a41ee3d09cbe7f5099b" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>residueParts</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a860157afdde2ff3987346d20f8974dcb" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setConvergence</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a35f7d66e02aec70e4224d51710aa66fe" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setConvergence</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a044719996388c68d07b0296f5097c83c" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setDiffSystem</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a771ce07f6f05c7d92998887af61c1faa" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setEvaluation</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a61dcb7fdf68cdd5a93a1c756d5fbbba2" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setInitialConfiguration</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a6dbf90e487205bbeeeb2a9537ff1df11" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setInitialConfiguration</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a524e3b2e067de9404b99581f9a6f51aa" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setIntegrator</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1acc8b271e3ed6582fa122f723663efc81" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setIntegrator</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a8a382a9849a8ceb06bee87ea0842af35" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setIntegrator</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a3e6d19313d1c5be77b761c8822553829" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setIntegrator</name></member>
+      <member refid="classlmx_1_1DiffProblem_1aaa04d6f928a27a6c8ff4d7afee9d845a" prot="public" virt="non-virtual" ambiguityscope="lmx::DiffProblem::"><scope>lmx::DiffProblemSecond</scope><name>setIntegrator</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a5997efad5cf0b0a91899b7262cd6e31f" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setJacobian</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1abb7856200fac8d1a717ab2a6de0f4b1b" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setJacobianByParts</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a0cc21d6f547367b41e2292db9ea9d3a3" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setOutputFile</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1aad65044bcad25bc1094ca7a7e0557f64" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setResidue</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a84b8d2884acb8013b1a9b5a16098751a" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setResidueByParts</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1adae3bb6c6e7dd3762a66ff4bbed44016" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setSparsePatternJacobian</name></member>
+      <member refid="classlmx_1_1DiffProblem_1ae6db21b8e645b38706737bc302e64447" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setStepTriggered</name></member>
+      <member refid="classlmx_1_1DiffProblem_1aaef515c456107dc7c3def7efb69df1fe" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setTimeParameters</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a0a3a2b2a3439c317381ab2248113b6e5" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>setVervosity</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1ac871f9e8c3ee70c2bbc908406eac1480" prot="public" virt="virtual"><scope>lmx::DiffProblemSecond</scope><name>solve</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a618e5cd5bfc0fcdf581688a19f6d8f8f" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>stepSize</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a8ad0c21a39238e01c957de51779ac17a" prot="public" virt="virtual"><scope>lmx::DiffProblemSecond</scope><name>stepSolve</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a20769e063810affcaa763b822d51b7e7" prot="private" virt="virtual"><scope>lmx::DiffProblemSecond</scope><name>stepSolveExplicit</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1afedd52fcc9046c129b05b30c36e27f28" prot="private" virt="virtual"><scope>lmx::DiffProblemSecond</scope><name>stepSolveImplicit</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a57aca09c09bd4d8ce9913bf07b88f135" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>stepTriggered</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a6b58fb60128a6c764f641d8c3fa27bf2" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>tf</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a714d81c35c9c8648817dcd58f78d7f66" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>theConfiguration</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a5dceac9c803cae5b920048f40f9b889e" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>theIntegrator</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a1b5100d300b6583e170397823948f2ea" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>theNLSolver</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a9f5d3e07c69d65267b57c42b412705f6" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>theSystem</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a760ffa595e70cae2531f3216aac6c46e" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>to</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a970fd8f13bf8c857da01b90fe25d1662" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>v_cols</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1a9db5e177d892fcaabb4ee0a5be2f0076" prot="private" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>v_rows</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a9c30436b4fe89c4da9ceb9194191a6b0" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>vervosity</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a14bc11e5167b425f1a94de4d73c934ec" prot="protected" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>writeStepFiles</name></member>
+      <member refid="classlmx_1_1DiffProblem_1a80661c86ad22e8ee27bae92859f6dd91" prot="public" virt="virtual"><scope>lmx::DiffProblemSecond</scope><name>~DiffProblem</name></member>
+      <member refid="classlmx_1_1DiffProblemSecond_1acc07cd56a95b7ce60240ca8431162f3c" prot="public" virt="non-virtual"><scope>lmx::DiffProblemSecond</scope><name>~DiffProblemSecond</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

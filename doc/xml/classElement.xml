@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classElement" kind="class" prot="public">
+    <compoundname>Element</compoundname>
+    <includes refid="element_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/element.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classElement_1a3c475b7e8da464c6aa746ed2ae79ab3f" prot="public" static="no" mutable="no">
+        <type>vtkCell *</type>
+        <definition>vtkCell* Element::geometry</definition>
+        <argsstring></argsstring>
+        <name>geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="95" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classElement_1abd3cfd73fd15f802578207411d2740bb" compoundref="element_8cpp" startline="53" endline="85">generateGeometry</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classElement_1a57f68fec0f480086140c52ce75c4f60f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Element::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="98" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classElement_1a5db1c06684dd0adc6e93ef991589465f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Element::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="98" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classElement_1a03a5aa29f672284daaf6cb01fe75fb5d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Element::area</definition>
+        <argsstring></argsstring>
+        <name>area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classElement_1aaad0a966d0083efcf690fdd8794d1e52" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Element::density</definition>
+        <argsstring></argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classElement_1a232ee14049b8d5c92c65370bfb10d3af" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Element::density3D</definition>
+        <argsstring></argsstring>
+        <name>density3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="100" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classElement_1a52e309337dc065a713b697538e321289" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Element::connectivity</definition>
+        <argsstring></argsstring>
+        <name>connectivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="101" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classElement_1a025d90774a29a2eada1efaf8465384b9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;::iterator</type>
+        <definition>std::vector&lt;int&gt;::iterator Element::it</definition>
+        <argsstring></argsstring>
+        <name>it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="102" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classElement_1ab0d0e20be9a36ae676202db753faeec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Element::Element</definition>
+        <argsstring>()</argsstring>
+        <name>Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a4e6e261243d3b4580ae7b4c266d5ce5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Element::Element</definition>
+        <argsstring>(int type_in)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>int</type>
+          <declname>type_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="48" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a13d54ba9c08b6bec651402f1c2bb002c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Element::~Element</definition>
+        <argsstring>()</argsstring>
+        <name>~Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="51" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1ac9e6cfa50bdbdbe7fa8895fec7490c89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Element::setNumber</definition>
+        <argsstring>(int number_in)</argsstring>
+        <name>setNumber</name>
+        <param>
+          <type>int</type>
+          <declname>number_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="53" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1abf8a7a490cad2431443286d7ee615aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Element::setArea</definition>
+        <argsstring>(double area_in)</argsstring>
+        <name>setArea</name>
+        <param>
+          <type>double</type>
+          <declname>area_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="56" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1aa838e2bc18a65fffaa3a74da5767650c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Element::addNode</definition>
+        <argsstring>(int node_number)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>int</type>
+          <declname>node_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a0fcde2c599efe04b0a04623b362972fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Element::addDensity</definition>
+        <argsstring>(double dens_in)</argsstring>
+        <name>addDensity</name>
+        <param>
+          <type>double</type>
+          <declname>dens_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="62" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a9101c3a58134bb2fd736429976727e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Element::addDensity3D</definition>
+        <argsstring>(double dens_in)</argsstring>
+        <name>addDensity3D</name>
+        <param>
+          <type>double</type>
+          <declname>dens_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a8bd9315dc4eb7b59f47410347375bf0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Element::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="68" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a8de2b9d656140b6178581da489edf199" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Element::getNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="71" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a227a96bf84d82893af37a14650561eee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Element::getArea</definition>
+        <argsstring>()</argsstring>
+        <name>getArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="74" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a171ad7737d0015969b05cd21a17ec078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Element::getDensity</definition>
+        <argsstring>()</argsstring>
+        <name>getDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="77" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1ac53449729ec1381c44958bcf6ae7a797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Element::getDensity3D</definition>
+        <argsstring>()</argsstring>
+        <name>getDensity3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="80" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.cpp" bodystart="33" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1a54738e08d76563f2ffb5b6aef0f38981" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Element::getNumberOfNodes</definition>
+        <argsstring>()</argsstring>
+        <name>getNumberOfNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1ac6df9864bc31d99d8942e7c85533e9aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt; &amp;</type>
+        <definition>std::vector&lt;int&gt;&amp; Element::getConnectivity</definition>
+        <argsstring>()</argsstring>
+        <name>getConnectivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="89" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="89" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classElement_1abd3cfd73fd15f802578207411d2740bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Element::generateGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>generateGeometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="92" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.cpp" bodystart="53" bodyend="85"/>
+        <references refid="classElement_1a3c475b7e8da464c6aa746ed2ae79ab3f" compoundref="element_8h" startline="95">geometry</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/element.h" bodystart="43" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classElement_1a0fcde2c599efe04b0a04623b362972fc" prot="public" virt="non-virtual"><scope>Element</scope><name>addDensity</name></member>
+      <member refid="classElement_1a9101c3a58134bb2fd736429976727e79" prot="public" virt="non-virtual"><scope>Element</scope><name>addDensity3D</name></member>
+      <member refid="classElement_1aa838e2bc18a65fffaa3a74da5767650c" prot="public" virt="non-virtual"><scope>Element</scope><name>addNode</name></member>
+      <member refid="classElement_1a03a5aa29f672284daaf6cb01fe75fb5d" prot="private" virt="non-virtual"><scope>Element</scope><name>area</name></member>
+      <member refid="classElement_1a52e309337dc065a713b697538e321289" prot="private" virt="non-virtual"><scope>Element</scope><name>connectivity</name></member>
+      <member refid="classElement_1aaad0a966d0083efcf690fdd8794d1e52" prot="private" virt="non-virtual"><scope>Element</scope><name>density</name></member>
+      <member refid="classElement_1a232ee14049b8d5c92c65370bfb10d3af" prot="private" virt="non-virtual"><scope>Element</scope><name>density3D</name></member>
+      <member refid="classElement_1ab0d0e20be9a36ae676202db753faeec9" prot="public" virt="non-virtual"><scope>Element</scope><name>Element</name></member>
+      <member refid="classElement_1a4e6e261243d3b4580ae7b4c266d5ce5f" prot="public" virt="non-virtual"><scope>Element</scope><name>Element</name></member>
+      <member refid="classElement_1abd3cfd73fd15f802578207411d2740bb" prot="public" virt="non-virtual"><scope>Element</scope><name>generateGeometry</name></member>
+      <member refid="classElement_1a3c475b7e8da464c6aa746ed2ae79ab3f" prot="public" virt="non-virtual"><scope>Element</scope><name>geometry</name></member>
+      <member refid="classElement_1a227a96bf84d82893af37a14650561eee" prot="public" virt="non-virtual"><scope>Element</scope><name>getArea</name></member>
+      <member refid="classElement_1ac6df9864bc31d99d8942e7c85533e9aa" prot="public" virt="non-virtual"><scope>Element</scope><name>getConnectivity</name></member>
+      <member refid="classElement_1a171ad7737d0015969b05cd21a17ec078" prot="public" virt="non-virtual"><scope>Element</scope><name>getDensity</name></member>
+      <member refid="classElement_1ac53449729ec1381c44958bcf6ae7a797" prot="public" virt="non-virtual"><scope>Element</scope><name>getDensity3D</name></member>
+      <member refid="classElement_1a8de2b9d656140b6178581da489edf199" prot="public" virt="non-virtual"><scope>Element</scope><name>getNumber</name></member>
+      <member refid="classElement_1a54738e08d76563f2ffb5b6aef0f38981" prot="public" virt="non-virtual"><scope>Element</scope><name>getNumberOfNodes</name></member>
+      <member refid="classElement_1a8bd9315dc4eb7b59f47410347375bf0e" prot="public" virt="non-virtual"><scope>Element</scope><name>getType</name></member>
+      <member refid="classElement_1a025d90774a29a2eada1efaf8465384b9" prot="private" virt="non-virtual"><scope>Element</scope><name>it</name></member>
+      <member refid="classElement_1a5db1c06684dd0adc6e93ef991589465f" prot="private" virt="non-virtual"><scope>Element</scope><name>number</name></member>
+      <member refid="classElement_1abf8a7a490cad2431443286d7ee615aa7" prot="public" virt="non-virtual"><scope>Element</scope><name>setArea</name></member>
+      <member refid="classElement_1ac9e6cfa50bdbdbe7fa8895fec7490c89" prot="public" virt="non-virtual"><scope>Element</scope><name>setNumber</name></member>
+      <member refid="classElement_1a57f68fec0f480086140c52ce75c4f60f" prot="private" virt="non-virtual"><scope>Element</scope><name>type</name></member>
+      <member refid="classElement_1a13d54ba9c08b6bec651402f1c2bb002c" prot="public" virt="non-virtual"><scope>Element</scope><name>~Element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

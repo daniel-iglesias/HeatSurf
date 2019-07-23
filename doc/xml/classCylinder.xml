@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classCylinder" kind="class" prot="public">
+    <compoundname>Cylinder</compoundname>
+    <basecompoundref refid="classGeometry" prot="public" virt="non-virtual">Geometry</basecompoundref>
+    <includes refid="cylinder_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCylinder_1a152ef9901432a2a950f5bfc0ca65c404" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::slope</definition>
+        <argsstring></argsstring>
+        <name>slope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1a6060f0c1877d612c2bdc6771bb63794c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::initDiam</definition>
+        <argsstring></argsstring>
+        <name>initDiam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1a48427fc7774182f632a114b00a6ed67f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1a906841aa3d554b47003809c365e5f267" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1a4b6541cf1287b4b1eb2d50630d5c04bd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1a97d7842f87d52e2ed15bfb2a50da21b3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::vx</definition>
+        <argsstring></argsstring>
+        <name>vx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1aab6068f15131f9433a0e84c9e136b796" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::vy</definition>
+        <argsstring></argsstring>
+        <name>vy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCylinder_1a73ece1bfd0b75a65a6d985555409ca30" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Cylinder::vz</definition>
+        <argsstring></argsstring>
+        <name>vz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCylinder_1a01dc978cb576f834b9545e43d4dad2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cylinder::Cylinder</definition>
+        <argsstring>()</argsstring>
+        <name>Cylinder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1af6f22d1e11f65fc230f270c16e25385a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cylinder::Cylinder</definition>
+        <argsstring>(std::string, double, double, double, int)</argsstring>
+        <name>Cylinder</name>
+        <param>
+          <type>std::string</type>
+          <defname>type_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par0_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par1_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par2_in</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>par3_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="33" bodyend="43"/>
+        <references refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" compoundref="geometry_8h" startline="120">Geometry::gridWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a05ab556f0ae3cd6e99d9d1f3caca80b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cylinder::~Cylinder</definition>
+        <argsstring>()</argsstring>
+        <name>~Cylinder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1ad75a4b81272ef8b27b3163bf0aa49efd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::setSections</definition>
+        <argsstring>(double)</argsstring>
+        <name>setSections</name>
+        <reimplements refid="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df">setSections</reimplements>
+        <param>
+          <type>double</type>
+          <defname>distance</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="51" bodyend="55"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::computeGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>computeGeometry</name>
+        <reimplements refid="classGeometry_1a3e77ac889d1e440c24efbde630aa1933">computeGeometry</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="58" bodyend="147"/>
+        <references refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" compoundref="geometry_8h" startline="124">Geometry::elements</references>
+        <references refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" compoundref="geometry_8h" startline="130">Geometry::grid</references>
+        <references refid="classGeometry_1aed47a80e867e618e98272e830d297deb" compoundref="geometry_8h" startline="128">Geometry::gridPoints</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a76a83ba9168f8a9bc30bf0a85250f984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cylinder::residue</definition>
+        <argsstring>(lmx::Vector&lt; double &gt; &amp;, lmx::Vector&lt; double &gt; &amp;)</argsstring>
+        <name>residue</name>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>res</defname>
+        </param>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="150" bodyend="157"/>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a27c6e57d5f10da5fc660adf731960d6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cylinder::jacobian</definition>
+        <argsstring>(lmx::Matrix&lt; double &gt; &amp;, lmx::Vector&lt; double &gt; &amp;)</argsstring>
+        <name>jacobian</name>
+        <param>
+          <type>lmx::Matrix&lt; double &gt; &amp;</type>
+          <defname>jac</defname>
+        </param>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="159" bodyend="167"/>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::computeIntersection</definition>
+        <argsstring>(Particle *)</argsstring>
+        <name>computeIntersection</name>
+        <reimplements refid="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881">computeIntersection</reimplements>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="169" bodyend="190"/>
+        <references refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" compoundref="particle_8h" startline="54" endline="54">Particle::getX</references>
+        <references refid="classParticle_1a0813b73b2d08f57f05607df530684e14" compoundref="particle_8h" startline="58" endline="58">Particle::getXdiv</references>
+        <references refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" compoundref="particle_8h" startline="55" endline="55">Particle::getY</references>
+        <references refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" compoundref="particle_8h" startline="59" endline="59">Particle::getYdiv</references>
+        <references refid="classParticle_1a1b287734891b40546e06e17db8589fca" compoundref="particle_8h" startline="56" endline="56">Particle::getZ</references>
+        <references refid="classParticle_1a9435d915d86f9df46203f9b5c72888d0" compoundref="particle_8h" startline="60" endline="60">Particle::getZdiv</references>
+        <references refid="classCylinder_1a27c6e57d5f10da5fc660adf731960d6f" compoundref="cylinder_8cpp" startline="159" endline="167">jacobian</references>
+        <references refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" compoundref="geometry_8h" startline="121">Geometry::paramTrajectories</references>
+        <references refid="classCylinder_1a76a83ba9168f8a9bc30bf0a85250f984" compoundref="cylinder_8cpp" startline="150" endline="157">residue</references>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::computeNodalPower</definition>
+        <argsstring>(Particle *)</argsstring>
+        <name>computeNodalPower</name>
+        <reimplements refid="classGeometry_1af60650f8ce6d5a220928ccd7395120df">computeNodalPower</reimplements>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="58" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="192" bodyend="262"/>
+        <references refid="classParticle_1ad8d1a1de9b549f2a532a8d9a9f97c8fb" compoundref="particle_8h" startline="62" endline="62">Particle::getEnergy</references>
+        <references refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" compoundref="particle_8h" startline="54" endline="54">Particle::getX</references>
+        <references refid="classParticle_1a0813b73b2d08f57f05607df530684e14" compoundref="particle_8h" startline="58" endline="58">Particle::getXdiv</references>
+        <references refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" compoundref="particle_8h" startline="55" endline="55">Particle::getY</references>
+        <references refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" compoundref="particle_8h" startline="59" endline="59">Particle::getYdiv</references>
+        <references refid="classParticle_1a1b287734891b40546e06e17db8589fca" compoundref="particle_8h" startline="56" endline="56">Particle::getZ</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" compoundref="geometry_8h" startline="121">Geometry::paramTrajectories</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a33abcb99e6c881b867a0bb6c0dfcabae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::outputTable</definition>
+        <argsstring>()</argsstring>
+        <name>outputTable</name>
+        <reimplements refid="classGeometry_1a60e1424a222ba59284b81812aff34148">outputTable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::outputPowerFile</definition>
+        <argsstring>(int)</argsstring>
+        <name>outputPowerFile</name>
+        <reimplements refid="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56">outputPowerFile</reimplements>
+        <param>
+          <type>int</type>
+          <defname>particles</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="271" bodyend="294"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classCylinder_1a82078ecb74fbe07bed3de4040be73125" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Cylinder::outputPowerDensityFile</definition>
+        <argsstring>()</argsstring>
+        <name>outputPowerDensityFile</name>
+        <reimplements refid="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9">outputPowerDensityFile</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="64" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.cpp" bodystart="296" bodyend="405"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>Cylinder</label>
+        <link refid="classCylinder"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="56">
+        <label>Cylinder</label>
+        <link refid="classCylinder"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" line="42" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/cylinder.h" bodystart="41" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classGeometry_1af314d57676056969da57788a60954926" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>aDataSetMapper</name></member>
+      <member refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>anActor</name></member>
+      <member refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>axes</name></member>
+      <member refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>barActor</name></member>
+      <member refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" prot="public" virt="virtual"><scope>Cylinder</scope><name>computeGeometry</name></member>
+      <member refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>computeGrid3D</name></member>
+      <member refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" prot="public" virt="virtual"><scope>Cylinder</scope><name>computeIntersection</name></member>
+      <member refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" prot="public" virt="virtual"><scope>Cylinder</scope><name>computeNodalPower</name></member>
+      <member refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>computePowerDensity</name></member>
+      <member refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>cutActor</name></member>
+      <member refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>cutMapper</name></member>
+      <member refid="classCylinder_1a01dc978cb576f834b9545e43d4dad2a2" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>Cylinder</name></member>
+      <member refid="classCylinder_1af6f22d1e11f65fc230f270c16e25385a" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>Cylinder</name></member>
+      <member refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>drawGeometry</name></member>
+      <member refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>drawGrid</name></member>
+      <member refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>drawGridScalar</name></member>
+      <member refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>drawScalar</name></member>
+      <member refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>elements</name></member>
+      <member refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a565f5b7736c4b0894732900199903d54" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>getType</name></member>
+      <member refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid</name></member>
+      <member refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3D</name></member>
+      <member refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3DActor</name></member>
+      <member refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Daxes</name></member>
+      <member refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3DbarActor</name></member>
+      <member refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3DDataSetMapper</name></member>
+      <member refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Diren</name></member>
+      <member refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Dnodes</name></member>
+      <member refid="classGeometry_1afd79778e7c244df18be79a39419190c8" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3DPoints</name></member>
+      <member refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Dren</name></member>
+      <member refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3DrenWin</name></member>
+      <member refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Dscalar</name></member>
+      <member refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Dstyle</name></member>
+      <member refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Dtable</name></member>
+      <member refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>grid3Dwidget</name></member>
+      <member refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>gridCubes</name></member>
+      <member refid="classGeometry_1aed47a80e867e618e98272e830d297deb" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>gridPoints</name></member>
+      <member refid="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>gridSpacing</name></member>
+      <member refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>gridWidth</name></member>
+      <member refid="classCylinder_1a6060f0c1877d612c2bdc6771bb63794c" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>initDiam</name></member>
+      <member refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>iren</name></member>
+      <member refid="classCylinder_1a27c6e57d5f10da5fc660adf731960d6f" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>jacobian</name></member>
+      <member refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>length</name></member>
+      <member refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>nodes</name></member>
+      <member refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>outputAnsys3D</name></member>
+      <member refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>outputBackscattering</name></member>
+      <member refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" prot="public" virt="virtual"><scope>Cylinder</scope><name>outputPowerDensityFile</name></member>
+      <member refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" prot="public" virt="virtual"><scope>Cylinder</scope><name>outputPowerFile</name></member>
+      <member refid="classCylinder_1a33abcb99e6c881b867a0bb6c0dfcabae" prot="public" virt="virtual"><scope>Cylinder</scope><name>outputTable</name></member>
+      <member refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>outputVTKfiles</name></member>
+      <member refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>paramTrajectories</name></member>
+      <member refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>plane</name></member>
+      <member refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>planeCut</name></member>
+      <member refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>plotTitle</name></member>
+      <member refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>ren</name></member>
+      <member refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>renWin</name></member>
+      <member refid="classCylinder_1a76a83ba9168f8a9bc30bf0a85250f984" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>residue</name></member>
+      <member refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>scalar</name></member>
+      <member refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>sections</name></member>
+      <member refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>sections3D</name></member>
+      <member refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>sectors</name></member>
+      <member refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>sectors3D</name></member>
+      <member refid="classCylinder_1ad75a4b81272ef8b27b3163bf0aa49efd" prot="public" virt="virtual"><scope>Cylinder</scope><name>setSections</name></member>
+      <member refid="classCylinder_1a152ef9901432a2a950f5bfc0ca65c404" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>slope</name></member>
+      <member refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>style</name></member>
+      <member refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>table</name></member>
+      <member refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>type</name></member>
+      <member refid="classCylinder_1a97d7842f87d52e2ed15bfb2a50da21b3" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>vx</name></member>
+      <member refid="classCylinder_1aab6068f15131f9433a0e84c9e136b796" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>vy</name></member>
+      <member refid="classCylinder_1a73ece1bfd0b75a65a6d985555409ca30" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>vz</name></member>
+      <member refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>widget</name></member>
+      <member refid="classCylinder_1a48427fc7774182f632a114b00a6ed67f" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>x</name></member>
+      <member refid="classCylinder_1a906841aa3d554b47003809c365e5f267" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>y</name></member>
+      <member refid="classCylinder_1a4b6541cf1287b4b1eb2d50630d5c04bd" prot="private" virt="non-virtual"><scope>Cylinder</scope><name>z</name></member>
+      <member refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" prot="protected" virt="non-virtual"><scope>Cylinder</scope><name>z0</name></member>
+      <member refid="classCylinder_1a05ab556f0ae3cd6e99d9d1f3caca80b3" prot="public" virt="non-virtual"><scope>Cylinder</scope><name>~Cylinder</name></member>
+      <member refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" prot="public" virt="virtual"><scope>Cylinder</scope><name>~Geometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

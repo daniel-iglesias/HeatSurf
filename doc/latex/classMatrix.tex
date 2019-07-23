@@ -1,0 +1,950 @@
+\hypertarget{classMatrix}{\section{Matrix$<$ T $>$ Class Template Reference}
+\label{classMatrix}\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classMatrix}{Matrix}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-mat\-\_\-matrix.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix_a9d567e3a121b1be0c3f9c461cab524fe}{Matrix} ()
+\item 
+\hyperlink{classMatrix_a6226a80c09e42ae07b64570bc7a76dda}{Matrix} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{classMatrix_a0e74261aca51167c58c5608c1422f950}{Matrix} (const \hyperlink{classMatrix}{Matrix} \&)
+\item 
+\hyperlink{classMatrix_a9991e9c15523215441a667db5f53e3fb}{Matrix} (const Dense\-Matrix$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix_a91aa704de674203e96aece9e1955ccd3}{$\sim$\-Matrix} ()
+\item 
+void \hyperlink{classMatrix_ab117b452cec366d3f2aa6f51f25dde56}{initialize\-\_\-type\-\_\-matrix} (int)
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classMatrix_a94fa65c0c33679b20b23e8c6832d2f5f}{rows} () const 
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classMatrix_a2c9cc747b6f786bb23cb44b3a01707c2}{cols} () const 
+\item 
+void \hyperlink{classMatrix_a93687e829e58842640899351998eb6d7}{matrix\-Market\-Load} (char $\ast$)
+\item 
+void \hyperlink{classMatrix_a1033ffed8225aa5b3b8d4ffd326d4372}{harwell\-Boeing\-Load} (char $\ast$)
+\item 
+void \hyperlink{classMatrix_a268e0e10c50ba9d384bb9b27b1d0ddff}{harwell\-Boeing\-Save} (char $\ast$)
+\item 
+void \hyperlink{classMatrix_ae8fb2cd5911c80ab80ab5d4cdfce8e4a}{fill\-Identity} (T factor=static\-\_\-cast$<$ T $>$(1))
+\item 
+void \hyperlink{classMatrix_a42385f8505361bda72faf28e4de0a3bf}{fill\-Random} (T factor=static\-\_\-cast$<$ T $>$(1))
+\item 
+void \hyperlink{classMatrix_a0d950cdbf1dc0727fe4d63a4c56546d5}{sparse\-Pattern} (\hyperlink{classVector}{Vector}$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, \hyperlink{classVector}{Vector}$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&)
+\item 
+void \hyperlink{classMatrix_ad3c93ffa3e02137fec2ca1cdd98f1d6d}{sparse\-Pattern} (std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&)
+\item 
+void \hyperlink{classMatrix_a0e8c08e59217997921920cc27f3d8956}{sparse\-Pattern} (Dense\-Matrix$<$ T $>$ \&)
+\item 
+Elem\-\_\-ref$<$ T $>$ \hyperlink{classMatrix_a8c331926ec2fcc7ab5ba866f3f5dd370}{operator()} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a98a12ff384603dcb37d3fc2e56fd747e}{operator=} (const \hyperlink{classMatrix}{Matrix} \&)
+\item 
+{\footnotesize template$<$typename C $>$ }\\\hyperlink{classMatrix}{Matrix}$<$ T $>$ \& \hyperlink{classMatrix_a9df2b2426e056464d6961957a8330825}{operator=} (const \hyperlink{classMatrix}{Matrix}$<$ C $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a25ea1747156c8cdf2adae8da9d3b0b4e}{operator=} (const Dense\-Matrix$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a675f0713a95f8320bda2d583bf79e7d9}{operator+=} (const \hyperlink{classMatrix}{Matrix} \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a15cb875d43e397a9138aab19b2f4f935}{operator+=} (const Dense\-Matrix$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a22f1dad5c5fb9f37459517743442bbbd}{operator-\/=} (const \hyperlink{classMatrix}{Matrix} \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_af944ddec439b0242de0feca1d7955a16}{operator-\/=} (const Dense\-Matrix$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_ac610da076cedafce9a3f65475cb3e8b5}{operator$\ast$=} (T)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_aa8abca2bdd8d1a858a44520cf75ebf8b}{operator/=} (T)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a87e9ba44e1adfb175800069fe8070a64}{add} (const \hyperlink{classMatrix}{Matrix} \&A, const \hyperlink{classMatrix}{Matrix} \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a340d3452219c80b00eeac701b97b2964}{add} (const \hyperlink{classMatrix}{Matrix} \&A, const Dense\-Matrix$<$ T $>$ \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a7a1afbab88d965b02eba69a2c8fec1d4}{add} (const Dense\-Matrix$<$ T $>$ \&A, const \hyperlink{classMatrix}{Matrix} \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_aaee38bfbbbda0e76f1cb51d4bff11d66}{subs} (const \hyperlink{classMatrix}{Matrix} \&A, const \hyperlink{classMatrix}{Matrix} \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a6f730c77510da6ba5afca55f4d723001}{subs} (const \hyperlink{classMatrix}{Matrix} \&A, const Dense\-Matrix$<$ T $>$ \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_ad5d018ff9e180ea393ef967e832ac069}{subs} (const Dense\-Matrix$<$ T $>$ \&A, const \hyperlink{classMatrix}{Matrix} \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a2c7c2f0c8b16e0cc2e1ac4c94dcee326}{mult} (const \hyperlink{classMatrix}{Matrix} \&A, const \hyperlink{classMatrix}{Matrix} \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a4934d91ec76b1e730aaeba4e0cbcc15c}{mult} (const \hyperlink{classMatrix}{Matrix} \&A, const Dense\-Matrix$<$ T $>$ \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a11729be8fe22239ae5674f2e2551f6a0}{mult} (const Dense\-Matrix$<$ T $>$ \&A, const \hyperlink{classMatrix}{Matrix} \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a05d60787d4280ce70e4bfdf9a778feec}{mult} (const Dense\-Matrix$<$ T $>$ \&A, const Dense\-Matrix$<$ T $>$ \&B)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a4e43697ca65c10f762b65da8b29a77fa}{mult\-Elements} (const \hyperlink{classMatrix}{Matrix} \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a8a9e005b12332e7cf6d6cb7f7eb05258}{mult\-Elements} (const Dense\-Matrix$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_acb7570b613ac336b4bf75f4ec67635e5}{mult\-Elements} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&, const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_a124251b89d28e38b5f8cf3a48b297008}{mult\-Elements} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&, const Dense\-Matrix$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_aa44908832fe9f0e3da401e207f8e071a}{mult\-Elements} (const Dense\-Matrix$<$ T $>$ \&, const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_abf8ae3fecd7d624fd33c1058cbfe413a}{mult\-Elements} (const Dense\-Matrix$<$ T $>$ \&, const Dense\-Matrix$<$ T $>$ \&)
+\item 
+const T \& \hyperlink{classMatrix_a1225e5428e19fc4ae3fcb664fbdecb6b}{read\-Element} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} n) const 
+\item 
+void \hyperlink{classMatrix_a15b74964ba42fecd4965e0e5fd6643ca}{write\-Element} (T the\-Value, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} n) const 
+\item 
+void \hyperlink{classMatrix_a160e129270712b87969f7efee086fb53}{add\-Element} (const T the\-Value, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} n) const 
+\item 
+void \hyperlink{classMatrix_a1344fb1e24060a6be2e530447582affa}{clean} (T factor)
+\item 
+void \hyperlink{classMatrix_ad39022f082bfee09e24d098796e14e10}{clear} ()
+\item 
+void \hyperlink{classMatrix_af40e280112b61f6a37b54d2e5ef02e5b}{reset} ()
+\item 
+void \hyperlink{classMatrix_a2a591b90d5553c7d097cb27f8d8ce29a}{resize} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} i, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} j)
+\item 
+void \hyperlink{classMatrix_af21f3044dc958a53f9f22f40b70a1ad1}{resize} (const \hyperlink{classMatrix}{Matrix} \&mat)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_accfd52f77ce100b5ffa35a434eec4eb1}{transpose} ()
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMatrix_a4d2d081f23b22321941c9584b89e0cf3}{operator+} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMatrix_aae75f71f4a42101b068fc6ae023c3ac4}{operator+} (const Dense\-Matrix$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{classMatrix_a6e7f2dccf069eb1df036ad7ff3756789}{operator-\/} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMatrix_adb6f17017ec3598c84d933e5ee762b90}{operator-\/} (const Dense\-Matrix$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{classMatrix_a24d516d845a1b9ba87706566e5604588}{operator$\ast$} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{classMatrix_a08bd824b1d3e5b02ffcabf2d70f518d5}{operator$\ast$} (const Dense\-Matrix$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{classMatrix_a48967ad505c540147f116fa0b3050bac}{operator$\ast$} (const T \&scalar) const 
+\item 
+bool \hyperlink{classMatrix_a5ac0a39b36bc04e4cedfde09dfe01105}{exists} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} row, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} col)
+\item 
+bool \hyperlink{classMatrix_aed9270dd5f211e6e1a5989d61184e744}{check\-Symmetry} ()
+\item 
+void \hyperlink{classMatrix_a5ccbd055f0ae0377196ddabb0d1b03f7}{factorize} ()
+\item 
+void \hyperlink{classMatrix_a22d183d83bb9bf1cd5feea309f3a665e}{subs\-Solve} (\hyperlink{classVector}{Vector}$<$ T $>$ \&rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classMatrix}{Matrix}$<$ T $>$ \& \hyperlink{classMatrix_a0d9e03ae35ffa4667afa1075f2684a64}{operator=} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&A)
+\item 
+{\footnotesize template$<$typename C $>$ }\\\hyperlink{classMatrix}{Matrix}$<$ T $>$ \& \hyperlink{classMatrix_a07c1d963d1e98ff20ac96711d357f42d}{operator=} (const \hyperlink{classMatrix}{Matrix}$<$ C $>$ \&A)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classMatrix}{Matrix}$<$ T $>$ \& \hyperlink{classMatrix_a3f2deb42b24254e639bca3ea50e2cdd5}{operator=} (const Dense\-Matrix$<$ T $>$ \&A)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix_ad49f0060c68e71cdda695406d6f229f8}{Matrix} (int)
+\item 
+\hyperlink{classMatrix_aeee342d4728ae708002d7e4d976d95f5}{Matrix} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classMatrix_a0b283aced337f3c94db50bc459d28580}{mrows}
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classMatrix_a05a070e7ed8f3289d72c71b47888bef2}{ncolumns}
+\item 
+Elem\-\_\-ref$<$ T $>$ $\ast$ \hyperlink{classMatrix_a0294600ba30c0665efcaeb77bbcad7fa}{reference}
+\item 
+Data\-\_\-mat$<$ T $>$ $\ast$ \hyperlink{classMatrix_a3ea7741164284aaa1ad49dec89a2d309}{type\-\_\-matrix}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMatrix_a07857ea092bfd5d08a811e05ad544204}{Vector$<$ T $>$}
+\item 
+class \hyperlink{classMatrix_a5b3d3d3d338fdb2c08f91dfe38d425bd}{Dense\-Matrix$<$ T $>$}
+\item 
+class \hyperlink{classMatrix_a95e5ab4da3326ece35572b4c41f61d15}{Linear\-System$<$ T $>$}
+\item 
+class \hyperlink{classMatrix_a83ba0257c792f88b9da29aacaad2b47d}{L\-M\-X\-Tester}
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMatrix_a3d4080c30637166c1b14268400d0fecd}{transposed} (const \hyperlink{classMatrix}{Matrix} \&mat\-\_\-in)
+\item 
+{\footnotesize template$<$typename C $>$ }\\void \hyperlink{classMatrix_a10399f412e3ebd2af5372dc3638dfe9a}{lmx\-::latex\-Print} (std\-::ofstream \&os, char $\ast$mat\-\_\-name, \hyperlink{classMatrix}{Matrix}$<$ C $>$ \&mat, int prec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Matrix$<$ T $>$}
+
+Template class \hyperlink{classMatrix}{Matrix}. 
+
+This class permits the creation of matrix objects. A \hyperlink{classMatrix}{Matrix} object owns two parameters, nrows and mcolumns, that store the dimension of the matrix container. The data is stored in an atribute ($\ast$type\-\_\-matrix) that points to some class which derives from the Data\-\_\-mat class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mrows} & The number of rows of the Data Container (Data\-\_\-mat). \\
+\hline
+{\em ncolumns} & The number of columns of the Data Container (Data\-\_\-mat). \\
+\hline
+{\em reference} & An Elem\-\_\-ref object for r/w data access. \\
+\hline
+{\em $\ast$type\-\_\-matrix} & The pointer to the matrix data container.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMatrix_ad49f0060c68e71cdda695406d6f229f8}{\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMatrix_ad49f0060c68e71cdda695406d6f229f8}
+\hypertarget{classMatrix_aeee342d4728ae708002d7e4d976d95f5}{\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{, }
+\item[{{\bf size\-\_\-type}}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMatrix_aeee342d4728ae708002d7e4d976d95f5}
+\hypertarget{classMatrix_a9d567e3a121b1be0c3f9c461cab524fe}{\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::{\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a9d567e3a121b1be0c3f9c461cab524fe}
+Empty constructor. 
+
+References get\-Matrix\-Type(), and Matrix$<$ T $>$\-::initialize\-\_\-type\-\_\-matrix().
+
+\hypertarget{classMatrix_a6226a80c09e42ae07b64570bc7a76dda}{\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{, }
+\item[{{\bf size\-\_\-type}}]{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a6226a80c09e42ae07b64570bc7a76dda}
+\hypertarget{classMatrix_a0e74261aca51167c58c5608c1422f950}{\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a0e74261aca51167c58c5608c1422f950}
+\hypertarget{classMatrix_a9991e9c15523215441a667db5f53e3fb}{\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a9991e9c15523215441a667db5f53e3fb}
+\hypertarget{classMatrix_a91aa704de674203e96aece9e1955ccd3}{\index{Matrix@{Matrix}!$\sim$\-Matrix@{$\sim$\-Matrix}}
+\index{$\sim$\-Matrix@{$\sim$\-Matrix}!Matrix@{Matrix}}
+\subsubsection[{$\sim$\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$\-::$\sim${\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a91aa704de674203e96aece9e1955ccd3}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMatrix_a87e9ba44e1adfb175800069fe8070a64}{\index{Matrix@{Matrix}!add@{add}}
+\index{add@{add}!Matrix@{Matrix}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a87e9ba44e1adfb175800069fe8070a64}
+\hypertarget{classMatrix_a340d3452219c80b00eeac701b97b2964}{\index{Matrix@{Matrix}!add@{add}}
+\index{add@{add}!Matrix@{Matrix}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a340d3452219c80b00eeac701b97b2964}
+\hypertarget{classMatrix_a7a1afbab88d965b02eba69a2c8fec1d4}{\index{Matrix@{Matrix}!add@{add}}
+\index{add@{add}!Matrix@{Matrix}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a7a1afbab88d965b02eba69a2c8fec1d4}
+\hypertarget{classMatrix_a160e129270712b87969f7efee086fb53}{\index{Matrix@{Matrix}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!Matrix@{Matrix}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::add\-Element (
+\begin{DoxyParamCaption}
+\item[{const T}]{the\-Value, }
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a160e129270712b87969f7efee086fb53}
+Function adds the value in specified position of \hyperlink{classMatrix}{Matrix} object. \hypertarget{classMatrix_aed9270dd5f211e6e1a5989d61184e744}{\index{Matrix@{Matrix}!check\-Symmetry@{check\-Symmetry}}
+\index{check\-Symmetry@{check\-Symmetry}!Matrix@{Matrix}}
+\subsubsection[{check\-Symmetry}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf Matrix}$<$ T $>$\-::check\-Symmetry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_aed9270dd5f211e6e1a5989d61184e744}
+Retuns 1 if the \hyperlink{classMatrix}{Matrix} is symmetric and 0 if it does not. Needs documentation! \hypertarget{classMatrix_a1344fb1e24060a6be2e530447582affa}{\index{Matrix@{Matrix}!clean@{clean}}
+\index{clean@{clean}!Matrix@{Matrix}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::clean (
+\begin{DoxyParamCaption}
+\item[{T}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a1344fb1e24060a6be2e530447582affa}
+Cleans all numbers below given factor. \hypertarget{classMatrix_ad39022f082bfee09e24d098796e14e10}{\index{Matrix@{Matrix}!clear@{clear}}
+\index{clear@{clear}!Matrix@{Matrix}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_ad39022f082bfee09e24d098796e14e10}
+Clears the object's contents. \hypertarget{classMatrix_a2c9cc747b6f786bb23cb44b3a01707c2}{\index{Matrix@{Matrix}!cols@{cols}}
+\index{cols@{cols}!Matrix@{Matrix}}
+\subsubsection[{cols}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf Matrix}$<$ T $>$\-::cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a2c9cc747b6f786bb23cb44b3a01707c2}
+Read number of cols. \begin{DoxyReturn}{Returns}
+Number of cols of matrix. 
+\end{DoxyReturn}
+
+
+Referenced by Matrix$<$ T $>$\-::operator$\ast$(), Matrix$<$ T $>$\-::operator=(), and Matrix$<$ T $>$\-::resize().
+
+\hypertarget{classMatrix_a5ac0a39b36bc04e4cedfde09dfe01105}{\index{Matrix@{Matrix}!exists@{exists}}
+\index{exists@{exists}!Matrix@{Matrix}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf Matrix}$<$ T $>$\-::exists (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{row, }
+\item[{{\bf size\-\_\-type}}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a5ac0a39b36bc04e4cedfde09dfe01105}
+Retuns 1 if the element exists inside the storing structure and 0 if it does not. \hypertarget{classMatrix_a5ccbd055f0ae0377196ddabb0d1b03f7}{\index{Matrix@{Matrix}!factorize@{factorize}}
+\index{factorize@{factorize}!Matrix@{Matrix}}
+\subsubsection[{factorize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::factorize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a5ccbd055f0ae0377196ddabb0d1b03f7}
+D\-O\-C\-U\-M\-E\-N\-T \hypertarget{classMatrix_ae8fb2cd5911c80ab80ab5d4cdfce8e4a}{\index{Matrix@{Matrix}!fill\-Identity@{fill\-Identity}}
+\index{fill\-Identity@{fill\-Identity}!Matrix@{Matrix}}
+\subsubsection[{fill\-Identity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::fill\-Identity (
+\begin{DoxyParamCaption}
+\item[{T}]{factor = {\ttfamily static\-\_\-cast$<$T$>$(1)}}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_ae8fb2cd5911c80ab80ab5d4cdfce8e4a}
+Cleans matrix and sets diagonal terms to specified value. \hyperlink{classMatrix}{Matrix} must be square. 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Value of diagonal terms. Default is one. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classMatrix_a42385f8505361bda72faf28e4de0a3bf}{\index{Matrix@{Matrix}!fill\-Random@{fill\-Random}}
+\index{fill\-Random@{fill\-Random}!Matrix@{Matrix}}
+\subsubsection[{fill\-Random}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::fill\-Random (
+\begin{DoxyParamCaption}
+\item[{T}]{factor = {\ttfamily static\-\_\-cast$<$T$>$(1)}}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a42385f8505361bda72faf28e4de0a3bf}
+Function for filling a matrix with random numbers 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Scales the random numbers (default value is unity). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_a1033ffed8225aa5b3b8d4ffd326d4372}{\index{Matrix@{Matrix}!harwell\-Boeing\-Load@{harwell\-Boeing\-Load}}
+\index{harwell\-Boeing\-Load@{harwell\-Boeing\-Load}!Matrix@{Matrix}}
+\subsubsection[{harwell\-Boeing\-Load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::harwell\-Boeing\-Load (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a1033ffed8225aa5b3b8d4ffd326d4372}
+Method for reading a matrix in Harwell-\/\-Boeing format from a file. 
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to read. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_a268e0e10c50ba9d384bb9b27b1d0ddff}{\index{Matrix@{Matrix}!harwell\-Boeing\-Save@{harwell\-Boeing\-Save}}
+\index{harwell\-Boeing\-Save@{harwell\-Boeing\-Save}!Matrix@{Matrix}}
+\subsubsection[{harwell\-Boeing\-Save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::harwell\-Boeing\-Save (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a268e0e10c50ba9d384bb9b27b1d0ddff}
+Method for reading a matrix in Harwell-\/\-Boeing format from a file. 
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to read. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_ab117b452cec366d3f2aa6f51f25dde56}{\index{Matrix@{Matrix}!initialize\-\_\-type\-\_\-matrix@{initialize\-\_\-type\-\_\-matrix}}
+\index{initialize\-\_\-type\-\_\-matrix@{initialize\-\_\-type\-\_\-matrix}!Matrix@{Matrix}}
+\subsubsection[{initialize\-\_\-type\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::initialize\-\_\-type\-\_\-matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_ab117b452cec366d3f2aa6f51f25dde56}
+Function that creates specified matrix and a new Elem\-\_\-ref with it. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Integer with matrix type identifier. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+
+
+Referenced by Matrix$<$ T $>$\-::\-Matrix().
+
+\hypertarget{classMatrix_a93687e829e58842640899351998eb6d7}{\index{Matrix@{Matrix}!matrix\-Market\-Load@{matrix\-Market\-Load}}
+\index{matrix\-Market\-Load@{matrix\-Market\-Load}!Matrix@{Matrix}}
+\subsubsection[{matrix\-Market\-Load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::matrix\-Market\-Load (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a93687e829e58842640899351998eb6d7}
+Method for reading a matrix in Matrix-\/\-Market format from a file. 
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to read. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_a2c7c2f0c8b16e0cc2e1ac4c94dcee326}{\index{Matrix@{Matrix}!mult@{mult}}
+\index{mult@{mult}!Matrix@{Matrix}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a2c7c2f0c8b16e0cc2e1ac4c94dcee326}
+
+
+Referenced by Matrix$<$ T $>$\-::operator$\ast$().
+
+\hypertarget{classMatrix_a4934d91ec76b1e730aaeba4e0cbcc15c}{\index{Matrix@{Matrix}!mult@{mult}}
+\index{mult@{mult}!Matrix@{Matrix}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a4934d91ec76b1e730aaeba4e0cbcc15c}
+\hypertarget{classMatrix_a11729be8fe22239ae5674f2e2551f6a0}{\index{Matrix@{Matrix}!mult@{mult}}
+\index{mult@{mult}!Matrix@{Matrix}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a11729be8fe22239ae5674f2e2551f6a0}
+\hypertarget{classMatrix_a05d60787d4280ce70e4bfdf9a778feec}{\index{Matrix@{Matrix}!mult@{mult}}
+\index{mult@{mult}!Matrix@{Matrix}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$ \& {\bf Matrix}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{A, }
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a05d60787d4280ce70e4bfdf9a778feec}
+Dense\-Matrix objects multiplication, with result storing in the \hyperlink{classMatrix}{Matrix} object. 
+\begin{DoxyParams}{Parameters}
+{\em A} & Left Dense\-Matrix. \\
+\hline
+{\em B} & Right Dense\-Matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to multiplication result in \hyperlink{classMatrix}{Matrix}. 
+\end{DoxyReturn}
+
+
+References lmx\-::mat\-\_\-mat\-\_\-mult().
+
+\hypertarget{classMatrix_a4e43697ca65c10f762b65da8b29a77fa}{\index{Matrix@{Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!Matrix@{Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a4e43697ca65c10f762b65da8b29a77fa}
+\hypertarget{classMatrix_a8a9e005b12332e7cf6d6cb7f7eb05258}{\index{Matrix@{Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!Matrix@{Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a8a9e005b12332e7cf6d6cb7f7eb05258}
+\hypertarget{classMatrix_acb7570b613ac336b4bf75f4ec67635e5}{\index{Matrix@{Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!Matrix@{Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_acb7570b613ac336b4bf75f4ec67635e5}
+\hypertarget{classMatrix_a124251b89d28e38b5f8cf3a48b297008}{\index{Matrix@{Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!Matrix@{Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{, }
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a124251b89d28e38b5f8cf3a48b297008}
+\hypertarget{classMatrix_aa44908832fe9f0e3da401e207f8e071a}{\index{Matrix@{Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!Matrix@{Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_aa44908832fe9f0e3da401e207f8e071a}
+\hypertarget{classMatrix_abf8ae3fecd7d624fd33c1058cbfe413a}{\index{Matrix@{Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!Matrix@{Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{, }
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_abf8ae3fecd7d624fd33c1058cbfe413a}
+\hypertarget{classMatrix_a8c331926ec2fcc7ab5ba866f3f5dd370}{\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Elem\-\_\-ref$<$ T $>$ {\bf Matrix}$<$ T $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a8c331926ec2fcc7ab5ba866f3f5dd370}
+Overloaded operator for extracting elements from the \hyperlink{classMatrix}{Matrix} object. 
+\begin{DoxyParams}{Parameters}
+{\em m} & Row position of element. \\
+\hline
+{\em n} & Column position of element. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classMatrix_a24d516d845a1b9ba87706566e5604588}{\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$T$>$ {\bf Matrix}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a24d516d845a1b9ba87706566e5604588}
+Overloaded operator for multiplying two \hyperlink{classMatrix}{Matrix} objects. 
+
+References Matrix$<$ T $>$\-::cols(), and Matrix$<$ T $>$\-::mult().
+
+\hypertarget{classMatrix_a08bd824b1d3e5b02ffcabf2d70f518d5}{\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$T$>$ {\bf Matrix}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a08bd824b1d3e5b02ffcabf2d70f518d5}
+Overloaded operator for multiplying \hyperlink{classMatrix}{Matrix} and Dense\-Matrix objects. 
+
+References Matrix$<$ T $>$\-::write\-Element().
+
+\hypertarget{classMatrix_a48967ad505c540147f116fa0b3050bac}{\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$T$>$ {\bf Matrix}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a48967ad505c540147f116fa0b3050bac}
+Overload operator for scaling a matrix. \hypertarget{classMatrix_ac610da076cedafce9a3f65475cb3e8b5}{\index{Matrix@{Matrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Matrix@{Matrix}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$ \& {\bf Matrix}$<$ T $>$\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{T}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_ac610da076cedafce9a3f65475cb3e8b5}
+Scalar multiplication operator. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & Factor of scaling. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to scaled matrix. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a4d2d081f23b22321941c9584b89e0cf3}{\index{Matrix@{Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix@{Matrix}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix} {\bf Matrix}$<$ T $>$\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a4d2d081f23b22321941c9584b89e0cf3}
+Overloaded operator for adding elements between two \hyperlink{classMatrix}{Matrix} objects. \hypertarget{classMatrix_aae75f71f4a42101b068fc6ae023c3ac4}{\index{Matrix@{Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix@{Matrix}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix} {\bf Matrix}$<$ T $>$\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_aae75f71f4a42101b068fc6ae023c3ac4}
+Overloaded operator for adding elements between a \hyperlink{classMatrix}{Matrix} and a Dense\-Matrix object. \hypertarget{classMatrix_a675f0713a95f8320bda2d583bf79e7d9}{\index{Matrix@{Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Matrix@{Matrix}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a675f0713a95f8320bda2d583bf79e7d9}
+\hypertarget{classMatrix_a15cb875d43e397a9138aab19b2f4f935}{\index{Matrix@{Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Matrix@{Matrix}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a15cb875d43e397a9138aab19b2f4f935}
+\hypertarget{classMatrix_a6e7f2dccf069eb1df036ad7ff3756789}{\index{Matrix@{Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix@{Matrix}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$T$>$ {\bf Matrix}$<$ T $>$\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a6e7f2dccf069eb1df036ad7ff3756789}
+Overloaded operator for substracting elements between two \hyperlink{classMatrix}{Matrix} objects. \hypertarget{classMatrix_adb6f17017ec3598c84d933e5ee762b90}{\index{Matrix@{Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix@{Matrix}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix} {\bf Matrix}$<$ T $>$\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_adb6f17017ec3598c84d933e5ee762b90}
+Overloaded operator for substracting elements between a \hyperlink{classMatrix}{Matrix} and a Dense\-Matrix object. \hypertarget{classMatrix_a22f1dad5c5fb9f37459517743442bbbd}{\index{Matrix@{Matrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Matrix@{Matrix}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a22f1dad5c5fb9f37459517743442bbbd}
+\hypertarget{classMatrix_af944ddec439b0242de0feca1d7955a16}{\index{Matrix@{Matrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Matrix@{Matrix}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_af944ddec439b0242de0feca1d7955a16}
+\hypertarget{classMatrix_aa8abca2bdd8d1a858a44520cf75ebf8b}{\index{Matrix@{Matrix}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Matrix@{Matrix}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}$<$ T $>$ \& {\bf Matrix}$<$ T $>$\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{T}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_aa8abca2bdd8d1a858a44520cf75ebf8b}
+Scalar term-\/by-\/term division operator. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & Factor of division. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to scaled matrix. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a98a12ff384603dcb37d3fc2e56fd747e}{\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a98a12ff384603dcb37d3fc2e56fd747e}
+\hypertarget{classMatrix_a9df2b2426e056464d6961957a8330825}{\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename C $>$ {\bf Matrix}$<$T$>$\& {\bf Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ C $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a9df2b2426e056464d6961957a8330825}
+\hypertarget{classMatrix_a25ea1747156c8cdf2adae8da9d3b0b4e}{\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a25ea1747156c8cdf2adae8da9d3b0b4e}
+\hypertarget{classMatrix_a0d9e03ae35ffa4667afa1075f2684a64}{\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename T $>$ {\bf Matrix}$<$T$>$\& {\bf Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a0d9e03ae35ffa4667afa1075f2684a64}
+Overloaded operator for equaling every element between two \hyperlink{classMatrix}{Matrix} objects of the same type. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classMatrix}{Matrix} to be equal to. \\
+\hline
+\end{DoxyParams}
+
+
+References Matrix$<$ T $>$\-::mrows, Matrix$<$ T $>$\-::ncolumns, and Matrix$<$ T $>$\-::type\-\_\-matrix.
+
+\hypertarget{classMatrix_a07c1d963d1e98ff20ac96711d357f42d}{\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename C $>$ {\bf Matrix}$<$T$>$\& {\bf Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ C $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a07c1d963d1e98ff20ac96711d357f42d}
+Overloaded operator for equaling every element between two \hyperlink{classMatrix}{Matrix} objects of different types. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classMatrix}{Matrix} to be equal to. \\
+\hline
+\end{DoxyParams}
+
+
+References Matrix$<$ T $>$\-::cols(), Matrix$<$ T $>$\-::read\-Element(), and Matrix$<$ T $>$\-::rows().
+
+\hypertarget{classMatrix_a3f2deb42b24254e639bca3ea50e2cdd5}{\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename T $>$ {\bf Matrix}$<$T$>$\& {\bf Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a3f2deb42b24254e639bca3ea50e2cdd5}
+Overloaded operator for equaling every element between a \hyperlink{classMatrix}{Matrix} and a Dense\-Matrix object of the same type. 
+\begin{DoxyParams}{Parameters}
+{\em A} & Dense\-Matrix to be equal to. \\
+\hline
+\end{DoxyParams}
+
+
+References get\-Matrix\-Type(), and Matrix$<$ T $>$\-::mrows.
+
+\hypertarget{classMatrix_a1225e5428e19fc4ae3fcb664fbdecb6b}{\index{Matrix@{Matrix}!read\-Element@{read\-Element}}
+\index{read\-Element@{read\-Element}!Matrix@{Matrix}}
+\subsubsection[{read\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const T\& {\bf Matrix}$<$ T $>$\-::read\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a1225e5428e19fc4ae3fcb664fbdecb6b}
+Function that returns the value in specified position of \hyperlink{classMatrix}{Matrix} object. 
+
+Referenced by Matrix$<$ T $>$\-::operator=().
+
+\hypertarget{classMatrix_af40e280112b61f6a37b54d2e5ef02e5b}{\index{Matrix@{Matrix}!reset@{reset}}
+\index{reset@{reset}!Matrix@{Matrix}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_af40e280112b61f6a37b54d2e5ef02e5b}
+Reset contents to 0 \hypertarget{classMatrix_a2a591b90d5553c7d097cb27f8d8ce29a}{\index{Matrix@{Matrix}!resize@{resize}}
+\index{resize@{resize}!Matrix@{Matrix}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{i, }
+\item[{{\bf size\-\_\-type}}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a2a591b90d5553c7d097cb27f8d8ce29a}
+Resize the \hyperlink{classMatrix}{Matrix} with given size parameters. 
+\begin{DoxyParams}{Parameters}
+{\em i} & Rows. \\
+\hline
+{\em j} & Columns. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_af21f3044dc958a53f9f22f40b70a1ad1}{\index{Matrix@{Matrix}!resize@{resize}}
+\index{resize@{resize}!Matrix@{Matrix}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_af21f3044dc958a53f9f22f40b70a1ad1}
+Resize the \hyperlink{classMatrix}{Matrix} to the size of another \hyperlink{classMatrix}{Matrix}. 
+\begin{DoxyParams}{Parameters}
+{\em mat} & Constant reference to a \hyperlink{classMatrix}{Matrix}. \\
+\hline
+\end{DoxyParams}
+
+
+References Matrix$<$ T $>$\-::cols(), and Matrix$<$ T $>$\-::rows().
+
+\hypertarget{classMatrix_a94fa65c0c33679b20b23e8c6832d2f5f}{\index{Matrix@{Matrix}!rows@{rows}}
+\index{rows@{rows}!Matrix@{Matrix}}
+\subsubsection[{rows}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf Matrix}$<$ T $>$\-::rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a94fa65c0c33679b20b23e8c6832d2f5f}
+Read number of rows. \begin{DoxyReturn}{Returns}
+Number of rows of matrix. 
+\end{DoxyReturn}
+
+
+Referenced by Matrix$<$ T $>$\-::operator=(), and Matrix$<$ T $>$\-::resize().
+
+\hypertarget{classMatrix_a0d950cdbf1dc0727fe4d63a4c56546d5}{\index{Matrix@{Matrix}!sparse\-Pattern@{sparse\-Pattern}}
+\index{sparse\-Pattern@{sparse\-Pattern}!Matrix@{Matrix}}
+\subsubsection[{sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ {\bf size\-\_\-type} $>$ \&}]{, }
+\item[{{\bf Vector}$<$ {\bf size\-\_\-type} $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a0d950cdbf1dc0727fe4d63a4c56546d5}
+\hypertarget{classMatrix_ad3c93ffa3e02137fec2ca1cdd98f1d6d}{\index{Matrix@{Matrix}!sparse\-Pattern@{sparse\-Pattern}}
+\index{sparse\-Pattern@{sparse\-Pattern}!Matrix@{Matrix}}
+\subsubsection[{sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{, }
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_ad3c93ffa3e02137fec2ca1cdd98f1d6d}
+\hypertarget{classMatrix_a0e8c08e59217997921920cc27f3d8956}{\index{Matrix@{Matrix}!sparse\-Pattern@{sparse\-Pattern}}
+\index{sparse\-Pattern@{sparse\-Pattern}!Matrix@{Matrix}}
+\subsubsection[{sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{Dense\-Matrix$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix_a0e8c08e59217997921920cc27f3d8956}
+\hypertarget{classMatrix_aaee38bfbbbda0e76f1cb51d4bff11d66}{\index{Matrix@{Matrix}!subs@{subs}}
+\index{subs@{subs}!Matrix@{Matrix}}
+\subsubsection[{subs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::subs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_aaee38bfbbbda0e76f1cb51d4bff11d66}
+\hypertarget{classMatrix_a6f730c77510da6ba5afca55f4d723001}{\index{Matrix@{Matrix}!subs@{subs}}
+\index{subs@{subs}!Matrix@{Matrix}}
+\subsubsection[{subs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::subs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a6f730c77510da6ba5afca55f4d723001}
+\hypertarget{classMatrix_ad5d018ff9e180ea393ef967e832ac069}{\index{Matrix@{Matrix}!subs@{subs}}
+\index{subs@{subs}!Matrix@{Matrix}}
+\subsubsection[{subs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::subs (
+\begin{DoxyParamCaption}
+\item[{const Dense\-Matrix$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_ad5d018ff9e180ea393ef967e832ac069}
+\hypertarget{classMatrix_a22d183d83bb9bf1cd5feea309f3a665e}{\index{Matrix@{Matrix}!subs\-Solve@{subs\-Solve}}
+\index{subs\-Solve@{subs\-Solve}!Matrix@{Matrix}}
+\subsubsection[{subs\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::subs\-Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a22d183d83bb9bf1cd5feea309f3a665e}
+D\-O\-C\-U\-M\-E\-N\-T \hypertarget{classMatrix_accfd52f77ce100b5ffa35a434eec4eb1}{\index{Matrix@{Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix@{Matrix}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix}\& {\bf Matrix}$<$ T $>$\-::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_accfd52f77ce100b5ffa35a434eec4eb1}
+Function to transpose a matrix. \hypertarget{classMatrix_a15b74964ba42fecd4965e0e5fd6643ca}{\index{Matrix@{Matrix}!write\-Element@{write\-Element}}
+\index{write\-Element@{write\-Element}!Matrix@{Matrix}}
+\subsubsection[{write\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Matrix}$<$ T $>$\-::write\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{the\-Value, }
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrix_a15b74964ba42fecd4965e0e5fd6643ca}
+Function writes the value in specified position of \hyperlink{classMatrix}{Matrix} object. 
+
+Referenced by Matrix$<$ T $>$\-::operator$\ast$().
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classMatrix_a5b3d3d3d338fdb2c08f91dfe38d425bd}{\index{Matrix@{Matrix}!Dense\-Matrix$<$ T $>$@{Dense\-Matrix$<$ T $>$}}
+\index{Dense\-Matrix$<$ T $>$@{Dense\-Matrix$<$ T $>$}!Matrix@{Matrix}}
+\subsubsection[{Dense\-Matrix$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class Dense\-Matrix$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}}\label{classMatrix_a5b3d3d3d338fdb2c08f91dfe38d425bd}
+\hypertarget{classMatrix_a95e5ab4da3326ece35572b4c41f61d15}{\index{Matrix@{Matrix}!Linear\-System$<$ T $>$@{Linear\-System$<$ T $>$}}
+\index{Linear\-System$<$ T $>$@{Linear\-System$<$ T $>$}!Matrix@{Matrix}}
+\subsubsection[{Linear\-System$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class {\bf Linear\-System}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}}\label{classMatrix_a95e5ab4da3326ece35572b4c41f61d15}
+\hypertarget{classMatrix_a10399f412e3ebd2af5372dc3638dfe9a}{\index{Matrix@{Matrix}!lmx\-::latex\-Print@{lmx\-::latex\-Print}}
+\index{lmx\-::latex\-Print@{lmx\-::latex\-Print}!Matrix@{Matrix}}
+\subsubsection[{lmx\-::latex\-Print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename C $>$ void {\bf lmx\-::latex\-Print} (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{os, }
+\item[{char $\ast$}]{mat\-\_\-name, }
+\item[{{\bf Matrix}$<$ C $>$ \&}]{mat, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classMatrix_a10399f412e3ebd2af5372dc3638dfe9a}
+Function to typeset a matrix to a file stream. 
+\begin{DoxyParams}{Parameters}
+{\em os} & File stream to write to. \\
+\hline
+{\em mat\-\_\-name} & Name that will be given to matrix in typesetting. It's not the matrix variable name. \\
+\hline
+{\em mat} & The \hyperlink{classMatrix}{Matrix} variable to be typeset. \\
+\hline
+{\em prec} & Precision of numbers (number of digits to be used in output). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMatrix_a83ba0257c792f88b9da29aacaad2b47d}{\index{Matrix@{Matrix}!L\-M\-X\-Tester@{L\-M\-X\-Tester}}
+\index{L\-M\-X\-Tester@{L\-M\-X\-Tester}!Matrix@{Matrix}}
+\subsubsection[{L\-M\-X\-Tester}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class L\-M\-X\-Tester\hspace{0.3cm}{\ttfamily [friend]}}}\label{classMatrix_a83ba0257c792f88b9da29aacaad2b47d}
+\hypertarget{classMatrix_a3d4080c30637166c1b14268400d0fecd}{\index{Matrix@{Matrix}!transposed@{transposed}}
+\index{transposed@{transposed}!Matrix@{Matrix}}
+\subsubsection[{transposed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Matrix} transposed (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{mat\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classMatrix_a3d4080c30637166c1b14268400d0fecd}
+Function to get a transposed copy of a matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mat\-\_\-in} & \hyperlink{classMatrix}{Matrix} to be transposed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{classMatrix}{Matrix} object with mat\-\_\-in transposed. 
+\end{DoxyReturn}
+\hypertarget{classMatrix_a07857ea092bfd5d08a811e05ad544204}{\index{Matrix@{Matrix}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Matrix@{Matrix}}
+\subsubsection[{Vector$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class {\bf Vector}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}}\label{classMatrix_a07857ea092bfd5d08a811e05ad544204}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMatrix_a0b283aced337f3c94db50bc459d28580}{\index{Matrix@{Matrix}!mrows@{mrows}}
+\index{mrows@{mrows}!Matrix@{Matrix}}
+\subsubsection[{mrows}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf Matrix}$<$ T $>$\-::mrows\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMatrix_a0b283aced337f3c94db50bc459d28580}
+Number of rows in matrix object. 
+
+Referenced by Matrix$<$ T $>$\-::operator=().
+
+\hypertarget{classMatrix_a05a070e7ed8f3289d72c71b47888bef2}{\index{Matrix@{Matrix}!ncolumns@{ncolumns}}
+\index{ncolumns@{ncolumns}!Matrix@{Matrix}}
+\subsubsection[{ncolumns}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf Matrix}$<$ T $>$\-::ncolumns\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMatrix_a05a070e7ed8f3289d72c71b47888bef2}
+Number of colums in matrix object. 
+
+Referenced by Matrix$<$ T $>$\-::operator=().
+
+\hypertarget{classMatrix_a0294600ba30c0665efcaeb77bbcad7fa}{\index{Matrix@{Matrix}!reference@{reference}}
+\index{reference@{reference}!Matrix@{Matrix}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Elem\-\_\-ref$<$T$>$$\ast$ {\bf Matrix}$<$ T $>$\-::reference\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMatrix_a0294600ba30c0665efcaeb77bbcad7fa}
+Reference pointer to an element in type\-\_\-matrix. \hypertarget{classMatrix_a3ea7741164284aaa1ad49dec89a2d309}{\index{Matrix@{Matrix}!type\-\_\-matrix@{type\-\_\-matrix}}
+\index{type\-\_\-matrix@{type\-\_\-matrix}!Matrix@{Matrix}}
+\subsubsection[{type\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Data\-\_\-mat$<$T$>$$\ast$ {\bf Matrix}$<$ T $>$\-::type\-\_\-matrix\hspace{0.3cm}{\ttfamily [protected]}}}\label{classMatrix_a3ea7741164284aaa1ad49dec89a2d309}
+Pointer to the container type. 
+
+Referenced by Matrix$<$ T $>$\-::operator=().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__matrix_8h}{lmx\-\_\-mat\-\_\-matrix.\-h}\end{DoxyCompactItemize}

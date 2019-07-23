@@ -1,0 +1,110 @@
+\hypertarget{lmx__mat__matrix_8h}{\section{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-matrix.h File Reference}
+\label{lmx__mat__matrix_8h}\index{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-matrix.\-h@{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-matrix.\-h}}
+}
+
+
+This file contains both the declaration and implementation for \hyperlink{classMatrix}{Matrix} class member and friend functions.  
+
+
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}lmx\-\_\-except.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lmx\-\_\-mat\-\_\-type\-\_\-stdmatrix.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lmx\-\_\-mat\-\_\-type\-\_\-csc.\-h\char`\"{}}\\*
+Include dependency graph for lmx\-\_\-mat\-\_\-matrix.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__mat__matrix_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__mat__matrix_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classVector}{Vector$<$ T $>$}
+\item 
+class \hyperlink{classLinearSystem}{Linear\-System$<$ T $>$}
+\item 
+class \hyperlink{classMatrix}{Matrix$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classMatrix}{Matrix}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelmx}{lmx}
+\begin{DoxyCompactList}\small\item\em Linked Matri\-X methods library uses lmx namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{lmx__mat__matrix_8h_a823d86b23608feef8efa690e93241023}{set\-Matrix\-Type} (int)
+\item 
+int \hyperlink{lmx__mat__matrix_8h_ad8922a72ded14c1fedd4448e121ba52e}{get\-Matrix\-Type} ()
+\item 
+{\footnotesize template$<$typename C $>$ }\\void \hyperlink{lmx__mat__matrix_8h_a8e69fc63120e846c50bd1f992e188a45}{latex\-Print} (std\-::ofstream \&os, char $\ast$mat\-\_\-name, \hyperlink{classMatrix}{Matrix}$<$ C $>$ \&mat, int prec)
+\item 
+{\footnotesize template$<$typename C $>$ }\\void \hyperlink{namespacelmx_ad4464704dd30fa4aa45fef794428ab35}{lmx\-::latex\-Print} (std\-::ofstream \&os, char $\ast$mat\-\_\-name, \hyperlink{classMatrix}{Matrix}$<$ C $>$ \&mat, int prec)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{namespacelmx_a12fd7ce454c4b736867bcebc9f7ac84c}{lmx\-::operator-\/} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&B)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classMatrix}{Matrix}$<$ T $>$ \hyperlink{namespacelmx_ad723ad98140948b6fc56bf5d0193c1a1}{lmx\-::operator$\ast$} (const T \&scalar, const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&B)
+\item 
+{\footnotesize template$<$class T $>$ }\\std\-::ostream \& \hyperlink{namespacelmx_a4593e2a6c2c72cba0b1c556c0f306b3c}{lmx\-::operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&mat)
+\item 
+{\footnotesize template$<$class T $>$ }\\std\-::ostream \& \hyperlink{namespacelmx_ac08b14163726a57e0acae786c74bc6ee}{lmx\-::operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classMatrix}{Matrix}$<$ \hyperlink{classcofe_1_1TensorRank2}{cofe\-::\-Tensor\-Rank2}$<$ 3, T $>$ $>$ \&mat)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains both the declaration and implementation for \hyperlink{classMatrix}{Matrix} class member and friend functions. \begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{lmx__mat__matrix_8h_ad8922a72ded14c1fedd4448e121ba52e}{\index{lmx\-\_\-mat\-\_\-matrix.\-h@{lmx\-\_\-mat\-\_\-matrix.\-h}!get\-Matrix\-Type@{get\-Matrix\-Type}}
+\index{get\-Matrix\-Type@{get\-Matrix\-Type}!lmx_mat_matrix.h@{lmx\-\_\-mat\-\_\-matrix.\-h}}
+\subsubsection[{get\-Matrix\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Matrix\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{lmx__mat__matrix_8h_ad8922a72ded14c1fedd4448e121ba52e}
+Function reads the type of \hyperlink{classMatrix}{Matrix} container that is used. 
+
+References lmx\-::set\-Matrix\-Type().
+
+
+
+Referenced by lmx\-::\-Linear\-System$<$ T $>$\-::factorize(), Matrix$<$ T $>$\-::\-Matrix(), lmx\-::\-Vector$<$ T $>$\-::mult(), Matrix$<$ T $>$\-::operator=(), lmx\-::\-Linear\-System$<$ T $>$\-::set\-A(), lmx\-::\-Linear\-System$<$ T $>$\-::setb(), lmx\-::solve\-Linear(), lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself(), and lmx\-::\-Linear\-System$<$ T $>$\-::subs\-Solve().
+
+\hypertarget{lmx__mat__matrix_8h_a8e69fc63120e846c50bd1f992e188a45}{\index{lmx\-\_\-mat\-\_\-matrix.\-h@{lmx\-\_\-mat\-\_\-matrix.\-h}!latex\-Print@{latex\-Print}}
+\index{latex\-Print@{latex\-Print}!lmx_mat_matrix.h@{lmx\-\_\-mat\-\_\-matrix.\-h}}
+\subsubsection[{latex\-Print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename C $>$ void latex\-Print (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{os, }
+\item[{char $\ast$}]{mat\-\_\-name, }
+\item[{{\bf Matrix}$<$ C $>$ \&}]{mat, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)}}\label{lmx__mat__matrix_8h_a8e69fc63120e846c50bd1f992e188a45}
+\hypertarget{lmx__mat__matrix_8h_a823d86b23608feef8efa690e93241023}{\index{lmx\-\_\-mat\-\_\-matrix.\-h@{lmx\-\_\-mat\-\_\-matrix.\-h}!set\-Matrix\-Type@{set\-Matrix\-Type}}
+\index{set\-Matrix\-Type@{set\-Matrix\-Type}!lmx_mat_matrix.h@{lmx\-\_\-mat\-\_\-matrix.\-h}}
+\subsubsection[{set\-Matrix\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int set\-Matrix\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{lmx__mat__matrix_8h_a823d86b23608feef8efa690e93241023}
+Function that changes the type of matrix container that will be used. 
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+
+
+Referenced by get\-Matrix\-Type().
+

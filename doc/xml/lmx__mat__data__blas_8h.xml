@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__mat__data__blas_8h" kind="file">
+    <compoundname>lmx_mat_data_blas.h</compoundname>
+    <includes local="no">algorithm</includes>
+    <includedby refid="lmx__mat__data_8h" local="yes">src/LMX/lmx_mat_data.h</includedby>
+    <incdepgraph>
+      <node id="4101">
+        <label>src/LMX/lmx_mat_data_blas.h</label>
+        <link refid="lmx_mat_data_blas.h"/>
+        <childnode refid="4102" relation="include">
+        </childnode>
+      </node>
+      <node id="4102">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4139">
+        <label>src/LMX/lmx_mat_type_gmmvector_sparse1.h</label>
+        <link refid="lmx__mat__type__gmmvector__sparse1_8h"/>
+      </node>
+      <node id="4121">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="4132">
+        <label>src/LMX/lmx_mat_type_gmm.h</label>
+        <link refid="lmx__mat__type__gmm_8h"/>
+      </node>
+      <node id="4133">
+        <label>src/LMX/lmx_mat_type_gmm_sparse1.h</label>
+        <link refid="lmx__mat__type__gmm__sparse1_8h"/>
+      </node>
+      <node id="4129">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="4130" relation="include">
+        </childnode>
+      </node>
+      <node id="4131">
+        <label>src/LMX/lmx_mat_type_csc.h</label>
+        <link refid="lmx__mat__type__csc_8h"/>
+        <childnode refid="4107" relation="include">
+        </childnode>
+      </node>
+      <node id="4138">
+        <label>src/LMX/lmx_mat_type_stdvector.h</label>
+        <link refid="lmx__mat__type__stdvector_8h"/>
+        <childnode refid="4135" relation="include">
+        </childnode>
+      </node>
+      <node id="4123">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="4137">
+        <label>src/LMX/lmx_mat_data_vec.h</label>
+        <link refid="lmx__mat__data__vec_8h"/>
+        <childnode refid="4138" relation="include">
+        </childnode>
+        <childnode refid="4139" relation="include">
+        </childnode>
+      </node>
+      <node id="4103">
+        <label>src/LMX/lmx_mat_data_blas.h</label>
+        <link refid="lmx_mat_data_blas.h"/>
+        <childnode refid="4104" relation="include">
+        </childnode>
+      </node>
+      <node id="4124">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="4135">
+        <label>src/LMX/lmx_mat_vector.h</label>
+        <link refid="lmx__mat__vector_8h"/>
+        <childnode refid="4106" relation="include">
+        </childnode>
+        <childnode refid="4136" relation="include">
+        </childnode>
+      </node>
+      <node id="4118">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="4111">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx_8h"/>
+        <childnode refid="4112" relation="include">
+        </childnode>
+      </node>
+      <node id="4126">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="4136">
+        <label>src/LMX/lmx_linsolvers_cg.h</label>
+        <link refid="lmx__linsolvers__cg_8h"/>
+        <childnode refid="4109" relation="include">
+        </childnode>
+      </node>
+      <node id="4113">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="4114" relation="include">
+        </childnode>
+        <childnode refid="4115" relation="include">
+        </childnode>
+        <childnode refid="4116" relation="include">
+        </childnode>
+      </node>
+      <node id="4109">
+        <label>src/LMX/lmx_linsolvers_system.h</label>
+        <link refid="lmx__linsolvers__system_8h"/>
+        <childnode refid="4110" relation="include">
+        </childnode>
+      </node>
+      <node id="4119">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="4120" relation="include">
+        </childnode>
+        <childnode refid="4121" relation="include">
+        </childnode>
+        <childnode refid="4116" relation="include">
+        </childnode>
+      </node>
+      <node id="4114">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="4122">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="4123" relation="include">
+        </childnode>
+        <childnode refid="4116" relation="include">
+        </childnode>
+      </node>
+      <node id="4104">
+        <label>src/LMX/lmx_mat_data.h</label>
+        <link refid="lmx__mat__data_8h"/>
+        <childnode refid="4105" relation="include">
+        </childnode>
+        <childnode refid="4134" relation="include">
+        </childnode>
+        <childnode refid="4137" relation="include">
+        </childnode>
+      </node>
+      <node id="4128">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="4117">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="4105">
+        <label>src/LMX/lmx_mat_data_mat.h</label>
+        <link refid="lmx__mat__data__mat_8h"/>
+        <childnode refid="4106" relation="include">
+        </childnode>
+        <childnode refid="4131" relation="include">
+        </childnode>
+        <childnode refid="4132" relation="include">
+        </childnode>
+        <childnode refid="4133" relation="include">
+        </childnode>
+      </node>
+      <node id="4125">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="4116" relation="include">
+        </childnode>
+        <childnode refid="4126" relation="include">
+        </childnode>
+      </node>
+      <node id="4108">
+        <label>src/LMX/lmx_mat_dense_matrix.h</label>
+        <link refid="lmx__mat__dense__matrix_8h"/>
+        <childnode refid="4109" relation="include">
+        </childnode>
+      </node>
+      <node id="4130">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="4120">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="4115">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="4112">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="4113" relation="include">
+        </childnode>
+        <childnode refid="4119" relation="include">
+        </childnode>
+        <childnode refid="4122" relation="include">
+        </childnode>
+        <childnode refid="4124" relation="include">
+        </childnode>
+        <childnode refid="4125" relation="include">
+        </childnode>
+        <childnode refid="4127" relation="include">
+        </childnode>
+        <childnode refid="4129" relation="include">
+        </childnode>
+      </node>
+      <node id="4127">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="4116" relation="include">
+        </childnode>
+        <childnode refid="4128" relation="include">
+        </childnode>
+      </node>
+      <node id="4116">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="4117" relation="include">
+        </childnode>
+        <childnode refid="4118" relation="include">
+        </childnode>
+      </node>
+      <node id="4106">
+        <label>src/LMX/lmx_mat_type_stdmatrix.h</label>
+        <link refid="lmx__mat__type__stdmatrix_8h"/>
+        <childnode refid="4107" relation="include">
+        </childnode>
+      </node>
+      <node id="4134">
+        <label>src/LMX/lmx_mat_elem_ref.h</label>
+        <link refid="lmx__mat__elem__ref_8h"/>
+        <childnode refid="4135" relation="include">
+        </childnode>
+      </node>
+      <node id="4110">
+        <label>src/LMX/lmx_linsolvers.h</label>
+        <link refid="lmx__linsolvers_8h"/>
+        <childnode refid="4111" relation="include">
+        </childnode>
+      </node>
+      <node id="4107">
+        <label>src/LMX/lmx_mat_matrix.h</label>
+        <link refid="lmx__mat__matrix_8h"/>
+        <childnode refid="4108" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlmx_1_1Data__mat" prot="public">lmx::Data_mat</innerclass>
+    <innerclass refid="classlmx_1_1Data__vec" prot="public">lmx::Data_vec</innerclass>
+    <innerclass refid="classlmx_1_1Type__stdmatrix" prot="public">lmx::Type_stdmatrix</innerclass>
+    <innerclass refid="classlmx_1_1Type__csc" prot="public">lmx::Type_csc</innerclass>
+    <innerclass refid="classlmx_1_1Type__stdVector" prot="public">lmx::Type_stdVector</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lmx__mat__data__blas_8h_1a49b489a408a211a90e766329c0732d7b" prot="public" static="no">
+        <type>size_t</type>
+        <definition>typedef size_t size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Integer for indexing matrices and vectors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="41" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Basic Linear Algebra Methods for Data_mat and Data_vec derived classes. </para>    </briefdescription>
+    <detaileddescription>
+<para>Basic linear algebra numerical methodso including specialization for some <ref refid="classMatrix" kindref="compound">Matrix</ref> and <ref refid="classVector" kindref="compound">Vector</ref> data types.</para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMXDATA_BLAS_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMXDATA_BLAS_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"></codeline>
+<codeline lineno="36"></codeline>
+<codeline lineno="41" refid="lmx__mat__data__blas_8h_1a49b489a408a211a90e766329c0732d7b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classlmx_1_1Data__mat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classlmx_1_1Data__vec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Data__vec" kindref="compound">Data_vec</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classlmx_1_1Type__stdmatrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classlmx_1_1Type__csc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classlmx_1_1Type__stdVector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__gmm" kindref="compound">Type_gmm</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__gmm__sparse" kindref="compound">Type_gmm_sparse</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Type__gmmVector__sparse" kindref="compound">Type_gmmVector_sparse</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Matrix<sp/>generalized<sp/>methods<sp/>(not<sp/>very<sp/>efficient<sp/>but<sp/>robust):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="69" refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" kindref="member">mat_mat_add</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>A,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>B,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>C)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++j){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>+<sp/>B-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>,<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="88" refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" kindref="member">mat_mat_subs</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>A,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>B,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>C)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++j){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>-<sp/>B-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>,<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="107" refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" kindref="member">mat_mat_mult</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>A,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>B,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>C)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Emmit<sp/>an<sp/>error<sp/>if<sp/>C<sp/>is<sp/>A<sp/>or<sp/>B...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(C<sp/>==<sp/>A<sp/>||<sp/>C<sp/>==<sp/>B){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>multiply<sp/>and<sp/>save<sp/>results<sp/>on<sp/>same<sp/>data<sp/>at<sp/>the<sp/>same<sp/>time.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>This<sp/>cannot<sp/>be<sp/>done.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1failure__error" kindref="compound">failure_error</ref>,<sp/>message.str()<sp/>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i,<sp/>j,<sp/>k;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc" kindref="member">resize</ref>(<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>(),<sp/>B-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j=0;<sp/>j&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++j){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>T(0),<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>can<sp/>have<sp/>a<sp/>good<sp/>optimization...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j=0;<sp/>j<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++j){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>0,<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(k=0;<sp/>k<sp/>&lt;<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++k){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>+<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,k)<sp/>*<sp/>B-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(k,j)<sp/>,<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="143" refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" kindref="member">mat_mat_multElements</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>A,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>C)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++j){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>*<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>,<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="161" refid="namespacelmx_1af1b580875370f953da3267438d3fa186" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" kindref="member">mat_mat_multElements</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>A,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>B,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat&lt;T&gt;</ref>*<sp/>C)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i=0;<sp/>i<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>j=0;<sp/>j<sp/>&lt;<sp/>C-&gt;<ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>();<sp/>++j){</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>C-&gt;<ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(<sp/>A-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>*<sp/>B-&gt;<ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(i,j)<sp/>,<sp/>i,<sp/>j<sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Multiplication<sp/>specialized<sp/>methods:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a6d30cefa412621b55332f3521b828010" kindref="member">mat_vec_mult</ref></highlight></codeline>
+<codeline lineno="184" refid="namespacelmx_1a6d30cefa412621b55332f3521b828010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc&lt;T&gt;</ref>*<sp/>matrix_in,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector&lt;T&gt;</ref>*<sp/>vector_in,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector&lt;T&gt;</ref>*<sp/>vector_out</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>a;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>b;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>T<sp/>c;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>d;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/></highlight><highlight class="comment">//rutina<sp/>que<sp/>multiplica<sp/>la<sp/><sp/>matriz<sp/>A<sp/>(en<sp/>formato<sp/>Harwell-Boeing)<sp/>con<sp/>el<sp/>vector<sp/>X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>(matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a7d04d6b93337ead44534da43fb5d2b40" kindref="member">getRows</ref>());<sp/>++i)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>vector_out-&gt;contents[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//std::fill(vector_out-&gt;contents.begin(),<sp/>vector_out-&gt;contents.end(),<sp/>0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>(matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1adc1754239031a024f0126008cca8257c" kindref="member">getCols</ref>());<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" kindref="member">ja</ref>[i];</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>b<sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" kindref="member">ja</ref>[i+1];</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=a;<sp/>j&lt;b;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a189ee6941a05a6e49f11e4ddee205ca6" kindref="member">aa</ref>[j-1];</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1ad149a245b902861d26367af5a98d38c2" kindref="member">ia</ref>[j-1]-1;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vector_out-&gt;contents[d]<sp/>+=<sp/>c<sp/>*<sp/>vector_in-&gt;contents[i];</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="222"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a6d30cefa412621b55332f3521b828010" kindref="member">mat_vec_mult</ref>(<sp/>Type_gmm&lt;T&gt;*<sp/>matrix_in,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_stdVector&lt;T&gt;*<sp/>vector_in,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_stdVector&lt;T&gt;*<sp/>vector_out)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>gmm::mult(<sp/>*(matrix_in-&gt;data_pointer()<sp/>),<sp/>*(vector_in-&gt;data_pointer()<sp/>),<sp/>*(vector_out-&gt;data_pointer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a6d30cefa412621b55332f3521b828010" kindref="member">mat_vec_mult</ref>(<sp/>Type_gmm_sparse&lt;T&gt;*<sp/>matrix_in,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_stdVector&lt;T&gt;*<sp/>vector_in,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_stdVector&lt;T&gt;*<sp/>vector_out)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>gmm::mult(<sp/>*(matrix_in-&gt;data_pointer()<sp/>),<sp/>*(vector_in-&gt;data_pointer()<sp/>),<sp/>*(vector_out-&gt;data_pointer()<sp/>)<sp/><sp/>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a6d30cefa412621b55332f3521b828010" kindref="member">mat_vec_mult</ref>(<sp/>Type_gmm&lt;T&gt;*<sp/>matrix_in,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_gmmVector_sparse&lt;T&gt;*<sp/>vector_in,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_gmmVector_sparse&lt;T&gt;*<sp/>vector_out)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>gmm::mult(<sp/>*(matrix_in-&gt;data_pointer()<sp/>),<sp/>*(vector_in-&gt;data_pointer()<sp/>),<sp/>*(vector_out-&gt;data_pointer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1a6d30cefa412621b55332f3521b828010" kindref="member">mat_vec_mult</ref>(<sp/>Type_gmm_sparse&lt;T&gt;*<sp/>matrix_in,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_gmmVector_sparse&lt;T&gt;*<sp/>vector_in,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type_gmmVector_sparse&lt;T&gt;*<sp/>vector_out)<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>gmm::mult(<sp/>*(matrix_in-&gt;data_pointer()<sp/>),<sp/>*(vector_in-&gt;data_pointer()<sp/>),<sp/>*(vector_out-&gt;data_pointer()<sp/>)<sp/><sp/>);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copy<sp/>specialized:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="281" refid="namespacelmx_1ab8da9d846c786511bc3954fbbc996ff7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelmx_1ab8da9d846c786511bc3954fbbc996ff7" kindref="member">copy</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix&lt;T&gt;</ref>*<sp/>dense_matrix_in,</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc&lt;T&gt;</ref>*<sp/>matrix_in<sp/>)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>i,j,<sp/>col_counter=1;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>rows<sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a7d04d6b93337ead44534da43fb5d2b40" kindref="member">getRows</ref>();</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/>cols<sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1adc1754239031a024f0126008cca8257c" kindref="member">getCols</ref>();</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>T<sp/>value;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a189ee6941a05a6e49f11e4ddee205ca6" kindref="member">aa</ref>.clear();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1ad149a245b902861d26367af5a98d38c2" kindref="member">ia</ref>.clear();</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" kindref="member">ja</ref>.clear();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j=0;<sp/>j&lt;cols;<sp/>++j){</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" kindref="member">ja</ref>.push_back(col_counter);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;rows;<sp/>++i){</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>dense_matrix_in-&gt;contents[i][j];</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>value<sp/>!=<sp/>T(0)<sp/>){</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1ad149a245b902861d26367af5a98d38c2" kindref="member">ia</ref>.push_back(i+1);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a189ee6941a05a6e49f11e4ddee205ca6" kindref="member">aa</ref>.push_back(value);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++col_counter;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a0fec1fc6c8a69fc5727063220d220eee" kindref="member">ja</ref>.push_back(col_counter);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a2c5ef8a3a2cd3a79d7b747f8cace105f" kindref="member">Nrow</ref><sp/>=<sp/>rows;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1ac201c80e090b62791f8a95d6f1e3b07c" kindref="member">Ncol</ref><sp/>=<sp/>cols;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1ade9e149ea4925d6cc97727bbf07f080e" kindref="member">Nnze</ref><sp/>=<sp/>matrix_in-&gt;<ref refid="classlmx_1_1Type__csc_1a189ee6941a05a6e49f11e4ddee205ca6" kindref="member">aa</ref>.size();</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h"/>
+  </compounddef>
+</doxygen>

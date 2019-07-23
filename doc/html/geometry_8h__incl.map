@@ -1,7 +1,5 @@
-<area shape="rect" title="Base class for the different geometries." alt="" coords="5,155,85,181">
-<area shape="rect" title="Base class for the different geometries." alt="" coords="369,155,433,181">
-<area shape="rect" title="Base class for the different geometries." alt="" coords="152,80,203,107">
-<area shape="rect" title="Base class for the different geometries." alt="" coords="227,80,291,107">
-<area shape="rect" href="$particle_8h.html" title="Base class for the different geometries." alt="" coords="43,80,128,107">
-<area shape="rect" href="$element_8h.html" title="Base class for the different geometries." alt="" coords="315,80,405,107">
-<area shape="rect" href="$node_8h.html" title="Base class for the different geometries." alt="" coords="480,80,549,107">
+<map id="src/geometry.h" name="src/geometry.h">
+<area shape="rect" id="node8" href="$particle_8h.html" title="Represents each of the finite charged particles. " alt="" coords="609,80,684,107"/>
+<area shape="rect" id="node9" href="$element_8h.html" title="Facet planar geometry for graphical representation purposes. " alt="" coords="33,80,111,107"/>
+<area shape="rect" id="node10" href="$node_8h.html" title="Node class for graphical representation purposes. " alt="" coords="709,80,768,107"/>
+</map>

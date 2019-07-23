@@ -1,0 +1,830 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Type__stdmatrix" kind="class" prot="public">
+    <compoundname>lmx::Type_stdmatrix</compoundname>
+    <basecompoundref refid="classlmx_1_1Data__mat" prot="public" virt="non-virtual">lmx::Data_mat&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__mat__data__blas_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1Type__stdmatrix_1af9b347eb7eaeba52df0ab581034c8d1b" prot="private" static="no" mutable="no">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Type_stdmatrix&lt; T &gt;::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> data contents </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Type__stdmatrix_1a1fee236e5d4a6f2d7a29d53ea1384d4c" prot="private" static="no" mutable="no">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Type_stdmatrix&lt; T &gt;::cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Type__stdmatrix_1af3d8ca582ad91efcedb6270f1b6bad9b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; T &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;T&gt; &gt; lmx::Type_stdmatrix&lt; T &gt;::contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlmx_1_1Type__stdmatrix_1a5b3d3d3d338fdb2c08f91dfe38d425bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class DenseMatrix&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrix&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classlmx_1_1Type__stdmatrix_1a333dfe4d7c81c4792d8cc39f5e562d4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend void</type>
+        <definition>void copy</definition>
+        <argsstring>(const Type_stdmatrix&lt; T &gt; *, Type_csc&lt; T &gt; *)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref>&lt; T &gt; *</type>
+          <defname>dense_matrix_in</defname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref>&lt; T &gt; *</type>
+          <defname>matrix_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> vector (pre)multiplication, specialized for <ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref> <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref> (matrix) and <ref refid="classlmx_1_1Type__stdVector" kindref="compound">Type_stdVector</ref> (STL vector) formats. Calculates the product A*b = c using pointers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dense_matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type_stdMatrix *Matrix B. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Type__csc" kindref="compound">Type_csc</ref> *Matrix A. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="281" bodyend="309"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a16876ff97d835d125990ac31b0e2dfcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_stdmatrix&lt; T &gt;::Type_stdmatrix</definition>
+        <argsstring>()</argsstring>
+        <name>Type_stdmatrix</name>
+        <briefdescription>
+<para>Empty constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="67" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a104d1354bb30a767884614ae0fd6f2b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_stdmatrix&lt; T &gt;::Type_stdmatrix</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>Type_stdmatrix</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>rows_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>columns_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. Creates a new object with parameter contents resized to (rows, columns) dimension. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rows of dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>columns_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Columns of dense matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="73" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="400" bodyend="401"/>
+        <references refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" compoundref="lmx__mat__type__stdmatrix_8h" startline="408" endline="430">lmx::Type_stdmatrix&lt; T &gt;::resize</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a2f98496533ad90a0563e794af503d182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Type_stdmatrix&lt; T &gt;::~Type_stdmatrix</definition>
+        <argsstring>()</argsstring>
+        <name>~Type_stdmatrix</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="76" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a84777801660805f7e6f1a93861d0c9ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::factorize</definition>
+        <argsstring>()</argsstring>
+        <name>factorize</name>
+        <reimplements refid="classlmx_1_1Data__mat_1a1b94e36086c4c181f8001f277ed89bbf">factorize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="80" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::resize</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>resize</name>
+        <reimplements refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc">resize</reimplements>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>mrows</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>ncolumns</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize method. Changes the size of the contents parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value for rows of dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value for columns of dense matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="408" bodyend="430"/>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694" compoundref="lmx__mat__type__stdmatrix_8h" startline="363" endline="367">lmx::Type_stdmatrix&lt; double &gt;::clear</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" compoundref="lmx__mat__type__stdmatrix_8h" startline="154" endline="178">lmx::Type_stdmatrix&lt; double &gt;::multiply</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088" compoundref="lmx__mat__type__stdmatrix_8h" startline="256" endline="280">lmx::Type_stdmatrix&lt; double &gt;::read_hb_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" compoundref="lmx__mat__type__stdmatrix_8h" startline="212" endline="248">lmx::Type_stdmatrix&lt; double &gt;::read_mm_file</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0" compoundref="lmx__mat__type__stdmatrix_8h" startline="321" endline="345">lmx::Type_stdmatrix&lt; double &gt;::trn</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a104d1354bb30a767884614ae0fd6f2b5" compoundref="lmx__mat__type__stdmatrix_8h" startline="400" endline="401">lmx::Type_stdmatrix&lt; T &gt;::Type_stdmatrix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a7441d3f1a35bb8ebcdd99f7455186bcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; lmx::Type_stdmatrix&lt; T &gt;::readElement</definition>
+        <argsstring>(const size_type &amp;mrows, const size_type &amp;ncolumns) const </argsstring>
+        <name>readElement</name>
+        <reimplements refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be">readElement</reimplements>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>mrows</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>ncolumns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read element method. Implements a method for reading data of the dense matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position in dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position in dense matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of the element in the position given by the parameters. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="89" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a90b9f72528b9bd122463611c3628a18c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::writeElement</definition>
+        <argsstring>(T value, const size_type &amp;mrows, const size_type &amp;ncolumns)</argsstring>
+        <name>writeElement</name>
+        <reimplements refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd">writeElement</reimplements>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>mrows</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>ncolumns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write element method. Implements a method for writing data on the dense matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position in dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position in dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numerical type value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="96" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1ad77ae15ae864751d41b57be6cb9d3279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::addElement</definition>
+        <argsstring>(T value, const size_type &amp;mrows, const size_type &amp;ncolumns)</argsstring>
+        <name>addElement</name>
+        <reimplements refid="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a">addElement</reimplements>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>mrows</declname>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>ncolumns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add element method. Implements a method for adding data on the Harwell-Boeing matrix. Copy-pasted from writeElement. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position in dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position in dense matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numerical type value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="104" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="104" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a894217af1bea253ba832af0369edc87d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Type_stdmatrix&lt; T &gt;::getRows</definition>
+        <argsstring>() const </argsstring>
+        <name>getRows</name>
+        <reimplements refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802">getRows</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for knowing the number of data rows. <simplesect kind="return"><para>Number of rows. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="110" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a54d79383c4486c1eb457a1aec6f93689" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Type_stdmatrix&lt; T &gt;::getCols</definition>
+        <argsstring>() const </argsstring>
+        <name>getCols</name>
+        <reimplements refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c">getCols</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for knowing the number of data columns. <simplesect kind="return"><para>Number of columns. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="115" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1abc40ccc0128617c4bbea2d3eeb5c695c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::equals</definition>
+        <argsstring>(const Data&lt; T &gt; *matrix_in)</argsstring>
+        <name>equals</name>
+        <reimplements refid="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356">equals</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>matrix_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy method. Equals the data in the object&apos;s contents to those given by the input matrix parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="120" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a0e3195992632635c8e050ff63fba8a1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::add</definition>
+        <argsstring>(const Data&lt; T &gt; *matrix_in_1)</argsstring>
+        <name>add</name>
+        <reimplements refid="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a">add</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>matrix_in_1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add method. Adds the the input matrix parameter&apos;s elements to the object&apos;s contents. Necessary for overloading the &quot;+=&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix_in_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="126" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="126" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a0ee06b70a259e488d6ac3ef53c8f68d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::substract</definition>
+        <argsstring>(const Data&lt; T &gt; *matrix_in_1)</argsstring>
+        <name>substract</name>
+        <reimplements refid="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d">substract</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>matrix_in_1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Substract method. Substracts the the input matrix parameter&apos;s elements to the object&apos;s contents. Necessary for overloading the &quot;-=&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix_in_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="139" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::multiply</definition>
+        <argsstring>(const Data&lt; T &gt; *matrix_in_1, const Data&lt; T &gt; *matrix_in_2)</argsstring>
+        <name>multiply</name>
+        <reimplements refid="classlmx_1_1Data__mat_1a850c5fadc5139992f32bf15316309b52">multiply</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>matrix_in_1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>matrix_in_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiply method. Multiplies the input matrices and saves the result into the object&apos;s contents. Necessary for overloading the &quot;*&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix_in_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matrix_in_2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="154" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="154" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1ab36305d296f62f54bc36f49ee51c6922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::multiplyScalar</definition>
+        <argsstring>(const T &amp;scalar)</argsstring>
+        <name>multiplyScalar</name>
+        <reimplements refid="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262">multiplyScalar</reimplements>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiply scalar method. Multiplies the object&apos;s matrix (contents) with a scalar. Necessary for overloading the &quot;*&quot; operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A scalar factor of template&apos;s class. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="184" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="184" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a2001b3ba02dab4b5574076d4c58ac274" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::multiplyElements</definition>
+        <argsstring>(const Data&lt; T &gt; *matrix_in)</argsstring>
+        <name>multiplyElements</name>
+        <reimplements refid="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860">multiplyElements</reimplements>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>matrix_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method multiplying element-by-element of two matrices. One would be the object&apos;s contents and the other the parameter&apos;s contents. Necessary for implementing <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> to <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> multElements. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object that belongs to a class derived from <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="197" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="197" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::read_mm_file</definition>
+        <argsstring>(const char *input_file)</argsstring>
+        <name>read_mm_file</name>
+        <reimplements refid="classlmx_1_1Data__mat_1afd492bb04f83b8b96b5964834436290a">read_mm_file</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> Market format method. Opens the file specified and reads the matrix&apos;s data in it, suposing it&apos;s stored in <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> Market format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="212" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="212" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::read_hb_file</definition>
+        <argsstring>(const char *input_file)</argsstring>
+        <name>read_hb_file</name>
+        <reimplements refid="classlmx_1_1Data__mat_1add96428335bb5119c7f5126ebb07fb10">read_hb_file</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data in Harwell-Boeing format method. Opens the file specified and reads the matrix&apos;s data in it, suposing it&apos;s stored in Harwell-Boeing format.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="256" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="256" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::write_hb_file</definition>
+        <argsstring>(const char *input_file)</argsstring>
+        <name>write_hb_file</name>
+        <reimplements refid="classlmx_1_1Data__mat_1adbbffb805ce19ca7e9d2a2f70d0f7bcd">write_hb_file</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write data in Harwell-Boeing format method. Opens the file specified and writes the matrix&apos;s data in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="288" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="288" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::trn</definition>
+        <argsstring>()</argsstring>
+        <name>trn</name>
+        <reimplements refid="classlmx_1_1Data__mat_1aace5fad359799ebcd14dd79c458b340e">trn</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Traspose method. Swaps elements with respect to the diagonal: A(i,j) = A(j,i) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="321" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="321" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1ac83e09e52bf7fa7a82d7ca4dcb10f9de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::cleanBelow</definition>
+        <argsstring>(const double factor)</argsstring>
+        <name>cleanBelow</name>
+        <reimplements refid="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845">cleanBelow</reimplements>
+        <param>
+          <type>const double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean below method. Makes equal to zero every element below given factor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference value for cleaning. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="350" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="350" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <reimplements refid="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb">clear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear method. Wipes all data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="363" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="363" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1aaa3747be745b171bd13044d60f169c42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::Type_stdmatrix&lt; T &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplements refid="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="373" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="373" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1aac3ac685acb8ac1b64f5136eb0e575b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; T &gt; &gt; *</type>
+        <definition>std::vector&lt;std::vector&lt;T&gt; &gt;* lmx::Type_stdmatrix&lt; T &gt;::data_pointer</definition>
+        <argsstring>()</argsstring>
+        <name>data_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmx_1_1Data" kindref="compound">Data</ref> pointer method Gives the direction in memory of (pointer to) the object. <simplesect kind="return"><para>A pointer to the matrix&apos;s contents (<ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref>). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="387" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="387" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Type__stdmatrix_1a737490a62d48b1694bdbd173bbf284d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool lmx::Type_stdmatrix&lt; T &gt;::exists</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>exists</name>
+        <reimplements refid="classlmx_1_1Data__mat_1aec8ef2dab6c85ad0461718eb2aafe6ae">exists</reimplements>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns TRUE or FALSE depending of element existance. Needed for less expensive access to CSC matrices. <simplesect kind="return"><para>TRUE if the element exists in internal storage structure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" line="389" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_type_stdmatrix.h" bodystart="389" bodyend="389"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Type__stdmatrix" kindref="compound">Type_stdmatrix</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements the methods defined in virtual class data_mat for dense matrix built with std vectors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Corresponds to a type std::vector&lt; std::vector&lt;T&gt; &gt;.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="480">
+        <label>lmx::Type_stdmatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__stdmatrix"/>
+        <childnode refid="481" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>lmx::Data_mat&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__mat"/>
+        <childnode refid="482" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="483">
+        <label>lmx::Type_stdmatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__stdmatrix"/>
+        <childnode refid="484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>lmx::Data_mat&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__mat"/>
+        <childnode refid="485" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="49" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="49" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Type__stdmatrix_1a0e3195992632635c8e050ff63fba8a1b" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>add</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1ad77ae15ae864751d41b57be6cb9d3279" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>addElement</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1ac83e09e52bf7fa7a82d7ca4dcb10f9de" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>cleanBelow</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>clear</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a1fee236e5d4a6f2d7a29d53ea1384d4c" prot="private" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>cols</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1af3d8ca582ad91efcedb6270f1b6bad9b" prot="private" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>contents</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a333dfe4d7c81c4792d8cc39f5e562d4d" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>copy</name></member>
+      <member refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>Data</name></member>
+      <member refid="classlmx_1_1Data__mat_1a03e90b0b3053c99ef6d2e183d763511e" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>Data_mat</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1aac3ac685acb8ac1b64f5136eb0e575b1" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>data_pointer</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a5b3d3d3d338fdb2c08f91dfe38d425bd" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>DenseMatrix&lt; T &gt;</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1abc40ccc0128617c4bbea2d3eeb5c695c" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>equals</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a737490a62d48b1694bdbd173bbf284d5" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>exists</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a84777801660805f7e6f1a93861d0c9ac" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>factorize</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a54d79383c4486c1eb457a1aec6f93689" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>getCols</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a894217af1bea253ba832af0369edc87d" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>getRows</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>multiply</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a2001b3ba02dab4b5574076d4c58ac274" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>multiplyElements</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1ab36305d296f62f54bc36f49ee51c6922" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>multiplyScalar</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a058d9102e67410c92e9cb149c602a088" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>read_hb_file</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a5ba470e3a7685ee2b93fc0be6c03ba4f" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>read_mm_file</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a7441d3f1a35bb8ebcdd99f7455186bcc" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>readElement</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1aaa3747be745b171bd13044d60f169c42" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>reset</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>resize</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1af9b347eb7eaeba52df0ab581034c8d1b" prot="private" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>rows</name></member>
+      <member refid="classlmx_1_1Data__mat_1ac599c952372bc78b03c01ed4c7ed5094" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>setSparsePattern</name></member>
+      <member refid="classlmx_1_1Data__mat_1a58692a61f0d7b7c5c74225800a30da91" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>setSparsePattern</name></member>
+      <member refid="classlmx_1_1Data__mat_1a8401959d4f7f008144de038293e24d5e" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>subsSolve</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a0ee06b70a259e488d6ac3ef53c8f68d9" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>substract</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a979ecbde1ba4097db9c5e0d92473efe0" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>trn</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a16876ff97d835d125990ac31b0e2dfcf" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>Type_stdmatrix</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a104d1354bb30a767884614ae0fd6f2b5" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>Type_stdmatrix</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a9f4735df0b49f3b4474bb81583781b66" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>write_hb_file</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a90b9f72528b9bd122463611c3628a18c" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>writeElement</name></member>
+      <member refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>~Data</name></member>
+      <member refid="classlmx_1_1Data__mat_1a0c57d9772b2eccf6f796e60f1e156964" prot="public" virt="virtual"><scope>lmx::Type_stdmatrix</scope><name>~Data_mat</name></member>
+      <member refid="classlmx_1_1Type__stdmatrix_1a2f98496533ad90a0563e794af503d182" prot="public" virt="non-virtual"><scope>lmx::Type_stdmatrix</scope><name>~Type_stdmatrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classcofe_1_1TensorRank2Sym" kind="class" prot="public">
+    <compoundname>cofe::TensorRank2Sym</compoundname>
+    <basecompoundref refid="classcofe_1_1TensorRank2" prot="public" virt="non-virtual">cofe::TensorRank2&lt; Dim, T &gt;</basecompoundref>
+    <includes refid="cofe__TensorRank2Sym_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>Dim</declname>
+        <defname>Dim</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a5c959003b2f6cd9ece627399bd45835e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank2Sym&lt; Dim, T &gt;::TensorRank2Sym</definition>
+        <argsstring>()</argsstring>
+        <name>TensorRank2Sym</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="39" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1ad009c20f62a3c7164308ced29b4cca99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank2Sym&lt; Dim, T &gt;::TensorRank2Sym</definition>
+        <argsstring>(const T ptr[Dim][Dim])</argsstring>
+        <name>TensorRank2Sym</name>
+        <param>
+          <type>const T</type>
+          <declname>ptr</declname>
+          <array>[Dim][Dim]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="40" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="40" bodyend="40"/>
+        <references refid="classcofe_1_1TensorRank2Sym_1a838b74665c17b6d60d9e342ff05d4420" compoundref="cofe__TensorRank2Sym_8h" startline="91" endline="97">cofe::TensorRank2Sym&lt; Dim, T &gt;::checkSymmetry</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a41a6d3b947aa0fe214d4c835df39216e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank2Sym&lt; Dim, T &gt;::TensorRank2Sym</definition>
+        <argsstring>(const T &amp;aValue)</argsstring>
+        <name>TensorRank2Sym</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>aValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="43" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="43" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a47b1dc72944a7061e2a4b5648ad70949" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cofe::TensorRank2Sym&lt; Dim, T &gt;::TensorRank2Sym</definition>
+        <argsstring>(const TensorRank2Sym&lt; Dim, T &gt; &amp;aTen)</argsstring>
+        <name>TensorRank2Sym</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2Sym" kindref="compound">TensorRank2Sym</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>aTen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="45" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="45" bodyend="46"/>
+        <references refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" compoundref="cofe__TensorRank2_8h" startline="119">cofe::TensorRank2&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1aa21acff1313916623564e9eaaca67dbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual cofe::TensorRank2Sym&lt; Dim, T &gt;::~TensorRank2Sym</definition>
+        <argsstring>()</argsstring>
+        <name>~TensorRank2Sym</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a3ada6adac59a547889a8404cc3bc7c39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank2Sym&lt; Dim, T &gt;::operator=</definition>
+        <argsstring>(const T &amp;aValue)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>aValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="49" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="49" bodyend="49"/>
+        <references refid="classcofe_1_1TensorRank2_1a974de1ac866a442b71c7585f93d7b700" compoundref="cofe__TensorRank2_8h" startline="228" endline="234">cofe::TensorRank2&lt; Dim, T &gt;::operator=</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a529b71c78891ef9a00c6d2515c812d5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcofe_1_1TensorRank2Sym" kindref="compound">TensorRank2Sym</ref>&lt; Dim, T &gt; &amp;</type>
+        <definition>TensorRank2Sym&lt;Dim,T&gt;&amp; cofe::TensorRank2Sym&lt; Dim, T &gt;::operator=</definition>
+        <argsstring>(const TensorRank2Sym&lt; Dim, T &gt; &amp;aTen)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2Sym" kindref="compound">TensorRank2Sym</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>aTen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="50" bodyend="54"/>
+        <references refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" compoundref="cofe__TensorRank2_8h" startline="119">cofe::TensorRank2&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a1c33be3b42add56b28659f985aa965bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void cofe::TensorRank2Sym&lt; Dim, T &gt;::beSymmetricPartOf</definition>
+        <argsstring>(const cofe::TensorRank2&lt; Dim, T &gt; &amp;r2T)</argsstring>
+        <name>beSymmetricPartOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2" kindref="compound">cofe::TensorRank2</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>r2T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="55" bodyend="61"/>
+        <references refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" compoundref="cofe__TensorRank2_8h" startline="119">cofe::TensorRank2&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1ab17bf08ed2d08a17877b0616dea15ad0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void cofe::TensorRank2Sym&lt; Dim, T &gt;::beHydrostaticPartOf</definition>
+        <argsstring>(const cofe::TensorRank2Sym&lt; Dim, T &gt; &amp;r2T)</argsstring>
+        <name>beHydrostaticPartOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2Sym" kindref="compound">cofe::TensorRank2Sym</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>r2T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="63" bodyend="67"/>
+        <references refid="classcofe_1_1TensorRank2_1ae57410d40bcb8f8b0fabe31acc478ad2" compoundref="cofe__TensorRank2_8h" startline="396" endline="400">cofe::TensorRank2&lt; Dim, T &gt;::beUnityTensor</references>
+        <references refid="classcofe_1_1TensorRank2_1a3f6357e9fb217490cd9d959887163328" compoundref="cofe__TensorRank2_8h" startline="219" endline="224">cofe::TensorRank2&lt; Dim, T &gt;::trace</references>
+        <referencedby refid="classcofe_1_1TensorRank2Sym_1a639118d5aa057ab10a57f78855b2dc30" compoundref="cofe__TensorRank2Sym_8h" startline="69" endline="75">cofe::TensorRank2Sym&lt; Dim, T &gt;::beDeviatoricPartOf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a639118d5aa057ab10a57f78855b2dc30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void cofe::TensorRank2Sym&lt; Dim, T &gt;::beDeviatoricPartOf</definition>
+        <argsstring>(const cofe::TensorRank2Sym&lt; Dim, T &gt; &amp;r2T)</argsstring>
+        <name>beDeviatoricPartOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2Sym" kindref="compound">cofe::TensorRank2Sym</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>r2T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="69" bodyend="75"/>
+        <references refid="classcofe_1_1TensorRank2Sym_1ab17bf08ed2d08a17877b0616dea15ad0" compoundref="cofe__TensorRank2Sym_8h" startline="63" endline="67">cofe::TensorRank2Sym&lt; Dim, T &gt;::beHydrostaticPartOf</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1aeb281d2fa552e85b63054784ab9dfb9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank2Sym&lt; Dim, T &gt;::beProductOf</definition>
+        <argsstring>(const cofe::AbstractTensorRank4SS&lt; Dim, T &gt; &amp;r4T, const cofe::TensorRank2Sym&lt; Dim, T &gt; &amp;r2ST)</argsstring>
+        <name>beProductOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1AbstractTensorRank4SS" kindref="compound">cofe::AbstractTensorRank4SS</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>r4T</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank2Sym" kindref="compound">cofe::TensorRank2Sym</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>r2ST</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a7f8161e73cdc617cfcdb37335090e300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank2Sym&lt; Dim, T &gt;::beSymProductOf</definition>
+        <argsstring>(const cofe::TensorRank1&lt; Dim, T &gt; &amp;lv, const cofe::TensorRank1&lt; Dim, T &gt; &amp;rv)</argsstring>
+        <name>beSymProductOf</name>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1" kindref="compound">cofe::TensorRank1</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>lv</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcofe_1_1TensorRank1" kindref="compound">cofe::TensorRank1</ref>&lt; Dim, T &gt; &amp;</type>
+          <declname>rv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="81" bodyend="89"/>
+        <references refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" compoundref="cofe__TensorRank2_8h" startline="119">cofe::TensorRank2&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a838b74665c17b6d60d9e342ff05d4420" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cofe::TensorRank2Sym&lt; Dim, T &gt;::checkSymmetry</definition>
+        <argsstring>()</argsstring>
+        <name>checkSymmetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="91" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="91" bodyend="97"/>
+        <references refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" compoundref="cofe__TensorRank2_8h" startline="119">cofe::TensorRank2&lt; Dim, T &gt;::com</references>
+        <referencedby refid="classcofe_1_1TensorRank2Sym_1ad009c20f62a3c7164308ced29b4cca99" compoundref="cofe__TensorRank2Sym_8h" startline="40" endline="40">cofe::TensorRank2Sym&lt; Dim, T &gt;::TensorRank2Sym</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a65bfec60122f7a9481da5600f22ac19e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double cofe::TensorRank2Sym&lt; Dim, T &gt;::maxPrincipalValue</definition>
+        <argsstring>() const </argsstring>
+        <name>maxPrincipalValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a413471819e725139194b6b9ae14ee69e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cofe::TensorRank2Sym&lt; Dim, T &gt;::computeMaxPrincipalDirection</definition>
+        <argsstring>(TensorRank1&lt; Dim, T &gt; &amp;) const </argsstring>
+        <name>computeMaxPrincipalDirection</name>
+        <param>
+          <type><ref refid="classcofe_1_1TensorRank1" kindref="compound">TensorRank1</ref>&lt; Dim, T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="100" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a254cc6a7bc8ae2997ce4975ba20f965f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double cofe::TensorRank2Sym&lt; 3, double &gt;::maxPrincipalValue</definition>
+        <argsstring>() const</argsstring>
+        <name>maxPrincipalValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="118" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="118" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1aff828ae4400856cb142f0bb4f822edf4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double cofe::TensorRank2Sym&lt; 2, double &gt;::maxPrincipalValue</definition>
+        <argsstring>() const</argsstring>
+        <name>maxPrincipalValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="152" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="152" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1a0d927eea62fecfcfbe37e74812cbd390" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cofe::TensorRank2Sym&lt; 2, double &gt;::computeMaxPrincipalDirection</definition>
+        <argsstring>(TensorRank1&lt; 2, double &gt; &amp;prdir) const</argsstring>
+        <name>computeMaxPrincipalDirection</name>
+        <param>
+          <type><ref refid="classcofe_1_1TensorRank1" kindref="compound">TensorRank1</ref>&lt; 2, double &gt; &amp;</type>
+          <declname>prdir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="170" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="170" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1aabfa3c3f2045a08766dc774625410e34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cofe::TensorRank2Sym&lt; 3, double &gt;::computeMaxPrincipalDirection</definition>
+        <argsstring>(TensorRank1&lt; 3, double &gt; &amp;prdir) const</argsstring>
+        <name>computeMaxPrincipalDirection</name>
+        <param>
+          <type><ref refid="classcofe_1_1TensorRank1" kindref="compound">TensorRank1</ref>&lt; 3, double &gt; &amp;</type>
+          <declname>prdir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="181" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="181" bodyend="197"/>
+        <references refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" compoundref="cofe__TensorRank2_8h" startline="119">cofe::TensorRank2&lt; Dim, T &gt;::com</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcofe_1_1TensorRank2Sym_1ab26fa8983ef339411fde00df322a4375" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cofe::TensorRank2Sym&lt; Dim, T &gt;::index</definition>
+        <argsstring>(int i, int j) const </argsstring>
+        <name>index</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="103" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="103" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="444">
+        <label>cofe::TensorRank2Sym&lt; Dim, T &gt;</label>
+        <link refid="classcofe_1_1TensorRank2Sym"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>cofe::TensorRank2&lt; Dim, T &gt;</label>
+        <link refid="classcofe_1_1TensorRank2"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="446">
+        <label>cofe::TensorRank2Sym&lt; Dim, T &gt;</label>
+        <link refid="classcofe_1_1TensorRank2Sym"/>
+        <childnode refid="447" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>cofe::TensorRank2&lt; Dim, T &gt;</label>
+        <link refid="classcofe_1_1TensorRank2"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" line="33" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_TensorRank2Sym.h" bodystart="32" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classcofe_1_1TensorRank2_1ae3f28ba9fd3ccd7afe9c5976b6e5178b" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>ar4tensor_type</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a639118d5aa057ab10a57f78855b2dc30" prot="public" virt="virtual"><scope>cofe::TensorRank2Sym</scope><name>beDeviatoricPartOf</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1ab17bf08ed2d08a17877b0616dea15ad0" prot="public" virt="virtual"><scope>cofe::TensorRank2Sym</scope><name>beHydrostaticPartOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a5bb4a7f811368240ecf93ff89da64fb7" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beInverseOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a695bdbb2f78d143642bd79bf07a6a770" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beInverseOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a287c066e522677f57aa945d99455abbf" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beInverseOf</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1aeb281d2fa552e85b63054784ab9dfb9b" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a323eb1ab146ace337487ebc240a6fcc1" prot="public" virt="non-virtual" ambiguityscope="cofe::TensorRank2::"><scope>cofe::TensorRank2Sym</scope><name>beProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a570391f93730b60cd57cb05fdda5df29" prot="public" virt="non-virtual" ambiguityscope="cofe::TensorRank2::"><scope>cofe::TensorRank2Sym</scope><name>beProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a3edc1495fa6318c924d122b43ae35296" prot="public" virt="non-virtual" ambiguityscope="cofe::TensorRank2::"><scope>cofe::TensorRank2Sym</scope><name>beProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a50e2406d1358dd9c4a1d95aba6cd7375" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beProductTraOf</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a1c33be3b42add56b28659f985aa965bf" prot="public" virt="virtual"><scope>cofe::TensorRank2Sym</scope><name>beSymmetricPartOf</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a7f8161e73cdc617cfcdb37335090e300" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beSymProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1adeb45423a4fcf114cee11c399fe23326" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beTransposeOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1afc7fa48bc56f6a2784481758e16761c2" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beTraProductOf</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ae57410d40bcb8f8b0fabe31acc478ad2" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>beUnityTensor</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a838b74665c17b6d60d9e342ff05d4420" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>checkSymmetry</name></member>
+      <member refid="classcofe_1_1TensorRank2_1aa180922c86462cd1ecf2950f9c1ed80e" prot="protected" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>com</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a413471819e725139194b6b9ae14ee69e" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>computeMaxPrincipalDirection</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a0d927eea62fecfcfbe37e74812cbd390" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>computeMaxPrincipalDirection</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1aabfa3c3f2045a08766dc774625410e34" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>computeMaxPrincipalDirection</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a6201d2f1f6491c789bfb77a914ee7354" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>determinant</name></member>
+      <member refid="classcofe_1_1TensorRank2_1aefe719d34b9be7ae253816fac48e6638" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>determinant</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a76949c747b16d53913a508e16ac14cbd" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>determinant</name></member>
+      <member refid="classcofe_1_1TensorRank2_1af21522a579144b568613c850c6856ce1" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>dot</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1ab26fa8983ef339411fde00df322a4375" prot="protected" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>index</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a191fa7ce4804287b6496066a5df2a799" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>initializeFrom</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a91c568920d4b5f5f9f6f8bdafab7bc95" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>initializeFrom</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a65bfec60122f7a9481da5600f22ac19e" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>maxPrincipalValue</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a254cc6a7bc8ae2997ce4975ba20f965f" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>maxPrincipalValue</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1aff828ae4400856cb142f0bb4f822edf4" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>maxPrincipalValue</name></member>
+      <member refid="classcofe_1_1TensorRank2_1aa0f9fe988669a1b2234e1c4ad631c4c4" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operateOn</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ab39e8b2dbb0866f8a861e42129895256" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator T</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a87093b92ee8219d1aeb7bfae06035a71" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator!=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a70ce7c8bfbe7e4bfd396d10bcfa1f99b" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator()</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a4d33fccaf8405418f327fbeaa578eac1" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator()</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a4fd70229db0582dbefb468643e67edd5" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator*=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a328a64fd8f4f688ad9689c94d815f985" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator*=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ae48aa87bd29405aad324ec5d3e593b26" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator+=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a87cadb5aaf319212f4948516c0152e61" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator-=</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a3ada6adac59a547889a8404cc3bc7c39" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a529b71c78891ef9a00c6d2515c812d5c" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1aa13f3b43175c50377dc7be1b3b4ba0e1" prot="public" virt="non-virtual" ambiguityscope="cofe::TensorRank2::"><scope>cofe::TensorRank2Sym</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a06e9b0f1029f40caef19846aac685229" prot="public" virt="non-virtual" ambiguityscope="cofe::TensorRank2::"><scope>cofe::TensorRank2Sym</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a67244381f61e945177a82d50954fcb9c" prot="public" virt="non-virtual" ambiguityscope="cofe::TensorRank2::"><scope>cofe::TensorRank2Sym</scope><name>operator=</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ae34c4793ec388270b417d717a1624efd" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>operator==</name></member>
+      <member refid="classcofe_1_1TensorRank2_1afef4f2c69f8a804d795c334bc382dc5f" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>own_type</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ad139dabcd7509b655c11c06b453e4e46" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>print_row</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a3dce726b0c34912c6549a5911f478eaf" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>scalar_type</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a043df152939c4a51e9804b56395736c0" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>secondInvariant</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a56346adecab6c8e74def3fb980eea29e" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>size</name></member>
+      <member refid="classcofe_1_1TensorRank2_1af28aac212a14afce9e6e0554234cf3bb" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>solve</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ac44ed3575539ab2a418407db1ecba9be" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>solve</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a3af9468088af4836c93808edaceb03b0" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>tensor_type</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a224848030ac161c4962376c189450a42" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ac7cdeb09ca5cf60fb0ecf9c2ad72ff0e" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2_1adb070405bdf51413255ebd736516cfb8" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a63a8348ee7fea2cec9345d0474e1b577" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a405b0de39bca1744a285fb08cf189228" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a5c10f45abc4b4c34016e0af1d54a565d" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2_1ac44f4cc0b8489564a74cb3544677bc51" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a5c959003b2f6cd9ece627399bd45835e" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2Sym</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1ad009c20f62a3c7164308ced29b4cca99" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2Sym</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a41a6d3b947aa0fe214d4c835df39216e" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2Sym</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1a47b1dc72944a7061e2a4b5648ad70949" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>TensorRank2Sym</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a3f6357e9fb217490cd9d959887163328" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>trace</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a5c3ced2bb8f6574ba2ce2e1dab9d2c0b" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>vector_type</name></member>
+      <member refid="classcofe_1_1TensorRank2_1a7f85e87ad4469c630444074f245bfe85" prot="public" virt="non-virtual"><scope>cofe::TensorRank2Sym</scope><name>zero</name></member>
+      <member refid="classcofe_1_1TensorRank2_1aea3bdfe6a4751a76c034e4fc350ddae4" prot="public" virt="virtual"><scope>cofe::TensorRank2Sym</scope><name>~TensorRank2</name></member>
+      <member refid="classcofe_1_1TensorRank2Sym_1aa21acff1313916623564e9eaaca67dbd" prot="public" virt="virtual"><scope>cofe::TensorRank2Sym</scope><name>~TensorRank2Sym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

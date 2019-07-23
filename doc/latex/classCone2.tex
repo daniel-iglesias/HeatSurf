@@ -1,0 +1,329 @@
+\hypertarget{classCone2}{\section{Cone2 Class Reference}
+\label{classCone2}\index{Cone2@{Cone2}}
+}
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/cone2-\/bak.\-h$>$}
+
+
+
+Inheritance diagram for Cone2\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classCone2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cone2\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classCone2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCone2_ad99f90e043c4aa4cc1e4012aafd9a909}{Cone2} ()
+\item 
+\hyperlink{classCone2_a65867efad22fe7b708dd76b7a2621577}{Cone2} (std\-::string, double, double, double, double, int)
+\item 
+\hyperlink{classCone2_add4b118b935f03db10ed1db95809034b}{$\sim$\-Cone2} ()
+\item 
+void \hyperlink{classCone2_a07d48d198db7ccb9d72f17e1b4f0c154}{residue} (lmx\-::\-Vector$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classCone2_a94d852542a6c22427333b484f30658c2}{jacobian} (lmx\-::\-Matrix$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classCone2_ad62643bcb7573d63116d940c8a064c46}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+\hyperlink{classCone2_ad99f90e043c4aa4cc1e4012aafd9a909}{Cone2} ()
+\item 
+\hyperlink{classCone2_a65867efad22fe7b708dd76b7a2621577}{Cone2} (std\-::string, double, double, double, double, int)
+\item 
+\hyperlink{classCone2_add4b118b935f03db10ed1db95809034b}{$\sim$\-Cone2} ()
+\item 
+void \hyperlink{classCone2_a7aeaee918b84b78b5b00f9572bedd349}{set\-Sections} (double)
+\item 
+void \hyperlink{classCone2_aa79cd275d279459beb8fa668cad2aa55}{compute\-Geometry} ()
+\item 
+void \hyperlink{classCone2_a07d48d198db7ccb9d72f17e1b4f0c154}{residue} (lmx\-::\-Vector$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classCone2_a94d852542a6c22427333b484f30658c2}{jacobian} (lmx\-::\-Matrix$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classCone2_ad62643bcb7573d63116d940c8a064c46}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classCone2_a28a2c5c4cfba12b2ae005547e5bab5a2}{compute\-Nodal\-Power} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classCone2_a89b20ddec7e0a6b1bd9478a8036c9ad0}{output\-Table} ()
+\item 
+void \hyperlink{classCone2_a947c9976494227e12730843c77a9b241}{output\-Power\-File} (int)
+\item 
+void \hyperlink{classCone2_af259aae6fd151e82482ee9232b63af31}{output\-Power\-Density\-File} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCone2_a7fbc810b8d75802b56af1acd3e4a39f6}{slope}
+\item 
+double \hyperlink{classCone2_a79dcbb3665f62edad4d5e8ccbc3378bb}{init\-Diam}
+\item 
+double \hyperlink{classCone2_a34aec8d4ba5233e8a5e90988d25c08b7}{apparent\-Length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCone2_ad99f90e043c4aa4cc1e4012aafd9a909}{\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\subsubsection[{Cone2}]{\setlength{\rightskip}{0pt plus 5cm}Cone2\-::\-Cone2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_ad99f90e043c4aa4cc1e4012aafd9a909}
+\hypertarget{classCone2_a65867efad22fe7b708dd76b7a2621577}{\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\subsubsection[{Cone2}]{\setlength{\rightskip}{0pt plus 5cm}Cone2\-::\-Cone2 (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-\_\-in, }
+\item[{double}]{z0\-\_\-in, }
+\item[{double}]{length\-\_\-in, }
+\item[{double}]{init\-Diam\-\_\-in, }
+\item[{double}]{final\-Diam\-\_\-in, }
+\item[{int}]{par3\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classCone2_a65867efad22fe7b708dd76b7a2621577}
+
+
+References Geometry\-::grid\-Width, init\-Diam, Geometry\-::length, and slope.
+
+\hypertarget{classCone2_add4b118b935f03db10ed1db95809034b}{\index{Cone2@{Cone2}!$\sim$\-Cone2@{$\sim$\-Cone2}}
+\index{$\sim$\-Cone2@{$\sim$\-Cone2}!Cone2@{Cone2}}
+\subsubsection[{$\sim$\-Cone2}]{\setlength{\rightskip}{0pt plus 5cm}Cone2\-::$\sim$\-Cone2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_add4b118b935f03db10ed1db95809034b}
+\hypertarget{classCone2_ad99f90e043c4aa4cc1e4012aafd9a909}{\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\subsubsection[{Cone2}]{\setlength{\rightskip}{0pt plus 5cm}Cone2\-::\-Cone2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_ad99f90e043c4aa4cc1e4012aafd9a909}
+\hypertarget{classCone2_a65867efad22fe7b708dd76b7a2621577}{\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\index{Cone2@{Cone2}!Cone2@{Cone2}}
+\subsubsection[{Cone2}]{\setlength{\rightskip}{0pt plus 5cm}Cone2\-::\-Cone2 (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{, }
+\item[{double}]{, }
+\item[{double}]{, }
+\item[{double}]{, }
+\item[{double}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_a65867efad22fe7b708dd76b7a2621577}
+\hypertarget{classCone2_add4b118b935f03db10ed1db95809034b}{\index{Cone2@{Cone2}!$\sim$\-Cone2@{$\sim$\-Cone2}}
+\index{$\sim$\-Cone2@{$\sim$\-Cone2}!Cone2@{Cone2}}
+\subsubsection[{$\sim$\-Cone2}]{\setlength{\rightskip}{0pt plus 5cm}Cone2\-::$\sim$\-Cone2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_add4b118b935f03db10ed1db95809034b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCone2_aa79cd275d279459beb8fa668cad2aa55}{\index{Cone2@{Cone2}!compute\-Geometry@{compute\-Geometry}}
+\index{compute\-Geometry@{compute\-Geometry}!Cone2@{Cone2}}
+\subsubsection[{compute\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::compute\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_aa79cd275d279459beb8fa668cad2aa55}
+
+
+Reimplemented from \hyperlink{classCone_a98c5dc0bc0561ab92e76a8ab4da2f891}{Cone}.
+
+
+
+References Geometry\-::elements, Geometry\-::grid, Geometry\-::grid\-Points, init\-Diam, Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, slope, and Geometry\-::z0.
+
+\hypertarget{classCone2_ad62643bcb7573d63116d940c8a064c46}{\index{Cone2@{Cone2}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!Cone2@{Cone2}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_ad62643bcb7573d63116d940c8a064c46}
+
+
+Reimplemented from \hyperlink{classCone_a8bc1c798b9b7a34e5eba606212ca4a0f}{Cone}.
+
+
+
+References Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Particle\-::get\-Z(), Particle\-::get\-Zdiv(), jacobian(), Geometry\-::param\-Trajectories, and residue().
+
+\hypertarget{classCone2_ad62643bcb7573d63116d940c8a064c46}{\index{Cone2@{Cone2}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!Cone2@{Cone2}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_ad62643bcb7573d63116d940c8a064c46}
+
+
+Reimplemented from \hyperlink{classCone_a8bc1c798b9b7a34e5eba606212ca4a0f}{Cone}.
+
+\hypertarget{classCone2_a28a2c5c4cfba12b2ae005547e5bab5a2}{\index{Cone2@{Cone2}!compute\-Nodal\-Power@{compute\-Nodal\-Power}}
+\index{compute\-Nodal\-Power@{compute\-Nodal\-Power}!Cone2@{Cone2}}
+\subsubsection[{compute\-Nodal\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::compute\-Nodal\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_a28a2c5c4cfba12b2ae005547e5bab5a2}
+
+
+Reimplemented from \hyperlink{classCone_a26bfbb3dac2dc902e193413c0f61f9b1}{Cone}.
+
+
+
+References Particle\-::get\-Energy(), Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Geometry\-::length, Geometry\-::nodes, Geometry\-::param\-Trajectories, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classCone2_a94d852542a6c22427333b484f30658c2}{\index{Cone2@{Cone2}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Cone2@{Cone2}}
+\subsubsection[{jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::jacobian (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Matrix$<$ double $>$ \&}]{jac, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classCone2_a94d852542a6c22427333b484f30658c2}
+
+
+References Geometry\-::length, slope, and Geometry\-::z0.
+
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classCone2_a94d852542a6c22427333b484f30658c2}{\index{Cone2@{Cone2}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Cone2@{Cone2}}
+\subsubsection[{jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::jacobian (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Matrix$<$ double $>$ \&}]{, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_a94d852542a6c22427333b484f30658c2}
+\hypertarget{classCone2_af259aae6fd151e82482ee9232b63af31}{\index{Cone2@{Cone2}!output\-Power\-Density\-File@{output\-Power\-Density\-File}}
+\index{output\-Power\-Density\-File@{output\-Power\-Density\-File}!Cone2@{Cone2}}
+\subsubsection[{output\-Power\-Density\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::output\-Power\-Density\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_af259aae6fd151e82482ee9232b63af31}
+
+
+Reimplemented from \hyperlink{classCone_a435a6b46c506758157f2ed0d3213461f}{Cone}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classCone2_a947c9976494227e12730843c77a9b241}{\index{Cone2@{Cone2}!output\-Power\-File@{output\-Power\-File}}
+\index{output\-Power\-File@{output\-Power\-File}!Cone2@{Cone2}}
+\subsubsection[{output\-Power\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::output\-Power\-File (
+\begin{DoxyParamCaption}
+\item[{int}]{particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_a947c9976494227e12730843c77a9b241}
+
+
+Reimplemented from \hyperlink{classCone_a9928e7033ce28a13e7d770a1620e096e}{Cone}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, and Geometry\-::sectors.
+
+\hypertarget{classCone2_a89b20ddec7e0a6b1bd9478a8036c9ad0}{\index{Cone2@{Cone2}!output\-Table@{output\-Table}}
+\index{output\-Table@{output\-Table}!Cone2@{Cone2}}
+\subsubsection[{output\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::output\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_a89b20ddec7e0a6b1bd9478a8036c9ad0}
+
+
+Reimplemented from \hyperlink{classCone_aa026083e1c8ecfd1f589eb1939b302c1}{Cone}.
+
+\hypertarget{classCone2_a07d48d198db7ccb9d72f17e1b4f0c154}{\index{Cone2@{Cone2}!residue@{residue}}
+\index{residue@{residue}!Cone2@{Cone2}}
+\subsubsection[{residue}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::residue (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{res, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classCone2_a07d48d198db7ccb9d72f17e1b4f0c154}
+
+
+References Geometry\-::length, slope, and Geometry\-::z0.
+
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classCone2_a07d48d198db7ccb9d72f17e1b4f0c154}{\index{Cone2@{Cone2}!residue@{residue}}
+\index{residue@{residue}!Cone2@{Cone2}}
+\subsubsection[{residue}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::residue (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classCone2_a07d48d198db7ccb9d72f17e1b4f0c154}
+\hypertarget{classCone2_a7aeaee918b84b78b5b00f9572bedd349}{\index{Cone2@{Cone2}!set\-Sections@{set\-Sections}}
+\index{set\-Sections@{set\-Sections}!Cone2@{Cone2}}
+\subsubsection[{set\-Sections}]{\setlength{\rightskip}{0pt plus 5cm}void Cone2\-::set\-Sections (
+\begin{DoxyParamCaption}
+\item[{double}]{distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCone2_a7aeaee918b84b78b5b00f9572bedd349}
+
+
+Reimplemented from \hyperlink{classCone_a52fd80b6c484449a8d24d1471e21873c}{Cone}.
+
+
+
+References Geometry\-::length, and Geometry\-::sections.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCone2_a34aec8d4ba5233e8a5e90988d25c08b7}{\index{Cone2@{Cone2}!apparent\-Length@{apparent\-Length}}
+\index{apparent\-Length@{apparent\-Length}!Cone2@{Cone2}}
+\subsubsection[{apparent\-Length}]{\setlength{\rightskip}{0pt plus 5cm}double Cone2\-::apparent\-Length\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCone2_a34aec8d4ba5233e8a5e90988d25c08b7}
+\hypertarget{classCone2_a79dcbb3665f62edad4d5e8ccbc3378bb}{\index{Cone2@{Cone2}!init\-Diam@{init\-Diam}}
+\index{init\-Diam@{init\-Diam}!Cone2@{Cone2}}
+\subsubsection[{init\-Diam}]{\setlength{\rightskip}{0pt plus 5cm}double Cone2\-::init\-Diam\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCone2_a79dcbb3665f62edad4d5e8ccbc3378bb}
+
+
+Referenced by compute\-Geometry(), and Cone2().
+
+\hypertarget{classCone2_a7fbc810b8d75802b56af1acd3e4a39f6}{\index{Cone2@{Cone2}!slope@{slope}}
+\index{slope@{slope}!Cone2@{Cone2}}
+\subsubsection[{slope}]{\setlength{\rightskip}{0pt plus 5cm}double Cone2\-::slope\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCone2_a7fbc810b8d75802b56af1acd3e4a39f6}
+
+
+Referenced by compute\-Geometry(), Cone2(), jacobian(), and residue().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{cone2-bak_8h}{cone2-\/bak.\-h}\item 
+src/\hyperlink{cone2_8h}{cone2.\-h}\item 
+src/\hyperlink{cone2-bak_8cpp}{cone2-\/bak.\-cpp}\item 
+src/\hyperlink{cone2_8cpp}{cone2.\-cpp}\end{DoxyCompactItemize}

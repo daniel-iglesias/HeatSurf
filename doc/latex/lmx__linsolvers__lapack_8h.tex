@@ -1,0 +1,52 @@
+\hypertarget{lmx__linsolvers__lapack_8h}{\section{src/\-L\-M\-X/lmx\-\_\-linsolvers\-\_\-lapack.h File Reference}
+\label{lmx__linsolvers__lapack_8h}\index{src/\-L\-M\-X/lmx\-\_\-linsolvers\-\_\-lapack.\-h@{src/\-L\-M\-X/lmx\-\_\-linsolvers\-\_\-lapack.\-h}}
+}
+
+
+Lapack interface for \hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix}.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlmx_1_1Gesv}{lmx\-::\-Gesv$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class for lapack ?gesv routine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelmx}{lmx}
+\begin{DoxyCompactList}\small\item\em Linked Matri\-X methods library uses lmx namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{lmx__linsolvers__lapack_8h_a62e4cccaef9c8f1716249e55a42a0e66}{dgesv\-\_\-} (int $\ast$n, int $\ast$nrhs, double $\ast$a, int $\ast$lda, int $\ast$ipiv, double $\ast$b, int $\ast$ldb, int $\ast$info)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lapack interface for \hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix}. Implements the fortran interface for using the linear solvers from lapack.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{lmx__linsolvers__lapack_8h_a62e4cccaef9c8f1716249e55a42a0e66}{\index{lmx\-\_\-linsolvers\-\_\-lapack.\-h@{lmx\-\_\-linsolvers\-\_\-lapack.\-h}!dgesv\-\_\-@{dgesv\-\_\-}}
+\index{dgesv\-\_\-@{dgesv\-\_\-}!lmx_linsolvers_lapack.h@{lmx\-\_\-linsolvers\-\_\-lapack.\-h}}
+\subsubsection[{dgesv\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void dgesv\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{nrhs, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{int $\ast$}]{ipiv, }
+\item[{double $\ast$}]{b, }
+\item[{int $\ast$}]{ldb, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{lmx__linsolvers__lapack_8h_a62e4cccaef9c8f1716249e55a42a0e66}
+Declaration of external function. Defined in any Lapack compatible library. 
+
+Referenced by lmx\-::\-Gesv$<$ T $>$\-::solve().
+

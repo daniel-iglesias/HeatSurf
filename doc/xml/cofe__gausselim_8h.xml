@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="cofe__gausselim_8h" kind="file">
+    <compoundname>cofe_gausselim.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="cofe__CofeUtils_8h" local="yes">cofe_CofeUtils.h</includes>
+    <includedby refid="cofe__TensorRank2_8h" local="yes">src/LMX/cofe_TensorRank2.h</includedby>
+    <incdepgraph>
+      <node id="3292">
+        <label>cmath</label>
+      </node>
+      <node id="3289">
+        <label>src/LMX/cofe_gausselim.h</label>
+        <link refid="cofe_gausselim.h"/>
+        <childnode refid="3290" relation="include">
+        </childnode>
+        <childnode refid="3291" relation="include">
+        </childnode>
+      </node>
+      <node id="3293">
+        <label>string</label>
+      </node>
+      <node id="3294">
+        <label>cstdlib</label>
+      </node>
+      <node id="3290">
+        <label>iostream</label>
+      </node>
+      <node id="3291">
+        <label>cofe_CofeUtils.h</label>
+        <link refid="cofe__CofeUtils_8h"/>
+        <childnode refid="3292" relation="include">
+        </childnode>
+        <childnode refid="3293" relation="include">
+        </childnode>
+        <childnode refid="3290" relation="include">
+        </childnode>
+        <childnode refid="3294" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3308">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="3318">
+        <label>src/LMX/cofe_TensorRank2Sym.h</label>
+        <link refid="cofe__TensorRank2Sym_8h"/>
+        <childnode refid="3297" relation="include">
+        </childnode>
+      </node>
+      <node id="3316">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="3317" relation="include">
+        </childnode>
+      </node>
+      <node id="3295">
+        <label>src/LMX/cofe_gausselim.h</label>
+        <link refid="cofe_gausselim.h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3296">
+        <label>src/LMX/cofe_TensorRank2.h</label>
+        <link refid="cofe__TensorRank2_8h"/>
+        <childnode refid="3297" relation="include">
+        </childnode>
+        <childnode refid="3318" relation="include">
+        </childnode>
+      </node>
+      <node id="3297">
+        <label>src/LMX/cofe_fmc.h</label>
+        <link refid="cofe__fmc_8h"/>
+        <childnode refid="3298" relation="include">
+        </childnode>
+      </node>
+      <node id="3310">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="3311">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="3305">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="3298">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx_8h"/>
+        <childnode refid="3299" relation="include">
+        </childnode>
+      </node>
+      <node id="3313">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="3300">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="3301" relation="include">
+        </childnode>
+        <childnode refid="3302" relation="include">
+        </childnode>
+        <childnode refid="3303" relation="include">
+        </childnode>
+      </node>
+      <node id="3306">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="3307" relation="include">
+        </childnode>
+        <childnode refid="3308" relation="include">
+        </childnode>
+        <childnode refid="3303" relation="include">
+        </childnode>
+      </node>
+      <node id="3301">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="3309">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="3310" relation="include">
+        </childnode>
+        <childnode refid="3303" relation="include">
+        </childnode>
+      </node>
+      <node id="3315">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="3304">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="3312">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="3303" relation="include">
+        </childnode>
+        <childnode refid="3313" relation="include">
+        </childnode>
+      </node>
+      <node id="3317">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="3307">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="3302">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="3299">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="3300" relation="include">
+        </childnode>
+        <childnode refid="3306" relation="include">
+        </childnode>
+        <childnode refid="3309" relation="include">
+        </childnode>
+        <childnode refid="3311" relation="include">
+        </childnode>
+        <childnode refid="3312" relation="include">
+        </childnode>
+        <childnode refid="3314" relation="include">
+        </childnode>
+        <childnode refid="3316" relation="include">
+        </childnode>
+      </node>
+      <node id="3314">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="3303" relation="include">
+        </childnode>
+        <childnode refid="3315" relation="include">
+        </childnode>
+      </node>
+      <node id="3303">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="3304" relation="include">
+        </childnode>
+        <childnode refid="3305" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacecofe">cofe</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Jaime<sp/>Planas,<sp/>Jose<sp/>M<sp/>Sancho<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GAUSSELIM_H</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GAUSSELIM_H</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cofe__CofeUtils_8h" kindref="compound">cofe_CofeUtils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">cofe</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacecofe_1a5d5b0de16aea3255de1d90d382190948" kindref="member">gausselim</ref>(T<sp/>a[N][N],<sp/>T<sp/>b[N]<sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="18" refid="namespacecofe_1a5d5b0de16aea3255de1d90d382190948" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacecofe_1a5d5b0de16aea3255de1d90d382190948" kindref="member">cofe::gausselim</ref>(T<sp/>a[N][N],<sp/>T<sp/>b[N])</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>N;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>n<sp/>-<sp/>1<sp/>;++k)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a[k][k]<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="classcofe_1_1CofeUtils_1a580314f9895cd59dca7803dfd1afd687" kindref="member">cofe::CofeUtils::error</ref>(</highlight><highlight class="stringliteral">&quot;pivote<sp/>nulo&quot;</highlight><highlight class="normal">);}</highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>error;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>k<sp/>+<sp/>1;<sp/>i<sp/>&lt;<sp/>n;<sp/>++i)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(a[i][k]<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>mult<sp/>=<sp/>a[i][k]/a[k][k];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a[i][k]=mult;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>k<sp/>+<sp/>1;<sp/>j<sp/>&lt;<sp/>n;<sp/>++j)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a[i][j]-=<sp/>mult*a[k][j];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>n;<sp/>++i)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>i;<sp/>++j)<sp/>b[i]<sp/>-=<sp/>a[i][j]*b[j];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>n<sp/>-<sp/>1;<sp/>i<sp/>&gt;=<sp/>0;<sp/>i--){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i+1;<sp/>j&lt;n;<sp/>++j)<sp/>b[i]<sp/>-=<sp/>a[i][j]*b[j];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>b[i]<sp/>/=<sp/>a[i][i];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/cofe_gausselim.h"/>
+  </compounddef>
+</doxygen>

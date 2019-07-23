@@ -1,0 +1,729 @@
+\hypertarget{classlmx_1_1Type__csc}{\section{lmx\-:\-:Type\-\_\-csc$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Type__csc}\index{lmx\-::\-Type\-\_\-csc$<$ T $>$@{lmx\-::\-Type\-\_\-csc$<$ T $>$}}
+}
+
+
+Compressed Storaged by Columns matrix.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Type\-\_\-csc$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classlmx_1_1Type__csc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Type\-\_\-csc$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classlmx_1_1Type__csc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Type__csc_a2915f99c2fab8cca3dd8509d1f5fbb82}{Type\-\_\-csc} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1Type__csc_a2fe109779f2ba66d3c22abc8483ea7d6}{Type\-\_\-csc} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} rows, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} columns)
+\item 
+\hyperlink{classlmx_1_1Type__csc_a425e938c038cda4f62fe818e41d175d5}{$\sim$\-Type\-\_\-csc} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classlmx_1_1Type__csc_acb0b1a88c3e46d0951c0e03099e33cc2}{resize} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+const T \& \hyperlink{classlmx_1_1Type__csc_aaa74136864d441799168b4568f697d53}{read\-Element} (const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&mrows, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&ncolumns) const 
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a814cd964f39fa41feffbf0795d3e446d}{write\-Element} (T value, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&mrows, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&ncolumns)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_aec6ca35c9a16d33a6ec7e4754f0cfe0b}{add\-Element} (T value, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&mrows, const \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \&ncolumns)
+\item 
+T $\ast$ \hyperlink{classlmx_1_1Type__csc_ac69045358a8d2b699ce32333f43f58e0}{create\-\_\-element} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__csc_a7d04d6b93337ead44534da43fb5d2b40}{get\-Rows} () const 
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__csc_adc1754239031a024f0126008cca8257c}{get\-Cols} () const 
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a149e8f0b1846fcc5e7731d75f0ab8401}{equals} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$matrix\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_ab81fb9afcee4f795aaed31383d484612}{add} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$matrix\-\_\-in\-\_\-1)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a933efcd2ae77ca2460a0e27dff8d8798}{substract} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$matrix\-\_\-in\-\_\-1)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a5f2764badb799b42b956cb6bd384b55f}{multiply} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$matrix\-\_\-in\-\_\-1, const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$matrix\-\_\-in\-\_\-2)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_ad963bfd1f5e2cb5d524a15cac334afc4}{multiply\-Scalar} (const T \&)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_ac6270f91b6bffab66a8bf4f5bcd26ab9}{multiply\-Elements} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$matrix\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a77e01d8d8334bd448028d75c33e72f7f}{trn} ()
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a7a5cbf46b6fe051d10586b6f6b5cf244}{clean\-Below} (const double factor)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a2c85d71b10223e2da91e947739cd5e67}{clear} ()
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a9a5a413641307bc2229b79b46f9b43a8}{reset} ()
+\item 
+void \hyperlink{classlmx_1_1Type__csc_adf2926b0afd5a318fdc730225d10d2aa}{read\-\_\-mm\-\_\-file} (const char $\ast$input\-\_\-file)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a167170de05513c15944e09722a29d699}{read\-\_\-hb\-\_\-file} (const char $\ast$input\-\_\-file)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a9b9007bdd388c37f469496d940be9416}{write\-\_\-hb\-\_\-file} (const char $\ast$input\-\_\-file)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_aaeb3cfbee5ab97c7eca80812994605f0}{print} ()
+\item 
+bool \hyperlink{classlmx_1_1Type__csc_af7a2ce6b3c1f7221759e5714be2a6ab2}{exists} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a3a9e534d84a2cf1265adfe87087904b6}{set\-Sparse\-Pattern} (\hyperlink{classlmx_1_1Vector}{Vector}$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, \hyperlink{classlmx_1_1Vector}{Vector}$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a0d71c07fe7b4ded4eb8c4d70e8e21117}{set\-Sparse\-Pattern} (std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&)
+\item 
+void \hyperlink{classlmx_1_1Type__csc_aded0c22ffd28b30e5e447107fbdb5864}{init\-S\-L\-U} ()
+\item 
+void \hyperlink{classlmx_1_1Type__csc_acd31af597828197da686efaecc0b2cb7}{factorize} ()
+\item 
+void \hyperlink{classlmx_1_1Type__csc_a7b4cf55fb69d0bc365e41c47eee0a676}{subs\-Solve} (\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ T $>$ \hyperlink{classlmx_1_1Type__csc_a189ee6941a05a6e49f11e4ddee205ca6}{aa}
+\item 
+std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \hyperlink{classlmx_1_1Type__csc_ad149a245b902861d26367af5a98d38c2}{ia}
+\item 
+std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \hyperlink{classlmx_1_1Type__csc_a0fec1fc6c8a69fc5727063220d220eee}{ja}
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__csc_ade9e149ea4925d6cc97727bbf07f080e}{Nnze}
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__csc_a2c5ef8a3a2cd3a79d7b747f8cace105f}{Nrow}
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Type__csc_ac201c80e090b62791f8a95d6f1e3b07c}{Ncol}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlmx_1_1Type__csc_aaf433432afb39beb3a3908942731530e}{mat\-\_\-vec\-\_\-mult} (const \hyperlink{classlmx_1_1Type__csc}{Type\-\_\-csc}$<$ T $>$ $\ast$, const \hyperlink{classlmx_1_1Type__stdVector}{Type\-\_\-std\-Vector}$<$ T $>$ $\ast$, \hyperlink{classlmx_1_1Type__stdVector}{Type\-\_\-std\-Vector}$<$ T $>$ $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Type\-\_\-csc$<$ T $>$}
+
+Compressed Storaged by Columns matrix. 
+
+\begin{DoxyAuthor}{Author}
+Roberto Ortega 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Type__csc_a2915f99c2fab8cca3dd8509d1f5fbb82}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!Type\-\_\-csc@{Type\-\_\-csc}}
+\index{Type\-\_\-csc@{Type\-\_\-csc}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{Type\-\_\-csc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::{\bf Type\-\_\-csc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Type__csc_a2915f99c2fab8cca3dd8509d1f5fbb82}
+
+
+Empty constructor. 
+
+\hypertarget{classlmx_1_1Type__csc_a2fe109779f2ba66d3c22abc8483ea7d6}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!Type\-\_\-csc@{Type\-\_\-csc}}
+\index{Type\-\_\-csc@{Type\-\_\-csc}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{Type\-\_\-csc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::{\bf Type\-\_\-csc} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{rows, }
+\item[{{\bf size\-\_\-type}}]{columns}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Type__csc_a2fe109779f2ba66d3c22abc8483ea7d6}
+Standard constructor. Creates a new object with parameter contents resized to (rows, columns) dimension. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & Rows of H-\/\-B matrix. \\
+\hline
+{\em columns} & Columns of H-\/\-B matrix. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::\-Type\-\_\-csc$<$ T $>$\-::ja, lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Ncol, lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Nnze, lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Nrow, and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::resize().
+
+\hypertarget{classlmx_1_1Type__csc_a425e938c038cda4f62fe818e41d175d5}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!$\sim$\-Type\-\_\-csc@{$\sim$\-Type\-\_\-csc}}
+\index{$\sim$\-Type\-\_\-csc@{$\sim$\-Type\-\_\-csc}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{$\sim$\-Type\-\_\-csc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::$\sim${\bf Type\-\_\-csc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Type__csc_a425e938c038cda4f62fe818e41d175d5}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Type__csc_ab81fb9afcee4f795aaed31383d484612}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!add@{add}}
+\index{add@{add}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{matrix\-\_\-in\-\_\-1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_ab81fb9afcee4f795aaed31383d484612}
+Add method. Adds the the input matrix parameter's elements to the object's contents. Necessary for overloading the \char`\"{}+=\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\-\_\-in\-\_\-1} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a7e09e2e81661176a36eb82818610223a}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+References lmx\-::\-Data$<$ T $>$\-::read\-Element().
+
+\hypertarget{classlmx_1_1Type__csc_aec6ca35c9a16d33a6ec7e4754f0cfe0b}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::add\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{value, }
+\item[{const {\bf size\-\_\-type} \&}]{mrows, }
+\item[{const {\bf size\-\_\-type} \&}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_aec6ca35c9a16d33a6ec7e4754f0cfe0b}
+Add element method. Implements a method for adding data on the Harwell-\/\-Boeing matrix. Copy-\/pasted from write\-Element. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in Harwell-\/\-Boeing matrix. \\
+\hline
+{\em ncolumns} & Column position in Harwell-\/\-Boeing matrix. \\
+\hline
+{\em value} & Numerical type value. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_ab99ee708ee4e9553be431d408eb2b43a}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_a7a5cbf46b6fe051d10586b6f6b5cf244}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!clean\-Below@{clean\-Below}}
+\index{clean\-Below@{clean\-Below}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{clean\-Below}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::clean\-Below (
+\begin{DoxyParamCaption}
+\item[{const double}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a7a5cbf46b6fe051d10586b6f6b5cf244}
+Clean below method. Makes equal to zero every element below given factor. 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Reference value for cleaning. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a706e90ec786d6133dd69edcbc6b37845}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_a2c85d71b10223e2da91e947739cd5e67}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!clear@{clear}}
+\index{clear@{clear}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a2c85d71b10223e2da91e947739cd5e67}
+Clear method. Wipes all data, clearing column, row and data vectors. $<$ \hyperlink{classlmx_1_1Matrix}{Matrix} data contents.
+
+$<$ Row indexer.
+
+$<$ Column indexer.
+
+$<$ Number of non-\/zero values. 
+
+Implements \hyperlink{classlmx_1_1Data_abab7ff41198c0fab10e2a7d739e47ecb}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_ac69045358a8d2b699ce32333f43f58e0}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!create\-\_\-element@{create\-\_\-element}}
+\index{create\-\_\-element@{create\-\_\-element}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{create\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T $\ast$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::create\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{mrows, }
+\item[{{\bf size\-\_\-type}}]{ncolumns}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Type__csc_ac69045358a8d2b699ce32333f43f58e0}
+Create element method. Implements a method for creating a new data position in matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in Harwell-\/\-Boeing matrix. \\
+\hline
+{\em ncolumns} & Column position in Harwell-\/\-Boeing matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the element in the position given by the parameters. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Type__csc_a149e8f0b1846fcc5e7731d75f0ab8401}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!equals@{equals}}
+\index{equals@{equals}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::equals (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{matrix\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a149e8f0b1846fcc5e7731d75f0ab8401}
+Copy method. Equals the data in the object's contents to those given by the input matrix parameter. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\-\_\-in} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a26ed4e8b9ba60ee57fc729e4cfcad356}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_af7a2ce6b3c1f7221759e5714be2a6ab2}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!exists@{exists}}
+\index{exists@{exists}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::exists (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{mrows, }
+\item[{{\bf size\-\_\-type}}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_af7a2ce6b3c1f7221759e5714be2a6ab2}
+Returns T\-R\-U\-E or F\-A\-L\-S\-E depending of element existance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row index. \\
+\hline
+{\em ncolumns} & Column index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-R\-U\-E if the element exists in internal storage structure. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data__mat_aec8ef2dab6c85ad0461718eb2aafe6ae}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_acd31af597828197da686efaecc0b2cb7}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!factorize@{factorize}}
+\index{factorize@{factorize}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{factorize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::factorize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_acd31af597828197da686efaecc0b2cb7}
+
+
+Implements \hyperlink{classlmx_1_1Data__mat_a1b94e36086c4c181f8001f277ed89bbf}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_adc1754239031a024f0126008cca8257c}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!get\-Cols@{get\-Cols}}
+\index{get\-Cols@{get\-Cols}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{get\-Cols}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::get\-Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_adc1754239031a024f0126008cca8257c}
+Method for knowing the number of data columns. \begin{DoxyReturn}{Returns}
+Number of columns. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data_a7dc130d0eba4c4d1dc4ce6e9a371251c}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+Referenced by lmx\-::copy(), and lmx\-::mat\-\_\-vec\-\_\-mult().
+
+\hypertarget{classlmx_1_1Type__csc_a7d04d6b93337ead44534da43fb5d2b40}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!get\-Rows@{get\-Rows}}
+\index{get\-Rows@{get\-Rows}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{get\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::get\-Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a7d04d6b93337ead44534da43fb5d2b40}
+Method for knowing the number of data rows. \begin{DoxyReturn}{Returns}
+Number of rows. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data_a819b220b738028a01c5f861d059dd802}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+Referenced by lmx\-::copy(), and lmx\-::mat\-\_\-vec\-\_\-mult().
+
+\hypertarget{classlmx_1_1Type__csc_aded0c22ffd28b30e5e447107fbdb5864}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!init\-S\-L\-U@{init\-S\-L\-U}}
+\index{init\-S\-L\-U@{init\-S\-L\-U}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{init\-S\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::init\-S\-L\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Type__csc_aded0c22ffd28b30e5e447107fbdb5864}
+\hypertarget{classlmx_1_1Type__csc_a5f2764badb799b42b956cb6bd384b55f}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!multiply@{multiply}}
+\index{multiply@{multiply}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{matrix\-\_\-in\-\_\-1, }
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{matrix\-\_\-in\-\_\-2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a5f2764badb799b42b956cb6bd384b55f}
+Multiply method. Multiplies the input matrices and saves the result into the object's contents. Necessary for overloading the \char`\"{}$\ast$\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\-\_\-in\-\_\-1} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. \\
+\hline
+{\em matrix\-\_\-in\-\_\-2} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data__mat_a850c5fadc5139992f32bf15316309b52}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+
+
+References lmx\-::\-Data$<$ T $>$\-::get\-Cols(), lmx\-::\-Data$<$ T $>$\-::get\-Rows(), and lmx\-::\-Data$<$ T $>$\-::read\-Element().
+
+\hypertarget{classlmx_1_1Type__csc_ac6270f91b6bffab66a8bf4f5bcd26ab9}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!multiply\-Elements@{multiply\-Elements}}
+\index{multiply\-Elements@{multiply\-Elements}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{multiply\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::multiply\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{matrix\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_ac6270f91b6bffab66a8bf4f5bcd26ab9}
+Method multiplying element-\/by-\/element of two matrices. One would be the object's contents and the other the parameter's contents.
+
+Necessary for implementing \hyperlink{classlmx_1_1Vector}{Vector} to \hyperlink{classlmx_1_1Vector}{Vector} mult\-Elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix\-\_\-in} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data}{Data}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a89fd82cd33955de1ee375a9d514f2860}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+References lmx\-::\-Data$<$ T $>$\-::read\-Element().
+
+\hypertarget{classlmx_1_1Type__csc_ad963bfd1f5e2cb5d524a15cac334afc4}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!multiply\-Scalar@{multiply\-Scalar}}
+\index{multiply\-Scalar@{multiply\-Scalar}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{multiply\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::multiply\-Scalar (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_ad963bfd1f5e2cb5d524a15cac334afc4}
+Multiply scalar method. Multiplies the object's matrix (contents) with a scalar. Necessary for overloading the \char`\"{}$\ast$\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & A scalar factor of template's class. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a027c8e7cb440f16a828579acaf991262}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_aaeb3cfbee5ab97c7eca80812994605f0}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!print@{print}}
+\index{print@{print}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Type__csc_aaeb3cfbee5ab97c7eca80812994605f0}
+Function for testing purposes. 
+
+References lmx\-::\-Type\-\_\-csc$<$ T $>$\-::aa, lmx\-::\-Type\-\_\-csc$<$ T $>$\-::ia, lmx\-::\-Type\-\_\-csc$<$ T $>$\-::ja, and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Nnze.
+
+\hypertarget{classlmx_1_1Type__csc_a167170de05513c15944e09722a29d699}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!read\-\_\-hb\-\_\-file@{read\-\_\-hb\-\_\-file}}
+\index{read\-\_\-hb\-\_\-file@{read\-\_\-hb\-\_\-file}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{read\-\_\-hb\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::read\-\_\-hb\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a167170de05513c15944e09722a29d699}
+Read data in Harwell-\/\-Boeing format method. Opens the file specified and reads the matrix's data in it, suposing it's stored in Harwell-\/\-Boeing format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data__mat_add96428335bb5119c7f5126ebb07fb10}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_adf2926b0afd5a318fdc730225d10d2aa}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!read\-\_\-mm\-\_\-file@{read\-\_\-mm\-\_\-file}}
+\index{read\-\_\-mm\-\_\-file@{read\-\_\-mm\-\_\-file}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{read\-\_\-mm\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::read\-\_\-mm\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_adf2926b0afd5a318fdc730225d10d2aa}
+Read data in \hyperlink{classlmx_1_1Matrix}{Matrix} Market format method. Opens the file specified and reads the matrix's data in it, suposing it's stored in \hyperlink{classlmx_1_1Matrix}{Matrix} Market format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data__mat_afd492bb04f83b8b96b5964834436290a}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+
+
+References lmx\-::copy(), and L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classlmx_1_1Type__csc_aaa74136864d441799168b4568f697d53}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!read\-Element@{read\-Element}}
+\index{read\-Element@{read\-Element}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{read\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T \& {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::read\-Element (
+\begin{DoxyParamCaption}
+\item[{const {\bf size\-\_\-type} \&}]{mrows, }
+\item[{const {\bf size\-\_\-type} \&}]{ncolumns}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_aaa74136864d441799168b4568f697d53}
+Read element method. Implements a method for reading data of the Harwell-\/\-Boeing matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in Harwell-\/\-Boeing matrix. \\
+\hline
+{\em ncolumns} & Column position in Harwell-\/\-Boeing matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of the element in the position given by the parameters. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlmx_1_1Data_a25cffd2f6d220d24e37b37a96205e0be}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_a9a5a413641307bc2229b79b46f9b43a8}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!reset@{reset}}
+\index{reset@{reset}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a9a5a413641307bc2229b79b46f9b43a8}
+Reset method. 
+
+Implements \hyperlink{classlmx_1_1Data_a2d275a49db8c274e26b1d3bcbc23d964}{lmx\-::\-Data$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_acb0b1a88c3e46d0951c0e03099e33cc2}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!resize@{resize}}
+\index{resize@{resize}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{mrows, }
+\item[{{\bf size\-\_\-type}}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_acb0b1a88c3e46d0951c0e03099e33cc2}
+Resize method. Changes the size of the sparse matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & New value for rows of matrix. \\
+\hline
+{\em ncolumns} & New value for columns of matrix. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a2ef906e5218e1bc6d4df355787caedfc}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+Referenced by lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Type\-\_\-csc().
+
+\hypertarget{classlmx_1_1Type__csc_a3a9e534d84a2cf1265adfe87087904b6}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!set\-Sparse\-Pattern@{set\-Sparse\-Pattern}}
+\index{set\-Sparse\-Pattern@{set\-Sparse\-Pattern}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{set\-Sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::set\-Sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ {\bf size\-\_\-type} $>$ \&}]{row\-\_\-index, }
+\item[{{\bf Vector}$<$ {\bf size\-\_\-type} $>$ \&}]{col\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a3a9e534d84a2cf1265adfe87087904b6}
+Prepares the sparse structure of a C\-S\-C matrix. 
+\begin{DoxyParams}{Parameters}
+{\em row\-\_\-index} & C\-S\-C row indices. \\
+\hline
+{\em col\-\_\-index} & C\-S\-C columns indices. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classlmx_1_1Data__mat_ac599c952372bc78b03c01ed4c7ed5094}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+
+
+References lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Type__csc_a0d71c07fe7b4ded4eb8c4d70e8e21117}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!set\-Sparse\-Pattern@{set\-Sparse\-Pattern}}
+\index{set\-Sparse\-Pattern@{set\-Sparse\-Pattern}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{set\-Sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::set\-Sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{row\-\_\-index, }
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{col\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a0d71c07fe7b4ded4eb8c4d70e8e21117}
+Prepares the sparse structure of a C\-S\-C matrix. 
+\begin{DoxyParams}{Parameters}
+{\em row\-\_\-index} & C\-S\-C row indices. \\
+\hline
+{\em col\-\_\-index} & C\-S\-C columns indices. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classlmx_1_1Data__mat_a58692a61f0d7b7c5c74225800a30da91}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_a7b4cf55fb69d0bc365e41c47eee0a676}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!subs\-Solve@{subs\-Solve}}
+\index{subs\-Solve@{subs\-Solve}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{subs\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::subs\-Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a7b4cf55fb69d0bc365e41c47eee0a676}
+
+
+Reimplemented from \hyperlink{classlmx_1_1Data__mat_a8401959d4f7f008144de038293e24d5e}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_a933efcd2ae77ca2460a0e27dff8d8798}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!substract@{substract}}
+\index{substract@{substract}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{substract}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::substract (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{matrix\-\_\-in\-\_\-1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a933efcd2ae77ca2460a0e27dff8d8798}
+Substract method. Substracts the the input matrix parameter's elements to the object's contents. Necessary for overloading the \char`\"{}-\/=\char`\"{} operator. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\-\_\-in\-\_\-1} & pointer to an object that belongs to a class derived from \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_aab240114cfc6ba8f342cc7154dcb298d}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+References lmx\-::\-Data$<$ T $>$\-::read\-Element().
+
+\hypertarget{classlmx_1_1Type__csc_a77e01d8d8334bd448028d75c33e72f7f}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!trn@{trn}}
+\index{trn@{trn}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{trn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::trn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a77e01d8d8334bd448028d75c33e72f7f}
+Traspose method. Swaps elements with respect to the diagonal\-: A(i,j) = A(j,i) 
+
+Implements \hyperlink{classlmx_1_1Data__mat_aace5fad359799ebcd14dd79c458b340e}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Type__csc_a9b9007bdd388c37f469496d940be9416}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!write\-\_\-hb\-\_\-file@{write\-\_\-hb\-\_\-file}}
+\index{write\-\_\-hb\-\_\-file@{write\-\_\-hb\-\_\-file}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{write\-\_\-hb\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::write\-\_\-hb\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a9b9007bdd388c37f469496d940be9416}
+Write data in Harwell-\/\-Boeing format method. Opens the file specified and writes the matrix's data in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data__mat_adbbffb805ce19ca7e9d2a2f70d0f7bcd}{lmx\-::\-Data\-\_\-mat$<$ T $>$}.
+
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classlmx_1_1Type__csc_a814cd964f39fa41feffbf0795d3e446d}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!write\-Element@{write\-Element}}
+\index{write\-Element@{write\-Element}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{write\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::write\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{value, }
+\item[{const {\bf size\-\_\-type} \&}]{mrows, }
+\item[{const {\bf size\-\_\-type} \&}]{ncolumns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1Type__csc_a814cd964f39fa41feffbf0795d3e446d}
+Write element method. Implements a method for writing data on the Harwell-\/\-Boeing matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mrows} & Row position in Harwell-\/\-Boeing matrix. \\
+\hline
+{\em ncolumns} & Column position in Harwell-\/\-Boeing matrix. \\
+\hline
+{\em value} & Numerical type value. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classlmx_1_1Data_a41a4d2e19d1e150caff0d2011113f0fd}{lmx\-::\-Data$<$ T $>$}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classlmx_1_1Type__csc_aaf433432afb39beb3a3908942731530e}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!mat\-\_\-vec\-\_\-mult@{mat\-\_\-vec\-\_\-mult}}
+\index{mat\-\_\-vec\-\_\-mult@{mat\-\_\-vec\-\_\-mult}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{mat\-\_\-vec\-\_\-mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void mat\-\_\-vec\-\_\-mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\-\_\-csc}$<$ T $>$ $\ast$}]{matrix\-\_\-in, }
+\item[{const {\bf Type\-\_\-std\-Vector}$<$ T $>$ $\ast$}]{vector\-\_\-in, }
+\item[{{\bf Type\-\_\-std\-Vector}$<$ T $>$ $\ast$}]{vector\-\_\-out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classlmx_1_1Type__csc_aaf433432afb39beb3a3908942731530e}
+\hyperlink{classlmx_1_1Matrix}{Matrix} vector (pre)multiplication, specialized for \hyperlink{classlmx_1_1Type__csc}{Type\-\_\-csc} \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat} (matrix) and \hyperlink{classlmx_1_1Type__stdVector}{Type\-\_\-std\-Vector} (S\-T\-L vector) formats. Calculates the product A$\ast$b = c using pointers. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\-\_\-in} & \hyperlink{classlmx_1_1Type__csc}{Type\-\_\-csc} $\ast$\-Matrix A. \\
+\hline
+{\em vector\-\_\-in} & \hyperlink{classlmx_1_1Type__stdVector}{Type\-\_\-std\-Vector} $\ast$\-Vector b. \\
+\hline
+{\em vector\-\_\-out} & \hyperlink{classlmx_1_1Type__stdVector}{Type\-\_\-std\-Vector} $\ast$\-Vector c = A$\ast$b. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classlmx_1_1Type__csc_a189ee6941a05a6e49f11e4ddee205ca6}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!aa@{aa}}
+\index{aa@{aa}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{aa}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\-::vector$<$T$>$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::aa}}\label{classlmx_1_1Type__csc_a189ee6941a05a6e49f11e4ddee205ca6}
+\hyperlink{classlmx_1_1Matrix}{Matrix} data contents. 
+
+Referenced by lmx\-::copy(), lmx\-::mat\-\_\-vec\-\_\-mult(), and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::print().
+
+\hypertarget{classlmx_1_1Type__csc_ad149a245b902861d26367af5a98d38c2}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!ia@{ia}}
+\index{ia@{ia}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{ia}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\-::vector$<${\bf size\-\_\-type}$>$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::ia}}\label{classlmx_1_1Type__csc_ad149a245b902861d26367af5a98d38c2}
+Row indexer. 
+
+Referenced by lmx\-::copy(), lmx\-::mat\-\_\-vec\-\_\-mult(), and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::print().
+
+\hypertarget{classlmx_1_1Type__csc_a0fec1fc6c8a69fc5727063220d220eee}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!ja@{ja}}
+\index{ja@{ja}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{ja}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\-::vector$<${\bf size\-\_\-type}$>$ {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::ja}}\label{classlmx_1_1Type__csc_a0fec1fc6c8a69fc5727063220d220eee}
+Column indexer. 
+
+Referenced by lmx\-::copy(), lmx\-::mat\-\_\-vec\-\_\-mult(), lmx\-::\-Type\-\_\-csc$<$ T $>$\-::print(), and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Type\-\_\-csc().
+
+\hypertarget{classlmx_1_1Type__csc_ac201c80e090b62791f8a95d6f1e3b07c}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!Ncol@{Ncol}}
+\index{Ncol@{Ncol}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{Ncol}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::Ncol}}\label{classlmx_1_1Type__csc_ac201c80e090b62791f8a95d6f1e3b07c}
+Number of columns. 
+
+Referenced by lmx\-::copy(), and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Type\-\_\-csc().
+
+\hypertarget{classlmx_1_1Type__csc_ade9e149ea4925d6cc97727bbf07f080e}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!Nnze@{Nnze}}
+\index{Nnze@{Nnze}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{Nnze}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::Nnze}}\label{classlmx_1_1Type__csc_ade9e149ea4925d6cc97727bbf07f080e}
+Number of non-\/zero values. 
+
+Referenced by lmx\-::copy(), lmx\-::\-Type\-\_\-csc$<$ T $>$\-::print(), and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Type\-\_\-csc().
+
+\hypertarget{classlmx_1_1Type__csc_a2c5ef8a3a2cd3a79d7b747f8cace105f}{\index{lmx\-::\-Type\-\_\-csc@{lmx\-::\-Type\-\_\-csc}!Nrow@{Nrow}}
+\index{Nrow@{Nrow}!lmx::Type_csc@{lmx\-::\-Type\-\_\-csc}}
+\subsubsection[{Nrow}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf lmx\-::\-Type\-\_\-csc}$<$ T $>$\-::Nrow}}\label{classlmx_1_1Type__csc_a2c5ef8a3a2cd3a79d7b747f8cace105f}
+Number of rows. 
+
+Referenced by lmx\-::copy(), and lmx\-::\-Type\-\_\-csc$<$ T $>$\-::\-Type\-\_\-csc().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__data__blas_8h}{lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h}\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__type__csc_8h}{lmx\-\_\-mat\-\_\-type\-\_\-csc.\-h}\end{DoxyCompactItemize}

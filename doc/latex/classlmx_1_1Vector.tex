@@ -1,0 +1,841 @@
+\hypertarget{classlmx_1_1Vector}{\section{lmx\-:\-:Vector$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Vector}\index{lmx\-::\-Vector$<$ T $>$@{lmx\-::\-Vector$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1Vector}{Vector}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-mat\-\_\-data\-\_\-mat.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Vector_a39d6069675db4ecfc1ab81d440da759a}{Vector} ()
+\item 
+\hyperlink{classlmx_1_1Vector_ae633c7cc178fc379abf6bea2415d6f03}{Vector} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{classlmx_1_1Vector_a4edc1cac2c4cd6d3791280edabd89029}{Vector} (const \hyperlink{classlmx_1_1Vector}{Vector} \&)
+\item 
+\hyperlink{classlmx_1_1Vector_afd524fac19e6d3d69db5198ffe2952b0}{$\sim$\-Vector} ()
+\item 
+\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} \hyperlink{classlmx_1_1Vector_a35fcd4c3141584163b295f0f28102e57}{size} () const 
+\item 
+void \hyperlink{classlmx_1_1Vector_a2133415453d3657fc61f02bc231021e2}{load} (char $\ast$)
+\item 
+void \hyperlink{classlmx_1_1Vector_ad7e220c625fcff2048c58a0c8b4f36f3}{save} (char $\ast$)
+\item 
+void \hyperlink{classlmx_1_1Vector_ae2325ba0d5e79c6593708ffd3b7e4684}{fill\-Identity} (T factor=static\-\_\-cast$<$ T $>$(1))
+\item 
+void \hyperlink{classlmx_1_1Vector_a4dca7d80697c09308f709ec3889b8eb6}{fill\-Random} (T factor=static\-\_\-cast$<$ T $>$(1))
+\item 
+\hyperlink{classlmx_1_1Elem__ref}{Elem\-\_\-ref}$<$ T $>$ \& \hyperlink{classlmx_1_1Vector_ac65c4ff5646cf0245dfdb5d7ba97f2b5}{operator()} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_af3492ad5c3c02796b4e6a17db71f828e}{operator=} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a84e014345158da7a6b89a4879c8086c4}{operator=} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+{\footnotesize template$<$typename C $>$ }\\\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1Vector_a90f36c22fe1a94babc3d077912fd9f61}{operator=} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ C $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a2c0a2fdbc85318a0b949d67bbae3c035}{operator+=} (const \hyperlink{classlmx_1_1Vector}{Vector} \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a786fa62693a1d4f990f55b98ce5b0ece}{operator-\/=} (const \hyperlink{classlmx_1_1Vector}{Vector} \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_ac104d69fb0485778879ea7e01ca8cc41}{operator$\ast$=} (const T \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_ab972d613ec2d693759fce1339b7c2dd7}{add} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a2fb58669b0c17a07d358499500b994fd}{subs} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_ae68d2b9e72a8a6aa9431e9dcdb126fdc}{mult} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a324cd467e73f7d05e83840da974f2128}{mult} (const \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_aa5f038fd85d9972fccef411d30e46c1b}{mult} (const T \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_aa1a86eaea1fba85d03424c35e3e11fe1}{mult} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&, const T \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a69290ccfa8ac2d101a0780343817f1e0}{mult} (const T \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a8b3ba996acf4c6e45a7d7d1b8739c691}{mult} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a4c799332f4f2f998330fa7525721091f}{mult\-Elements} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \& \hyperlink{classlmx_1_1Vector_a1aefc241385130c01630fd1fa6e05c5d}{mult\-Elements} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&)
+\item 
+T \hyperlink{classlmx_1_1Vector_ab671ff37259e9f166954a17db0f90abd}{norm1} () const 
+\item 
+T \hyperlink{classlmx_1_1Vector_aca60cec2ef0c54e2fe8164b0c842a3d9}{norm2} () const 
+\item 
+T \hyperlink{classlmx_1_1Vector_a4fc2d153c9436f3d377c1867b608ddd7}{read\-Element} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m) const 
+\item 
+void \hyperlink{classlmx_1_1Vector_a6ec5ff5f7a9c2b558fcb09a95210b18a}{write\-Element} (T the\-Value, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m) const 
+\item 
+void \hyperlink{classlmx_1_1Vector_a59791f8101325539050e3c766249cd13}{add\-Element} (T the\-Value, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m) const 
+\item 
+void \hyperlink{classlmx_1_1Vector_a769b859af68fab4e61808879d2f49306}{clean} (double factor)
+\item 
+void \hyperlink{classlmx_1_1Vector_ae4b5507b9269f8b8b03069884bfb4bd8}{clear} ()
+\item 
+void \hyperlink{classlmx_1_1Vector_a2b0d3ad0094653f9e5827a1df5e837e7}{reset} ()
+\item 
+void \hyperlink{classlmx_1_1Vector_ad8179e765582ef9d534b777f25265068}{resize} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} i)
+\item 
+void \hyperlink{classlmx_1_1Vector_a83ff9c76b09d564e4e2740543cac612a}{resize} (const \hyperlink{classlmx_1_1Vector}{Vector} \&vec)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \hyperlink{classlmx_1_1Vector_a218f21e3c90b9ca7a0b61917a2f5e443}{operator+} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \hyperlink{classlmx_1_1Vector_a8e82d10ac24a5e899f4e36b81360b070}{operator-\/} (const \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&B) const 
+\item 
+T \hyperlink{classlmx_1_1Vector_a5b0ee4a4ff4ee19ea237f3935c7890bb}{operator$\ast$} (const \hyperlink{classlmx_1_1Vector}{Vector} \&B) const 
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector} \hyperlink{classlmx_1_1Vector_a824e1bde12226255c419baef4f876647}{operator$\ast$} (const T \&a) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlmx_1_1Vector_a95e5ab4da3326ece35572b4c41f61d15}{Linear\-System$<$ T $>$}
+\item 
+void \hyperlink{classlmx_1_1Vector_a5ddc16e83bc43544364a389e86b92d18}{latex\-Print} (std\-::ofstream \&os, char $\ast$vec\-\_\-name, \hyperlink{classlmx_1_1Vector}{Vector} \&vec, int prec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Vector$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1Vector}{Vector}. 
+
+This class permits the creation of vector objects. The \hyperlink{classlmx_1_1Vector}{Vector} class, which derives from \hyperlink{classlmx_1_1Matrix}{Matrix} class, has one parameter (nrows) that stores the dimension of the vector's container. The data is stored in an atribute ($\ast$type\-\_\-vector) that points to some class which derives from the \hyperlink{classlmx_1_1Data__vec}{Data\-\_\-vec} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements} & The size of the \hyperlink{classlmx_1_1Data}{Data} Container (\hyperlink{classlmx_1_1Data__vec}{Data\-\_\-vec}). \\
+\hline
+{\em reference} & An \hyperlink{classlmx_1_1Elem__ref}{Elem\-\_\-ref} object for r/w data access. \\
+\hline
+{\em $\ast$type\-\_\-matrix} & The pointer to the vector data container.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Vector_a39d6069675db4ecfc1ab81d440da759a}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$\-::{\bf Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_a39d6069675db4ecfc1ab81d440da759a}
+Empty constructor. 
+
+References lmx\-::get\-Vector\-Type(), and L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classlmx_1_1Vector_ae633c7cc178fc379abf6bea2415d6f03}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$\-::{\bf Vector} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classlmx_1_1Vector_ae633c7cc178fc379abf6bea2415d6f03}
+Standard constructor. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & Number of \hyperlink{classlmx_1_1Vector}{Vector}'s rows. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::get\-Vector\-Type(), and L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classlmx_1_1Vector_a4edc1cac2c4cd6d3791280edabd89029}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$\-::{\bf Vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_a4edc1cac2c4cd6d3791280edabd89029}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Vector}{Vector} to copy from. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::get\-Vector\-Type(), and L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classlmx_1_1Vector_afd524fac19e6d3d69db5198ffe2952b0}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!$\sim$\-Vector@{$\sim$\-Vector}}
+\index{$\sim$\-Vector@{$\sim$\-Vector}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{$\sim$\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$\-::$\sim${\bf Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_afd524fac19e6d3d69db5198ffe2952b0}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Vector_ab972d613ec2d693759fce1339b7c2dd7}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!add@{add}}
+\index{add@{add}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ab972d613ec2d693759fce1339b7c2dd7}
+(Cancelled function) Operator for multiplying \hyperlink{classlmx_1_1Vector}{Vector} and \hyperlink{classlmx_1_1Matrix}{Matrix} objects.
+
+Performs typical vector operation\-: b $\ast$ A = c, where b \& c are vectors and A is a \hyperlink{classlmx_1_1Matrix}{Matrix}. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Matrix}{Matrix} reference for second L\-H\-S term. \\
+\hline
+{\em b} & \hyperlink{classlmx_1_1Vector}{Vector} reference for first L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{classlmx_1_1Vector}{Vector} (c = b$^\wedge$\-T $\ast$ A). (Cancelled function) Operator for multiplying \hyperlink{classlmx_1_1Vector}{Vector} and \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} objects.
+\end{DoxyReturn}
+Performs typical vector operation\-: b $\ast$ A = c, where b \& c are vectors and A is a \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} reference for second L\-H\-S term. \\
+\hline
+{\em b} & \hyperlink{classlmx_1_1Vector}{Vector} reference for first L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{classlmx_1_1Vector}{Vector} (c = b$^\wedge$\-T $\ast$ A). \hyperlink{classElement}{Element} adding function.
+\end{DoxyReturn}
+Adds two Vectors' elements and saves result in object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A vector. \\
+\hline
+{\em B} & A vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+
+
+Referenced by lmx\-::\-Cg$<$ T $>$\-::solve().
+
+\hypertarget{classlmx_1_1Vector_a59791f8101325539050e3c766249cd13}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::add\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{the\-Value, }
+\item[{{\bf size\-\_\-type}}]{m}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a59791f8101325539050e3c766249cd13}
+Function writes the value in specified position of \hyperlink{classlmx_1_1Vector}{Vector} object. \hypertarget{classlmx_1_1Vector_a769b859af68fab4e61808879d2f49306}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!clean@{clean}}
+\index{clean@{clean}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::clean (
+\begin{DoxyParamCaption}
+\item[{double}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a769b859af68fab4e61808879d2f49306}
+Cleans all numbers below given factor. \hypertarget{classlmx_1_1Vector_ae4b5507b9269f8b8b03069884bfb4bd8}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!clear@{clear}}
+\index{clear@{clear}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ae4b5507b9269f8b8b03069884bfb4bd8}
+Clears the object's contents. \hypertarget{classlmx_1_1Vector_ae2325ba0d5e79c6593708ffd3b7e4684}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!fill\-Identity@{fill\-Identity}}
+\index{fill\-Identity@{fill\-Identity}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{fill\-Identity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Vector}$<$ T $>$\-::fill\-Identity (
+\begin{DoxyParamCaption}
+\item[{T}]{factor = {\ttfamily static\-\_\-cast$<$T$>$(1)}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_ae2325ba0d5e79c6593708ffd3b7e4684}
+Cleans vector and sets all terms to specified value. 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Value of terms. Default is unit value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Vector_a4dca7d80697c09308f709ec3889b8eb6}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!fill\-Random@{fill\-Random}}
+\index{fill\-Random@{fill\-Random}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{fill\-Random}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Vector}$<$ T $>$\-::fill\-Random (
+\begin{DoxyParamCaption}
+\item[{T}]{factor = {\ttfamily static\-\_\-cast$<$T$>$(1)}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_a4dca7d80697c09308f709ec3889b8eb6}
+Function for filling a vector with random numbers 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Scales the random numbers (default value is unity). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Vector_a2133415453d3657fc61f02bc231021e2}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!load@{load}}
+\index{load@{load}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Vector}$<$ T $>$\-::load (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_a2133415453d3657fc61f02bc231021e2}
+Method for reading a \hyperlink{classlmx_1_1Vector}{Vector} from a file. 
+\begin{DoxyParams}{Parameters}
+{\em input\-\_\-file} & Name of the file to read. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Vector_ae68d2b9e72a8a6aa9431e9dcdb126fdc}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult@{mult}}
+\index{mult@{mult}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ae68d2b9e72a8a6aa9431e9dcdb126fdc}
+Function for multiplying \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} objects. Performs typical vector operation\-: A $\ast$ b = c, where b \& c are vectors and A is a \hyperlink{classlmx_1_1Matrix}{Matrix}.
+
+c would be the object witch its invoked from.
+
+This function is specialized for some \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Matrix}{Matrix} reference for first L\-H\-S term. \\
+\hline
+{\em b} & Const \hyperlink{classlmx_1_1Vector}{Vector} reference for second L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::get\-Matrix\-Type(), lmx\-::get\-Vector\-Type(), L\-M\-X\-\_\-\-T\-H\-R\-O\-W, lmx\-::\-Vector$<$ T $>$\-::read\-Element(), and lmx\-::\-Vector$<$ T $>$\-::size().
+
+
+
+Referenced by lmx\-::\-Vector$<$ int $>$\-::operator$\ast$(), lmx\-::operator$\ast$(), and lmx\-::\-Cg$<$ T $>$\-::solve().
+
+\hypertarget{classlmx_1_1Vector_a324cd467e73f7d05e83840da974f2128}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult@{mult}}
+\index{mult@{mult}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dense\-Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a324cd467e73f7d05e83840da974f2128}
+Function for multiplying \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} objects. Performs typical vector operation\-: A $\ast$ b = c, where b \& c are vectors and A is a \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}.
+
+c would be the object witch its invoked from.
+
+This function is specialized for some \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} reference for first L\-H\-S term. \\
+\hline
+{\em b} & Const \hyperlink{classlmx_1_1Vector}{Vector} reference for second L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, lmx\-::\-Dense\-Matrix$<$ T $>$\-::read\-Element(), lmx\-::\-Vector$<$ T $>$\-::read\-Element(), and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_aa5f038fd85d9972fccef411d30e46c1b}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult@{mult}}
+\index{mult@{mult}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_aa5f038fd85d9972fccef411d30e46c1b}
+Scaling function.
+
+Scales each element in \hyperlink{classlmx_1_1Vector}{Vector} with specified scalar factor. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & Scaling factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_aa1a86eaea1fba85d03424c35e3e11fe1}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult@{mult}}
+\index{mult@{mult}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B, }
+\item[{const T \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_aa1a86eaea1fba85d03424c35e3e11fe1}
+Scaling function. (scalar in R\-H\-S)
+
+Scales each element in \hyperlink{classlmx_1_1Vector}{Vector} B with specified scalar factor and saves the result in object. 
+\begin{DoxyParams}{Parameters}
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} to scale. \\
+\hline
+{\em scalar} & Scaling factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_a69290ccfa8ac2d101a0780343817f1e0}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult@{mult}}
+\index{mult@{mult}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{scalar, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a69290ccfa8ac2d101a0780343817f1e0}
+Scaling function (scalar in L\-H\-S)
+
+Scales each element in \hyperlink{classlmx_1_1Vector}{Vector} B with specified scalar factor and saves the result in object. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & Scaling factor. \\
+\hline
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} to scale. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_a8b3ba996acf4c6e45a7d7d1b8739c691}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult@{mult}}
+\index{mult@{mult}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a8b3ba996acf4c6e45a7d7d1b8739c691}
+Cross product
+
+Computes the cross product A x B. Not optimized but useful 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Vector}{Vector} of size m. \\
+\hline
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} of size m. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, lmx\-::\-Vector$<$ T $>$\-::read\-Element(), and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_a4c799332f4f2f998330fa7525721091f}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a4c799332f4f2f998330fa7525721091f}
+Internal product
+
+Element-\/to-\/element multiplication between \hyperlink{classlmx_1_1Vector}{Vector} objects. 
+\begin{DoxyParams}{Parameters}
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} to multiply to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+Referenced by lmx\-::\-Cg$<$ T $>$\-::solve().
+
+\hypertarget{classlmx_1_1Vector_a1aefc241385130c01630fd1fa6e05c5d}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a1aefc241385130c01630fd1fa6e05c5d}
+Internal product of to Vectors
+
+Element-\/to-\/element multiplication between \hyperlink{classlmx_1_1Vector}{Vector} objects. 
+\begin{DoxyParams}{Parameters}
+{\em A} & A \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+{\em B} & A \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_ab671ff37259e9f166954a17db0f90abd}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!norm1@{norm1}}
+\index{norm1@{norm1}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{norm1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Vector}$<$ T $>$\-::norm1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ab671ff37259e9f166954a17db0f90abd}
+Computes the first norm of the \hyperlink{classlmx_1_1Vector}{Vector}. \begin{DoxyReturn}{Returns}
+The first norm of object. 
+\end{DoxyReturn}
+
+
+References cofe\-::norm().
+
+\hypertarget{classlmx_1_1Vector_aca60cec2ef0c54e2fe8164b0c842a3d9}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!norm2@{norm2}}
+\index{norm2@{norm2}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{norm2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Vector}$<$ T $>$\-::norm2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_aca60cec2ef0c54e2fe8164b0c842a3d9}
+Computes de second (euclidean) norm of the \hyperlink{classlmx_1_1Vector}{Vector}. \begin{DoxyReturn}{Returns}
+The second (euclidean) norm of object. 
+\end{DoxyReturn}
+
+
+References cofe\-::norm().
+
+\hypertarget{classlmx_1_1Vector_ac65c4ff5646cf0245dfdb5d7ba97f2b5}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator()@{operator()}}
+\index{operator()@{operator()}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Elem\-\_\-ref}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ac65c4ff5646cf0245dfdb5d7ba97f2b5}
+Overload of element extraction method. 
+\begin{DoxyParams}{Parameters}
+{\em row} & Position in \hyperlink{classlmx_1_1Vector}{Vector} for the element to extract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+element referenced. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+\hypertarget{classlmx_1_1Vector_a5b0ee4a4ff4ee19ea237f3935c7890bb}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf lmx\-::\-Vector}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a5b0ee4a4ff4ee19ea237f3935c7890bb}
+Operator for scalar product of two \hyperlink{classlmx_1_1Vector}{Vector} objects. Performs typical vector operation\-: A $\ast$ B = c, where A \& B are vectors and c is a scalar. 
+\begin{DoxyParams}{Parameters}
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} reference for second L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The numeric result of the operation (type\-: {\itshape double} ). 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_a824e1bde12226255c419baef4f876647}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector} {\bf lmx\-::\-Vector}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a824e1bde12226255c419baef4f876647}
+Overload operator for multiplying a scalar and a \hyperlink{classlmx_1_1Vector}{Vector} object. 
+\begin{DoxyParams}{Parameters}
+{\em a} & scalar reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{classlmx_1_1Vector}{Vector} (mult = ($\ast$this) $\ast$ a). 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_ac104d69fb0485778879ea7e01ca8cc41}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{scalar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ac104d69fb0485778879ea7e01ca8cc41}
+Scaling operator.
+
+Scales each element in \hyperlink{classlmx_1_1Vector}{Vector} with specified scalar factor. 
+\begin{DoxyParams}{Parameters}
+{\em scalar} & Scaling factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_a218f21e3c90b9ca7a0b61917a2f5e443}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator+@{operator+}}
+\index{operator+@{operator+}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector} {\bf lmx\-::\-Vector}$<$ T $>$\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a218f21e3c90b9ca7a0b61917a2f5e443}
+Operator for adding two \hyperlink{classlmx_1_1Vector}{Vector} objects. Performs typicar vector operation\-: A + B = C, where A, B \& C are vectors. A is \hyperlink{classlmx_1_1Vector}{Vector} $\ast$this. 
+\begin{DoxyParams}{Parameters}
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} reference for second L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The numeric result of the operation\-: C = A + B. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_a2c0a2fdbc85318a0b949d67bbae3c035}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a2c0a2fdbc85318a0b949d67bbae3c035}
+Overloaded operator for assigning the addition of elements between two \hyperlink{classlmx_1_1Vector}{Vector} objects. 
+\begin{DoxyParams}{Parameters}
+{\em b} & \hyperlink{classlmx_1_1Vector}{Vector} to equal to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{classlmx_1_1Vector}{Vector} object. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_a8e82d10ac24a5e899f4e36b81360b070}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector} {\bf lmx\-::\-Vector}$<$ T $>$\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a8e82d10ac24a5e899f4e36b81360b070}
+Operator for substracting two \hyperlink{classlmx_1_1Vector}{Vector} objects. Performs typicar vector operation\-: A -\/ B = C, where A, B \& C are vectors. A is \hyperlink{classlmx_1_1Vector}{Vector} $\ast$this. 
+\begin{DoxyParams}{Parameters}
+{\em B} & \hyperlink{classlmx_1_1Vector}{Vector} reference for second L\-H\-S term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The numeric result of the operation\-: C = A -\/ B. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_a786fa62693a1d4f990f55b98ce5b0ece}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a786fa62693a1d4f990f55b98ce5b0ece}
+Overloaded operator for assigning the substraction of elements between two \hyperlink{classlmx_1_1Vector}{Vector} objects. 
+\begin{DoxyParams}{Parameters}
+{\em b} & \hyperlink{classlmx_1_1Vector}{Vector} to equal to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{classlmx_1_1Vector}{Vector} object. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_af3492ad5c3c02796b4e6a17db71f828e}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_af3492ad5c3c02796b4e6a17db71f828e}
+Overload of equals operator. Equals every element between the \hyperlink{classlmx_1_1Vector}{Vector} and the first column of a \hyperlink{classlmx_1_1Matrix}{Matrix} object. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Matrix}{Matrix} to equal to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{classlmx_1_1Vector}{Vector} object. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Vector_a84e014345158da7a6b89a4879c8086c4}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a84e014345158da7a6b89a4879c8086c4}
+Overload of equals operator. Equals every element between two \hyperlink{classlmx_1_1Vector}{Vector} objects of the same type. 
+\begin{DoxyParams}{Parameters}
+{\em v} & \hyperlink{classlmx_1_1Vector}{Vector} to equal to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{classlmx_1_1Vector}{Vector} object. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_a90f36c22fe1a94babc3d077912fd9f61}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template$<$typename C $>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ C $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a90f36c22fe1a94babc3d077912fd9f61}
+Overload of equals operator. Equals every element between two \hyperlink{classlmx_1_1Vector}{Vector} objects of different types. 
+\begin{DoxyParams}{Parameters}
+{\em v} & \hyperlink{classlmx_1_1Vector}{Vector} to equal to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{classlmx_1_1Vector}{Vector} object. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, lmx\-::\-Vector$<$ T $>$\-::read\-Element(), and lmx\-::\-Vector$<$ T $>$\-::size().
+
+\hypertarget{classlmx_1_1Vector_a4fc2d153c9436f3d377c1867b608ddd7}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!read\-Element@{read\-Element}}
+\index{read\-Element@{read\-Element}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{read\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf lmx\-::\-Vector}$<$ T $>$\-::read\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{m}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a4fc2d153c9436f3d377c1867b608ddd7}
+Function for reading a \hyperlink{classlmx_1_1Vector}{Vector} object's element from it's known position. 
+\begin{DoxyParams}{Parameters}
+{\em m} & vec's position (row) for lookup. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The element. 
+\end{DoxyReturn}
+
+
+Referenced by lmx\-::\-L\-U$<$ T $>$\-::back\-Sub(), Cone2\-::compute\-Intersection(), Ring\-::compute\-Intersection(), Cylinder\-::compute\-Intersection(), Ogive\-::compute\-Intersection(), Cone\-::compute\-Intersection(), Two\-Plates\-::compute\-Intersection(), lmx\-::\-L\-U$<$ T $>$\-::for\-Sub(), lmx\-::\-Gesv$<$ T $>$\-::\-Gesv(), Cone2\-::jacobian(), Ring\-::jacobian(), Ogive\-::jacobian(), Cylinder\-::jacobian(), Cone\-::jacobian(), Two\-Plates\-::jacobian(), lmx\-::\-L\-U$<$ T $>$\-::lu(), lmx\-::\-Vector$<$ T $>$\-::mult(), lmx\-::\-Vector$<$ int $>$\-::operator$\ast$(), lmx\-::\-Vector$<$ T $>$\-::operator=(), Cone2\-::residue(), Ring\-::residue(), Ogive\-::residue(), Cylinder\-::residue(), Cone\-::residue(), Two\-Plates\-::residue(), and lmx\-::\-Superlu$<$ T $>$\-::set\-Vectors().
+
+\hypertarget{classlmx_1_1Vector_a2b0d3ad0094653f9e5827a1df5e837e7}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!reset@{reset}}
+\index{reset@{reset}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a2b0d3ad0094653f9e5827a1df5e837e7}
+Reset the object's contents. \hypertarget{classlmx_1_1Vector_ad8179e765582ef9d534b777f25265068}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!resize@{resize}}
+\index{resize@{resize}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_ad8179e765582ef9d534b777f25265068}
+Resize the \hyperlink{classlmx_1_1Vector}{Vector} with given size parameter. 
+\begin{DoxyParams}{Parameters}
+{\em i} & New size. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by lmx\-::\-L\-U$<$ T $>$\-::\-L\-U(), and lmx\-::\-L\-U$<$ T $>$\-::lu().
+
+\hypertarget{classlmx_1_1Vector_a83ff9c76b09d564e4e2740543cac612a}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!resize@{resize}}
+\index{resize@{resize}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::resize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a83ff9c76b09d564e4e2740543cac612a}
+Resize the \hyperlink{classlmx_1_1Vector}{Vector} to the size of another \hyperlink{classlmx_1_1Vector}{Vector}. 
+\begin{DoxyParams}{Parameters}
+{\em vec} & Constant reference to a \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Vector_ad7e220c625fcff2048c58a0c8b4f36f3}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!save@{save}}
+\index{save@{save}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Vector}$<$ T $>$\-::save (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{output\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Vector_ad7e220c625fcff2048c58a0c8b4f36f3}
+Method for writing a \hyperlink{classlmx_1_1Vector}{Vector} to a file. 
+\begin{DoxyParams}{Parameters}
+{\em output\-\_\-file} & Name of the file to write. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Vector_a35fcd4c3141584163b295f0f28102e57}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!size@{size}}
+\index{size@{size}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf size\-\_\-type} {\bf lmx\-::\-Vector}$<$ T $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a35fcd4c3141584163b295f0f28102e57}
+Read number of rows. \begin{DoxyReturn}{Returns}
+Dimension of vector. 
+\end{DoxyReturn}
+
+
+Referenced by lmx\-::\-Vector$<$ T $>$\-::add(), lmx\-::\-Linear\-System$<$ double $>$\-::\-Linear\-System(), lmx\-::\-Vector$<$ T $>$\-::mult(), lmx\-::\-Vector$<$ T $>$\-::mult\-Elements(), lmx\-::\-Vector$<$ int $>$\-::operator$\ast$(), lmx\-::operator$\ast$(), lmx\-::\-Vector$<$ int $>$\-::operator+(), lmx\-::\-Vector$<$ T $>$\-::operator+=(), lmx\-::\-Vector$<$ int $>$\-::operator-\/(), lmx\-::\-Vector$<$ T $>$\-::operator-\/=(), lmx\-::operator$<$$<$(), lmx\-::\-Vector$<$ T $>$\-::operator=(), lmx\-::\-Vector$<$ int $>$\-::resize(), lmx\-::\-Configuration$<$ T $>$\-::set\-Initial\-Condition(), lmx\-::\-N\-L\-Solver$<$ lmx\-::\-Diff\-Problem\-Second$<$ Sys, T $>$, T $>$\-::set\-Initial\-Configuration(), lmx\-::\-N\-L\-Solver\-Double$<$ T $>$\-::set\-Initial\-Configuration1(), lmx\-::\-N\-L\-Solver\-Double$<$ T $>$\-::set\-Initial\-Configuration2(), lmx\-::\-Type\-\_\-csc$<$ T $>$\-::set\-Sparse\-Pattern(), and lmx\-::\-Vector$<$ T $>$\-::subs().
+
+\hypertarget{classlmx_1_1Vector_a2fb58669b0c17a07d358499500b994fd}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!subs@{subs}}
+\index{subs@{subs}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{subs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::subs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a2fb58669b0c17a07d358499500b994fd}
+\hyperlink{classElement}{Element} substracting function. Substract two Vectors' elements and saves result in object. 
+\begin{DoxyParams}{Parameters}
+{\em A} & A vector. \\
+\hline
+{\em B} & A vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to result. 
+\end{DoxyReturn}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+
+
+Referenced by lmx\-::\-Cg$<$ T $>$\-::solve().
+
+\hypertarget{classlmx_1_1Vector_a6ec5ff5f7a9c2b558fcb09a95210b18a}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!write\-Element@{write\-Element}}
+\index{write\-Element@{write\-Element}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{write\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Vector}$<$ T $>$\-::write\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{the\-Value, }
+\item[{{\bf size\-\_\-type}}]{m}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Vector_a6ec5ff5f7a9c2b558fcb09a95210b18a}
+Function writes the value in specified position of \hyperlink{classlmx_1_1Vector}{Vector} object. 
+
+Referenced by lmx\-::\-Superlu$<$ T $>$\-::get\-\_\-solution(), Cone2\-::residue(), Ring\-::residue(), Ogive\-::residue(), Cylinder\-::residue(), Cone\-::residue(), and Two\-Plates\-::residue().
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classlmx_1_1Vector_a5ddc16e83bc43544364a389e86b92d18}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!latex\-Print@{latex\-Print}}
+\index{latex\-Print@{latex\-Print}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{latex\-Print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void latex\-Print (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{os, }
+\item[{char $\ast$}]{vec\-\_\-name, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{vec, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classlmx_1_1Vector_a5ddc16e83bc43544364a389e86b92d18}
+Function to typeset a vector to a file stream. 
+\begin{DoxyParams}{Parameters}
+{\em os} & File stream to write to. \\
+\hline
+{\em vec\-\_\-name} & Name that will be given to vector in typesetting. It's not the vector variable name. \\
+\hline
+{\em vec} & The \hyperlink{classlmx_1_1Vector}{Vector} variable to be typeset. \\
+\hline
+{\em prec} & Maximum numeric precision (max. number of digits to be used in output). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Vector_a95e5ab4da3326ece35572b4c41f61d15}{\index{lmx\-::\-Vector@{lmx\-::\-Vector}!Linear\-System$<$ T $>$@{Linear\-System$<$ T $>$}}
+\index{Linear\-System$<$ T $>$@{Linear\-System$<$ T $>$}!lmx::Vector@{lmx\-::\-Vector}}
+\subsubsection[{Linear\-System$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class {\bf Linear\-System}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}}\label{classlmx_1_1Vector_a95e5ab4da3326ece35572b4c41f61d15}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__data__mat_8h}{lmx\-\_\-mat\-\_\-data\-\_\-mat.\-h}\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__vector_8h}{lmx\-\_\-mat\-\_\-vector.\-h}\end{DoxyCompactItemize}

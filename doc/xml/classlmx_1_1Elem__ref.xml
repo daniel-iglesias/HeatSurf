@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Elem__ref" kind="class" prot="public">
+    <compoundname>lmx::Elem_ref</compoundname>
+    <includes refid="lmx__mat__elem__ref_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1Elem__ref_1af0c118287214b9eddf374ec4af2fee8e" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+        <definition>Data&lt;T&gt;* lmx::Elem_ref&lt; T &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="58" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Elem__ref_1a68e1d2de04d8337be2d92f503a076de4" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Elem__ref_1a2c56e7e4f48576d6d7ccc567e962b222" prot="private" static="no" mutable="no">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Elem_ref&lt; T &gt;::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Elem__ref_1a38a19ee21d59befe20ee8f068d9edbcb" prot="private" static="no" mutable="no">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type lmx::Elem_ref&lt; T &gt;::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a7e455c52699f760a552cba87266dcfc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Elem_ref&lt; T &gt;::Elem_ref</definition>
+        <argsstring>()</argsstring>
+        <name>Elem_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="64" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="123" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a60ccc402446b9bb02b75b2b1c9f6d119" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Elem_ref&lt; T &gt;::Elem_ref</definition>
+        <argsstring>(Data&lt; T &gt; *type_in)</argsstring>
+        <name>Elem_ref</name>
+        <param>
+          <type><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>&lt; T &gt; *</type>
+          <declname>type_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> or <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&apos;s data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1ac38864e3a9029ec9d2e0ddb8404c7a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Elem_ref&lt; T &gt;::~Elem_ref</definition>
+        <argsstring>()</argsstring>
+        <name>~Elem_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="78" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a46d7401eb6f237d105282f34e63a123a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Elem_ref&lt; T &gt;::operator T</definition>
+        <argsstring>()</argsstring>
+        <name>operator T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast operator. Converts the <ref refid="classlmx_1_1Elem__ref" kindref="compound">Elem_ref</ref> to a T type if its used as a right-hand-side argument in assignment. <simplesect kind="return"><para>Value pointed by type in position (i,j). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="85" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a9e41a3828ca4aea8b97990fc717f21fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Elem_ref&lt; T &gt;::write_pos</definition>
+        <argsstring>(size_type m, size_type n)</argsstring>
+        <name>write_pos</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for storing a given position. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="92" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a05886883c846e84c684aeee6dde1840d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Elem_ref&lt; T &gt;::operator=</definition>
+        <argsstring>(const Elem_ref &amp;ref_in)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classlmx_1_1Elem__ref" kindref="compound">Elem_ref</ref> &amp;</type>
+          <declname>ref_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for equaling the element in position (i,j) in type structure to a given element reference. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classElement" kindref="compound">Element</ref> reference. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="97" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="133" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1af10425b417ff6d760c242cf03c14c432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator=</definition>
+        <argsstring>(T data_in)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>T</type>
+          <declname>data_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for equaling the element in position (i,j) in type structure to a given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to equal to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="99" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a435fce2d9f1967160aa359a38b8bcf8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator+=</definition>
+        <argsstring>(T data_in)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>T</type>
+          <declname>data_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for adding the element in position (i,j) in type structure the given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the final value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="101" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1adc55b0dafb5cedf72f700a35b7f1a4c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator-=</definition>
+        <argsstring>(T data_in)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>T</type>
+          <declname>data_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for substracting the element in position (i,j) in type structure the given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to substract. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the final value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="103" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a8484904ddce6316f6ba080f09ca1eb8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator*=</definition>
+        <argsstring>(T data_in)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>T</type>
+          <declname>data_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for multiplying the element in position (i,j) in type structure by the given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to multiply by. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the final value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="105" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1ad9cae55928da4c25a70e25fa8f3f0255" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator/=</definition>
+        <argsstring>(T data_in)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>T</type>
+          <declname>data_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for dividing the element in position (i,j) in type structure by the given value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to divide by. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the final value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="107" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="191" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1ad609b17b0d826eb4c89b762fccbad914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Left increment operator. <simplesect kind="return"><para>Incremented value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="109" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="203" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a23faa61088e40a1265ec3d956d69c9db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+          <defname>foo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Right increment operator. <simplesect kind="return"><para>Not incremented value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="111" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="214" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1aa1fdaed443bf493ab9e8b44d0ea04760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Left decrement operator. <simplesect kind="return"><para>Decremented value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="113" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="225" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Elem__ref_1a1a79c36d73ffe5dc08fe10d177e558b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lmx::Elem_ref&lt; T &gt;::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <param>
+          <type>int</type>
+          <defname>foo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Right decrement operator. <simplesect kind="return"><para>Not decremented value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="115" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="236" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Elem__ref" kindref="compound">Elem_ref</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is used to gain access for read and write purposes in any data structure derived from the <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the matrix or vector structure that is a <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> derived class. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Copy of the numerical value read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row where the original value is stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column where the original value is stored.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_elem_ref.h" bodystart="56" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Elem__ref_1a7e455c52699f760a552cba87266dcfc7" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>Elem_ref</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a60ccc402446b9bb02b75b2b1c9f6d119" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>Elem_ref</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a2c56e7e4f48576d6d7ccc567e962b222" prot="private" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>i</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a38a19ee21d59befe20ee8f068d9edbcb" prot="private" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>j</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a46d7401eb6f237d105282f34e63a123a" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator T</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a8484904ddce6316f6ba080f09ca1eb8e" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator*=</name></member>
+      <member refid="classlmx_1_1Elem__ref_1ad609b17b0d826eb4c89b762fccbad914" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator++</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a23faa61088e40a1265ec3d956d69c9db" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator++</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a435fce2d9f1967160aa359a38b8bcf8d" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator+=</name></member>
+      <member refid="classlmx_1_1Elem__ref_1aa1fdaed443bf493ab9e8b44d0ea04760" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator--</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a1a79c36d73ffe5dc08fe10d177e558b8" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator--</name></member>
+      <member refid="classlmx_1_1Elem__ref_1adc55b0dafb5cedf72f700a35b7f1a4c7" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator-=</name></member>
+      <member refid="classlmx_1_1Elem__ref_1ad9cae55928da4c25a70e25fa8f3f0255" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator/=</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a05886883c846e84c684aeee6dde1840d" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator=</name></member>
+      <member refid="classlmx_1_1Elem__ref_1af10425b417ff6d760c242cf03c14c432" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>operator=</name></member>
+      <member refid="classlmx_1_1Elem__ref_1af0c118287214b9eddf374ec4af2fee8e" prot="private" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>type</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a68e1d2de04d8337be2d92f503a076de4" prot="private" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>value</name></member>
+      <member refid="classlmx_1_1Elem__ref_1a9e41a3828ca4aea8b97990fc717f21fa" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>write_pos</name></member>
+      <member refid="classlmx_1_1Elem__ref_1ac38864e3a9029ec9d2e0ddb8404c7a3d" prot="public" virt="non-virtual"><scope>lmx::Elem_ref</scope><name>~Elem_ref</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

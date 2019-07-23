@@ -1,0 +1,274 @@
+\hypertarget{classlmx_1_1Configuration}{\section{lmx\-:\-:Configuration$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Configuration}\index{lmx\-::\-Configuration$<$ T $>$@{lmx\-::\-Configuration$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1Configuration}{Configuration}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-diff\-\_\-configuration.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Configuration_a7554019ac3c088cf4043e28a2e69a9b8}{Configuration} ()
+\item 
+\hyperlink{classlmx_1_1Configuration_a840f3a27367514da1e9735550cebe7f5}{Configuration} (double t\-\_\-o)
+\item 
+\hyperlink{classlmx_1_1Configuration_a9537a1dbac192b364e35edb4d14114ba}{$\sim$\-Configuration} ()
+\item 
+void \hyperlink{classlmx_1_1Configuration_a2820c2dd1a2c0879391a9fc4184e8d33}{quiet} ()
+\begin{DoxyCompactList}\small\item\em Needed to improve the output of \hyperlink{classlmx_1_1DiffProblemFirstSecond}{Diff\-Problem\-First\-Second} runs. \end{DoxyCompactList}\item 
+void \hyperlink{classlmx_1_1Configuration_a78a886ffbf9c2f3614066667374effd7}{next\-Step} (double \&step\-Size)
+\item 
+double \hyperlink{classlmx_1_1Configuration_ab4b84750deaab4d7041e9e6b7de5e71f}{get\-Time} (int step=0)
+\item 
+int \hyperlink{classlmx_1_1Configuration_a8e703f449981bc50ec13c14b4fc03382}{get\-Time\-Size} ()
+\item 
+double \hyperlink{classlmx_1_1Configuration_af40c6ec05472dbca4a4a80ffd6db6e51}{get\-Last\-Step\-Size} ()
+\item 
+const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1Configuration_a06ae75f9c8c797bd3801f60e8861ac97}{get\-Conf} (int order, int step=0)
+\item 
+int \hyperlink{classlmx_1_1Configuration_a2bfdf6ac49d60696c0d2924210af6f0c}{get\-Diff\-Order} ()
+\item 
+void \hyperlink{classlmx_1_1Configuration_af910b7f153fc73967221cbf95b2f02e6}{set\-Time} (double \&time\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1Configuration_af437ee887381048646611a1b7c79c80e}{set\-Initial\-Condition} (int diff\-\_\-order, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q\-\_\-o)
+\item 
+void \hyperlink{classlmx_1_1Configuration_a9a253bca9639d1c4f8500fd76e694862}{set\-Stored\-Steps} (int steps\-\_\-q\-\_\-o, int steps\-\_\-q\-\_\-i, int steps\-\_\-q\-\_\-n)
+\item 
+void \hyperlink{classlmx_1_1Configuration_a3bd19b906326293cb5cecbd000121c3a}{set\-Conf} (int diff\-\_\-order, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ values, int time\-\_\-step=0)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1Configuration_ac9a6b4a9ec19c4af12a4181b8feeb3bf}{set\-Conf} (int diff\-\_\-order, int time\-\_\-step=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class lmx\-::\-Configuration$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1Configuration}{Configuration}. 
+
+Basic variables, derivatives and time. The data is stored in the last steps, which number depends on integrator type.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Configuration_a7554019ac3c088cf4043e28a2e69a9b8}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{Configuration}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Configuration}$<$ T $>$\-::{\bf Configuration} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a7554019ac3c088cf4043e28a2e69a9b8}
+Empty constructor. \hypertarget{classlmx_1_1Configuration_a840f3a27367514da1e9735550cebe7f5}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{Configuration}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Configuration}$<$ T $>$\-::{\bf Configuration} (
+\begin{DoxyParamCaption}
+\item[{double}]{t\-\_\-o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a840f3a27367514da1e9735550cebe7f5}
+Standard constructor. 
+\begin{DoxyParams}{Parameters}
+{\em t\-\_\-o} & Time at first step. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Configuration_a9537a1dbac192b364e35edb4d14114ba}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!$\sim$\-Configuration@{$\sim$\-Configuration}}
+\index{$\sim$\-Configuration@{$\sim$\-Configuration}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{$\sim$\-Configuration}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Configuration}$<$ T $>$\-::$\sim${\bf Configuration} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a9537a1dbac192b364e35edb4d14114ba}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Configuration_a06ae75f9c8c797bd3801f60e8861ac97}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!get\-Conf@{get\-Conf}}
+\index{get\-Conf@{get\-Conf}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{get\-Conf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const {\bf lmx\-::\-Vector}$<$T$>$\& {\bf lmx\-::\-Configuration}$<$ T $>$\-::get\-Conf (
+\begin{DoxyParamCaption}
+\item[{int}]{order, }
+\item[{int}]{step = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a06ae75f9c8c797bd3801f60e8861ac97}
+
+\begin{DoxyParams}{Parameters}
+{\em order} & Differential order of configuration. \\
+\hline
+{\em step} & Indicates the (actual -\/ step) time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The configuration of the diff-\/order and step specified. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Configuration_a2bfdf6ac49d60696c0d2924210af6f0c}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!get\-Diff\-Order@{get\-Diff\-Order}}
+\index{get\-Diff\-Order@{get\-Diff\-Order}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{get\-Diff\-Order}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf lmx\-::\-Configuration}$<$ T $>$\-::get\-Diff\-Order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a2bfdf6ac49d60696c0d2924210af6f0c}
+\begin{DoxyReturn}{Returns}
+Maximum differential order of stored configuration. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Configuration_af40c6ec05472dbca4a4a80ffd6db6e51}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!get\-Last\-Step\-Size@{get\-Last\-Step\-Size}}
+\index{get\-Last\-Step\-Size@{get\-Last\-Step\-Size}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{get\-Last\-Step\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ double {\bf lmx\-::\-Configuration}$<$ T $>$\-::get\-Last\-Step\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_af40c6ec05472dbca4a4a80ffd6db6e51}
+\begin{DoxyReturn}{Returns}
+Value of last time increment. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Configuration_ab4b84750deaab4d7041e9e6b7de5e71f}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ double {\bf lmx\-::\-Configuration}$<$ T $>$\-::get\-Time (
+\begin{DoxyParamCaption}
+\item[{int}]{step = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_ab4b84750deaab4d7041e9e6b7de5e71f}
+
+\begin{DoxyParams}{Parameters}
+{\em step} & Indicates the (actual -\/ step) time step. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time value of the step. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Configuration_a8e703f449981bc50ec13c14b4fc03382}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!get\-Time\-Size@{get\-Time\-Size}}
+\index{get\-Time\-Size@{get\-Time\-Size}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{get\-Time\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf lmx\-::\-Configuration}$<$ T $>$\-::get\-Time\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a8e703f449981bc50ec13c14b4fc03382}
+Access to size of time line. \hypertarget{classlmx_1_1Configuration_a78a886ffbf9c2f3614066667374effd7}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!next\-Step@{next\-Step}}
+\index{next\-Step@{next\-Step}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{next\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Configuration}$<$ T $>$\-::next\-Step (
+\begin{DoxyParamCaption}
+\item[{double \&}]{step\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Configuration_a78a886ffbf9c2f3614066667374effd7}
+Reshapes storing vectors to the required dimension for last steps storage. 
+\begin{DoxyParams}{Parameters}
+{\em step\-\_\-size} & time increment between last and next step. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Configuration_a2820c2dd1a2c0879391a9fc4184e8d33}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!quiet@{quiet}}
+\index{quiet@{quiet}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{quiet}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf lmx\-::\-Configuration}$<$ T $>$\-::quiet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a2820c2dd1a2c0879391a9fc4184e8d33}
+
+
+Needed to improve the output of \hyperlink{classlmx_1_1DiffProblemFirstSecond}{Diff\-Problem\-First\-Second} runs. 
+
+\hypertarget{classlmx_1_1Configuration_a3bd19b906326293cb5cecbd000121c3a}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!set\-Conf@{set\-Conf}}
+\index{set\-Conf@{set\-Conf}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{set\-Conf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf lmx\-::\-Configuration}$<$ T $>$\-::set\-Conf (
+\begin{DoxyParamCaption}
+\item[{int}]{diff\-\_\-order, }
+\item[{{\bf Vector}$<$ T $>$}]{values, }
+\item[{int}]{time\-\_\-step = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_a3bd19b906326293cb5cecbd000121c3a}
+
+\begin{DoxyParams}{Parameters}
+{\em diff\-\_\-order} & Differential order of configuration. \\
+\hline
+{\em values} & Values of configuration to be set. \\
+\hline
+{\em time\-\_\-step} & Indicates the (actual -\/ step) time step \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Configuration_ac9a6b4a9ec19c4af12a4181b8feeb3bf}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!set\-Conf@{set\-Conf}}
+\index{set\-Conf@{set\-Conf}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{set\-Conf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector}$<$T$>$\& {\bf lmx\-::\-Configuration}$<$ T $>$\-::set\-Conf (
+\begin{DoxyParamCaption}
+\item[{int}]{diff\-\_\-order, }
+\item[{int}]{time\-\_\-step = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_ac9a6b4a9ec19c4af12a4181b8feeb3bf}
+
+\begin{DoxyParams}{Parameters}
+{\em diff\-\_\-order} & Differential order of configuration. \\
+\hline
+{\em time\-\_\-step} & Indicates the (actual -\/ step) time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Values of configuration. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Configuration_af437ee887381048646611a1b7c79c80e}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!set\-Initial\-Condition@{set\-Initial\-Condition}}
+\index{set\-Initial\-Condition@{set\-Initial\-Condition}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{set\-Initial\-Condition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Configuration}$<$ T $>$\-::set\-Initial\-Condition (
+\begin{DoxyParamCaption}
+\item[{int}]{diff\-\_\-order, }
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{q\-\_\-o}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Configuration_af437ee887381048646611a1b7c79c80e}
+
+\begin{DoxyParams}{Parameters}
+{\em diff\-\_\-order} & Order of differential system. \\
+\hline
+{\em q\-\_\-o} & Value of initial condition to be set. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-Vector$<$ T $>$\-::size().
+
+
+
+Referenced by lmx\-::\-Diff\-Problem$<$ Sys, T $>$\-::set\-Initial\-Configuration(), lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::set\-Initial\-Configuration1(), and lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::set\-Initial\-Configuration2().
+
+\hypertarget{classlmx_1_1Configuration_a9a253bca9639d1c4f8500fd76e694862}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!set\-Stored\-Steps@{set\-Stored\-Steps}}
+\index{set\-Stored\-Steps@{set\-Stored\-Steps}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{set\-Stored\-Steps}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Configuration}$<$ T $>$\-::set\-Stored\-Steps (
+\begin{DoxyParamCaption}
+\item[{int}]{steps\-\_\-q\-\_\-o, }
+\item[{int}]{steps\-\_\-q\-\_\-i, }
+\item[{int}]{steps\-\_\-q\-\_\-n}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Configuration_a9a253bca9639d1c4f8500fd76e694862}
+Reshapes storing vectors to the required dimension for last steps storage. 
+\begin{DoxyParams}{Parameters}
+{\em steps\-\_\-q\-\_\-o} & Number of steps to store the basic variable. \\
+\hline
+{\em steps\-\_\-q\-\_\-i} & Number of steps to store from first to (n-\/1) derivatives. \\
+\hline
+{\em steps\-\_\-q\-\_\-n} & Number of steps to store the n derivative. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W.
+
+
+
+Referenced by lmx\-::\-Integrator\-Central\-Difference$<$ T $>$\-::initialize(), lmx\-::\-Integrator\-A\-B$<$ T $>$\-::initialize(), lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$\-::initialize(), lmx\-::\-Integrator\-B\-D\-F$<$ T $>$\-::initialize(), and lmx\-::\-Integrator\-A\-M$<$ T $>$\-::initialize().
+
+\hypertarget{classlmx_1_1Configuration_af910b7f153fc73967221cbf95b2f02e6}{\index{lmx\-::\-Configuration@{lmx\-::\-Configuration}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!lmx::Configuration@{lmx\-::\-Configuration}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf lmx\-::\-Configuration}$<$ T $>$\-::set\-Time (
+\begin{DoxyParamCaption}
+\item[{double \&}]{time\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Configuration_af910b7f153fc73967221cbf95b2f02e6}
+Sets the time of actual (last) time step. 
+\begin{DoxyParams}{Parameters}
+{\em time\-\_\-in} & Value of time to be set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__diff__configuration_8h}{lmx\-\_\-diff\-\_\-configuration.\-h}\end{DoxyCompactItemize}

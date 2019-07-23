@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classGeometry.html" title="Geometry" alt="" coords="6,132,85,159"/>
+<area shape="rect" id="node2" href="$classCone.html" title="Cone" alt="" coords="149,5,201,32"/>
+<area shape="rect" id="node3" href="$classCone2.html" title="Cone2" alt="" coords="264,31,323,57"/>
+<area shape="rect" id="node4" href="$classCylinder.html" title="Cylinder" alt="" coords="141,107,209,133"/>
+<area shape="rect" id="node5" href="$classOgive.html" title="Ogive" alt="" coords="147,157,202,184"/>
+<area shape="rect" id="node6" href="$classRing.html" title="Ring" alt="" coords="151,208,199,235"/>
+<area shape="rect" id="node7" href="$classTwoPlates.html" title="TwoPlates" alt="" coords="133,259,216,285"/>
+</map>

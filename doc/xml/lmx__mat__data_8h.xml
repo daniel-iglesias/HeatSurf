@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__mat__data_8h" kind="file">
+    <compoundname>lmx_mat_data.h</compoundname>
+    <includes refid="lmx__mat__data__blas_8h" local="yes">lmx_mat_data_blas.h</includes>
+    <includedby refid="lmx__mat__data__mat_8h" local="yes">src/LMX/lmx_mat_data_mat.h</includedby>
+    <includedby refid="lmx__mat__elem__ref_8h" local="yes">src/LMX/lmx_mat_elem_ref.h</includedby>
+    <includedby refid="lmx__mat__data__vec_8h" local="yes">src/LMX/lmx_mat_data_vec.h</includedby>
+    <incdepgraph>
+      <node id="4063">
+        <label>lmx_mat_data_blas.h</label>
+        <link refid="lmx__mat__data__blas_8h"/>
+        <childnode refid="4064" relation="include">
+        </childnode>
+      </node>
+      <node id="4062">
+        <label>src/LMX/lmx_mat_data.h</label>
+        <link refid="lmx_mat_data.h"/>
+        <childnode refid="4063" relation="include">
+        </childnode>
+      </node>
+      <node id="4064">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4100">
+        <label>src/LMX/lmx_mat_type_gmmvector_sparse1.h</label>
+        <link refid="lmx__mat__type__gmmvector__sparse1_8h"/>
+      </node>
+      <node id="4082">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="4093">
+        <label>src/LMX/lmx_mat_type_gmm.h</label>
+        <link refid="lmx__mat__type__gmm_8h"/>
+      </node>
+      <node id="4094">
+        <label>src/LMX/lmx_mat_type_gmm_sparse1.h</label>
+        <link refid="lmx__mat__type__gmm__sparse1_8h"/>
+      </node>
+      <node id="4090">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="4091" relation="include">
+        </childnode>
+      </node>
+      <node id="4092">
+        <label>src/LMX/lmx_mat_type_csc.h</label>
+        <link refid="lmx__mat__type__csc_8h"/>
+        <childnode refid="4068" relation="include">
+        </childnode>
+      </node>
+      <node id="4099">
+        <label>src/LMX/lmx_mat_type_stdvector.h</label>
+        <link refid="lmx__mat__type__stdvector_8h"/>
+        <childnode refid="4096" relation="include">
+        </childnode>
+      </node>
+      <node id="4084">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="4098">
+        <label>src/LMX/lmx_mat_data_vec.h</label>
+        <link refid="lmx__mat__data__vec_8h"/>
+        <childnode refid="4099" relation="include">
+        </childnode>
+        <childnode refid="4100" relation="include">
+        </childnode>
+      </node>
+      <node id="4085">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="4096">
+        <label>src/LMX/lmx_mat_vector.h</label>
+        <link refid="lmx__mat__vector_8h"/>
+        <childnode refid="4067" relation="include">
+        </childnode>
+        <childnode refid="4097" relation="include">
+        </childnode>
+      </node>
+      <node id="4079">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="4072">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx_8h"/>
+        <childnode refid="4073" relation="include">
+        </childnode>
+      </node>
+      <node id="4087">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="4097">
+        <label>src/LMX/lmx_linsolvers_cg.h</label>
+        <link refid="lmx__linsolvers__cg_8h"/>
+        <childnode refid="4070" relation="include">
+        </childnode>
+      </node>
+      <node id="4074">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="4075" relation="include">
+        </childnode>
+        <childnode refid="4076" relation="include">
+        </childnode>
+        <childnode refid="4077" relation="include">
+        </childnode>
+      </node>
+      <node id="4070">
+        <label>src/LMX/lmx_linsolvers_system.h</label>
+        <link refid="lmx__linsolvers__system_8h"/>
+        <childnode refid="4071" relation="include">
+        </childnode>
+      </node>
+      <node id="4080">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="4081" relation="include">
+        </childnode>
+        <childnode refid="4082" relation="include">
+        </childnode>
+        <childnode refid="4077" relation="include">
+        </childnode>
+      </node>
+      <node id="4075">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="4083">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="4084" relation="include">
+        </childnode>
+        <childnode refid="4077" relation="include">
+        </childnode>
+      </node>
+      <node id="4065">
+        <label>src/LMX/lmx_mat_data.h</label>
+        <link refid="lmx_mat_data.h"/>
+        <childnode refid="4066" relation="include">
+        </childnode>
+        <childnode refid="4095" relation="include">
+        </childnode>
+        <childnode refid="4098" relation="include">
+        </childnode>
+      </node>
+      <node id="4089">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="4078">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="4066">
+        <label>src/LMX/lmx_mat_data_mat.h</label>
+        <link refid="lmx__mat__data__mat_8h"/>
+        <childnode refid="4067" relation="include">
+        </childnode>
+        <childnode refid="4092" relation="include">
+        </childnode>
+        <childnode refid="4093" relation="include">
+        </childnode>
+        <childnode refid="4094" relation="include">
+        </childnode>
+      </node>
+      <node id="4086">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="4077" relation="include">
+        </childnode>
+        <childnode refid="4087" relation="include">
+        </childnode>
+      </node>
+      <node id="4069">
+        <label>src/LMX/lmx_mat_dense_matrix.h</label>
+        <link refid="lmx__mat__dense__matrix_8h"/>
+        <childnode refid="4070" relation="include">
+        </childnode>
+      </node>
+      <node id="4091">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="4081">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="4076">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="4073">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="4074" relation="include">
+        </childnode>
+        <childnode refid="4080" relation="include">
+        </childnode>
+        <childnode refid="4083" relation="include">
+        </childnode>
+        <childnode refid="4085" relation="include">
+        </childnode>
+        <childnode refid="4086" relation="include">
+        </childnode>
+        <childnode refid="4088" relation="include">
+        </childnode>
+        <childnode refid="4090" relation="include">
+        </childnode>
+      </node>
+      <node id="4088">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="4077" relation="include">
+        </childnode>
+        <childnode refid="4089" relation="include">
+        </childnode>
+      </node>
+      <node id="4077">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="4078" relation="include">
+        </childnode>
+        <childnode refid="4079" relation="include">
+        </childnode>
+      </node>
+      <node id="4067">
+        <label>src/LMX/lmx_mat_type_stdmatrix.h</label>
+        <link refid="lmx__mat__type__stdmatrix_8h"/>
+        <childnode refid="4068" relation="include">
+        </childnode>
+      </node>
+      <node id="4095">
+        <label>src/LMX/lmx_mat_elem_ref.h</label>
+        <link refid="lmx__mat__elem__ref_8h"/>
+        <childnode refid="4096" relation="include">
+        </childnode>
+      </node>
+      <node id="4071">
+        <label>src/LMX/lmx_linsolvers.h</label>
+        <link refid="lmx__linsolvers_8h"/>
+        <childnode refid="4072" relation="include">
+        </childnode>
+      </node>
+      <node id="4068">
+        <label>src/LMX/lmx_mat_matrix.h</label>
+        <link refid="lmx__mat__matrix_8h"/>
+        <childnode refid="4069" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlmx_1_1Data" prot="public">lmx::Data</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" prot="public" static="no">
+        <type>size_t</type>
+        <definition>typedef size_t size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Member size_type is a redefinition of the numeric type used for indexing the matrices. Actually, it&apos;s defined as size_t integer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains the declaration of the data class&apos; pure virtual functions. </para>    </briefdescription>
+    <detaileddescription>
+<para>For classes derived from Data pure virtual class, all these methods must be implemented. Thus, for comprobation and checking, the methods here declared are as well documented.</para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMXDATA_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMXDATA_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_GMM</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;gmm/gmm.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__mat__data__blas_8h" kindref="compound">lmx_mat_data_blas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"></codeline>
+<codeline lineno="40"></codeline>
+<codeline lineno="44" refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classlmx_1_1Data" refkind="compound"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" kindref="member">Data</ref>(){}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" kindref="member">~Data</ref>(){}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc" kindref="member">resize</ref>(<ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>,<sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" kindref="member">readElement</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" kindref="member">writeElement</ref>(T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a" kindref="member">addElement</ref>(T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref>&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/><ref refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" kindref="member">getRows</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref><sp/><ref refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" kindref="member">getCols</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356" kindref="member">equals</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>*)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>*)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d" kindref="member">substract</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>*)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262" kindref="member">multiplyScalar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860" kindref="member">multiplyElements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data" kindref="compound">Data</ref>*)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845" kindref="member">cleanBelow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb" kindref="member">clear</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//begin<sp/>JCGO<sp/>18/03/09</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964" kindref="member">reset</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//end<sp/>JCGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h"/>
+  </compounddef>
+</doxygen>

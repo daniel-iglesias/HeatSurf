@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1IntegratorBDF" kind="class" prot="public">
+    <compoundname>lmx::IntegratorBDF</compoundname>
+    <basecompoundref refid="classlmx_1_1IntegratorBaseImplicit" prot="public" virt="non-virtual">lmx::IntegratorBaseImplicit&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__diff__integrator__bdf_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1IntegratorBDF_1a921c03372285a38f7537f26db71d587f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::IntegratorBDF&lt; T &gt;::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="90" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorBDF_1a39e2ccb346f23c9dc1c4aa797f9e8a32" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T lmx::IntegratorBDF&lt; T &gt;::b[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of method&apos;s RHS coefficients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="91" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorBDF_1a45a476b9db9aac47824a48d2526d02e1" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T lmx::IntegratorBDF&lt; T &gt;::a[5][5]</definition>
+        <argsstring>[5][5]</argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array (of arrays) of method&apos;s coefficients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="92" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorBDF_1a84db4e3124923a6b4502fa1b7e989e64" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+        <definition>Configuration&lt;T&gt;* lmx::IntegratorBDF&lt; T &gt;::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="93" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1a44fd3d08ac8623287b4bea3019991154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorBDF&lt; T &gt;::IntegratorBDF</definition>
+        <argsstring>()</argsstring>
+        <name>IntegratorBDF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1a7c9463d51e5bc52fa01c4cc38774fecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorBDF&lt; T &gt;::IntegratorBDF</definition>
+        <argsstring>(int ord)</argsstring>
+        <name>IntegratorBDF</name>
+        <param>
+          <type>int</type>
+          <declname>ord</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="103" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1ab84c9f712d342b834694e2667cf06b1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorBDF&lt; T &gt;::~IntegratorBDF</definition>
+        <argsstring>()</argsstring>
+        <name>~IntegratorBDF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1a5ce2c4b88ec3dd23dce5b61122edfbe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorBDF&lt; T &gt;::initialize</definition>
+        <argsstring>(Configuration&lt; T &gt; *)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a9ddf427bbc2267c264222552d5fa47c6">initialize</reimplements>
+        <param>
+          <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+          <defname>configuration_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize integration function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="137" bodyend="141"/>
+        <references refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" compoundref="lmx__diff__configuration_8h" startline="216" endline="246">lmx::Configuration&lt; T &gt;::setStoredSteps</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1a2b64844c160725add2f97ae58cb8b923" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorBDF&lt; T &gt;::advance</definition>
+        <argsstring>()</argsstring>
+        <name>advance</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1ab671aed2798b57bd80e831dd2d0d49cf">advance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance to next time-step function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="145" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1a117816d08be3d2161b5ecaa9ae4294a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorBDF&lt; T &gt;::integratorUpdate</definition>
+        <argsstring>(lmx::Vector&lt; T &gt; delta)</argsstring>
+        <name>integratorUpdate</name>
+        <reimplements refid="classlmx_1_1IntegratorBaseImplicit_1aa7d97f0c3d139326a6b7ca28605f9681">integratorUpdate</reimplements>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector</ref>&lt; T &gt;</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actualize with delta in actual time-step. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="172" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1af4fc49737d760c485b74dda1308a18dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double lmx::IntegratorBDF&lt; T &gt;::getPartialQdot</definition>
+        <argsstring>()</argsstring>
+        <name>getPartialQdot</name>
+        <reimplements refid="classlmx_1_1IntegratorBaseImplicit_1a8ee5ecd8b0bae40d8d79f48ca69f350f">getPartialQdot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the factor <formula id="0">$ \frac{\partial qdot_n}{\partial q_n} $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorBDF_1a2277553d925ce0d7e0fabd855dcb629e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double lmx::IntegratorBDF&lt; T &gt;::getPartialQddot</definition>
+        <argsstring>()</argsstring>
+        <name>getPartialQddot</name>
+        <reimplements refid="classlmx_1_1IntegratorBaseImplicit_1a8933718fdb3629e07d0972d846c92a8e">getPartialQddot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the factor <formula id="1">$ \frac{\partial qddot_n}{\partial q_n} $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="82" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1IntegratorBDF" kindref="compound">IntegratorBDF</ref>. Gear&apos;s BDF integrator implementation for ODE systems. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="388">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="386">
+        <label>lmx::IntegratorBDF&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBDF"/>
+        <childnode refid="387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>lmx::IntegratorBaseImplicit&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBaseImplicit"/>
+        <childnode refid="388" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="391">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="389">
+        <label>lmx::IntegratorBDF&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBDF"/>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>lmx::IntegratorBaseImplicit&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBaseImplicit"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_bdf.h" bodystart="51" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1IntegratorBDF_1a45a476b9db9aac47824a48d2526d02e1" prot="private" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>a</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a2b64844c160725add2f97ae58cb8b923" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>advance</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a39e2ccb346f23c9dc1c4aa797f9e8a32" prot="private" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>b</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a2277553d925ce0d7e0fabd855dcb629e" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>getPartialQddot</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1af4fc49737d760c485b74dda1308a18dc" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>getPartialQdot</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a5ce2c4b88ec3dd23dce5b61122edfbe2" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>initialize</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1ac8fe7d9b211d6d86b4377a3ab57399fc" prot="public" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a9ebebca6cd29dce17da68385085870be" prot="public" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>IntegratorBaseImplicit</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a44fd3d08ac8623287b4bea3019991154" prot="public" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>IntegratorBDF</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a7c9463d51e5bc52fa01c4cc38774fecb" prot="public" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>IntegratorBDF</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a117816d08be3d2161b5ecaa9ae4294a3" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>integratorUpdate</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a142802380bd75f1118a8815b2d2f0c75" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>isExplicit</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a921c03372285a38f7537f26db71d587f" prot="private" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>order</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1a84db4e3124923a6b4502fa1b7e989e64" prot="private" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>q</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1a44f52dfb85513d84a2d3e5a1dbd73b94" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>~IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorBaseImplicit_1a6b8b7489aead3b0634db14bbae16333f" prot="public" virt="virtual"><scope>lmx::IntegratorBDF</scope><name>~IntegratorBaseImplicit</name></member>
+      <member refid="classlmx_1_1IntegratorBDF_1ab84c9f712d342b834694e2667cf06b1d" prot="public" virt="non-virtual"><scope>lmx::IntegratorBDF</scope><name>~IntegratorBDF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

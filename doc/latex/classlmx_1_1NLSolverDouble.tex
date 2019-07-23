@@ -1,0 +1,297 @@
+\hypertarget{classlmx_1_1NLSolverDouble}{\section{lmx\-:\-:N\-L\-Solver\-Double$<$ Sys, T $>$ Class Template Reference}
+\label{classlmx_1_1NLSolverDouble}\index{lmx\-::\-N\-L\-Solver\-Double$<$ Sys, T $>$@{lmx\-::\-N\-L\-Solver\-Double$<$ Sys, T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1NLSolverDouble}{N\-L\-Solver\-Double}. Non-\/linear systems implementation\-: \char`\"{}\-R(q) = 0\char`\"{} .  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-nlsolvers\-\_\-double.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1NLSolverDouble_a93900c9c889168ba9bb751ef1e32048c}{N\-L\-Solver\-Double} ()
+\item 
+\hyperlink{classlmx_1_1NLSolverDouble_aa948e78a7f2eef069fe97d84828b9b56}{$\sim$\-N\-L\-Solver\-Double} ()
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_abfed7100d63a01d4ba7464e420ee4f74}{set\-Info} (int level)
+\item 
+{\footnotesize template$<$class C $>$ }\\void \hyperlink{classlmx_1_1NLSolverDouble_a25935eff4430168ea01f93bddb7697d2}{set\-Initial\-Configuration1} (const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ C $>$ \&q\-\_\-in)
+\item 
+{\footnotesize template$<$class C $>$ }\\void \hyperlink{classlmx_1_1NLSolverDouble_a42439b421ea96d4daffad351ef72c76d}{set\-Initial\-Configuration2} (const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ C $>$ \&q\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a3e0016f1eb456c9a655ce677755d8d24}{set\-System} (Sys \&system\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a27d0f4f2d2a270668f403e5a45f387e5}{set\-Delta\-In\-Residues} (bool state=1)
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a948a70dfcb7b3219222fcca5193b7d05}{set\-Residue1} (void(Sys\-::$\ast$residue\-\_\-in)(\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&))
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a2c762391538b1bcf908c37d1ed4914f9}{set\-Residue2} (void(Sys\-::$\ast$residue\-\_\-in)(\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&))
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a604ffeb49157aa5aa2e21db823197991}{set\-Jacobian1} (void(Sys\-::$\ast$jacobian\-\_\-in)(\hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix}$<$ T $>$ \&, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&))
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a914be1ece9ec5a274593a8befdb9212b}{set\-Jacobian2} (void(Sys\-::$\ast$jacobian\-\_\-in)(\hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix}$<$ T $>$ \&, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&))
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_aeeb801cf13dde53b07fef84a498988b2}{set\-Convergence} (double eps\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_aea72f9633aa043058d551f760e03aa68}{set\-Convergence1} (bool(Sys\-::$\ast$convergence\-\_\-in)(\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&))
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a50c13cc6c73a01a100ec0d951dbea10e}{set\-Convergence2} (bool(Sys\-::$\ast$convergence\-\_\-in)(\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&))
+\item 
+bool \hyperlink{classlmx_1_1NLSolverDouble_a5deba839ef7040f727a89b56ba0b72e0}{convergence} ()
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_af5b1577ca5bfba51cc2aacb7c5858ccc}{solve} (int max\-\_\-iter=100)
+\item 
+\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1NLSolverDouble_a26dfb2cf77f737309c9a8e831809615d}{get\-Solution1} ()
+\item 
+\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1NLSolverDouble_a185eb1820c0df4237a8eb6fbeaeec022}{get\-Solution2} ()
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_a3bccf20d11411411a50aa70ab8623609}{set\-Sparse1} (std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&rows, std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ columns)
+\item 
+void \hyperlink{classlmx_1_1NLSolverDouble_ab2289098a67a2cab3694e378be8b7a59}{set\-Sparse2} (std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&rows, std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ columns)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Sys, typename T = double$>$class lmx\-::\-N\-L\-Solver\-Double$<$ Sys, T $>$}
+
+Template class \hyperlink{classlmx_1_1NLSolverDouble}{N\-L\-Solver\-Double}. Non-\/linear systems implementation\-: \char`\"{}\-R(q) = 0\char`\"{} . 
+
+This class permits the creation of a non-\/linear solver object.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1NLSolverDouble_a93900c9c889168ba9bb751ef1e32048c}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!N\-L\-Solver\-Double@{N\-L\-Solver\-Double}}
+\index{N\-L\-Solver\-Double@{N\-L\-Solver\-Double}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{N\-L\-Solver\-Double}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::{\bf N\-L\-Solver\-Double} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a93900c9c889168ba9bb751ef1e32048c}
+Empty constructor. \hypertarget{classlmx_1_1NLSolverDouble_aa948e78a7f2eef069fe97d84828b9b56}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!$\sim$\-N\-L\-Solver\-Double@{$\sim$\-N\-L\-Solver\-Double}}
+\index{$\sim$\-N\-L\-Solver\-Double@{$\sim$\-N\-L\-Solver\-Double}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{$\sim$\-N\-L\-Solver\-Double}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::$\sim${\bf N\-L\-Solver\-Double} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_aa948e78a7f2eef069fe97d84828b9b56}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1NLSolverDouble_a5deba839ef7040f727a89b56ba0b72e0}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!convergence@{convergence}}
+\index{convergence@{convergence}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{convergence}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , class T $>$ bool {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::convergence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1NLSolverDouble_a5deba839ef7040f727a89b56ba0b72e0}
+Defines the optional member function for convergence evaluation with residue and configuration parameters. 
+\begin{DoxyParams}{Parameters}
+{\em convergence\-\_\-in} & Convergence evaluation member function. Defines the optional member function for convergence evaluation with residue, configuration and increment vector parameters. \\
+\hline
+{\em convergence\-\_\-in} & Convergence evaluation member function.\\
+\hline
+\end{DoxyParams}
+Internal convergence criteria. Is used if no external convergence function is set. \hypertarget{classlmx_1_1NLSolverDouble_a26dfb2cf77f737309c9a8e831809615d}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!get\-Solution1@{get\-Solution1}}
+\index{get\-Solution1@{get\-Solution1}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{get\-Solution1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ {\bf lmx\-::\-Vector}$<$T$>$\& {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::get\-Solution1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a26dfb2cf77f737309c9a8e831809615d}
+Solution vector read-\/write access. \begin{DoxyReturn}{Returns}
+Reference to the solution vector. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1NLSolverDouble_a185eb1820c0df4237a8eb6fbeaeec022}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!get\-Solution2@{get\-Solution2}}
+\index{get\-Solution2@{get\-Solution2}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{get\-Solution2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ {\bf lmx\-::\-Vector}$<$T$>$\& {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::get\-Solution2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a185eb1820c0df4237a8eb6fbeaeec022}
+Solution vector read-\/write access. \begin{DoxyReturn}{Returns}
+Reference to the solution vector. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1NLSolverDouble_aeeb801cf13dde53b07fef84a498988b2}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Convergence@{set\-Convergence}}
+\index{set\-Convergence@{set\-Convergence}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Convergence}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Convergence (
+\begin{DoxyParamCaption}
+\item[{double}]{eps\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_aeeb801cf13dde53b07fef84a498988b2}
+Defines the epsilon value for the L2 norm. 
+\begin{DoxyParams}{Parameters}
+{\em eps\-\_\-in} & Value of the maximum L2 limit. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_aea72f9633aa043058d551f760e03aa68}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Convergence1@{set\-Convergence1}}
+\index{set\-Convergence1@{set\-Convergence1}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Convergence1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Convergence1 (
+\begin{DoxyParamCaption}
+\item[{bool(Sys\-::$\ast$)({\bf lmx\-::\-Vector}$<$ T $>$ \&)}]{convergence\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_aea72f9633aa043058d551f760e03aa68}
+Defines the optional member function for convergence evaluation with residue parameter. 
+\begin{DoxyParams}{Parameters}
+{\em convergence\-\_\-in} & Convergence evaluation member function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a50c13cc6c73a01a100ec0d951dbea10e}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Convergence2@{set\-Convergence2}}
+\index{set\-Convergence2@{set\-Convergence2}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Convergence2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Convergence2 (
+\begin{DoxyParamCaption}
+\item[{bool(Sys\-::$\ast$)({\bf lmx\-::\-Vector}$<$ T $>$ \&)}]{convergence\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a50c13cc6c73a01a100ec0d951dbea10e}
+Defines the optional member function for convergence evaluation with residue parameter. 
+\begin{DoxyParams}{Parameters}
+{\em convergence\-\_\-in} & Convergence evaluation member function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a27d0f4f2d2a270668f403e5a45f387e5}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Delta\-In\-Residues@{set\-Delta\-In\-Residues}}
+\index{set\-Delta\-In\-Residues@{set\-Delta\-In\-Residues}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Delta\-In\-Residues}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Delta\-In\-Residues (
+\begin{DoxyParamCaption}
+\item[{bool}]{state = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a27d0f4f2d2a270668f403e5a45f387e5}
+Sets whether the parameter in Residue function corresponds to the actual variables configuration or indicates the increment of those variables. 
+\begin{DoxyParams}{Parameters}
+{\em state} & T\-R\-U\-E (default) if the variable's increment is going to be passed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_abfed7100d63a01d4ba7464e420ee4f74}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Info@{set\-Info}}
+\index{set\-Info@{set\-Info}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Info (
+\begin{DoxyParamCaption}
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_abfed7100d63a01d4ba7464e420ee4f74}
+Set information level. \hypertarget{classlmx_1_1NLSolverDouble_a25935eff4430168ea01f93bddb7697d2}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Initial\-Configuration1@{set\-Initial\-Configuration1}}
+\index{set\-Initial\-Configuration1@{set\-Initial\-Configuration1}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Initial\-Configuration1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ template$<$class C $>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Initial\-Configuration1 (
+\begin{DoxyParamCaption}
+\item[{const {\bf lmx\-::\-Vector}$<$ C $>$ \&}]{q\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a25935eff4430168ea01f93bddb7697d2}
+Takes a \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector} for initial value guess and dimensioning the problem. 
+\begin{DoxyParams}{Parameters}
+{\em q\-\_\-in} & Initial guess values. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a42439b421ea96d4daffad351ef72c76d}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Initial\-Configuration2@{set\-Initial\-Configuration2}}
+\index{set\-Initial\-Configuration2@{set\-Initial\-Configuration2}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Initial\-Configuration2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ template$<$class C $>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Initial\-Configuration2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf lmx\-::\-Vector}$<$ C $>$ \&}]{q\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a42439b421ea96d4daffad351ef72c76d}
+Takes a \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector} for initial value guess and dimensioning the problem. 
+\begin{DoxyParams}{Parameters}
+{\em q\-\_\-in} & Initial guess values. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a604ffeb49157aa5aa2e21db823197991}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Jacobian1@{set\-Jacobian1}}
+\index{set\-Jacobian1@{set\-Jacobian1}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Jacobian1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Jacobian1 (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)({\bf lmx\-::\-Matrix}$<$ T $>$ \&, {\bf lmx\-::\-Vector}$<$ T $>$ \&)}]{jacobian\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a604ffeb49157aa5aa2e21db823197991}
+Defines the member function that computes the tangent to the residue. 
+\begin{DoxyParams}{Parameters}
+{\em jacobian\-\_\-in} & Jacobian member function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a914be1ece9ec5a274593a8befdb9212b}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Jacobian2@{set\-Jacobian2}}
+\index{set\-Jacobian2@{set\-Jacobian2}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Jacobian2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Jacobian2 (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)({\bf lmx\-::\-Matrix}$<$ T $>$ \&, {\bf lmx\-::\-Vector}$<$ T $>$ \&)}]{jacobian\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a914be1ece9ec5a274593a8befdb9212b}
+Defines the member function that computes the tangent to the residue. 
+\begin{DoxyParams}{Parameters}
+{\em jacobian\-\_\-in} & Jacobian member function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a948a70dfcb7b3219222fcca5193b7d05}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Residue1@{set\-Residue1}}
+\index{set\-Residue1@{set\-Residue1}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Residue1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Residue1 (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)({\bf lmx\-::\-Vector}$<$ T $>$ \&, {\bf lmx\-::\-Vector}$<$ T $>$ \&)}]{residue\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a948a70dfcb7b3219222fcca5193b7d05}
+Defines the member function that computes the residue. 
+\begin{DoxyParams}{Parameters}
+{\em residue\-\_\-in} & Residue member function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a2c762391538b1bcf908c37d1ed4914f9}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Residue2@{set\-Residue2}}
+\index{set\-Residue2@{set\-Residue2}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Residue2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Residue2 (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)({\bf lmx\-::\-Vector}$<$ T $>$ \&, {\bf lmx\-::\-Vector}$<$ T $>$ \&)}]{residue\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a2c762391538b1bcf908c37d1ed4914f9}
+Defines the member function that computes the residue. 
+\begin{DoxyParams}{Parameters}
+{\em residue\-\_\-in} & Residue member function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_a3bccf20d11411411a50aa70ab8623609}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Sparse1@{set\-Sparse1}}
+\index{set\-Sparse1@{set\-Sparse1}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Sparse1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Sparse1 (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{rows, }
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$}]{columns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a3bccf20d11411411a50aa70ab8623609}
+\hypertarget{classlmx_1_1NLSolverDouble_ab2289098a67a2cab3694e378be8b7a59}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-Sparse2@{set\-Sparse2}}
+\index{set\-Sparse2@{set\-Sparse2}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-Sparse2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-Sparse2 (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{rows, }
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$}]{columns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_ab2289098a67a2cab3694e378be8b7a59}
+\hypertarget{classlmx_1_1NLSolverDouble_a3e0016f1eb456c9a655ce677755d8d24}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!set\-System@{set\-System}}
+\index{set\-System@{set\-System}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{set\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys, typename T = double$>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::set\-System (
+\begin{DoxyParamCaption}
+\item[{Sys \&}]{system\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1NLSolverDouble_a3e0016f1eb456c9a655ce677755d8d24}
+Sets witch Sys object is going to be used for member function calls. 
+\begin{DoxyParams}{Parameters}
+{\em system\-\_\-in} & The Sys object. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1NLSolverDouble_af5b1577ca5bfba51cc2aacb7c5858ccc}{\index{lmx\-::\-N\-L\-Solver\-Double@{lmx\-::\-N\-L\-Solver\-Double}!solve@{solve}}
+\index{solve@{solve}!lmx::NLSolverDouble@{lmx\-::\-N\-L\-Solver\-Double}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , class T $>$ void {\bf lmx\-::\-N\-L\-Solver\-Double}$<$ Sys, T $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{int}]{max\-\_\-iter = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1NLSolverDouble_af5b1577ca5bfba51cc2aacb7c5858ccc}
+Solve function. Initiates the nl-\/solver loop. 
+\begin{DoxyParams}{Parameters}
+{\em max\-\_\-iter} & Defines the maximun number of iterations for each iteration. \\
+\hline
+\end{DoxyParams}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, lmx\-::nl\-\_\-solver\-\_\-type, and lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__nlsolvers__double_8h}{lmx\-\_\-nlsolvers\-\_\-double.\-h}\end{DoxyCompactItemize}

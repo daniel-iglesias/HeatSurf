@@ -1,0 +1,225 @@
+\hypertarget{classRing}{\section{Ring Class Reference}
+\label{classRing}\index{Ring@{Ring}}
+}
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/ring.\-h$>$}
+
+
+
+Inheritance diagram for Ring\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classRing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ring\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classRing__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRing_afc47f40ab072db783126111b70693e49}{Ring} ()
+\item 
+\hyperlink{classRing_a0ed22778579e271562469b62c1ed5230}{Ring} (std\-::string, double, double, double, int)
+\item 
+\hyperlink{classRing_a515a41c0803bcdd921712d6f5047e101}{$\sim$\-Ring} ()
+\item 
+void \hyperlink{classRing_a4e11fdcade67b41f38a7ec4458afdd8d}{set\-Sections} (double)
+\item 
+void \hyperlink{classRing_a773ec5b24a5dc39a1f5755b43c20edb6}{compute\-Geometry} ()
+\item 
+void \hyperlink{classRing_a3dbac86733d87654134a284a800a1a28}{residue} (lmx\-::\-Vector$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classRing_ae5f0673944df86cdd9972fe302483883}{jacobian} (lmx\-::\-Matrix$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classRing_a8f33372a5df9a8aa8e0718312497fd78}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classRing_a844fa2f14bcf7d506f33865081543e61}{compute\-Nodal\-Power} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classRing_a6f6508a51866f6189aae6a09772b7cd5}{output\-Table} ()
+\item 
+void \hyperlink{classRing_a3634ff6b0684ff0a0eb172751eef83a9}{output\-Power\-File} (int)
+\item 
+void \hyperlink{classRing_ae8851509bb69f45e300bc4772b31ca9c}{output\-Power\-Density\-File} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRing_afc47f40ab072db783126111b70693e49}{\index{Ring@{Ring}!Ring@{Ring}}
+\index{Ring@{Ring}!Ring@{Ring}}
+\subsubsection[{Ring}]{\setlength{\rightskip}{0pt plus 5cm}Ring\-::\-Ring (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRing_afc47f40ab072db783126111b70693e49}
+\hypertarget{classRing_a0ed22778579e271562469b62c1ed5230}{\index{Ring@{Ring}!Ring@{Ring}}
+\index{Ring@{Ring}!Ring@{Ring}}
+\subsubsection[{Ring}]{\setlength{\rightskip}{0pt plus 5cm}Ring\-::\-Ring (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-\_\-in, }
+\item[{double}]{par0\-\_\-in, }
+\item[{double}]{par1\-\_\-in, }
+\item[{double}]{par2\-\_\-in, }
+\item[{int}]{par3\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classRing_a0ed22778579e271562469b62c1ed5230}
+
+
+References Geometry\-::grid\-Width.
+
+\hypertarget{classRing_a515a41c0803bcdd921712d6f5047e101}{\index{Ring@{Ring}!$\sim$\-Ring@{$\sim$\-Ring}}
+\index{$\sim$\-Ring@{$\sim$\-Ring}!Ring@{Ring}}
+\subsubsection[{$\sim$\-Ring}]{\setlength{\rightskip}{0pt plus 5cm}Ring\-::$\sim$\-Ring (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRing_a515a41c0803bcdd921712d6f5047e101}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRing_a773ec5b24a5dc39a1f5755b43c20edb6}{\index{Ring@{Ring}!compute\-Geometry@{compute\-Geometry}}
+\index{compute\-Geometry@{compute\-Geometry}!Ring@{Ring}}
+\subsubsection[{compute\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::compute\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_a773ec5b24a5dc39a1f5755b43c20edb6}
+
+
+Implements \hyperlink{classGeometry_a3e77ac889d1e440c24efbde630aa1933}{Geometry}.
+
+
+
+References Geometry\-::elements, Geometry\-::grid, Geometry\-::grid\-Points, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classRing_a8f33372a5df9a8aa8e0718312497fd78}{\index{Ring@{Ring}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!Ring@{Ring}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_a8f33372a5df9a8aa8e0718312497fd78}
+
+
+Implements \hyperlink{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}{Geometry}.
+
+
+
+References Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Particle\-::get\-Z(), Particle\-::get\-Zdiv(), jacobian(), Geometry\-::param\-Trajectories, and residue().
+
+\hypertarget{classRing_a844fa2f14bcf7d506f33865081543e61}{\index{Ring@{Ring}!compute\-Nodal\-Power@{compute\-Nodal\-Power}}
+\index{compute\-Nodal\-Power@{compute\-Nodal\-Power}!Ring@{Ring}}
+\subsubsection[{compute\-Nodal\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::compute\-Nodal\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_a844fa2f14bcf7d506f33865081543e61}
+
+
+Implements \hyperlink{classGeometry_af60650f8ce6d5a220928ccd7395120df}{Geometry}.
+
+
+
+References Particle\-::get\-Energy(), Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Geometry\-::length, Geometry\-::nodes, Geometry\-::param\-Trajectories, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classRing_ae5f0673944df86cdd9972fe302483883}{\index{Ring@{Ring}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Ring@{Ring}}
+\subsubsection[{jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::jacobian (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Matrix$<$ double $>$ \&}]{jac, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classRing_ae5f0673944df86cdd9972fe302483883}
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classRing_ae8851509bb69f45e300bc4772b31ca9c}{\index{Ring@{Ring}!output\-Power\-Density\-File@{output\-Power\-Density\-File}}
+\index{output\-Power\-Density\-File@{output\-Power\-Density\-File}!Ring@{Ring}}
+\subsubsection[{output\-Power\-Density\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::output\-Power\-Density\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_ae8851509bb69f45e300bc4772b31ca9c}
+
+
+Implements \hyperlink{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classRing_a3634ff6b0684ff0a0eb172751eef83a9}{\index{Ring@{Ring}!output\-Power\-File@{output\-Power\-File}}
+\index{output\-Power\-File@{output\-Power\-File}!Ring@{Ring}}
+\subsubsection[{output\-Power\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::output\-Power\-File (
+\begin{DoxyParamCaption}
+\item[{int}]{particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_a3634ff6b0684ff0a0eb172751eef83a9}
+
+
+Implements \hyperlink{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, and Geometry\-::sectors.
+
+\hypertarget{classRing_a6f6508a51866f6189aae6a09772b7cd5}{\index{Ring@{Ring}!output\-Table@{output\-Table}}
+\index{output\-Table@{output\-Table}!Ring@{Ring}}
+\subsubsection[{output\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::output\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_a6f6508a51866f6189aae6a09772b7cd5}
+
+
+Implements \hyperlink{classGeometry_a60e1424a222ba59284b81812aff34148}{Geometry}.
+
+\hypertarget{classRing_a3dbac86733d87654134a284a800a1a28}{\index{Ring@{Ring}!residue@{residue}}
+\index{residue@{residue}!Ring@{Ring}}
+\subsubsection[{residue}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::residue (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{res, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classRing_a3dbac86733d87654134a284a800a1a28}
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classRing_a4e11fdcade67b41f38a7ec4458afdd8d}{\index{Ring@{Ring}!set\-Sections@{set\-Sections}}
+\index{set\-Sections@{set\-Sections}!Ring@{Ring}}
+\subsubsection[{set\-Sections}]{\setlength{\rightskip}{0pt plus 5cm}void Ring\-::set\-Sections (
+\begin{DoxyParamCaption}
+\item[{double}]{distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRing_a4e11fdcade67b41f38a7ec4458afdd8d}
+
+
+Implements \hyperlink{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}{Geometry}.
+
+
+
+References Geometry\-::sections.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{ring_8h}{ring.\-h}\item 
+src/\hyperlink{ring_8cpp}{ring.\-cpp}\end{DoxyCompactItemize}

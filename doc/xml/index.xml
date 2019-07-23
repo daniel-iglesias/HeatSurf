@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="classCone" kind="class"><name>Cone</name>
+    <member refid="classCone_1ab0de5b540524262d297001275d5e6d32" kind="variable"><name>slope</name></member>
+    <member refid="classCone_1a6a9d357f81bd97a8af3fb14b3d5b3d7a" kind="variable"><name>initDiam</name></member>
+    <member refid="classCone_1a5386e888ab484f63fe83d517729faa01" kind="variable"><name>x</name></member>
+    <member refid="classCone_1a66304744a0aed187f04e0e4ac866b586" kind="variable"><name>y</name></member>
+    <member refid="classCone_1adb56779bb7c105f259121cabb7828520" kind="variable"><name>z</name></member>
+    <member refid="classCone_1a7cc97341d3d763bc33e5ca22087f7ceb" kind="variable"><name>vx</name></member>
+    <member refid="classCone_1a9b234e8a160c25a1d0d4bc88d7e216e3" kind="variable"><name>vy</name></member>
+    <member refid="classCone_1a240d0923e3582cc34be68bb39fe79eea" kind="variable"><name>vz</name></member>
+    <member refid="classCone_1aec709e915b3271a750d420b14b215bfb" kind="function"><name>Cone</name></member>
+    <member refid="classCone_1a28e740791e735a80d44ccb98ce9c5579" kind="function"><name>Cone</name></member>
+    <member refid="classCone_1a36a6a946043f7b24a34e42cb88b5a4e8" kind="function"><name>~Cone</name></member>
+    <member refid="classCone_1a52fd80b6c484449a8d24d1471e21873c" kind="function"><name>setSections</name></member>
+    <member refid="classCone_1a98c5dc0bc0561ab92e76a8ab4da2f891" kind="function"><name>computeGeometry</name></member>
+    <member refid="classCone_1a4c292bca1debd7c22f7e6cba03e50f46" kind="function"><name>residue</name></member>
+    <member refid="classCone_1a5443c4cbf223ee931f0626e92c353008" kind="function"><name>jacobian</name></member>
+    <member refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" kind="function"><name>computeIntersection</name></member>
+    <member refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classCone_1aa026083e1c8ecfd1f589eb1939b302c1" kind="function"><name>outputTable</name></member>
+    <member refid="classCone_1a9928e7033ce28a13e7d770a1620e096e" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classCone_1a435a6b46c506758157f2ed0d3213461f" kind="function"><name>outputPowerDensityFile</name></member>
+  </compound>
+  <compound refid="classCone2" kind="class"><name>Cone2</name>
+    <member refid="classCone2_1a3722446f39774d8c252ba83bf703d8f8" kind="variable"><name>finalDiam</name></member>
+    <member refid="classCone2_1a563618e2cf3db2ecd200d949088dfaed" kind="variable"><name>x</name></member>
+    <member refid="classCone2_1af328edb9ee490732b9871103bcab28e9" kind="variable"><name>y</name></member>
+    <member refid="classCone2_1a6cb752618b946f515e021e85819ef836" kind="variable"><name>z</name></member>
+    <member refid="classCone2_1aa0e2594f7bfbf104e6a5c92a1fc0206e" kind="variable"><name>vx</name></member>
+    <member refid="classCone2_1a18567f8e67aa499b5e911198787db0c9" kind="variable"><name>vy</name></member>
+    <member refid="classCone2_1a922f2279189ea3bd8dcbb08fd6841456" kind="variable"><name>vz</name></member>
+    <member refid="classCone2_1a7fbc810b8d75802b56af1acd3e4a39f6" kind="variable"><name>slope</name></member>
+    <member refid="classCone2_1a79dcbb3665f62edad4d5e8ccbc3378bb" kind="variable"><name>initDiam</name></member>
+    <member refid="classCone2_1a34aec8d4ba5233e8a5e90988d25c08b7" kind="variable"><name>apparentLength</name></member>
+    <member refid="classCone2_1ad99f90e043c4aa4cc1e4012aafd9a909" kind="function"><name>Cone2</name></member>
+    <member refid="classCone2_1a65867efad22fe7b708dd76b7a2621577" kind="function"><name>Cone2</name></member>
+    <member refid="classCone2_1add4b118b935f03db10ed1db95809034b" kind="function"><name>~Cone2</name></member>
+    <member refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" kind="function"><name>residue</name></member>
+    <member refid="classCone2_1a94d852542a6c22427333b484f30658c2" kind="function"><name>jacobian</name></member>
+    <member refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" kind="function"><name>computeIntersection</name></member>
+    <member refid="classCone2_1ad99f90e043c4aa4cc1e4012aafd9a909" kind="function"><name>Cone2</name></member>
+    <member refid="classCone2_1a65867efad22fe7b708dd76b7a2621577" kind="function"><name>Cone2</name></member>
+    <member refid="classCone2_1add4b118b935f03db10ed1db95809034b" kind="function"><name>~Cone2</name></member>
+    <member refid="classCone2_1a7aeaee918b84b78b5b00f9572bedd349" kind="function"><name>setSections</name></member>
+    <member refid="classCone2_1aa79cd275d279459beb8fa668cad2aa55" kind="function"><name>computeGeometry</name></member>
+    <member refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" kind="function"><name>residue</name></member>
+    <member refid="classCone2_1a94d852542a6c22427333b484f30658c2" kind="function"><name>jacobian</name></member>
+    <member refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" kind="function"><name>computeIntersection</name></member>
+    <member refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classCone2_1a89b20ddec7e0a6b1bd9478a8036c9ad0" kind="function"><name>outputTable</name></member>
+    <member refid="classCone2_1a947c9976494227e12730843c77a9b241" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classCone2_1af259aae6fd151e82482ee9232b63af31" kind="function"><name>outputPowerDensityFile</name></member>
+  </compound>
+  <compound refid="classCylinder" kind="class"><name>Cylinder</name>
+    <member refid="classCylinder_1a152ef9901432a2a950f5bfc0ca65c404" kind="variable"><name>slope</name></member>
+    <member refid="classCylinder_1a6060f0c1877d612c2bdc6771bb63794c" kind="variable"><name>initDiam</name></member>
+    <member refid="classCylinder_1a48427fc7774182f632a114b00a6ed67f" kind="variable"><name>x</name></member>
+    <member refid="classCylinder_1a906841aa3d554b47003809c365e5f267" kind="variable"><name>y</name></member>
+    <member refid="classCylinder_1a4b6541cf1287b4b1eb2d50630d5c04bd" kind="variable"><name>z</name></member>
+    <member refid="classCylinder_1a97d7842f87d52e2ed15bfb2a50da21b3" kind="variable"><name>vx</name></member>
+    <member refid="classCylinder_1aab6068f15131f9433a0e84c9e136b796" kind="variable"><name>vy</name></member>
+    <member refid="classCylinder_1a73ece1bfd0b75a65a6d985555409ca30" kind="variable"><name>vz</name></member>
+    <member refid="classCylinder_1a01dc978cb576f834b9545e43d4dad2a2" kind="function"><name>Cylinder</name></member>
+    <member refid="classCylinder_1af6f22d1e11f65fc230f270c16e25385a" kind="function"><name>Cylinder</name></member>
+    <member refid="classCylinder_1a05ab556f0ae3cd6e99d9d1f3caca80b3" kind="function"><name>~Cylinder</name></member>
+    <member refid="classCylinder_1ad75a4b81272ef8b27b3163bf0aa49efd" kind="function"><name>setSections</name></member>
+    <member refid="classCylinder_1a657d003c8da54cb8d5cf78bbe210cafa" kind="function"><name>computeGeometry</name></member>
+    <member refid="classCylinder_1a76a83ba9168f8a9bc30bf0a85250f984" kind="function"><name>residue</name></member>
+    <member refid="classCylinder_1a27c6e57d5f10da5fc660adf731960d6f" kind="function"><name>jacobian</name></member>
+    <member refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" kind="function"><name>computeIntersection</name></member>
+    <member refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classCylinder_1a33abcb99e6c881b867a0bb6c0dfcabae" kind="function"><name>outputTable</name></member>
+    <member refid="classCylinder_1ab2481ec0318f4686fd7787696230b4bd" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classCylinder_1a82078ecb74fbe07bed3de4040be73125" kind="function"><name>outputPowerDensityFile</name></member>
+  </compound>
+  <compound refid="classElement" kind="class"><name>Element</name>
+    <member refid="classElement_1a3c475b7e8da464c6aa746ed2ae79ab3f" kind="variable"><name>geometry</name></member>
+    <member refid="classElement_1a57f68fec0f480086140c52ce75c4f60f" kind="variable"><name>type</name></member>
+    <member refid="classElement_1a5db1c06684dd0adc6e93ef991589465f" kind="variable"><name>number</name></member>
+    <member refid="classElement_1a03a5aa29f672284daaf6cb01fe75fb5d" kind="variable"><name>area</name></member>
+    <member refid="classElement_1aaad0a966d0083efcf690fdd8794d1e52" kind="variable"><name>density</name></member>
+    <member refid="classElement_1a232ee14049b8d5c92c65370bfb10d3af" kind="variable"><name>density3D</name></member>
+    <member refid="classElement_1a52e309337dc065a713b697538e321289" kind="variable"><name>connectivity</name></member>
+    <member refid="classElement_1a025d90774a29a2eada1efaf8465384b9" kind="variable"><name>it</name></member>
+    <member refid="classElement_1ab0d0e20be9a36ae676202db753faeec9" kind="function"><name>Element</name></member>
+    <member refid="classElement_1a4e6e261243d3b4580ae7b4c266d5ce5f" kind="function"><name>Element</name></member>
+    <member refid="classElement_1a13d54ba9c08b6bec651402f1c2bb002c" kind="function"><name>~Element</name></member>
+    <member refid="classElement_1ac9e6cfa50bdbdbe7fa8895fec7490c89" kind="function"><name>setNumber</name></member>
+    <member refid="classElement_1abf8a7a490cad2431443286d7ee615aa7" kind="function"><name>setArea</name></member>
+    <member refid="classElement_1aa838e2bc18a65fffaa3a74da5767650c" kind="function"><name>addNode</name></member>
+    <member refid="classElement_1a0fcde2c599efe04b0a04623b362972fc" kind="function"><name>addDensity</name></member>
+    <member refid="classElement_1a9101c3a58134bb2fd736429976727e79" kind="function"><name>addDensity3D</name></member>
+    <member refid="classElement_1a8bd9315dc4eb7b59f47410347375bf0e" kind="function"><name>getType</name></member>
+    <member refid="classElement_1a8de2b9d656140b6178581da489edf199" kind="function"><name>getNumber</name></member>
+    <member refid="classElement_1a227a96bf84d82893af37a14650561eee" kind="function"><name>getArea</name></member>
+    <member refid="classElement_1a171ad7737d0015969b05cd21a17ec078" kind="function"><name>getDensity</name></member>
+    <member refid="classElement_1ac53449729ec1381c44958bcf6ae7a797" kind="function"><name>getDensity3D</name></member>
+    <member refid="classElement_1a54738e08d76563f2ffb5b6aef0f38981" kind="function"><name>getNumberOfNodes</name></member>
+    <member refid="classElement_1ac6df9864bc31d99d8942e7c85533e9aa" kind="function"><name>getConnectivity</name></member>
+    <member refid="classElement_1abd3cfd73fd15f802578207411d2740bb" kind="function"><name>generateGeometry</name></member>
+  </compound>
+  <compound refid="classGeometry" kind="class"><name>Geometry</name>
+    <member refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" kind="variable"><name>type</name></member>
+    <member refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" kind="variable"><name>sections</name></member>
+    <member refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kind="variable"><name>sections3D</name></member>
+    <member refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kind="variable"><name>sectors</name></member>
+    <member refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kind="variable"><name>sectors3D</name></member>
+    <member refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" kind="variable"><name>z0</name></member>
+    <member refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kind="variable"><name>length</name></member>
+    <member refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kind="variable"><name>gridWidth</name></member>
+    <member refid="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" kind="variable"><name>gridSpacing</name></member>
+    <member refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" kind="variable"><name>paramTrajectories</name></member>
+    <member refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kind="variable"><name>nodes</name></member>
+    <member refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kind="variable"><name>grid3Dnodes</name></member>
+    <member refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" kind="variable"><name>elements</name></member>
+    <member refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kind="variable"><name>grid3D</name></member>
+    <member refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" kind="variable"><name>plotTitle</name></member>
+    <member refid="classGeometry_1aed47a80e867e618e98272e830d297deb" kind="variable"><name>gridPoints</name></member>
+    <member refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kind="variable"><name>scalar</name></member>
+    <member refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" kind="variable"><name>grid</name></member>
+    <member refid="classGeometry_1afd79778e7c244df18be79a39419190c8" kind="variable"><name>grid3DPoints</name></member>
+    <member refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kind="variable"><name>grid3Dscalar</name></member>
+    <member refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kind="variable"><name>gridCubes</name></member>
+    <member refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" kind="variable"><name>renWin</name></member>
+    <member refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" kind="variable"><name>style</name></member>
+    <member refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kind="variable"><name>iren</name></member>
+    <member refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kind="variable"><name>ren</name></member>
+    <member refid="classGeometry_1af314d57676056969da57788a60954926" kind="variable"><name>aDataSetMapper</name></member>
+    <member refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" kind="variable"><name>anActor</name></member>
+    <member refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" kind="variable"><name>grid3DrenWin</name></member>
+    <member refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" kind="variable"><name>grid3Dstyle</name></member>
+    <member refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kind="variable"><name>grid3Diren</name></member>
+    <member refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kind="variable"><name>grid3Dren</name></member>
+    <member refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kind="variable"><name>grid3DDataSetMapper</name></member>
+    <member refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" kind="variable"><name>grid3DActor</name></member>
+    <member refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kind="variable"><name>table</name></member>
+    <member refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kind="variable"><name>barActor</name></member>
+    <member refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kind="variable"><name>grid3Dtable</name></member>
+    <member refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kind="variable"><name>grid3DbarActor</name></member>
+    <member refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kind="variable"><name>axes</name></member>
+    <member refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kind="variable"><name>widget</name></member>
+    <member refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kind="variable"><name>grid3Daxes</name></member>
+    <member refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kind="variable"><name>grid3Dwidget</name></member>
+    <member refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" kind="variable"><name>plane</name></member>
+    <member refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" kind="variable"><name>planeCut</name></member>
+    <member refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" kind="variable"><name>cutMapper</name></member>
+    <member refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" kind="variable"><name>cutActor</name></member>
+    <member refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" kind="function"><name>Geometry</name></member>
+    <member refid="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" kind="function"><name>Geometry</name></member>
+    <member refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" kind="function"><name>~Geometry</name></member>
+    <member refid="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df" kind="function"><name>setSections</name></member>
+    <member refid="classGeometry_1a3e77ac889d1e440c24efbde630aa1933" kind="function"><name>computeGeometry</name></member>
+    <member refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" kind="function"><name>computeGrid3D</name></member>
+    <member refid="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881" kind="function"><name>computeIntersection</name></member>
+    <member refid="classGeometry_1af60650f8ce6d5a220928ccd7395120df" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" kind="function"><name>computePowerDensity</name></member>
+    <member refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" kind="function"><name>drawGeometry</name></member>
+    <member refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" kind="function"><name>drawScalar</name></member>
+    <member refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" kind="function"><name>drawGrid</name></member>
+    <member refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" kind="function"><name>drawGridScalar</name></member>
+    <member refid="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9" kind="function"><name>outputPowerDensityFile</name></member>
+    <member refid="classGeometry_1a60e1424a222ba59284b81812aff34148" kind="function"><name>outputTable</name></member>
+    <member refid="classGeometry_1a565f5b7736c4b0894732900199903d54" kind="function"><name>getType</name></member>
+    <member refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" kind="function"><name>outputAnsys3D</name></member>
+    <member refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" kind="function"><name>outputVTKfiles</name></member>
+    <member refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" kind="function"><name>outputBackscattering</name></member>
+  </compound>
+  <compound refid="classNode" kind="class"><name>Node</name>
+    <member refid="classNode_1a1082fca4b71cc3cc02d78c35108f9059" kind="variable"><name>x</name></member>
+    <member refid="classNode_1a441d3c5ba86597f4c391408d9fe6d242" kind="variable"><name>y</name></member>
+    <member refid="classNode_1a8797bf8ce04cc01920b7fa33f1792a36" kind="variable"><name>z</name></member>
+    <member refid="classNode_1a1bf4d6787d30acbaef6bd357d24791b0" kind="variable"><name>scalar</name></member>
+    <member refid="classNode_1a1798ff3d6650de7d528e96a563f664e8" kind="variable"><name>density</name></member>
+    <member refid="classNode_1af2d852e4e98516a1b64fcb87a46f8900" kind="variable"><name>n_densities3D</name></member>
+    <member refid="classNode_1a8db2bf4c8effe7cff6c1de42eb901247" kind="variable"><name>n_densities</name></member>
+    <member refid="classNode_1ad7a34779cad45d997bfd6d3d8043c75f" kind="function"><name>Node</name></member>
+    <member refid="classNode_1ab67eabb0fef1465a1d7d1e11997ddd4d" kind="function"><name>Node</name></member>
+    <member refid="classNode_1aa0840c3cb5c7159be6d992adecd2097c" kind="function"><name>~Node</name></member>
+    <member refid="classNode_1a93d1fc91852d3698d94625f0178df03f" kind="function"><name>setScalar</name></member>
+    <member refid="classNode_1aaa144bb5a91e238a24714f9c21e1f691" kind="function"><name>addScalar</name></member>
+    <member refid="classNode_1a30669c547c3613eb296358270fa034fb" kind="function"><name>addDensity3D</name></member>
+    <member refid="classNode_1aaa123501583ea9775583c2c46f755c8f" kind="function"><name>getScalar</name></member>
+    <member refid="classNode_1ad1eeb7e6ca4fc6d627ca6ff662f8e442" kind="function"><name>addDensity</name></member>
+    <member refid="classNode_1a586272c977653ba24e1292b4dc42f8c6" kind="function"><name>getDensity</name></member>
+    <member refid="classNode_1a8d8ccf6a6da7717ea6aa67e52c7c9017" kind="function"><name>getX</name></member>
+    <member refid="classNode_1a8877121bf44537ccbe2f3c441fa3b664" kind="function"><name>getY</name></member>
+    <member refid="classNode_1ab26d80e97604621eab868ebacda71304" kind="function"><name>getZ</name></member>
+  </compound>
+  <compound refid="classOgive" kind="class"><name>Ogive</name>
+    <member refid="classOgive_1af89f0340990c617f6903e5b140b6a93b" kind="variable"><name>ogive_radius</name></member>
+    <member refid="classOgive_1a7e93a92332126b985d7a7742f35710d2" kind="variable"><name>initDiam</name></member>
+    <member refid="classOgive_1a92d5693c4ab7b1e80c18c7b3008caaa0" kind="variable"><name>final_radius</name></member>
+    <member refid="classOgive_1a1035346b767b04acd3272c1ede78f426" kind="variable"><name>x</name></member>
+    <member refid="classOgive_1a29bf648cfcf37ae58f5a8ee24eeb3a1b" kind="variable"><name>y</name></member>
+    <member refid="classOgive_1aafb5ef15c21111e0078089c46892b8a9" kind="variable"><name>z</name></member>
+    <member refid="classOgive_1a26940d2855536f45f64774ac6a56e17b" kind="variable"><name>vx</name></member>
+    <member refid="classOgive_1afb7b53a0c6e5d5d31d22dab942a30376" kind="variable"><name>vy</name></member>
+    <member refid="classOgive_1a94aba938f3035cbf3b1c19a878ece885" kind="variable"><name>vz</name></member>
+    <member refid="classOgive_1af64e93b747bcc7f80d1c64705c335f22" kind="function"><name>Ogive</name></member>
+    <member refid="classOgive_1a4cc1f5beafcd2259677c4053d1ce38d1" kind="function"><name>Ogive</name></member>
+    <member refid="classOgive_1a83d0745d3b4324cb17976fc2dfdd4ac1" kind="function"><name>~Ogive</name></member>
+    <member refid="classOgive_1a925beac2c2c2ee5f7ad6654a4f1048e5" kind="function"><name>setSections</name></member>
+    <member refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" kind="function"><name>computeGeometry</name></member>
+    <member refid="classOgive_1a849470be3cd2e0db95fd191b0d41f0f5" kind="function"><name>residue</name></member>
+    <member refid="classOgive_1a3260fd40c32dbb4e1c5f17f7903e7c20" kind="function"><name>jacobian</name></member>
+    <member refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" kind="function"><name>computeIntersection</name></member>
+    <member refid="classOgive_1a1f076226bfd547f46542d02c49399693" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classOgive_1a5febe7a8e9601801d634067213d5c6f9" kind="function"><name>outputTable</name></member>
+    <member refid="classOgive_1a260f5f7945194147784025aaf7fe0a72" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" kind="function"><name>outputPowerDensityFile</name></member>
+  </compound>
+  <compound refid="classParticle" kind="class"><name>Particle</name>
+    <member refid="classParticle_1a1e3e5e103cee69ae9acb9c3269d009d7" kind="variable"><name>x</name></member>
+    <member refid="classParticle_1a2a27970d092687699a83131f4f431fb5" kind="variable"><name>xdiv</name></member>
+    <member refid="classParticle_1a434ab690dde4422ac74ae10f6ace7a52" kind="variable"><name>y</name></member>
+    <member refid="classParticle_1afebce9bdf895b206aee2c57ce1c425f8" kind="variable"><name>ydiv</name></member>
+    <member refid="classParticle_1a518399a50ebdd632b22d7f48e5958461" kind="variable"><name>z</name></member>
+    <member refid="classParticle_1a72a0339ec1a3ecd7d7d3f0ec473b864a" kind="variable"><name>zdiv</name></member>
+    <member refid="classParticle_1afd13db34d073efe8891966f5b4c8220d" kind="variable"><name>energy</name></member>
+    <member refid="classParticle_1a40f4c7e248029d72e7714b7802d5e5e1" kind="function"><name>Particle</name></member>
+    <member refid="classParticle_1afe58ede734a89206a2f38ef291f79fbf" kind="function"><name>Particle</name></member>
+    <member refid="classParticle_1ad030d0fe7b88cf81744b127c99244ff4" kind="function"><name>~Particle</name></member>
+    <member refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" kind="function"><name>getX</name></member>
+    <member refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" kind="function"><name>getY</name></member>
+    <member refid="classParticle_1a1b287734891b40546e06e17db8589fca" kind="function"><name>getZ</name></member>
+    <member refid="classParticle_1a0813b73b2d08f57f05607df530684e14" kind="function"><name>getXdiv</name></member>
+    <member refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" kind="function"><name>getYdiv</name></member>
+    <member refid="classParticle_1a9435d915d86f9df46203f9b5c72888d0" kind="function"><name>getZdiv</name></member>
+    <member refid="classParticle_1ad8d1a1de9b549f2a532a8d9a9f97c8fb" kind="function"><name>getEnergy</name></member>
+  </compound>
+  <compound refid="classRing" kind="class"><name>Ring</name>
+    <member refid="classRing_1abd3d09afbbf399a4cb8568e9611f3bff" kind="variable"><name>intDiam</name></member>
+    <member refid="classRing_1a4651ba4e88676d78fcc91c91e738734b" kind="variable"><name>extDiam</name></member>
+    <member refid="classRing_1a1c880cbf6982b82e97a882d4954a7590" kind="variable"><name>x</name></member>
+    <member refid="classRing_1acd10873ac597deb3bbca344a3159e4d6" kind="variable"><name>y</name></member>
+    <member refid="classRing_1ade72a9c62992d895da080c82b4336ab5" kind="variable"><name>z</name></member>
+    <member refid="classRing_1af006d46491669cea5c68296b1b2fc7ad" kind="variable"><name>vx</name></member>
+    <member refid="classRing_1afdbfee6807873be1eed0d5397221657f" kind="variable"><name>vy</name></member>
+    <member refid="classRing_1a19e16f70ce8c668e30a75f5cc363d427" kind="variable"><name>vz</name></member>
+    <member refid="classRing_1afc47f40ab072db783126111b70693e49" kind="function"><name>Ring</name></member>
+    <member refid="classRing_1a0ed22778579e271562469b62c1ed5230" kind="function"><name>Ring</name></member>
+    <member refid="classRing_1a515a41c0803bcdd921712d6f5047e101" kind="function"><name>~Ring</name></member>
+    <member refid="classRing_1a4e11fdcade67b41f38a7ec4458afdd8d" kind="function"><name>setSections</name></member>
+    <member refid="classRing_1a773ec5b24a5dc39a1f5755b43c20edb6" kind="function"><name>computeGeometry</name></member>
+    <member refid="classRing_1a3dbac86733d87654134a284a800a1a28" kind="function"><name>residue</name></member>
+    <member refid="classRing_1ae5f0673944df86cdd9972fe302483883" kind="function"><name>jacobian</name></member>
+    <member refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" kind="function"><name>computeIntersection</name></member>
+    <member refid="classRing_1a844fa2f14bcf7d506f33865081543e61" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classRing_1a6f6508a51866f6189aae6a09772b7cd5" kind="function"><name>outputTable</name></member>
+    <member refid="classRing_1a3634ff6b0684ff0a0eb172751eef83a9" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classRing_1ae8851509bb69f45e300bc4772b31ca9c" kind="function"><name>outputPowerDensityFile</name></member>
+  </compound>
+  <compound refid="classSimulation" kind="class"><name>Simulation</name>
+    <member refid="classSimulation_1a3c52dfd4ea6378da86176c59ed965065" kind="variable"><name>geometries</name></member>
+    <member refid="classSimulation_1af273cc9ad9346fb889c5cc7fc899331c" kind="variable"><name>particles</name></member>
+    <member refid="classSimulation_1a3447639808f207141c6fd4bac4a9c2b2" kind="variable"><name>theoricParameters</name></member>
+    <member refid="classSimulation_1aa0a0922bc7e2355ab2980abc2320116f" kind="variable"><name>particle_shifting_x</name></member>
+    <member refid="classSimulation_1adccb9f0d23d1452528cf52ec2617486f" kind="variable"><name>particle_shifting_y</name></member>
+    <member refid="classSimulation_1a9a7b6b6bb902f5da47f33046c96c79d5" kind="variable"><name>beam_opening_x</name></member>
+    <member refid="classSimulation_1a626fc6936196d4b9bf91d61a645b4742" kind="variable"><name>beam_opening_y</name></member>
+    <member refid="classSimulation_1a4de39574c7ecb1b348e169ff31eeadb2" kind="variable"><name>beam_steering_x</name></member>
+    <member refid="classSimulation_1af599fc9d8ff00176f5922b4e5f803bbf" kind="variable"><name>beam_steering_y</name></member>
+    <member refid="classSimulation_1a62326fdf8b0fe684afa0f77b30568512" kind="variable"><name>backscattering_section_distance</name></member>
+    <member refid="classSimulation_1a09ce01aeccaec5695b922f42a1ee3f6b" kind="variable"><name>output_backscattering</name></member>
+    <member refid="classSimulation_1a5b224cc5b36bcc8eb29689aff223de41" kind="function"><name>Simulation</name></member>
+    <member refid="classSimulation_1a80fad3f57dfaf195a36f7bc49bc88279" kind="function"><name>~Simulation</name></member>
+    <member refid="classSimulation_1a7da40348e01c14777853a5f9e3f4d0e9" kind="function"><name>read</name></member>
+    <member refid="classSimulation_1add5f5f74f34dc0a7e1fe2578f071fb07" kind="function"><name>compute</name></member>
+    <member refid="classSimulation_1ad1f0c2b7ad3b17c6bd4899624716ed88" kind="function"><name>output</name></member>
+    <member refid="classSimulation_1a58e2f5df9b1cf183c57d111e0f6b9bd4" kind="function"><name>readGeometry</name></member>
+    <member refid="classSimulation_1aac74751d2a1896a9891194c4d53c48a6" kind="function"><name>readParticles</name></member>
+    <member refid="classSimulation_1a180745bb1b37f93c528d1bb65d77d673" kind="function"><name>createParticles</name></member>
+    <member refid="classSimulation_1aadc688f305329c5a101fe7f0fbfc08d3" kind="function"><name>createDivertedParticles</name></member>
+    <member refid="classSimulation_1a69b4ee4d4c271298b9f61fc98ee122b2" kind="function"><name>readBeamParameters</name></member>
+    <member refid="classSimulation_1a1f7ac181972b3d798b17d7f4ace6ad8b" kind="function"><name>readDivertedParameters</name></member>
+  </compound>
+  <compound refid="classTwoPlates" kind="class"><name>TwoPlates</name>
+    <member refid="classTwoPlates_1aeb2774b6c8278733d13fb38fd99e0457" kind="variable"><name>initSep</name></member>
+    <member refid="classTwoPlates_1a4edfa95628ad1bcbd5af91aae6605aec" kind="variable"><name>orientation</name></member>
+    <member refid="classTwoPlates_1af60449c834d8ac116206c162c61cc829" kind="variable"><name>width</name></member>
+    <member refid="classTwoPlates_1abcbc650696c2a076984cced444c6acaa" kind="variable"><name>slope</name></member>
+    <member refid="classTwoPlates_1a48de343ae98f8a8307661292a06021ef" kind="variable"><name>energies</name></member>
+    <member refid="classTwoPlates_1a45e58b3382191936641fd96a175d98bf" kind="variable"><name>powers</name></member>
+    <member refid="classTwoPlates_1a1d72728b08b160048e68c2f8faac309f" kind="variable"><name>x</name></member>
+    <member refid="classTwoPlates_1a11af5c6151378ee12e2e203a522689db" kind="variable"><name>y</name></member>
+    <member refid="classTwoPlates_1a83dbc696598622d32c10b67af9879f72" kind="variable"><name>z</name></member>
+    <member refid="classTwoPlates_1adb19dec8048029b06c6a65cf1d93e48c" kind="variable"><name>vx</name></member>
+    <member refid="classTwoPlates_1a81a1227b97596c4b6b18c8ef2895f44b" kind="variable"><name>vy</name></member>
+    <member refid="classTwoPlates_1ad88ce89c445cdb8a333e2dc8b1286550" kind="variable"><name>vz</name></member>
+    <member refid="classTwoPlates_1a66e45a6d02f3b6026f8dd99ff5d4653e" kind="function"><name>TwoPlates</name></member>
+    <member refid="classTwoPlates_1ac1dfa39d5a74aad3e53b12c4bbdcff4e" kind="function"><name>TwoPlates</name></member>
+    <member refid="classTwoPlates_1af74b10840a05812ceb5aa94ceb7a76f6" kind="function"><name>~TwoPlates</name></member>
+    <member refid="classTwoPlates_1a23168c87f9097b2c1a4fa8cac4b61049" kind="function"><name>setSections</name></member>
+    <member refid="classTwoPlates_1a68c5911a0b3c24f59c3df0335f1e6c94" kind="function"><name>computeEnergy</name></member>
+    <member refid="classTwoPlates_1a890d6b6ec49ff021d5d34bf1c2a83099" kind="function"><name>computeGeometry</name></member>
+    <member refid="classTwoPlates_1a71bf9bd3453782adb97e94addabe23ec" kind="function"><name>residue</name></member>
+    <member refid="classTwoPlates_1ad1ae0ed441b0ec1f7650501f648ebfdb" kind="function"><name>jacobian</name></member>
+    <member refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" kind="function"><name>computeIntersection</name></member>
+    <member refid="classTwoPlates_1a30eb56de2071f12cb1405057dda35329" kind="function"><name>computeNodalPower</name></member>
+    <member refid="classTwoPlates_1a8688d978fd1845b370d3fc14d8737e9e" kind="function"><name>outputTable</name></member>
+    <member refid="classTwoPlates_1a978c078774fe74e99b8f4064a6126e84" kind="function"><name>outputPowerFile</name></member>
+    <member refid="classTwoPlates_1aec5195987f06df32b1bd1c4c3c0068f9" kind="function"><name>outputPowerDensityFile</name></member>
+    <member refid="classTwoPlates_1a6bff308b65ed2bfe33098ae210626b30" kind="function"><name>getLength</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="cone_8cpp" kind="file"><name>cone.cpp</name>
+  </compound>
+  <compound refid="cone_8h" kind="file"><name>cone.h</name>
+  </compound>
+  <compound refid="cone2-bak_8cpp" kind="file"><name>cone2-bak.cpp</name>
+  </compound>
+  <compound refid="cone2-bak_8h" kind="file"><name>cone2-bak.h</name>
+  </compound>
+  <compound refid="cone2_8cpp" kind="file"><name>cone2.cpp</name>
+  </compound>
+  <compound refid="cone2_8h" kind="file"><name>cone2.h</name>
+  </compound>
+  <compound refid="cylinder_8cpp" kind="file"><name>cylinder.cpp</name>
+  </compound>
+  <compound refid="cylinder_8h" kind="file"><name>cylinder.h</name>
+  </compound>
+  <compound refid="element_8cpp" kind="file"><name>element.cpp</name>
+  </compound>
+  <compound refid="element_8h" kind="file"><name>element.h</name>
+  </compound>
+  <compound refid="geometry_8cpp" kind="file"><name>geometry.cpp</name>
+  </compound>
+  <compound refid="geometry_8h" kind="file"><name>geometry.h</name>
+  </compound>
+  <compound refid="heatsurf_8cpp" kind="file"><name>heatsurf.cpp</name>
+    <member refid="heatsurf_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="node_8cpp" kind="file"><name>node.cpp</name>
+  </compound>
+  <compound refid="node_8h" kind="file"><name>node.h</name>
+  </compound>
+  <compound refid="ogive_8cpp" kind="file"><name>ogive.cpp</name>
+  </compound>
+  <compound refid="ogive_8h" kind="file"><name>ogive.h</name>
+  </compound>
+  <compound refid="particle_8cpp" kind="file"><name>particle.cpp</name>
+  </compound>
+  <compound refid="particle_8h" kind="file"><name>particle.h</name>
+  </compound>
+  <compound refid="ring_8cpp" kind="file"><name>ring.cpp</name>
+  </compound>
+  <compound refid="ring_8h" kind="file"><name>ring.h</name>
+  </compound>
+  <compound refid="simulation_8cpp" kind="file"><name>simulation.cpp</name>
+  </compound>
+  <compound refid="simulation_8h" kind="file"><name>simulation.h</name>
+  </compound>
+  <compound refid="twoplates_8cpp" kind="file"><name>twoplates.cpp</name>
+  </compound>
+  <compound refid="twoplates_8h" kind="file"><name>twoplates.h</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

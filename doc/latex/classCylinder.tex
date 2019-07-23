@@ -1,69 +1,225 @@
-\hypertarget{classCylinder}{
-\section{Cylinder Class Reference}
+\hypertarget{classCylinder}{\section{Cylinder Class Reference}
 \label{classCylinder}\index{Cylinder@{Cylinder}}
 }
-{\tt \#include $<$/home/dani/Programs/beam\_\-dump/src/cylinder.h$>$}
 
-Inheritance diagram for Cylinder:\nopagebreak
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/cylinder.\-h$>$}
+
+
+
+Inheritance diagram for Cylinder\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=55pt]{classCylinder__inherit__graph}
+\includegraphics[width=138pt]{classCylinder__inherit__graph}
 \end{center}
 \end{figure}
-Collaboration diagram for Cylinder:\nopagebreak
+
+
+Collaboration diagram for Cylinder\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=55pt]{classCylinder__coll__graph}
+\includegraphics[width=138pt]{classCylinder__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classCylinder_01c84509dbd376b584fa10457fe83887}{
-\textbf{Cylinder} (std::string, double, double, int)}
-\label{classCylinder_01c84509dbd376b584fa10457fe83887}
-
+\hyperlink{classCylinder_a01dc978cb576f834b9545e43d4dad2a2}{Cylinder} ()
 \item 
-\hypertarget{classCylinder_87e9b764e94ec9c521be15f830274d48}{
-void \textbf{computeEnergy} (double, std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&)}
-\label{classCylinder_87e9b764e94ec9c521be15f830274d48}
-
+\hyperlink{classCylinder_af6f22d1e11f65fc230f270c16e25385a}{Cylinder} (std\-::string, double, double, double, int)
 \item 
-\hypertarget{classCylinder_d75a4b81272ef8b27b3163bf0aa49efd}{
-void \textbf{setSections} (double)}
-\label{classCylinder_d75a4b81272ef8b27b3163bf0aa49efd}
-
+\hyperlink{classCylinder_a05ab556f0ae3cd6e99d9d1f3caca80b3}{$\sim$\-Cylinder} ()
 \item 
-\hypertarget{classCylinder_657d003c8da54cb8d5cf78bbe210cafa}{
-void \textbf{computeGeometry} ()}
-\label{classCylinder_657d003c8da54cb8d5cf78bbe210cafa}
-
+void \hyperlink{classCylinder_ad75a4b81272ef8b27b3163bf0aa49efd}{set\-Sections} (double)
 \item 
-\hypertarget{classCylinder_33abcb99e6c881b867a0bb6c0dfcabae}{
-void \textbf{outputTable} ()}
-\label{classCylinder_33abcb99e6c881b867a0bb6c0dfcabae}
-
+void \hyperlink{classCylinder_a657d003c8da54cb8d5cf78bbe210cafa}{compute\-Geometry} ()
 \item 
-\hypertarget{classCylinder_15f4d90cc00191375d58051f56253ea7}{
-void \textbf{outputEnergyFile} ()}
-\label{classCylinder_15f4d90cc00191375d58051f56253ea7}
-
+void \hyperlink{classCylinder_a76a83ba9168f8a9bc30bf0a85250f984}{residue} (lmx\-::\-Vector$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
 \item 
-\hypertarget{classCylinder_92097fde3169a90bd2e6cd8fa9ca297e}{
-void \textbf{outputPowerFile} ()}
-\label{classCylinder_92097fde3169a90bd2e6cd8fa9ca297e}
-
-\end{CompactItemize}
+void \hyperlink{classCylinder_a27c6e57d5f10da5fc660adf731960d6f}{jacobian} (lmx\-::\-Matrix$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classCylinder_a3785595915b105f5e387a4b76d0d6ee9}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classCylinder_a950b48028c934fa9f01cb3ae40422aef}{compute\-Nodal\-Power} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classCylinder_a33abcb99e6c881b867a0bb6c0dfcabae}{output\-Table} ()
+\item 
+void \hyperlink{classCylinder_ab2481ec0318f4686fd7787696230b4bd}{output\-Power\-File} (int)
+\item 
+void \hyperlink{classCylinder_a82078ecb74fbe07bed3de4040be73125}{output\-Power\-Density\-File} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-\begin{Desc}
-\item[Author:]Daniel Iglesias $<$\href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.iglesias@ciemat.es}$>$ \end{Desc}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
 
 
-The documentation for this class was generated from the following files:\begin{CompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCylinder_a01dc978cb576f834b9545e43d4dad2a2}{\index{Cylinder@{Cylinder}!Cylinder@{Cylinder}}
+\index{Cylinder@{Cylinder}!Cylinder@{Cylinder}}
+\subsubsection[{Cylinder}]{\setlength{\rightskip}{0pt plus 5cm}Cylinder\-::\-Cylinder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCylinder_a01dc978cb576f834b9545e43d4dad2a2}
+\hypertarget{classCylinder_af6f22d1e11f65fc230f270c16e25385a}{\index{Cylinder@{Cylinder}!Cylinder@{Cylinder}}
+\index{Cylinder@{Cylinder}!Cylinder@{Cylinder}}
+\subsubsection[{Cylinder}]{\setlength{\rightskip}{0pt plus 5cm}Cylinder\-::\-Cylinder (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-\_\-in, }
+\item[{double}]{par0\-\_\-in, }
+\item[{double}]{par1\-\_\-in, }
+\item[{double}]{par2\-\_\-in, }
+\item[{int}]{par3\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classCylinder_af6f22d1e11f65fc230f270c16e25385a}
+
+
+References Geometry\-::grid\-Width.
+
+\hypertarget{classCylinder_a05ab556f0ae3cd6e99d9d1f3caca80b3}{\index{Cylinder@{Cylinder}!$\sim$\-Cylinder@{$\sim$\-Cylinder}}
+\index{$\sim$\-Cylinder@{$\sim$\-Cylinder}!Cylinder@{Cylinder}}
+\subsubsection[{$\sim$\-Cylinder}]{\setlength{\rightskip}{0pt plus 5cm}Cylinder\-::$\sim$\-Cylinder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCylinder_a05ab556f0ae3cd6e99d9d1f3caca80b3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCylinder_a657d003c8da54cb8d5cf78bbe210cafa}{\index{Cylinder@{Cylinder}!compute\-Geometry@{compute\-Geometry}}
+\index{compute\-Geometry@{compute\-Geometry}!Cylinder@{Cylinder}}
+\subsubsection[{compute\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::compute\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_a657d003c8da54cb8d5cf78bbe210cafa}
+
+
+Implements \hyperlink{classGeometry_a3e77ac889d1e440c24efbde630aa1933}{Geometry}.
+
+
+
+References Geometry\-::elements, Geometry\-::grid, Geometry\-::grid\-Points, Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classCylinder_a3785595915b105f5e387a4b76d0d6ee9}{\index{Cylinder@{Cylinder}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!Cylinder@{Cylinder}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_a3785595915b105f5e387a4b76d0d6ee9}
+
+
+Implements \hyperlink{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}{Geometry}.
+
+
+
+References Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Particle\-::get\-Z(), Particle\-::get\-Zdiv(), jacobian(), Geometry\-::param\-Trajectories, and residue().
+
+\hypertarget{classCylinder_a950b48028c934fa9f01cb3ae40422aef}{\index{Cylinder@{Cylinder}!compute\-Nodal\-Power@{compute\-Nodal\-Power}}
+\index{compute\-Nodal\-Power@{compute\-Nodal\-Power}!Cylinder@{Cylinder}}
+\subsubsection[{compute\-Nodal\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::compute\-Nodal\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_a950b48028c934fa9f01cb3ae40422aef}
+
+
+Implements \hyperlink{classGeometry_af60650f8ce6d5a220928ccd7395120df}{Geometry}.
+
+
+
+References Particle\-::get\-Energy(), Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Particle\-::get\-Z(), Geometry\-::length, Geometry\-::nodes, Geometry\-::param\-Trajectories, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classCylinder_a27c6e57d5f10da5fc660adf731960d6f}{\index{Cylinder@{Cylinder}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Cylinder@{Cylinder}}
+\subsubsection[{jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::jacobian (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Matrix$<$ double $>$ \&}]{jac, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classCylinder_a27c6e57d5f10da5fc660adf731960d6f}
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classCylinder_a82078ecb74fbe07bed3de4040be73125}{\index{Cylinder@{Cylinder}!output\-Power\-Density\-File@{output\-Power\-Density\-File}}
+\index{output\-Power\-Density\-File@{output\-Power\-Density\-File}!Cylinder@{Cylinder}}
+\subsubsection[{output\-Power\-Density\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::output\-Power\-Density\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_a82078ecb74fbe07bed3de4040be73125}
+
+
+Implements \hyperlink{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classCylinder_ab2481ec0318f4686fd7787696230b4bd}{\index{Cylinder@{Cylinder}!output\-Power\-File@{output\-Power\-File}}
+\index{output\-Power\-File@{output\-Power\-File}!Cylinder@{Cylinder}}
+\subsubsection[{output\-Power\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::output\-Power\-File (
+\begin{DoxyParamCaption}
+\item[{int}]{particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_ab2481ec0318f4686fd7787696230b4bd}
+
+
+Implements \hyperlink{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, and Geometry\-::sectors.
+
+\hypertarget{classCylinder_a33abcb99e6c881b867a0bb6c0dfcabae}{\index{Cylinder@{Cylinder}!output\-Table@{output\-Table}}
+\index{output\-Table@{output\-Table}!Cylinder@{Cylinder}}
+\subsubsection[{output\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::output\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_a33abcb99e6c881b867a0bb6c0dfcabae}
+
+
+Implements \hyperlink{classGeometry_a60e1424a222ba59284b81812aff34148}{Geometry}.
+
+\hypertarget{classCylinder_a76a83ba9168f8a9bc30bf0a85250f984}{\index{Cylinder@{Cylinder}!residue@{residue}}
+\index{residue@{residue}!Cylinder@{Cylinder}}
+\subsubsection[{residue}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::residue (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{res, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classCylinder_a76a83ba9168f8a9bc30bf0a85250f984}
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classCylinder_ad75a4b81272ef8b27b3163bf0aa49efd}{\index{Cylinder@{Cylinder}!set\-Sections@{set\-Sections}}
+\index{set\-Sections@{set\-Sections}!Cylinder@{Cylinder}}
+\subsubsection[{set\-Sections}]{\setlength{\rightskip}{0pt plus 5cm}void Cylinder\-::set\-Sections (
+\begin{DoxyParamCaption}
+\item[{double}]{distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCylinder_ad75a4b81272ef8b27b3163bf0aa49efd}
+
+
+Implements \hyperlink{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}{Geometry}.
+
+
+
+References Geometry\-::length, and Geometry\-::sections.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{cylinder_8h}{cylinder.h}\item 
-src/cylinder.cpp\end{CompactItemize}
+src/\hyperlink{cylinder_8h}{cylinder.\-h}\item 
+src/\hyperlink{cylinder_8cpp}{cylinder.\-cpp}\end{DoxyCompactItemize}

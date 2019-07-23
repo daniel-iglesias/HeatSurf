@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1ExactStopwatch" kind="class" prot="public">
+    <compoundname>lmx::ExactStopwatch</compoundname>
+    <includes refid="lmx__base__stopwatch_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1af1103def5c387b1ef43aae20f1b8ecd2" prot="private" static="no" mutable="no">
+        <type>std::clock_t</type>
+        <definition>std::clock_t lmx::ExactStopwatch::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="238" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1ae1d5f5664d2304ea6bed42f6fceb7157" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::ExactStopwatch::total_time</definition>
+        <argsstring></argsstring>
+        <name>total_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="239" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1a2ff29a4aed1de87df37e2a930e5d8119" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::ExactStopwatch::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="240" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1aa96930e45b8bad40e14233bdc75993f4" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool lmx::ExactStopwatch::new_out</definition>
+        <argsstring></argsstring>
+        <name>new_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="241" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1abc386b66d2192e88c50f235f0f3bfc11" prot="private" static="no" mutable="no">
+        <type>std::ostream *</type>
+        <definition>std::ostream* lmx::ExactStopwatch::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="242" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1ad1d7c63c7974329db332d51ad96a2c97" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long lmx::ExactStopwatch::t1</definition>
+        <argsstring></argsstring>
+        <name>t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="247" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1ExactStopwatch_1a59daf5d9a433fb2344f1ffa01749982c" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long lmx::ExactStopwatch::t2</definition>
+        <argsstring></argsstring>
+        <name>t2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="248" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1ExactStopwatch_1aa12454debea1b8a06ab341a97d512151" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::ExactStopwatch::ExactStopwatch</definition>
+        <argsstring>()</argsstring>
+        <name>ExactStopwatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="155" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="155" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1ExactStopwatch_1a9e32f35010bfa1d8458a478c07eb3004" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::ExactStopwatch::ExactStopwatch</definition>
+        <argsstring>(char *file_name)</argsstring>
+        <name>ExactStopwatch</name>
+        <param>
+          <type>char *</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with name of file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="173" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="173" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1ExactStopwatch_1adc45924bf093d04497e478c5ec90ae7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::ExactStopwatch::~ExactStopwatch</definition>
+        <argsstring>()</argsstring>
+        <name>~ExactStopwatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="184" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="184" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1ExactStopwatch_1aba5aa37410f9774546788b255d52c453" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lmx::ExactStopwatch::getTime</definition>
+        <argsstring>()</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time count access.</para><para><simplesect kind="return"><para>value of the counter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="216" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="216" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1ExactStopwatch_1adb2ba9de970c1ad9b7ba536eced4121a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::ExactStopwatch::setQuiet</definition>
+        <argsstring>()</argsstring>
+        <name>setQuiet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns off the default time info message. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="232" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="232" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class <ref refid="classlmx_1_1ExactStopwatch" kindref="compound">ExactStopwatch</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is better than class <ref refid="classlmx_1_1Stopwatch" kindref="compound">Stopwatch</ref> when using parallelized executables because it uses the system&apos;s time instead of counting processor clicks. The usage is very simple: just put the operations you want to measure inside a block (use braces) and create an empty <ref refid="classlmx_1_1Stopwatch" kindref="compound">Stopwatch</ref> object before any operation takes place.</para><para>WARNING: Ther might be some portability issues.</para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" line="148" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_base_stopwatch.h" bodystart="147" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1ExactStopwatch_1aa12454debea1b8a06ab341a97d512151" prot="public" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>ExactStopwatch</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1a9e32f35010bfa1d8458a478c07eb3004" prot="public" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>ExactStopwatch</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1aba5aa37410f9774546788b255d52c453" prot="public" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>getTime</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1aa96930e45b8bad40e14233bdc75993f4" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>new_out</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1abc386b66d2192e88c50f235f0f3bfc11" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>out</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1adb2ba9de970c1ad9b7ba536eced4121a" prot="public" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>setQuiet</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1af1103def5c387b1ef43aae20f1b8ecd2" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>start</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1ad1d7c63c7974329db332d51ad96a2c97" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>t1</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1a59daf5d9a433fb2344f1ffa01749982c" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>t2</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1ae1d5f5664d2304ea6bed42f6fceb7157" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>total_time</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1a2ff29a4aed1de87df37e2a930e5d8119" prot="private" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>verbose</name></member>
+      <member refid="classlmx_1_1ExactStopwatch_1adc45924bf093d04497e478c5ec90ae7d" prot="public" virt="non-virtual"><scope>lmx::ExactStopwatch</scope><name>~ExactStopwatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

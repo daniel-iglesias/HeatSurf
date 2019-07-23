@@ -1,210 +1,695 @@
-\hypertarget{classGeometry}{
-\section{Geometry Class Reference}
+\hypertarget{classGeometry}{\section{Geometry Class Reference}
 \label{classGeometry}\index{Geometry@{Geometry}}
 }
-{\tt \#include $<$/home/dani/Programs/beam\_\-dump/src/geometry.h$>$}
 
-Inheritance diagram for Geometry:\nopagebreak
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/geometry.\-h$>$}
+
+
+
+Inheritance diagram for Geometry\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=123pt]{classGeometry__inherit__graph}
+\includegraphics[width=350pt]{classGeometry__inherit__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classGeometry_9f0fe2c1f7e8a6b0d6454f5065b4e606}{
-\textbf{Geometry} (std::string, int)}
-\label{classGeometry_9f0fe2c1f7e8a6b0d6454f5065b4e606}
-
+\hyperlink{classGeometry_a4c301c163c63d21ed08c17b0f4e131d3}{Geometry} ()
 \item 
-\hypertarget{classGeometry_ee462b9ebbf2e943f8199d5ee8facc8c}{
-virtual void \textbf{computeEnergy} (double, std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&)=0}
-\label{classGeometry_ee462b9ebbf2e943f8199d5ee8facc8c}
-
+\hyperlink{classGeometry_a41098c2bf13aa50be3fb767a8adf1372}{Geometry} (std\-::string, double, int, double)
 \item 
-\hypertarget{classGeometry_63a40c7e8ca800baa0203850bc96b295}{
-virtual void \textbf{computeIncrements} ()}
-\label{classGeometry_63a40c7e8ca800baa0203850bc96b295}
-
+virtual \hyperlink{classGeometry_ad55e832122ab3a2833dcaa6507867678}{$\sim$\-Geometry} ()
 \item 
-\hypertarget{classGeometry_ab2d4db916d7c8541af6624a82b2d4df}{
-virtual void \textbf{setSections} (double)=0}
-\label{classGeometry_ab2d4db916d7c8541af6624a82b2d4df}
-
+virtual void \hyperlink{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}{set\-Sections} (double)=0
 \item 
-\hypertarget{classGeometry_3e77ac889d1e440c24efbde630aa1933}{
-virtual void \textbf{computeGeometry} ()=0}
-\label{classGeometry_3e77ac889d1e440c24efbde630aa1933}
-
+virtual void \hyperlink{classGeometry_a3e77ac889d1e440c24efbde630aa1933}{compute\-Geometry} ()=0
 \item 
-\hypertarget{classGeometry_8ba01f4e4d4c0bf0860eb948c6567642}{
-virtual void \textbf{computeNodalEnergy} ()}
-\label{classGeometry_8ba01f4e4d4c0bf0860eb948c6567642}
-
+void \hyperlink{classGeometry_ad8ae3b4a3563c1592ffcb06f135ed535}{compute\-Grid3\-D} ()
 \item 
-\hypertarget{classGeometry_340099102a94c6fcecd1b9a4f34f9d1e}{
-virtual void \textbf{computeNodalPower} ()}
-\label{classGeometry_340099102a94c6fcecd1b9a4f34f9d1e}
-
+virtual void \hyperlink{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)=0
 \item 
-\hypertarget{classGeometry_f5fa359d8794cc8d54e0aeafdd3a50e3}{
-virtual void \textbf{computeNodalPower} (std::vector$<$ double $>$ \&)}
-\label{classGeometry_f5fa359d8794cc8d54e0aeafdd3a50e3}
-
+virtual void \hyperlink{classGeometry_af60650f8ce6d5a220928ccd7395120df}{compute\-Nodal\-Power} (\hyperlink{classParticle}{Particle} $\ast$)=0
 \item 
-\hypertarget{classGeometry_4f2e62b82b91402b4f9c8fbf26048974}{
-void \textbf{drawGeometry} ()}
-\label{classGeometry_4f2e62b82b91402b4f9c8fbf26048974}
-
+void \hyperlink{classGeometry_adc19b7de33b16179c874dc536f58c31b}{compute\-Power\-Density} (int)
 \item 
-\hypertarget{classGeometry_c19e292e9134717046f74f60ec1f8a97}{
-void \textbf{drawScalar} ()}
-\label{classGeometry_c19e292e9134717046f74f60ec1f8a97}
-
+void \hyperlink{classGeometry_a4f2e62b82b91402b4f9c8fbf26048974}{draw\-Geometry} ()
 \item 
-\hypertarget{classGeometry_e9a734546513a78cbf653ed190f5b6df}{
-virtual void \textbf{outputEnergyFile} ()=0}
-\label{classGeometry_e9a734546513a78cbf653ed190f5b6df}
-
+void \hyperlink{classGeometry_aa87a5cf1d8652d217834df05ed8cc1e4}{draw\-Scalar} (bool)
 \item 
-\hypertarget{classGeometry_b01547dec4f04ba548f85f1b2ca4cebf}{
-virtual void \textbf{outputPowerFile} ()=0}
-\label{classGeometry_b01547dec4f04ba548f85f1b2ca4cebf}
-
+void \hyperlink{classGeometry_afcf8201c8ef7f3999f70af53a8034a49}{draw\-Grid} ()
 \item 
-\hypertarget{classGeometry_60e1424a222ba59284b81812aff34148}{
-virtual void \textbf{outputTable} ()=0}
-\label{classGeometry_60e1424a222ba59284b81812aff34148}
-
+void \hyperlink{classGeometry_a95d761cd11aa2261380e10b66c261670}{draw\-Grid\-Scalar} (bool)
 \item 
-\hypertarget{classGeometry_565f5b7736c4b0894732900199903d54}{
-std::string \textbf{getType} ()}
-\label{classGeometry_565f5b7736c4b0894732900199903d54}
-
-\end{CompactItemize}
+virtual void \hyperlink{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}{output\-Power\-File} (int)=0
+\item 
+virtual void \hyperlink{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}{output\-Power\-Density\-File} ()=0
+\item 
+virtual void \hyperlink{classGeometry_a60e1424a222ba59284b81812aff34148}{output\-Table} ()=0
+\item 
+std\-::string \hyperlink{classGeometry_a565f5b7736c4b0894732900199903d54}{get\-Type} ()
+\item 
+void \hyperlink{classGeometry_a1324967baeb20a489a913a5bd854aa79}{output\-Ansys3\-D} ()
+\item 
+void \hyperlink{classGeometry_a966a7feaea5c6fe2814229f0c54786db}{output\-V\-T\-Kfiles} ()
+\item 
+void \hyperlink{classGeometry_aeeebae1f3110d179f2be42d5ebcfea67}{output\-Backscattering} (double)
+\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classGeometry_734ed6644e4e3b98f157e6707c30069a}{
-std::string \textbf{type}}
-\label{classGeometry_734ed6644e4e3b98f157e6707c30069a}
-
+std\-::string \hyperlink{classGeometry_a734ed6644e4e3b98f157e6707c30069a}{type}
 \item 
-\hypertarget{classGeometry_0efc4bf9252077abca96c1c198eefa33}{
-int \textbf{sections}}
-\label{classGeometry_0efc4bf9252077abca96c1c198eefa33}
-
+int \hyperlink{classGeometry_a0efc4bf9252077abca96c1c198eefa33}{sections}
 \item 
-\hypertarget{classGeometry_5e34644bfae4c1df92cb6bf98a8c62c7}{
-int \textbf{sectors}}
-\label{classGeometry_5e34644bfae4c1df92cb6bf98a8c62c7}
-
+int \hyperlink{classGeometry_a296e0b45bd0e03ccdcee990cd1ee6ccb}{sections3\-D}
 \item 
-\hypertarget{classGeometry_1a43a92c349f4ce1f2dc2438bd6cbe1e}{
-double \textbf{slope}}
-\label{classGeometry_1a43a92c349f4ce1f2dc2438bd6cbe1e}
-
+int \hyperlink{classGeometry_a5e34644bfae4c1df92cb6bf98a8c62c7}{sectors}
 \item 
-\hypertarget{classGeometry_89deb9b2585c4f7b1f47c6568e78ba54}{
-std::map$<$ double, std::vector$<$ double $>$ $>$ \textbf{energies}}
-\label{classGeometry_89deb9b2585c4f7b1f47c6568e78ba54}
-
+int \hyperlink{classGeometry_a910a84dcf141a4f6eb3f565ac69339b6}{sectors3\-D}
 \item 
-\hypertarget{classGeometry_6babe7f0fe2ceaf892042432c75c17ca}{
-std::map$<$ double, std::vector$<$ double $>$ $>$ \textbf{powers}}
-\label{classGeometry_6babe7f0fe2ceaf892042432c75c17ca}
-
+double \hyperlink{classGeometry_a755ef6125e306d96ba8b4a01f3593b66}{z0}
 \item 
-\hypertarget{classGeometry_9f5642ca54e0353b871d733e25ccc56e}{
-std::map$<$ int, \hyperlink{classNode}{Node} $\ast$ $>$ \textbf{nodes}}
-\label{classGeometry_9f5642ca54e0353b871d733e25ccc56e}
-
+double \hyperlink{classGeometry_a83cd2f4ce607b1b70227780181b197c6}{length}
 \item 
-\hypertarget{classGeometry_cef6e83971679a9c4672c3b610acb58e}{
-std::vector$<$ \hyperlink{classElement}{Element} $\ast$ $>$ \textbf{elements}}
-\label{classGeometry_cef6e83971679a9c4672c3b610acb58e}
-
+double \hyperlink{classGeometry_a047dd3be42ddff67aa9f8d494e7e8568}{grid\-Width}
 \item 
-\hypertarget{classGeometry_ed9f7f434ae099a62be5c20f9915be90}{
-std::string \textbf{plotTitle}}
-\label{classGeometry_ed9f7f434ae099a62be5c20f9915be90}
-
+double \hyperlink{classGeometry_aaddc1973a36683418ff6c00fb9a0e200}{grid\-Spacing}
 \item 
-\hypertarget{classGeometry_ed47a80e867e618e98272e830d297deb}{
-vtkPoints $\ast$ \textbf{gridPoints}}
-\label{classGeometry_ed47a80e867e618e98272e830d297deb}
-
+std\-::vector$<$ double $>$ \hyperlink{classGeometry_a90ddae3ca87d3c358e2f63611c244be7}{param\-Trajectories}
 \item 
-\hypertarget{classGeometry_49e66de69aa22b88759e903e1ae06c9b}{
-vtkFloatArray $\ast$ \textbf{scalar}}
-\label{classGeometry_49e66de69aa22b88759e903e1ae06c9b}
-
+std\-::map$<$ int, \hyperlink{classNode}{Node} $\ast$ $>$ \hyperlink{classGeometry_a9f5642ca54e0353b871d733e25ccc56e}{nodes}
 \item 
-\hypertarget{classGeometry_ebabda9f0c07ecb986195857913b4ee8}{
-vtkUnstructuredGrid $\ast$ \textbf{grid}}
-\label{classGeometry_ebabda9f0c07ecb986195857913b4ee8}
-
+std\-::map$<$ int, \hyperlink{classNode}{Node} $\ast$ $>$ \hyperlink{classGeometry_a64335b4700461be035cf7e89b7782cb6}{grid3\-Dnodes}
 \item 
-\hypertarget{classGeometry_22b4feeba28c4834bc9ac42e838cb7bb}{
-vtkRenderWindow $\ast$ \textbf{renWin}}
-\label{classGeometry_22b4feeba28c4834bc9ac42e838cb7bb}
-
+std\-::vector$<$ \hyperlink{classElement}{Element} $\ast$ $>$ \hyperlink{classGeometry_acef6e83971679a9c4672c3b610acb58e}{elements}
 \item 
-\hypertarget{classGeometry_994d1c4d7c8ce0622fcf7a96b5d234af}{
-vtkInteractorStyleTrackballCamera $\ast$ \textbf{style}}
-\label{classGeometry_994d1c4d7c8ce0622fcf7a96b5d234af}
-
+std\-::vector$<$ \hyperlink{classElement}{Element} $\ast$ $>$ \hyperlink{classGeometry_a08864bd3e1225949b6617f94ab1af9ab}{grid3\-D}
 \item 
-\hypertarget{classGeometry_6563f9a823d1dcee59554a5d093d6c73}{
-vtkRenderWindowInteractor $\ast$ \textbf{iren}}
-\label{classGeometry_6563f9a823d1dcee59554a5d093d6c73}
-
+std\-::string \hyperlink{classGeometry_aed9f7f434ae099a62be5c20f9915be90}{plot\-Title}
 \item 
-\hypertarget{classGeometry_0893a3a686dc14327816c9648efe8662}{
-vtkRenderer $\ast$ \textbf{ren}}
-\label{classGeometry_0893a3a686dc14327816c9648efe8662}
-
+vtk\-Points $\ast$ \hyperlink{classGeometry_aed47a80e867e618e98272e830d297deb}{grid\-Points}
 \item 
-\hypertarget{classGeometry_f314d57676056969da57788a60954926}{
-vtkDataSetMapper $\ast$ \textbf{aDataSetMapper}}
-\label{classGeometry_f314d57676056969da57788a60954926}
-
+vtk\-Float\-Array $\ast$ \hyperlink{classGeometry_a49e66de69aa22b88759e903e1ae06c9b}{scalar}
 \item 
-\hypertarget{classGeometry_86a213e57fee0c578d220d8015c2891b}{
-vtkActor $\ast$ \textbf{anActor}}
-\label{classGeometry_86a213e57fee0c578d220d8015c2891b}
-
+vtk\-Unstructured\-Grid $\ast$ \hyperlink{classGeometry_aebabda9f0c07ecb986195857913b4ee8}{grid}
 \item 
-\hypertarget{classGeometry_aabe40cbb12206d80e4376367568934b}{
-vtkLookupTable $\ast$ \textbf{table}}
-\label{classGeometry_aabe40cbb12206d80e4376367568934b}
-
+vtk\-Points $\ast$ \hyperlink{classGeometry_afd79778e7c244df18be79a39419190c8}{grid3\-D\-Points}
 \item 
-\hypertarget{classGeometry_f87eb1e4ab0922d0475afc67061ae30a}{
-vtkScalarBarActor $\ast$ \textbf{barActor}}
-\label{classGeometry_f87eb1e4ab0922d0475afc67061ae30a}
-
+vtk\-Float\-Array $\ast$ \hyperlink{classGeometry_a3516628b6f6b85e9d0e025a768e6bd59}{grid3\-Dscalar}
 \item 
-\hypertarget{classGeometry_17c7a286dc0a428e8a32db4c8d54bb5e}{
-vtkAxesActor $\ast$ \textbf{axes}}
-\label{classGeometry_17c7a286dc0a428e8a32db4c8d54bb5e}
-
+vtk\-Unstructured\-Grid $\ast$ \hyperlink{classGeometry_a3111987cb4c958ed83fd09a4cdc81ad0}{grid\-Cubes}
 \item 
-\hypertarget{classGeometry_d611799bc0eb8825c963bd6d56181d8c}{
-vtkOrientationMarkerWidget $\ast$ \textbf{widget}}
-\label{classGeometry_d611799bc0eb8825c963bd6d56181d8c}
-
-\end{CompactItemize}
+vtk\-Render\-Window $\ast$ \hyperlink{classGeometry_a22b4feeba28c4834bc9ac42e838cb7bb}{ren\-Win}
+\item 
+vtk\-Interactor\-Style\-Trackball\-Camera $\ast$ \hyperlink{classGeometry_a994d1c4d7c8ce0622fcf7a96b5d234af}{style}
+\item 
+vtk\-Render\-Window\-Interactor $\ast$ \hyperlink{classGeometry_a6563f9a823d1dcee59554a5d093d6c73}{iren}
+\item 
+vtk\-Renderer $\ast$ \hyperlink{classGeometry_a0893a3a686dc14327816c9648efe8662}{ren}
+\item 
+vtk\-Data\-Set\-Mapper $\ast$ \hyperlink{classGeometry_af314d57676056969da57788a60954926}{a\-Data\-Set\-Mapper}
+\item 
+vtk\-Actor $\ast$ \hyperlink{classGeometry_a86a213e57fee0c578d220d8015c2891b}{an\-Actor}
+\item 
+vtk\-Render\-Window $\ast$ \hyperlink{classGeometry_af855a50f857e3aaa0ba5601daff0e73a}{grid3\-Dren\-Win}
+\item 
+vtk\-Interactor\-Style\-Trackball\-Camera $\ast$ \hyperlink{classGeometry_aac1ed80d797b14f337a0e9d3206c70c7}{grid3\-Dstyle}
+\item 
+vtk\-Render\-Window\-Interactor $\ast$ \hyperlink{classGeometry_a7db500f9e6786611a23fe22f562f0dce}{grid3\-Diren}
+\item 
+vtk\-Renderer $\ast$ \hyperlink{classGeometry_aafa37cf25f51c60ba5fa0e790994ce98}{grid3\-Dren}
+\item 
+vtk\-Data\-Set\-Mapper $\ast$ \hyperlink{classGeometry_af0f946b3abbf28a76d4c85f51cddd261}{grid3\-D\-Data\-Set\-Mapper}
+\item 
+vtk\-Actor $\ast$ \hyperlink{classGeometry_a2bf0d89ae708392842128430e08b0e32}{grid3\-D\-Actor}
+\item 
+vtk\-Lookup\-Table $\ast$ \hyperlink{classGeometry_aaabe40cbb12206d80e4376367568934b}{table}
+\item 
+vtk\-Scalar\-Bar\-Actor $\ast$ \hyperlink{classGeometry_af87eb1e4ab0922d0475afc67061ae30a}{bar\-Actor}
+\item 
+vtk\-Lookup\-Table $\ast$ \hyperlink{classGeometry_ac1594e947b2efc680e2fb82c39a554d9}{grid3\-Dtable}
+\item 
+vtk\-Scalar\-Bar\-Actor $\ast$ \hyperlink{classGeometry_af384c0e243c658c029afe53df9e59fd2}{grid3\-Dbar\-Actor}
+\item 
+vtk\-Axes\-Actor $\ast$ \hyperlink{classGeometry_a17c7a286dc0a428e8a32db4c8d54bb5e}{axes}
+\item 
+vtk\-Orientation\-Marker\-Widget $\ast$ \hyperlink{classGeometry_ad611799bc0eb8825c963bd6d56181d8c}{widget}
+\item 
+vtk\-Axes\-Actor $\ast$ \hyperlink{classGeometry_a09df01c00f88d60da5404fa9f40c01f8}{grid3\-Daxes}
+\item 
+vtk\-Orientation\-Marker\-Widget $\ast$ \hyperlink{classGeometry_ad2e8316d21178ddc0b9f1e163cf8683b}{grid3\-Dwidget}
+\item 
+vtk\-Plane $\ast$ \hyperlink{classGeometry_a79ad1de7fbe1c74e3e2226489ac7188b}{plane}
+\item 
+vtk\-Cutter $\ast$ \hyperlink{classGeometry_afa017d6536259e954e4ca10337b4353b}{plane\-Cut}
+\item 
+vtk\-Poly\-Data\-Mapper $\ast$ \hyperlink{classGeometry_ae6a74274d05291746f520af8083a26e7}{cut\-Mapper}
+\item 
+vtk\-Actor $\ast$ \hyperlink{classGeometry_a2a10ca6a0a6a4e1cdd5558830db80ec9}{cut\-Actor}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\begin{Desc}
-\item[Author:]Daniel Iglesias $<$\href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.iglesias@ciemat.es}$>$ \end{Desc}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
 
 
-The documentation for this class was generated from the following files:\begin{CompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGeometry_a4c301c163c63d21ed08c17b0f4e131d3}{\index{Geometry@{Geometry}!Geometry@{Geometry}}
+\index{Geometry@{Geometry}!Geometry@{Geometry}}
+\subsubsection[{Geometry}]{\setlength{\rightskip}{0pt plus 5cm}Geometry\-::\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_a4c301c163c63d21ed08c17b0f4e131d3}
+\hypertarget{classGeometry_a41098c2bf13aa50be3fb767a8adf1372}{\index{Geometry@{Geometry}!Geometry@{Geometry}}
+\index{Geometry@{Geometry}!Geometry@{Geometry}}
+\subsubsection[{Geometry}]{\setlength{\rightskip}{0pt plus 5cm}Geometry\-::\-Geometry (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-\_\-in, }
+\item[{double}]{z0\-\_\-in, }
+\item[{int}]{sectors\-\_\-in, }
+\item[{double}]{length\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_a41098c2bf13aa50be3fb767a8adf1372}
+\hypertarget{classGeometry_ad55e832122ab3a2833dcaa6507867678}{\index{Geometry@{Geometry}!$\sim$\-Geometry@{$\sim$\-Geometry}}
+\index{$\sim$\-Geometry@{$\sim$\-Geometry}!Geometry@{Geometry}}
+\subsubsection[{$\sim$\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}Geometry\-::$\sim$\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGeometry_ad55e832122ab3a2833dcaa6507867678}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGeometry_a3e77ac889d1e440c24efbde630aa1933}{\index{Geometry@{Geometry}!compute\-Geometry@{compute\-Geometry}}
+\index{compute\-Geometry@{compute\-Geometry}!Geometry@{Geometry}}
+\subsubsection[{compute\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::compute\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_a3e77ac889d1e440c24efbde630aa1933}
+
+
+Implemented in \hyperlink{classTwoPlates_a890d6b6ec49ff021d5d34bf1c2a83099}{Two\-Plates}, \hyperlink{classCone_a98c5dc0bc0561ab92e76a8ab4da2f891}{Cone}, \hyperlink{classCone2_aa79cd275d279459beb8fa668cad2aa55}{Cone2}, \hyperlink{classCylinder_a657d003c8da54cb8d5cf78bbe210cafa}{Cylinder}, \hyperlink{classOgive_aa8561ca676dbadc7e36a7e9c6b805a72}{Ogive}, and \hyperlink{classRing_a773ec5b24a5dc39a1f5755b43c20edb6}{Ring}.
+
+\hypertarget{classGeometry_ad8ae3b4a3563c1592ffcb06f135ed535}{\index{Geometry@{Geometry}!compute\-Grid3\-D@{compute\-Grid3\-D}}
+\index{compute\-Grid3\-D@{compute\-Grid3\-D}!Geometry@{Geometry}}
+\subsubsection[{compute\-Grid3\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::compute\-Grid3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_ad8ae3b4a3563c1592ffcb06f135ed535}
+
+
+References grid3\-D, grid3\-Dnodes, grid3\-D\-Points, grid\-Cubes, grid\-Width, length, sections, sections3\-D, sectors, sectors3\-D, and z0.
+
+\hypertarget{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}{\index{Geometry@{Geometry}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!Geometry@{Geometry}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}
+
+
+Implemented in \hyperlink{classTwoPlates_ac0d504d8b9d2cad3b6facd0cb260d7de}{Two\-Plates}, \hyperlink{classCone_a8bc1c798b9b7a34e5eba606212ca4a0f}{Cone}, \hyperlink{classCone2_ad62643bcb7573d63116d940c8a064c46}{Cone2}, \hyperlink{classOgive_aa2ffe27bec17dcb9b7f99a26d9ec9f6e}{Ogive}, \hyperlink{classCylinder_a3785595915b105f5e387a4b76d0d6ee9}{Cylinder}, \hyperlink{classRing_a8f33372a5df9a8aa8e0718312497fd78}{Ring}, and \hyperlink{classCone2_ad62643bcb7573d63116d940c8a064c46}{Cone2}.
+
+\hypertarget{classGeometry_af60650f8ce6d5a220928ccd7395120df}{\index{Geometry@{Geometry}!compute\-Nodal\-Power@{compute\-Nodal\-Power}}
+\index{compute\-Nodal\-Power@{compute\-Nodal\-Power}!Geometry@{Geometry}}
+\subsubsection[{compute\-Nodal\-Power}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::compute\-Nodal\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_af60650f8ce6d5a220928ccd7395120df}
+
+
+Implemented in \hyperlink{classTwoPlates_a30eb56de2071f12cb1405057dda35329}{Two\-Plates}, \hyperlink{classCone_a26bfbb3dac2dc902e193413c0f61f9b1}{Cone}, \hyperlink{classCone2_a28a2c5c4cfba12b2ae005547e5bab5a2}{Cone2}, \hyperlink{classOgive_a1f076226bfd547f46542d02c49399693}{Ogive}, \hyperlink{classCylinder_a950b48028c934fa9f01cb3ae40422aef}{Cylinder}, and \hyperlink{classRing_a844fa2f14bcf7d506f33865081543e61}{Ring}.
+
+\hypertarget{classGeometry_adc19b7de33b16179c874dc536f58c31b}{\index{Geometry@{Geometry}!compute\-Power\-Density@{compute\-Power\-Density}}
+\index{compute\-Power\-Density@{compute\-Power\-Density}!Geometry@{Geometry}}
+\subsubsection[{compute\-Power\-Density}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::compute\-Power\-Density (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Particles}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_adc19b7de33b16179c874dc536f58c31b}
+
+
+References elements, grid3\-D, grid3\-Dnodes, grid\-Width, length, nodes, sections, sections3\-D, sectors, sectors3\-D, and z0.
+
+\hypertarget{classGeometry_a4f2e62b82b91402b4f9c8fbf26048974}{\index{Geometry@{Geometry}!draw\-Geometry@{draw\-Geometry}}
+\index{draw\-Geometry@{draw\-Geometry}!Geometry@{Geometry}}
+\subsubsection[{draw\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::draw\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_a4f2e62b82b91402b4f9c8fbf26048974}
+
+
+References a\-Data\-Set\-Mapper, an\-Actor, axes, grid, iren, ren, ren\-Win, style, and widget.
+
+\hypertarget{classGeometry_afcf8201c8ef7f3999f70af53a8034a49}{\index{Geometry@{Geometry}!draw\-Grid@{draw\-Grid}}
+\index{draw\-Grid@{draw\-Grid}!Geometry@{Geometry}}
+\subsubsection[{draw\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::draw\-Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_afcf8201c8ef7f3999f70af53a8034a49}
+
+
+References grid3\-D\-Actor, grid3\-Daxes, grid3\-D\-Data\-Set\-Mapper, grid3\-Diren, grid3\-Dren, grid3\-Dren\-Win, grid3\-Dstyle, grid3\-Dwidget, and grid\-Cubes.
+
+\hypertarget{classGeometry_a95d761cd11aa2261380e10b66c261670}{\index{Geometry@{Geometry}!draw\-Grid\-Scalar@{draw\-Grid\-Scalar}}
+\index{draw\-Grid\-Scalar@{draw\-Grid\-Scalar}!Geometry@{Geometry}}
+\subsubsection[{draw\-Grid\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::draw\-Grid\-Scalar (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_a95d761cd11aa2261380e10b66c261670}
+
+
+References cut\-Actor, cut\-Mapper, grid3\-Dbar\-Actor, grid3\-D\-Data\-Set\-Mapper, grid3\-Diren, grid3\-Dnodes, grid3\-Dren, grid3\-Dscalar, grid3\-Dtable, grid\-Cubes, plane, plane\-Cut, and plot\-Title.
+
+\hypertarget{classGeometry_aa87a5cf1d8652d217834df05ed8cc1e4}{\index{Geometry@{Geometry}!draw\-Scalar@{draw\-Scalar}}
+\index{draw\-Scalar@{draw\-Scalar}!Geometry@{Geometry}}
+\subsubsection[{draw\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::draw\-Scalar (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_aa87a5cf1d8652d217834df05ed8cc1e4}
+
+
+References a\-Data\-Set\-Mapper, bar\-Actor, grid, iren, nodes, plot\-Title, ren, scalar, and table.
+
+\hypertarget{classGeometry_a565f5b7736c4b0894732900199903d54}{\index{Geometry@{Geometry}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Geometry@{Geometry}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Geometry\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classGeometry_a565f5b7736c4b0894732900199903d54}
+
+
+References type.
+
+\hypertarget{classGeometry_a1324967baeb20a489a913a5bd854aa79}{\index{Geometry@{Geometry}!output\-Ansys3\-D@{output\-Ansys3\-D}}
+\index{output\-Ansys3\-D@{output\-Ansys3\-D}!Geometry@{Geometry}}
+\subsubsection[{output\-Ansys3\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::output\-Ansys3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_a1324967baeb20a489a913a5bd854aa79}
+
+
+References grid3\-Dnodes, sections3\-D, and sectors3\-D.
+
+\hypertarget{classGeometry_aeeebae1f3110d179f2be42d5ebcfea67}{\index{Geometry@{Geometry}!output\-Backscattering@{output\-Backscattering}}
+\index{output\-Backscattering@{output\-Backscattering}!Geometry@{Geometry}}
+\subsubsection[{output\-Backscattering}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::output\-Backscattering (
+\begin{DoxyParamCaption}
+\item[{double}]{precision}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_aeeebae1f3110d179f2be42d5ebcfea67}
+
+
+References length, nodes, sections, and sectors.
+
+\hypertarget{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}{\index{Geometry@{Geometry}!output\-Power\-Density\-File@{output\-Power\-Density\-File}}
+\index{output\-Power\-Density\-File@{output\-Power\-Density\-File}!Geometry@{Geometry}}
+\subsubsection[{output\-Power\-Density\-File}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::output\-Power\-Density\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}
+
+
+Implemented in \hyperlink{classTwoPlates_aec5195987f06df32b1bd1c4c3c0068f9}{Two\-Plates}, \hyperlink{classCone_a435a6b46c506758157f2ed0d3213461f}{Cone}, \hyperlink{classCone2_af259aae6fd151e82482ee9232b63af31}{Cone2}, \hyperlink{classOgive_a0fc6d6890479d78bbf9eab20969698bc}{Ogive}, \hyperlink{classCylinder_a82078ecb74fbe07bed3de4040be73125}{Cylinder}, and \hyperlink{classRing_ae8851509bb69f45e300bc4772b31ca9c}{Ring}.
+
+\hypertarget{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}{\index{Geometry@{Geometry}!output\-Power\-File@{output\-Power\-File}}
+\index{output\-Power\-File@{output\-Power\-File}!Geometry@{Geometry}}
+\subsubsection[{output\-Power\-File}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::output\-Power\-File (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}
+
+
+Implemented in \hyperlink{classTwoPlates_a978c078774fe74e99b8f4064a6126e84}{Two\-Plates}, \hyperlink{classCone_a9928e7033ce28a13e7d770a1620e096e}{Cone}, \hyperlink{classCone2_a947c9976494227e12730843c77a9b241}{Cone2}, \hyperlink{classOgive_a260f5f7945194147784025aaf7fe0a72}{Ogive}, \hyperlink{classCylinder_ab2481ec0318f4686fd7787696230b4bd}{Cylinder}, and \hyperlink{classRing_a3634ff6b0684ff0a0eb172751eef83a9}{Ring}.
+
+\hypertarget{classGeometry_a60e1424a222ba59284b81812aff34148}{\index{Geometry@{Geometry}!output\-Table@{output\-Table}}
+\index{output\-Table@{output\-Table}!Geometry@{Geometry}}
+\subsubsection[{output\-Table}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::output\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_a60e1424a222ba59284b81812aff34148}
+
+
+Implemented in \hyperlink{classTwoPlates_a8688d978fd1845b370d3fc14d8737e9e}{Two\-Plates}, \hyperlink{classCone_aa026083e1c8ecfd1f589eb1939b302c1}{Cone}, \hyperlink{classCone2_a89b20ddec7e0a6b1bd9478a8036c9ad0}{Cone2}, \hyperlink{classOgive_a5febe7a8e9601801d634067213d5c6f9}{Ogive}, \hyperlink{classCylinder_a33abcb99e6c881b867a0bb6c0dfcabae}{Cylinder}, and \hyperlink{classRing_a6f6508a51866f6189aae6a09772b7cd5}{Ring}.
+
+\hypertarget{classGeometry_a966a7feaea5c6fe2814229f0c54786db}{\index{Geometry@{Geometry}!output\-V\-T\-Kfiles@{output\-V\-T\-Kfiles}}
+\index{output\-V\-T\-Kfiles@{output\-V\-T\-Kfiles}!Geometry@{Geometry}}
+\subsubsection[{output\-V\-T\-Kfiles}]{\setlength{\rightskip}{0pt plus 5cm}void Geometry\-::output\-V\-T\-Kfiles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGeometry_a966a7feaea5c6fe2814229f0c54786db}
+
+
+References grid, and grid\-Cubes.
+
+\hypertarget{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}{\index{Geometry@{Geometry}!set\-Sections@{set\-Sections}}
+\index{set\-Sections@{set\-Sections}!Geometry@{Geometry}}
+\subsubsection[{set\-Sections}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Geometry\-::set\-Sections (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}
+
+
+Implemented in \hyperlink{classCone_a52fd80b6c484449a8d24d1471e21873c}{Cone}, \hyperlink{classCone2_a7aeaee918b84b78b5b00f9572bedd349}{Cone2}, \hyperlink{classTwoPlates_a23168c87f9097b2c1a4fa8cac4b61049}{Two\-Plates}, \hyperlink{classCylinder_ad75a4b81272ef8b27b3163bf0aa49efd}{Cylinder}, \hyperlink{classOgive_a925beac2c2c2ee5f7ad6654a4f1048e5}{Ogive}, and \hyperlink{classRing_a4e11fdcade67b41f38a7ec4458afdd8d}{Ring}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classGeometry_af314d57676056969da57788a60954926}{\index{Geometry@{Geometry}!a\-Data\-Set\-Mapper@{a\-Data\-Set\-Mapper}}
+\index{a\-Data\-Set\-Mapper@{a\-Data\-Set\-Mapper}!Geometry@{Geometry}}
+\subsubsection[{a\-Data\-Set\-Mapper}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Data\-Set\-Mapper$\ast$ Geometry\-::a\-Data\-Set\-Mapper\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_af314d57676056969da57788a60954926}
+
+
+Referenced by draw\-Geometry(), and draw\-Scalar().
+
+\hypertarget{classGeometry_a86a213e57fee0c578d220d8015c2891b}{\index{Geometry@{Geometry}!an\-Actor@{an\-Actor}}
+\index{an\-Actor@{an\-Actor}!Geometry@{Geometry}}
+\subsubsection[{an\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Actor$\ast$ Geometry\-::an\-Actor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a86a213e57fee0c578d220d8015c2891b}
+
+
+Referenced by draw\-Geometry().
+
+\hypertarget{classGeometry_a17c7a286dc0a428e8a32db4c8d54bb5e}{\index{Geometry@{Geometry}!axes@{axes}}
+\index{axes@{axes}!Geometry@{Geometry}}
+\subsubsection[{axes}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Axes\-Actor$\ast$ Geometry\-::axes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a17c7a286dc0a428e8a32db4c8d54bb5e}
+
+
+Referenced by draw\-Geometry().
+
+\hypertarget{classGeometry_af87eb1e4ab0922d0475afc67061ae30a}{\index{Geometry@{Geometry}!bar\-Actor@{bar\-Actor}}
+\index{bar\-Actor@{bar\-Actor}!Geometry@{Geometry}}
+\subsubsection[{bar\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Scalar\-Bar\-Actor$\ast$ Geometry\-::bar\-Actor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_af87eb1e4ab0922d0475afc67061ae30a}
+
+
+Referenced by draw\-Scalar().
+
+\hypertarget{classGeometry_a2a10ca6a0a6a4e1cdd5558830db80ec9}{\index{Geometry@{Geometry}!cut\-Actor@{cut\-Actor}}
+\index{cut\-Actor@{cut\-Actor}!Geometry@{Geometry}}
+\subsubsection[{cut\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Actor$\ast$ Geometry\-::cut\-Actor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a2a10ca6a0a6a4e1cdd5558830db80ec9}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_ae6a74274d05291746f520af8083a26e7}{\index{Geometry@{Geometry}!cut\-Mapper@{cut\-Mapper}}
+\index{cut\-Mapper@{cut\-Mapper}!Geometry@{Geometry}}
+\subsubsection[{cut\-Mapper}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Poly\-Data\-Mapper$\ast$ Geometry\-::cut\-Mapper\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_ae6a74274d05291746f520af8083a26e7}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_acef6e83971679a9c4672c3b610acb58e}{\index{Geometry@{Geometry}!elements@{elements}}
+\index{elements@{elements}!Geometry@{Geometry}}
+\subsubsection[{elements}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Element}$\ast$ $>$ Geometry\-::elements\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_acef6e83971679a9c4672c3b610acb58e}
+
+
+Referenced by Ring\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Two\-Plates\-::compute\-Geometry(), compute\-Power\-Density(), Two\-Plates\-::output\-Power\-Density\-File(), and Two\-Plates\-::output\-Power\-File().
+
+\hypertarget{classGeometry_aebabda9f0c07ecb986195857913b4ee8}{\index{Geometry@{Geometry}!grid@{grid}}
+\index{grid@{grid}!Geometry@{Geometry}}
+\subsubsection[{grid}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Unstructured\-Grid$\ast$ Geometry\-::grid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aebabda9f0c07ecb986195857913b4ee8}
+
+
+Referenced by Ring\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Two\-Plates\-::compute\-Geometry(), draw\-Geometry(), draw\-Scalar(), and output\-V\-T\-Kfiles().
+
+\hypertarget{classGeometry_a08864bd3e1225949b6617f94ab1af9ab}{\index{Geometry@{Geometry}!grid3\-D@{grid3\-D}}
+\index{grid3\-D@{grid3\-D}!Geometry@{Geometry}}
+\subsubsection[{grid3\-D}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Element}$\ast$ $>$ Geometry\-::grid3\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a08864bd3e1225949b6617f94ab1af9ab}
+
+
+Referenced by compute\-Grid3\-D(), and compute\-Power\-Density().
+
+\hypertarget{classGeometry_a2bf0d89ae708392842128430e08b0e32}{\index{Geometry@{Geometry}!grid3\-D\-Actor@{grid3\-D\-Actor}}
+\index{grid3\-D\-Actor@{grid3\-D\-Actor}!Geometry@{Geometry}}
+\subsubsection[{grid3\-D\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Actor$\ast$ Geometry\-::grid3\-D\-Actor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a2bf0d89ae708392842128430e08b0e32}
+
+
+Referenced by draw\-Grid().
+
+\hypertarget{classGeometry_a09df01c00f88d60da5404fa9f40c01f8}{\index{Geometry@{Geometry}!grid3\-Daxes@{grid3\-Daxes}}
+\index{grid3\-Daxes@{grid3\-Daxes}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Daxes}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Axes\-Actor$\ast$ Geometry\-::grid3\-Daxes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a09df01c00f88d60da5404fa9f40c01f8}
+
+
+Referenced by draw\-Grid().
+
+\hypertarget{classGeometry_af384c0e243c658c029afe53df9e59fd2}{\index{Geometry@{Geometry}!grid3\-Dbar\-Actor@{grid3\-Dbar\-Actor}}
+\index{grid3\-Dbar\-Actor@{grid3\-Dbar\-Actor}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dbar\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Scalar\-Bar\-Actor$\ast$ Geometry\-::grid3\-Dbar\-Actor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_af384c0e243c658c029afe53df9e59fd2}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_af0f946b3abbf28a76d4c85f51cddd261}{\index{Geometry@{Geometry}!grid3\-D\-Data\-Set\-Mapper@{grid3\-D\-Data\-Set\-Mapper}}
+\index{grid3\-D\-Data\-Set\-Mapper@{grid3\-D\-Data\-Set\-Mapper}!Geometry@{Geometry}}
+\subsubsection[{grid3\-D\-Data\-Set\-Mapper}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Data\-Set\-Mapper$\ast$ Geometry\-::grid3\-D\-Data\-Set\-Mapper\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_af0f946b3abbf28a76d4c85f51cddd261}
+
+
+Referenced by draw\-Grid(), and draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_a7db500f9e6786611a23fe22f562f0dce}{\index{Geometry@{Geometry}!grid3\-Diren@{grid3\-Diren}}
+\index{grid3\-Diren@{grid3\-Diren}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Diren}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Render\-Window\-Interactor$\ast$ Geometry\-::grid3\-Diren\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a7db500f9e6786611a23fe22f562f0dce}
+
+
+Referenced by draw\-Grid(), and draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_a64335b4700461be035cf7e89b7782cb6}{\index{Geometry@{Geometry}!grid3\-Dnodes@{grid3\-Dnodes}}
+\index{grid3\-Dnodes@{grid3\-Dnodes}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dnodes}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int, {\bf Node}$\ast$$>$ Geometry\-::grid3\-Dnodes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a64335b4700461be035cf7e89b7782cb6}
+
+
+Referenced by compute\-Grid3\-D(), compute\-Power\-Density(), draw\-Grid\-Scalar(), and output\-Ansys3\-D().
+
+\hypertarget{classGeometry_afd79778e7c244df18be79a39419190c8}{\index{Geometry@{Geometry}!grid3\-D\-Points@{grid3\-D\-Points}}
+\index{grid3\-D\-Points@{grid3\-D\-Points}!Geometry@{Geometry}}
+\subsubsection[{grid3\-D\-Points}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Points$\ast$ Geometry\-::grid3\-D\-Points\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_afd79778e7c244df18be79a39419190c8}
+
+
+Referenced by compute\-Grid3\-D().
+
+\hypertarget{classGeometry_aafa37cf25f51c60ba5fa0e790994ce98}{\index{Geometry@{Geometry}!grid3\-Dren@{grid3\-Dren}}
+\index{grid3\-Dren@{grid3\-Dren}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dren}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Renderer$\ast$ Geometry\-::grid3\-Dren\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aafa37cf25f51c60ba5fa0e790994ce98}
+
+
+Referenced by draw\-Grid(), and draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_af855a50f857e3aaa0ba5601daff0e73a}{\index{Geometry@{Geometry}!grid3\-Dren\-Win@{grid3\-Dren\-Win}}
+\index{grid3\-Dren\-Win@{grid3\-Dren\-Win}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dren\-Win}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Render\-Window$\ast$ Geometry\-::grid3\-Dren\-Win\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_af855a50f857e3aaa0ba5601daff0e73a}
+
+
+Referenced by draw\-Grid().
+
+\hypertarget{classGeometry_a3516628b6f6b85e9d0e025a768e6bd59}{\index{Geometry@{Geometry}!grid3\-Dscalar@{grid3\-Dscalar}}
+\index{grid3\-Dscalar@{grid3\-Dscalar}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dscalar}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Float\-Array$\ast$ Geometry\-::grid3\-Dscalar\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a3516628b6f6b85e9d0e025a768e6bd59}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_aac1ed80d797b14f337a0e9d3206c70c7}{\index{Geometry@{Geometry}!grid3\-Dstyle@{grid3\-Dstyle}}
+\index{grid3\-Dstyle@{grid3\-Dstyle}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dstyle}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Interactor\-Style\-Trackball\-Camera$\ast$ Geometry\-::grid3\-Dstyle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aac1ed80d797b14f337a0e9d3206c70c7}
+
+
+Referenced by draw\-Grid().
+
+\hypertarget{classGeometry_ac1594e947b2efc680e2fb82c39a554d9}{\index{Geometry@{Geometry}!grid3\-Dtable@{grid3\-Dtable}}
+\index{grid3\-Dtable@{grid3\-Dtable}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dtable}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Lookup\-Table$\ast$ Geometry\-::grid3\-Dtable\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_ac1594e947b2efc680e2fb82c39a554d9}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_ad2e8316d21178ddc0b9f1e163cf8683b}{\index{Geometry@{Geometry}!grid3\-Dwidget@{grid3\-Dwidget}}
+\index{grid3\-Dwidget@{grid3\-Dwidget}!Geometry@{Geometry}}
+\subsubsection[{grid3\-Dwidget}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Orientation\-Marker\-Widget$\ast$ Geometry\-::grid3\-Dwidget\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_ad2e8316d21178ddc0b9f1e163cf8683b}
+
+
+Referenced by draw\-Grid().
+
+\hypertarget{classGeometry_a3111987cb4c958ed83fd09a4cdc81ad0}{\index{Geometry@{Geometry}!grid\-Cubes@{grid\-Cubes}}
+\index{grid\-Cubes@{grid\-Cubes}!Geometry@{Geometry}}
+\subsubsection[{grid\-Cubes}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Unstructured\-Grid$\ast$ Geometry\-::grid\-Cubes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a3111987cb4c958ed83fd09a4cdc81ad0}
+
+
+Referenced by compute\-Grid3\-D(), draw\-Grid(), draw\-Grid\-Scalar(), and output\-V\-T\-Kfiles().
+
+\hypertarget{classGeometry_aed47a80e867e618e98272e830d297deb}{\index{Geometry@{Geometry}!grid\-Points@{grid\-Points}}
+\index{grid\-Points@{grid\-Points}!Geometry@{Geometry}}
+\subsubsection[{grid\-Points}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Points$\ast$ Geometry\-::grid\-Points\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aed47a80e867e618e98272e830d297deb}
+
+
+Referenced by Ring\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Cone\-::compute\-Geometry(), and Two\-Plates\-::compute\-Geometry().
+
+\hypertarget{classGeometry_aaddc1973a36683418ff6c00fb9a0e200}{\index{Geometry@{Geometry}!grid\-Spacing@{grid\-Spacing}}
+\index{grid\-Spacing@{grid\-Spacing}!Geometry@{Geometry}}
+\subsubsection[{grid\-Spacing}]{\setlength{\rightskip}{0pt plus 5cm}double Geometry\-::grid\-Spacing\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aaddc1973a36683418ff6c00fb9a0e200}
+\hypertarget{classGeometry_a047dd3be42ddff67aa9f8d494e7e8568}{\index{Geometry@{Geometry}!grid\-Width@{grid\-Width}}
+\index{grid\-Width@{grid\-Width}!Geometry@{Geometry}}
+\subsubsection[{grid\-Width}]{\setlength{\rightskip}{0pt plus 5cm}double Geometry\-::grid\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a047dd3be42ddff67aa9f8d494e7e8568}
+
+
+Referenced by compute\-Grid3\-D(), compute\-Power\-Density(), Cone\-::\-Cone(), Cone2\-::\-Cone2(), Cylinder\-::\-Cylinder(), Ogive\-::\-Ogive(), and Ring\-::\-Ring().
+
+\hypertarget{classGeometry_a6563f9a823d1dcee59554a5d093d6c73}{\index{Geometry@{Geometry}!iren@{iren}}
+\index{iren@{iren}!Geometry@{Geometry}}
+\subsubsection[{iren}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Render\-Window\-Interactor$\ast$ Geometry\-::iren\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a6563f9a823d1dcee59554a5d093d6c73}
+
+
+Referenced by draw\-Geometry(), and draw\-Scalar().
+
+\hypertarget{classGeometry_a83cd2f4ce607b1b70227780181b197c6}{\index{Geometry@{Geometry}!length@{length}}
+\index{length@{length}!Geometry@{Geometry}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}double Geometry\-::length\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a83cd2f4ce607b1b70227780181b197c6}
+
+
+Referenced by Two\-Plates\-::compute\-Energy(), Cylinder\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Two\-Plates\-::compute\-Geometry(), compute\-Grid3\-D(), Ring\-::compute\-Nodal\-Power(), Cylinder\-::compute\-Nodal\-Power(), Ogive\-::compute\-Nodal\-Power(), Cone\-::compute\-Nodal\-Power(), Cone2\-::compute\-Nodal\-Power(), compute\-Power\-Density(), Cone\-::\-Cone(), Cone2\-::\-Cone2(), Two\-Plates\-::get\-Length(), Cone2\-::jacobian(), Cone\-::jacobian(), Two\-Plates\-::jacobian(), Ogive\-::\-Ogive(), output\-Backscattering(), Ring\-::output\-Power\-Density\-File(), Cylinder\-::output\-Power\-Density\-File(), Ogive\-::output\-Power\-Density\-File(), Cone2\-::output\-Power\-Density\-File(), Cone\-::output\-Power\-Density\-File(), Ring\-::output\-Power\-File(), Cylinder\-::output\-Power\-File(), Ogive\-::output\-Power\-File(), Cone\-::output\-Power\-File(), Cone2\-::output\-Power\-File(), Two\-Plates\-::output\-Table(), Cone2\-::residue(), Cone\-::residue(), Two\-Plates\-::residue(), Cylinder\-::set\-Sections(), Ogive\-::set\-Sections(), Two\-Plates\-::set\-Sections(), Cone\-::set\-Sections(), Cone2\-::set\-Sections(), and Two\-Plates\-::\-Two\-Plates().
+
+\hypertarget{classGeometry_a9f5642ca54e0353b871d733e25ccc56e}{\index{Geometry@{Geometry}!nodes@{nodes}}
+\index{nodes@{nodes}!Geometry@{Geometry}}
+\subsubsection[{nodes}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$int, {\bf Node}$\ast$$>$ Geometry\-::nodes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a9f5642ca54e0353b871d733e25ccc56e}
+
+
+Referenced by Ring\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Two\-Plates\-::compute\-Geometry(), Ring\-::compute\-Nodal\-Power(), Cylinder\-::compute\-Nodal\-Power(), Ogive\-::compute\-Nodal\-Power(), Cone\-::compute\-Nodal\-Power(), Cone2\-::compute\-Nodal\-Power(), compute\-Power\-Density(), draw\-Scalar(), output\-Backscattering(), Ring\-::output\-Power\-Density\-File(), Cylinder\-::output\-Power\-Density\-File(), Ogive\-::output\-Power\-Density\-File(), Cone2\-::output\-Power\-Density\-File(), Cone\-::output\-Power\-Density\-File(), Two\-Plates\-::output\-Power\-Density\-File(), Ring\-::output\-Power\-File(), Cylinder\-::output\-Power\-File(), Ogive\-::output\-Power\-File(), Cone\-::output\-Power\-File(), Cone2\-::output\-Power\-File(), and Two\-Plates\-::output\-Table().
+
+\hypertarget{classGeometry_a90ddae3ca87d3c358e2f63611c244be7}{\index{Geometry@{Geometry}!param\-Trajectories@{param\-Trajectories}}
+\index{param\-Trajectories@{param\-Trajectories}!Geometry@{Geometry}}
+\subsubsection[{param\-Trajectories}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ Geometry\-::param\-Trajectories\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a90ddae3ca87d3c358e2f63611c244be7}
+
+
+Referenced by Cone2\-::compute\-Intersection(), Ring\-::compute\-Intersection(), Cylinder\-::compute\-Intersection(), Ogive\-::compute\-Intersection(), Cone\-::compute\-Intersection(), Two\-Plates\-::compute\-Intersection(), Ring\-::compute\-Nodal\-Power(), Cylinder\-::compute\-Nodal\-Power(), Ogive\-::compute\-Nodal\-Power(), Cone\-::compute\-Nodal\-Power(), and Cone2\-::compute\-Nodal\-Power().
+
+\hypertarget{classGeometry_a79ad1de7fbe1c74e3e2226489ac7188b}{\index{Geometry@{Geometry}!plane@{plane}}
+\index{plane@{plane}!Geometry@{Geometry}}
+\subsubsection[{plane}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Plane$\ast$ Geometry\-::plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a79ad1de7fbe1c74e3e2226489ac7188b}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_afa017d6536259e954e4ca10337b4353b}{\index{Geometry@{Geometry}!plane\-Cut@{plane\-Cut}}
+\index{plane\-Cut@{plane\-Cut}!Geometry@{Geometry}}
+\subsubsection[{plane\-Cut}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Cutter$\ast$ Geometry\-::plane\-Cut\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_afa017d6536259e954e4ca10337b4353b}
+
+
+Referenced by draw\-Grid\-Scalar().
+
+\hypertarget{classGeometry_aed9f7f434ae099a62be5c20f9915be90}{\index{Geometry@{Geometry}!plot\-Title@{plot\-Title}}
+\index{plot\-Title@{plot\-Title}!Geometry@{Geometry}}
+\subsubsection[{plot\-Title}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Geometry\-::plot\-Title\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aed9f7f434ae099a62be5c20f9915be90}
+
+
+Referenced by draw\-Grid\-Scalar(), and draw\-Scalar().
+
+\hypertarget{classGeometry_a0893a3a686dc14327816c9648efe8662}{\index{Geometry@{Geometry}!ren@{ren}}
+\index{ren@{ren}!Geometry@{Geometry}}
+\subsubsection[{ren}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Renderer$\ast$ Geometry\-::ren\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a0893a3a686dc14327816c9648efe8662}
+
+
+Referenced by draw\-Geometry(), and draw\-Scalar().
+
+\hypertarget{classGeometry_a22b4feeba28c4834bc9ac42e838cb7bb}{\index{Geometry@{Geometry}!ren\-Win@{ren\-Win}}
+\index{ren\-Win@{ren\-Win}!Geometry@{Geometry}}
+\subsubsection[{ren\-Win}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Render\-Window$\ast$ Geometry\-::ren\-Win\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a22b4feeba28c4834bc9ac42e838cb7bb}
+
+
+Referenced by draw\-Geometry().
+
+\hypertarget{classGeometry_a49e66de69aa22b88759e903e1ae06c9b}{\index{Geometry@{Geometry}!scalar@{scalar}}
+\index{scalar@{scalar}!Geometry@{Geometry}}
+\subsubsection[{scalar}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Float\-Array$\ast$ Geometry\-::scalar\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a49e66de69aa22b88759e903e1ae06c9b}
+
+
+Referenced by draw\-Scalar().
+
+\hypertarget{classGeometry_a0efc4bf9252077abca96c1c198eefa33}{\index{Geometry@{Geometry}!sections@{sections}}
+\index{sections@{sections}!Geometry@{Geometry}}
+\subsubsection[{sections}]{\setlength{\rightskip}{0pt plus 5cm}int Geometry\-::sections\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a0efc4bf9252077abca96c1c198eefa33}
+
+
+Referenced by Two\-Plates\-::compute\-Energy(), Ring\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Two\-Plates\-::compute\-Geometry(), compute\-Grid3\-D(), Ring\-::compute\-Nodal\-Power(), Cylinder\-::compute\-Nodal\-Power(), Ogive\-::compute\-Nodal\-Power(), Cone2\-::compute\-Nodal\-Power(), Cone\-::compute\-Nodal\-Power(), compute\-Power\-Density(), output\-Backscattering(), Ring\-::output\-Power\-Density\-File(), Cylinder\-::output\-Power\-Density\-File(), Ogive\-::output\-Power\-Density\-File(), Cone\-::output\-Power\-Density\-File(), Cone2\-::output\-Power\-Density\-File(), Ring\-::output\-Power\-File(), Cylinder\-::output\-Power\-File(), Ogive\-::output\-Power\-File(), Cone2\-::output\-Power\-File(), Cone\-::output\-Power\-File(), Ring\-::set\-Sections(), Ogive\-::set\-Sections(), Cylinder\-::set\-Sections(), Two\-Plates\-::set\-Sections(), Cone\-::set\-Sections(), and Cone2\-::set\-Sections().
+
+\hypertarget{classGeometry_a296e0b45bd0e03ccdcee990cd1ee6ccb}{\index{Geometry@{Geometry}!sections3\-D@{sections3\-D}}
+\index{sections3\-D@{sections3\-D}!Geometry@{Geometry}}
+\subsubsection[{sections3\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Geometry\-::sections3\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a296e0b45bd0e03ccdcee990cd1ee6ccb}
+
+
+Referenced by compute\-Grid3\-D(), compute\-Power\-Density(), and output\-Ansys3\-D().
+
+\hypertarget{classGeometry_a5e34644bfae4c1df92cb6bf98a8c62c7}{\index{Geometry@{Geometry}!sectors@{sectors}}
+\index{sectors@{sectors}!Geometry@{Geometry}}
+\subsubsection[{sectors}]{\setlength{\rightskip}{0pt plus 5cm}int Geometry\-::sectors\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a5e34644bfae4c1df92cb6bf98a8c62c7}
+
+
+Referenced by Two\-Plates\-::compute\-Energy(), Ring\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), Two\-Plates\-::compute\-Geometry(), compute\-Grid3\-D(), Ring\-::compute\-Nodal\-Power(), Cylinder\-::compute\-Nodal\-Power(), Ogive\-::compute\-Nodal\-Power(), Cone\-::compute\-Nodal\-Power(), Cone2\-::compute\-Nodal\-Power(), compute\-Power\-Density(), output\-Backscattering(), Ring\-::output\-Power\-Density\-File(), Cylinder\-::output\-Power\-Density\-File(), Ogive\-::output\-Power\-Density\-File(), Cone2\-::output\-Power\-Density\-File(), Cone\-::output\-Power\-Density\-File(), Two\-Plates\-::output\-Power\-Density\-File(), Ring\-::output\-Power\-File(), Cylinder\-::output\-Power\-File(), Ogive\-::output\-Power\-File(), Cone\-::output\-Power\-File(), Cone2\-::output\-Power\-File(), Two\-Plates\-::output\-Power\-File(), and Two\-Plates\-::output\-Table().
+
+\hypertarget{classGeometry_a910a84dcf141a4f6eb3f565ac69339b6}{\index{Geometry@{Geometry}!sectors3\-D@{sectors3\-D}}
+\index{sectors3\-D@{sectors3\-D}!Geometry@{Geometry}}
+\subsubsection[{sectors3\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Geometry\-::sectors3\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a910a84dcf141a4f6eb3f565ac69339b6}
+
+
+Referenced by compute\-Grid3\-D(), compute\-Power\-Density(), and output\-Ansys3\-D().
+
+\hypertarget{classGeometry_a994d1c4d7c8ce0622fcf7a96b5d234af}{\index{Geometry@{Geometry}!style@{style}}
+\index{style@{style}!Geometry@{Geometry}}
+\subsubsection[{style}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Interactor\-Style\-Trackball\-Camera$\ast$ Geometry\-::style\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a994d1c4d7c8ce0622fcf7a96b5d234af}
+
+
+Referenced by draw\-Geometry().
+
+\hypertarget{classGeometry_aaabe40cbb12206d80e4376367568934b}{\index{Geometry@{Geometry}!table@{table}}
+\index{table@{table}!Geometry@{Geometry}}
+\subsubsection[{table}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Lookup\-Table$\ast$ Geometry\-::table\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_aaabe40cbb12206d80e4376367568934b}
+
+
+Referenced by draw\-Scalar().
+
+\hypertarget{classGeometry_a734ed6644e4e3b98f157e6707c30069a}{\index{Geometry@{Geometry}!type@{type}}
+\index{type@{type}!Geometry@{Geometry}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Geometry\-::type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a734ed6644e4e3b98f157e6707c30069a}
+
+
+Referenced by get\-Type().
+
+\hypertarget{classGeometry_ad611799bc0eb8825c963bd6d56181d8c}{\index{Geometry@{Geometry}!widget@{widget}}
+\index{widget@{widget}!Geometry@{Geometry}}
+\subsubsection[{widget}]{\setlength{\rightskip}{0pt plus 5cm}vtk\-Orientation\-Marker\-Widget$\ast$ Geometry\-::widget\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_ad611799bc0eb8825c963bd6d56181d8c}
+
+
+Referenced by draw\-Geometry().
+
+\hypertarget{classGeometry_a755ef6125e306d96ba8b4a01f3593b66}{\index{Geometry@{Geometry}!z0@{z0}}
+\index{z0@{z0}!Geometry@{Geometry}}
+\subsubsection[{z0}]{\setlength{\rightskip}{0pt plus 5cm}double Geometry\-::z0\hspace{0.3cm}{\ttfamily [protected]}}}\label{classGeometry_a755ef6125e306d96ba8b4a01f3593b66}
+
+
+Referenced by Ring\-::compute\-Geometry(), Cylinder\-::compute\-Geometry(), Ogive\-::compute\-Geometry(), Cone\-::compute\-Geometry(), Cone2\-::compute\-Geometry(), compute\-Grid3\-D(), Ogive\-::compute\-Intersection(), Ring\-::compute\-Nodal\-Power(), Cylinder\-::compute\-Nodal\-Power(), Ogive\-::compute\-Nodal\-Power(), Cone\-::compute\-Nodal\-Power(), Cone2\-::compute\-Nodal\-Power(), compute\-Power\-Density(), Cone2\-::jacobian(), Ogive\-::jacobian(), Cone\-::jacobian(), Two\-Plates\-::jacobian(), Ring\-::output\-Power\-Density\-File(), Cylinder\-::output\-Power\-Density\-File(), Ogive\-::output\-Power\-Density\-File(), Cone\-::output\-Power\-Density\-File(), Cone2\-::output\-Power\-Density\-File(), Cone2\-::residue(), Ogive\-::residue(), Cone\-::residue(), and Two\-Plates\-::residue().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{geometry_8h}{geometry.h}\item 
-src/geometry.cpp\end{CompactItemize}
+src/\hyperlink{geometry_8h}{geometry.\-h}\item 
+src/\hyperlink{geometry_8cpp}{geometry.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+<map id="src/LMX/lmx_mat_data.h" name="src/LMX/lmx_mat_data.h">
+<area shape="rect" id="node2" href="$lmx__mat__data__mat_8h.html" title="This file contains the declaration of the data_mat class&#39; pure virtual functions. ..." alt="" coords="436,262,591,303"/>
+<area shape="rect" id="node31" href="$lmx__mat__elem__ref_8h.html" title="This file contains both the declaration and implementation for Elem_ref class. " alt="" coords="551,81,709,122"/>
+<area shape="rect" id="node34" href="$lmx__mat__data__vec_8h.html" title="This file contains the declaration of the data_vec class&#39; pure virtual functions. ..." alt="" coords="735,81,889,122"/>
+<area shape="rect" id="node3" href="$lmx__mat__type__stdmatrix_8h.html" title="This file contains both the declaration and implementation for type_stdmatrix (std::vector type) clas..." alt="" coords="628,353,783,394"/>
+<area shape="rect" id="node28" href="$lmx__mat__type__csc_8h.html" title="This file contains both the declaration and implementation for Type_csc class member functions..." alt="" coords="449,353,604,394"/>
+<area shape="rect" id="node29" href="$lmx__mat__type__gmm_8h.html" title="This file contains both the declaration and implementation for type_gmm (dense gmm Matrix) class memb..." alt="" coords="92,353,247,394"/>
+<area shape="rect" id="node30" href="$lmx__mat__type__gmm__sparse1_8h.html" title="This file contains both the declaration and implementation for type_gmm_sparse (sparse gmm Matrix) cl..." alt="" coords="271,353,425,394"/>
+<area shape="rect" id="node4" href="$lmx__mat__matrix_8h.html" title="This file contains both the declaration and implementation for Matrix class member and friend functio..." alt="" coords="529,443,703,469"/>
+<area shape="rect" id="node5" href="$lmx__mat__dense__matrix_8h.html" title="This file contains both the declaration and implementation for DenseMatrix class member and friend fu..." alt="" coords="575,518,739,559"/>
+<area shape="rect" id="node6" href="$lmx__linsolvers__system_8h.html" title="LinearSystem class implementation. " alt="" coords="651,609,804,650"/>
+<area shape="rect" id="node7" href="$lmx__linsolvers_8h.html" title="Linear_solvers collection. " alt="" coords="647,699,809,725"/>
+<area shape="rect" id="node8" href="$lmx_8h.html" title="This is the main file that has to be included from an extern program so that the basic features of th..." alt="" coords="676,773,780,800"/>
+<area shape="rect" id="node9" href="$geometry_8h.html" title="Base class for the different geometries. " alt="" coords="675,848,781,875"/>
+<area shape="rect" id="node10" href="$cone_8h.html" title="Pure conical geometry. " alt="" coords="225,923,305,949"/>
+<area shape="rect" id="node16" href="$cone2_8h.html" title="src/cone2.h" alt="" coords="429,923,517,949"/>
+<area shape="rect" id="node19" href="$cylinder_8h.html" title="Pure cylindrical geometry. " alt="" coords="565,923,661,949"/>
+<area shape="rect" id="node21" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="924,923,1044,949"/>
+<area shape="rect" id="node22" href="$ogive_8h.html" title="src/ogive.h" alt="" coords="687,923,769,949"/>
+<area shape="rect" id="node24" href="$twoplates_8h.html" title="Two symmetrical plates geometry. " alt="" coords="793,923,900,949"/>
+<area shape="rect" id="node26" href="$ring_8h.html" title="Anular geometry. " alt="" coords="1075,923,1149,949"/>
+<area shape="rect" id="node11" href="$cone_8cpp.html" title="src/cone.cpp" alt="" coords="142,997,236,1024"/>
+<area shape="rect" id="node12" href="$cone2-bak_8h.html" title="src/cone2&#45;bak.h" alt="" coords="5,997,117,1024"/>
+<area shape="rect" id="node13" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="673,997,783,1024"/>
+<area shape="rect" id="node14" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="599,1072,712,1099"/>
+<area shape="rect" id="node15" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="737,1072,863,1099"/>
+<area shape="rect" id="node17" href="$cone2-bak_8cpp.html" title="src/cone2&#45;bak.cpp" alt="" coords="387,997,513,1024"/>
+<area shape="rect" id="node18" href="$cone2_8cpp.html" title="src/cone2.cpp" alt="" coords="261,997,363,1024"/>
+<area shape="rect" id="node20" href="$cylinder_8cpp.html" title="src/cylinder.cpp" alt="" coords="538,997,648,1024"/>
+<area shape="rect" id="node23" href="$ogive_8cpp.html" title="src/ogive.cpp" alt="" coords="807,997,904,1024"/>
+<area shape="rect" id="node25" href="$twoplates_8cpp.html" title="src/twoplates.cpp" alt="" coords="929,997,1049,1024"/>
+<area shape="rect" id="node27" href="$ring_8cpp.html" title="src/ring.cpp" alt="" coords="1075,997,1163,1024"/>
+<area shape="rect" id="node32" href="$lmx__mat__vector_8h.html" title="This file contains both the declaration and implementation for Vector class member and friend functio..." alt="" coords="645,269,819,296"/>
+<area shape="rect" id="node33" href="$lmx__linsolvers__cg_8h.html" title="Conjugate gradient class implementation. " alt="" coords="728,443,912,469"/>
+<area shape="rect" id="node35" href="$lmx__mat__type__stdvector_8h.html" title="This file contains both the declaration and implementation for type_stdVector (dense vector) class me..." alt="" coords="668,171,823,213"/>
+<area shape="rect" id="node36" href="$lmx__mat__type__gmmvector__sparse1_8h.html" title="This file contains both the declaration and implementation for Type_gmmVector_sparse (sparse vector) ..." alt="" coords="847,171,1001,213"/>
+</map>

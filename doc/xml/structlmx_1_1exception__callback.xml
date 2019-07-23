@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structlmx_1_1exception__callback" kind="struct" prot="public">
+    <compoundname>lmx::exception_callback</compoundname>
+    <derivedcompoundref refid="structlmx_1_1exception__callback__debug" prot="public" virt="non-virtual">lmx::exception_callback_debug</derivedcompoundref>
+    <includes refid="lmx__except_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h</includes>
+    <briefdescription>
+<para>Callback handler for lmx exceptions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="334">
+        <label>lmx::exception_callback</label>
+        <link refid="structlmx_1_1exception__callback"/>
+      </node>
+      <node id="335">
+        <label>lmx::exception_callback_debug</label>
+        <link refid="structlmx_1_1exception__callback__debug"/>
+        <childnode refid="334" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="206" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="206" bodyend="224"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

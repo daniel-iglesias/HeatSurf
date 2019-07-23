@@ -1,0 +1,214 @@
+\hypertarget{classlmx_1_1Data__mat}{\section{lmx\-:\-:Data\-\_\-mat$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Data__mat}\index{lmx\-::\-Data\-\_\-mat$<$ T $>$@{lmx\-::\-Data\-\_\-mat$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. Container for \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} data.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Data\-\_\-mat$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlmx_1_1Data__mat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Data\-\_\-mat$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classlmx_1_1Data__mat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Data__mat_a03e90b0b3053c99ef6d2e183d763511e}{Data\-\_\-mat} ()
+\item 
+virtual \hyperlink{classlmx_1_1Data__mat_a0c57d9772b2eccf6f796e60f1e156964}{$\sim$\-Data\-\_\-mat} ()
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_a850c5fadc5139992f32bf15316309b52}{multiply} (const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$, const \hyperlink{classlmx_1_1Data}{Data}$<$ T $>$ $\ast$)=0
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_afd492bb04f83b8b96b5964834436290a}{read\-\_\-mm\-\_\-file} (const char $\ast$)=0
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_add96428335bb5119c7f5126ebb07fb10}{read\-\_\-hb\-\_\-file} (const char $\ast$)=0
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_adbbffb805ce19ca7e9d2a2f70d0f7bcd}{write\-\_\-hb\-\_\-file} (const char $\ast$)=0
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_aace5fad359799ebcd14dd79c458b340e}{trn} ()=0
+\item 
+virtual bool \hyperlink{classlmx_1_1Data__mat_aec8ef2dab6c85ad0461718eb2aafe6ae}{exists} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})=0
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_a1b94e36086c4c181f8001f277ed89bbf}{factorize} ()=0
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_a8401959d4f7f008144de038293e24d5e}{subs\-Solve} (\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&rhs)
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_ac599c952372bc78b03c01ed4c7ed5094}{set\-Sparse\-Pattern} (\hyperlink{classlmx_1_1Vector}{Vector}$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, \hyperlink{classlmx_1_1Vector}{Vector}$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&)
+\item 
+virtual void \hyperlink{classlmx_1_1Data__mat_a58692a61f0d7b7c5c74225800a30da91}{set\-Sparse\-Pattern} (std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Data\-\_\-mat$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. Container for \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} data. 
+
+This class represents the skeleton for the data container used by \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} classes. No parameter nor function implementation here, just pure virtual class. See derived classes for details in implementation. Also maybe useful to see how this class is used in \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} classes.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Data__mat_a03e90b0b3053c99ef6d2e183d763511e}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!Data\-\_\-mat@{Data\-\_\-mat}}
+\index{Data\-\_\-mat@{Data\-\_\-mat}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{Data\-\_\-mat}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::{\bf Data\-\_\-mat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Data__mat_a03e90b0b3053c99ef6d2e183d763511e}
+Empty constructor. \hypertarget{classlmx_1_1Data__mat_a0c57d9772b2eccf6f796e60f1e156964}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!$\sim$\-Data\-\_\-mat@{$\sim$\-Data\-\_\-mat}}
+\index{$\sim$\-Data\-\_\-mat@{$\sim$\-Data\-\_\-mat}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{$\sim$\-Data\-\_\-mat}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::$\sim${\bf Data\-\_\-mat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Data__mat_a0c57d9772b2eccf6f796e60f1e156964}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Data__mat_aec8ef2dab6c85ad0461718eb2aafe6ae}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!exists@{exists}}
+\index{exists@{exists}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual bool {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::exists (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{, }
+\item[{{\bf size\-\_\-type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_aec8ef2dab6c85ad0461718eb2aafe6ae}
+Returns T\-R\-U\-E or F\-A\-L\-S\-E depending of element existance. Needed for less expensive access to C\-S\-C matrices. \begin{DoxyReturn}{Returns}
+T\-R\-U\-E if the element exists in internal storage structure. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classlmx_1_1Type__stdmatrix_a737490a62d48b1694bdbd173bbf284d5}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a737490a62d48b1694bdbd173bbf284d5}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_ad5185c1f7082e76afc2470f47462b4df}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, \hyperlink{classlmx_1_1Type__gmm_a65cedef38a61900940cd3efe616d7182}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}, and \hyperlink{classlmx_1_1Type__csc_af7a2ce6b3c1f7221759e5714be2a6ab2}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_a1b94e36086c4c181f8001f277ed89bbf}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!factorize@{factorize}}
+\index{factorize@{factorize}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{factorize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::factorize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_a1b94e36086c4c181f8001f277ed89bbf}
+
+
+Implemented in \hyperlink{classlmx_1_1Type__csc_acd31af597828197da686efaecc0b2cb7}{lmx\-::\-Type\-\_\-csc$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a84777801660805f7e6f1a93861d0c9ac}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a84777801660805f7e6f1a93861d0c9ac}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_a63603bd4b908d19c75e289f709d4a575}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, and \hyperlink{classlmx_1_1Type__gmm_a0bc2cb137b550114d39577510a018e97}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_a850c5fadc5139992f32bf15316309b52}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!multiply@{multiply}}
+\index{multiply@{multiply}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{, }
+\item[{const {\bf Data}$<$ T $>$ $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_a850c5fadc5139992f32bf15316309b52}
+Multiplication function. 
+
+Implemented in \hyperlink{classlmx_1_1Type__stdmatrix_a8cbc8c7b5e6ebe241e08c783b13c76b8}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a8cbc8c7b5e6ebe241e08c783b13c76b8}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_a81c1863c5a35508203ed5df0a05e5ba1}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, \hyperlink{classlmx_1_1Type__gmm_a46967449410f995dba61743d2819005e}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}, and \hyperlink{classlmx_1_1Type__csc_a5f2764badb799b42b956cb6bd384b55f}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_add96428335bb5119c7f5126ebb07fb10}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!read\-\_\-hb\-\_\-file@{read\-\_\-hb\-\_\-file}}
+\index{read\-\_\-hb\-\_\-file@{read\-\_\-hb\-\_\-file}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{read\-\_\-hb\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::read\-\_\-hb\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_add96428335bb5119c7f5126ebb07fb10}
+Read data in Harwell-\/\-Boeing format method. Opens the file specified and reads the matrix's data in it, suposing it's stored in Harwell-\/\-Boeing format. 
+
+Implemented in \hyperlink{classlmx_1_1Type__stdmatrix_a058d9102e67410c92e9cb149c602a088}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a058d9102e67410c92e9cb149c602a088}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_abd3bbdfd7c363a438edb65a6dedba1c2}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, \hyperlink{classlmx_1_1Type__gmm_a7463e17cac7443907a717cbe4814bc8b}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}, and \hyperlink{classlmx_1_1Type__csc_a167170de05513c15944e09722a29d699}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_afd492bb04f83b8b96b5964834436290a}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!read\-\_\-mm\-\_\-file@{read\-\_\-mm\-\_\-file}}
+\index{read\-\_\-mm\-\_\-file@{read\-\_\-mm\-\_\-file}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{read\-\_\-mm\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::read\-\_\-mm\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_afd492bb04f83b8b96b5964834436290a}
+Read data in \hyperlink{classlmx_1_1Matrix}{Matrix} Market format method. Opens the file specified and reads the matrix's data in it, suposing it's stored in \hyperlink{classlmx_1_1Matrix}{Matrix} Market format. 
+
+Implemented in \hyperlink{classlmx_1_1Type__stdmatrix_a5ba470e3a7685ee2b93fc0be6c03ba4f}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a5ba470e3a7685ee2b93fc0be6c03ba4f}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_a1fdc8733b30705aac2d86a43c4edfa1d}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, \hyperlink{classlmx_1_1Type__gmm_a28f293a101f7e860d1ea1a113a923864}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}, and \hyperlink{classlmx_1_1Type__csc_adf2926b0afd5a318fdc730225d10d2aa}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_ac599c952372bc78b03c01ed4c7ed5094}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!set\-Sparse\-Pattern@{set\-Sparse\-Pattern}}
+\index{set\-Sparse\-Pattern@{set\-Sparse\-Pattern}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{set\-Sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::set\-Sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ {\bf size\-\_\-type} $>$ \&}]{, }
+\item[{{\bf Vector}$<$ {\bf size\-\_\-type} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Data__mat_ac599c952372bc78b03c01ed4c7ed5094}
+Prepares the sparse structure of a C\-S\-C matrix. 
+
+Reimplemented in \hyperlink{classlmx_1_1Type__csc_a3a9e534d84a2cf1265adfe87087904b6}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_a58692a61f0d7b7c5c74225800a30da91}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!set\-Sparse\-Pattern@{set\-Sparse\-Pattern}}
+\index{set\-Sparse\-Pattern@{set\-Sparse\-Pattern}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{set\-Sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::set\-Sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{, }
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Data__mat_a58692a61f0d7b7c5c74225800a30da91}
+Prepares the sparse structure of a C\-S\-C matrix. 
+
+Reimplemented in \hyperlink{classlmx_1_1Type__csc_a0d71c07fe7b4ded4eb8c4d70e8e21117}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_a8401959d4f7f008144de038293e24d5e}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!subs\-Solve@{subs\-Solve}}
+\index{subs\-Solve@{subs\-Solve}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{subs\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::subs\-Solve (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1Data__mat_a8401959d4f7f008144de038293e24d5e}
+
+
+Reimplemented in \hyperlink{classlmx_1_1Type__csc_a7b4cf55fb69d0bc365e41c47eee0a676}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_aace5fad359799ebcd14dd79c458b340e}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!trn@{trn}}
+\index{trn@{trn}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{trn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::trn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_aace5fad359799ebcd14dd79c458b340e}
+Traspose matrix function. 
+
+Implemented in \hyperlink{classlmx_1_1Type__stdmatrix_a979ecbde1ba4097db9c5e0d92473efe0}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a979ecbde1ba4097db9c5e0d92473efe0}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_af8756bbdf946d35e9130d921785f7dc9}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, \hyperlink{classlmx_1_1Type__gmm_a73b5260b87a6188af420f6288e1fc573}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}, and \hyperlink{classlmx_1_1Type__csc_a77e01d8d8334bd448028d75c33e72f7f}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+\hypertarget{classlmx_1_1Data__mat_adbbffb805ce19ca7e9d2a2f70d0f7bcd}{\index{lmx\-::\-Data\-\_\-mat@{lmx\-::\-Data\-\_\-mat}!write\-\_\-hb\-\_\-file@{write\-\_\-hb\-\_\-file}}
+\index{write\-\_\-hb\-\_\-file@{write\-\_\-hb\-\_\-file}!lmx::Data_mat@{lmx\-::\-Data\-\_\-mat}}
+\subsubsection[{write\-\_\-hb\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf lmx\-::\-Data\-\_\-mat}$<$ T $>$\-::write\-\_\-hb\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1Data__mat_adbbffb805ce19ca7e9d2a2f70d0f7bcd}
+Write data in Harwell-\/\-Boeing format method. Opens the file specified and writes the matrix's data in it. 
+
+Implemented in \hyperlink{classlmx_1_1Type__stdmatrix_a9f4735df0b49f3b4474bb81583781b66}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}, \hyperlink{classlmx_1_1Type__stdmatrix_a9f4735df0b49f3b4474bb81583781b66}{lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$}, \hyperlink{classlmx_1_1Type__gmm__sparse_ae5dedc139e0e75c851b11022226c35f4}{lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$}, \hyperlink{classlmx_1_1Type__gmm_a03639818d7f55d592ec51e58b3ba0b87}{lmx\-::\-Type\-\_\-gmm$<$ T $>$}, and \hyperlink{classlmx_1_1Type__csc_a9b9007bdd388c37f469496d940be9416}{lmx\-::\-Type\-\_\-csc$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__data__blas_8h}{lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h}\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__data__mat_8h}{lmx\-\_\-mat\-\_\-data\-\_\-mat.\-h}\end{DoxyCompactItemize}

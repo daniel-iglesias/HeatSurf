@@ -1,0 +1,153 @@
+\hypertarget{classlmx_1_1IntegratorNEWMARK}{\section{lmx\-:\-:Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1IntegratorNEWMARK}\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1IntegratorNEWMARK}{Integrator\-N\-E\-W\-M\-A\-R\-K}. Gear's B\-D\-F integrator implementation for O\-D\-E systems.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-diff\-\_\-integrator\-\_\-newmark.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classlmx_1_1IntegratorNEWMARK__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classlmx_1_1IntegratorNEWMARK__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1IntegratorNEWMARK_a614551a827b3ed7b7e2af91a6a3cb4d8}{Integrator\-N\-E\-W\-M\-A\-R\-K} ()
+\item 
+\hyperlink{classlmx_1_1IntegratorNEWMARK_a75cc12a6848df78b87c656447069c5cc}{Integrator\-N\-E\-W\-M\-A\-R\-K} (double beta, double gamma)
+\item 
+\hyperlink{classlmx_1_1IntegratorNEWMARK_af0fcb3a6122141515aaccf4a207058aa}{$\sim$\-Integrator\-N\-E\-W\-M\-A\-R\-K} ()
+\item 
+void \hyperlink{classlmx_1_1IntegratorNEWMARK_a2aa5136a1c112e7ac31c2bd3cb516988}{initialize} (\hyperlink{classlmx_1_1Configuration}{Configuration}$<$ T $>$ $\ast$)
+\item 
+void \hyperlink{classlmx_1_1IntegratorNEWMARK_a8e02bf1560e75a9bfa6c9d47edfe9f86}{advance} ()
+\item 
+void \hyperlink{classlmx_1_1IntegratorNEWMARK_aec6f86f3fc8a7118e9e7ef49d5aaa9c0}{integrator\-Update} (\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ delta)
+\item 
+double \hyperlink{classlmx_1_1IntegratorNEWMARK_aef69029cf0cac5ce94ac218ffce77864}{get\-Partial\-Qdot} ()
+\item 
+double \hyperlink{classlmx_1_1IntegratorNEWMARK_ad00ddd433a6b4835c1be9ace78c66f6f}{get\-Partial\-Qddot} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1IntegratorNEWMARK}{Integrator\-N\-E\-W\-M\-A\-R\-K}. Gear's B\-D\-F integrator implementation for O\-D\-E systems. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1IntegratorNEWMARK_a614551a827b3ed7b7e2af91a6a3cb4d8}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!Integrator\-N\-E\-W\-M\-A\-R\-K@{Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\index{Integrator\-N\-E\-W\-M\-A\-R\-K@{Integrator\-N\-E\-W\-M\-A\-R\-K}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{Integrator\-N\-E\-W\-M\-A\-R\-K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::{\bf Integrator\-N\-E\-W\-M\-A\-R\-K} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1IntegratorNEWMARK_a614551a827b3ed7b7e2af91a6a3cb4d8}
+Empty constructor. \hypertarget{classlmx_1_1IntegratorNEWMARK_a75cc12a6848df78b87c656447069c5cc}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!Integrator\-N\-E\-W\-M\-A\-R\-K@{Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\index{Integrator\-N\-E\-W\-M\-A\-R\-K@{Integrator\-N\-E\-W\-M\-A\-R\-K}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{Integrator\-N\-E\-W\-M\-A\-R\-K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::{\bf Integrator\-N\-E\-W\-M\-A\-R\-K} (
+\begin{DoxyParamCaption}
+\item[{double}]{beta, }
+\item[{double}]{gamma}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1IntegratorNEWMARK_a75cc12a6848df78b87c656447069c5cc}
+Standard constructor. \hypertarget{classlmx_1_1IntegratorNEWMARK_af0fcb3a6122141515aaccf4a207058aa}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!$\sim$\-Integrator\-N\-E\-W\-M\-A\-R\-K@{$\sim$\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\index{$\sim$\-Integrator\-N\-E\-W\-M\-A\-R\-K@{$\sim$\-Integrator\-N\-E\-W\-M\-A\-R\-K}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{$\sim$\-Integrator\-N\-E\-W\-M\-A\-R\-K}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::$\sim${\bf Integrator\-N\-E\-W\-M\-A\-R\-K} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1IntegratorNEWMARK_af0fcb3a6122141515aaccf4a207058aa}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1IntegratorNEWMARK_a8e02bf1560e75a9bfa6c9d47edfe9f86}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!advance@{advance}}
+\index{advance@{advance}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{advance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::advance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorNEWMARK_a8e02bf1560e75a9bfa6c9d47edfe9f86}
+Advance to next time-\/step function. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBase_ab671aed2798b57bd80e831dd2d0d49cf}{lmx\-::\-Integrator\-Base$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorNEWMARK_ad00ddd433a6b4835c1be9ace78c66f6f}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!get\-Partial\-Qddot@{get\-Partial\-Qddot}}
+\index{get\-Partial\-Qddot@{get\-Partial\-Qddot}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{get\-Partial\-Qddot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ double {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::get\-Partial\-Qddot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorNEWMARK_ad00ddd433a6b4835c1be9ace78c66f6f}
+Calculates the factor $ \frac{\partial qddot_n}{\partial q_n} $. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBaseImplicit_a8933718fdb3629e07d0972d846c92a8e}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorNEWMARK_aef69029cf0cac5ce94ac218ffce77864}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!get\-Partial\-Qdot@{get\-Partial\-Qdot}}
+\index{get\-Partial\-Qdot@{get\-Partial\-Qdot}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{get\-Partial\-Qdot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ double {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::get\-Partial\-Qdot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorNEWMARK_aef69029cf0cac5ce94ac218ffce77864}
+Calculates the factor $ \frac{\partial qdot_n}{\partial q_n} $. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBaseImplicit_a8ee5ecd8b0bae40d8d79f48ca69f350f}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorNEWMARK_a2aa5136a1c112e7ac31c2bd3cb516988}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!initialize@{initialize}}
+\index{initialize@{initialize}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration}$<$ T $>$ $\ast$}]{configuration\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorNEWMARK_a2aa5136a1c112e7ac31c2bd3cb516988}
+Initialize integration function. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBase_a9ddf427bbc2267c264222552d5fa47c6}{lmx\-::\-Integrator\-Base$<$ T $>$}.
+
+
+
+References lmx\-::\-Configuration$<$ T $>$\-::set\-Stored\-Steps().
+
+\hypertarget{classlmx_1_1IntegratorNEWMARK_aec6f86f3fc8a7118e9e7ef49d5aaa9c0}{\index{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}!integrator\-Update@{integrator\-Update}}
+\index{integrator\-Update@{integrator\-Update}!lmx::IntegratorNEWMARK@{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}}
+\subsubsection[{integrator\-Update}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K}$<$ T $>$\-::integrator\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorNEWMARK_aec6f86f3fc8a7118e9e7ef49d5aaa9c0}
+Actualize with delta in actual time-\/step. 
+
+Implements \hyperlink{classlmx_1_1IntegratorBaseImplicit_aa7d97f0c3d139326a6b7ca28605f9681}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__diff__integrator__newmark_8h}{lmx\-\_\-diff\-\_\-integrator\-\_\-newmark.\-h}\end{DoxyCompactItemize}

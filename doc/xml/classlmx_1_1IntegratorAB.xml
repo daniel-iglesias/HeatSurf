@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1IntegratorAB" kind="class" prot="public">
+    <compoundname>lmx::IntegratorAB</compoundname>
+    <basecompoundref refid="classlmx_1_1IntegratorBase" prot="public" virt="non-virtual">lmx::IntegratorBase&lt; T &gt;</basecompoundref>
+    <includes refid="lmx__diff__integrator__ab_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1IntegratorAB_1af95edfe3dc091fe940b37a6a8df6300e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::IntegratorAB&lt; T &gt;::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="72" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorAB_1ace987a226803e75827cf153dfb745887" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T lmx::IntegratorAB&lt; T &gt;::b[5][5]</definition>
+        <argsstring>[5][5]</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array (of arrays) of method&apos;s coefficients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="73" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1IntegratorAB_1a55c4d5a75be8bbd35a5cac88bdee8ee9" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+        <definition>Configuration&lt;T&gt;* lmx::IntegratorAB&lt; T &gt;::theConfiguration</definition>
+        <argsstring></argsstring>
+        <name>theConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1IntegratorAB_1a4e8d94eeab22156cf7b5a14d4f29fae4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorAB&lt; T &gt;::IntegratorAB</definition>
+        <argsstring>()</argsstring>
+        <name>IntegratorAB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorAB_1a6f71ab0692e6ab5179fe6a0d1c7b881c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorAB&lt; T &gt;::IntegratorAB</definition>
+        <argsstring>(int ord)</argsstring>
+        <name>IntegratorAB</name>
+        <param>
+          <type>int</type>
+          <declname>ord</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Differential order of system. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="84" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorAB_1a1ef71aac011f8b89402abade0aceff41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::IntegratorAB&lt; T &gt;::~IntegratorAB</definition>
+        <argsstring>()</argsstring>
+        <name>~IntegratorAB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorAB_1a6aa7035ce0b6a896054175a32a0baf60" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorAB&lt; T &gt;::initialize</definition>
+        <argsstring>(Configuration&lt; T &gt; *)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a9ddf427bbc2267c264222552d5fa47c6">initialize</reimplements>
+        <param>
+          <type><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref>&lt; T &gt; *</type>
+          <defname>configuration_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Miscellaneus setup operations. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>configuration_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="119" bodyend="127"/>
+        <references refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" compoundref="lmx__diff__configuration_8h" startline="216" endline="246">lmx::Configuration&lt; T &gt;::setStoredSteps</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorAB_1a20e20c85eea134b3d831372fd16b0bec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool lmx::IntegratorAB&lt; T &gt;::isExplicit</definition>
+        <argsstring>()</argsstring>
+        <name>isExplicit</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1a78adaaa37562ad47226ee2192fd44bd0">isExplicit</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns 1 (TRUE) if it is an explicit-scheme integrator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1IntegratorAB_1a1fb950b1126f4db82df1e49dfb832b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void lmx::IntegratorAB&lt; T &gt;::advance</definition>
+        <argsstring>()</argsstring>
+        <name>advance</name>
+        <reimplements refid="classlmx_1_1IntegratorBase_1ab671aed2798b57bd80e831dd2d0d49cf">advance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advances to next time-step. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="68" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="130" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1IntegratorAB" kindref="compound">IntegratorAB</ref>. Adams-Bashford integrator implementation for ODE systems. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="362">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="361">
+        <label>lmx::IntegratorAB&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorAB"/>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="364">
+        <label>lmx::IntegratorBase&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorBase"/>
+      </node>
+      <node id="363">
+        <label>lmx::IntegratorAB&lt; T &gt;</label>
+        <link refid="classlmx_1_1IntegratorAB"/>
+        <childnode refid="364" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_ab.h" bodystart="49" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1IntegratorAB_1a1fb950b1126f4db82df1e49dfb832b42" prot="public" virt="virtual"><scope>lmx::IntegratorAB</scope><name>advance</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1ace987a226803e75827cf153dfb745887" prot="private" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>b</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1a6aa7035ce0b6a896054175a32a0baf60" prot="public" virt="virtual"><scope>lmx::IntegratorAB</scope><name>initialize</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1a4e8d94eeab22156cf7b5a14d4f29fae4" prot="public" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>IntegratorAB</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1a6f71ab0692e6ab5179fe6a0d1c7b881c" prot="public" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>IntegratorAB</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1ac8fe7d9b211d6d86b4377a3ab57399fc" prot="public" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>IntegratorBase</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1a20e20c85eea134b3d831372fd16b0bec" prot="public" virt="virtual"><scope>lmx::IntegratorAB</scope><name>isExplicit</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1af95edfe3dc091fe940b37a6a8df6300e" prot="private" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>order</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1a55c4d5a75be8bbd35a5cac88bdee8ee9" prot="private" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>theConfiguration</name></member>
+      <member refid="classlmx_1_1IntegratorAB_1a1ef71aac011f8b89402abade0aceff41" prot="public" virt="non-virtual"><scope>lmx::IntegratorAB</scope><name>~IntegratorAB</name></member>
+      <member refid="classlmx_1_1IntegratorBase_1a44f52dfb85513d84a2d3e5a1dbd73b94" prot="public" virt="virtual"><scope>lmx::IntegratorAB</scope><name>~IntegratorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

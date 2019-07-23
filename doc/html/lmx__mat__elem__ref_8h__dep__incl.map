@@ -1,0 +1,29 @@
+<map id="src/LMX/lmx_mat_elem_ref.h" name="src/LMX/lmx_mat_elem_ref.h">
+<area shape="rect" id="node2" href="$lmx__mat__vector_8h.html" title="This file contains both the declaration and implementation for Vector class member and friend functio..." alt="" coords="630,96,804,123"/>
+<area shape="rect" id="node3" href="$lmx__mat__type__stdmatrix_8h.html" title="This file contains both the declaration and implementation for type_stdmatrix (std::vector type) clas..." alt="" coords="561,171,716,213"/>
+<area shape="rect" id="node28" href="$lmx__linsolvers__cg_8h.html" title="Conjugate gradient class implementation. " alt="" coords="728,261,912,288"/>
+<area shape="rect" id="node4" href="$lmx__mat__matrix_8h.html" title="This file contains both the declaration and implementation for Matrix class member and friend functio..." alt="" coords="529,261,703,288"/>
+<area shape="rect" id="node5" href="$lmx__mat__dense__matrix_8h.html" title="This file contains both the declaration and implementation for DenseMatrix class member and friend fu..." alt="" coords="575,337,739,378"/>
+<area shape="rect" id="node6" href="$lmx__linsolvers__system_8h.html" title="LinearSystem class implementation. " alt="" coords="651,427,804,469"/>
+<area shape="rect" id="node7" href="$lmx__linsolvers_8h.html" title="Linear_solvers collection. " alt="" coords="647,517,809,544"/>
+<area shape="rect" id="node8" href="$lmx_8h.html" title="This is the main file that has to be included from an extern program so that the basic features of th..." alt="" coords="676,592,780,619"/>
+<area shape="rect" id="node9" href="$geometry_8h.html" title="Base class for the different geometries. " alt="" coords="675,667,781,693"/>
+<area shape="rect" id="node10" href="$cone_8h.html" title="Pure conical geometry. " alt="" coords="225,741,305,768"/>
+<area shape="rect" id="node16" href="$cone2_8h.html" title="src/cone2.h" alt="" coords="429,741,517,768"/>
+<area shape="rect" id="node19" href="$cylinder_8h.html" title="Pure cylindrical geometry. " alt="" coords="565,741,661,768"/>
+<area shape="rect" id="node21" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="924,741,1044,768"/>
+<area shape="rect" id="node22" href="$ogive_8h.html" title="src/ogive.h" alt="" coords="687,741,769,768"/>
+<area shape="rect" id="node24" href="$twoplates_8h.html" title="Two symmetrical plates geometry. " alt="" coords="793,741,900,768"/>
+<area shape="rect" id="node26" href="$ring_8h.html" title="Anular geometry. " alt="" coords="1075,741,1149,768"/>
+<area shape="rect" id="node11" href="$cone_8cpp.html" title="src/cone.cpp" alt="" coords="142,816,236,843"/>
+<area shape="rect" id="node12" href="$cone2-bak_8h.html" title="src/cone2&#45;bak.h" alt="" coords="5,816,117,843"/>
+<area shape="rect" id="node13" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="673,816,783,843"/>
+<area shape="rect" id="node14" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="599,891,712,917"/>
+<area shape="rect" id="node15" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="737,891,863,917"/>
+<area shape="rect" id="node17" href="$cone2-bak_8cpp.html" title="src/cone2&#45;bak.cpp" alt="" coords="387,816,513,843"/>
+<area shape="rect" id="node18" href="$cone2_8cpp.html" title="src/cone2.cpp" alt="" coords="261,816,363,843"/>
+<area shape="rect" id="node20" href="$cylinder_8cpp.html" title="src/cylinder.cpp" alt="" coords="538,816,648,843"/>
+<area shape="rect" id="node23" href="$ogive_8cpp.html" title="src/ogive.cpp" alt="" coords="807,816,904,843"/>
+<area shape="rect" id="node25" href="$twoplates_8cpp.html" title="src/twoplates.cpp" alt="" coords="929,816,1049,843"/>
+<area shape="rect" id="node27" href="$ring_8cpp.html" title="src/ring.cpp" alt="" coords="1075,816,1163,843"/>
+</map>

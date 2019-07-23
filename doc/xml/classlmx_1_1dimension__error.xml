@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1dimension__error" kind="class" prot="public">
+    <compoundname>lmx::dimension_error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">logic_error</basecompoundref>
+    <includes refid="lmx__except_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1dimension__error_1a8dfe967116d5b890cf8937e9071577ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::dimension_error::dimension_error</definition>
+        <argsstring>(const std::string &amp;what_arg)</argsstring>
+        <name>dimension_error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>what_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor with one argument. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>what_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing error&apos;s information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="83" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="83" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages matrices and vectors dimension errors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="325">
+        <label>logic_error</label>
+      </node>
+      <node id="324">
+        <label>lmx::dimension_error</label>
+        <link refid="classlmx_1_1dimension__error"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="327">
+        <label>logic_error</label>
+      </node>
+      <node id="326">
+        <label>lmx::dimension_error</label>
+        <link refid="classlmx_1_1dimension__error"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="77" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1dimension__error_1a8dfe967116d5b890cf8937e9071577ac" prot="public" virt="non-virtual"><scope>lmx::dimension_error</scope><name>dimension_error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

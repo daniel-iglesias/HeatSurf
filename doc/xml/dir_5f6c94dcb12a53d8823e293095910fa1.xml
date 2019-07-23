@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_5f6c94dcb12a53d8823e293095910fa1" kind="dir">
+    <compoundname>src/LMX</compoundname>
+    <innerfile refid="cofe__CofeUtils_8h">cofe_CofeUtils.h</innerfile>
+    <innerfile refid="cofe__fmc_8h">cofe_fmc.h</innerfile>
+    <innerfile refid="cofe__gausselim_8h">cofe_gausselim.h</innerfile>
+    <innerfile refid="cofe__jpjacobi_8h">cofe_jpjacobi.h</innerfile>
+    <innerfile refid="cofe__TensorRank1_8h">cofe_TensorRank1.h</innerfile>
+    <innerfile refid="cofe__TensorRank2_8h">cofe_TensorRank2.h</innerfile>
+    <innerfile refid="cofe__TensorRank2Sym_8h">cofe_TensorRank2Sym.h</innerfile>
+    <innerfile refid="lmx_8h">lmx.h</innerfile>
+    <innerfile refid="lmx__base__iohb_8h">lmx_base_iohb.h</innerfile>
+    <innerfile refid="lmx__base__selector_8h">lmx_base_selector.h</innerfile>
+    <innerfile refid="lmx__base__stopwatch_8h">lmx_base_stopwatch.h</innerfile>
+    <innerfile refid="lmx__diff__configuration_8h">lmx_diff_configuration.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__ab_8h">lmx_diff_integrator_ab.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__am_8h">lmx_diff_integrator_am.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__base_8h">lmx_diff_integrator_base.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__base__implicit_8h">lmx_diff_integrator_base_implicit.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__bdf_8h">lmx_diff_integrator_bdf.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__centraldiff_8h">lmx_diff_integrator_centraldiff.h</innerfile>
+    <innerfile refid="lmx__diff__integrator__newmark_8h">lmx_diff_integrator_newmark.h</innerfile>
+    <innerfile refid="lmx__diff__problem_8h">lmx_diff_problem.h</innerfile>
+    <innerfile refid="lmx__diff__problem__double_8h">lmx_diff_problem_double.h</innerfile>
+    <innerfile refid="lmx__diff__problem__first_8h">lmx_diff_problem_first.h</innerfile>
+    <innerfile refid="lmx__diff__problem__first__second_8h">lmx_diff_problem_first_second.h</innerfile>
+    <innerfile refid="lmx__diff__problem__second_8h">lmx_diff_problem_second.h</innerfile>
+    <innerfile refid="lmx__except_8h">lmx_except.h</innerfile>
+    <innerfile refid="lmx__linsolvers_8h">lmx_linsolvers.h</innerfile>
+    <innerfile refid="lmx__linsolvers__cg_8h">lmx_linsolvers_cg.h</innerfile>
+    <innerfile refid="lmx__linsolvers__lapack_8h">lmx_linsolvers_lapack.h</innerfile>
+    <innerfile refid="lmx__linsolvers__lu_8h">lmx_linsolvers_lu.h</innerfile>
+    <innerfile refid="lmx__linsolvers__superlu__interface_8h">lmx_linsolvers_superlu_interface.h</innerfile>
+    <innerfile refid="lmx__linsolvers__system_8h">lmx_linsolvers_system.h</innerfile>
+    <innerfile refid="lmx__mat__data_8h">lmx_mat_data.h</innerfile>
+    <innerfile refid="lmx__mat__data__blas_8h">lmx_mat_data_blas.h</innerfile>
+    <innerfile refid="lmx__mat__data__mat_8h">lmx_mat_data_mat.h</innerfile>
+    <innerfile refid="lmx__mat__data__vec_8h">lmx_mat_data_vec.h</innerfile>
+    <innerfile refid="lmx__mat__dense__matrix_8h">lmx_mat_dense_matrix.h</innerfile>
+    <innerfile refid="lmx__mat__elem__ref_8h">lmx_mat_elem_ref.h</innerfile>
+    <innerfile refid="lmx__mat__matrix_8h">lmx_mat_matrix.h</innerfile>
+    <innerfile refid="lmx__mat__type__csc_8h">lmx_mat_type_csc.h</innerfile>
+    <innerfile refid="lmx__mat__type__gmm_8h">lmx_mat_type_gmm.h</innerfile>
+    <innerfile refid="lmx__mat__type__gmm__sparse1_8h">lmx_mat_type_gmm_sparse1.h</innerfile>
+    <innerfile refid="lmx__mat__type__gmmvector__sparse1_8h">lmx_mat_type_gmmvector_sparse1.h</innerfile>
+    <innerfile refid="lmx__mat__type__stdmatrix_8h">lmx_mat_type_stdmatrix.h</innerfile>
+    <innerfile refid="lmx__mat__type__stdvector_8h">lmx_mat_type_stdvector.h</innerfile>
+    <innerfile refid="lmx__mat__vector_8h">lmx_mat_vector.h</innerfile>
+    <innerfile refid="lmx__nlsolvers_8h">lmx_nlsolvers.h</innerfile>
+    <innerfile refid="lmx__nlsolvers__double_8h">lmx_nlsolvers_double.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/"/>
+  </compounddef>
+</doxygen>

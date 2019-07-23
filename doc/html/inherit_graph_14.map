@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classlmx_1_1dimension__error.html" title="Manages matrices and vectors dimension errors. " alt="" coords="141,5,280,32"/>
+<area shape="rect" id="node3" href="$classlmx_1_1failure__error.html" title="Manages other errors not classified above. " alt="" coords="153,56,269,83"/>
+<area shape="rect" id="node4" href="$classlmx_1_1file__not__found__error.html" title="Manages read/write methods&#39; errors when checking file names. " alt="" coords="147,107,275,149"/>
+<area shape="rect" id="node5" href="$classlmx_1_1internal__error.html" title="Manages errors that occur inside LMX methods and functions. " alt="" coords="149,173,272,200"/>
+<area shape="rect" id="node6" href="$classlmx_1_1to__be__done__error.html" title="Manages errors in methods witch implementation is not finished. " alt="" coords="137,224,285,251"/>
+</map>

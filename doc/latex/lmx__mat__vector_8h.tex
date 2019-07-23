@@ -1,0 +1,63 @@
+\hypertarget{lmx__mat__vector_8h}{\section{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-vector.h File Reference}
+\label{lmx__mat__vector_8h}\index{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-vector.\-h@{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-vector.\-h}}
+}
+
+
+This file contains both the declaration and implementation for \hyperlink{classVector}{Vector} class member and friend functions.  
+
+
+{\ttfamily \#include \char`\"{}lmx\-\_\-mat\-\_\-elem\-\_\-ref.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lmx\-\_\-mat\-\_\-type\-\_\-stdvector.\-h\char`\"{}}\\*
+Include dependency graph for lmx\-\_\-mat\-\_\-vector.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__mat__vector_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__mat__vector_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlmx_1_1Matrix}{lmx\-::\-Matrix$<$ T $>$}
+\item 
+class \hyperlink{classlmx_1_1DenseMatrix}{lmx\-::\-Dense\-Matrix$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1LinearSystem}{lmx\-::\-Linear\-System$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1LinearSystem}{Linear\-System}. Linear systems implementation\-: \char`\"{}\-A$\ast$x = b\char`\"{} . \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1Vector}{Vector}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelmx}{lmx}
+\begin{DoxyCompactList}\small\item\em Linked Matri\-X methods library uses lmx namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacelmx_a9dfd59f1cf0bfa5c7cc217f0201033e6}{lmx\-::set\-Vector\-Type} (int type)
+\item 
+int \hyperlink{namespacelmx_a65ad7b9cfa290037192cc3147ca508d5}{lmx\-::get\-Vector\-Type} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classVector}{Vector}$<$ T $>$ \hyperlink{namespacelmx_a056662a18d83b06f907bd389b7001b35}{lmx\-::operator$\ast$} (const \hyperlink{classMatrix}{Matrix}$<$ T $>$ \&A, const \hyperlink{classVector}{Vector}$<$ T $>$ \&b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classVector}{Vector}$<$ T $>$ \hyperlink{namespacelmx_a77129091804126ffb475a3e086be8612}{lmx\-::operator$\ast$} (const Dense\-Matrix$<$ T $>$ \&A, const \hyperlink{classVector}{Vector}$<$ T $>$ \&b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classVector}{Vector}$<$ T $>$ \hyperlink{namespacelmx_aa216d870ef9e604a7ef9bd3266e148f0}{lmx\-::operator$\ast$} (const T \&a, const \hyperlink{classVector}{Vector}$<$ T $>$ \&B)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::ostream \& \hyperlink{namespacelmx_a9a344d9925b2c2536ad9a92115170e0f}{lmx\-::operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classVector}{Vector}$<$ T $>$ \&vec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains both the declaration and implementation for \hyperlink{classVector}{Vector} class member and friend functions. \begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}

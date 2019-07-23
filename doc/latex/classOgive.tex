@@ -1,0 +1,234 @@
+\hypertarget{classOgive}{\section{Ogive Class Reference}
+\label{classOgive}\index{Ogive@{Ogive}}
+}
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/ogive.\-h$>$}
+
+
+
+Inheritance diagram for Ogive\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classOgive__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ogive\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classOgive__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOgive_af64e93b747bcc7f80d1c64705c335f22}{Ogive} ()
+\item 
+\hyperlink{classOgive_a4cc1f5beafcd2259677c4053d1ce38d1}{Ogive} (std\-::string, double, double, double, int, double)
+\item 
+\hyperlink{classOgive_a83d0745d3b4324cb17976fc2dfdd4ac1}{$\sim$\-Ogive} ()
+\item 
+void \hyperlink{classOgive_a925beac2c2c2ee5f7ad6654a4f1048e5}{set\-Sections} (double)
+\item 
+void \hyperlink{classOgive_aa8561ca676dbadc7e36a7e9c6b805a72}{compute\-Geometry} ()
+\item 
+void \hyperlink{classOgive_a849470be3cd2e0db95fd191b0d41f0f5}{residue} (lmx\-::\-Vector$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classOgive_a3260fd40c32dbb4e1c5f17f7903e7c20}{jacobian} (lmx\-::\-Matrix$<$ double $>$ \&, lmx\-::\-Vector$<$ double $>$ \&)
+\item 
+void \hyperlink{classOgive_aa2ffe27bec17dcb9b7f99a26d9ec9f6e}{compute\-Intersection} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classOgive_a1f076226bfd547f46542d02c49399693}{compute\-Nodal\-Power} (\hyperlink{classParticle}{Particle} $\ast$)
+\item 
+void \hyperlink{classOgive_a5febe7a8e9601801d634067213d5c6f9}{output\-Table} ()
+\item 
+void \hyperlink{classOgive_a260f5f7945194147784025aaf7fe0a72}{output\-Power\-File} (int)
+\item 
+void \hyperlink{classOgive_a0fc6d6890479d78bbf9eab20969698bc}{output\-Power\-Density\-File} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classOgive_af64e93b747bcc7f80d1c64705c335f22}{\index{Ogive@{Ogive}!Ogive@{Ogive}}
+\index{Ogive@{Ogive}!Ogive@{Ogive}}
+\subsubsection[{Ogive}]{\setlength{\rightskip}{0pt plus 5cm}Ogive\-::\-Ogive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classOgive_af64e93b747bcc7f80d1c64705c335f22}
+\hypertarget{classOgive_a4cc1f5beafcd2259677c4053d1ce38d1}{\index{Ogive@{Ogive}!Ogive@{Ogive}}
+\index{Ogive@{Ogive}!Ogive@{Ogive}}
+\subsubsection[{Ogive}]{\setlength{\rightskip}{0pt plus 5cm}Ogive\-::\-Ogive (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{type\-\_\-in, }
+\item[{double}]{par0\-\_\-in, }
+\item[{double}]{par1\-\_\-in, }
+\item[{double}]{par2\-\_\-in, }
+\item[{int}]{par3\-\_\-in, }
+\item[{double}]{par4\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classOgive_a4cc1f5beafcd2259677c4053d1ce38d1}
+
+
+References Geometry\-::grid\-Width, and Geometry\-::length.
+
+\hypertarget{classOgive_a83d0745d3b4324cb17976fc2dfdd4ac1}{\index{Ogive@{Ogive}!$\sim$\-Ogive@{$\sim$\-Ogive}}
+\index{$\sim$\-Ogive@{$\sim$\-Ogive}!Ogive@{Ogive}}
+\subsubsection[{$\sim$\-Ogive}]{\setlength{\rightskip}{0pt plus 5cm}Ogive\-::$\sim$\-Ogive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classOgive_a83d0745d3b4324cb17976fc2dfdd4ac1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classOgive_aa8561ca676dbadc7e36a7e9c6b805a72}{\index{Ogive@{Ogive}!compute\-Geometry@{compute\-Geometry}}
+\index{compute\-Geometry@{compute\-Geometry}!Ogive@{Ogive}}
+\subsubsection[{compute\-Geometry}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::compute\-Geometry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_aa8561ca676dbadc7e36a7e9c6b805a72}
+
+
+Implements \hyperlink{classGeometry_a3e77ac889d1e440c24efbde630aa1933}{Geometry}.
+
+
+
+References Geometry\-::elements, Geometry\-::grid, Geometry\-::grid\-Points, Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classOgive_aa2ffe27bec17dcb9b7f99a26d9ec9f6e}{\index{Ogive@{Ogive}!compute\-Intersection@{compute\-Intersection}}
+\index{compute\-Intersection@{compute\-Intersection}!Ogive@{Ogive}}
+\subsubsection[{compute\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::compute\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_aa2ffe27bec17dcb9b7f99a26d9ec9f6e}
+
+
+Implements \hyperlink{classGeometry_ac2e6c74ef25ff3e0c4f46b2c80484881}{Geometry}.
+
+
+
+References Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Particle\-::get\-Z(), Particle\-::get\-Zdiv(), jacobian(), Geometry\-::param\-Trajectories, residue(), and Geometry\-::z0.
+
+\hypertarget{classOgive_a1f076226bfd547f46542d02c49399693}{\index{Ogive@{Ogive}!compute\-Nodal\-Power@{compute\-Nodal\-Power}}
+\index{compute\-Nodal\-Power@{compute\-Nodal\-Power}!Ogive@{Ogive}}
+\subsubsection[{compute\-Nodal\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::compute\-Nodal\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} $\ast$}]{particle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_a1f076226bfd547f46542d02c49399693}
+
+
+Implements \hyperlink{classGeometry_af60650f8ce6d5a220928ccd7395120df}{Geometry}.
+
+
+
+References Particle\-::get\-Energy(), Particle\-::get\-X(), Particle\-::get\-Xdiv(), Particle\-::get\-Y(), Particle\-::get\-Ydiv(), Geometry\-::length, Geometry\-::nodes, Geometry\-::param\-Trajectories, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classOgive_a3260fd40c32dbb4e1c5f17f7903e7c20}{\index{Ogive@{Ogive}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Ogive@{Ogive}}
+\subsubsection[{jacobian}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::jacobian (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Matrix$<$ double $>$ \&}]{jac, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classOgive_a3260fd40c32dbb4e1c5f17f7903e7c20}
+
+
+References Geometry\-::z0.
+
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classOgive_a0fc6d6890479d78bbf9eab20969698bc}{\index{Ogive@{Ogive}!output\-Power\-Density\-File@{output\-Power\-Density\-File}}
+\index{output\-Power\-Density\-File@{output\-Power\-Density\-File}!Ogive@{Ogive}}
+\subsubsection[{output\-Power\-Density\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::output\-Power\-Density\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_a0fc6d6890479d78bbf9eab20969698bc}
+
+
+Implements \hyperlink{classGeometry_ad5ea8315df4569915beed2cfbe01fac9}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, Geometry\-::sectors, and Geometry\-::z0.
+
+\hypertarget{classOgive_a260f5f7945194147784025aaf7fe0a72}{\index{Ogive@{Ogive}!output\-Power\-File@{output\-Power\-File}}
+\index{output\-Power\-File@{output\-Power\-File}!Ogive@{Ogive}}
+\subsubsection[{output\-Power\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::output\-Power\-File (
+\begin{DoxyParamCaption}
+\item[{int}]{particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_a260f5f7945194147784025aaf7fe0a72}
+
+
+Implements \hyperlink{classGeometry_a37f5f2788753e4b8dfcf8de787476d56}{Geometry}.
+
+
+
+References Geometry\-::length, Geometry\-::nodes, Geometry\-::sections, and Geometry\-::sectors.
+
+\hypertarget{classOgive_a5febe7a8e9601801d634067213d5c6f9}{\index{Ogive@{Ogive}!output\-Table@{output\-Table}}
+\index{output\-Table@{output\-Table}!Ogive@{Ogive}}
+\subsubsection[{output\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::output\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_a5febe7a8e9601801d634067213d5c6f9}
+
+
+Implements \hyperlink{classGeometry_a60e1424a222ba59284b81812aff34148}{Geometry}.
+
+\hypertarget{classOgive_a849470be3cd2e0db95fd191b0d41f0f5}{\index{Ogive@{Ogive}!residue@{residue}}
+\index{residue@{residue}!Ogive@{Ogive}}
+\subsubsection[{residue}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::residue (
+\begin{DoxyParamCaption}
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{res, }
+\item[{lmx\-::\-Vector$<$ double $>$ \&}]{conf}
+\end{DoxyParamCaption}
+)}}\label{classOgive_a849470be3cd2e0db95fd191b0d41f0f5}
+
+
+References Geometry\-::z0.
+
+
+
+Referenced by compute\-Intersection().
+
+\hypertarget{classOgive_a925beac2c2c2ee5f7ad6654a4f1048e5}{\index{Ogive@{Ogive}!set\-Sections@{set\-Sections}}
+\index{set\-Sections@{set\-Sections}!Ogive@{Ogive}}
+\subsubsection[{set\-Sections}]{\setlength{\rightskip}{0pt plus 5cm}void Ogive\-::set\-Sections (
+\begin{DoxyParamCaption}
+\item[{double}]{distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classOgive_a925beac2c2c2ee5f7ad6654a4f1048e5}
+
+
+Implements \hyperlink{classGeometry_aab2d4db916d7c8541af6624a82b2d4df}{Geometry}.
+
+
+
+References Geometry\-::length, and Geometry\-::sections.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{ogive_8h}{ogive.\-h}\item 
+src/\hyperlink{ogive_8cpp}{ogive.\-cpp}\end{DoxyCompactItemize}

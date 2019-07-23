@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="cone2-bak_8cpp" kind="file">
+    <compoundname>cone2-bak.cpp</compoundname>
+    <includes refid="cone2_8h" local="yes">cone2.h</includes>
+    <includes local="no">vtkPoints.h</includes>
+    <includes local="no">vtkUnstructuredGrid.h</includes>
+    <includes local="no">vtkCell.h</includes>
+    <incdepgraph>
+      <node id="475">
+        <label>LMX/lmx_nlsolvers.h</label>
+      </node>
+      <node id="477">
+        <label>element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>vtkPoints.h</label>
+      </node>
+      <node id="476">
+        <label>particle.h</label>
+        <link refid="particle_8h"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>cmath</label>
+      </node>
+      <node id="472">
+        <label>map</label>
+      </node>
+      <node id="481">
+        <label>vtkCell.h</label>
+      </node>
+      <node id="480">
+        <label>vtkUnstructuredGrid.h</label>
+      </node>
+      <node id="468">
+        <label>cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>vector</label>
+      </node>
+      <node id="478">
+        <label>node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>LMX/lmx.h</label>
+      </node>
+      <node id="470">
+        <label>iostream</label>
+      </node>
+      <node id="467">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak.cpp"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2007<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>daniel.iglesias@ciemat.es<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cone2_8h" kindref="compound">cone2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;iomanip.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkPoints.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkUnstructuredGrid.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkCell.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classCone2_1ad99f90e043c4aa4cc1e4012aafd9a909" refkind="member"><highlight class="normal"><ref refid="classCone2_1ad99f90e043c4aa4cc1e4012aafd9a909" kindref="member">Cone2::Cone2</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classCone2_1a65867efad22fe7b708dd76b7a2621577" refkind="member"><highlight class="normal"><ref refid="classCone2_1ad99f90e043c4aa4cc1e4012aafd9a909" kindref="member">Cone2::Cone2</ref><sp/>(<sp/>std::string<sp/>type_in,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z0_in,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>length_in,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>initDiam_in,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>finalDiam_in,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>par3_in<sp/>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classCone" kindref="compound">Cone</ref><sp/>(<sp/>type_in,<sp/>z0_in,<sp/>length_in,<sp/>initDiam_in,<sp/>par3_in<sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>finalDiam<sp/>(finalDiam_in)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCone2_1a7fbc810b8d75802b56af1acd3e4a39f6" kindref="member">slope</ref><sp/>=<sp/>atan2<sp/>(<sp/>(<ref refid="classCone2_1a79dcbb3665f62edad4d5e8ccbc3378bb" kindref="member">initDiam</ref>-finalDiam)/2.,<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref><sp/>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kindref="member">gridWidth</ref><sp/>=<sp/><ref refid="classCone2_1a79dcbb3665f62edad4d5e8ccbc3378bb" kindref="member">initDiam</ref>/2.;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classCone2_1add4b118b935f03db10ed1db95809034b" refkind="member"><highlight class="normal"><ref refid="classCone2_1add4b118b935f03db10ed1db95809034b" kindref="member">Cone2::~Cone2</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Trying<sp/>same<sp/>as<sp/>cone<sp/>really</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" kindref="member">Cone2::residue</ref><sp/>(<sp/>lmx::Vector&lt;double&gt;&amp;<sp/>res,<sp/>lmx::Vector&lt;double&gt;&amp;<sp/>conf<sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>conf.readElement<sp/>(<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>res.writeElement<sp/>(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>pow<sp/>(<sp/>x+vx*t,2<sp/>)<sp/>+pow<sp/>(<sp/>y+vy*t,2<sp/>)<sp/>)<sp/>*pow<sp/>(<sp/>cos<sp/>(<sp/><ref refid="classCone2_1a7fbc810b8d75802b56af1acd3e4a39f6" kindref="member">slope</ref><sp/>),2<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-pow<sp/>(<sp/>t-<sp/>(<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref>+<ref refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" kindref="member">z0</ref><sp/>),2<sp/>)<sp/>*pow<sp/>(<sp/>sin<sp/>(<sp/><ref refid="classCone2_1a7fbc810b8d75802b56af1acd3e4a39f6" kindref="member">slope</ref><sp/>),2<sp/>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>0</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Trying<sp/>same<sp/>as<sp/>cone<sp/>really</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classCone2_1a94d852542a6c22427333b484f30658c2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCone2_1a94d852542a6c22427333b484f30658c2" kindref="member">Cone2::jacobian</ref><sp/>(<sp/>lmx::Matrix&lt;double&gt;&amp;<sp/>jac,<sp/>lmx::Vector&lt;double&gt;&amp;<sp/>conf<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>conf.readElement<sp/>(<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>jac.writeElement<sp/>(</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>2*vx*<sp/>(<sp/>x+vx*t<sp/>)<sp/>+2*vy*<sp/>(<sp/>y+vy*t<sp/>)<sp/>)<sp/>*pow<sp/>(<sp/>cos<sp/>(<sp/><ref refid="classCone2_1a7fbc810b8d75802b56af1acd3e4a39f6" kindref="member">slope</ref><sp/>),2<sp/>)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-2*<sp/>(<sp/>t-<sp/>(<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref>+<ref refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" kindref="member">z0</ref><sp/>)<sp/>)<sp/>*pow<sp/>(<sp/>sin<sp/>(<sp/><ref refid="classCone2_1a7fbc810b8d75802b56af1acd3e4a39f6" kindref="member">slope</ref><sp/>),2<sp/>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>0</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>0</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" kindref="member">Cone2::computeIntersection</ref><sp/>(<sp/><ref refid="classParticle" kindref="compound">Particle</ref>*<sp/>particle<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>particle-&gt;<ref refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" kindref="member">getX</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>particle-&gt;<ref refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" kindref="member">getY</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>=<sp/>particle-&gt;<ref refid="classParticle_1a1b287734891b40546e06e17db8589fca" kindref="member">getZ</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>vx<sp/>=<sp/>particle-&gt;<ref refid="classParticle_1a0813b73b2d08f57f05607df530684e14" kindref="member">getXdiv</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>vy<sp/>=<sp/>particle-&gt;<ref refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" kindref="member">getYdiv</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>vz<sp/>=<sp/>particle-&gt;<ref refid="classParticle_1a9435d915d86f9df46203f9b5c72888d0" kindref="member">getZdiv</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>lmx::Vector&lt;double&gt;<sp/>initialGuess<sp/>(<sp/>1<sp/>);<sp/></highlight><highlight class="comment">//<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>lmx::NLSolver&lt;Cone2&gt;<sp/>theSolver;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>theSolver.setInfo<sp/>(<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>theSolver.setInitialConfiguration<sp/>(<sp/>initialGuess<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>theSolver.setSystem<sp/>(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>theSolver.setResidue<sp/>(<sp/>&amp;<ref refid="classCone2_1a07d48d198db7ccb9d72f17e1b4f0c154" kindref="member">Cone2::residue</ref><sp/>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>theSolver.setJacobian<sp/>(<sp/>&amp;<ref refid="classCone2_1a94d852542a6c22427333b484f30658c2" kindref="member">Cone2::jacobian</ref><sp/>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>theSolver.setConvergence(<sp/>&amp;Cone::myConvergence<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>theSolver.setMaxIterations(<sp/>100<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>theSolver.solve<sp/>(<sp/>100<sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>theSolver.getSolution().readElement(0)<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" kindref="member">paramTrajectories</ref>.push_back<sp/>(<sp/>theSolver.getSolution().readElement<sp/>(<sp/>0<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/cone2-bak.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+\hypertarget{classlmx_1_1ExactStopwatch}{\section{lmx\-:\-:Exact\-Stopwatch Class Reference}
+\label{classlmx_1_1ExactStopwatch}\index{lmx\-::\-Exact\-Stopwatch@{lmx\-::\-Exact\-Stopwatch}}
+}
+
+
+Class \hyperlink{classlmx_1_1ExactStopwatch}{Exact\-Stopwatch}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-base\-\_\-stopwatch.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1ExactStopwatch_aa12454debea1b8a06ab341a97d512151}{Exact\-Stopwatch} ()
+\item 
+\hyperlink{classlmx_1_1ExactStopwatch_a9e32f35010bfa1d8458a478c07eb3004}{Exact\-Stopwatch} (char $\ast$file\-\_\-name)
+\item 
+\hyperlink{classlmx_1_1ExactStopwatch_adc45924bf093d04497e478c5ec90ae7d}{$\sim$\-Exact\-Stopwatch} ()
+\item 
+double \hyperlink{classlmx_1_1ExactStopwatch_aba5aa37410f9774546788b255d52c453}{get\-Time} ()
+\item 
+void \hyperlink{classlmx_1_1ExactStopwatch_adb2ba9de970c1ad9b7ba536eced4121a}{set\-Quiet} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classlmx_1_1ExactStopwatch}{Exact\-Stopwatch}. 
+
+This class is better than class \hyperlink{classlmx_1_1Stopwatch}{Stopwatch} when using parallelized executables because it uses the system's time instead of counting processor clicks. The usage is very simple\-: just put the operations you want to measure inside a block (use braces) and create an empty \hyperlink{classlmx_1_1Stopwatch}{Stopwatch} object before any operation takes place.
+
+W\-A\-R\-N\-I\-N\-G\-: Ther might be some portability issues.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1ExactStopwatch_aa12454debea1b8a06ab341a97d512151}{\index{lmx\-::\-Exact\-Stopwatch@{lmx\-::\-Exact\-Stopwatch}!Exact\-Stopwatch@{Exact\-Stopwatch}}
+\index{Exact\-Stopwatch@{Exact\-Stopwatch}!lmx::ExactStopwatch@{lmx\-::\-Exact\-Stopwatch}}
+\subsubsection[{Exact\-Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}lmx\-::\-Exact\-Stopwatch\-::\-Exact\-Stopwatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1ExactStopwatch_aa12454debea1b8a06ab341a97d512151}
+Empty constructor \hypertarget{classlmx_1_1ExactStopwatch_a9e32f35010bfa1d8458a478c07eb3004}{\index{lmx\-::\-Exact\-Stopwatch@{lmx\-::\-Exact\-Stopwatch}!Exact\-Stopwatch@{Exact\-Stopwatch}}
+\index{Exact\-Stopwatch@{Exact\-Stopwatch}!lmx::ExactStopwatch@{lmx\-::\-Exact\-Stopwatch}}
+\subsubsection[{Exact\-Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}lmx\-::\-Exact\-Stopwatch\-::\-Exact\-Stopwatch (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1ExactStopwatch_a9e32f35010bfa1d8458a478c07eb3004}
+Constructor with name of file \hypertarget{classlmx_1_1ExactStopwatch_adc45924bf093d04497e478c5ec90ae7d}{\index{lmx\-::\-Exact\-Stopwatch@{lmx\-::\-Exact\-Stopwatch}!$\sim$\-Exact\-Stopwatch@{$\sim$\-Exact\-Stopwatch}}
+\index{$\sim$\-Exact\-Stopwatch@{$\sim$\-Exact\-Stopwatch}!lmx::ExactStopwatch@{lmx\-::\-Exact\-Stopwatch}}
+\subsubsection[{$\sim$\-Exact\-Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}lmx\-::\-Exact\-Stopwatch\-::$\sim$\-Exact\-Stopwatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1ExactStopwatch_adc45924bf093d04497e478c5ec90ae7d}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1ExactStopwatch_aba5aa37410f9774546788b255d52c453}{\index{lmx\-::\-Exact\-Stopwatch@{lmx\-::\-Exact\-Stopwatch}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!lmx::ExactStopwatch@{lmx\-::\-Exact\-Stopwatch}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double lmx\-::\-Exact\-Stopwatch\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1ExactStopwatch_aba5aa37410f9774546788b255d52c453}
+Time count access.
+
+\begin{DoxyReturn}{Returns}
+value of the counter. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1ExactStopwatch_adb2ba9de970c1ad9b7ba536eced4121a}{\index{lmx\-::\-Exact\-Stopwatch@{lmx\-::\-Exact\-Stopwatch}!set\-Quiet@{set\-Quiet}}
+\index{set\-Quiet@{set\-Quiet}!lmx::ExactStopwatch@{lmx\-::\-Exact\-Stopwatch}}
+\subsubsection[{set\-Quiet}]{\setlength{\rightskip}{0pt plus 5cm}void lmx\-::\-Exact\-Stopwatch\-::set\-Quiet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1ExactStopwatch_adb2ba9de970c1ad9b7ba536eced4121a}
+Turns off the default time info message. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__base__stopwatch_8h}{lmx\-\_\-base\-\_\-stopwatch.\-h}\end{DoxyCompactItemize}

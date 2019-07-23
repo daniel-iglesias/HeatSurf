@@ -1,0 +1,423 @@
+\hypertarget{classlmx_1_1LinearSystem}{\section{lmx\-:\-:Linear\-System$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1LinearSystem}\index{lmx\-::\-Linear\-System$<$ T $>$@{lmx\-::\-Linear\-System$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1LinearSystem}{Linear\-System}. Linear systems implementation\-: \char`\"{}\-A$\ast$x = b\char`\"{} .  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-linsolvers\-\_\-system.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a5e7b2e6cdf654b6e9160dae6e8a47411}{Linear\-System} ()
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a8bdd7a369c8c801206f460b26415ed72}{Linear\-System} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&b\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_aefa5b0581d155110f1384c7796cee5cd}{Linear\-System} (\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&d\-A\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&b\-\_\-in)
+\item 
+{\footnotesize template$<$class C $>$ }\\\hyperlink{classlmx_1_1LinearSystem_abf1a07c09036c2cd79bd928a2c25f846}{Linear\-System} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ C $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ C $>$ \&b\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a4310900a6c137082a96a0831737413c6}{Linear\-System} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&x\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&b\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a4ad2a58b543987e1fb285a40b15f832c}{Linear\-System} (\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&d\-A\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&x\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&b\-\_\-in)
+\item 
+{\footnotesize template$<$class C $>$ }\\\hyperlink{classlmx_1_1LinearSystem_a4873177fb073ea88d24a72f02d2e9813}{Linear\-System} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ C $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&x\-\_\-in, \hyperlink{classlmx_1_1Vector}{Vector}$<$ C $>$ \&b\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a73933e500a798a1d6321125117d2fb74}{Linear\-System} (\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&B\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a7e87de91b985ec7cf0bf19154b087d13}{Linear\-System} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&B\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_ad20250c81acd520f270d5e3453745be3}{Linear\-System} (\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&B\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_a7d3fc5dc1293aa1d45a1779654a53b83}{Linear\-System} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&A\-\_\-in, \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&B\-\_\-in)
+\item 
+\hyperlink{classlmx_1_1LinearSystem_ac4c05a6a211d8946b18977e7e5abf5ba}{$\sim$\-Linear\-System} ()
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_a2fde4449a4549d3c4b1b023ac5e72bc0}{set\-Info} (int level)
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_ab5b14b289f951ce4dbd2772579dc7931}{init\-S\-L\-U} ()
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_a4ae8b9934df6a9b57658956ff330ea53}{solve} (int recalc=0)
+\begin{DoxyCompactList}\small\item\em Solve function. \end{DoxyCompactList}\item 
+void \hyperlink{classlmx_1_1LinearSystem_a85c4b080918266b474fb39482bc14cc5}{solve\-Yourself\-Matrix} (int recalc=0)
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1LinearSystem_a38f94cd0e4929869c950cd2bc5a3b55e}{solve\-Yourself} (int recalc=0)
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_ad9a2d56c7ea53a201d0820c58549ea7c}{factorize} ()
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_a1595022f65961d5cfb5c7c9a9a85ee06}{subs\-Solve} ()
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1LinearSystem_a77193c1beae5ebefc8cbaa8137e69ddb}{get\-Solution} ()
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1LinearSystem_a8bd782242416197bf9497503a1bae3d5}{get\-Solution\-Vector} ()
+\item 
+\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \& \hyperlink{classlmx_1_1LinearSystem_aca56732d810ce5c1688d1002efef8655}{get\-Solution\-Matrix} ()
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_ac85310aca10575dc1cb27dbd1e38da6b}{setb} (\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \&b\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1LinearSystem_a986906a2f375fc8ba39f43c927f39078}{set\-A} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&A\-\_\-in)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class lmx\-::\-Linear\-System$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1LinearSystem}{Linear\-System}. Linear systems implementation\-: \char`\"{}\-A$\ast$x = b\char`\"{} . 
+
+This class permits the creation of a linear system object. Each object has three parameters, corresponding to each of the matrices or vectors base of the problem. The basic methods solve the problem and add functionality to control the solution procedure. Not only one solver can be used as well as the number data type (class) may be differ between the input and the one used to solve the system.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1LinearSystem_a5e7b2e6cdf654b6e9160dae6e8a47411}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a5e7b2e6cdf654b6e9160dae6e8a47411}
+Empty constructor. \hypertarget{classlmx_1_1LinearSystem_a8bdd7a369c8c801206f460b26415ed72}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a8bdd7a369c8c801206f460b26415ed72}
+Standard constructor with two parameters. 
+\begin{DoxyParams}{Parameters}
+{\em A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1LinearSystem_aefa5b0581d155110f1384c7796cee5cd}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Dense\-Matrix}$<$ T $>$ \&}]{d\-A\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_aefa5b0581d155110f1384c7796cee5cd}
+Standard constructor with two parameters (\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}). 
+\begin{DoxyParams}{Parameters}
+{\em d\-A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1LinearSystem_abf1a07c09036c2cd79bd928a2c25f846}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class C $>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ C $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Vector}$<$ C $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_abf1a07c09036c2cd79bd928a2c25f846}
+Standard constructor with two parameters with different data type as that of \hyperlink{classlmx_1_1LinearSystem}{Linear\-System}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1LinearSystem_a4310900a6c137082a96a0831737413c6}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{x\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a4310900a6c137082a96a0831737413c6}
+Standard constructor with three parameters. 
+\begin{DoxyParams}{Parameters}
+{\em A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+{\em x\-\_\-in} & Solution vector. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1LinearSystem_a4ad2a58b543987e1fb285a40b15f832c}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Dense\-Matrix}$<$ T $>$ \&}]{d\-A\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{x\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a4ad2a58b543987e1fb285a40b15f832c}
+Standard constructor with three parameters (\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}). 
+\begin{DoxyParams}{Parameters}
+{\em d\-A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. \\
+\hline
+{\em x\-\_\-in} & Solution vector. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1LinearSystem_a4873177fb073ea88d24a72f02d2e9813}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class C $>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ C $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{x\-\_\-in, }
+\item[{{\bf Vector}$<$ C $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a4873177fb073ea88d24a72f02d2e9813}
+Standard constructor with three parameters, two of them with different data types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+{\em x\-\_\-in} & Solution vector. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1LinearSystem_a73933e500a798a1d6321125117d2fb74}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Dense\-Matrix}$<$ T $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Dense\-Matrix}$<$ T $>$ \&}]{B\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a73933e500a798a1d6321125117d2fb74}
+Standard constructor for nrhs system (\hyperlink{classlmx_1_1Matrix}{Matrix}). 
+\begin{DoxyParams}{Parameters}
+{\em d\-A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1LinearSystem_a7e87de91b985ec7cf0bf19154b087d13}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Dense\-Matrix}$<$ T $>$ \&}]{B\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a7e87de91b985ec7cf0bf19154b087d13}
+\hypertarget{classlmx_1_1LinearSystem_ad20250c81acd520f270d5e3453745be3}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Dense\-Matrix}$<$ T $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Matrix}$<$ T $>$ \&}]{B\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_ad20250c81acd520f270d5e3453745be3}
+\hypertarget{classlmx_1_1LinearSystem_a7d3fc5dc1293aa1d45a1779654a53b83}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!Linear\-System@{Linear\-System}}
+\index{Linear\-System@{Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::{\bf Linear\-System} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{A\-\_\-in, }
+\item[{{\bf Matrix}$<$ T $>$ \&}]{B\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a7d3fc5dc1293aa1d45a1779654a53b83}
+\hypertarget{classlmx_1_1LinearSystem_ac4c05a6a211d8946b18977e7e5abf5ba}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!$\sim$\-Linear\-System@{$\sim$\-Linear\-System}}
+\index{$\sim$\-Linear\-System@{$\sim$\-Linear\-System}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{$\sim$\-Linear\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::$\sim${\bf Linear\-System} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_ac4c05a6a211d8946b18977e7e5abf5ba}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1LinearSystem_ad9a2d56c7ea53a201d0820c58549ea7c}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!factorize@{factorize}}
+\index{factorize@{factorize}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{factorize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Linear\-System}$<$ T $>$\-::factorize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_ad9a2d56c7ea53a201d0820c58549ea7c}
+
+
+References lmx\-::get\-Matrix\-Type().
+
+\hypertarget{classlmx_1_1LinearSystem_a77193c1beae5ebefc8cbaa8137e69ddb}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!get\-Solution@{get\-Solution}}
+\index{get\-Solution@{get\-Solution}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{get\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector}$<$T$>$\& {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::get\-Solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a77193c1beae5ebefc8cbaa8137e69ddb}
+Solution access (D\-E\-P\-R\-E\-C\-A\-T\-E\-D). \begin{DoxyReturn}{Returns}
+A vector with solution values. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1LinearSystem_aca56732d810ce5c1688d1002efef8655}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!get\-Solution\-Matrix@{get\-Solution\-Matrix}}
+\index{get\-Solution\-Matrix@{get\-Solution\-Matrix}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{get\-Solution\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Matrix}$<$T$>$\& {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::get\-Solution\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_aca56732d810ce5c1688d1002efef8655}
+Solution access for matrix n-\/rhs. \begin{DoxyReturn}{Returns}
+a matrix with solution values. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1LinearSystem_a8bd782242416197bf9497503a1bae3d5}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!get\-Solution\-Vector@{get\-Solution\-Vector}}
+\index{get\-Solution\-Vector@{get\-Solution\-Vector}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{get\-Solution\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vector}$<$T$>$\& {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::get\-Solution\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a8bd782242416197bf9497503a1bae3d5}
+Solution access for vector 1-\/rhs. \begin{DoxyReturn}{Returns}
+A vector with solution values. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1LinearSystem_ab5b14b289f951ce4dbd2772579dc7931}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!init\-S\-L\-U@{init\-S\-L\-U}}
+\index{init\-S\-L\-U@{init\-S\-L\-U}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{init\-S\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Linear\-System}$<$ T $>$\-::init\-S\-L\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_ab5b14b289f951ce4dbd2772579dc7931}
+
+
+References lmx\-::\-Type\-\_\-std\-Vector$<$ T $>$\-::data\-\_\-pointer().
+
+
+
+Referenced by lmx\-::\-Linear\-System$<$ double $>$\-::\-Linear\-System().
+
+\hypertarget{classlmx_1_1LinearSystem_a986906a2f375fc8ba39f43c927f39078}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!set\-A@{set\-A}}
+\index{set\-A@{set\-A}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{set\-A}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linear\-System}$<$ T $>$\-::set\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{A\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_a986906a2f375fc8ba39f43c927f39078}
+
+
+References lmx\-::get\-Matrix\-Type().
+
+\hypertarget{classlmx_1_1LinearSystem_ac85310aca10575dc1cb27dbd1e38da6b}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!setb@{setb}}
+\index{setb@{setb}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{setb}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linear\-System}$<$ T $>$\-::setb (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ T $>$ \&}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_ac85310aca10575dc1cb27dbd1e38da6b}
+
+
+References lmx\-::\-Type\-\_\-std\-Vector$<$ T $>$\-::data\-\_\-pointer(), and lmx\-::get\-Matrix\-Type().
+
+\hypertarget{classlmx_1_1LinearSystem_a2fde4449a4549d3c4b1b023ac5e72bc0}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!set\-Info@{set\-Info}}
+\index{set\-Info@{set\-Info}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{set\-Info}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf lmx\-::\-Linear\-System}$<$ T $>$\-::set\-Info (
+\begin{DoxyParamCaption}
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1LinearSystem_a2fde4449a4549d3c4b1b023ac5e72bc0}
+Set information level. \hypertarget{classlmx_1_1LinearSystem_a4ae8b9934df6a9b57658956ff330ea53}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!solve@{solve}}
+\index{solve@{solve}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Linear\-System}$<$ T $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{int}]{recalc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_a4ae8b9934df6a9b57658956ff330ea53}
+
+
+Solve function. 
+
+Depending on \hyperlink{classlmx_1_1Matrix}{Matrix} and lin\-\_\-solver types selected, the following combinations are possible\-:
+
+\begin{TabularC}{3}
+\hline
+\hyperlink{namespacelmx_a92e4bebee5d9aabe5807c30fab96e192}{get\-Lin\-Solver\-Type()} &\hyperlink{namespacelmx_a2aca178888955f2289a8d3d6e5c58fd0}{get\-Matrix\-Type()} &Solver used\-:  \\\cline{1-3}
+0  &0  &\hyperlink{classlmx_1_1LU}{L\-U}  \\\cline{1-3}
+0  &1  &Super\-L\-U   \\\cline{1-3}
+0  &2  &gmm\-::lu\-\_\-solve (Super\-L\-U in the future)  \\\cline{1-3}
+0  &3  &gmm\-::lu\-\_\-solve (Super\-L\-U in the future) 
+
+\\\cline{1-3}
+1  &0  &\hyperlink{classlmx_1_1LU}{L\-U}  \\\cline{1-3}
+1  &1  &Super\-L\-U   \\\cline{1-3}
+1  &2  &gmm\-::lu\-\_\-solve (Super\-L\-U in the future)  \\\cline{1-3}
+1  &3  &gmm\-::lu\-\_\-solve (Super\-L\-U in the future) 
+
+\\\cline{1-3}
+2  &0  &\hyperlink{classlmx_1_1Cg}{lmx\-::\-Cg}   \\\cline{1-3}
+2  &1  &\hyperlink{classlmx_1_1Cg}{lmx\-::\-Cg}   \\\cline{1-3}
+2  &2  &\hyperlink{classlmx_1_1Cg}{lmx\-::\-Cg} (and gmm\-::cg possible if uncommented)  \\\cline{1-3}
+2  &3  &\hyperlink{classlmx_1_1Cg}{lmx\-::\-Cg} (and gmm\-::cg possible if uncommented) 
+
+\\\cline{1-3}
+3  &0  &-\/   \\\cline{1-3}
+3  &1  &-\/   \\\cline{1-3}
+3  &2  &-\/   \\\cline{1-3}
+3  &3  &gmm\-::gmres   \\\cline{1-3}
+\end{TabularC}
+
+
+I\-M\-P\-O\-R\-T\-A\-N\-T\-: gmm\-::lu\-\_\-solve is not implemented when the vector\-\_\-type is set to code 1 (\hyperlink{classlmx_1_1Type__gmmVector__sparse}{Type\-\_\-gmm\-Vector\-\_\-sparse}). To Be Done.
+
+When a solver is not available, an error will be thrown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em recalc} & For Super\-L\-U switches between refactoring (F\-A\-L\-S\-E) or use old factoring (T\-R\-U\-E). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference of solution \hyperlink{classlmx_1_1Vector}{Vector}. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1LinearSystem_a38f94cd0e4929869c950cd2bc5a3b55e}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!solve\-Yourself@{solve\-Yourself}}
+\index{solve\-Yourself@{solve\-Yourself}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{solve\-Yourself}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$ T $>$ \& {\bf Linear\-System}$<$ T $>$\-::solve\-Yourself (
+\begin{DoxyParamCaption}
+\item[{int}]{recalc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_a38f94cd0e4929869c950cd2bc5a3b55e}
+
+
+References lmx\-::\-Type\-\_\-gmm$<$ T $>$\-::data\-\_\-pointer(), lmx\-::\-Type\-\_\-gmm\-Vector\-\_\-sparse$<$ T $>$\-::data\-\_\-pointer(), lmx\-::\-Type\-\_\-gmm\-\_\-sparse$<$ T $>$\-::data\-\_\-pointer(), lmx\-::\-Type\-\_\-std\-Vector$<$ T $>$\-::data\-\_\-pointer(), lmx\-::get\-Lin\-Solver\-Type(), lmx\-::get\-Matrix\-Type(), lmx\-::get\-Vector\-Type(), L\-M\-X\-\_\-\-T\-H\-R\-O\-W, lmx\-::\-Cg$<$ T $>$\-::precond(), lmx\-::\-Cg$<$ T $>$\-::solve(), lmx\-::\-L\-U$<$ T $>$\-::solve(), and lmx\-::\-Gesv$<$ T $>$\-::solve().
+
+
+
+Referenced by lmx\-::\-N\-L\-Solver$<$ Sys, T $>$\-::solve(), lmx\-::\-N\-L\-Solver\-Double$<$ Sys, T $>$\-::solve(), and lmx\-::solve\-Linear().
+
+\hypertarget{classlmx_1_1LinearSystem_a85c4b080918266b474fb39482bc14cc5}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!solve\-Yourself\-Matrix@{solve\-Yourself\-Matrix}}
+\index{solve\-Yourself\-Matrix@{solve\-Yourself\-Matrix}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{solve\-Yourself\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Linear\-System}$<$ T $>$\-::solve\-Yourself\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{recalc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_a85c4b080918266b474fb39482bc14cc5}
+
+
+References L\-M\-X\-\_\-\-T\-H\-R\-O\-W, and lmx\-::\-L\-U$<$ T $>$\-::solve\-\_\-nrhs().
+
+\hypertarget{classlmx_1_1LinearSystem_a1595022f65961d5cfb5c7c9a9a85ee06}{\index{lmx\-::\-Linear\-System@{lmx\-::\-Linear\-System}!subs\-Solve@{subs\-Solve}}
+\index{subs\-Solve@{subs\-Solve}!lmx::LinearSystem@{lmx\-::\-Linear\-System}}
+\subsubsection[{subs\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Linear\-System}$<$ T $>$\-::subs\-Solve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1LinearSystem_a1595022f65961d5cfb5c7c9a9a85ee06}
+
+
+References lmx\-::\-Type\-\_\-std\-Vector$<$ T $>$\-::data\-\_\-pointer(), and lmx\-::get\-Matrix\-Type().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__linsolvers__system_8h}{lmx\-\_\-linsolvers\-\_\-system.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx_8h" kind="file">
+    <compoundname>lmx.h</compoundname>
+    <includes refid="lmx__linsolvers_8h" local="yes">lmx_linsolvers.h</includes>
+    <includes refid="cofe__fmc_8h" local="yes">cofe_fmc.h</includes>
+    <includes refid="lmx__except_8h" local="yes">lmx_except.h</includes>
+    <includes refid="lmx__base__stopwatch_8h" local="yes">lmx_base_stopwatch.h</includes>
+    <includes refid="lmx__base__selector_8h" local="yes">lmx_base_selector.h</includes>
+    <includedby refid="geometry_8h" local="no">src/geometry.h</includedby>
+    <incdepgraph>
+      <node id="3483">
+        <label>limits</label>
+      </node>
+      <node id="3484">
+        <label>cofe_TensorRank2Sym.h</label>
+        <link refid="cofe__TensorRank2Sym_8h"/>
+        <childnode refid="3478" relation="include">
+        </childnode>
+        <childnode refid="3480" relation="include">
+        </childnode>
+        <childnode refid="3458" relation="include">
+        </childnode>
+        <childnode refid="3485" relation="include">
+        </childnode>
+        <childnode refid="3486" relation="include">
+        </childnode>
+        <childnode refid="3449" relation="include">
+        </childnode>
+      </node>
+      <node id="3452">
+        <label>cmath</label>
+      </node>
+      <node id="3485">
+        <label>cassert</label>
+      </node>
+      <node id="3481">
+        <label>cofe_gausselim.h</label>
+        <link refid="cofe__gausselim_8h"/>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3482" relation="include">
+        </childnode>
+      </node>
+      <node id="3455">
+        <label>stdexcept</label>
+      </node>
+      <node id="3480">
+        <label>cofe_TensorRank2.h</label>
+        <link refid="cofe__TensorRank2_8h"/>
+        <childnode refid="3478" relation="include">
+        </childnode>
+        <childnode refid="3481" relation="include">
+        </childnode>
+        <childnode refid="3483" relation="include">
+        </childnode>
+      </node>
+      <node id="3474">
+        <label>lmx_mat_type_csc.h</label>
+        <link refid="lmx__mat__type__csc_8h"/>
+        <childnode refid="3460" relation="include">
+        </childnode>
+        <childnode refid="3471" relation="include">
+        </childnode>
+      </node>
+      <node id="3456">
+        <label>string</label>
+      </node>
+      <node id="3466">
+        <label>lmx_mat_type_stdvector.h</label>
+        <link refid="lmx__mat__type__stdvector_8h"/>
+        <childnode refid="3467" relation="include">
+        </childnode>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3468" relation="include">
+        </childnode>
+        <childnode refid="3461" relation="include">
+        </childnode>
+        <childnode refid="3469" relation="include">
+        </childnode>
+        <childnode refid="3470" relation="include">
+        </childnode>
+      </node>
+      <node id="3477">
+        <label>cofe_fmc.h</label>
+        <link refid="cofe__fmc_8h"/>
+        <childnode refid="3478" relation="include">
+        </childnode>
+        <childnode refid="3480" relation="include">
+        </childnode>
+        <childnode refid="3484" relation="include">
+        </childnode>
+        <childnode refid="3483" relation="include">
+        </childnode>
+      </node>
+      <node id="3454">
+        <label>exception</label>
+      </node>
+      <node id="3467">
+        <label>fstream</label>
+      </node>
+      <node id="3479">
+        <label>ostream</label>
+      </node>
+      <node id="3470">
+        <label>lmx_mat_data_vec.h</label>
+        <link refid="lmx__mat__data__vec_8h"/>
+        <childnode refid="3462" relation="include">
+        </childnode>
+      </node>
+      <node id="3453">
+        <label>lmx_except.h</label>
+        <link refid="lmx__except_8h"/>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3454" relation="include">
+        </childnode>
+        <childnode refid="3455" relation="include">
+        </childnode>
+        <childnode refid="3456" relation="include">
+        </childnode>
+        <childnode refid="3457" relation="include">
+        </childnode>
+        <childnode refid="3458" relation="include">
+        </childnode>
+      </node>
+      <node id="3463">
+        <label>lmx_mat_data_blas.h</label>
+        <link refid="lmx__mat__data__blas_8h"/>
+        <childnode refid="3458" relation="include">
+        </childnode>
+      </node>
+      <node id="3464">
+        <label>lmx_mat_vector.h</label>
+        <link refid="lmx__mat__vector_8h"/>
+        <childnode refid="3465" relation="include">
+        </childnode>
+        <childnode refid="3466" relation="include">
+        </childnode>
+      </node>
+      <node id="3478">
+        <label>cofe_TensorRank1.h</label>
+        <link refid="cofe__TensorRank1_8h"/>
+        <childnode refid="3479" relation="include">
+        </childnode>
+        <childnode refid="3457" relation="include">
+        </childnode>
+      </node>
+      <node id="3486">
+        <label>cofe_jpjacobi.h</label>
+        <link refid="cofe__jpjacobi_8h"/>
+        <childnode refid="3482" relation="include">
+        </childnode>
+      </node>
+      <node id="3446">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx.h"/>
+        <childnode refid="3447" relation="include">
+        </childnode>
+        <childnode refid="3477" relation="include">
+        </childnode>
+        <childnode refid="3453" relation="include">
+        </childnode>
+        <childnode refid="3487" relation="include">
+        </childnode>
+        <childnode refid="3490" relation="include">
+        </childnode>
+      </node>
+      <node id="3469">
+        <label>string.h</label>
+      </node>
+      <node id="3475">
+        <label>lmx_linsolvers_cg.h</label>
+        <link refid="lmx__linsolvers__cg_8h"/>
+        <childnode refid="3464" relation="include">
+        </childnode>
+      </node>
+      <node id="3476">
+        <label>lmx_linsolvers_lu.h</label>
+        <link refid="lmx__linsolvers__lu_8h"/>
+      </node>
+      <node id="3448">
+        <label>lmx_linsolvers_system.h</label>
+        <link refid="lmx__linsolvers__system_8h"/>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3450" relation="include">
+        </childnode>
+        <childnode refid="3475" relation="include">
+        </childnode>
+        <childnode refid="3476" relation="include">
+        </childnode>
+      </node>
+      <node id="3488">
+        <label>ctime</label>
+      </node>
+      <node id="3462">
+        <label>lmx_mat_data.h</label>
+        <link refid="lmx__mat__data_8h"/>
+        <childnode refid="3463" relation="include">
+        </childnode>
+      </node>
+      <node id="3461">
+        <label>vector</label>
+      </node>
+      <node id="3457">
+        <label>sstream</label>
+      </node>
+      <node id="3460">
+        <label>lmx_mat_data_mat.h</label>
+        <link refid="lmx__mat__data__mat_8h"/>
+        <childnode refid="3461" relation="include">
+        </childnode>
+        <childnode refid="3462" relation="include">
+        </childnode>
+      </node>
+      <node id="3450">
+        <label>lmx_mat_dense_matrix.h</label>
+        <link refid="lmx__mat__dense__matrix_8h"/>
+        <childnode refid="3451" relation="include">
+        </childnode>
+      </node>
+      <node id="3468">
+        <label>cstdlib</label>
+      </node>
+      <node id="3489">
+        <label>sys/time.h</label>
+      </node>
+      <node id="3449">
+        <label>iostream</label>
+      </node>
+      <node id="3490">
+        <label>lmx_base_selector.h</label>
+        <link refid="lmx__base__selector_8h"/>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3457" relation="include">
+        </childnode>
+      </node>
+      <node id="3482">
+        <label>cofe_CofeUtils.h</label>
+        <link refid="cofe__CofeUtils_8h"/>
+        <childnode refid="3452" relation="include">
+        </childnode>
+        <childnode refid="3456" relation="include">
+        </childnode>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3468" relation="include">
+        </childnode>
+      </node>
+      <node id="3487">
+        <label>lmx_base_stopwatch.h</label>
+        <link refid="lmx__base__stopwatch_8h"/>
+        <childnode refid="3467" relation="include">
+        </childnode>
+        <childnode refid="3488" relation="include">
+        </childnode>
+        <childnode refid="3489" relation="include">
+        </childnode>
+      </node>
+      <node id="3459">
+        <label>lmx_mat_type_stdmatrix.h</label>
+        <link refid="lmx__mat__type__stdmatrix_8h"/>
+        <childnode refid="3460" relation="include">
+        </childnode>
+        <childnode refid="3464" relation="include">
+        </childnode>
+        <childnode refid="3471" relation="include">
+        </childnode>
+      </node>
+      <node id="3473">
+        <label>complex</label>
+      </node>
+      <node id="3471">
+        <label>lmx_base_iohb.h</label>
+        <link refid="lmx__base__iohb_8h"/>
+        <childnode refid="3472" relation="include">
+        </childnode>
+        <childnode refid="3473" relation="include">
+        </childnode>
+      </node>
+      <node id="3458">
+        <label>algorithm</label>
+      </node>
+      <node id="3465">
+        <label>lmx_mat_elem_ref.h</label>
+        <link refid="lmx__mat__elem__ref_8h"/>
+        <childnode refid="3462" relation="include">
+        </childnode>
+      </node>
+      <node id="3472">
+        <label>stdio.h</label>
+      </node>
+      <node id="3447">
+        <label>lmx_linsolvers.h</label>
+        <link refid="lmx__linsolvers_8h"/>
+        <childnode refid="3448" relation="include">
+        </childnode>
+      </node>
+      <node id="3451">
+        <label>lmx_mat_matrix.h</label>
+        <link refid="lmx__mat__matrix_8h"/>
+        <childnode refid="3452" relation="include">
+        </childnode>
+        <childnode refid="3453" relation="include">
+        </childnode>
+        <childnode refid="3459" relation="include">
+        </childnode>
+        <childnode refid="3474" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3501">
+        <label>src/cone2.cpp</label>
+        <link refid="cone2_8cpp"/>
+      </node>
+      <node id="3509">
+        <label>src/ring.h</label>
+        <link refid="ring_8h"/>
+        <childnode refid="3510" relation="include">
+        </childnode>
+      </node>
+      <node id="3503">
+        <label>src/cylinder.cpp</label>
+        <link refid="cylinder_8cpp"/>
+      </node>
+      <node id="3504">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+      </node>
+      <node id="3498">
+        <label>src/simulation.cpp</label>
+        <link refid="simulation_8cpp"/>
+      </node>
+      <node id="3491">
+        <label>src/LMX/lmx.h</label>
+        <link refid="lmx.h"/>
+        <childnode refid="3492" relation="include">
+        </childnode>
+      </node>
+      <node id="3506">
+        <label>src/ogive.cpp</label>
+        <link refid="ogive_8cpp"/>
+      </node>
+      <node id="3493">
+        <label>src/cone.h</label>
+        <link refid="cone_8h"/>
+        <childnode refid="3494" relation="include">
+        </childnode>
+        <childnode refid="3495" relation="include">
+        </childnode>
+        <childnode refid="3496" relation="include">
+        </childnode>
+      </node>
+      <node id="3499">
+        <label>src/cone2.h</label>
+        <link refid="cone2_8h"/>
+        <childnode refid="3500" relation="include">
+        </childnode>
+        <childnode refid="3501" relation="include">
+        </childnode>
+        <childnode refid="3496" relation="include">
+        </childnode>
+      </node>
+      <node id="3494">
+        <label>src/cone.cpp</label>
+        <link refid="cone_8cpp"/>
+      </node>
+      <node id="3502">
+        <label>src/cylinder.h</label>
+        <link refid="cylinder_8h"/>
+        <childnode refid="3503" relation="include">
+        </childnode>
+        <childnode refid="3496" relation="include">
+        </childnode>
+      </node>
+      <node id="3508">
+        <label>src/twoplates.cpp</label>
+        <link refid="twoplates_8cpp"/>
+      </node>
+      <node id="3497">
+        <label>src/heatsurf.cpp</label>
+        <link refid="heatsurf_8cpp"/>
+      </node>
+      <node id="3505">
+        <label>src/ogive.h</label>
+        <link refid="ogive_8h"/>
+        <childnode refid="3496" relation="include">
+        </childnode>
+        <childnode refid="3506" relation="include">
+        </childnode>
+      </node>
+      <node id="3510">
+        <label>src/ring.cpp</label>
+        <link refid="ring_8cpp"/>
+      </node>
+      <node id="3500">
+        <label>src/cone2-bak.cpp</label>
+        <link refid="cone2-bak_8cpp"/>
+      </node>
+      <node id="3495">
+        <label>src/cone2-bak.h</label>
+        <link refid="cone2-bak_8h"/>
+      </node>
+      <node id="3492">
+        <label>src/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="3493" relation="include">
+        </childnode>
+        <childnode refid="3499" relation="include">
+        </childnode>
+        <childnode refid="3502" relation="include">
+        </childnode>
+        <childnode refid="3504" relation="include">
+        </childnode>
+        <childnode refid="3505" relation="include">
+        </childnode>
+        <childnode refid="3507" relation="include">
+        </childnode>
+        <childnode refid="3509" relation="include">
+        </childnode>
+      </node>
+      <node id="3507">
+        <label>src/twoplates.h</label>
+        <link refid="twoplates_8h"/>
+        <childnode refid="3496" relation="include">
+        </childnode>
+        <childnode refid="3508" relation="include">
+        </childnode>
+      </node>
+      <node id="3496">
+        <label>src/simulation.h</label>
+        <link refid="simulation_8h"/>
+        <childnode refid="3497" relation="include">
+        </childnode>
+        <childnode refid="3498" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+    <briefdescription>
+<para>This is the main file that has to be included from an extern program so that the basic features of the library can be used. </para>    </briefdescription>
+    <detaileddescription>
+<para>This basic facilities include all the linear algebra operations over Vectors and Matrices, Tensor algebra and linear systems solvers.</para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMX_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMX_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="25"></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__linsolvers_8h" kindref="compound">lmx_linsolvers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cofe__fmc_8h" kindref="compound">cofe_fmc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__except_8h" kindref="compound">lmx_except.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__base__stopwatch_8h" kindref="compound">lmx_base_stopwatch.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lmx__base__selector_8h" kindref="compound">lmx_base_selector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx.h"/>
+  </compounddef>
+</doxygen>

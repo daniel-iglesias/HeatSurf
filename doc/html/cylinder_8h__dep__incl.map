@@ -1,1 +1,6 @@
-<area shape="rect" href="$simulation_8h.html" title="Pure cylindrical geometry." alt="" coords="5,80,133,107">
+<map id="src/cylinder.h" name="src/cylinder.h">
+<area shape="rect" id="node2" href="$cylinder_8cpp.html" title="src/cylinder.cpp" alt="" coords="5,80,115,107"/>
+<area shape="rect" id="node3" href="$simulation_8h.html" title="Procedures for the program workflow. " alt="" coords="139,80,249,107"/>
+<area shape="rect" id="node4" href="$heatsurf_8cpp.html" title="src/heatsurf.cpp" alt="" coords="66,155,179,181"/>
+<area shape="rect" id="node5" href="$simulation_8cpp.html" title="src/simulation.cpp" alt="" coords="204,155,329,181"/>
+</map>

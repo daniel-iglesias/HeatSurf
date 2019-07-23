@@ -1,0 +1,8 @@
+\form#0:$ \frac{\partial qdot_n}{\partial q_n} $
+\form#1:$ \frac{\partial qddot_n}{\partial q_n} $
+\form#2:$ \dot{q}(t_o) = \dot{q}_o $
+\form#3:$ q(t_o) = q_o $
+\form#4:$ q $
+\form#5:$ \frac{dq}{dt} $
+\form#6:$ \frac{d^2q}{dt^2} $
+\form#7:$ t $

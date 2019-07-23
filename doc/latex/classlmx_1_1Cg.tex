@@ -1,0 +1,100 @@
+\hypertarget{classlmx_1_1Cg}{\section{lmx\-:\-:Cg$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1Cg}\index{lmx\-::\-Cg$<$ T $>$@{lmx\-::\-Cg$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1Cg}{Cg}. This class implements the conjugate gradient iterative linear solver, with and without preconditioner. It uses L\-M\-X matrix and vector facilities so any kind of linked object can be used.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-linsolvers\-\_\-cg.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Cg_ae188703493098d949b9f0f107a845a87}{Cg} (\hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ $\ast$, \hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ $\ast$)
+\item 
+\hyperlink{classlmx_1_1Cg_aca7ad968e0ed9d6bf08bdc4f4ba6ddbc}{$\sim$\-Cg} ()
+\item 
+\hyperlink{classlmx_1_1Vector}{Vector}$<$ T $>$ \hyperlink{classlmx_1_1Cg_a78b28ffbb590c2126b0fecc972368661}{solve} (int)
+\item 
+void \hyperlink{classlmx_1_1Cg_add75b6264e99d649c3b4723e274aa899}{precond} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Cg$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1Cg}{Cg}. This class implements the conjugate gradient iterative linear solver, with and without preconditioner. It uses L\-M\-X matrix and vector facilities so any kind of linked object can be used. 
+
+\begin{DoxyAuthor}{Author}
+Roberto Ortega Aguilera, Juan C. García Orden. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Cg_ae188703493098d949b9f0f107a845a87}{\index{lmx\-::\-Cg@{lmx\-::\-Cg}!Cg@{Cg}}
+\index{Cg@{Cg}!lmx::Cg@{lmx\-::\-Cg}}
+\subsubsection[{Cg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Cg}$<$ T $>$\-::{\bf Cg} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ $\ast$}]{A\-\_\-in, }
+\item[{{\bf Vector}$<$ T $>$ $\ast$}]{b\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Cg_ae188703493098d949b9f0f107a845a87}
+Standard constructor. 
+\begin{DoxyParams}{Parameters}
+{\em A\-\_\-in} & L\-H\-S \hyperlink{classlmx_1_1Matrix}{Matrix} \\
+\hline
+{\em b\-\_\-in} & R\-H\-S \hyperlink{classlmx_1_1Vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1Cg_aca7ad968e0ed9d6bf08bdc4f4ba6ddbc}{\index{lmx\-::\-Cg@{lmx\-::\-Cg}!$\sim$\-Cg@{$\sim$\-Cg}}
+\index{$\sim$\-Cg@{$\sim$\-Cg}!lmx::Cg@{lmx\-::\-Cg}}
+\subsubsection[{$\sim$\-Cg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Cg}$<$ T $>$\-::$\sim${\bf Cg} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Cg_aca7ad968e0ed9d6bf08bdc4f4ba6ddbc}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Cg_add75b6264e99d649c3b4723e274aa899}{\index{lmx\-::\-Cg@{lmx\-::\-Cg}!precond@{precond}}
+\index{precond@{precond}!lmx::Cg@{lmx\-::\-Cg}}
+\subsubsection[{precond}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Cg}$<$ T $>$\-::precond (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Cg_add75b6264e99d649c3b4723e274aa899}
+Preconditioner function. 
+
+Referenced by lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself().
+
+\hypertarget{classlmx_1_1Cg_a78b28ffbb590c2126b0fecc972368661}{\index{lmx\-::\-Cg@{lmx\-::\-Cg}!solve@{solve}}
+\index{solve@{solve}!lmx::Cg@{lmx\-::\-Cg}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$ {\bf lmx\-::\-Cg}$<$ T $>$\-::solve (
+\begin{DoxyParamCaption}
+\item[{int}]{info}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1Cg_a78b28ffbb590c2126b0fecc972368661}
+Solver function 
+\begin{DoxyParams}{Parameters}
+{\em info} & output iteration information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References lmx\-::\-Vector$<$ T $>$\-::add(), lmx\-::\-Vector$<$ T $>$\-::mult(), lmx\-::\-Vector$<$ T $>$\-::mult\-Elements(), and lmx\-::\-Vector$<$ T $>$\-::subs().
+
+
+
+Referenced by lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__linsolvers__cg_8h}{lmx\-\_\-linsolvers\-\_\-cg.\-h}\end{DoxyCompactItemize}

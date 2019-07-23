@@ -1,1 +1,3 @@
-<area shape="rect" href="$classGeometry.html" title="Geometry" alt="" coords="5,5,93,32">
+<map id="TwoPlates" name="TwoPlates">
+<area shape="rect" id="node2" href="$classGeometry.html" title="Geometry" alt="" coords="7,5,85,32"/>
+</map>

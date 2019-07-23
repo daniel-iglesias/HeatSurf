@@ -1,0 +1,1709 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classMatrix" kind="class" prot="public">
+    <compoundname>Matrix</compoundname>
+    <includes refid="lmx__mat__matrix_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMatrix_1a0b283aced337f3c94db50bc459d28580" prot="protected" static="no" mutable="no">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type Matrix&lt; T &gt;::mrows</definition>
+        <argsstring></argsstring>
+        <name>mrows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of rows in matrix object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="88" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classMatrix_1a0d9e03ae35ffa4667afa1075f2684a64" compoundref="lmx__mat__matrix_8h" startline="717" endline="723">Matrix&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" prot="protected" static="no" mutable="no">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type Matrix&lt; T &gt;::ncolumns</definition>
+        <argsstring></argsstring>
+        <name>ncolumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of colums in matrix object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="89" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classMatrix_1a0d9e03ae35ffa4667afa1075f2684a64" compoundref="lmx__mat__matrix_8h" startline="717" endline="723">Matrix&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix_1a0294600ba30c0665efcaeb77bbcad7fa" prot="protected" static="no" mutable="no">
+        <type>Elem_ref&lt; T &gt; *</type>
+        <definition>Elem_ref&lt;T&gt;* Matrix&lt; T &gt;::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference pointer to an element in type_matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="90" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" prot="protected" static="no" mutable="no">
+        <type>Data_mat&lt; T &gt; *</type>
+        <definition>Data_mat&lt;T&gt;* Matrix&lt; T &gt;::type_matrix</definition>
+        <argsstring></argsstring>
+        <name>type_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the container type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="91" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classMatrix_1a0d9e03ae35ffa4667afa1075f2684a64" compoundref="lmx__mat__matrix_8h" startline="717" endline="723">Matrix&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMatrix_1a07857ea092bfd5d08a811e05ad544204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Vector&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="94" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMatrix_1a5b3d3d3d338fdb2c08f91dfe38d425bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class DenseMatrix&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrix&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="94" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMatrix_1a95e5ab4da3326ece35572b4c41f61d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class LinearSystem&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>LinearSystem&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="94" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMatrix_1a83ba0257c792f88b9da29aacaad2b47d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class LMXTester</definition>
+        <argsstring></argsstring>
+        <name>LMXTester</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="101" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMatrix_1a3d4080c30637166c1b14268400d0fecd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend <ref refid="classMatrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix transposed</definition>
+        <argsstring>(const Matrix &amp;mat_in)</argsstring>
+        <name>transposed</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to get a transposed copy of a matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMatrix" kindref="compound">Matrix</ref> to be transposed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="classMatrix" kindref="compound">Matrix</ref> object with mat_in transposed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="389" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="389" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMatrix_1a10399f412e3ebd2af5372dc3638dfe9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+          </param>
+        </templateparamlist>
+        <type>friend void</type>
+        <definition>void lmx::latexPrint</definition>
+        <argsstring>(std::ofstream &amp;os, char *mat_name, Matrix&lt; C &gt; &amp;mat, int prec)</argsstring>
+        <name>lmx::latexPrint</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mat_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to typeset a matrix to a file stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File stream to write to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name that will be given to matrix in typesetting. It&apos;s not the matrix variable name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classMatrix" kindref="compound">Matrix</ref> variable to be typeset. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Precision of numbers (number of digits to be used in output). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="404" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMatrix_1ad49f0060c68e71cdda695406d6f229f8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(int)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aeee342d4728ae708002d7e4d976d95f5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(size_type, size_type, int)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="105" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="461" bodyend="464"/>
+        <references refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" compoundref="lmx__base__selector_8h" startline="91" endline="91">getMatrixType</references>
+        <references refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" compoundref="lmx__mat__matrix_8h" startline="528" endline="568">Matrix&lt; T &gt;::initialize_type_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a6226a80c09e42ae07b64570bc7a76dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a0e74261aca51167c58c5608c1422f950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(const Matrix &amp;)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a9991e9c15523215441a667db5f53e3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a91aa704de674203e96aece9e1955ccd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::~Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>~Matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="113" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="514" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::initialize_type_matrix</definition>
+        <argsstring>(int)</argsstring>
+        <name>initialize_type_matrix</name>
+        <param>
+          <type>int</type>
+          <defname>type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that creates specified matrix and a new Elem_ref with it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer with matrix type identifier. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="115" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="528" bodyend="568"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <referencedby refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" compoundref="lmx__mat__matrix_8h" startline="461" endline="464">Matrix&lt; T &gt;::Matrix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type Matrix&lt; T &gt;::rows</definition>
+        <argsstring>() const </argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read number of rows. <simplesect kind="return"><para>Number of rows of matrix. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="121" bodyend="121"/>
+        <referencedby refid="classMatrix_1a07c1d963d1e98ff20ac96711d357f42d" compoundref="lmx__mat__matrix_8h" startline="732" endline="744">Matrix&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="classMatrix_1af21f3044dc958a53f9f22f40b70a1ad1" compoundref="lmx__mat__matrix_8h" startline="257" endline="261">Matrix&lt; T &gt;::resize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>size_type Matrix&lt; T &gt;::cols</definition>
+        <argsstring>() const </argsstring>
+        <name>cols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read number of cols. <simplesect kind="return"><para>Number of cols of matrix. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="127" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="127" bodyend="127"/>
+        <referencedby refid="classMatrix_1a24d516d845a1b9ba87706566e5604588" compoundref="lmx__mat__matrix_8h" startline="314" endline="319">Matrix&lt; T &gt;::operator*</referencedby>
+        <referencedby refid="classMatrix_1a07c1d963d1e98ff20ac96711d357f42d" compoundref="lmx__mat__matrix_8h" startline="732" endline="744">Matrix&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="classMatrix_1af21f3044dc958a53f9f22f40b70a1ad1" compoundref="lmx__mat__matrix_8h" startline="257" endline="261">Matrix&lt; T &gt;::resize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a93687e829e58842640899351998eb6d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::matrixMarketLoad</definition>
+        <argsstring>(char *)</argsstring>
+        <name>matrixMarketLoad</name>
+        <param>
+          <type>char *</type>
+          <defname>input_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for reading a matrix in Matrix-Market format from a file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="129" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="575" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a1033ffed8225aa5b3b8d4ffd326d4372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::harwellBoeingLoad</definition>
+        <argsstring>(char *)</argsstring>
+        <name>harwellBoeingLoad</name>
+        <param>
+          <type>char *</type>
+          <defname>input_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for reading a matrix in Harwell-Boeing format from a file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="131" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="587" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a268e0e10c50ba9d384bb9b27b1d0ddff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::harwellBoeingSave</definition>
+        <argsstring>(char *)</argsstring>
+        <name>harwellBoeingSave</name>
+        <param>
+          <type>char *</type>
+          <defname>input_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for reading a matrix in Harwell-Boeing format from a file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="133" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="598" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ae8fb2cd5911c80ab80ab5d4cdfce8e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::fillIdentity</definition>
+        <argsstring>(T factor=static_cast&lt; T &gt;(1))</argsstring>
+        <name>fillIdentity</name>
+        <param>
+          <type>T</type>
+          <declname>factor</declname>
+          <defval>static_cast&lt; T &gt;(1)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans matrix and sets diagonal terms to specified value. <ref refid="classMatrix" kindref="compound">Matrix</ref> must be square. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of diagonal terms. Default is one. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="135" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="609" bodyend="627"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a42385f8505361bda72faf28e4de0a3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::fillRandom</definition>
+        <argsstring>(T factor=static_cast&lt; T &gt;(1))</argsstring>
+        <name>fillRandom</name>
+        <param>
+          <type>T</type>
+          <declname>factor</declname>
+          <defval>static_cast&lt; T &gt;(1)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for filling a matrix with random numbers <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scales the random numbers (default value is unity). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="137" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="634" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a0d950cdbf1dc0727fe4d63a4c56546d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::sparsePattern</definition>
+        <argsstring>(Vector&lt; size_type &gt; &amp;, Vector&lt; size_type &gt; &amp;)</argsstring>
+        <name>sparsePattern</name>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ad3c93ffa3e02137fec2ca1cdd98f1d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::sparsePattern</definition>
+        <argsstring>(std::vector&lt; size_type &gt; &amp;, std::vector&lt; size_type &gt; &amp;)</argsstring>
+        <name>sparsePattern</name>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a0e8c08e59217997921920cc27f3d8956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::sparsePattern</definition>
+        <argsstring>(DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>sparsePattern</name>
+        <param>
+          <type>DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a8c331926ec2fcc7ab5ba866f3f5dd370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Elem_ref&lt; T &gt;</type>
+        <definition>Elem_ref&lt; T &gt; Matrix&lt; T &gt;::operator()</definition>
+        <argsstring>(size_type, size_type)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for extracting elements from the <ref refid="classMatrix" kindref="compound">Matrix</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row position of element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column position of element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="148" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="693" bodyend="709"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a98a12ff384603dcb37d3fc2e56fd747e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a9df2b2426e056464d6961957a8330825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt;T&gt;&amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix&lt; C &gt; &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a25ea1747156c8cdf2adae8da9d3b0b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a675f0713a95f8320bda2d583bf79e7d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Matrix &amp;)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a15cb875d43e397a9138aab19b2f4f935" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::operator+=</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a22f1dad5c5fb9f37459517743442bbbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::operator-=</definition>
+        <argsstring>(const Matrix &amp;)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1af944ddec439b0242de0feca1d7955a16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::operator-=</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ac610da076cedafce9a3f65475cb3e8b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator*=</definition>
+        <argsstring>(T)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>T</type>
+          <defname>scalar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scalar multiplication operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor of scaling. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to scaled matrix. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="166" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="845" bodyend="849"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aa8abca2bdd8d1a858a44520cf75ebf8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator/=</definition>
+        <argsstring>(T)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>T</type>
+          <defname>scalar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scalar term-by-term division operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor of division. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to scaled matrix. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="168" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="857" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::add</definition>
+        <argsstring>(const Matrix &amp;A, const Matrix &amp;B)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a340d3452219c80b00eeac701b97b2964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::add</definition>
+        <argsstring>(const Matrix &amp;A, const DenseMatrix&lt; T &gt; &amp;B)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a7a1afbab88d965b02eba69a2c8fec1d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::add</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;A, const Matrix &amp;B)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aaee38bfbbbda0e76f1cb51d4bff11d66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::subs</definition>
+        <argsstring>(const Matrix &amp;A, const Matrix &amp;B)</argsstring>
+        <name>subs</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a6f730c77510da6ba5afca55f4d723001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::subs</definition>
+        <argsstring>(const Matrix &amp;A, const DenseMatrix&lt; T &gt; &amp;B)</argsstring>
+        <name>subs</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ad5d018ff9e180ea393ef967e832ac069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::subs</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;A, const Matrix &amp;B)</argsstring>
+        <name>subs</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::mult</definition>
+        <argsstring>(const Matrix &amp;A, const Matrix &amp;B)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="182" column="1"/>
+        <referencedby refid="classMatrix_1a24d516d845a1b9ba87706566e5604588" compoundref="lmx__mat__matrix_8h" startline="314" endline="319">Matrix&lt; T &gt;::operator*</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a4934d91ec76b1e730aaeba4e0cbcc15c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::mult</definition>
+        <argsstring>(const Matrix &amp;A, const DenseMatrix&lt; T &gt; &amp;B)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a11729be8fe22239ae5674f2e2551f6a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::mult</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;A, const Matrix &amp;B)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a05d60787d4280ce70e4bfdf9a778feec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::mult</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;A, const DenseMatrix&lt; T &gt; &amp;B)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DenseMatrix objects multiplication, with result storing in the <ref refid="classMatrix" kindref="compound">Matrix</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left DenseMatrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right DenseMatrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to multiplication result in <ref refid="classMatrix" kindref="compound">Matrix</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="188" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="991" bodyend="995"/>
+        <references refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const Matrix &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a8a9e005b12332e7cf6d6cb7f7eb05258" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1acb7570b613ac336b4bf75f4ec67635e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;, const Matrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a124251b89d28e38b5f8cf3a48b297008" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;, const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aa44908832fe9f0e3da401e207f8e071a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;, const Matrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1abf8ae3fecd7d624fd33c1058cbfe413a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::multElements</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;, const DenseMatrix&lt; T &gt; &amp;)</argsstring>
+        <name>multElements</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a1225e5428e19fc4ae3fcb664fbdecb6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Matrix&lt; T &gt;::readElement</definition>
+        <argsstring>(size_type m, size_type n) const </argsstring>
+        <name>readElement</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that returns the value in specified position of <ref refid="classMatrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="205" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="205" bodyend="206"/>
+        <referencedby refid="classMatrix_1a07c1d963d1e98ff20ac96711d357f42d" compoundref="lmx__mat__matrix_8h" startline="732" endline="744">Matrix&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::writeElement</definition>
+        <argsstring>(T theValue, size_type m, size_type n) const </argsstring>
+        <name>writeElement</name>
+        <param>
+          <type>T</type>
+          <declname>theValue</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function writes the value in specified position of <ref refid="classMatrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="211" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="211" bodyend="212"/>
+        <referencedby refid="classMatrix_1a08bd824b1d3e5b02ffcabf2d70f518d5" compoundref="lmx__mat__matrix_8h" startline="323" endline="335">Matrix&lt; T &gt;::operator*</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a160e129270712b87969f7efee086fb53" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::addElement</definition>
+        <argsstring>(const T theValue, size_type m, size_type n) const </argsstring>
+        <name>addElement</name>
+        <param>
+          <type>const T</type>
+          <declname>theValue</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function adds the value in specified position of <ref refid="classMatrix" kindref="compound">Matrix</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="217" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="217" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a1344fb1e24060a6be2e530447582affa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::clean</definition>
+        <argsstring>(T factor)</argsstring>
+        <name>clean</name>
+        <param>
+          <type>T</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans all numbers below given factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="223" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="223" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ad39022f082bfee09e24d098796e14e10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the object&apos;s contents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="230" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="230" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1af40e280112b61f6a37b54d2e5ef02e5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset contents to 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="238" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="238" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a2a591b90d5553c7d097cb27f8d8ce29a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::resize</definition>
+        <argsstring>(size_type i, size_type j)</argsstring>
+        <name>resize</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize the <ref refid="classMatrix" kindref="compound">Matrix</ref> with given size parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rows. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Columns. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="247" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="247" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1af21f3044dc958a53f9f22f40b70a1ad1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::resize</definition>
+        <argsstring>(const Matrix &amp;mat)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize the <ref refid="classMatrix" kindref="compound">Matrix</ref> to the size of another <ref refid="classMatrix" kindref="compound">Matrix</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constant reference to a <ref refid="classMatrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="257" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="257" bodyend="261"/>
+        <references refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" compoundref="lmx__mat__matrix_8h" startline="127" endline="127">Matrix&lt; T &gt;::cols</references>
+        <references refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" compoundref="lmx__mat__matrix_8h" startline="121" endline="121">Matrix&lt; T &gt;::rows</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1accfd52f77ce100b5ffa35a434eec4eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&amp; Matrix&lt; T &gt;::transpose</definition>
+        <argsstring>()</argsstring>
+        <name>transpose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to transpose a matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="267" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="267" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a4d2d081f23b22321941c9584b89e0cf3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix Matrix&lt; T &gt;::operator+</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for adding elements between two <ref refid="classMatrix" kindref="compound">Matrix</ref> objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="277" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="277" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aae75f71f4a42101b068fc6ae023c3ac4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix Matrix&lt; T &gt;::operator+</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for adding elements between a <ref refid="classMatrix" kindref="compound">Matrix</ref> and a DenseMatrix object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="286" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="286" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a6e7f2dccf069eb1df036ad7ff3756789" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; Matrix&lt; T &gt;::operator-</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for substracting elements between two <ref refid="classMatrix" kindref="compound">Matrix</ref> objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="295" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="295" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1adb6f17017ec3598c84d933e5ee762b90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix Matrix&lt; T &gt;::operator-</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for substracting elements between a <ref refid="classMatrix" kindref="compound">Matrix</ref> and a DenseMatrix object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="304" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="304" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a24d516d845a1b9ba87706566e5604588" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; Matrix&lt; T &gt;::operator*</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for multiplying two <ref refid="classMatrix" kindref="compound">Matrix</ref> objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="314" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="314" bodyend="319"/>
+        <references refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" compoundref="lmx__mat__matrix_8h" startline="127" endline="127">Matrix&lt; T &gt;::cols</references>
+        <references refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326">Matrix&lt; T &gt;::mult</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a08bd824b1d3e5b02ffcabf2d70f518d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; Matrix&lt; T &gt;::operator*</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;B) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for multiplying <ref refid="classMatrix" kindref="compound">Matrix</ref> and DenseMatrix objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="323" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="323" bodyend="335"/>
+        <references refid="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" compoundref="lmx__mat__matrix_8h" startline="211" endline="212">Matrix&lt; T &gt;::writeElement</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a48967ad505c540147f116fa0b3050bac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; Matrix&lt; T &gt;::operator*</definition>
+        <argsstring>(const T &amp;scalar) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload operator for scaling a matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="339" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="339" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a5ac0a39b36bc04e4cedfde09dfe01105" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix&lt; T &gt;::exists</definition>
+        <argsstring>(size_type row, size_type col)</argsstring>
+        <name>exists</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retuns 1 if the element exists inside the storing structure and 0 if it does not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="349" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="349" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aed9270dd5f211e6e1a5989d61184e744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix&lt; T &gt;::checkSymmetry</definition>
+        <argsstring>()</argsstring>
+        <name>checkSymmetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retuns 1 if the <ref refid="classMatrix" kindref="compound">Matrix</ref> is symmetric and 0 if it does not. Needs documentation! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="356" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="356" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a5ccbd055f0ae0377196ddabb0d1b03f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::factorize</definition>
+        <argsstring>()</argsstring>
+        <name>factorize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DOCUMENT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="373" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="373" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a22d183d83bb9bf1cd5feea309f3a665e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::subsSolve</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;rhs)</argsstring>
+        <name>subsSolve</name>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DOCUMENT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="379" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="379" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a0d9e03ae35ffa4667afa1075f2684a64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt;T&gt;&amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;A)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for equaling every element between two <ref refid="classMatrix" kindref="compound">Matrix</ref> objects of the same type. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMatrix" kindref="compound">Matrix</ref> to be equal to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="717" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="717" bodyend="723"/>
+        <references refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" compoundref="lmx__mat__matrix_8h" startline="88">Matrix&lt; T &gt;::mrows</references>
+        <references refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" compoundref="lmx__mat__matrix_8h" startline="88">Matrix&lt; T &gt;::ncolumns</references>
+        <references refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" compoundref="lmx__mat__matrix_8h" startline="91">Matrix&lt; T &gt;::type_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a07c1d963d1e98ff20ac96711d357f42d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt;T&gt;&amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix&lt; C &gt; &amp;A)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for equaling every element between two <ref refid="classMatrix" kindref="compound">Matrix</ref> objects of different types. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMatrix" kindref="compound">Matrix</ref> to be equal to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="732" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="732" bodyend="744"/>
+        <references refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" compoundref="lmx__mat__matrix_8h" startline="127" endline="127">Matrix&lt; T &gt;::cols</references>
+        <references refid="classMatrix_1a1225e5428e19fc4ae3fcb664fbdecb6b" compoundref="lmx__mat__matrix_8h" startline="205" endline="206">Matrix&lt; T &gt;::readElement</references>
+        <references refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" compoundref="lmx__mat__matrix_8h" startline="121" endline="121">Matrix&lt; T &gt;::rows</references>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a3f2deb42b24254e639bca3ea50e2cdd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt;T&gt;&amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const DenseMatrix&lt; T &gt; &amp;A)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const DenseMatrix&lt; T &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloaded operator for equaling every element between a <ref refid="classMatrix" kindref="compound">Matrix</ref> and a DenseMatrix object of the same type. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DenseMatrix to be equal to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="753" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="753" bodyend="777"/>
+        <references refid="lmx__mat__matrix_8h_1ad8922a72ded14c1fedd4448e121ba52e" compoundref="lmx__base__selector_8h" startline="91" endline="91">getMatrixType</references>
+        <references refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" compoundref="lmx__mat__matrix_8h" startline="88">Matrix&lt; T &gt;::mrows</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classMatrix" kindref="compound">Matrix</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class permits the creation of matrix objects. A <ref refid="classMatrix" kindref="compound">Matrix</ref> object owns two parameters, nrows and mcolumns, that store the dimension of the matrix container. The data is stored in an atribute (*type_matrix) that points to some class which derives from the Data_mat class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows of the Data Container (Data_mat). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolumns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns of the Data Container (Data_mat). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An Elem_ref object for r/w data access. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*type_matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the matrix data container.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" line="85" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_matrix.h" bodystart="85" bodyend="411"/>
+    <listofallmembers>
+      <member refid="classMatrix_1a87e9ba44e1adfb175800069fe8070a64" prot="public" virt="non-virtual"><scope>Matrix</scope><name>add</name></member>
+      <member refid="classMatrix_1a340d3452219c80b00eeac701b97b2964" prot="public" virt="non-virtual"><scope>Matrix</scope><name>add</name></member>
+      <member refid="classMatrix_1a7a1afbab88d965b02eba69a2c8fec1d4" prot="public" virt="non-virtual"><scope>Matrix</scope><name>add</name></member>
+      <member refid="classMatrix_1a160e129270712b87969f7efee086fb53" prot="public" virt="non-virtual"><scope>Matrix</scope><name>addElement</name></member>
+      <member refid="classMatrix_1aed9270dd5f211e6e1a5989d61184e744" prot="public" virt="non-virtual"><scope>Matrix</scope><name>checkSymmetry</name></member>
+      <member refid="classMatrix_1a1344fb1e24060a6be2e530447582affa" prot="public" virt="non-virtual"><scope>Matrix</scope><name>clean</name></member>
+      <member refid="classMatrix_1ad39022f082bfee09e24d098796e14e10" prot="public" virt="non-virtual"><scope>Matrix</scope><name>clear</name></member>
+      <member refid="classMatrix_1a2c9cc747b6f786bb23cb44b3a01707c2" prot="public" virt="non-virtual"><scope>Matrix</scope><name>cols</name></member>
+      <member refid="classMatrix_1a5b3d3d3d338fdb2c08f91dfe38d425bd" prot="public" virt="non-virtual"><scope>Matrix</scope><name>DenseMatrix&lt; T &gt;</name></member>
+      <member refid="classMatrix_1a5ac0a39b36bc04e4cedfde09dfe01105" prot="public" virt="non-virtual"><scope>Matrix</scope><name>exists</name></member>
+      <member refid="classMatrix_1a5ccbd055f0ae0377196ddabb0d1b03f7" prot="public" virt="non-virtual"><scope>Matrix</scope><name>factorize</name></member>
+      <member refid="classMatrix_1ae8fb2cd5911c80ab80ab5d4cdfce8e4a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>fillIdentity</name></member>
+      <member refid="classMatrix_1a42385f8505361bda72faf28e4de0a3bf" prot="public" virt="non-virtual"><scope>Matrix</scope><name>fillRandom</name></member>
+      <member refid="classMatrix_1a1033ffed8225aa5b3b8d4ffd326d4372" prot="public" virt="non-virtual"><scope>Matrix</scope><name>harwellBoeingLoad</name></member>
+      <member refid="classMatrix_1a268e0e10c50ba9d384bb9b27b1d0ddff" prot="public" virt="non-virtual"><scope>Matrix</scope><name>harwellBoeingSave</name></member>
+      <member refid="classMatrix_1ab117b452cec366d3f2aa6f51f25dde56" prot="public" virt="non-virtual"><scope>Matrix</scope><name>initialize_type_matrix</name></member>
+      <member refid="classMatrix_1a95e5ab4da3326ece35572b4c41f61d15" prot="public" virt="non-virtual"><scope>Matrix</scope><name>LinearSystem&lt; T &gt;</name></member>
+      <member refid="classMatrix_1a10399f412e3ebd2af5372dc3638dfe9a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>lmx::latexPrint</name></member>
+      <member refid="classMatrix_1a83ba0257c792f88b9da29aacaad2b47d" prot="public" virt="non-virtual"><scope>Matrix</scope><name>LMXTester</name></member>
+      <member refid="classMatrix_1ad49f0060c68e71cdda695406d6f229f8" prot="protected" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1aeee342d4728ae708002d7e4d976d95f5" prot="protected" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a6226a80c09e42ae07b64570bc7a76dda" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a0e74261aca51167c58c5608c1422f950" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a9991e9c15523215441a667db5f53e3fb" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a93687e829e58842640899351998eb6d7" prot="public" virt="non-virtual"><scope>Matrix</scope><name>matrixMarketLoad</name></member>
+      <member refid="classMatrix_1a0b283aced337f3c94db50bc459d28580" prot="protected" virt="non-virtual"><scope>Matrix</scope><name>mrows</name></member>
+      <member refid="classMatrix_1a2c7c2f0c8b16e0cc2e1ac4c94dcee326" prot="public" virt="non-virtual"><scope>Matrix</scope><name>mult</name></member>
+      <member refid="classMatrix_1a4934d91ec76b1e730aaeba4e0cbcc15c" prot="public" virt="non-virtual"><scope>Matrix</scope><name>mult</name></member>
+      <member refid="classMatrix_1a11729be8fe22239ae5674f2e2551f6a0" prot="public" virt="non-virtual"><scope>Matrix</scope><name>mult</name></member>
+      <member refid="classMatrix_1a05d60787d4280ce70e4bfdf9a778feec" prot="public" virt="non-virtual"><scope>Matrix</scope><name>mult</name></member>
+      <member refid="classMatrix_1a4e43697ca65c10f762b65da8b29a77fa" prot="public" virt="non-virtual"><scope>Matrix</scope><name>multElements</name></member>
+      <member refid="classMatrix_1a8a9e005b12332e7cf6d6cb7f7eb05258" prot="public" virt="non-virtual"><scope>Matrix</scope><name>multElements</name></member>
+      <member refid="classMatrix_1acb7570b613ac336b4bf75f4ec67635e5" prot="public" virt="non-virtual"><scope>Matrix</scope><name>multElements</name></member>
+      <member refid="classMatrix_1a124251b89d28e38b5f8cf3a48b297008" prot="public" virt="non-virtual"><scope>Matrix</scope><name>multElements</name></member>
+      <member refid="classMatrix_1aa44908832fe9f0e3da401e207f8e071a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>multElements</name></member>
+      <member refid="classMatrix_1abf8ae3fecd7d624fd33c1058cbfe413a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>multElements</name></member>
+      <member refid="classMatrix_1a05a070e7ed8f3289d72c71b47888bef2" prot="protected" virt="non-virtual"><scope>Matrix</scope><name>ncolumns</name></member>
+      <member refid="classMatrix_1a8c331926ec2fcc7ab5ba866f3f5dd370" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator()</name></member>
+      <member refid="classMatrix_1a24d516d845a1b9ba87706566e5604588" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="classMatrix_1a08bd824b1d3e5b02ffcabf2d70f518d5" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="classMatrix_1a48967ad505c540147f116fa0b3050bac" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="classMatrix_1ac610da076cedafce9a3f65475cb3e8b5" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*=</name></member>
+      <member refid="classMatrix_1a4d2d081f23b22321941c9584b89e0cf3" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+</name></member>
+      <member refid="classMatrix_1aae75f71f4a42101b068fc6ae023c3ac4" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+</name></member>
+      <member refid="classMatrix_1a675f0713a95f8320bda2d583bf79e7d9" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+=</name></member>
+      <member refid="classMatrix_1a15cb875d43e397a9138aab19b2f4f935" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+=</name></member>
+      <member refid="classMatrix_1a6e7f2dccf069eb1df036ad7ff3756789" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-</name></member>
+      <member refid="classMatrix_1adb6f17017ec3598c84d933e5ee762b90" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-</name></member>
+      <member refid="classMatrix_1a22f1dad5c5fb9f37459517743442bbbd" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-=</name></member>
+      <member refid="classMatrix_1af944ddec439b0242de0feca1d7955a16" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-=</name></member>
+      <member refid="classMatrix_1aa8abca2bdd8d1a858a44520cf75ebf8b" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator/=</name></member>
+      <member refid="classMatrix_1a98a12ff384603dcb37d3fc2e56fd747e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a9df2b2426e056464d6961957a8330825" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a25ea1747156c8cdf2adae8da9d3b0b4e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a0d9e03ae35ffa4667afa1075f2684a64" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a07c1d963d1e98ff20ac96711d357f42d" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a3f2deb42b24254e639bca3ea50e2cdd5" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a1225e5428e19fc4ae3fcb664fbdecb6b" prot="public" virt="non-virtual"><scope>Matrix</scope><name>readElement</name></member>
+      <member refid="classMatrix_1a0294600ba30c0665efcaeb77bbcad7fa" prot="protected" virt="non-virtual"><scope>Matrix</scope><name>reference</name></member>
+      <member refid="classMatrix_1af40e280112b61f6a37b54d2e5ef02e5b" prot="public" virt="non-virtual"><scope>Matrix</scope><name>reset</name></member>
+      <member refid="classMatrix_1a2a591b90d5553c7d097cb27f8d8ce29a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>resize</name></member>
+      <member refid="classMatrix_1af21f3044dc958a53f9f22f40b70a1ad1" prot="public" virt="non-virtual"><scope>Matrix</scope><name>resize</name></member>
+      <member refid="classMatrix_1a94fa65c0c33679b20b23e8c6832d2f5f" prot="public" virt="non-virtual"><scope>Matrix</scope><name>rows</name></member>
+      <member refid="classMatrix_1a0d950cdbf1dc0727fe4d63a4c56546d5" prot="public" virt="non-virtual"><scope>Matrix</scope><name>sparsePattern</name></member>
+      <member refid="classMatrix_1ad3c93ffa3e02137fec2ca1cdd98f1d6d" prot="public" virt="non-virtual"><scope>Matrix</scope><name>sparsePattern</name></member>
+      <member refid="classMatrix_1a0e8c08e59217997921920cc27f3d8956" prot="public" virt="non-virtual"><scope>Matrix</scope><name>sparsePattern</name></member>
+      <member refid="classMatrix_1aaee38bfbbbda0e76f1cb51d4bff11d66" prot="public" virt="non-virtual"><scope>Matrix</scope><name>subs</name></member>
+      <member refid="classMatrix_1a6f730c77510da6ba5afca55f4d723001" prot="public" virt="non-virtual"><scope>Matrix</scope><name>subs</name></member>
+      <member refid="classMatrix_1ad5d018ff9e180ea393ef967e832ac069" prot="public" virt="non-virtual"><scope>Matrix</scope><name>subs</name></member>
+      <member refid="classMatrix_1a22d183d83bb9bf1cd5feea309f3a665e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>subsSolve</name></member>
+      <member refid="classMatrix_1accfd52f77ce100b5ffa35a434eec4eb1" prot="public" virt="non-virtual"><scope>Matrix</scope><name>transpose</name></member>
+      <member refid="classMatrix_1a3d4080c30637166c1b14268400d0fecd" prot="public" virt="non-virtual"><scope>Matrix</scope><name>transposed</name></member>
+      <member refid="classMatrix_1a3ea7741164284aaa1ad49dec89a2d309" prot="protected" virt="non-virtual"><scope>Matrix</scope><name>type_matrix</name></member>
+      <member refid="classMatrix_1a07857ea092bfd5d08a811e05ad544204" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Vector&lt; T &gt;</name></member>
+      <member refid="classMatrix_1a15b74964ba42fecd4965e0e5fd6643ca" prot="public" virt="non-virtual"><scope>Matrix</scope><name>writeElement</name></member>
+      <member refid="classMatrix_1a91aa704de674203e96aece9e1955ccd3" prot="public" virt="non-virtual"><scope>Matrix</scope><name>~Matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,105 @@
+\hypertarget{classlmx_1_1IntegratorBase}{\section{lmx\-:\-:Integrator\-Base$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1IntegratorBase}\index{lmx\-::\-Integrator\-Base$<$ T $>$@{lmx\-::\-Integrator\-Base$<$ T $>$}}
+}
+
+
+Template abstract class \hyperlink{classlmx_1_1IntegratorBase}{Integrator\-Base}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-diff\-\_\-integrator\-\_\-base.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Integrator\-Base$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlmx_1_1IntegratorBase__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1IntegratorBase_ac8fe7d9b211d6d86b4377a3ab57399fc}{Integrator\-Base} ()
+\item 
+virtual \hyperlink{classlmx_1_1IntegratorBase_a44f52dfb85513d84a2d3e5a1dbd73b94}{$\sim$\-Integrator\-Base} ()
+\item 
+virtual void \hyperlink{classlmx_1_1IntegratorBase_a9ddf427bbc2267c264222552d5fa47c6}{initialize} (\hyperlink{classlmx_1_1Configuration}{Configuration}$<$ T $>$ $\ast$)=0
+\item 
+virtual bool \hyperlink{classlmx_1_1IntegratorBase_a78adaaa37562ad47226ee2192fd44bd0}{is\-Explicit} ()=0
+\item 
+virtual void \hyperlink{classlmx_1_1IntegratorBase_ab671aed2798b57bd80e831dd2d0d49cf}{advance} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class lmx\-::\-Integrator\-Base$<$ T $>$}
+
+Template abstract class \hyperlink{classlmx_1_1IntegratorBase}{Integrator\-Base}. 
+
+Integrator basic structure.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1IntegratorBase_ac8fe7d9b211d6d86b4377a3ab57399fc}{\index{lmx\-::\-Integrator\-Base@{lmx\-::\-Integrator\-Base}!Integrator\-Base@{Integrator\-Base}}
+\index{Integrator\-Base@{Integrator\-Base}!lmx::IntegratorBase@{lmx\-::\-Integrator\-Base}}
+\subsubsection[{Integrator\-Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lmx\-::\-Integrator\-Base}$<$ T $>$\-::{\bf Integrator\-Base} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1IntegratorBase_ac8fe7d9b211d6d86b4377a3ab57399fc}
+Empty constructor. \hypertarget{classlmx_1_1IntegratorBase_a44f52dfb85513d84a2d3e5a1dbd73b94}{\index{lmx\-::\-Integrator\-Base@{lmx\-::\-Integrator\-Base}!$\sim$\-Integrator\-Base@{$\sim$\-Integrator\-Base}}
+\index{$\sim$\-Integrator\-Base@{$\sim$\-Integrator\-Base}!lmx::IntegratorBase@{lmx\-::\-Integrator\-Base}}
+\subsubsection[{$\sim$\-Integrator\-Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf lmx\-::\-Integrator\-Base}$<$ T $>$\-::$\sim${\bf Integrator\-Base} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1IntegratorBase_a44f52dfb85513d84a2d3e5a1dbd73b94}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1IntegratorBase_ab671aed2798b57bd80e831dd2d0d49cf}{\index{lmx\-::\-Integrator\-Base@{lmx\-::\-Integrator\-Base}!advance@{advance}}
+\index{advance@{advance}!lmx::IntegratorBase@{lmx\-::\-Integrator\-Base}}
+\subsubsection[{advance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf lmx\-::\-Integrator\-Base}$<$ T $>$\-::advance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1IntegratorBase_ab671aed2798b57bd80e831dd2d0d49cf}
+Actualization of the variables with non-\/actual configuration terms. 
+
+Implemented in \hyperlink{classlmx_1_1IntegratorAM_a9ddeb6b8a0338bcaee3b1a75ef44a579}{lmx\-::\-Integrator\-A\-M$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorAB_a1fb950b1126f4db82df1e49dfb832b42}{lmx\-::\-Integrator\-A\-B$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorBDF_a2b64844c160725add2f97ae58cb8b923}{lmx\-::\-Integrator\-B\-D\-F$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorNEWMARK_a8e02bf1560e75a9bfa6c9d47edfe9f86}{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$}, and \hyperlink{classlmx_1_1IntegratorCentralDifference_a6f53698ad68a151d804cfa2dd0dde465}{lmx\-::\-Integrator\-Central\-Difference$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorBase_a9ddf427bbc2267c264222552d5fa47c6}{\index{lmx\-::\-Integrator\-Base@{lmx\-::\-Integrator\-Base}!initialize@{initialize}}
+\index{initialize@{initialize}!lmx::IntegratorBase@{lmx\-::\-Integrator\-Base}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf lmx\-::\-Integrator\-Base}$<$ T $>$\-::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration}$<$ T $>$ $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1IntegratorBase_a9ddf427bbc2267c264222552d5fa47c6}
+Setup the object. 
+
+Implemented in \hyperlink{classlmx_1_1IntegratorAM_a931654fc8a6a5c516d54981f2d3ea8f4}{lmx\-::\-Integrator\-A\-M$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorBDF_a5ce2c4b88ec3dd23dce5b61122edfbe2}{lmx\-::\-Integrator\-B\-D\-F$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorNEWMARK_a2aa5136a1c112e7ac31c2bd3cb516988}{lmx\-::\-Integrator\-N\-E\-W\-M\-A\-R\-K$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorAB_a6aa7035ce0b6a896054175a32a0baf60}{lmx\-::\-Integrator\-A\-B$<$ T $>$}, and \hyperlink{classlmx_1_1IntegratorCentralDifference_a01d92b7c9ec60e6680ce0d7f3624bfbe}{lmx\-::\-Integrator\-Central\-Difference$<$ T $>$}.
+
+\hypertarget{classlmx_1_1IntegratorBase_a78adaaa37562ad47226ee2192fd44bd0}{\index{lmx\-::\-Integrator\-Base@{lmx\-::\-Integrator\-Base}!is\-Explicit@{is\-Explicit}}
+\index{is\-Explicit@{is\-Explicit}!lmx::IntegratorBase@{lmx\-::\-Integrator\-Base}}
+\subsubsection[{is\-Explicit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual bool {\bf lmx\-::\-Integrator\-Base}$<$ T $>$\-::is\-Explicit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1IntegratorBase_a78adaaa37562ad47226ee2192fd44bd0}
+Returns 1 (T\-R\-U\-E) if it is an explicit-\/scheme integrator. 
+
+Implemented in \hyperlink{classlmx_1_1IntegratorAB_a20e20c85eea134b3d831372fd16b0bec}{lmx\-::\-Integrator\-A\-B$<$ T $>$}, \hyperlink{classlmx_1_1IntegratorCentralDifference_ad54d65c95ed196ac8d8265e99de3d1c1}{lmx\-::\-Integrator\-Central\-Difference$<$ T $>$}, and \hyperlink{classlmx_1_1IntegratorBaseImplicit_a142802380bd75f1118a8815b2d2f0c75}{lmx\-::\-Integrator\-Base\-Implicit$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__diff__integrator__base_8h}{lmx\-\_\-diff\-\_\-integrator\-\_\-base.\-h}\end{DoxyCompactItemize}

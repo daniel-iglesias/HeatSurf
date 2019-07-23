@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="geometry_8cpp" kind="file">
+    <compoundname>geometry.cpp</compoundname>
+    <includes local="no">vtkActor.h</includes>
+    <includes local="no">vtkCamera.h</includes>
+    <includes local="no">vtkRenderWindow.h</includes>
+    <includes local="no">vtkRenderWindowInteractor.h</includes>
+    <includes local="no">vtkInteractorStyleTrackballCamera.h</includes>
+    <includes local="no">vtkRenderer.h</includes>
+    <includes local="no">vtkPoints.h</includes>
+    <includes local="no">vtkUnstructuredGrid.h</includes>
+    <includes local="no">vtkCell.h</includes>
+    <includes local="no">vtkFloatArray.h</includes>
+    <includes local="no">vtkDataSetMapper.h</includes>
+    <includes local="no">vtkPointData.h</includes>
+    <includes local="no">vtkProperty.h</includes>
+    <includes local="no">vtkLookupTable.h</includes>
+    <includes local="no">vtkScalarBarActor.h</includes>
+    <includes local="no">vtkTextActor.h</includes>
+    <includes local="no">vtkTextProperty.h</includes>
+    <includes local="no">vtkAxesActor.h</includes>
+    <includes local="no">vtkOrientationMarkerWidget.h</includes>
+    <includes local="no">vtkCaptionActor2D.h</includes>
+    <includes local="no">vtkMapper.h</includes>
+    <includes local="no">vtkPlane.h</includes>
+    <includes local="no">vtkCutter.h</includes>
+    <includes local="no">vtkPolyDataMapper.h</includes>
+    <includes local="no">vtkUnstructuredGridWriter.h</includes>
+    <includes refid="geometry_8h" local="yes">geometry.h</includes>
+    <incdepgraph>
+      <node id="592">
+        <label>vtkCamera.h</label>
+      </node>
+      <node id="622">
+        <label>LMX/lmx_nlsolvers.h</label>
+      </node>
+      <node id="624">
+        <label>element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="618" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>vtkPoints.h</label>
+      </node>
+      <node id="593">
+        <label>vtkRenderWindow.h</label>
+      </node>
+      <node id="602">
+        <label>vtkPointData.h</label>
+      </node>
+      <node id="608">
+        <label>vtkAxesActor.h</label>
+      </node>
+      <node id="591">
+        <label>vtkActor.h</label>
+      </node>
+      <node id="615">
+        <label>vtkUnstructuredGridWriter.h</label>
+      </node>
+      <node id="623">
+        <label>particle.h</label>
+        <link refid="particle_8h"/>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="620">
+        <label>cmath</label>
+      </node>
+      <node id="607">
+        <label>vtkTextProperty.h</label>
+      </node>
+      <node id="612">
+        <label>vtkPlane.h</label>
+      </node>
+      <node id="619">
+        <label>map</label>
+      </node>
+      <node id="590">
+        <label>src/geometry.cpp</label>
+        <link refid="geometry.cpp"/>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>vtkDataSetMapper.h</label>
+      </node>
+      <node id="599">
+        <label>vtkCell.h</label>
+      </node>
+      <node id="598">
+        <label>vtkUnstructuredGrid.h</label>
+      </node>
+      <node id="594">
+        <label>vtkRenderWindowInteractor.h</label>
+      </node>
+      <node id="614">
+        <label>vtkPolyDataMapper.h</label>
+      </node>
+      <node id="618">
+        <label>vector</label>
+      </node>
+      <node id="625">
+        <label>node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>vtkOrientationMarkerWidget.h</label>
+      </node>
+      <node id="621">
+        <label>LMX/lmx.h</label>
+      </node>
+      <node id="595">
+        <label>vtkInteractorStyleTrackballCamera.h</label>
+      </node>
+      <node id="617">
+        <label>iostream</label>
+      </node>
+      <node id="613">
+        <label>vtkCutter.h</label>
+      </node>
+      <node id="596">
+        <label>vtkRenderer.h</label>
+      </node>
+      <node id="604">
+        <label>vtkLookupTable.h</label>
+      </node>
+      <node id="610">
+        <label>vtkCaptionActor2D.h</label>
+      </node>
+      <node id="611">
+        <label>vtkMapper.h</label>
+      </node>
+      <node id="616">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="617" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+        <childnode refid="619" relation="include">
+        </childnode>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="621" relation="include">
+        </childnode>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>vtkFloatArray.h</label>
+      </node>
+      <node id="606">
+        <label>vtkTextActor.h</label>
+      </node>
+      <node id="605">
+        <label>vtkScalarBarActor.h</label>
+      </node>
+      <node id="603">
+        <label>vtkProperty.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2007<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>daniel.iglesias@ciemat.es<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkCamera.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkRenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkRenderWindowInteractor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkInteractorStyleTrackballCamera.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkRenderer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkPoints.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkUnstructuredGrid.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkCell.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkFloatArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkDataSetMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkPointData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkProperty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkLookupTable.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkScalarBarActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkTextActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkTextProperty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkAxesActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkOrientationMarkerWidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkCaptionActor2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkPlane.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkCutter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkPolyDataMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtkUnstructuredGridWriter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="geometry_8h" kindref="compound">geometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" refkind="member"><highlight class="normal"><ref refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" kindref="member">Geometry::Geometry</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" refkind="member"><highlight class="normal"><ref refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" kindref="member">Geometry::Geometry</ref><sp/>(<sp/>std::string<sp/>type_in,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z0_in,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sectors_in,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>length_in<sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>type<sp/>(<sp/>type_in<sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>z0<sp/>(<sp/>z0_in<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>sectors<sp/>(<sp/>sectors_in<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>length<sp/>(<sp/>length_in<sp/>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" refkind="member"><highlight class="normal"><ref refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" kindref="member">Geometry::~Geometry</ref>()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" kindref="member">Geometry::computeGrid3D</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>=<sp/>2*<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>/3;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref><sp/>=<sp/>2*<ref refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" kindref="member">sections</ref>/3;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j,k;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/>y,<sp/>z;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sectNodes<sp/>=<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>+1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sectionDif<sp/>=<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref><sp/>/<sp/>(<sp/><ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref><sp/>-<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>a<sp/>regular<sp/>grid<sp/>of<sp/>nodes:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Delta_z<sp/>=<sp/>sectionDif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Delta_y<sp/>=<sp/>Delta_x<sp/>=<sp/>2*(radius/seectors)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i=0;<sp/>i&lt;<ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref>;<sp/>++i<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>z<sp/>=<sp/>i*sectionDif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/>i<sp/>*<sp/>sectionDif<sp/>+<sp/><ref refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" kindref="member">z0</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>j=0;<sp/>j&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++j<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>y<sp/>=<sp/>radius*(<sp/>2*j/sectors<sp/>-<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/><ref refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kindref="member">gridWidth</ref>*<sp/>(<sp/>2.*j/<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>-<sp/>1.<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>k=0;<sp/>k&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++k<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>x<sp/>=<sp/>radius*(<sp/>2*k/sectors<sp/>-<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/><ref refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kindref="member">gridWidth</ref>*<sp/>(<sp/>2.*k/<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>-<sp/>1.<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[i*sectNodes*sectNodes<sp/>+<sp/>j*sectNodes<sp/>+<sp/>k]</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classNode" kindref="compound">Node</ref><sp/>(<sp/>x,<sp/>y,<sp/>z<sp/>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>elem_number;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sec_dim<sp/>=<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>+1;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>3D<sp/>block<sp/>elements<sp/>(type-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>one<sp/>has<sp/>two<sp/>nodes<sp/>in<sp/>plane<sp/>z<sp/>and<sp/>z+i*sectionDif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>other<sp/>two<sp/>nodes<sp/>in<sp/>y<sp/>and<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i=0;<sp/>i&lt;sections3D-1;<sp/>++i<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>z<sp/>=<sp/>i*sectionDif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>j=0;<sp/>j&lt;<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++j<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>y<sp/>=<sp/>radius(<sp/>2*j/sectors<sp/>-<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>k=0;<sp/>k&lt;<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++k<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>x<sp/>=<sp/>radius(<sp/>2*k/sectors<sp/>-<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem_number<sp/>=<sp/>i*sectors3D*sectors3D<sp/>+<sp/>j*sectors3D<sp/>+<sp/>k;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.push_back<sp/>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classElement" kindref="compound">Element</ref><sp/>(<sp/>1<sp/>)<sp/></highlight><highlight class="comment">//<sp/>type<sp/>brick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;setNumber<sp/>(<sp/>elem_number<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>testing<sp/>the<sp/>vector<sp/>numbering<sp/>(can<sp/>be<sp/>deleted):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>[elem_number]-&gt;getNumber()<sp/>!=<sp/>elem_number<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR<sp/>storing<sp/>grid3D<sp/>elements&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>i<sp/><sp/><sp/><sp/>*sec_dim*sec_dim<sp/>+<sp/><sp/>j<sp/><sp/><sp/>*sec_dim<sp/>+<sp/>k<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>i<sp/><sp/><sp/><sp/>*sec_dim*sec_dim<sp/>+<sp/><sp/>j<sp/><sp/><sp/>*sec_dim<sp/>+<sp/>k+1<sp/>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>i<sp/><sp/><sp/><sp/>*sec_dim*sec_dim<sp/>+<sp/>(<sp/>j+1<sp/>)<sp/>*sec_dim<sp/>+<sp/>k+1<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>i<sp/><sp/><sp/><sp/>*sec_dim*sec_dim<sp/>+<sp/>(<sp/>j+1<sp/>)<sp/>*sec_dim<sp/>+<sp/>k<sp/>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>(<sp/>i+1<sp/>)<sp/>*sec_dim*sec_dim<sp/>+<sp/><sp/>j<sp/><sp/><sp/>*sec_dim<sp/>+<sp/>k<sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>(<sp/>i+1<sp/>)<sp/>*sec_dim*sec_dim<sp/>+<sp/><sp/>j<sp/><sp/><sp/>*sec_dim<sp/>+<sp/>k+1<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>(<sp/>i+1<sp/>)<sp/>*sec_dim*sec_dim<sp/>+<sp/>(<sp/>j+1<sp/>)<sp/>*sec_dim<sp/>+<sp/>k+1<sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;addNode<sp/>(<sp/>(<sp/>i+1<sp/>)<sp/>*sec_dim*sec_dim<sp/>+<sp/>(<sp/>j+1<sp/>)<sp/>*sec_dim<sp/>+<sp/>k<sp/>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.back()-&gt;generateGeometry();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>node_temp;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(int<sp/>i=0;<sp/>i&lt;8;<sp/>++i){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_temp<sp/>=<sp/>grid3D.back()-&gt;getConnectivity().operator[](i);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;(&quot;<sp/>&lt;&lt;<sp/>grid3Dnodes[node_temp]-&gt;getX()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;,&quot;<sp/>&lt;&lt;<sp/>grid3Dnodes[node_temp]-&gt;getY()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;,&quot;<sp/>&lt;&lt;<sp/>grid3Dnodes[node_temp]-&gt;getZ()<sp/>&lt;&lt;&quot;)&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>create<sp/>the<sp/>vtk<sp/>points:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1afd79778e7c244df18be79a39419190c8" kindref="member">grid3DPoints</ref><sp/>=<sp/>vtkPoints::New();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1afd79778e7c244df18be79a39419190c8" kindref="member">grid3DPoints</ref>-&gt;SetNumberOfPoints<sp/>(<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>.size()<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>std::map&lt;int,<sp/>Node*&gt;::iterator<sp/>it<sp/>=<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>.begin();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>.end();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1afd79778e7c244df18be79a39419190c8" kindref="member">grid3DPoints</ref>-&gt;InsertPoint<sp/>(<sp/>it-&gt;first,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it-&gt;second-&gt;getX(),</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it-&gt;second-&gt;getY(),</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it-&gt;second-&gt;getZ()</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>And,<sp/>finally,<sp/>the<sp/>vtk<sp/>cells:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref><sp/>=<sp/>vtkUnstructuredGrid::New();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref>-&gt;Allocate<sp/>(<sp/>1000,1000<sp/>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>std::vector&lt;Element*&gt;::iterator<sp/>it=<ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.begin();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it!=<sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.end();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref>-&gt;InsertNextCell<sp/>(<sp/>(<sp/>*it<sp/>)-&gt;geometry-&gt;GetCellType(),</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>*it<sp/>)-&gt;geometry-&gt;GetPointIds()<sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref>-&gt;SetPoints<sp/>(<sp/><ref refid="classGeometry_1afd79778e7c244df18be79a39419190c8" kindref="member">grid3DPoints</ref><sp/>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" kindref="member">Geometry::computePowerDensity</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numParticles<sp/>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>Element*<sp/>&gt;::iterator<sp/>it_elements<sp/>=<sp/><ref refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" kindref="member">elements</ref>.begin();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>connectivity;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>section<sp/>nodes<sp/>Scalar<sp/>value<sp/>must<sp/>be<sp/>doubled<sp/>to<sp/>simulate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>half<sp/>of<sp/>the<sp/>element<sp/>that<sp/>isn&apos;t<sp/>discretized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>first_section<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>;<sp/>++j<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//closed<sp/>chain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[first_section*sectors<sp/>+<sp/>j]-&gt;addScalar</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[first_section*sectors<sp/>+<sp/>j]-&gt;getScalar()<sp/>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Last<sp/>section<sp/>nodes<sp/>Scalar<sp/>value<sp/>must<sp/>be<sp/>doubled<sp/>to<sp/>simulate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>half<sp/>of<sp/>the<sp/>element<sp/>that<sp/>isn&apos;t<sp/>discretized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>last_section<sp/>=<sp/><ref refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" kindref="member">sections</ref>-1;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>;<sp/>++j<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//closed<sp/>chain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[last_section*sectors<sp/>+<sp/>j]-&gt;addScalar</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[last_section*sectors<sp/>+<sp/>j]-&gt;getScalar()<sp/>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>it_elements;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it_elements<sp/>!=<sp/><ref refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" kindref="member">elements</ref>.end();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it_elements<sp/>)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectivity<sp/>=<sp/>(<sp/>*it_elements<sp/>)-&gt;getConnectivity();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;connectivity.size();<sp/>++j<sp/>)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>*it_elements<sp/>)-&gt;addDensity<sp/>(<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>connectivity[j]<sp/>]-&gt;getScalar()</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>numParticles</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>(<sp/>*it_elements<sp/>)-&gt;getArea()<sp/>*1E6</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>(<sp/>*it_elements<sp/>)-&gt;getNumberOfNodes()</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<sp/>*it_elements<sp/>)-&gt;getDensity()<sp/>&gt;<sp/>1E10<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Error!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR<sp/>DETECTED,<sp/>element<sp/>density<sp/>=<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<sp/>*it_elements<sp/>)-&gt;getDensity()</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;nodes[<sp/>connectivity[j]<sp/>]-&gt;getScalar()<sp/>=<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>connectivity[j]<sp/>]-&gt;getScalar()</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;numParticles<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>numParticles</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(*it_elements)-&gt;getArea()<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(<sp/>*it_elements<sp/>)-&gt;getArea()</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;connectivity.size();<sp/>++j<sp/>)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>connectivity[j]<sp/>]-&gt;addDensity<sp/>(<sp/>(<sp/>*it_elements<sp/>)-&gt;getDensity()</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/(*it_elements)-&gt;getNumberOfNodes()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Nodes<sp/>of<sp/>last<sp/>section<sp/>have<sp/>only<sp/>two<sp/>elements<sp/>connected,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>we<sp/>multiply<sp/>by<sp/>two<sp/>(adding<sp/>its<sp/>own<sp/>value):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[Resulting<sp/>power.dat<sp/>has<sp/>a<sp/>peak<sp/>on<sp/>vertex<sp/>point,<sp/>must<sp/>check]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(<sp/>connectivity[j]<sp/>&gt;=<sp/>(sections-1)*sectors<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes[<sp/>connectivity[j]<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;addDensity(<sp/>nodes[<sp/>connectivity[j]<sp/>]-&gt;getDensity()*.5<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>connectivity[j]<sp/>]-&gt;getDensity()<sp/>&gt;<sp/>1E10<sp/>)<sp/><sp/></highlight><highlight class="comment">//<sp/>Error!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR<sp/>DETECTED,<sp/>node<sp/>density<sp/>=<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>connectivity[j]<sp/>]-&gt;getDensity()</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(*it_elements)-&gt;getDensity()<sp/>=<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<sp/>*it_elements<sp/>)-&gt;getDensity()</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(*it_elements)-&gt;getNumberOfNodes()<sp/>=<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<sp/>*it_elements<sp/>)-&gt;getNumberOfNodes()</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>we<sp/>transform<sp/>to<sp/>the<sp/>3D<sp/>regular<sp/>grid:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>idea<sp/>is<sp/>to<sp/>use<sp/>the<sp/>Density<sp/>values<sp/>of<sp/>the<sp/>surface<sp/>grid<sp/>nodes<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>searching<sp/>the<sp/>nearer<sp/>grid3Dnodes.<sp/>Then<sp/>the<sp/>density<sp/>can<sp/>be<sp/>added<sp/>to<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>multiplied<sp/>by<sp/>a<sp/>factor<sp/>of<sp/>proximity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>we<sp/>assign<sp/>the<sp/>density<sp/>value<sp/>to<sp/>the<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>Node*&gt;::iterator<sp/>it_nodes;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>Node*&gt;::iterator<sp/>it_nodes_end<sp/>=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>.end();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,y,z;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j,k;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sectionDif<sp/>=<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref><sp/>/<sp/>(<sp/><ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref><sp/>-<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>elem_number;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>it_nodes<sp/>=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>.begin();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it_nodes!=<sp/>it_nodes_end;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it_nodes<sp/>)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>it_nodes-&gt;second-&gt;getX();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>it_nodes-&gt;second-&gt;getY();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/>it_nodes-&gt;second-&gt;getZ();</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>floor<sp/>(<sp/>(<sp/>z-<ref refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" kindref="member">z0</ref><sp/>)<sp/>/<sp/>sectionDif<sp/>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>gridWidth*(<sp/>2.*j/sectors<sp/>-<sp/>1.<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>/<sp/>gridWidth<sp/>+1<sp/>=<sp/>(<sp/>2.*j/sectors<sp/><sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/>floor<sp/>(<sp/>(<sp/>y/<ref refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kindref="member">gridWidth</ref><sp/>+<sp/>1.<sp/>)<sp/>*<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>/2.<sp/>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>/<sp/>gridWidth<sp/>=<sp/>(<sp/>2.*k/sectors<sp/>-<sp/>1.<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>=<sp/>floor<sp/>(<sp/>(<sp/>x/<ref refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" kindref="member">gridWidth</ref><sp/>+<sp/>1.<sp/>)<sp/>*<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>/2.<sp/>);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem_number<sp/>=<sp/>i*<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>*<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>+<sp/>j*<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>+<sp/>k;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;x=&quot;&lt;&lt;<sp/>x<sp/>&lt;&lt;&quot;,y=&quot;&lt;&lt;<sp/>y<sp/>&lt;&lt;&quot;,<sp/>z=&quot;&lt;&lt;<sp/>z<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;i=&quot;&lt;&lt;<sp/>i<sp/>&lt;&lt;&quot;,j=&quot;&lt;&lt;<sp/>j<sp/>&lt;&lt;&quot;,<sp/>k=&quot;&lt;&lt;<sp/>k</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;&quot;;<sp/>elem_number=&quot;&lt;&lt;<sp/>elem_number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;&quot;;<sp/>elem_size=&quot;&lt;&lt;<sp/>grid3D.size()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>i<sp/>&lt;<sp/>floor<sp/>(<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref>/sectionDif<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>[elem_number]-&gt;addDensity3D<sp/>(<sp/>it_nodes-&gt;second-&gt;getDensity()<sp/>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>the<sp/>mean<sp/>density<sp/>is<sp/>passed<sp/>to<sp/>the<sp/>eight<sp/>nodes<sp/>in<sp/>the<sp/>vertices<sp/>of<sp/>each</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>brick<sp/>element<sp/>using<sp/>the<sp/>special<sp/>function<sp/>node::addDensity3D(double).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>it_elements<sp/>=<sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.begin();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>it_elements;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it_elements<sp/>!=<sp/><ref refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" kindref="member">grid3D</ref>.end();</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it_elements<sp/>)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectivity<sp/>=<sp/>(<sp/>*it_elements<sp/>)-&gt;getConnectivity();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;connectivity.size();<sp/>++j<sp/>)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;element<sp/>density<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>(*it_elements)-&gt;getDensity3D()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>add<sp/>non-zero<sp/>values!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<sp/>*it_elements<sp/>)-&gt;getDensity3D()<sp/>&gt;<sp/>0.<sp/>)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[<sp/>connectivity[j]<sp/>]</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;addDensity3D<sp/>(<sp/>(<sp/>*it_elements<sp/>)-&gt;getDensity3D()<sp/>);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" kindref="member">Geometry::drawGeometry</ref>()</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af314d57676056969da57788a60954926" kindref="member">aDataSetMapper</ref><sp/>=<sp/>vtkDataSetMapper::New();</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af314d57676056969da57788a60954926" kindref="member">aDataSetMapper</ref>-&gt;SetInputData<sp/>(<sp/><ref refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" kindref="member">grid</ref><sp/>);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" kindref="member">anActor</ref><sp/>=<sp/>vtkActor::New();</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" kindref="member">anActor</ref>-&gt;SetMapper<sp/>(<sp/><ref refid="classGeometry_1af314d57676056969da57788a60954926" kindref="member">aDataSetMapper</ref><sp/>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" kindref="member">anActor</ref>-&gt;AddPosition<sp/>(<sp/>0,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>anActor-&gt;GetProperty()-&gt;SetDiffuseColor(1.0,<sp/>0.3,<sp/>0.3);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref><sp/>=<sp/>vtkRenderer::New();</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;SetBackground<sp/>(<sp/>0.3,<sp/>0.3,<sp/>0.3<sp/>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;AddActor<sp/>(<sp/><ref refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" kindref="member">anActor</ref><sp/>);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;ResetCamera();</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;GetActiveCamera()-&gt;Azimuth<sp/>(<sp/>30<sp/>);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;GetActiveCamera()-&gt;Elevation<sp/>(<sp/>10<sp/>);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;ResetCameraClippingRange();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" kindref="member">renWin</ref><sp/>=<sp/>vtkRenderWindow::New();</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" kindref="member">renWin</ref>-&gt;AddRenderer<sp/>(<sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref><sp/>);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" kindref="member">renWin</ref>-&gt;SetSize<sp/>(<sp/>800,<sp/>600<sp/>);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref><sp/>=<sp/>vtkRenderWindowInteractor::New();</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref>-&gt;SetRenderWindow<sp/>(<sp/><ref refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" kindref="member">renWin</ref><sp/>);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" kindref="member">style</ref><sp/>=<sp/>vtkInteractorStyleTrackballCamera::New();</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref>-&gt;SetInteractorStyle<sp/>(<sp/><ref refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" kindref="member">style</ref><sp/>);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Axis...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref><sp/>=<sp/>vtkAxesActor::New();</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref><sp/>=<sp/>vtkOrientationMarkerWidget::New();</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a[3];</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetShaftTypeToCylinder();</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetXAxisLabelText<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;X&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetYAxisLabelText<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Y&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetZAxisLabelText<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetTotalLength<sp/>(<sp/>20.0,<sp/>20.0,<sp/>20.0<sp/>);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetCylinderRadius<sp/>(<sp/>1.0<sp/>*<sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;GetCylinderRadius()<sp/>);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetConeRadius<sp/>(<sp/>0.7<sp/>*<sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;GetConeRadius()<sp/>);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;GetNormalizedTipLength<sp/>(<sp/>a<sp/>);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;SetNormalizedTipLength<sp/>(<sp/>2.0*a[0],2.0*a[1],2.0*a[2]<sp/>);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkTextProperty*<sp/>tprop<sp/>=<sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;GetXAxisCaptionActor2D()-&gt;GetCaptionTextProperty();</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>tprop-&gt;ItalicOn();</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>tprop-&gt;ShadowOn();</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>tprop-&gt;SetFontFamilyToTimes();</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;GetYAxisCaptionActor2D()-&gt;GetCaptionTextProperty()-&gt;ShallowCopy<sp/>(<sp/>tprop<sp/>);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref>-&gt;GetZAxisCaptionActor2D()-&gt;GetCaptionTextProperty()-&gt;ShallowCopy<sp/>(<sp/>tprop<sp/>);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>static<sp/>function<sp/>improves<sp/>the<sp/>appearance<sp/>of<sp/>the<sp/>text<sp/>edges</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="comment">//<sp/>since<sp/>they<sp/>are<sp/>overlaid<sp/>on<sp/>a<sp/>surface<sp/>rendering<sp/>of<sp/>the<sp/>cube&apos;s<sp/>faces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkMapper::SetResolveCoincidentTopologyToPolygonOffset();</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">//<sp/>set<sp/>up<sp/>the<sp/>widget</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>widget-&gt;SetOutlineColor(<sp/>0.9300,<sp/>0.5700,<sp/>0.1300<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>-&gt;SetOrientationMarker<sp/>(<sp/><ref refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" kindref="member">axes</ref><sp/>);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>-&gt;SetInteractor<sp/>(<sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref><sp/>);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>-&gt;SetViewport<sp/>(<sp/>0.0,<sp/>0.0,<sp/>0.3,<sp/>0.3<sp/>);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>-&gt;SetEnabled<sp/>(<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>-&gt;InteractiveOff();</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" kindref="member">widget</ref>-&gt;InteractiveOn();</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370" refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" kindref="member">Geometry::drawScalar</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>#<sp/>Define<sp/>the<sp/>value<sp/>of<sp/>a<sp/>scalar<sp/>field<sp/>(in<sp/>this<sp/>case<sp/>the<sp/>scalar)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kindref="member">scalar</ref><sp/>=<sp/>vtkFloatArray::New();</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>std::map&lt;int,Node*&gt;::iterator<sp/>it<sp/>=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>.begin();</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>.end();</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it<sp/>)</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kindref="member">scalar</ref>-&gt;InsertNextValue<sp/>(<sp/>it-&gt;second-&gt;getDensity()<sp/>);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" kindref="member">grid</ref>-&gt;GetPointData()-&gt;SetScalars<sp/>(<sp/><ref refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kindref="member">scalar</ref><sp/>);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref><sp/>=<sp/>vtkLookupTable::New();</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref>-&gt;SetTableRange<sp/>(<sp/><ref refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kindref="member">scalar</ref>-&gt;GetRange()<sp/>);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref>-&gt;SetHueRange<sp/>(<sp/>0.7,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>table-&gt;SetSaturationRange<sp/>(0,<sp/>1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref>-&gt;SetValueRange<sp/>(<sp/>1,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref>-&gt;SetNumberOfTableValues<sp/>(<sp/>100<sp/>);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref>-&gt;Build();</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af314d57676056969da57788a60954926" kindref="member">aDataSetMapper</ref>-&gt;SetScalarRange<sp/>(<sp/><ref refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" kindref="member">scalar</ref>-&gt;GetRange()<sp/>);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af314d57676056969da57788a60954926" kindref="member">aDataSetMapper</ref>-&gt;SetLookupTable<sp/>(<sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref><sp/>);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>aDataSetMapper-&gt;SelectColorArray(<sp/>2<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref><sp/>=<sp/>vtkScalarBarActor::New();</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;SetLookupTable<sp/>(<sp/><ref refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" kindref="member">table</ref><sp/>);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;SetTitle<sp/>(<sp/><ref refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" kindref="member">plotTitle</ref>.c_str()<sp/>);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;SetOrientationToVertical();</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;GetPositionCoordinate()-&gt;SetCoordinateSystemToNormalizedViewport();</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;GetPositionCoordinate()-&gt;SetValue<sp/>(<sp/>0.8,0.1<sp/>);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;SetWidth<sp/>(<sp/>0.10<sp/>);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;SetHeight<sp/>(<sp/>0.8<sp/>);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref>-&gt;SetNumberOfLabels<sp/>(<sp/>9<sp/>);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" kindref="member">ren</ref>-&gt;AddActor2D<sp/>(<sp/><ref refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" kindref="member">barActor</ref><sp/>);</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ren-&gt;GetRenderWindow()-&gt;Render();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref>-&gt;Initialize();</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" kindref="member">iren</ref>-&gt;Start();</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" kindref="member">Geometry::drawGrid</ref>()</highlight></codeline>
+<codeline lineno="414"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref><sp/>=<sp/>vtkDataSetMapper::New();</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref>-&gt;SetInputData<sp/>(<sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref><sp/>);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" kindref="member">grid3DActor</ref><sp/>=<sp/>vtkActor::New();</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" kindref="member">grid3DActor</ref>-&gt;SetMapper<sp/>(<sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref><sp/>);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" kindref="member">grid3DActor</ref>-&gt;AddPosition<sp/>(<sp/>0,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>grid3DActor-&gt;GetProperty()-&gt;SetDiffuseColor(1.0,<sp/>0.3,<sp/>0.3);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref><sp/>=<sp/>vtkRenderer::New();</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;SetBackground<sp/>(<sp/>0.3,<sp/>0.3,<sp/>0.3<sp/>);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;AddActor<sp/>(<sp/><ref refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" kindref="member">grid3DActor</ref><sp/>);</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;ResetCamera();</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;GetActiveCamera()-&gt;Azimuth<sp/>(<sp/>30<sp/>);</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;GetActiveCamera()-&gt;Elevation<sp/>(<sp/>10<sp/>);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;ResetCameraClippingRange();</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" kindref="member">grid3DrenWin</ref><sp/>=<sp/>vtkRenderWindow::New();</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" kindref="member">grid3DrenWin</ref>-&gt;AddRenderer<sp/>(<sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref><sp/>);</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" kindref="member">grid3DrenWin</ref>-&gt;SetSize<sp/>(<sp/>800,<sp/>600<sp/>);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref><sp/>=<sp/>vtkRenderWindowInteractor::New();</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref>-&gt;SetRenderWindow<sp/>(<sp/><ref refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" kindref="member">grid3DrenWin</ref><sp/>);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" kindref="member">grid3Dstyle</ref><sp/>=<sp/>vtkInteractorStyleTrackballCamera::New();</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref>-&gt;SetInteractorStyle<sp/>(<sp/><ref refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" kindref="member">grid3Dstyle</ref><sp/>);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Axis...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref><sp/>=<sp/>vtkAxesActor::New();</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref><sp/>=<sp/>vtkOrientationMarkerWidget::New();</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a[3];</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetShaftTypeToCylinder();</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetXAxisLabelText<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;X&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetYAxisLabelText<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Y&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetZAxisLabelText<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetTotalLength<sp/>(<sp/>20.0,<sp/>20.0,<sp/>20.0<sp/>);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetCylinderRadius<sp/>(<sp/>1.0<sp/>*<sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;GetCylinderRadius()<sp/>);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetConeRadius<sp/>(<sp/>0.7<sp/>*<sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;GetConeRadius()<sp/>);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;GetNormalizedTipLength<sp/>(<sp/>a<sp/>);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;SetNormalizedTipLength<sp/>(<sp/>2.0*a[0],2.0*a[1],2.0*a[2]<sp/>);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkTextProperty*<sp/>grid3Dtprop<sp/>=<sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;GetXAxisCaptionActor2D()-&gt;GetCaptionTextProperty();</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/>grid3Dtprop-&gt;ItalicOn();</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/>grid3Dtprop-&gt;ShadowOn();</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/>grid3Dtprop-&gt;SetFontFamilyToTimes();</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;GetYAxisCaptionActor2D()-&gt;GetCaptionTextProperty()-&gt;ShallowCopy<sp/>(<sp/>grid3Dtprop<sp/>);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref>-&gt;GetZAxisCaptionActor2D()-&gt;GetCaptionTextProperty()-&gt;ShallowCopy<sp/>(<sp/>grid3Dtprop<sp/>);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>static<sp/>function<sp/>improves<sp/>the<sp/>appearance<sp/>of<sp/>the<sp/>text<sp/>edges</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight><highlight class="comment">//<sp/>since<sp/>they<sp/>are<sp/>overlaid<sp/>on<sp/>a<sp/>surface<sp/>rendering<sp/>of<sp/>the<sp/>cube&apos;s<sp/>faces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkMapper::SetResolveCoincidentTopologyToPolygonOffset();</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight><highlight class="comment">//<sp/>set<sp/>up<sp/>the<sp/>widget</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>widget-&gt;SetOutlineColor(<sp/>0.9300,<sp/>0.5700,<sp/>0.1300<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>-&gt;SetOrientationMarker<sp/>(<sp/><ref refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" kindref="member">grid3Daxes</ref><sp/>);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>-&gt;SetInteractor<sp/>(<sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref><sp/>);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>-&gt;SetViewport<sp/>(<sp/>0.0,<sp/>0.0,<sp/>0.3,<sp/>0.3<sp/>);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>-&gt;SetEnabled<sp/>(<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>-&gt;InteractiveOff();</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" kindref="member">grid3Dwidget</ref>-&gt;InteractiveOn();</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481" refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" kindref="member">Geometry::drawGridScalar</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="482"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>#<sp/>Define<sp/>the<sp/>value<sp/>of<sp/>a<sp/>scalar<sp/>field<sp/>(in<sp/>this<sp/>case<sp/>the<sp/>scalar)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref><sp/>=<sp/>vtkFloatArray::New();</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>std::map&lt;int,Node*&gt;::iterator<sp/>it<sp/>=<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>.begin();</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>.end();</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it<sp/>)</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref>-&gt;InsertNextValue<sp/>(<sp/>it-&gt;second-&gt;getDensity()<sp/>);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref>-&gt;GetPointData()-&gt;SetScalars<sp/>(<sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref><sp/>);</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref><sp/>=<sp/>vtkLookupTable::New();</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref>-&gt;SetTableRange<sp/>(<sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref>-&gt;GetRange()<sp/>);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref>-&gt;SetHueRange<sp/>(<sp/>0.7,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>table-&gt;SetSaturationRange<sp/>(0,<sp/>1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref>-&gt;SetValueRange<sp/>(<sp/>1,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref>-&gt;SetNumberOfTableValues<sp/>(<sp/>100<sp/>);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref>-&gt;Build();</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref>-&gt;SetScalarRange<sp/>(<sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref>-&gt;GetRange()<sp/>);</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref>-&gt;SetLookupTable<sp/>(<sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref><sp/>);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>aDataSetMapper-&gt;SelectColorArray(<sp/>2<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref><sp/>=<sp/>vtkScalarBarActor::New();</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;SetLookupTable<sp/>(<sp/><ref refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" kindref="member">grid3Dtable</ref><sp/>);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;SetTitle<sp/>(<sp/><ref refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" kindref="member">plotTitle</ref>.c_str()<sp/>);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;SetOrientationToVertical();</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;GetPositionCoordinate()-&gt;SetCoordinateSystemToNormalizedViewport();</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;GetPositionCoordinate()-&gt;SetValue<sp/>(<sp/>0.8,0.1<sp/>);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;SetWidth<sp/>(<sp/>0.10<sp/>);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;SetHeight<sp/>(<sp/>0.8<sp/>);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref>-&gt;SetNumberOfLabels<sp/>(<sp/>9<sp/>);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" kindref="member">plane</ref><sp/>=<sp/>vtkPlane::New();</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>plane-&gt;SetOrigin(<sp/>grid3Dscalar-&gt;GetCenter()<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" kindref="member">plane</ref>-&gt;SetOrigin<sp/>(<sp/>0.,0.,0.<sp/>);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" kindref="member">plane</ref>-&gt;SetNormal<sp/>(<sp/>1.,<sp/>0.,<sp/>0.<sp/>);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" kindref="member">planeCut</ref><sp/>=<sp/>vtkCutter::New();</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" kindref="member">planeCut</ref>-&gt;SetInputConnection<sp/>(<sp/><ref refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" kindref="member">grid3DDataSetMapper</ref>-&gt;GetOutputPort()<sp/>);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" kindref="member">planeCut</ref>-&gt;SetCutFunction<sp/>(<sp/><ref refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" kindref="member">plane</ref><sp/>);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" kindref="member">cutMapper</ref><sp/>=<sp/>vtkPolyDataMapper::New();</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" kindref="member">cutMapper</ref>-&gt;SetInputConnection<sp/>(<sp/><ref refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" kindref="member">planeCut</ref>-&gt;GetOutputPort()<sp/>);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" kindref="member">cutMapper</ref>-&gt;SetScalarRange<sp/>(<sp/><ref refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" kindref="member">grid3Dscalar</ref>-&gt;GetRange()<sp/>);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" kindref="member">cutActor</ref><sp/>=<sp/>vtkActor::New();</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" kindref="member">cutActor</ref>-&gt;SetMapper<sp/>(<sp/><ref refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" kindref="member">cutMapper</ref><sp/>);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;AddActor2D<sp/>(<sp/><ref refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" kindref="member">grid3DbarActor</ref><sp/>);</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" kindref="member">grid3Dren</ref>-&gt;AddActor<sp/>(<sp/><ref refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" kindref="member">cutActor</ref><sp/>);</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ren-&gt;GetRenderWindow()-&gt;Render();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref>-&gt;Initialize();</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" kindref="member">grid3Diren</ref>-&gt;Start();</highlight></codeline>
+<codeline lineno="536"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539" refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" kindref="member">Geometry::outputAnsys3D</ref>()</highlight></codeline>
+<codeline lineno="540"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>outFile3D<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Ansys_power_3D.dat&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j,k;<sp/></highlight><highlight class="comment">//<sp/>z,<sp/>y,<sp/>x<sp/>indexes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>x_coords;</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;::iterator<sp/>it_x_coords;</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sectNodes<sp/>=<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>+1;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Output<sp/>in<sp/>file<sp/>the<sp/>info<sp/>of<sp/>the<sp/>grid:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>outFile3D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#<sp/>Grid<sp/>dimension:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>+<sp/>1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>+<sp/>1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>we<sp/>store<sp/>the<sp/>values<sp/>of<sp/>the<sp/>x-coordinates<sp/>of<sp/>the<sp/>regular<sp/>grid:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>k=0;<sp/>k&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++k<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>x<sp/>=<sp/>radius*(<sp/>2*k/sectors3D<sp/>-<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_coords.push_back<sp/>(</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[k]-&gt;getX()<sp/>*1E-3<sp/>);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i=0;<sp/>i&lt;<ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref>;<sp/>++i<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>z<sp/>=<sp/>i*sectionDif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile3D<sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[i*sectNodes*sectNodes]-&gt;getZ()<sp/>*1E-3;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>it_x_coords<sp/>=<sp/>x_coords.begin();</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it_x_coords!=<sp/>x_coords.end();</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it_x_coords</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>outFile3D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>*<sp/>(<sp/>it_x_coords<sp/>);<sp/>}</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile3D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>j=0;<sp/>j&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++j<sp/>)</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile3D<sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[i*sectNodes*sectNodes<sp/>+<sp/>j*sectNodes]-&gt;getY()<sp/>*1E-3;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>k=0;<sp/>k&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++k<sp/>)</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile3D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[i*sectNodes*sectNodes<sp/>+<sp/>j*sectNodes<sp/>+<sp/>k]-&gt;getDensity()<sp/>*1E6;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile3D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>outFile2D<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Ansys_power_2D.dat&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_data<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/>outFile2D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;0.0&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>only<sp/>one<sp/>&quot;plane&quot;<sp/>of<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>it_x_coords<sp/>=<sp/>x_coords.begin();</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it_x_coords!=<sp/>x_coords.end();</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it_x_coords</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>outFile2D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>*<sp/>(<sp/>it_x_coords<sp/>);<sp/>}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/>outFile2D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i=0;<sp/>i&lt;<ref refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" kindref="member">sections3D</ref>;<sp/>++i<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>z<sp/>=<sp/>i*sectionDif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile2D<sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[i*sectNodes*sectNodes]-&gt;getZ()<sp/>*1E-3;</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>k=0;<sp/>k&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++k<sp/>)</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>j=0;<sp/>j&lt;=<ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref>;<sp/>++j<sp/>)</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_data<sp/>=<sp/>std::max<sp/>(<sp/>max_data,</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" kindref="member">grid3Dnodes</ref>[i*sectNodes*sectNodes<sp/>+<sp/>j*sectNodes<sp/>+<sp/>k]</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;getDensity()<sp/>*1E6</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile2D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>max_data;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_data<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outFile2D<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;Ansys_power_3D.dat\&quot;<sp/>created,\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Number<sp/>of<sp/>lines,<sp/>columns<sp/>and<sp/>planes:<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>+<sp/>1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" kindref="member">sectors3D</ref><sp/>+<sp/>1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>sections3D</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617" refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" kindref="member">Geometry::outputVTKfiles</ref>()</highlight></codeline>
+<codeline lineno="618"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkUnstructuredGridWriter<sp/>*writer1<sp/>=<sp/>vtkUnstructuredGridWriter::New();</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/>writer1-&gt;SetInputData<sp/>(<sp/><ref refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" kindref="member">grid</ref><sp/>);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/>writer1-&gt;SetFileName<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;grid.vtk&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/>writer1-&gt;Write();</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/>vtkUnstructuredGridWriter<sp/>*writer2<sp/>=<sp/>vtkUnstructuredGridWriter::New();</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/>writer2-&gt;SetInputData<sp/>(<sp/><ref refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" kindref="member">gridCubes</ref><sp/>);</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/>writer2-&gt;SetFileName<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;gridCubes.vtk&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/>writer2-&gt;Write();</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Not<sp/>valid<sp/>for<sp/>plates<sp/>geometry!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="632" refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" kindref="member">Geometry::outputBackscattering</ref><sp/>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>precision<sp/>)</highlight></codeline>
+<codeline lineno="633"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>ofile<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;density.dat&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//supposing<sp/>al<sp/>the<sp/>sections<sp/>have<sp/>the<sp/>same<sp/>lenght:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>number<sp/>of<sp/>division<sp/>of<sp/>each<sp/>section:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/>size_type<sp/>slices<sp/>=<sp/>fabs<sp/>(<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref>/<sp/>(<sp/><ref refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" kindref="member">sections</ref>-1<sp/>)<sp/>)<sp/>/precision;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>double<sp/>&gt;<sp/>densities<sp/>(<sp/>slices<sp/>);</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>double<sp/>&gt;<sp/>areas<sp/>(<sp/>slices<sp/>);</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z,<sp/>zi,<sp/>zf,<sp/>ri,<sp/>rf;<sp/></highlight><highlight class="comment">//<sp/>axial<sp/>and<sp/>radial<sp/>coordiantes<sp/>for<sp/>section<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d,<sp/>di,df<sp/>(<sp/>0.<sp/>);<sp/></highlight><highlight class="comment">//<sp/>density<sp/>for<sp/>initial<sp/>and<sp/>final<sp/>slices,<sp/>computed<sp/>adding<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zii,<sp/>zff,<sp/>rii,<sp/>rff;<sp/></highlight><highlight class="comment">//<sp/>axial<sp/>and<sp/>radial<sp/>coordiantes<sp/>for<sp/>section<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dii,<sp/>dff;<sp/></highlight><highlight class="comment">//<sp/>density<sp/>for<sp/>initial<sp/>and<sp/>final<sp/>nodes<sp/>of<sp/>the<sp/>slice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>area,<sp/>power,<sp/>total_power;</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j,k;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/>ofile<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#<sp/>z(m)\t<sp/>mean<sp/>power<sp/>density<sp/>(MW/m^2)\t<sp/>power<sp/>(W/m)\t<sp/>Area<sp/>(mm^2)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i=0;<sp/>i&lt;<ref refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" kindref="member">sections</ref>-1;<sp/>++i<sp/>)</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zi<sp/>=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[i*<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>]-&gt;getZ();</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zf<sp/>=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>(<sp/>i+1<sp/>)<sp/>*<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>]-&gt;getZ();</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ri<sp/>=<sp/>fabs<sp/>(<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[i*<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>]-&gt;getX()<sp/>);</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rf<sp/>=<sp/>fabs<sp/>(<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>(<sp/>i+1<sp/>)<sp/>*<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>]-&gt;getX()<sp/>);</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>di<sp/>=<sp/>0.;<sp/></highlight><highlight class="comment">//could<sp/>be<sp/>df<sp/>but<sp/>careful<sp/>with<sp/>the<sp/>first<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>section_area<sp/>=<sp/>0.;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>section_power<sp/>=<sp/>0.;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>j=0;<sp/>j&lt;<ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>;<sp/>++j<sp/>)<sp/><sp/><sp/></highlight><highlight class="comment">//closed<sp/>chain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/>&quot;,<sp/>&quot;<sp/>&lt;&lt;<sp/>j<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>di<sp/>+=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[i*sectors<sp/>+<sp/>j]-&gt;getDensity();</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df<sp/>+=<sp/><ref refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" kindref="member">nodes</ref>[<sp/>(<sp/>i+1<sp/>)<sp/>*sectors<sp/>+<sp/>j]-&gt;getDensity();</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>section_area<sp/>+=<sp/>elements[i*sectors<sp/>+<sp/>j]-&gt;getArea();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>di<sp/>/=<sp/><ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>;</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df<sp/>/=<sp/><ref refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" kindref="member">sectors</ref>;</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>di<sp/>&lt;&lt;<sp/>&quot;,<sp/>&quot;<sp/>&lt;&lt;<sp/>df<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>section_power<sp/>=<sp/>section_area*(di+df)/2.;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>k=0;<sp/>k&lt;slices;<sp/>++k<sp/>)</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zii<sp/>=<sp/>zi+<sp/>(<sp/>(<sp/>double<sp/>)<sp/>(<sp/>k<sp/>)<sp/>/slices<sp/>)<sp/>*<sp/>(<sp/>zf-zi<sp/>);</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zff<sp/>=<sp/>zi+<sp/>(<sp/>(<sp/>(<sp/>double<sp/>)<sp/>(<sp/>k<sp/>)<sp/>+1.<sp/>)<sp/>/slices<sp/>)<sp/>*<sp/>(<sp/>zf-zi<sp/>);</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rii<sp/>=<sp/>ri+<sp/>(<sp/>(<sp/>double<sp/>)<sp/>(<sp/>k<sp/>)<sp/>/slices<sp/>)<sp/>*<sp/>(<sp/>rf-ri<sp/>);</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rff<sp/>=<sp/>ri+<sp/>(<sp/>(<sp/>(<sp/>double<sp/>)<sp/>(<sp/>k<sp/>)<sp/>+1.<sp/>)<sp/>/slices<sp/>)<sp/>*<sp/>(<sp/>rf-ri<sp/>);</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dii<sp/>=<sp/>di+<sp/>(<sp/>(<sp/>double<sp/>)<sp/>(<sp/>k<sp/>)<sp/>/slices<sp/>)<sp/>*<sp/>(<sp/>df-di<sp/>);</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dff<sp/>=<sp/>di+<sp/>(<sp/>(<sp/>(<sp/>double<sp/>)<sp/>(<sp/>k<sp/>)<sp/>+1.<sp/>)<sp/>/slices<sp/>)<sp/>*<sp/>(<sp/>df-di<sp/>);</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area<sp/>=<sp/>3.1416*<sp/>(<sp/>rii+rff<sp/>)<sp/>*sqrt<sp/>(<sp/>pow<sp/>(<sp/>rii-rff,2<sp/>)<sp/>+<sp/>pow<sp/>(<sp/>zff-zii,2<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>power<sp/>=<sp/>area*<sp/>(<sp/>dii+dff<sp/>)<sp/>/2.;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_power<sp/>+=<sp/>power;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofile<sp/>&lt;&lt;<sp/>zii/1000.<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//z</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;&lt;<sp/>(zii<sp/>+<sp/>zff)/2.<sp/>&lt;&lt;<sp/>&quot;\t&quot;<sp/>//z</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<sp/>dii<sp/>+<sp/>dff<sp/>)<sp/>/2.<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//density</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>power<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//power</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>area<sp/>&lt;&lt;<sp/>endl;<sp/></highlight><highlight class="comment">//area</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/>ofile.close();</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;slices<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>slices</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" kindref="member">length</ref>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>/<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sections-1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>precision<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Output<sp/>for<sp/>Backscattering<sp/>total<sp/>power<sp/>=<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>total_power<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="700"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/geometry.cpp"/>
+  </compounddef>
+</doxygen>

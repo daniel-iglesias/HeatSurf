@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Data" kind="class" prot="public" abstract="yes">
+    <compoundname>lmx::Data</compoundname>
+    <derivedcompoundref refid="classlmx_1_1Data__mat" prot="public" virt="non-virtual">lmx::Data_mat&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1Data__vec" prot="public" virt="non-virtual">lmx::Data_vec&lt; T &gt;</derivedcompoundref>
+    <includes refid="lmx__mat__data_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Data&lt; T &gt;::Data</definition>
+        <argsstring>()</argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual lmx::Data&lt; T &gt;::~Data</definition>
+        <argsstring>()</argsstring>
+        <name>~Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::resize</definition>
+        <argsstring>(size_type, size_type)=0</argsstring>
+        <name>resize</name>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a2bda575c6f8e0cf7e340c5b2070cadc2">resize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1ad2f7d101bef00f3bb214cdff5ff900ba">resize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a4ce5a2d661451dfad3d61dcd6cceaa66">resize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a727c040e4adaf13abc799c4fcef971b4">resize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__csc_1acb0b1a88c3e46d0951c0e03099e33cc2">resize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c">resize</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1af434c9ba68d71f40e578230225ba828c">resize</reimplementedby>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize method for augmenting or reducing the container&apos;s dimension. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="70" column="1"/>
+        <referencedby refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const T &amp;</type>
+        <definition>virtual const T&amp; lmx::Data&lt; T &gt;::readElement</definition>
+        <argsstring>(const size_type &amp;, const size_type &amp;) const =0</argsstring>
+        <name>readElement</name>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a39a1e8a1f0cfeb6e95a3a83a89442e13">readElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1afcb853a70a72344f5708f704e052e383">readElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1ac0079f08940635a93f1158727deb3049">readElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__csc_1aaa74136864d441799168b4568f697d53">readElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a9bd94cc0b965732f66f0f55d72b7cd06">readElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a7441d3f1a35bb8ebcdd99f7455186bcc">readElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a7441d3f1a35bb8ebcdd99f7455186bcc">readElement</reimplementedby>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read method for accesing stored data. <simplesect kind="return"><para>Value of the data stored in the (size_type,size_type) position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="75" column="1"/>
+        <referencedby refid="classlmx_1_1Type__csc_1ab81fb9afcee4f795aaed31383d484612" compoundref="lmx__mat__type__csc_8h" startline="454" endline="462">lmx::Type_csc&lt; T &gt;::add</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a0e3195992632635c8e050ff63fba8a1b" compoundref="lmx__mat__type__stdmatrix_8h" startline="126" endline="133">lmx::Type_stdmatrix&lt; double &gt;::add</referencedby>
+        <referencedby refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" compoundref="lmx__mat__data__blas_8h" startline="69" endline="78">lmx::mat_mat_add</referencedby>
+        <referencedby refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</referencedby>
+        <referencedby refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" compoundref="lmx__mat__data__blas_8h" startline="143" endline="151">lmx::mat_mat_multElements</referencedby>
+        <referencedby refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" compoundref="lmx__mat__data__blas_8h" startline="88" endline="97">lmx::mat_mat_subs</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1a5f2764badb799b42b956cb6bd384b55f" compoundref="lmx__mat__type__csc_8h" startline="489" endline="507">lmx::Type_csc&lt; T &gt;::multiply</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" compoundref="lmx__mat__type__stdmatrix_8h" startline="154" endline="178">lmx::Type_stdmatrix&lt; double &gt;::multiply</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1ac6270f91b6bffab66a8bf4f5bcd26ab9" compoundref="lmx__mat__type__csc_8h" startline="533" endline="544">lmx::Type_csc&lt; T &gt;::multiplyElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmmVector__sparse_1ad122828c2ec742370534f19f5b86ee88" compoundref="lmx__mat__type__gmmvector__sparse1_8h" startline="146" endline="150">lmx::Type_gmmVector_sparse&lt; T &gt;::multiplyElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm_1aa1d074b733fb6f21debf53361aaefc44" compoundref="lmx__mat__type__gmm_8h" startline="151" endline="157">lmx::Type_gmm&lt; T &gt;::multiplyElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__gmm__sparse_1acce4fbd2a3044993641894e300580a60" compoundref="lmx__mat__type__gmm__sparse1_8h" startline="156" endline="162">lmx::Type_gmm_sparse&lt; T &gt;::multiplyElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdVector_1a7bc99c10ee6a2905f7705598459f0101" compoundref="lmx__mat__type__stdvector_8h" startline="166" endline="170">lmx::Type_stdVector&lt; T &gt;::multiplyElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a2001b3ba02dab4b5574076d4c58ac274" compoundref="lmx__mat__type__stdmatrix_8h" startline="197" endline="204">lmx::Type_stdmatrix&lt; double &gt;::multiplyElements</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1a933efcd2ae77ca2460a0e27dff8d8798" compoundref="lmx__mat__type__csc_8h" startline="471" endline="479">lmx::Type_csc&lt; T &gt;::substract</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a0ee06b70a259e488d6ac3ef53c8f68d9" compoundref="lmx__mat__type__stdmatrix_8h" startline="139" endline="146">lmx::Type_stdmatrix&lt; double &gt;::substract</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::writeElement</definition>
+        <argsstring>(T, const size_type &amp;, const size_type &amp;)=0</argsstring>
+        <name>writeElement</name>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a53de84b0522415262e902ffa42157c3c">writeElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a814cd964f39fa41feffbf0795d3e446d">writeElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a41dfa3ea72a1af176d48654d7a9a537d">writeElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1ad5041be88871fcb7fc0f78303e184c13">writeElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a70b59a584946a3bf78a3bf93e33521f4">writeElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a90b9f72528b9bd122463611c3628a18c">writeElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a90b9f72528b9bd122463611c3628a18c">writeElement</reimplementedby>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write method for storing data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="79" column="1"/>
+        <referencedby refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" compoundref="lmx__mat__data__blas_8h" startline="69" endline="78">lmx::mat_mat_add</referencedby>
+        <referencedby refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</referencedby>
+        <referencedby refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" compoundref="lmx__mat__data__blas_8h" startline="143" endline="151">lmx::mat_mat_multElements</referencedby>
+        <referencedby refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" compoundref="lmx__mat__data__blas_8h" startline="88" endline="97">lmx::mat_mat_subs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::addElement</definition>
+        <argsstring>(T, const size_type &amp;, const size_type &amp;)=0</argsstring>
+        <name>addElement</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1aec6ca35c9a16d33a6ec7e4754f0cfe0b">addElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1af7e0661838b9cb1a325846913689ff24">addElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a5b62f0ed02f6235983276d9a3aeedda9">addElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a2362b786de94b584ee30b07b5a6e2951">addElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1ab5efd225785a7c2d358762c3a41044d1">addElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1ad77ae15ae864751d41b57be6cb9d3279">addElement</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1ad77ae15ae864751d41b57be6cb9d3279">addElement</reimplementedby>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write method for adding to data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>virtual size_type lmx::Data&lt; T &gt;::getRows</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getRows</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a7d04d6b93337ead44534da43fb5d2b40">getRows</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a5ebd01e84e9fc135980505b50e6fb905">getRows</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1aeb026bfdaec9ab85e2048532963bf208">getRows</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a6998599dcc3097907717f5d7616f4ae3">getRows</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1adbbad4029937203d528c2f267174ea3c">getRows</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a894217af1bea253ba832af0369edc87d">getRows</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a894217af1bea253ba832af0369edc87d">getRows</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for knowing the number of data rows. <simplesect kind="return"><para>Number of rows. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="88" column="1"/>
+        <referencedby refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" compoundref="lmx__mat__data__blas_8h" startline="69" endline="78">lmx::mat_mat_add</referencedby>
+        <referencedby refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</referencedby>
+        <referencedby refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" compoundref="lmx__mat__data__blas_8h" startline="143" endline="151">lmx::mat_mat_multElements</referencedby>
+        <referencedby refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" compoundref="lmx__mat__data__blas_8h" startline="88" endline="97">lmx::mat_mat_subs</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1a5f2764badb799b42b956cb6bd384b55f" compoundref="lmx__mat__type__csc_8h" startline="489" endline="507">lmx::Type_csc&lt; T &gt;::multiply</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" compoundref="lmx__mat__type__stdmatrix_8h" startline="154" endline="178">lmx::Type_stdmatrix&lt; double &gt;::multiply</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref></type>
+        <definition>virtual size_type lmx::Data&lt; T &gt;::getCols</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getCols</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1adc1754239031a024f0126008cca8257c">getCols</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a9ce4b3838d94c5a5a82b4b7a69c0359c">getCols</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a040c71d37e00afa863e4d6572e5573c1">getCols</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1aac929b84c92b84e9d9ed7476ca2d24a2">getCols</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1adbc15d4db8a1f72e044a3250359e18eb">getCols</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a54d79383c4486c1eb457a1aec6f93689">getCols</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a54d79383c4486c1eb457a1aec6f93689">getCols</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for knowing the number of data columns. <simplesect kind="return"><para>Number of columns. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="93" column="1"/>
+        <referencedby refid="namespacelmx_1a5c05859eb44b6c663c19d8e3d1cd4336" compoundref="lmx__mat__data__blas_8h" startline="69" endline="78">lmx::mat_mat_add</referencedby>
+        <referencedby refid="namespacelmx_1a40ee618d4c91a8e7c21b2cc4d068c362" compoundref="lmx__mat__data__blas_8h" startline="107" endline="134">lmx::mat_mat_mult</referencedby>
+        <referencedby refid="namespacelmx_1a56cc87866206c207bc234d4c97927e85" compoundref="lmx__mat__data__blas_8h" startline="143" endline="151">lmx::mat_mat_multElements</referencedby>
+        <referencedby refid="namespacelmx_1adee3572a0c0df7bd840c2a4c2eab80b0" compoundref="lmx__mat__data__blas_8h" startline="88" endline="97">lmx::mat_mat_subs</referencedby>
+        <referencedby refid="classlmx_1_1Type__csc_1a5f2764badb799b42b956cb6bd384b55f" compoundref="lmx__mat__type__csc_8h" startline="489" endline="507">lmx::Type_csc&lt; T &gt;::multiply</referencedby>
+        <referencedby refid="classlmx_1_1Type__stdmatrix_1a8cbc8c7b5e6ebe241e08c783b13c76b8" compoundref="lmx__mat__type__stdmatrix_8h" startline="154" endline="178">lmx::Type_stdmatrix&lt; double &gt;::multiply</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::equals</definition>
+        <argsstring>(const Data *)=0</argsstring>
+        <name>equals</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a149e8f0b1846fcc5e7731d75f0ab8401">equals</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a697613fbd50e50e829f3ec20562854a0">equals</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a9d99bdf0792dca176d2be85bf131f27b">equals</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1ad40a2793840d2053fce15b017524e4d7">equals</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a7f24603798a29e4d13c0a9eae926ba04">equals</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1abc40ccc0128617c4bbea2d3eeb5c695c">equals</reimplementedby>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for equaling object&apos;s data to the parameter&apos;s data. Necessary for implementing the &quot;=&quot; overloaded operator method in <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class types. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::add</definition>
+        <argsstring>(const Data *)=0</argsstring>
+        <name>add</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1ab81fb9afcee4f795aaed31383d484612">add</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a3663f6cd5b201303c044cfce9cb34f99">add</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a999e97cb37c1d3d1b23b3d72f31020fb">add</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1ac309aa177fd30def4598b3f19884a397">add</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a0e3195992632635c8e050ff63fba8a1b">add</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1accae3e1fa0fd9cc7b5968a3bf73034fa">add</reimplementedby>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for adding object&apos;s data to the parameter&apos;s data. Necessary for implementing the &quot;+=&quot; overloaded operator method in <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class types. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::substract</definition>
+        <argsstring>(const Data *)=0</argsstring>
+        <name>substract</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a933efcd2ae77ca2460a0e27dff8d8798">substract</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a22929d5ae61b024918d65ebe89930883">substract</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1ac79aa5d79a95282a1377eb8de9fbe694">substract</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a9f916d35ddafd3328d6c1a75372b3e2a">substract</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a0ee06b70a259e488d6ac3ef53c8f68d9">substract</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a7b246366659974874a46bf0424b3fd99">substract</reimplementedby>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for substracting object&apos;s data from the parameter&apos;s data. Necessary for implementing the &quot;-=&quot; overloaded operator method in <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> and <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class types. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::multiplyScalar</definition>
+        <argsstring>(const T &amp;)=0</argsstring>
+        <name>multiplyScalar</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1ad963bfd1f5e2cb5d524a15cac334afc4">multiplyScalar</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1ad6a694c0ff2c910c2c34b02ba6455450">multiplyScalar</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a3283a17010dd73bfd17146f7afd2771f">multiplyScalar</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a8ba6a31462827aabd07532ecb8d497dc">multiplyScalar</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a026f616e7a626ab3935f90779b06d36e">multiplyScalar</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1ab36305d296f62f54bc36f49ee51c6922">multiplyScalar</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1ab36305d296f62f54bc36f49ee51c6922">multiplyScalar</reimplementedby>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for multiplying a scalar with an array and saving the result in the object&apos;s data. Necessary for implementing the &quot;*&quot; overloaded operator method with scalars in <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::multiplyElements</definition>
+        <argsstring>(const Data *)=0</argsstring>
+        <name>multiplyElements</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1ac6270f91b6bffab66a8bf4f5bcd26ab9">multiplyElements</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1ad122828c2ec742370534f19f5b86ee88">multiplyElements</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1aa1d074b733fb6f21debf53361aaefc44">multiplyElements</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1acce4fbd2a3044993641894e300580a60">multiplyElements</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a7bc99c10ee6a2905f7705598459f0101">multiplyElements</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a2001b3ba02dab4b5574076d4c58ac274">multiplyElements</reimplementedby>
+        <param>
+          <type>const <ref refid="classlmx_1_1Data" kindref="compound">Data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method multiplying element-by-element of two arrays. One would be the object&apos;s contents and the other the parameter&apos;s contents. Necessary for implementing <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> to <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> multElements. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::cleanBelow</definition>
+        <argsstring>(const double)=0</argsstring>
+        <name>cleanBelow</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a7a5cbf46b6fe051d10586b6f6b5cf244">cleanBelow</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a6f9b445388c349959ecbf7c89b2b120c">cleanBelow</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a85e5d2f3e6c22b833c12c2c9bf45660f">cleanBelow</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a13e2324f08f06cab6a026dc6aee81a3d">cleanBelow</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a35b68a45ba1cf703e93d2ba49ecb6807">cleanBelow</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1ac83e09e52bf7fa7a82d7ca4dcb10f9de">cleanBelow</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1ac83e09e52bf7fa7a82d7ca4dcb10f9de">cleanBelow</reimplementedby>
+        <param>
+          <type>const double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for cleaning all elements below a given factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>clear</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a2c85d71b10223e2da91e947739cd5e67">clear</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1a3c4bcbfdb635c44c973eec21180dd417">clear</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a12581391ae3eece7b87ebebfdaa59e9d">clear</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a0816b04a7a46f0ebb7c5deead924eb7e">clear</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a304e1ed1b42ba622aa92b3308a445e18">clear</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694">clear</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1a59d589ec3c6c8f9994740ae3b9d0f694">clear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for clearing all elements. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data&lt; T &gt;::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classlmx_1_1Type__csc_1a9a5a413641307bc2229b79b46f9b43a8">reset</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm_1ab315549dff2d6ccf296e795d457b2e5f">reset</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a9c5345694e2e77e88858a773c69983b9">reset</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__gmm__sparse_1a61568c5bd6eeb065150bcc5fa9543344">reset</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a8ee5888fe6b8f8e7225332e51833631c">reset</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1aaa3747be745b171bd13044d60f169c42">reset</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdmatrix_1aaa3747be745b171bd13044d60f169c42">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for all elements to 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="134" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Data" kindref="compound">Data</ref>. Mother class for <ref refid="classlmx_1_1Data__mat" kindref="compound">Data_mat</ref> &amp; <ref refid="classlmx_1_1Data__vec" kindref="compound">Data_vec</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class represents the skeleton for the data container used by the <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> and <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> classes. No parameter nor function implementation here, just pure virtual class. See derived classes for details in implementation. Also maybe useful to see how this class is used in the <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class.</para><para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="277">
+        <label>lmx::Type_stdmatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__stdmatrix"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>lmx::Data_mat&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__mat"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>lmx::Data_vec&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__vec"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>lmx::Type_gmmVector_sparse&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmmVector__sparse"/>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>lmx::Type_gmm&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmm"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>lmx::Type_gmm_sparse&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmm__sparse"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>lmx::Type_stdVector&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__stdVector"/>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+      <node id="274">
+        <label>lmx::Type_csc&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__csc"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data.h" bodystart="57" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>add</name></member>
+      <member refid="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>addElement</name></member>
+      <member refid="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>cleanBelow</name></member>
+      <member refid="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>clear</name></member>
+      <member refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" prot="public" virt="non-virtual"><scope>lmx::Data</scope><name>Data</name></member>
+      <member refid="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>equals</name></member>
+      <member refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>getCols</name></member>
+      <member refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>getRows</name></member>
+      <member refid="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>multiplyElements</name></member>
+      <member refid="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>multiplyScalar</name></member>
+      <member refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>readElement</name></member>
+      <member refid="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>reset</name></member>
+      <member refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>resize</name></member>
+      <member refid="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>substract</name></member>
+      <member refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" prot="public" virt="pure-virtual"><scope>lmx::Data</scope><name>writeElement</name></member>
+      <member refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" prot="public" virt="virtual"><scope>lmx::Data</scope><name>~Data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

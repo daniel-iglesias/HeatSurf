@@ -1,0 +1,1417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Superlu" kind="class" prot="public">
+    <compoundname>lmx::Superlu</compoundname>
+    <includes refid="lmx__linsolvers__superlu__interface_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a8aa58ce96f8a2b9aac3b7088adfa7afa" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lmx::Superlu&lt; T &gt;::equed[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>equed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a1b01863b6ce1c9ebdd6ceb04bbd9f7dd" prot="private" static="no" mutable="no">
+        <type>yes_no_t</type>
+        <definition>yes_no_t lmx::Superlu&lt; T &gt;::equil</definition>
+        <argsstring></argsstring>
+        <name>equil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1aa95bf56de8c00256586d7029cd8d9f00" prot="private" static="no" mutable="no">
+        <type>trans_t</type>
+        <definition>trans_t lmx::Superlu&lt; T &gt;::trans</definition>
+        <argsstring></argsstring>
+        <name>trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a55818f0f593db323ac33c9026b011a84" prot="private" static="no" mutable="no">
+        <type>SuperMatrix</type>
+        <definition>SuperMatrix lmx::Superlu&lt; T &gt;::A</definition>
+        <argsstring></argsstring>
+        <name>A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a825bdc07a2a10308928918172ee65c46" prot="private" static="no" mutable="no">
+        <type>SuperMatrix</type>
+        <definition>SuperMatrix lmx::Superlu&lt; T &gt;::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a13b5890d03b64f40048ce48cefc306d7" prot="private" static="no" mutable="no">
+        <type>SuperMatrix</type>
+        <definition>SuperMatrix lmx::Superlu&lt; T &gt;::U</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1ad8ed3f4b42df320c76c04f58afab3d4a" prot="private" static="no" mutable="no">
+        <type>SuperMatrix</type>
+        <definition>SuperMatrix lmx::Superlu&lt; T &gt;::B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a234bfe3799a9ed51328936ee7096a1b9" prot="private" static="no" mutable="no">
+        <type>SuperMatrix</type>
+        <definition>SuperMatrix lmx::Superlu&lt; T &gt;::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1ae841bae10dd162bafffb712044501e67" prot="private" static="no" mutable="no">
+        <type>NCformat *</type>
+        <definition>NCformat* lmx::Superlu&lt; T &gt;::Astore</definition>
+        <argsstring></argsstring>
+        <name>Astore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="64" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a83b4e7342462e42727486ff57a57846c" prot="private" static="no" mutable="no">
+        <type>NCformat *</type>
+        <definition>NCformat* lmx::Superlu&lt; T &gt;::Ustore</definition>
+        <argsstring></argsstring>
+        <name>Ustore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1aa227b00113f9a59dc7919a1472a510f7" prot="private" static="no" mutable="no">
+        <type>SCformat *</type>
+        <definition>SCformat* lmx::Superlu&lt; T &gt;::Lstore</definition>
+        <argsstring></argsstring>
+        <name>Lstore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a3a7cdfc7450cf6798debbee59379d402" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* lmx::Superlu&lt; T &gt;::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a5cde8d6b460e9284056c084bd317dd6d" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* lmx::Superlu&lt; T &gt;::asub</definition>
+        <argsstring></argsstring>
+        <name>asub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1ac6b4b0b29e9ba3297be0c5addcfd58c8" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int * lmx::Superlu&lt; T &gt;::xa</definition>
+        <argsstring></argsstring>
+        <name>xa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="71" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a9eba54129974897977682b8a4d1328af" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* lmx::Superlu&lt; T &gt;::perm_r</definition>
+        <argsstring></argsstring>
+        <name>perm_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="73" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a29e26eda6d185f2757991fc7be8b4b7b" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* lmx::Superlu&lt; T &gt;::perm_c</definition>
+        <argsstring></argsstring>
+        <name>perm_c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a6f55e6e1e0b4e5e003a76440e1ddf6a9" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* lmx::Superlu&lt; T &gt;::etree</definition>
+        <argsstring></argsstring>
+        <name>etree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="75" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a85bac027cacddcc5e7018082373ddf57" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lmx::Superlu&lt; T &gt;::work</definition>
+        <argsstring></argsstring>
+        <name>work</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="76" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a01867b45871073bf20d611ab7586c8e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1ac4a5eef1af924d510a3c7f5925c81e24" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::lwork</definition>
+        <argsstring></argsstring>
+        <name>lwork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a41133fff1883fbbdddce945db3d88ce3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::nrhs</definition>
+        <argsstring></argsstring>
+        <name>nrhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1af7ac88b6dc60242b027b5d88a8f0bf17" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::ldx</definition>
+        <argsstring></argsstring>
+        <name>ldx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a003bc09596920ffe3ae6691f3fc8fb0e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a98654b749285954aaa798b73dee88d5e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a21ecb768bc35ad75a6065087af10b732" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a27a0451e6a8ead204fad3c152372ca94" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1af14e035c3d511b020a243a0cf4c8e39a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::Superlu&lt; T &gt;::nnz</definition>
+        <argsstring></argsstring>
+        <name>nnz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1aba08a27c75e0b695493f9e866680b048" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* lmx::Superlu&lt; T &gt;::rhsb</definition>
+        <argsstring></argsstring>
+        <name>rhsb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a010e1e59d8c7b4dc95fbf2a8f5cebb3f" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double * lmx::Superlu&lt; T &gt;::rhsx</definition>
+        <argsstring></argsstring>
+        <name>rhsx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a3caec95a7ef84146ae3f630287d51067" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double * lmx::Superlu&lt; T &gt;::xact</definition>
+        <argsstring></argsstring>
+        <name>xact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a7185f5deaa729348be0d1cf69b554c2c" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* lmx::Superlu&lt; T &gt;::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="83" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1aa9e5c27cc7f06056e8a936258b311b4f" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double * lmx::Superlu&lt; T &gt;::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="83" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a7ef3b8f65d4e75f8b86ee70acffc7e3c" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* lmx::Superlu&lt; T &gt;::ferr</definition>
+        <argsstring></argsstring>
+        <name>ferr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="84" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a297853647a34d811a2d49e35a6e3a4a5" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double * lmx::Superlu&lt; T &gt;::berr</definition>
+        <argsstring></argsstring>
+        <name>berr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="84" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a0d175e784a99234df401883a1e21e021" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::Superlu&lt; T &gt;::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="85" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1ad77e9ab032a7c59d0507f1e37b9d7bc3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::Superlu&lt; T &gt;::rpg</definition>
+        <argsstring></argsstring>
+        <name>rpg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="85" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a4ebcdc8fae57127e175629ac760c223d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lmx::Superlu&lt; T &gt;::rcond</definition>
+        <argsstring></argsstring>
+        <name>rcond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="85" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a89cfbfdadba5999bbf0da13a265c9ff6" prot="private" static="no" mutable="no">
+        <type>mem_usage_t</type>
+        <definition>mem_usage_t lmx::Superlu&lt; T &gt;::mem_usage</definition>
+        <argsstring></argsstring>
+        <name>mem_usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="86" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a6f9f80c157e6ec390577d6013210a901" prot="private" static="no" mutable="no">
+        <type>superlu_options_t</type>
+        <definition>superlu_options_t lmx::Superlu&lt; T &gt;::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="87" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1Superlu_1a4d0d1b16c600677e95579f8d2930ae99" prot="private" static="no" mutable="no">
+        <type>SuperLUStat_t</type>
+        <definition>SuperLUStat_t lmx::Superlu&lt; T &gt;::stat</definition>
+        <argsstring></argsstring>
+        <name>stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="88" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Superlu&lt; T &gt;::Superlu</definition>
+        <argsstring>(size_type &amp;, size_type &amp;, size_type &amp;, std::vector&lt; size_type &gt; &amp;, std::vector&lt; size_type &gt; &amp;, std::vector&lt; T &gt; &amp;)</argsstring>
+        <name>Superlu</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>m_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>n_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>nnz_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>asub_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>xa_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>a_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for STL style sparse matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nnz_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of non-zeros in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>asub_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xa_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of matrix&apos;s values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="92" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="148" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a1120b63d96216983b6708564a50681eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Superlu&lt; T &gt;::Superlu</definition>
+        <argsstring>(size_type &amp;, size_type &amp;, size_type &amp;, std::vector&lt; size_type &gt; &amp;, std::vector&lt; size_type &gt; &amp;, std::vector&lt; T &gt; &amp;, std::vector&lt; T &gt; &amp;, std::vector&lt; T &gt; &amp;)</argsstring>
+        <name>Superlu</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>m_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>n_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>nnz_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>asub_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>xa_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>a_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>x_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>b_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for STL style sparse matrix and vectors. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nnz_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of non-zeros in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>asub_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xa_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of matrix&apos;s values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of solution values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of RHS vector&apos;s values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="94" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="180" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a2b2959dbac2e0a28b825562b9e22b843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Superlu&lt; T &gt;::Superlu</definition>
+        <argsstring>(size_type &amp;, size_type &amp;, size_type &amp;, std::vector&lt; size_type &gt; &amp;, std::vector&lt; size_type &gt; &amp;, std::vector&lt; T &gt; &amp;, T *, T *)</argsstring>
+        <name>Superlu</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>m_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>n_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>nnz_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>asub_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <defname>xa_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>a_in</defname>
+        </param>
+        <param>
+          <type>T *</type>
+          <defname>x_in</defname>
+        </param>
+        <param>
+          <type>T *</type>
+          <defname>b_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for STL style sparse matrix and c-array vectors. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nnz_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of non-zeros in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>asub_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xa_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of matrix&apos;s values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of solution values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of RHS vector&apos;s values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="96" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="223" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1aa1a7e499e4e69e7ae9abaf9613ef955d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Superlu&lt; T &gt;::Superlu</definition>
+        <argsstring>(size_type &amp;, size_type &amp;, size_type &amp;, size_type *, size_type *, T *, T *, T *)</argsstring>
+        <name>Superlu</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>m_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>n_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>nnz_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> *</type>
+          <defname>asub_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> *</type>
+          <defname>xa_in</defname>
+        </param>
+        <param>
+          <type>T *</type>
+          <defname>a_in</defname>
+        </param>
+        <param>
+          <type>T *</type>
+          <defname>x_in</defname>
+        </param>
+        <param>
+          <type>T *</type>
+          <defname>b_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor from c-array style vectors. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nnz_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of non-zeros in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>asub_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xa_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of matrix&apos;s values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of solution values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of RHS vector&apos;s values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="98" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="264" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a1fb4602b567b3279a04d881402a693d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Superlu&lt; T &gt;::Superlu</definition>
+        <argsstring>(size_type &amp;, size_type &amp;, size_type &amp;, size_type *, size_type *, T *, std::vector&lt; T &gt; &amp;, std::vector&lt; T &gt; &amp;)</argsstring>
+        <name>Superlu</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>m_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>n_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <defname>nnz_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> *</type>
+          <defname>asub_in</defname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> *</type>
+          <defname>xa_in</defname>
+        </param>
+        <param>
+          <type>T *</type>
+          <defname>a_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>x_in</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>b_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor from c-array style sparse matrix and STL style vectors. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns of matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nnz_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of non-zeros in sparse matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>asub_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xa_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of integers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of matrix&apos;s values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of solution values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> of RHS vector&apos;s values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="100" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="301" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1ab0d48784ef7552c05279dd566ed59d04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Superlu&lt; T &gt;::~Superlu</definition>
+        <argsstring>()</argsstring>
+        <name>~Superlu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="102" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="329" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a450f46f145bbe53084ced59430b3ccec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="104" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="104" bodyend="104"/>
+        <references refid="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" compoundref="lmx__linsolvers__superlu__interface_8h" startline="355" endline="412">lmx::Superlu&lt; T &gt;::initMatrix</references>
+        <references refid="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" compoundref="lmx__linsolvers__superlu__interface_8h" startline="418" endline="430">lmx::Superlu&lt; T &gt;::initVectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::initMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>initMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize A SuperMatrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="105" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="355" bodyend="412"/>
+        <referencedby refid="classlmx_1_1Superlu_1a450f46f145bbe53084ced59430b3ccec" compoundref="lmx__linsolvers__superlu__interface_8h" startline="104" endline="104">lmx::Superlu&lt; T &gt;::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::initVectors</definition>
+        <argsstring>()</argsstring>
+        <name>initVectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize B,X SuperMatrices. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="106" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="418" bodyend="430"/>
+        <referencedby refid="classlmx_1_1Superlu_1a450f46f145bbe53084ced59430b3ccec" compoundref="lmx__linsolvers__superlu__interface_8h" startline="104" endline="104">lmx::Superlu&lt; T &gt;::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a91e191a919f26888fb4fded4de8e477e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::calc</definition>
+        <argsstring>(int)</argsstring>
+        <name>calc</name>
+        <param>
+          <type>int</type>
+          <defname>noisy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to compute solution vector. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noisy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the level of output information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="110" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="438" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1adb214bf9ef4ea3bce33011671f078df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::recalc</definition>
+        <argsstring>(int)</argsstring>
+        <name>recalc</name>
+        <param>
+          <type>int</type>
+          <defname>noisy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to compute solution vector using previous factorization. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noisy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the level of output information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="112" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="564" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::get_solution</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;)</argsstring>
+        <name>get_solution</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>x_out</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes solution in vector. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STL-style vector for writing the computed solution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="114" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="634" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a275e7d970b887661ff4bd301c42d14ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::get_solution</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;)</argsstring>
+        <name>get_solution</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <defname>x_out</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="116" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="644" bodyend="650"/>
+        <references refid="classlmx_1_1Vector_1a6ec5ff5f7a9c2b558fcb09a95210b18a" compoundref="lmx__mat__vector_8h" startline="158" endline="159">lmx::Vector&lt; T &gt;::writeElement</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1aa9a5857bcc40fab4933a916df751bedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::setVectors</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;b_in)</argsstring>
+        <name>setVectors</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="118" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="665" bodyend="674"/>
+        <references refid="classlmx_1_1Vector_1a4fc2d153c9436f3d377c1867b608ddd7" compoundref="lmx__mat__vector_8h" startline="145" endline="152">lmx::Vector&lt; T &gt;::readElement</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::setb</definition>
+        <argsstring>(T *)</argsstring>
+        <name>setb</name>
+        <param>
+          <type>T *</type>
+          <defname>b_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="121" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="677" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a3dd3cefcc50d4569e6b4cf8502a0c366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::setb</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;)</argsstring>
+        <name>setb</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>b_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="122" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="682" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a9e025d75b97197ea9b1700c3bad8fccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::setA</definition>
+        <argsstring>(size_type &amp;m_in, size_type &amp;n_in, size_type &amp;nnz_in, std::vector&lt; size_type &gt; &amp;asub_in, std::vector&lt; size_type &gt; &amp;xa_in, std::vector&lt; T &gt; &amp;a_in)</argsstring>
+        <name>setA</name>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>m_in</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>n_in</declname>
+        </param>
+        <param>
+          <type><ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &amp;</type>
+          <declname>nnz_in</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <declname>asub_in</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="lmx__mat__data_8h_1a49b489a408a211a90e766329c0732d7b" kindref="member">size_type</ref> &gt; &amp;</type>
+          <declname>xa_in</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>a_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="123" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="704" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1ae2e382f67055727a58919e43e27055f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::recalc1</definition>
+        <argsstring>(int)</argsstring>
+        <name>recalc1</name>
+        <param>
+          <type>int</type>
+          <defname>noisy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="129" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="487" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a2c3ec43812db1c7c2d9d09a0a41c9885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::recalc2</definition>
+        <argsstring>(int)</argsstring>
+        <name>recalc2</name>
+        <param>
+          <type>int</type>
+          <defname>noisy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="130" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="495" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a24cc99c5023690b19e4512592153b0cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::factorize</definition>
+        <argsstring>(void)</argsstring>
+        <name>factorize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="131" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="502" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1a2bf4d209e3e5033f5e442289dc5cdb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::subsSolve</definition>
+        <argsstring>(void)</argsstring>
+        <name>subsSolve</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="132" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="531" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Superlu_1ac5c29cc525a8deed07172d8950f9b95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::Superlu&lt; T &gt;::get_solutionB</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;)</argsstring>
+        <name>get_solutionB</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <defname>x_out</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="133" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="655" bodyend="661"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1LinearSystem" kindref="compound">LinearSystem</ref>. Linear systems implementation: &quot;A*x = b&quot; . </para>    </briefdescription>
+    <detaileddescription>
+<para>This class permits the creation of a linear system object. Each object has three parameters, corresponding to each of the matrices or vectors base of the problem. The basic methods solve the problem and add functionality to control the solution procedure. Not only one solver can be used as well as the number data type (class) may be differ between the input and the one used to solve the system.</para><para><simplesect kind="author"><para>Daniel Iglesias . </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_superlu_interface.h" bodystart="52" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Superlu_1a55818f0f593db323ac33c9026b011a84" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>A</name></member>
+      <member refid="classlmx_1_1Superlu_1a3a7cdfc7450cf6798debbee59379d402" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>a</name></member>
+      <member refid="classlmx_1_1Superlu_1ae841bae10dd162bafffb712044501e67" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>Astore</name></member>
+      <member refid="classlmx_1_1Superlu_1a5cde8d6b460e9284056c084bd317dd6d" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>asub</name></member>
+      <member refid="classlmx_1_1Superlu_1ad8ed3f4b42df320c76c04f58afab3d4a" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>B</name></member>
+      <member refid="classlmx_1_1Superlu_1a297853647a34d811a2d49e35a6e3a4a5" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>berr</name></member>
+      <member refid="classlmx_1_1Superlu_1aa9e5c27cc7f06056e8a936258b311b4f" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>C</name></member>
+      <member refid="classlmx_1_1Superlu_1a91e191a919f26888fb4fded4de8e477e" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>calc</name></member>
+      <member refid="classlmx_1_1Superlu_1a8aa58ce96f8a2b9aac3b7088adfa7afa" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>equed</name></member>
+      <member refid="classlmx_1_1Superlu_1a1b01863b6ce1c9ebdd6ceb04bbd9f7dd" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>equil</name></member>
+      <member refid="classlmx_1_1Superlu_1a6f55e6e1e0b4e5e003a76440e1ddf6a9" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>etree</name></member>
+      <member refid="classlmx_1_1Superlu_1a24cc99c5023690b19e4512592153b0cf" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>factorize</name></member>
+      <member refid="classlmx_1_1Superlu_1a7ef3b8f65d4e75f8b86ee70acffc7e3c" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>ferr</name></member>
+      <member refid="classlmx_1_1Superlu_1af4f2b6342ee79a027e45cd9cb67e3c04" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>get_solution</name></member>
+      <member refid="classlmx_1_1Superlu_1a275e7d970b887661ff4bd301c42d14ef" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>get_solution</name></member>
+      <member refid="classlmx_1_1Superlu_1ac5c29cc525a8deed07172d8950f9b95c" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>get_solutionB</name></member>
+      <member refid="classlmx_1_1Superlu_1a003bc09596920ffe3ae6691f3fc8fb0e" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>i</name></member>
+      <member refid="classlmx_1_1Superlu_1a01867b45871073bf20d611ab7586c8e1" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>info</name></member>
+      <member refid="classlmx_1_1Superlu_1a450f46f145bbe53084ced59430b3ccec" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>init</name></member>
+      <member refid="classlmx_1_1Superlu_1a2d3183b1a44436648effdee08f7bc136" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>initMatrix</name></member>
+      <member refid="classlmx_1_1Superlu_1aed7d3c98719ca7ed9aa3c7cb47e1fc5a" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>initVectors</name></member>
+      <member refid="classlmx_1_1Superlu_1a98654b749285954aaa798b73dee88d5e" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>j</name></member>
+      <member refid="classlmx_1_1Superlu_1a825bdc07a2a10308928918172ee65c46" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>L</name></member>
+      <member refid="classlmx_1_1Superlu_1af7ac88b6dc60242b027b5d88a8f0bf17" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>ldx</name></member>
+      <member refid="classlmx_1_1Superlu_1aa227b00113f9a59dc7919a1472a510f7" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>Lstore</name></member>
+      <member refid="classlmx_1_1Superlu_1ac4a5eef1af924d510a3c7f5925c81e24" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>lwork</name></member>
+      <member refid="classlmx_1_1Superlu_1a21ecb768bc35ad75a6065087af10b732" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>m</name></member>
+      <member refid="classlmx_1_1Superlu_1a89cfbfdadba5999bbf0da13a265c9ff6" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>mem_usage</name></member>
+      <member refid="classlmx_1_1Superlu_1a27a0451e6a8ead204fad3c152372ca94" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>n</name></member>
+      <member refid="classlmx_1_1Superlu_1af14e035c3d511b020a243a0cf4c8e39a" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>nnz</name></member>
+      <member refid="classlmx_1_1Superlu_1a41133fff1883fbbdddce945db3d88ce3" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>nrhs</name></member>
+      <member refid="classlmx_1_1Superlu_1a6f9f80c157e6ec390577d6013210a901" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>options</name></member>
+      <member refid="classlmx_1_1Superlu_1a29e26eda6d185f2757991fc7be8b4b7b" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>perm_c</name></member>
+      <member refid="classlmx_1_1Superlu_1a9eba54129974897977682b8a4d1328af" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>perm_r</name></member>
+      <member refid="classlmx_1_1Superlu_1a7185f5deaa729348be0d1cf69b554c2c" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>R</name></member>
+      <member refid="classlmx_1_1Superlu_1a4ebcdc8fae57127e175629ac760c223d" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>rcond</name></member>
+      <member refid="classlmx_1_1Superlu_1adb214bf9ef4ea3bce33011671f078df2" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>recalc</name></member>
+      <member refid="classlmx_1_1Superlu_1ae2e382f67055727a58919e43e27055f0" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>recalc1</name></member>
+      <member refid="classlmx_1_1Superlu_1a2c3ec43812db1c7c2d9d09a0a41c9885" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>recalc2</name></member>
+      <member refid="classlmx_1_1Superlu_1aba08a27c75e0b695493f9e866680b048" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>rhsb</name></member>
+      <member refid="classlmx_1_1Superlu_1a010e1e59d8c7b4dc95fbf2a8f5cebb3f" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>rhsx</name></member>
+      <member refid="classlmx_1_1Superlu_1ad77e9ab032a7c59d0507f1e37b9d7bc3" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>rpg</name></member>
+      <member refid="classlmx_1_1Superlu_1a9e025d75b97197ea9b1700c3bad8fccd" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>setA</name></member>
+      <member refid="classlmx_1_1Superlu_1abcce77603009829748b6c96a537977d0" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>setb</name></member>
+      <member refid="classlmx_1_1Superlu_1a3dd3cefcc50d4569e6b4cf8502a0c366" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>setb</name></member>
+      <member refid="classlmx_1_1Superlu_1aa9a5857bcc40fab4933a916df751bedd" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>setVectors</name></member>
+      <member refid="classlmx_1_1Superlu_1a4d0d1b16c600677e95579f8d2930ae99" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>stat</name></member>
+      <member refid="classlmx_1_1Superlu_1a2bf4d209e3e5033f5e442289dc5cdb2a" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>subsSolve</name></member>
+      <member refid="classlmx_1_1Superlu_1a21b3e8cc15b7b533e64d2efccec9e9ef" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>Superlu</name></member>
+      <member refid="classlmx_1_1Superlu_1a1120b63d96216983b6708564a50681eb" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>Superlu</name></member>
+      <member refid="classlmx_1_1Superlu_1a2b2959dbac2e0a28b825562b9e22b843" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>Superlu</name></member>
+      <member refid="classlmx_1_1Superlu_1aa1a7e499e4e69e7ae9abaf9613ef955d" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>Superlu</name></member>
+      <member refid="classlmx_1_1Superlu_1a1fb4602b567b3279a04d881402a693d8" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>Superlu</name></member>
+      <member refid="classlmx_1_1Superlu_1aa95bf56de8c00256586d7029cd8d9f00" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>trans</name></member>
+      <member refid="classlmx_1_1Superlu_1a13b5890d03b64f40048ce48cefc306d7" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>U</name></member>
+      <member refid="classlmx_1_1Superlu_1a0d175e784a99234df401883a1e21e021" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>u</name></member>
+      <member refid="classlmx_1_1Superlu_1a83b4e7342462e42727486ff57a57846c" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>Ustore</name></member>
+      <member refid="classlmx_1_1Superlu_1a85bac027cacddcc5e7018082373ddf57" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>work</name></member>
+      <member refid="classlmx_1_1Superlu_1a234bfe3799a9ed51328936ee7096a1b9" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>X</name></member>
+      <member refid="classlmx_1_1Superlu_1ac6b4b0b29e9ba3297be0c5addcfd58c8" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>xa</name></member>
+      <member refid="classlmx_1_1Superlu_1a3caec95a7ef84146ae3f630287d51067" prot="private" virt="non-virtual"><scope>lmx::Superlu</scope><name>xact</name></member>
+      <member refid="classlmx_1_1Superlu_1ab0d48784ef7552c05279dd566ed59d04" prot="public" virt="non-virtual"><scope>lmx::Superlu</scope><name>~Superlu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

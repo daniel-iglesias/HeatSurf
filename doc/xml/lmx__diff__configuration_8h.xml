@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__diff__configuration_8h" kind="file">
+    <compoundname>lmx_diff_configuration.h</compoundname>
+    <includes refid="lmx__except_8h" local="yes">lmx_except.h</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="lmx__diff__integrator__base_8h" local="yes">src/LMX/lmx_diff_integrator_base.h</includedby>
+    <includedby refid="lmx__diff__problem_8h" local="yes">src/LMX/lmx_diff_problem.h</includedby>
+    <includedby refid="lmx__diff__problem__double_8h" local="yes">src/LMX/lmx_diff_problem_double.h</includedby>
+    <incdepgraph>
+      <node id="3594">
+        <label>stdexcept</label>
+      </node>
+      <node id="3595">
+        <label>string</label>
+      </node>
+      <node id="3593">
+        <label>exception</label>
+      </node>
+      <node id="3590">
+        <label>src/LMX/lmx_diff_configuration.h</label>
+        <link refid="lmx_diff_configuration.h"/>
+        <childnode refid="3591" relation="include">
+        </childnode>
+        <childnode refid="3598" relation="include">
+        </childnode>
+      </node>
+      <node id="3591">
+        <label>lmx_except.h</label>
+        <link refid="lmx__except_8h"/>
+        <childnode refid="3592" relation="include">
+        </childnode>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3594" relation="include">
+        </childnode>
+        <childnode refid="3595" relation="include">
+        </childnode>
+        <childnode refid="3596" relation="include">
+        </childnode>
+        <childnode refid="3597" relation="include">
+        </childnode>
+      </node>
+      <node id="3596">
+        <label>sstream</label>
+      </node>
+      <node id="3592">
+        <label>iostream</label>
+      </node>
+      <node id="3597">
+        <label>algorithm</label>
+      </node>
+      <node id="3598">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3605">
+        <label>src/LMX/lmx_diff_problem_double.h</label>
+        <link refid="lmx__diff__problem__double_8h"/>
+        <childnode refid="3606" relation="include">
+        </childnode>
+      </node>
+      <node id="3604">
+        <label>src/LMX/lmx_diff_problem_second.h</label>
+        <link refid="lmx__diff__problem__second_8h"/>
+      </node>
+      <node id="3601">
+        <label>src/LMX/lmx_diff_integrator_ab.h</label>
+        <link refid="lmx__diff__integrator__ab_8h"/>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+      </node>
+      <node id="3600">
+        <label>src/LMX/lmx_diff_integrator_base.h</label>
+        <link refid="lmx__diff__integrator__base_8h"/>
+        <childnode refid="3601" relation="include">
+        </childnode>
+        <childnode refid="3607" relation="include">
+        </childnode>
+        <childnode refid="3611" relation="include">
+        </childnode>
+      </node>
+      <node id="3602">
+        <label>src/LMX/lmx_diff_problem.h</label>
+        <link refid="lmx__diff__problem_8h"/>
+        <childnode refid="3603" relation="include">
+        </childnode>
+        <childnode refid="3604" relation="include">
+        </childnode>
+      </node>
+      <node id="3610">
+        <label>src/LMX/lmx_diff_integrator_newmark.h</label>
+        <link refid="lmx__diff__integrator__newmark_8h"/>
+        <childnode refid="3606" relation="include">
+        </childnode>
+        <childnode refid="3604" relation="include">
+        </childnode>
+      </node>
+      <node id="3606">
+        <label>src/LMX/lmx_diff_problem_first_second.h</label>
+        <link refid="lmx__diff__problem__first__second_8h"/>
+      </node>
+      <node id="3603">
+        <label>src/LMX/lmx_diff_problem_first.h</label>
+        <link refid="lmx__diff__problem__first_8h"/>
+      </node>
+      <node id="3611">
+        <label>src/LMX/lmx_diff_integrator_centraldiff.h</label>
+        <link refid="lmx__diff__integrator__centraldiff_8h"/>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+      </node>
+      <node id="3608">
+        <label>src/LMX/lmx_diff_integrator_am.h</label>
+        <link refid="lmx__diff__integrator__am_8h"/>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+      </node>
+      <node id="3599">
+        <label>src/LMX/lmx_diff_configuration.h</label>
+        <link refid="lmx_diff_configuration.h"/>
+        <childnode refid="3600" relation="include">
+        </childnode>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+      </node>
+      <node id="3607">
+        <label>src/LMX/lmx_diff_integrator_base_implicit.h</label>
+        <link refid="lmx__diff__integrator__base__implicit_8h"/>
+        <childnode refid="3608" relation="include">
+        </childnode>
+        <childnode refid="3609" relation="include">
+        </childnode>
+        <childnode refid="3610" relation="include">
+        </childnode>
+      </node>
+      <node id="3609">
+        <label>src/LMX/lmx_diff_integrator_bdf.h</label>
+        <link refid="lmx__diff__integrator__bdf_8h"/>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlmx_1_1Configuration" prot="public">lmx::Configuration</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+    <briefdescription>
+<para>Configuration variables and time. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class contains the time information at (n-m) step [m-order-integrator &amp; n-step). Also, the variables that the integrator needs are stored in the parameters.</para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMXCONFIGURATION_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMXCONFIGURATION_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="lmx__except_8h" kindref="compound">lmx_except.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="52" refid="classlmx_1_1Configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>public:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vectorSize;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;std::unique_ptr&lt;lmx::Vector&lt;T&gt;<sp/>&gt;<sp/>&gt;<sp/>&gt;<sp/>q;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>std::vector&lt;<sp/>lmx::Vector&lt;<sp/>T<sp/>&gt;*<sp/>&gt;<sp/>&gt;<sp/>q;<sp/>/**&lt;<sp/>STL<sp/>vector<sp/>of<sp/>vectors<sp/>of<sp/><sp/>coordinates<sp/>with<sp/>&quot;n-steps&quot;<sp/>columns<sp/>and<sp/>&quot;m-diff<sp/>system<sp/>order&quot;<sp/>rows.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;lmx::Vector&lt;T&gt;<sp/>&gt;<sp/>temp;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>lmx::Vector&lt;<sp/>T<sp/>&gt;*<sp/>temp;<sp/>/**&lt;<sp/>temporary<sp/>pointer<sp/>to<sp/>vector<sp/>for<sp/>advance<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>double<sp/>&gt;<sp/>time;<sp/>/**&lt;<sp/>Time<sp/>vector.<sp/>Stores<sp/>all<sp/>the<sp/>steps...<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lastStepSize;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>presentTime;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>verbose;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classlmx_1_1Configuration_1a7554019ac3c088cf4043e28a2e69a9b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Configuration_1a7554019ac3c088cf4043e28a2e69a9b8" kindref="member">Configuration</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>vectorSize(0)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>lastStepSize(0)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>presentTime(0)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>steps(0)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>verbose(true)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>,<sp/>temp(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classlmx_1_1Configuration_1a840f3a27367514da1e9735550cebe7f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Configuration_1a840f3a27367514da1e9735550cebe7f5" kindref="member">Configuration</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t_o)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>vectorSize(0)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>verbose(1)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>lastStepSize(0)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>steps(1)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>presentTime(t_o)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>,<sp/>temp(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">/*time.push_back(<sp/>t_o<sp/>);*/</highlight><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classlmx_1_1Configuration_1a9537a1dbac192b364e35edb4d14114ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Configuration_1a9537a1dbac192b364e35edb4d14114ba" kindref="member">~Configuration</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(temp)<sp/>{<sp/>delete<sp/>temp;<sp/>temp<sp/>=<sp/>0;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(<sp/>int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>q.size();<sp/>++i<sp/>){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(<sp/>int<sp/>j<sp/>=<sp/>q[i].size();<sp/>j<sp/>&gt;<sp/>0;<sp/>--j<sp/>){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delete<sp/>q[i][j-1];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i][j-1]<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classlmx_1_1Configuration_1a2820c2dd1a2c0879391a9fc4184e8d33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a2820c2dd1a2c0879391a9fc4184e8d33" kindref="member">quiet</ref>()<sp/>{<sp/>verbose<sp/>=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a78a886ffbf9c2f3614066667374effd7" kindref="member">nextStep</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>stepSize);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classlmx_1_1Configuration_1ab4b84750deaab4d7041e9e6b7de5e71f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1ab4b84750deaab4d7041e9e6b7de5e71f" kindref="member">getTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>step<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>return<sp/>this-&gt;time[time.size()<sp/>-<sp/>1<sp/>-<sp/>step];<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(presentTime<sp/>-<sp/>step<sp/>*<sp/>lastStepSize);<sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classlmx_1_1Configuration_1a8e703f449981bc50ec13c14b4fc03382" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a8e703f449981bc50ec13c14b4fc03382" kindref="member">getTimeSize</ref>()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>{<sp/>return<sp/>this-&gt;time.size();<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>steps;<sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classlmx_1_1Configuration_1af40c6ec05472dbca4a4a80ffd6db6e51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1af40c6ec05472dbca4a4a80ffd6db6e51" kindref="member">getLastStepSize</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;lastStepSize;<sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classlmx_1_1Configuration_1a06ae75f9c8c797bd3801f60e8861ac97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector&lt;T&gt;</ref>&amp;<sp/><ref refid="classlmx_1_1Configuration_1a06ae75f9c8c797bd3801f60e8861ac97" kindref="member">getConf</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>order,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>step<sp/>=<sp/>0)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(this-&gt;q[order][step]);<sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classlmx_1_1Configuration_1a2bfdf6ac49d60696c0d2924210af6f0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a2bfdf6ac49d60696c0d2924210af6f0c" kindref="member">getDiffOrder</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;q.size()<sp/>-<sp/>1;<sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classlmx_1_1Configuration_1af910b7f153fc73967221cbf95b2f02e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1af910b7f153fc73967221cbf95b2f02e6" kindref="member">setTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>time_in)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>time.push_back(<sp/>time_in<sp/>);<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>presentTime<sp/>=<sp/>time_in;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++steps;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1af437ee887381048646611a1b7c79c80e" kindref="member">setInitialCondition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_order,<sp/><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector&lt;T&gt;</ref>&amp;<sp/>q_o);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" kindref="member">setStoredSteps</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps_q_o,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps_q_i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps_q_n);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classlmx_1_1Configuration_1a3bd19b906326293cb5cecbd000121c3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a3bd19b906326293cb5cecbd000121c3a" kindref="member">setConf</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_order,<sp/><ref refid="classlmx_1_1Vector" kindref="compound">Vector &lt;T&gt;</ref><sp/>values,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time_step<sp/>=<sp/>0)<sp/>{<sp/>*q[diff_order][time_step]<sp/>=<sp/>values;<sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="classlmx_1_1Configuration_1ac9a6b4a9ec19c4af12a4181b8feeb3bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Vector" kindref="compound">Vector &lt;T&gt;</ref>&amp;<sp/><ref refid="classlmx_1_1Configuration_1ac9a6b4a9ec19c4af12a4181b8feeb3bf" kindref="member">setConf</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_order,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time_step<sp/>=<sp/>0)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*q[diff_order][time_step];<sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="176" refid="classlmx_1_1Configuration_1af437ee887381048646611a1b7c79c80e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1af437ee887381048646611a1b7c79c80e" kindref="member">Configuration&lt;T&gt;::setInitialCondition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_order,<sp/><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector&lt;T&gt;</ref>&amp;<sp/>q_o)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vectorSize<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vectorSize<sp/>=<sp/>q_o.<ref refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vectorSize<sp/>!=<sp/>q_o.<ref refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" kindref="member">size</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR<sp/>:<sp/>trying<sp/>to<sp/>assing<sp/>an<sp/>initial<sp/>condition<sp/>vector<sp/>of<sp/>different<sp/>size<sp/>than<sp/>the<sp/>exising<sp/>ones.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>endl;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1failure__error" kindref="compound">lmx::failure_error</ref>,<sp/>message.str());</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(diff_order<sp/>+<sp/>1<sp/>&gt;=<sp/>q.size())<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>q.size();<sp/>i<sp/>&lt;=<sp/>diff_order<sp/>+<sp/>1;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Vector&lt;T&gt;<sp/>&gt;<sp/>ptr(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>(vectorSize));</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q.push_back(std::vector&lt;std::unique_ptr&lt;<ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>&gt;<sp/>&gt;());</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i].push_back(std::move(ptr));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>*q[diff_order][0]<sp/>=<sp/>q_o;<sp/></highlight><highlight class="comment">//<sp/>copies<sp/>values...<sp/>perhaps<sp/>should<sp/>use<sp/>input<sp/>values<sp/>instead.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------------------------------------------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;An<sp/>initial<sp/>condition<sp/>has<sp/>been<sp/>set:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Derivative<sp/>order<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>diff_order;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>size<sp/>of<sp/>vector<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>q_o.<ref refid="classlmx_1_1Vector_1a35fcd4c3141584163b295f0f28102e57" kindref="member">size</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;,<sp/>q_0<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>*q[diff_order][0]<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------------------------------------------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="216" refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" kindref="member">Configuration&lt;T&gt;::setStoredSteps</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps_q_o,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps_q_i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps_q_n)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vectorSize<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>message;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR<sp/>:<sp/>Initial<sp/>conditions<sp/>must<sp/>be<sp/>assigned<sp/>before<sp/>defining<sp/>step<sp/>storing.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" kindref="member">LMX_THROW</ref>(<ref refid="classlmx_1_1failure__error" kindref="compound">lmx::failure_error</ref>,<sp/>message.str());</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>new<sp/>columns<sp/>to<sp/>the<sp/>vectors,<sp/>starting<sp/>in<sp/>column<sp/>1:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>1;<sp/>j<sp/>&lt;<sp/>steps_q_o;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Vector&lt;T&gt;<sp/>&gt;<sp/>ptr(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>(vectorSize));</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[0].push_back(std::move(ptr));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>(q.size()<sp/>-<sp/>1);<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>1;<sp/>j<sp/>&lt;<sp/>steps_q_i;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Vector&lt;T&gt;<sp/>&gt;<sp/>ptr(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>(vectorSize));</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i].push_back(std::move(ptr));</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>1;<sp/>j<sp/>&lt;<sp/>steps_q_n;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Vector&lt;T&gt;<sp/>&gt;<sp/>ptr(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Vector" kindref="compound">Vector&lt;T&gt;</ref>(vectorSize));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[q.size()<sp/>-<sp/>1].push_back(std::move(ptr));</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------------------------------------------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Configuration<sp/>has<sp/>been<sp/>resized<sp/>to<sp/>the<sp/>following<sp/>vectors:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>q.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Derivative<sp/>order<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>time<sp/>line<sp/>size<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>q[i].size()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------------------------------------------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="253" refid="classlmx_1_1Configuration_1a78a886ffbf9c2f3614066667374effd7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1Configuration_1a78a886ffbf9c2f3614066667374effd7" kindref="member">Configuration&lt;T&gt;::nextStep</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>step_size)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Step<sp/>number<sp/>&quot;<sp/>&lt;&lt;<sp/>time.size()<sp/>&lt;&lt;<sp/>&quot;<sp/>solved,<sp/>time<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>time.back()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;--------------------------------------------------------&quot;<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>for<sp/>(<sp/>i=0;<sp/>i&lt;q.size();<sp/>++i)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;Derivative<sp/>order<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/>&quot;,<sp/>q_t<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>*q[i][0]<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;--------------------------------------------------------&quot;<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>q.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(q[i].size()<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>std::move(q[i].back());<sp/></highlight><highlight class="comment">//<sp/>Save<sp/>direction<sp/>to<sp/>last<sp/>element.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>q[i].size()<sp/>-<sp/>1;<sp/>j<sp/>&gt;<sp/>0;<sp/>--j)<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i][j]<sp/>=<sp/>std::move(q[i][j<sp/>-<sp/>1]);<sp/></highlight><highlight class="comment">//<sp/>Move<sp/>back<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i][0]<sp/>=<sp/>std::move(temp);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Optional,<sp/>may<sp/>improve<sp/>convergence<sp/>but<sp/>increases<sp/>step-time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*q[i][0]<sp/>=<sp/>*q[i][1];</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>lastStepSize<sp/>=<sp/>step_size;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>presentTime<sp/>+=<sp/>step_size;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>++steps;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>time.push_back(<sp/>time.back()<sp/>+<sp/>lastStepSize<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(verbose)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------------------------------------------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Solving<sp/>step<sp/>number<sp/>&quot;<sp/>&lt;&lt;<sp/>time.size()-1<sp/>&lt;&lt;<sp/>&quot;<sp/>time<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>time.back()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Solving<sp/>step<sp/>number<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>steps<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>time<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>presentTime<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------------------------------------------------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_configuration.h"/>
+  </compounddef>
+</doxygen>

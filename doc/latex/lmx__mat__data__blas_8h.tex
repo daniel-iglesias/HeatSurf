@@ -1,0 +1,80 @@
+\hypertarget{lmx__mat__data__blas_8h}{\section{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-data\-\_\-blas.h File Reference}
+\label{lmx__mat__data__blas_8h}\index{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h@{src/\-L\-M\-X/lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h}}
+}
+
+
+Basic Linear Algebra Methods for Data\-\_\-mat and Data\-\_\-vec derived classes.  
+
+
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{lmx__mat__data__blas_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__mat__data__blas_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlmx_1_1Data__mat}{lmx\-::\-Data\-\_\-mat$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}. Container for \hyperlink{classlmx_1_1Matrix}{Matrix} and \hyperlink{classlmx_1_1Vector}{Vector} data. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1Data__vec}{lmx\-::\-Data\-\_\-vec$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1Data__vec}{Data\-\_\-vec}. Container for \hyperlink{classlmx_1_1Vector}{Vector} data. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1Type__stdmatrix}{lmx\-::\-Type\-\_\-stdmatrix$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1Type__stdmatrix}{Type\-\_\-stdmatrix}. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1Type__csc}{lmx\-::\-Type\-\_\-csc$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Compressed Storaged by Columns matrix. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1Type__stdVector}{lmx\-::\-Type\-\_\-std\-Vector$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class \hyperlink{classlmx_1_1Type__stdVector}{Type\-\_\-std\-Vector}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelmx}{lmx}
+\begin{DoxyCompactList}\small\item\em Linked Matri\-X methods library uses lmx namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\-\_\-t \hyperlink{lmx__mat__data__blas_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_a5c05859eb44b6c663c19d8e3d1cd4336}{lmx\-::mat\-\_\-mat\-\_\-add} (const Data\-\_\-mat$<$ T $>$ $\ast$A, const Data\-\_\-mat$<$ T $>$ $\ast$B, Data\-\_\-mat$<$ T $>$ $\ast$C)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_adee3572a0c0df7bd840c2a4c2eab80b0}{lmx\-::mat\-\_\-mat\-\_\-subs} (const Data\-\_\-mat$<$ T $>$ $\ast$A, const Data\-\_\-mat$<$ T $>$ $\ast$B, Data\-\_\-mat$<$ T $>$ $\ast$C)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_a40ee618d4c91a8e7c21b2cc4d068c362}{lmx\-::mat\-\_\-mat\-\_\-mult} (const Data\-\_\-mat$<$ T $>$ $\ast$A, const Data\-\_\-mat$<$ T $>$ $\ast$B, Data\-\_\-mat$<$ T $>$ $\ast$C)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_a56cc87866206c207bc234d4c97927e85}{lmx\-::mat\-\_\-mat\-\_\-mult\-Elements} (const Data\-\_\-mat$<$ T $>$ $\ast$A, Data\-\_\-mat$<$ T $>$ $\ast$C)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_af1b580875370f953da3267438d3fa186}{lmx\-::mat\-\_\-mat\-\_\-mult\-Elements} (const Data\-\_\-mat$<$ T $>$ $\ast$A, const Data\-\_\-mat$<$ T $>$ $\ast$B, Data\-\_\-mat$<$ T $>$ $\ast$C)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_a6d30cefa412621b55332f3521b828010}{lmx\-::mat\-\_\-vec\-\_\-mult} (const Type\-\_\-csc$<$ T $>$ $\ast$matrix\-\_\-in, const Type\-\_\-std\-Vector$<$ T $>$ $\ast$vector\-\_\-in, Type\-\_\-std\-Vector$<$ T $>$ $\ast$vector\-\_\-out)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacelmx_ab8da9d846c786511bc3954fbbc996ff7}{lmx\-::copy} (const Type\-\_\-stdmatrix$<$ T $>$ $\ast$dense\-\_\-matrix\-\_\-in, Type\-\_\-csc$<$ T $>$ $\ast$matrix\-\_\-in)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic Linear Algebra Methods for Data\-\_\-mat and Data\-\_\-vec derived classes. Basic linear algebra numerical methodso including specialization for some \hyperlink{classMatrix}{Matrix} and \hyperlink{classVector}{Vector} data types.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{lmx__mat__data__blas_8h_a49b489a408a211a90e766329c0732d7b}{\index{lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h@{lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h}!size\-\_\-type@{size\-\_\-type}}
+\index{size\-\_\-type@{size\-\_\-type}!lmx_mat_data_blas.h@{lmx\-\_\-mat\-\_\-data\-\_\-blas.\-h}}
+\subsubsection[{size\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t {\bf size\-\_\-type}}}\label{lmx__mat__data__blas_8h_a49b489a408a211a90e766329c0732d7b}
+Integer for indexing matrices and vectors. 

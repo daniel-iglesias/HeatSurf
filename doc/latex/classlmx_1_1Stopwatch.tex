@@ -1,0 +1,90 @@
+\hypertarget{classlmx_1_1Stopwatch}{\section{lmx\-:\-:Stopwatch Class Reference}
+\label{classlmx_1_1Stopwatch}\index{lmx\-::\-Stopwatch@{lmx\-::\-Stopwatch}}
+}
+
+
+Class \hyperlink{classlmx_1_1Stopwatch}{Stopwatch}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-base\-\_\-stopwatch.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1Stopwatch_ae62ceeec915247ff0d92de3f02abf7c2}{Stopwatch} ()
+\item 
+\hyperlink{classlmx_1_1Stopwatch_a9c533ef6df594d2548561c202c3184fb}{Stopwatch} (char $\ast$file\-\_\-name)
+\item 
+\hyperlink{classlmx_1_1Stopwatch_a173f161dbaf4d5790e4517361f358b08}{$\sim$\-Stopwatch} ()
+\item 
+double \hyperlink{classlmx_1_1Stopwatch_a71d629530005931376c776b32c2cff61}{get\-Time} ()
+\item 
+void \hyperlink{classlmx_1_1Stopwatch_adbd2c1eeef2fd57381e88c6ab6665fb2}{set\-Quiet} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classlmx_1_1Stopwatch}{Stopwatch}. 
+
+This class is used to measure the time that it takes to do a group of operations. Those operations must be consecutive. The usage is very simple\-: just put the operations you want to measure inside a block (use braces) and create an empty \hyperlink{classlmx_1_1Stopwatch}{Stopwatch} object before any operation takes place.
+
+W\-A\-R\-N\-I\-N\-G\-: If using more than one core (processor) in execution, use class Exact\-Stop\-Watch instead.
+
+Inspired by Danny Kalev's recipe. More info in\-: \href{http://www.informit.com/guides/content.asp?g=cplusplus&seqNum=156}{\tt http\-://www.\-informit.\-com/guides/content.\-asp?g=cplusplus\&seq\-Num=156}
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1Stopwatch_ae62ceeec915247ff0d92de3f02abf7c2}{\index{lmx\-::\-Stopwatch@{lmx\-::\-Stopwatch}!Stopwatch@{Stopwatch}}
+\index{Stopwatch@{Stopwatch}!lmx::Stopwatch@{lmx\-::\-Stopwatch}}
+\subsubsection[{Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}lmx\-::\-Stopwatch\-::\-Stopwatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Stopwatch_ae62ceeec915247ff0d92de3f02abf7c2}
+Empty constructor \hypertarget{classlmx_1_1Stopwatch_a9c533ef6df594d2548561c202c3184fb}{\index{lmx\-::\-Stopwatch@{lmx\-::\-Stopwatch}!Stopwatch@{Stopwatch}}
+\index{Stopwatch@{Stopwatch}!lmx::Stopwatch@{lmx\-::\-Stopwatch}}
+\subsubsection[{Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}lmx\-::\-Stopwatch\-::\-Stopwatch (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Stopwatch_a9c533ef6df594d2548561c202c3184fb}
+Constructor with name of file \hypertarget{classlmx_1_1Stopwatch_a173f161dbaf4d5790e4517361f358b08}{\index{lmx\-::\-Stopwatch@{lmx\-::\-Stopwatch}!$\sim$\-Stopwatch@{$\sim$\-Stopwatch}}
+\index{$\sim$\-Stopwatch@{$\sim$\-Stopwatch}!lmx::Stopwatch@{lmx\-::\-Stopwatch}}
+\subsubsection[{$\sim$\-Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}lmx\-::\-Stopwatch\-::$\sim$\-Stopwatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Stopwatch_a173f161dbaf4d5790e4517361f358b08}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1Stopwatch_a71d629530005931376c776b32c2cff61}{\index{lmx\-::\-Stopwatch@{lmx\-::\-Stopwatch}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!lmx::Stopwatch@{lmx\-::\-Stopwatch}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double lmx\-::\-Stopwatch\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Stopwatch_a71d629530005931376c776b32c2cff61}
+Time count access.
+
+\begin{DoxyReturn}{Returns}
+value of the counter. 
+\end{DoxyReturn}
+\hypertarget{classlmx_1_1Stopwatch_adbd2c1eeef2fd57381e88c6ab6665fb2}{\index{lmx\-::\-Stopwatch@{lmx\-::\-Stopwatch}!set\-Quiet@{set\-Quiet}}
+\index{set\-Quiet@{set\-Quiet}!lmx::Stopwatch@{lmx\-::\-Stopwatch}}
+\subsubsection[{set\-Quiet}]{\setlength{\rightskip}{0pt plus 5cm}void lmx\-::\-Stopwatch\-::set\-Quiet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1Stopwatch_adbd2c1eeef2fd57381e88c6ab6665fb2}
+Turns off the default time info message. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__base__stopwatch_8h}{lmx\-\_\-base\-\_\-stopwatch.\-h}\end{DoxyCompactItemize}

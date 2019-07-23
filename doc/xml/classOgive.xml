@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classOgive" kind="class" prot="public">
+    <compoundname>Ogive</compoundname>
+    <basecompoundref refid="classGeometry" prot="public" virt="non-virtual">Geometry</basecompoundref>
+    <includes refid="ogive_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOgive_1af89f0340990c617f6903e5b140b6a93b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::ogive_radius</definition>
+        <argsstring></argsstring>
+        <name>ogive_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1a7e93a92332126b985d7a7742f35710d2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::initDiam</definition>
+        <argsstring></argsstring>
+        <name>initDiam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1a92d5693c4ab7b1e80c18c7b3008caaa0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::final_radius</definition>
+        <argsstring></argsstring>
+        <name>final_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="69" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1a1035346b767b04acd3272c1ede78f426" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1a29bf648cfcf37ae58f5a8ee24eeb3a1b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1aafb5ef15c21111e0078089c46892b8a9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1a26940d2855536f45f64774ac6a56e17b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::vx</definition>
+        <argsstring></argsstring>
+        <name>vx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1afb7b53a0c6e5d5d31d22dab942a30376" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::vy</definition>
+        <argsstring></argsstring>
+        <name>vy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOgive_1a94aba938f3035cbf3b1c19a878ece885" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Ogive::vz</definition>
+        <argsstring></argsstring>
+        <name>vz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="70" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOgive_1af64e93b747bcc7f80d1c64705c335f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ogive::Ogive</definition>
+        <argsstring>()</argsstring>
+        <name>Ogive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a4cc1f5beafcd2259677c4053d1ce38d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ogive::Ogive</definition>
+        <argsstring>(std::string, double, double, double, int, double)</argsstring>
+        <name>Ogive</name>
+        <param>
+          <type>std::string</type>
+          <defname>type_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par0_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par1_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par2_in</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>par3_in</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>par4_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="33" bodyend="46"/>
+        <references refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" compoundref="geometry_8h" startline="120">Geometry::gridWidth</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a83d0745d3b4324cb17976fc2dfdd4ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ogive::~Ogive</definition>
+        <argsstring>()</argsstring>
+        <name>~Ogive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="48" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a925beac2c2c2ee5f7ad6654a4f1048e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::setSections</definition>
+        <argsstring>(double)</argsstring>
+        <name>setSections</name>
+        <reimplements refid="classGeometry_1aab2d4db916d7c8541af6624a82b2d4df">setSections</reimplements>
+        <param>
+          <type>double</type>
+          <defname>distance</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="50" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="54" bodyend="58"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::computeGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>computeGeometry</name>
+        <reimplements refid="classGeometry_1a3e77ac889d1e440c24efbde630aa1933">computeGeometry</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="61" bodyend="151"/>
+        <references refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" compoundref="geometry_8h" startline="124">Geometry::elements</references>
+        <references refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" compoundref="geometry_8h" startline="130">Geometry::grid</references>
+        <references refid="classGeometry_1aed47a80e867e618e98272e830d297deb" compoundref="geometry_8h" startline="128">Geometry::gridPoints</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a849470be3cd2e0db95fd191b0d41f0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogive::residue</definition>
+        <argsstring>(lmx::Vector&lt; double &gt; &amp;, lmx::Vector&lt; double &gt; &amp;)</argsstring>
+        <name>residue</name>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>res</defname>
+        </param>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="154" bodyend="176"/>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a3260fd40c32dbb4e1c5f17f7903e7c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ogive::jacobian</definition>
+        <argsstring>(lmx::Matrix&lt; double &gt; &amp;, lmx::Vector&lt; double &gt; &amp;)</argsstring>
+        <name>jacobian</name>
+        <param>
+          <type>lmx::Matrix&lt; double &gt; &amp;</type>
+          <defname>jac</defname>
+        </param>
+        <param>
+          <type>lmx::Vector&lt; double &gt; &amp;</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="178" bodyend="194"/>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::computeIntersection</definition>
+        <argsstring>(Particle *)</argsstring>
+        <name>computeIntersection</name>
+        <reimplements refid="classGeometry_1ac2e6c74ef25ff3e0c4f46b2c80484881">computeIntersection</reimplements>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="57" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="196" bodyend="226"/>
+        <references refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" compoundref="particle_8h" startline="54" endline="54">Particle::getX</references>
+        <references refid="classParticle_1a0813b73b2d08f57f05607df530684e14" compoundref="particle_8h" startline="58" endline="58">Particle::getXdiv</references>
+        <references refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" compoundref="particle_8h" startline="55" endline="55">Particle::getY</references>
+        <references refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" compoundref="particle_8h" startline="59" endline="59">Particle::getYdiv</references>
+        <references refid="classParticle_1a1b287734891b40546e06e17db8589fca" compoundref="particle_8h" startline="56" endline="56">Particle::getZ</references>
+        <references refid="classParticle_1a9435d915d86f9df46203f9b5c72888d0" compoundref="particle_8h" startline="60" endline="60">Particle::getZdiv</references>
+        <references refid="classOgive_1a3260fd40c32dbb4e1c5f17f7903e7c20" compoundref="ogive_8cpp" startline="178" endline="194">jacobian</references>
+        <references refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" compoundref="geometry_8h" startline="121">Geometry::paramTrajectories</references>
+        <references refid="classOgive_1a849470be3cd2e0db95fd191b0d41f0f5" compoundref="ogive_8cpp" startline="154" endline="176">residue</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a1f076226bfd547f46542d02c49399693" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::computeNodalPower</definition>
+        <argsstring>(Particle *)</argsstring>
+        <name>computeNodalPower</name>
+        <reimplements refid="classGeometry_1af60650f8ce6d5a220928ccd7395120df">computeNodalPower</reimplements>
+        <param>
+          <type><ref refid="classParticle" kindref="compound">Particle</ref> *</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="228" bodyend="298"/>
+        <references refid="classParticle_1ad8d1a1de9b549f2a532a8d9a9f97c8fb" compoundref="particle_8h" startline="62" endline="62">Particle::getEnergy</references>
+        <references refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" compoundref="particle_8h" startline="54" endline="54">Particle::getX</references>
+        <references refid="classParticle_1a0813b73b2d08f57f05607df530684e14" compoundref="particle_8h" startline="58" endline="58">Particle::getXdiv</references>
+        <references refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" compoundref="particle_8h" startline="55" endline="55">Particle::getY</references>
+        <references refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" compoundref="particle_8h" startline="59" endline="59">Particle::getYdiv</references>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" compoundref="geometry_8h" startline="121">Geometry::paramTrajectories</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a5febe7a8e9601801d634067213d5c6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::outputTable</definition>
+        <argsstring>()</argsstring>
+        <name>outputTable</name>
+        <reimplements refid="classGeometry_1a60e1424a222ba59284b81812aff34148">outputTable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="61" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a260f5f7945194147784025aaf7fe0a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::outputPowerFile</definition>
+        <argsstring>(int)</argsstring>
+        <name>outputPowerFile</name>
+        <reimplements refid="classGeometry_1a37f5f2788753e4b8dfcf8de787476d56">outputPowerFile</reimplements>
+        <param>
+          <type>int</type>
+          <defname>particles</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="63" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="307" bodyend="330"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+      </memberdef>
+      <memberdef kind="function" id="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ogive::outputPowerDensityFile</definition>
+        <argsstring>()</argsstring>
+        <name>outputPowerDensityFile</name>
+        <reimplements refid="classGeometry_1ad5ea8315df4569915beed2cfbe01fac9">outputPowerDensityFile</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="65" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.cpp" bodystart="332" bodyend="441"/>
+        <references refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" compoundref="geometry_8h" startline="119">Geometry::length</references>
+        <references refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" compoundref="geometry_8h" startline="122">Geometry::nodes</references>
+        <references refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" compoundref="geometry_8h" startline="117">Geometry::sections</references>
+        <references refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" compoundref="geometry_8h" startline="118">Geometry::sectors</references>
+        <references refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" compoundref="geometry_8h" startline="119">Geometry::z0</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="71">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+      <node id="70">
+        <label>Ogive</label>
+        <link refid="classOgive"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="73">
+        <label>Geometry</label>
+        <link refid="classGeometry"/>
+      </node>
+      <node id="72">
+        <label>Ogive</label>
+        <link refid="classOgive"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" line="42" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/ogive.h" bodystart="41" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classGeometry_1af314d57676056969da57788a60954926" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>aDataSetMapper</name></member>
+      <member refid="classGeometry_1a86a213e57fee0c578d220d8015c2891b" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>anActor</name></member>
+      <member refid="classGeometry_1a17c7a286dc0a428e8a32db4c8d54bb5e" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>axes</name></member>
+      <member refid="classGeometry_1af87eb1e4ab0922d0475afc67061ae30a" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>barActor</name></member>
+      <member refid="classOgive_1aa8561ca676dbadc7e36a7e9c6b805a72" prot="public" virt="virtual"><scope>Ogive</scope><name>computeGeometry</name></member>
+      <member refid="classGeometry_1ad8ae3b4a3563c1592ffcb06f135ed535" prot="public" virt="non-virtual"><scope>Ogive</scope><name>computeGrid3D</name></member>
+      <member refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" prot="public" virt="virtual"><scope>Ogive</scope><name>computeIntersection</name></member>
+      <member refid="classOgive_1a1f076226bfd547f46542d02c49399693" prot="public" virt="virtual"><scope>Ogive</scope><name>computeNodalPower</name></member>
+      <member refid="classGeometry_1adc19b7de33b16179c874dc536f58c31b" prot="public" virt="non-virtual"><scope>Ogive</scope><name>computePowerDensity</name></member>
+      <member refid="classGeometry_1a2a10ca6a0a6a4e1cdd5558830db80ec9" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>cutActor</name></member>
+      <member refid="classGeometry_1ae6a74274d05291746f520af8083a26e7" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>cutMapper</name></member>
+      <member refid="classGeometry_1a4f2e62b82b91402b4f9c8fbf26048974" prot="public" virt="non-virtual"><scope>Ogive</scope><name>drawGeometry</name></member>
+      <member refid="classGeometry_1afcf8201c8ef7f3999f70af53a8034a49" prot="public" virt="non-virtual"><scope>Ogive</scope><name>drawGrid</name></member>
+      <member refid="classGeometry_1a95d761cd11aa2261380e10b66c261670" prot="public" virt="non-virtual"><scope>Ogive</scope><name>drawGridScalar</name></member>
+      <member refid="classGeometry_1aa87a5cf1d8652d217834df05ed8cc1e4" prot="public" virt="non-virtual"><scope>Ogive</scope><name>drawScalar</name></member>
+      <member refid="classGeometry_1acef6e83971679a9c4672c3b610acb58e" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>elements</name></member>
+      <member refid="classOgive_1a92d5693c4ab7b1e80c18c7b3008caaa0" prot="private" virt="non-virtual"><scope>Ogive</scope><name>final_radius</name></member>
+      <member refid="classGeometry_1a4c301c163c63d21ed08c17b0f4e131d3" prot="public" virt="non-virtual"><scope>Ogive</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a41098c2bf13aa50be3fb767a8adf1372" prot="public" virt="non-virtual"><scope>Ogive</scope><name>Geometry</name></member>
+      <member refid="classGeometry_1a565f5b7736c4b0894732900199903d54" prot="public" virt="non-virtual"><scope>Ogive</scope><name>getType</name></member>
+      <member refid="classGeometry_1aebabda9f0c07ecb986195857913b4ee8" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid</name></member>
+      <member refid="classGeometry_1a08864bd3e1225949b6617f94ab1af9ab" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3D</name></member>
+      <member refid="classGeometry_1a2bf0d89ae708392842128430e08b0e32" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3DActor</name></member>
+      <member refid="classGeometry_1a09df01c00f88d60da5404fa9f40c01f8" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Daxes</name></member>
+      <member refid="classGeometry_1af384c0e243c658c029afe53df9e59fd2" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3DbarActor</name></member>
+      <member refid="classGeometry_1af0f946b3abbf28a76d4c85f51cddd261" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3DDataSetMapper</name></member>
+      <member refid="classGeometry_1a7db500f9e6786611a23fe22f562f0dce" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Diren</name></member>
+      <member refid="classGeometry_1a64335b4700461be035cf7e89b7782cb6" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Dnodes</name></member>
+      <member refid="classGeometry_1afd79778e7c244df18be79a39419190c8" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3DPoints</name></member>
+      <member refid="classGeometry_1aafa37cf25f51c60ba5fa0e790994ce98" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Dren</name></member>
+      <member refid="classGeometry_1af855a50f857e3aaa0ba5601daff0e73a" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3DrenWin</name></member>
+      <member refid="classGeometry_1a3516628b6f6b85e9d0e025a768e6bd59" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Dscalar</name></member>
+      <member refid="classGeometry_1aac1ed80d797b14f337a0e9d3206c70c7" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Dstyle</name></member>
+      <member refid="classGeometry_1ac1594e947b2efc680e2fb82c39a554d9" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Dtable</name></member>
+      <member refid="classGeometry_1ad2e8316d21178ddc0b9f1e163cf8683b" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>grid3Dwidget</name></member>
+      <member refid="classGeometry_1a3111987cb4c958ed83fd09a4cdc81ad0" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>gridCubes</name></member>
+      <member refid="classGeometry_1aed47a80e867e618e98272e830d297deb" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>gridPoints</name></member>
+      <member refid="classGeometry_1aaddc1973a36683418ff6c00fb9a0e200" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>gridSpacing</name></member>
+      <member refid="classGeometry_1a047dd3be42ddff67aa9f8d494e7e8568" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>gridWidth</name></member>
+      <member refid="classOgive_1a7e93a92332126b985d7a7742f35710d2" prot="private" virt="non-virtual"><scope>Ogive</scope><name>initDiam</name></member>
+      <member refid="classGeometry_1a6563f9a823d1dcee59554a5d093d6c73" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>iren</name></member>
+      <member refid="classOgive_1a3260fd40c32dbb4e1c5f17f7903e7c20" prot="public" virt="non-virtual"><scope>Ogive</scope><name>jacobian</name></member>
+      <member refid="classGeometry_1a83cd2f4ce607b1b70227780181b197c6" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>length</name></member>
+      <member refid="classGeometry_1a9f5642ca54e0353b871d733e25ccc56e" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>nodes</name></member>
+      <member refid="classOgive_1af64e93b747bcc7f80d1c64705c335f22" prot="public" virt="non-virtual"><scope>Ogive</scope><name>Ogive</name></member>
+      <member refid="classOgive_1a4cc1f5beafcd2259677c4053d1ce38d1" prot="public" virt="non-virtual"><scope>Ogive</scope><name>Ogive</name></member>
+      <member refid="classOgive_1af89f0340990c617f6903e5b140b6a93b" prot="private" virt="non-virtual"><scope>Ogive</scope><name>ogive_radius</name></member>
+      <member refid="classGeometry_1a1324967baeb20a489a913a5bd854aa79" prot="public" virt="non-virtual"><scope>Ogive</scope><name>outputAnsys3D</name></member>
+      <member refid="classGeometry_1aeeebae1f3110d179f2be42d5ebcfea67" prot="public" virt="non-virtual"><scope>Ogive</scope><name>outputBackscattering</name></member>
+      <member refid="classOgive_1a0fc6d6890479d78bbf9eab20969698bc" prot="public" virt="virtual"><scope>Ogive</scope><name>outputPowerDensityFile</name></member>
+      <member refid="classOgive_1a260f5f7945194147784025aaf7fe0a72" prot="public" virt="virtual"><scope>Ogive</scope><name>outputPowerFile</name></member>
+      <member refid="classOgive_1a5febe7a8e9601801d634067213d5c6f9" prot="public" virt="virtual"><scope>Ogive</scope><name>outputTable</name></member>
+      <member refid="classGeometry_1a966a7feaea5c6fe2814229f0c54786db" prot="public" virt="non-virtual"><scope>Ogive</scope><name>outputVTKfiles</name></member>
+      <member refid="classGeometry_1a90ddae3ca87d3c358e2f63611c244be7" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>paramTrajectories</name></member>
+      <member refid="classGeometry_1a79ad1de7fbe1c74e3e2226489ac7188b" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>plane</name></member>
+      <member refid="classGeometry_1afa017d6536259e954e4ca10337b4353b" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>planeCut</name></member>
+      <member refid="classGeometry_1aed9f7f434ae099a62be5c20f9915be90" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>plotTitle</name></member>
+      <member refid="classGeometry_1a0893a3a686dc14327816c9648efe8662" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>ren</name></member>
+      <member refid="classGeometry_1a22b4feeba28c4834bc9ac42e838cb7bb" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>renWin</name></member>
+      <member refid="classOgive_1a849470be3cd2e0db95fd191b0d41f0f5" prot="public" virt="non-virtual"><scope>Ogive</scope><name>residue</name></member>
+      <member refid="classGeometry_1a49e66de69aa22b88759e903e1ae06c9b" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>scalar</name></member>
+      <member refid="classGeometry_1a0efc4bf9252077abca96c1c198eefa33" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>sections</name></member>
+      <member refid="classGeometry_1a296e0b45bd0e03ccdcee990cd1ee6ccb" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>sections3D</name></member>
+      <member refid="classGeometry_1a5e34644bfae4c1df92cb6bf98a8c62c7" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>sectors</name></member>
+      <member refid="classGeometry_1a910a84dcf141a4f6eb3f565ac69339b6" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>sectors3D</name></member>
+      <member refid="classOgive_1a925beac2c2c2ee5f7ad6654a4f1048e5" prot="public" virt="virtual"><scope>Ogive</scope><name>setSections</name></member>
+      <member refid="classGeometry_1a994d1c4d7c8ce0622fcf7a96b5d234af" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>style</name></member>
+      <member refid="classGeometry_1aaabe40cbb12206d80e4376367568934b" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>table</name></member>
+      <member refid="classGeometry_1a734ed6644e4e3b98f157e6707c30069a" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>type</name></member>
+      <member refid="classOgive_1a26940d2855536f45f64774ac6a56e17b" prot="private" virt="non-virtual"><scope>Ogive</scope><name>vx</name></member>
+      <member refid="classOgive_1afb7b53a0c6e5d5d31d22dab942a30376" prot="private" virt="non-virtual"><scope>Ogive</scope><name>vy</name></member>
+      <member refid="classOgive_1a94aba938f3035cbf3b1c19a878ece885" prot="private" virt="non-virtual"><scope>Ogive</scope><name>vz</name></member>
+      <member refid="classGeometry_1ad611799bc0eb8825c963bd6d56181d8c" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>widget</name></member>
+      <member refid="classOgive_1a1035346b767b04acd3272c1ede78f426" prot="private" virt="non-virtual"><scope>Ogive</scope><name>x</name></member>
+      <member refid="classOgive_1a29bf648cfcf37ae58f5a8ee24eeb3a1b" prot="private" virt="non-virtual"><scope>Ogive</scope><name>y</name></member>
+      <member refid="classOgive_1aafb5ef15c21111e0078089c46892b8a9" prot="private" virt="non-virtual"><scope>Ogive</scope><name>z</name></member>
+      <member refid="classGeometry_1a755ef6125e306d96ba8b4a01f3593b66" prot="protected" virt="non-virtual"><scope>Ogive</scope><name>z0</name></member>
+      <member refid="classGeometry_1ad55e832122ab3a2833dcaa6507867678" prot="public" virt="virtual"><scope>Ogive</scope><name>~Geometry</name></member>
+      <member refid="classOgive_1a83d0745d3b4324cb17976fc2dfdd4ac1" prot="public" virt="non-virtual"><scope>Ogive</scope><name>~Ogive</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,831 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1LinearSystem" kind="class" prot="public">
+    <compoundname>lmx::LinearSystem</compoundname>
+    <includes refid="lmx__linsolvers__system_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1a04d6f71281a941c0a6866762c867875a" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; *</type>
+        <definition>Matrix&lt;T&gt;* lmx::LinearSystem&lt; T &gt;::A</definition>
+        <argsstring></argsstring>
+        <name>A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="76" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1a49a92556db227f605ab72b3e28b5b9ce" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; *</type>
+        <definition>DenseMatrix&lt;T&gt;* lmx::LinearSystem&lt; T &gt;::dA</definition>
+        <argsstring></argsstring>
+        <name>dA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="77" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1a8ff5712845d6fad3732d9f9e31707567" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; *</type>
+        <definition>Vector&lt;T&gt;* lmx::LinearSystem&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="78" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1aba4278b8259da5d27de3d6a5f31d2608" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; *</type>
+        <definition>Vector&lt;T&gt;* lmx::LinearSystem&lt; T &gt;::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="79" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1a0dc3d700ee7513589c2a8740bf576300" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; *</type>
+        <definition>Matrix&lt;T&gt;* lmx::LinearSystem&lt; T &gt;::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="80" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1ae54cf117071ec4cda282d45a3b604d60" prot="private" static="no" mutable="no">
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; *</type>
+        <definition>Matrix&lt;T&gt;* lmx::LinearSystem&lt; T &gt;::B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="81" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1ad5e3d8197429f3e00f81e5bf9a4daffa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::LinearSystem&lt; T &gt;::A_new</definition>
+        <argsstring></argsstring>
+        <name>A_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1af13ce191b97fb786c69af287b912c0b5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::LinearSystem&lt; T &gt;::x_new</definition>
+        <argsstring></argsstring>
+        <name>x_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1a7480a59bfda03478ee845f3d61b88d85" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lmx::LinearSystem&lt; T &gt;::b_new</definition>
+        <argsstring></argsstring>
+        <name>b_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="82" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmx_1_1LinearSystem_1ad56b47be00947c6b554b50d9c34b4a89" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lmx::LinearSystem&lt; T &gt;::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets level of information in std output </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="83" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a5e7b2e6cdf654b6e9160dae6e8a47411" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>()</argsstring>
+        <name>LinearSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="91" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a8bdd7a369c8c801206f460b26415ed72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(Matrix&lt; T &gt; &amp;A_in, Vector&lt; T &gt; &amp;b_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor with two parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="105" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="105" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1aefa5b0581d155110f1384c7796cee5cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(DenseMatrix&lt; T &gt; &amp;dA_in, Vector&lt; T &gt; &amp;b_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>dA_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor with two parameters (<ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dA_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="125" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="125" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1abf1a07c09036c2cd79bd928a2c25f846" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class C</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(Matrix&lt; C &gt; &amp;A_in, Vector&lt; C &gt; &amp;b_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; C &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor with two parameters with different data type as that of <ref refid="classlmx_1_1LinearSystem" kindref="compound">LinearSystem</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="148" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="148" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a4310900a6c137082a96a0831737413c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(Matrix&lt; T &gt; &amp;A_in, Vector&lt; T &gt; &amp;x_in, Vector&lt; T &gt; &amp;b_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>x_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor with three parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Solution vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="176" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="176" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a4ad2a58b543987e1fb285a40b15f832c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(DenseMatrix&lt; T &gt; &amp;dA_in, Vector&lt; T &gt; &amp;x_in, Vector&lt; T &gt; &amp;b_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>dA_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>x_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor with three parameters (<ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dA_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Solution vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="192" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="192" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a4873177fb073ea88d24a72f02d2e9813" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class C</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(Matrix&lt; C &gt; &amp;A_in, Vector&lt; T &gt; &amp;x_in, Vector&lt; C &gt; &amp;b_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; C &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>x_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; C &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor with three parameters, two of them with different data types.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Solution vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="212" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="212" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a73933e500a798a1d6321125117d2fb74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(DenseMatrix&lt; T &gt; &amp;A_in, DenseMatrix&lt; T &gt; &amp;B_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard constructor for nrhs system (<ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dA_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LHS <ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RHS <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="234" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="234" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a7e87de91b985ec7cf0bf19154b087d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(Matrix&lt; T &gt; &amp;A_in, DenseMatrix&lt; T &gt; &amp;B_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="246" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="246" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1ad20250c81acd520f270d5e3453745be3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(DenseMatrix&lt; T &gt; &amp;A_in, Matrix&lt; T &gt; &amp;B_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1DenseMatrix" kindref="compound">DenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="258" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="258" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a7d3fc5dc1293aa1d45a1779654a53b83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::LinearSystem</definition>
+        <argsstring>(Matrix&lt; T &gt; &amp;A_in, Matrix&lt; T &gt; &amp;B_in)</argsstring>
+        <name>LinearSystem</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>B_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="270" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="270" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1ac4c05a6a211d8946b18977e7e5abf5ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::LinearSystem&lt; T &gt;::~LinearSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~LinearSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="286" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="286" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a2fde4449a4549d3c4b1b023ac5e72bc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmx::LinearSystem&lt; T &gt;::setInfo</definition>
+        <argsstring>(int level)</argsstring>
+        <name>setInfo</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set information level. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="311" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="311" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1ab5b14b289f951ce4dbd2772579dc7931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::initSLU</definition>
+        <argsstring>()</argsstring>
+        <name>initSLU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="321" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="961" bodyend="974"/>
+        <references refid="classlmx_1_1Type__stdVector_1a935f6ffefa138befa766872afa16bba4" compoundref="lmx__mat__type__stdvector_8h" startline="261" endline="264">lmx::Type_stdVector&lt; T &gt;::data_pointer</references>
+        <referencedby refid="classlmx_1_1LinearSystem_1a5e7b2e6cdf654b6e9160dae6e8a47411" compoundref="lmx__linsolvers__system_8h" startline="91" endline="98">lmx::LinearSystem&lt; double &gt;::LinearSystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a4ae8b9934df6a9b57658956ff330ea53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::solve</definition>
+        <argsstring>(int recalc=0)</argsstring>
+        <name>solve</name>
+        <param>
+          <type>int</type>
+          <declname>recalc</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Solve function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Depending on <ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref> and lin_solver types selected, the following combinations are possible:</para><para><table rows="17" cols="3"><row>
+<entry thead="no"><para><ref refid="namespacelmx_1a92e4bebee5d9aabe5807c30fab96e192" kindref="member">getLinSolverType()</ref> </para></entry><entry thead="no"><para><ref refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" kindref="member">getMatrixType()</ref> </para></entry><entry thead="no"><para>Solver used:  </para></entry></row>
+<row>
+<entry thead="no"><para>0  </para></entry><entry thead="no"><para>0  </para></entry><entry thead="no"><para><ref refid="classlmx_1_1LU" kindref="compound">LU</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>0  </para></entry><entry thead="no"><para>1  </para></entry><entry thead="no"><para>SuperLU   </para></entry></row>
+<row>
+<entry thead="no"><para>0  </para></entry><entry thead="no"><para>2  </para></entry><entry thead="no"><para>gmm::lu_solve (SuperLU in the future)  </para></entry></row>
+<row>
+<entry thead="no"><para>0  </para></entry><entry thead="no"><para>3  </para></entry><entry thead="no"><para>gmm::lu_solve (SuperLU in the future) </para><para></para></entry></row>
+<row>
+<entry thead="no"><para>1  </para></entry><entry thead="no"><para>0  </para></entry><entry thead="no"><para><ref refid="classlmx_1_1LU" kindref="compound">LU</ref>  </para></entry></row>
+<row>
+<entry thead="no"><para>1  </para></entry><entry thead="no"><para>1  </para></entry><entry thead="no"><para>SuperLU   </para></entry></row>
+<row>
+<entry thead="no"><para>1  </para></entry><entry thead="no"><para>2  </para></entry><entry thead="no"><para>gmm::lu_solve (SuperLU in the future)  </para></entry></row>
+<row>
+<entry thead="no"><para>1  </para></entry><entry thead="no"><para>3  </para></entry><entry thead="no"><para>gmm::lu_solve (SuperLU in the future) </para><para></para></entry></row>
+<row>
+<entry thead="no"><para>2  </para></entry><entry thead="no"><para>0  </para></entry><entry thead="no"><para><ref refid="classlmx_1_1Cg" kindref="compound">lmx::Cg</ref>   </para></entry></row>
+<row>
+<entry thead="no"><para>2  </para></entry><entry thead="no"><para>1  </para></entry><entry thead="no"><para><ref refid="classlmx_1_1Cg" kindref="compound">lmx::Cg</ref>   </para></entry></row>
+<row>
+<entry thead="no"><para>2  </para></entry><entry thead="no"><para>2  </para></entry><entry thead="no"><para><ref refid="classlmx_1_1Cg" kindref="compound">lmx::Cg</ref> (and gmm::cg possible if uncommented)  </para></entry></row>
+<row>
+<entry thead="no"><para>2  </para></entry><entry thead="no"><para>3  </para></entry><entry thead="no"><para><ref refid="classlmx_1_1Cg" kindref="compound">lmx::Cg</ref> (and gmm::cg possible if uncommented) </para><para></para></entry></row>
+<row>
+<entry thead="no"><para>3  </para></entry><entry thead="no"><para>0  </para></entry><entry thead="no"><para>-   </para></entry></row>
+<row>
+<entry thead="no"><para>3  </para></entry><entry thead="no"><para>1  </para></entry><entry thead="no"><para>-   </para></entry></row>
+<row>
+<entry thead="no"><para>3  </para></entry><entry thead="no"><para>2  </para></entry><entry thead="no"><para>-   </para></entry></row>
+<row>
+<entry thead="no"><para>3  </para></entry><entry thead="no"><para>3  </para></entry><entry thead="no"><para>gmm::gmres   </para></entry></row>
+</table>
+</para><para>IMPORTANT: gmm::lu_solve is not implemented when the vector_type is set to code 1 (<ref refid="classlmx_1_1Type__gmmVector__sparse" kindref="compound">Type_gmmVector_sparse</ref>). To Be Done.</para><para>When a solver is not available, an error will be thrown.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recalc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For SuperLU switches between refactoring (FALSE) or use old factoring (TRUE). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>reference of solution <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="322" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="478" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a85c4b080918266b474fb39482bc14cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::solveYourselfMatrix</definition>
+        <argsstring>(int recalc=0)</argsstring>
+        <name>solveYourselfMatrix</name>
+        <param>
+          <type>int</type>
+          <declname>recalc</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="323" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="490" bodyend="511"/>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="classlmx_1_1LU_1a5ec8d836c648140710d0c4fcdd3763c8" compoundref="lmx__linsolvers__lu_8h" startline="296" endline="312">lmx::LU&lt; T &gt;::solve_nrhs</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt; T &gt; &amp; LinearSystem&lt; T &gt;::solveYourself</definition>
+        <argsstring>(int recalc=0)</argsstring>
+        <name>solveYourself</name>
+        <param>
+          <type>int</type>
+          <declname>recalc</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="324" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="517" bodyend="957"/>
+        <references refid="classlmx_1_1Type__gmm_1aa35f121de0945469b3c700a16be14f02" compoundref="lmx__mat__type__gmm_8h" startline="239" endline="240">lmx::Type_gmm&lt; T &gt;::data_pointer</references>
+        <references refid="classlmx_1_1Type__gmmVector__sparse_1a377f0060298ceebdfbf91755b9532a91" compoundref="lmx__mat__type__gmmvector__sparse1_8h" startline="240" endline="241">lmx::Type_gmmVector_sparse&lt; T &gt;::data_pointer</references>
+        <references refid="classlmx_1_1Type__gmm__sparse_1a229b2ca7dd50514b47f4847e4a5a3f5d" compoundref="lmx__mat__type__gmm__sparse1_8h" startline="246" endline="247">lmx::Type_gmm_sparse&lt; T &gt;::data_pointer</references>
+        <references refid="classlmx_1_1Type__stdVector_1a935f6ffefa138befa766872afa16bba4" compoundref="lmx__mat__type__stdvector_8h" startline="261" endline="264">lmx::Type_stdVector&lt; T &gt;::data_pointer</references>
+        <references refid="namespacelmx_1a92e4bebee5d9aabe5807c30fab96e192" compoundref="lmx__base__selector_8h" startline="99" endline="99">lmx::getLinSolverType</references>
+        <references refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" compoundref="lmx__base__selector_8h" startline="91" endline="91">lmx::getMatrixType</references>
+        <references refid="namespacelmx_1a65ad7b9cfa290037192cc3147ca508d5" compoundref="lmx__base__selector_8h" startline="95" endline="95">lmx::getVectorType</references>
+        <references refid="lmx__except_8h_1a9f35b13bd70815809cc47f5c93a29a3b" compoundref="lmx__except_8h" startline="253">LMX_THROW</references>
+        <references refid="classlmx_1_1Cg_1add75b6264e99d649c3b4723e274aa899" compoundref="lmx__linsolvers__cg_8h" startline="112" endline="116">lmx::Cg&lt; T &gt;::precond</references>
+        <references refid="classlmx_1_1Cg_1a78b28ffbb590c2126b0fecc972368661" compoundref="lmx__linsolvers__cg_8h" startline="126" endline="220">lmx::Cg&lt; T &gt;::solve</references>
+        <references refid="classlmx_1_1LU_1a59206cb45dccf004b9148804ba768c7a" compoundref="lmx__linsolvers__lu_8h" startline="276" endline="289">lmx::LU&lt; T &gt;::solve</references>
+        <references refid="classlmx_1_1Gesv_1ab1258532e8cecfca1c2fe8fad913bf4d" compoundref="lmx__linsolvers__lapack_8h" startline="134" endline="141">lmx::Gesv&lt; T &gt;::solve</references>
+        <referencedby refid="classlmx_1_1NLSolver_1a5a62129861558b6ce4786ef85b23a232" compoundref="lmx__nlsolvers_8h" startline="258" endline="337">lmx::NLSolver&lt; Sys, T &gt;::solve</referencedby>
+        <referencedby refid="classlmx_1_1NLSolverDouble_1af5b1577ca5bfba51cc2aacb7c5858ccc" compoundref="lmx__nlsolvers__double_8h" startline="332" endline="427">lmx::NLSolverDouble&lt; Sys, T &gt;::solve</referencedby>
+        <referencedby refid="namespacelmx_1a992f0b2fbca043dfcda66af0ab4e0c22" compoundref="lmx__linsolvers_8h" startline="51" endline="91">lmx::solveLinear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1ad9a2d56c7ea53a201d0820c58549ea7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::factorize</definition>
+        <argsstring>()</argsstring>
+        <name>factorize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="325" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="399" bodyend="422"/>
+        <references refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" compoundref="lmx__base__selector_8h" startline="91" endline="91">lmx::getMatrixType</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a1595022f65961d5cfb5c7c9a9a85ee06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::subsSolve</definition>
+        <argsstring>()</argsstring>
+        <name>subsSolve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="326" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="425" bodyend="437"/>
+        <references refid="classlmx_1_1Type__stdVector_1a935f6ffefa138befa766872afa16bba4" compoundref="lmx__mat__type__stdvector_8h" startline="261" endline="264">lmx::Type_stdVector&lt; T &gt;::data_pointer</references>
+        <references refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" compoundref="lmx__base__selector_8h" startline="91" endline="91">lmx::getMatrixType</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a77193c1beae5ebefc8cbaa8137e69ddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; lmx::LinearSystem&lt; T &gt;::getSolution</definition>
+        <argsstring>()</argsstring>
+        <name>getSolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solution access (DEPRECATED). <simplesect kind="return"><para>A vector with solution values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="333" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="333" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a8bd782242416197bf9497503a1bae3d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; lmx::LinearSystem&lt; T &gt;::getSolutionVector</definition>
+        <argsstring>()</argsstring>
+        <name>getSolutionVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solution access for vector 1-rhs. <simplesect kind="return"><para>A vector with solution values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="340" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="340" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1aca56732d810ce5c1688d1002efef8655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt;T&gt;&amp; lmx::LinearSystem&lt; T &gt;::getSolutionMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getSolutionMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Solution access for matrix n-rhs. <simplesect kind="return"><para>a matrix with solution values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="347" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="347" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1ac85310aca10575dc1cb27dbd1e38da6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::setb</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;b_in)</argsstring>
+        <name>setb</name>
+        <param>
+          <type><ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>b_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="351" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="364" bodyend="376"/>
+        <references refid="classlmx_1_1Type__stdVector_1a935f6ffefa138befa766872afa16bba4" compoundref="lmx__mat__type__stdvector_8h" startline="261" endline="264">lmx::Type_stdVector&lt; T &gt;::data_pointer</references>
+        <references refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" compoundref="lmx__base__selector_8h" startline="91" endline="91">lmx::getMatrixType</references>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1LinearSystem_1a986906a2f375fc8ba39f43c927f39078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LinearSystem&lt; T &gt;::setA</definition>
+        <argsstring>(Matrix&lt; T &gt; &amp;A_in)</argsstring>
+        <name>setA</name>
+        <param>
+          <type><ref refid="classlmx_1_1Matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>A_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="352" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="379" bodyend="396"/>
+        <references refid="namespacelmx_1a2aca178888955f2289a8d3d6e5c58fd0" compoundref="lmx__base__selector_8h" startline="91" endline="91">lmx::getMatrixType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1LinearSystem" kindref="compound">LinearSystem</ref>. Linear systems implementation: &quot;A*x = b&quot; . </para>    </briefdescription>
+    <detaileddescription>
+<para>This class permits the creation of a linear system object. Each object has three parameters, corresponding to each of the matrices or vectors base of the problem. The basic methods solve the problem and add functionality to control the solution procedure. Not only one solver can be used as well as the number data type (class) may be differ between the input and the one used to solve the system.</para><para><simplesect kind="author"><para>Daniel Iglesias. </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" line="74" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_linsolvers_system.h" bodystart="74" bodyend="354"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1LinearSystem_1a04d6f71281a941c0a6866762c867875a" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>A</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ad5e3d8197429f3e00f81e5bf9a4daffa" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>A_new</name></member>
+      <member refid="classlmx_1_1LinearSystem_1aba4278b8259da5d27de3d6a5f31d2608" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>b</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ae54cf117071ec4cda282d45a3b604d60" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>B</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a7480a59bfda03478ee845f3d61b88d85" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>b_new</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a49a92556db227f605ab72b3e28b5b9ce" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>dA</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ad9a2d56c7ea53a201d0820c58549ea7c" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>factorize</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a77193c1beae5ebefc8cbaa8137e69ddb" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>getSolution</name></member>
+      <member refid="classlmx_1_1LinearSystem_1aca56732d810ce5c1688d1002efef8655" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>getSolutionMatrix</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a8bd782242416197bf9497503a1bae3d5" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>getSolutionVector</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ad56b47be00947c6b554b50d9c34b4a89" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>info</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ab5b14b289f951ce4dbd2772579dc7931" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>initSLU</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a5e7b2e6cdf654b6e9160dae6e8a47411" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a8bdd7a369c8c801206f460b26415ed72" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1aefa5b0581d155110f1384c7796cee5cd" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1abf1a07c09036c2cd79bd928a2c25f846" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a4310900a6c137082a96a0831737413c6" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a4ad2a58b543987e1fb285a40b15f832c" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a4873177fb073ea88d24a72f02d2e9813" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a73933e500a798a1d6321125117d2fb74" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a7e87de91b985ec7cf0bf19154b087d13" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ad20250c81acd520f270d5e3453745be3" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a7d3fc5dc1293aa1d45a1779654a53b83" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>LinearSystem</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a986906a2f375fc8ba39f43c927f39078" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>setA</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ac85310aca10575dc1cb27dbd1e38da6b" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>setb</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a2fde4449a4549d3c4b1b023ac5e72bc0" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>setInfo</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a4ae8b9934df6a9b57658956ff330ea53" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>solve</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a38f94cd0e4929869c950cd2bc5a3b55e" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>solveYourself</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a85c4b080918266b474fb39482bc14cc5" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>solveYourselfMatrix</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a1595022f65961d5cfb5c7c9a9a85ee06" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>subsSolve</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a8ff5712845d6fad3732d9f9e31707567" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>x</name></member>
+      <member refid="classlmx_1_1LinearSystem_1a0dc3d700ee7513589c2a8740bf576300" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>X</name></member>
+      <member refid="classlmx_1_1LinearSystem_1af13ce191b97fb786c69af287b912c0b5" prot="private" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>x_new</name></member>
+      <member refid="classlmx_1_1LinearSystem_1ac4c05a6a211d8946b18977e7e5abf5ba" prot="public" virt="non-virtual"><scope>lmx::LinearSystem</scope><name>~LinearSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

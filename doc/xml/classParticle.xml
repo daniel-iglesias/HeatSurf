@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classParticle" kind="class" prot="public">
+    <compoundname>Particle</compoundname>
+    <includes refid="particle_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/particle.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classParticle_1a1e3e5e103cee69ae9acb9c3269d009d7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticle_1a2a27970d092687699a83131f4f431fb5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::xdiv</definition>
+        <argsstring></argsstring>
+        <name>xdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticle_1a434ab690dde4422ac74ae10f6ace7a52" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticle_1afebce9bdf895b206aee2c57ce1c425f8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::ydiv</definition>
+        <argsstring></argsstring>
+        <name>ydiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticle_1a518399a50ebdd632b22d7f48e5958461" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticle_1a72a0339ec1a3ecd7d7d3f0ec473b864a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::zdiv</definition>
+        <argsstring></argsstring>
+        <name>zdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticle_1afd13db34d073efe8891966f5b4c8220d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Particle::energy</definition>
+        <argsstring></argsstring>
+        <name>energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="66" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classParticle_1a40f4c7e248029d72e7714b7802d5e5e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Particle::Particle</definition>
+        <argsstring>()</argsstring>
+        <name>Particle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="44" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1afe58ede734a89206a2f38ef291f79fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Particle::Particle</definition>
+        <argsstring>(double &amp;, double &amp;, double &amp;, double &amp;, double &amp;, double &amp;, double &amp;)</argsstring>
+        <name>Particle</name>
+        <param>
+          <type>double &amp;</type>
+          <defname>x_in</defname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <defname>xdiv_in</defname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <defname>y_in</defname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <defname>ydiv_in</defname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <defname>z_in</defname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <defname>zdiv_in</defname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <defname>energy_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="46" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.cpp" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1ad030d0fe7b88cf81744b127c99244ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Particle::~Particle</definition>
+        <argsstring>()</argsstring>
+        <name>~Particle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="52" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="54" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="54" bodyend="54"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="55" bodyend="55"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1a1b287734891b40546e06e17db8589fca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getZ</definition>
+        <argsstring>()</argsstring>
+        <name>getZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="56" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="56" bodyend="56"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1a0813b73b2d08f57f05607df530684e14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getXdiv</definition>
+        <argsstring>()</argsstring>
+        <name>getXdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="58" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="58" bodyend="58"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getYdiv</definition>
+        <argsstring>()</argsstring>
+        <name>getYdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="59" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="59" bodyend="59"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1a9435d915d86f9df46203f9b5c72888d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getZdiv</definition>
+        <argsstring>()</argsstring>
+        <name>getZdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="60" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="60" bodyend="60"/>
+        <referencedby refid="classCone2_1ad62643bcb7573d63116d940c8a064c46" compoundref="cone2-bak_8cpp" startline="74" endline="95">Cone2::computeIntersection</referencedby>
+        <referencedby refid="classRing_1a8f33372a5df9a8aa8e0718312497fd78" compoundref="ring_8cpp" startline="167" endline="188">Ring::computeIntersection</referencedby>
+        <referencedby refid="classCylinder_1a3785595915b105f5e387a4b76d0d6ee9" compoundref="cylinder_8cpp" startline="169" endline="190">Cylinder::computeIntersection</referencedby>
+        <referencedby refid="classOgive_1aa2ffe27bec17dcb9b7f99a26d9ec9f6e" compoundref="ogive_8cpp" startline="196" endline="226">Ogive::computeIntersection</referencedby>
+        <referencedby refid="classCone_1a8bc1c798b9b7a34e5eba606212ca4a0f" compoundref="cone_8cpp" startline="170" endline="191">Cone::computeIntersection</referencedby>
+        <referencedby refid="classTwoPlates_1ac0d504d8b9d2cad3b6facd0cb260d7de" compoundref="twoplates_8cpp" startline="226" endline="247">TwoPlates::computeIntersection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParticle_1ad8d1a1de9b549f2a532a8d9a9f97c8fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Particle::getEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>getEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="62" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="62" bodyend="62"/>
+        <referencedby refid="classRing_1a844fa2f14bcf7d506f33865081543e61" compoundref="ring_8cpp" startline="190" endline="260">Ring::computeNodalPower</referencedby>
+        <referencedby refid="classCylinder_1a950b48028c934fa9f01cb3ae40422aef" compoundref="cylinder_8cpp" startline="192" endline="262">Cylinder::computeNodalPower</referencedby>
+        <referencedby refid="classOgive_1a1f076226bfd547f46542d02c49399693" compoundref="ogive_8cpp" startline="228" endline="298">Ogive::computeNodalPower</referencedby>
+        <referencedby refid="classCone_1a26bfbb3dac2dc902e193413c0f61f9b1" compoundref="cone_8cpp" startline="193" endline="263">Cone::computeNodalPower</referencedby>
+        <referencedby refid="classCone2_1a28a2c5c4cfba12b2ae005547e5bab5a2" compoundref="cone2_8cpp" startline="197" endline="267">Cone2::computeNodalPower</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Daniel Iglesias <ulink url="mailto:daniel.iglesias@ciemat.es">daniel.iglesias@ciemat.es</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" line="42" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/particle.h" bodystart="41" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classParticle_1afd13db34d073efe8891966f5b4c8220d" prot="private" virt="non-virtual"><scope>Particle</scope><name>energy</name></member>
+      <member refid="classParticle_1ad8d1a1de9b549f2a532a8d9a9f97c8fb" prot="public" virt="non-virtual"><scope>Particle</scope><name>getEnergy</name></member>
+      <member refid="classParticle_1abf0b2c3e900576254d9e76255dfaf81d" prot="public" virt="non-virtual"><scope>Particle</scope><name>getX</name></member>
+      <member refid="classParticle_1a0813b73b2d08f57f05607df530684e14" prot="public" virt="non-virtual"><scope>Particle</scope><name>getXdiv</name></member>
+      <member refid="classParticle_1a0fc4232c919f5b1946c2fa74f7a3a9ed" prot="public" virt="non-virtual"><scope>Particle</scope><name>getY</name></member>
+      <member refid="classParticle_1a1898356f0c9ecb8dc5bae09a8dc0e326" prot="public" virt="non-virtual"><scope>Particle</scope><name>getYdiv</name></member>
+      <member refid="classParticle_1a1b287734891b40546e06e17db8589fca" prot="public" virt="non-virtual"><scope>Particle</scope><name>getZ</name></member>
+      <member refid="classParticle_1a9435d915d86f9df46203f9b5c72888d0" prot="public" virt="non-virtual"><scope>Particle</scope><name>getZdiv</name></member>
+      <member refid="classParticle_1a40f4c7e248029d72e7714b7802d5e5e1" prot="public" virt="non-virtual"><scope>Particle</scope><name>Particle</name></member>
+      <member refid="classParticle_1afe58ede734a89206a2f38ef291f79fbf" prot="public" virt="non-virtual"><scope>Particle</scope><name>Particle</name></member>
+      <member refid="classParticle_1a1e3e5e103cee69ae9acb9c3269d009d7" prot="private" virt="non-virtual"><scope>Particle</scope><name>x</name></member>
+      <member refid="classParticle_1a2a27970d092687699a83131f4f431fb5" prot="private" virt="non-virtual"><scope>Particle</scope><name>xdiv</name></member>
+      <member refid="classParticle_1a434ab690dde4422ac74ae10f6ace7a52" prot="private" virt="non-virtual"><scope>Particle</scope><name>y</name></member>
+      <member refid="classParticle_1afebce9bdf895b206aee2c57ce1c425f8" prot="private" virt="non-virtual"><scope>Particle</scope><name>ydiv</name></member>
+      <member refid="classParticle_1a518399a50ebdd632b22d7f48e5958461" prot="private" virt="non-virtual"><scope>Particle</scope><name>z</name></member>
+      <member refid="classParticle_1a72a0339ec1a3ecd7d7d3f0ec473b864a" prot="private" virt="non-virtual"><scope>Particle</scope><name>zdiv</name></member>
+      <member refid="classParticle_1ad030d0fe7b88cf81744b127c99244ff4" prot="public" virt="non-virtual"><scope>Particle</scope><name>~Particle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

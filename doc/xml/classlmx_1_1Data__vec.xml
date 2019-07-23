@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Data__vec" kind="class" prot="public" abstract="yes">
+    <compoundname>lmx::Data_vec</compoundname>
+    <basecompoundref refid="classlmx_1_1Data" prot="public" virt="non-virtual">lmx::Data&lt; T &gt;</basecompoundref>
+    <derivedcompoundref refid="classlmx_1_1Type__gmmVector__sparse" prot="public" virt="non-virtual">lmx::Type_gmmVector_sparse&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlmx_1_1Type__stdVector" prot="public" virt="non-virtual">lmx::Type_stdVector&lt; T &gt;</derivedcompoundref>
+    <includes refid="lmx__mat__data__blas_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmx_1_1Data__vec_1a4df811d60407578d5c83a43030e604f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>lmx::Data_vec&lt; T &gt;::Data_vec</definition>
+        <argsstring>()</argsstring>
+        <name>Data_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_vec.h" line="55" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_vec.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__vec_1a956beb5c5795e66ef418d7fabab3f578" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual lmx::Data_vec&lt; T &gt;::~Data_vec</definition>
+        <argsstring>()</argsstring>
+        <name>~Data_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_vec.h" line="58" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_vec.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__vec_1a32d6a9d26eb14ceec99e0ee0b6b33f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_vec&lt; T &gt;::readDataFile</definition>
+        <argsstring>(const char *)=0</argsstring>
+        <name>readDataFile</name>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a8cdbdf44a2366bf9233fbee879e72e6e">readDataFile</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a9147f2967ac55a22a91640297292d240">readDataFile</reimplementedby>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_vec.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmx_1_1Data__vec_1a2df91dd20f0a882dffe0872110dfeb7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void lmx::Data_vec&lt; T &gt;::writeDataFile</definition>
+        <argsstring>(const char *)=0</argsstring>
+        <name>writeDataFile</name>
+        <reimplementedby refid="classlmx_1_1Type__gmmVector__sparse_1a73766d175f2014fbe6d4497b1856edec">writeDataFile</reimplementedby>
+        <reimplementedby refid="classlmx_1_1Type__stdVector_1a96f2117b28cbc706f7cefe5ae7ad29e6">writeDataFile</reimplementedby>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_vec.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template class <ref refid="classlmx_1_1Data__vec" kindref="compound">Data_vec</ref>. Container for <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> data. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class represents the skeleton for the data container used by the <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class. No parameter nor function implementation here, just pure virtual class. See derived classes for details in implementation. Also maybe useful to see how this class is used in the <ref refid="classlmx_1_1Vector" kindref="compound">Vector</ref> class.</para><para><simplesect kind="author"><para>Daniel Iglesias Ib�ez. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="290">
+        <label>lmx::Data_vec&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__vec"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>lmx::Type_gmmVector_sparse&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__gmmVector__sparse"/>
+        <childnode refid="290" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>lmx::Type_stdVector&lt; T &gt;</label>
+        <link refid="classlmx_1_1Type__stdVector"/>
+        <childnode refid="290" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="294">
+        <label>lmx::Data_vec&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data__vec"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>lmx::Data&lt; T &gt;</label>
+        <link refid="classlmx_1_1Data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" line="47" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_data_blas.h" bodystart="47" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classlmx_1_1Data_1a7e09e2e81661176a36eb82818610223a" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>add</name></member>
+      <member refid="classlmx_1_1Data_1ab99ee708ee4e9553be431d408eb2b43a" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>addElement</name></member>
+      <member refid="classlmx_1_1Data_1a706e90ec786d6133dd69edcbc6b37845" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>cleanBelow</name></member>
+      <member refid="classlmx_1_1Data_1abab7ff41198c0fab10e2a7d739e47ecb" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>clear</name></member>
+      <member refid="classlmx_1_1Data_1a9a0de5654dd527cac01f2dc52df86298" prot="public" virt="non-virtual"><scope>lmx::Data_vec</scope><name>Data</name></member>
+      <member refid="classlmx_1_1Data__vec_1a4df811d60407578d5c83a43030e604f1" prot="public" virt="non-virtual"><scope>lmx::Data_vec</scope><name>Data_vec</name></member>
+      <member refid="classlmx_1_1Data_1a26ed4e8b9ba60ee57fc729e4cfcad356" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>equals</name></member>
+      <member refid="classlmx_1_1Data_1a7dc130d0eba4c4d1dc4ce6e9a371251c" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>getCols</name></member>
+      <member refid="classlmx_1_1Data_1a819b220b738028a01c5f861d059dd802" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>getRows</name></member>
+      <member refid="classlmx_1_1Data_1a89fd82cd33955de1ee375a9d514f2860" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>multiplyElements</name></member>
+      <member refid="classlmx_1_1Data_1a027c8e7cb440f16a828579acaf991262" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>multiplyScalar</name></member>
+      <member refid="classlmx_1_1Data__vec_1a32d6a9d26eb14ceec99e0ee0b6b33f47" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>readDataFile</name></member>
+      <member refid="classlmx_1_1Data_1a25cffd2f6d220d24e37b37a96205e0be" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>readElement</name></member>
+      <member refid="classlmx_1_1Data_1a2d275a49db8c274e26b1d3bcbc23d964" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>reset</name></member>
+      <member refid="classlmx_1_1Data_1a2ef906e5218e1bc6d4df355787caedfc" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>resize</name></member>
+      <member refid="classlmx_1_1Data_1aab240114cfc6ba8f342cc7154dcb298d" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>substract</name></member>
+      <member refid="classlmx_1_1Data__vec_1a2df91dd20f0a882dffe0872110dfeb7f" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>writeDataFile</name></member>
+      <member refid="classlmx_1_1Data_1a41a4d2e19d1e150caff0d2011113f0fd" prot="public" virt="pure-virtual"><scope>lmx::Data_vec</scope><name>writeElement</name></member>
+      <member refid="classlmx_1_1Data_1a74768723b5fb7c7eb5f26232b61ba02d" prot="public" virt="virtual"><scope>lmx::Data_vec</scope><name>~Data</name></member>
+      <member refid="classlmx_1_1Data__vec_1a956beb5c5795e66ef418d7fabab3f578" prot="public" virt="virtual"><scope>lmx::Data_vec</scope><name>~Data_vec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

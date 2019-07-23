@@ -1,36 +1,45 @@
-\hypertarget{simulation_8h}{
-\section{src/simulation.h File Reference}
-\label{simulation_8h}\index{src/simulation.h@{src/simulation.h}}
+\hypertarget{simulation_8h}{\section{src/simulation.h File Reference}
+\label{simulation_8h}\index{src/simulation.\-h@{src/simulation.\-h}}
 }
-Procedures for the program workflow. 
-
-{\tt \#include $<$fstream$>$}\par
-{\tt \#include $<$vector$>$}\par
-{\tt \#include $<$map$>$}\par
-{\tt \#include \char`\"{}cone.h\char`\"{}}\par
-{\tt \#include \char`\"{}cylinder.h\char`\"{}}\par
-{\tt \#include \char`\"{}twoplates.h\char`\"{}}\par
-{\tt \#include \char`\"{}particle.h\char`\"{}}\par
 
 
-Include dependency graph for simulation.h:\nopagebreak
+Procedures for the program workflow.  
+
+
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include \char`\"{}cone.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cone2.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cylinder.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ogive.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}twoplates.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}particle.\-h\char`\"{}}\\*
+Include dependency graph for simulation.\-h\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=287pt]{simulation_8h__incl}
+\includegraphics[width=350pt]{simulation_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{simulation_8h__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Classes}
-\begin{CompactItemize}
+\begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classSimulation}{Simulation}
-\end{CompactItemize}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Procedures for the program workflow. 
+Procedures for the program workflow. Reads files, creates all of the objects, lauches the computation and creates the output.
 
-Reads files, creates all of the objects, lauches the computation and creates the output.
-
-\begin{Desc}
-\item[Author:]Daniel Iglesias $<$\href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.iglesias@ciemat.es}$>$ \end{Desc}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias \href{mailto:daniel.iglesias@ciemat.es}{\tt daniel.\-iglesias@ciemat.\-es} 
+\end{DoxyAuthor}

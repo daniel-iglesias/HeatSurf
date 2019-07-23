@@ -1,0 +1,137 @@
+\hypertarget{lmx__except_8h}{\section{src/\-L\-M\-X/lmx\-\_\-except.h File Reference}
+\label{lmx__except_8h}\index{src/\-L\-M\-X/lmx\-\_\-except.\-h@{src/\-L\-M\-X/lmx\-\_\-except.\-h}}
+}
+
+
+Exception handling classes, functions and macros.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for lmx\-\_\-except.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__except_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lmx__except_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlmx_1_1dimension__error}{lmx\-::dimension\-\_\-error}
+\begin{DoxyCompactList}\small\item\em Manages matrices and vectors dimension errors. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1file__not__found__error}{lmx\-::file\-\_\-not\-\_\-found\-\_\-error}
+\begin{DoxyCompactList}\small\item\em Manages read/write methods' errors when checking file names. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1internal__error}{lmx\-::internal\-\_\-error}
+\begin{DoxyCompactList}\small\item\em Manages errors that occur inside L\-M\-X methods and functions. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1failure__error}{lmx\-::failure\-\_\-error}
+\begin{DoxyCompactList}\small\item\em Manages other errors not classified above. \end{DoxyCompactList}\item 
+class \hyperlink{classlmx_1_1to__be__done__error}{lmx\-::to\-\_\-be\-\_\-done\-\_\-error}
+\begin{DoxyCompactList}\small\item\em Manages errors in methods witch implementation is not finished. \end{DoxyCompactList}\item 
+struct \hyperlink{structlmx_1_1exception__callback}{lmx\-::exception\-\_\-callback}
+\begin{DoxyCompactList}\small\item\em Callback handler for lmx exceptions. \end{DoxyCompactList}\item 
+struct \hyperlink{structlmx_1_1exception__callback__debug}{lmx\-::exception\-\_\-callback\-\_\-debug}
+\begin{DoxyCompactList}\small\item\em crashing callback for debug mode. \end{DoxyCompactList}\item 
+struct \hyperlink{structlmx_1_1warning__level}{lmx\-::warning\-\_\-level}
+\begin{DoxyCompactList}\small\item\em Manages importance level in warnings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelmx}{lmx}
+\begin{DoxyCompactList}\small\item\em Linked Matri\-X methods library uses lmx namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lmx__except_8h_ae296e376a771f7ca2634868c901e41af}{L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R}
+\item 
+\#define \hyperlink{lmx__except_8h_a84f50266fa2f7f28278bde6ea5f50d3d}{L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}~\char`\"{}\char`\"{}
+\item 
+\#define \hyperlink{lmx__except_8h_a9f35b13bd70815809cc47f5c93a29a3b}{L\-M\-X\-\_\-\-T\-H\-R\-O\-W}(type, thestr)
+\item 
+\#define \hyperlink{lmx__except_8h_ac508419083d1a8bd869b5ca9184dca65}{L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R}(thestr)~\hyperlink{lmx__except_8h_a9f35b13bd70815809cc47f5c93a29a3b}{L\-M\-X\-\_\-\-T\-H\-R\-O\-W}(\hyperlink{classlmx_1_1internal__error}{lmx\-::internal\-\_\-error}, \char`\"{}Internal error\-: \char`\"{} $<$$<$ thestr)
+\item 
+\#define \hyperlink{lmx__except_8h_a946b48df43463ed585a2ada2f0ec1cb5}{L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G}(level\-\_\-, thestr)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacelmx_a9ec7e30ade7c87eaf14dfee79807c402}{lmx\-::set\-\_\-exception\-\_\-callback} (exception\-\_\-callback $\ast$e)
+\item 
+void \hyperlink{namespacelmx_a8b100980a9fd681c507d233fc8e4250c}{lmx\-::set\-\_\-warning\-\_\-level} (int l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exception handling classes, functions and macros. \begin{DoxyAuthor}{Author}
+Addapted by Daniel Iglesias 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lmx__except_8h_ac508419083d1a8bd869b5ca9184dca65}{\index{lmx\-\_\-except.\-h@{lmx\-\_\-except.\-h}!L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R@{L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R}}
+\index{L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R@{L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R}!lmx_except.h@{lmx\-\_\-except.\-h}}
+\subsubsection[{L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-M\-X\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-E\-R\-R\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{thestr}
+\end{DoxyParamCaption}
+)~{\bf L\-M\-X\-\_\-\-T\-H\-R\-O\-W}({\bf lmx\-::internal\-\_\-error}, \char`\"{}Internal error\-: \char`\"{} $<$$<$ thestr)}}\label{lmx__except_8h_ac508419083d1a8bd869b5ca9184dca65}
+standard function for throwing internal errors \hypertarget{lmx__except_8h_a84f50266fa2f7f28278bde6ea5f50d3d}{\index{lmx\-\_\-except.\-h@{lmx\-\_\-except.\-h}!L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}
+\index{L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}!lmx_except.h@{lmx\-\_\-except.\-h}}
+\subsubsection[{L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-M\-X\-\_\-\-P\-R\-E\-T\-T\-Y\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N~\char`\"{}\char`\"{}}}\label{lmx__except_8h_a84f50266fa2f7f28278bde6ea5f50d3d}
+Variable for storing the full function name where the error occurs. \hypertarget{lmx__except_8h_ae296e376a771f7ca2634868c901e41af}{\index{lmx\-\_\-except.\-h@{lmx\-\_\-except.\-h}!L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R@{L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R}}
+\index{L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R@{L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R}!lmx_except.h@{lmx\-\_\-except.\-h}}
+\subsubsection[{L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-M\-X\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-C\-A\-T\-C\-H\-\_\-\-E\-R\-R\-O\-R}}\label{lmx__except_8h_ae296e376a771f7ca2634868c901e41af}
+Function for catching any error of S\-T\-L error's hierarchy. \hypertarget{lmx__except_8h_a9f35b13bd70815809cc47f5c93a29a3b}{\index{lmx\-\_\-except.\-h@{lmx\-\_\-except.\-h}!L\-M\-X\-\_\-\-T\-H\-R\-O\-W@{L\-M\-X\-\_\-\-T\-H\-R\-O\-W}}
+\index{L\-M\-X\-\_\-\-T\-H\-R\-O\-W@{L\-M\-X\-\_\-\-T\-H\-R\-O\-W}!lmx_except.h@{lmx\-\_\-except.\-h}}
+\subsubsection[{L\-M\-X\-\_\-\-T\-H\-R\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-M\-X\-\_\-\-T\-H\-R\-O\-W(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{thestr}
+\end{DoxyParamCaption}
+)}}\label{lmx__except_8h_a9f35b13bd70815809cc47f5c93a29a3b}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{                                    \(\backslash\)
+    std::stringstream msg;                                           \(\backslash\)
+    msg << \textcolor{stringliteral}{"Error in "} \_\_FILE\_\_ << \textcolor{stringliteral}{", line "}                          \(\backslash\)
+        << \_\_LINE\_\_ << \textcolor{stringliteral}{" "} << \hyperlink{lmx__except_8h_a84f50266fa2f7f28278bde6ea5f50d3d}{LMX\_PRETTY\_FUNCTION} << \textcolor{stringliteral}{": \(\backslash\)n"} << thestr << ends; \(\backslash\)
+    lmx::exception\_callback::do\_exception\_callback(msg.str());       \(\backslash\)
+    throw (type)(msg.str());                                         \(\backslash\)
+  \}
+\end{DoxyCode}
+standard function for throwing errors 
+
+Referenced by lmx\-::\-Vector$<$ T $>$\-::add(), lmx\-::\-Integrator\-Central\-Difference$<$ T $>$\-::advance(), Matrix$<$ T $>$\-::fill\-Identity(), lmx\-::\-Gesv$<$ T $>$\-::\-Gesv(), lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::initialize(), Matrix$<$ T $>$\-::initialize\-\_\-type\-\_\-matrix(), lmx\-::\-L\-U$<$ T $>$\-::\-L\-U(), lmx\-::\-L\-U$<$ T $>$\-::lu(), lmx\-::mat\-\_\-mat\-\_\-mult(), lmx\-::\-Vector$<$ T $>$\-::mult(), lmx\-::\-Vector$<$ T $>$\-::mult\-Elements(), lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$\-::multiply(), lmx\-::\-Vector$<$ T $>$\-::operator()(), Matrix$<$ T $>$\-::operator()(), lmx\-::\-Vector$<$ int $>$\-::operator$\ast$(), lmx\-::operator$\ast$(), lmx\-::\-Vector$<$ int $>$\-::operator+(), lmx\-::\-Vector$<$ T $>$\-::operator+=(), lmx\-::\-Vector$<$ int $>$\-::operator-\/(), lmx\-::\-Vector$<$ T $>$\-::operator-\/=(), lmx\-::\-Vector$<$ T $>$\-::operator=(), lmx\-::\-Type\-\_\-csc$<$ T $>$\-::read\-\_\-mm\-\_\-file(), lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$\-::read\-\_\-mm\-\_\-file(), lmx\-::\-Vector$<$ int $>$\-::read\-Element(), lmx\-::\-Configuration$<$ T $>$\-::set\-Initial\-Condition(), set\-Matrix\-Type(), lmx\-::\-Configuration$<$ T $>$\-::set\-Stored\-Steps(), lmx\-::set\-Vector\-Type(), lmx\-::\-Gesv$<$ T $>$\-::solve(), lmx\-::\-N\-L\-Solver$<$ Sys, T $>$\-::solve(), lmx\-::\-N\-L\-Solver\-Double$<$ Sys, T $>$\-::solve(), lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself(), lmx\-::\-Linear\-System$<$ T $>$\-::solve\-Yourself\-Matrix(), lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::step\-Solve(), lmx\-::\-Vector$<$ T $>$\-::subs(), lmx\-::\-Vector$<$ T $>$\-::\-Vector(), lmx\-::\-Type\-\_\-csc$<$ T $>$\-::write\-\_\-hb\-\_\-file(), and lmx\-::\-Type\-\_\-stdmatrix$<$ double $>$\-::write\-\_\-hb\-\_\-file().
+
+\hypertarget{lmx__except_8h_a946b48df43463ed585a2ada2f0ec1cb5}{\index{lmx\-\_\-except.\-h@{lmx\-\_\-except.\-h}!L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G@{L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G}}
+\index{L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G@{L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G}!lmx_except.h@{lmx\-\_\-except.\-h}}
+\subsubsection[{L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-M\-X\-\_\-\-W\-A\-R\-N\-I\-N\-G(
+\begin{DoxyParamCaption}
+\item[{}]{level\-\_\-, }
+\item[{}]{thestr}
+\end{DoxyParamCaption}
+)}}\label{lmx__except_8h_a946b48df43463ed585a2ada2f0ec1cb5}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{                                 \(\backslash\)
+    std::stringstream msg;                                            \(\backslash\)
+    msg << \textcolor{stringliteral}{"Level "} << level\_ << \textcolor{stringliteral}{" Warning in "} \_\_FILE\_\_ << \textcolor{stringliteral}{", line "}  \(\backslash\)
+        << \_\_LINE\_\_ << \textcolor{stringliteral}{" "} << \hyperlink{lmx__except_8h_a84f50266fa2f7f28278bde6ea5f50d3d}{LMX\_PRETTY\_FUNCTION} << \textcolor{stringliteral}{": "} << thestr << ends; \(\backslash\)
+    if ((level\_) <= \hyperlink{structlmx_1_1warning__level_aecf2fd92bcb3a5a35818f89f9d7e92b3}{lmx::warning\_level::level}())                      \(\backslash\)
+       std::cerr << msg.str() << std::endl;                           \(\backslash\)
+  \}
+\end{DoxyCode}
+user function for throwing warning messages. 

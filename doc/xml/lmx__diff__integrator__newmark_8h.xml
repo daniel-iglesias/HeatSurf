@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="lmx__diff__integrator__newmark_8h" kind="file">
+    <compoundname>lmx_diff_integrator_newmark.h</compoundname>
+    <includes refid="lmx__diff__integrator__base__implicit_8h" local="yes">lmx_diff_integrator_base_implicit.h</includes>
+    <includedby refid="lmx__diff__problem__first__second_8h" local="yes">src/LMX/lmx_diff_problem_first_second.h</includedby>
+    <includedby refid="lmx__diff__problem__second_8h" local="yes">src/LMX/lmx_diff_problem_second.h</includedby>
+    <incdepgraph>
+      <node id="3728">
+        <label>lmx_diff_integrator_base.h</label>
+        <link refid="lmx__diff__integrator__base_8h"/>
+        <childnode refid="3729" relation="include">
+        </childnode>
+      </node>
+      <node id="3733">
+        <label>stdexcept</label>
+      </node>
+      <node id="3726">
+        <label>src/LMX/lmx_diff_integrator_newmark.h</label>
+        <link refid="lmx_diff_integrator_newmark.h"/>
+        <childnode refid="3727" relation="include">
+        </childnode>
+      </node>
+      <node id="3734">
+        <label>string</label>
+      </node>
+      <node id="3732">
+        <label>exception</label>
+      </node>
+      <node id="3729">
+        <label>lmx_diff_configuration.h</label>
+        <link refid="lmx__diff__configuration_8h"/>
+        <childnode refid="3730" relation="include">
+        </childnode>
+        <childnode refid="3737" relation="include">
+        </childnode>
+      </node>
+      <node id="3730">
+        <label>lmx_except.h</label>
+        <link refid="lmx__except_8h"/>
+        <childnode refid="3731" relation="include">
+        </childnode>
+        <childnode refid="3732" relation="include">
+        </childnode>
+        <childnode refid="3733" relation="include">
+        </childnode>
+        <childnode refid="3734" relation="include">
+        </childnode>
+        <childnode refid="3735" relation="include">
+        </childnode>
+        <childnode refid="3736" relation="include">
+        </childnode>
+      </node>
+      <node id="3727">
+        <label>lmx_diff_integrator_base_implicit.h</label>
+        <link refid="lmx__diff__integrator__base__implicit_8h"/>
+        <childnode refid="3728" relation="include">
+        </childnode>
+      </node>
+      <node id="3735">
+        <label>sstream</label>
+      </node>
+      <node id="3731">
+        <label>iostream</label>
+      </node>
+      <node id="3736">
+        <label>algorithm</label>
+      </node>
+      <node id="3737">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3740">
+        <label>src/LMX/lmx_diff_problem_second.h</label>
+        <link refid="lmx__diff__problem__second_8h"/>
+      </node>
+      <node id="3738">
+        <label>src/LMX/lmx_diff_integrator_newmark.h</label>
+        <link refid="lmx_diff_integrator_newmark.h"/>
+        <childnode refid="3739" relation="include">
+        </childnode>
+        <childnode refid="3740" relation="include">
+        </childnode>
+      </node>
+      <node id="3739">
+        <label>src/LMX/lmx_diff_problem_first_second.h</label>
+        <link refid="lmx__diff__problem__first__second_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlmx_1_1IntegratorNEWMARK" prot="public">lmx::IntegratorNEWMARK</innerclass>
+    <innernamespace refid="namespacelmx">lmx</innernamespace>
+    <briefdescription>
+<para>IntegratorNEWMARK class implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Implements Beta-Newmark family integrators for solving dynamic systems.</para><para><simplesect kind="author"><para>Daniel Iglesias </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005<sp/>by<sp/>Daniel<sp/>Iglesias<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://code.google.com/p/lmx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>as<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LMXINTEGRATOR_NEWMARK_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LMXINTEGRATOR_NEWMARK_H</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="lmx__diff__integrator__base__implicit_8h" kindref="compound">lmx_diff_integrator_base_implicit.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classlmx_1_1IntegratorNEWMARK" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmx_1_1IntegratorNEWMARK" kindref="compound">IntegratorNEWMARK</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorBaseImplicit" kindref="compound">IntegratorBaseImplicit</ref>&lt;T&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" kindref="member">IntegratorNEWMARK</ref>(){}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" kindref="member">IntegratorNEWMARK</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="classlmx_1_1IntegratorNEWMARK_1af0fcb3a6122141515aaccf4a207058aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1af0fcb3a6122141515aaccf4a207058aa" kindref="member">~IntegratorNEWMARK</ref>(){}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a2aa5136a1c112e7ac31c2bd3cb516988" kindref="member">initialize</ref>(<sp/><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration&lt;T&gt;</ref>*<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a8e02bf1560e75a9bfa6c9d47edfe9f86" kindref="member">advance</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1aec6f86f3fc8a7118e9e7ef49d5aaa9c0" kindref="member">integratorUpdate</ref>(<sp/><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector&lt;T&gt;</ref><sp/>delta<sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classlmx_1_1IntegratorNEWMARK_1aef69029cf0cac5ce94ac218ffce77864" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1aef69029cf0cac5ce94ac218ffce77864" kindref="member">getPartialQdot</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gamma<sp/>/<sp/>(<sp/>q-&gt;getLastStepSize()*beta<sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classlmx_1_1IntegratorNEWMARK_1ad00ddd433a6b4835c1be9ace78c66f6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1ad00ddd433a6b4835c1be9ace78c66f6f" kindref="member">getPartialQddot</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1./<sp/>(<sp/>std::pow(<sp/>q-&gt;getLastStepSize(),<sp/>2.<sp/>)*beta<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta,<sp/>gamma;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration&lt;T&gt;</ref>*<sp/>q;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">lmx<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" kindref="member">IntegratorNEWMARK&lt;T&gt;::</ref></highlight></codeline>
+<codeline lineno="98" refid="classlmx_1_1IntegratorNEWMARK_1a75cc12a6848df78b87c656447069c5cc" refkind="member"><highlight class="normal"><ref refid="classlmx_1_1IntegratorNEWMARK_1a614551a827b3ed7b7e2af91a6a3cb4d8" kindref="member">      IntegratorNEWMARK</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta_in,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma_in)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>:<sp/>beta(beta_in),<sp/>gamma(gamma_in)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="105" refid="classlmx_1_1IntegratorNEWMARK_1a2aa5136a1c112e7ac31c2bd3cb516988" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a2aa5136a1c112e7ac31c2bd3cb516988" kindref="member">IntegratorNEWMARK&lt;T&gt;::initialize</ref>(<sp/><ref refid="classlmx_1_1Configuration" kindref="compound">Configuration&lt;T&gt;</ref>*<sp/>configuration_in<sp/>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>q<sp/>=<sp/>configuration_in;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;<ref refid="classlmx_1_1Configuration_1a9a253bca9639d1c4f8500fd76e694862" kindref="member">setStoredSteps</ref>(<sp/>2,<sp/>2,<sp/>2<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="113" refid="classlmx_1_1IntegratorNEWMARK_1a8e02bf1560e75a9bfa6c9d47edfe9f86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1a8e02bf1560e75a9bfa6c9d47edfe9f86" kindref="member">IntegratorNEWMARK&lt;T&gt;::advance</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;setConf(<sp/>1,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q-&gt;getConf(<sp/>1,<sp/>1<sp/>)<sp/>+</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(T)(1.<sp/>-<sp/>gamma)<sp/>*<sp/>q-&gt;getLastStepSize()</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>q-&gt;getConf(<sp/>2<sp/>,<sp/>1<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;setConf(<sp/>0,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q-&gt;getConf(<sp/>0,<sp/>1<sp/>)<sp/>+</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(T)q-&gt;getLastStepSize()<sp/>*<sp/>q-&gt;getConf(<sp/>1,<sp/>1<sp/>)<sp/>+</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(T)(0.5-beta)<sp/>*<sp/>std::pow(<sp/>q-&gt;getLastStepSize(),<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>q-&gt;getConf(<sp/>2,<sp/>1<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;setConf(<sp/>2<sp/>).fillIdentity(<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="128" refid="classlmx_1_1IntegratorNEWMARK_1aec6f86f3fc8a7118e9e7ef49d5aaa9c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlmx_1_1IntegratorNEWMARK_1aec6f86f3fc8a7118e9e7ef49d5aaa9c0" kindref="member">IntegratorNEWMARK&lt;T&gt;::integratorUpdate</ref>(<sp/><ref refid="classlmx_1_1Vector" kindref="compound">lmx::Vector&lt;T&gt;</ref><sp/>delta<sp/>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;setConf(<sp/>0<sp/>)<sp/>+=<sp/>delta;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;setConf(<sp/>1<sp/>)<sp/>+=<sp/>delta<sp/>*<sp/>(<sp/>gamma/(beta*q-&gt;getLastStepSize()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;setConf(<sp/>2<sp/>)<sp/>+=<sp/>delta<sp/>*<sp/>(<sp/>1.<sp/>/<sp/>(<sp/>beta<sp/>*<sp/>std::pow(q-&gt;getLastStepSize(),<sp/>2<sp/>)<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>lmx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_diff_integrator_newmark.h"/>
+  </compounddef>
+</doxygen>

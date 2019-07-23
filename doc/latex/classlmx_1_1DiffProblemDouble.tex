@@ -1,0 +1,571 @@
+\hypertarget{classlmx_1_1DiffProblemDouble}{\section{lmx\-:\-:Diff\-Problem\-Double$<$ Sys, T $>$ Class Template Reference}
+\label{classlmx_1_1DiffProblemDouble}\index{lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$@{lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1DiffProblemDouble}{Diff\-Problem\-Double}. Implementation for O\-D\-E system solvers.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-diff\-\_\-problem\-\_\-double.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Diff\-Problem\-Double$<$ Sys, T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classlmx_1_1DiffProblemDouble__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Diff\-Problem\-Double$<$ Sys, T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classlmx_1_1DiffProblemDouble__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1DiffProblemDouble_ae8c3d384622ae1fa70c2a47afac70862}{Diff\-Problem\-Double} ()
+\item 
+virtual \hyperlink{classlmx_1_1DiffProblemDouble_adbb22b63b9fb8a836cffe43d56acc18e}{$\sim$\-Diff\-Problem\-Double} ()
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_a6637a9ec5c42651860b86fc647629ec9}{set\-Diff\-System} (Sys \&system\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_a9d8e6aed840c0e58abec933593ed711f}{set\-Integrator1} (int type, int opt1=0, int opt2=0)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_a3f04c4bdd5053f4cd1d42d86fa62b9f9}{set\-Integrator2} (int type, int opt1=0, int opt2=0)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_ab74169307a19b84de9eacbf2f72cc969}{set\-Integrator1} (const char $\ast$type, int opt2=0)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_a06bcb3ca3b14dd1d43a56876df5be2f7}{set\-Integrator2} (const char $\ast$type, int opt2=0)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_a3904b3ac77d965496dbfa34bd40710a9}{set\-Initial\-Configuration1} (\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q\-\_\-o)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_aeb674ac0fae825ba27739389da86d690}{set\-Initial\-Configuration2} (\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&q\-\_\-o, \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \&qdot\-\_\-o)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_a335cc81dc14a60c647e1b4cef52aeac9}{set\-Output\-File1} (const char $\ast$filename, int diff\-Order)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_ae34168c45bce6a838d884dbaf505a275}{set\-Output\-File2} (const char $\ast$filename, int diff\-Order)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_af30336003f2ae2ff91dc73428ac1f55d}{set\-Time\-Parameters} (double to\-\_\-in, double tf\-\_\-in, double step\-\_\-size\-\_\-in)
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_ac3bfab9528535950de450453520a0f86}{set\-Step\-Triggered} (void(Sys\-::$\ast$step\-Triggered\-\_\-in)())
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_aab0427d12489cc988638ea87300eaf4e}{set\-Convergence} (double eps\-\_\-in)
+\item 
+const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1DiffProblemDouble_a4d9b7e2ecdd61a06ab6e7856b91d58fb}{get\-Configuration1} (int order, int step=0)
+\item 
+const \hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ \& \hyperlink{classlmx_1_1DiffProblemDouble_aa5668ae04aaad91df040becbfe015142}{get\-Configuration2} (int order, int step=0)
+\item 
+bool \hyperlink{classlmx_1_1DiffProblemDouble_aae7c53702d881cf815429d9cdee40147}{is\-Integrator\-Explicit} ()
+\item 
+virtual void \hyperlink{classlmx_1_1DiffProblemDouble_a2f15d38c3ca50be92314584b99f5f31b}{initialize} ()=0
+\item 
+virtual void \hyperlink{classlmx_1_1DiffProblemDouble_a901247dbeb3ed310bc1c4a79359c8ba2}{step\-Solve} ()=0
+\item 
+virtual void \hyperlink{classlmx_1_1DiffProblemDouble_a9e0c8b706f755e2c142b1c031883307b}{solve} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlmx_1_1DiffProblemDouble_ab99b7e0b862abe5ba37719499dddbf55}{write\-Step\-Files} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1NLSolverDouble}{lmx\-::\-N\-L\-Solver\-Double}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_aec50fd5565c52bcb97854648d8b7090b}{the\-N\-L\-Solver}
+\begin{DoxyCompactList}\small\item\em Pointer to the \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} object, (auto-\/created). \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1Configuration}{lmx\-::\-Configuration}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_ae53777e808b169b5d9974e4e1b5ae88c}{the\-Configuration1}
+\begin{DoxyCompactList}\small\item\em Pointer to the \hyperlink{classlmx_1_1Configuration}{Configuration} object, (auto-\/created). \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1Configuration}{lmx\-::\-Configuration}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_ac19d79f3e7b88a12467a7822e33ca7ab}{the\-Configuration2}
+\begin{DoxyCompactList}\small\item\em Pointer to the \hyperlink{classlmx_1_1Configuration}{Configuration} object, (auto-\/created). \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1IntegratorBase}{lmx\-::\-Integrator\-Base}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_ab280b17787513f600649850f9a343aa6}{the\-Integrator1}
+\begin{DoxyCompactList}\small\item\em Pointer to the Integrator object, (auto-\/created). \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1IntegratorBase}{lmx\-::\-Integrator\-Base}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_a64e25c04214254252b8750599f779b78}{the\-Integrator2}
+\begin{DoxyCompactList}\small\item\em Pointer to the Integrator object, (auto-\/created). \end{DoxyCompactList}\item 
+Sys $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_ad53a4d138b69f0e7c0c9c758f736002c}{the\-System}
+\begin{DoxyCompactList}\small\item\em Pointer to object where the differential system is defined. \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_ad460462bffa8b3425e0e2df46d6bcf63}{p\-\_\-delta\-\_\-q1}
+\begin{DoxyCompactList}\small\item\em Stores pointer to \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} increment. \end{DoxyCompactList}\item 
+\hyperlink{classlmx_1_1Vector}{lmx\-::\-Vector}$<$ T $>$ $\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_a0f6147b1376247d0fc18327da7946401}{p\-\_\-delta\-\_\-q2}
+\begin{DoxyCompactList}\small\item\em Stores pointer to \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} increment. \end{DoxyCompactList}\item 
+bool \hyperlink{classlmx_1_1DiffProblemDouble_aa9f4750227ae6f96a9d8f11627083e8d}{b\-\_\-steptriggered}
+\begin{DoxyCompactList}\small\item\em 1 if step\-Triggered function is set. \end{DoxyCompactList}\item 
+double \hyperlink{classlmx_1_1DiffProblemDouble_a19b2a71c676c67ee71de28fde7c97d54}{to}
+\begin{DoxyCompactList}\small\item\em Value of the start time stored from input. \end{DoxyCompactList}\item 
+double \hyperlink{classlmx_1_1DiffProblemDouble_a48be1fc2aba0df868106372d5e31e2ad}{tf}
+\begin{DoxyCompactList}\small\item\em Value of the finish time stored from input. \end{DoxyCompactList}\item 
+double \hyperlink{classlmx_1_1DiffProblemDouble_a65a47b229f04c1de32d33af03dd8b448}{step\-Size}
+\begin{DoxyCompactList}\small\item\em Value of the time step stored from input. \end{DoxyCompactList}\item 
+double \hyperlink{classlmx_1_1DiffProblemDouble_ac53d73fc5d13aacb043c9a49aa8af7a7}{epsilon}
+\begin{DoxyCompactList}\small\item\em Value for L2 convergence. \end{DoxyCompactList}\item 
+std\-::map$<$ int, std\-::ofstream $\ast$ $>$ \hyperlink{classlmx_1_1DiffProblemDouble_aa26e0b530cc5b78b32383515a7932a97}{file\-Out\-Map1}
+\begin{DoxyCompactList}\small\item\em collection of output streams for each diff-\/order requested. \end{DoxyCompactList}\item 
+std\-::map$<$ int, std\-::ofstream $\ast$ $>$ \hyperlink{classlmx_1_1DiffProblemDouble_a17946e26033b4dc383b37756b39097a5}{file\-Out\-Map2}
+\begin{DoxyCompactList}\small\item\em collection of output streams for each diff-\/order requested. \end{DoxyCompactList}\item 
+void(Sys\-::$\ast$ \hyperlink{classlmx_1_1DiffProblemDouble_a86019217395c38514e7765294dc55ac8}{step\-Triggered} )()
+\begin{DoxyCompactList}\small\item\em function called at the end of each time step \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Sys, typename T = double$>$class lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$}
+
+Template class \hyperlink{classlmx_1_1DiffProblemDouble}{Diff\-Problem\-Double}. Implementation for O\-D\-E system solvers. 
+
+This class implements methods for defining and solving partitioned initial value problems described by a Total\-Diff class' derivided object, and initial conditions in the form $ \dot{q}(t_o) = \dot{q}_o $, $ q(t_o) = q_o $.
+
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1DiffProblemDouble_ae8c3d384622ae1fa70c2a47afac70862}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!Diff\-Problem\-Double@{Diff\-Problem\-Double}}
+\index{Diff\-Problem\-Double@{Diff\-Problem\-Double}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{Diff\-Problem\-Double}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::{\bf Diff\-Problem\-Double} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemDouble_ae8c3d384622ae1fa70c2a47afac70862}
+Empty constructor. \hypertarget{classlmx_1_1DiffProblemDouble_adbb22b63b9fb8a836cffe43d56acc18e}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!$\sim$\-Diff\-Problem\-Double@{$\sim$\-Diff\-Problem\-Double}}
+\index{$\sim$\-Diff\-Problem\-Double@{$\sim$\-Diff\-Problem\-Double}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{$\sim$\-Diff\-Problem\-Double}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ virtual {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::$\sim${\bf Diff\-Problem\-Double} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classlmx_1_1DiffProblemDouble_adbb22b63b9fb8a836cffe43d56acc18e}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1DiffProblemDouble_a4d9b7e2ecdd61a06ab6e7856b91d58fb}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!get\-Configuration1@{get\-Configuration1}}
+\index{get\-Configuration1@{get\-Configuration1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{get\-Configuration1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ const {\bf lmx\-::\-Vector}$<$T$>$\& {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::get\-Configuration1 (
+\begin{DoxyParamCaption}
+\item[{int}]{order, }
+\item[{int}]{step = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemDouble_a4d9b7e2ecdd61a06ab6e7856b91d58fb}
+
+
+References lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::the\-Configuration1.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_aa5668ae04aaad91df040becbfe015142}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!get\-Configuration2@{get\-Configuration2}}
+\index{get\-Configuration2@{get\-Configuration2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{get\-Configuration2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ const {\bf lmx\-::\-Vector}$<$T$>$\& {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::get\-Configuration2 (
+\begin{DoxyParamCaption}
+\item[{int}]{order, }
+\item[{int}]{step = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemDouble_aa5668ae04aaad91df040becbfe015142}
+
+
+References lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::the\-Configuration2.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a2f15d38c3ca50be92314584b99f5f31b}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!initialize@{initialize}}
+\index{initialize@{initialize}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ virtual void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1DiffProblemDouble_a2f15d38c3ca50be92314584b99f5f31b}
+Solve methods to be implemented in derived classes. 
+
+Implemented in \hyperlink{classlmx_1_1DiffProblemFirstSecond_a13e52b8a33f4af805743a29e91ac578a}{lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$}.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_aae7c53702d881cf815429d9cdee40147}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!is\-Integrator\-Explicit@{is\-Integrator\-Explicit}}
+\index{is\-Integrator\-Explicit@{is\-Integrator\-Explicit}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{is\-Integrator\-Explicit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ bool {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::is\-Integrator\-Explicit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemDouble_aae7c53702d881cf815429d9cdee40147}
+
+
+References lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::the\-Integrator1, and lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::the\-Integrator2.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_aab0427d12489cc988638ea87300eaf4e}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Convergence@{set\-Convergence}}
+\index{set\-Convergence@{set\-Convergence}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Convergence}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Convergence (
+\begin{DoxyParamCaption}
+\item[{double}]{eps\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemDouble_aab0427d12489cc988638ea87300eaf4e}
+
+
+References lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::epsilon.
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::set\-Convergence().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a6637a9ec5c42651860b86fc647629ec9}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Diff\-System@{set\-Diff\-System}}
+\index{set\-Diff\-System@{set\-Diff\-System}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Diff\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Diff\-System (
+\begin{DoxyParamCaption}
+\item[{Sys \&}]{system\-\_\-in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DiffProblemDouble_a6637a9ec5c42651860b86fc647629ec9}
+
+\begin{DoxyParams}{Parameters}
+{\em system\-\_\-in} & Object that defines the differential system equations. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::the\-System.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a3904b3ac77d965496dbfa34bd40710a9}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Initial\-Configuration1@{set\-Initial\-Configuration1}}
+\index{set\-Initial\-Configuration1@{set\-Initial\-Configuration1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Initial\-Configuration1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Initial\-Configuration1 (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{q\-\_\-o}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_a3904b3ac77d965496dbfa34bd40710a9}
+Defines initial conditions for first order diff. problems. 
+\begin{DoxyParams}{Parameters}
+{\em q\-\_\-o} & Zero-\/order initial configuration. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::\-Configuration$<$ T $>$\-::set\-Initial\-Condition().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_aeb674ac0fae825ba27739389da86d690}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Initial\-Configuration2@{set\-Initial\-Configuration2}}
+\index{set\-Initial\-Configuration2@{set\-Initial\-Configuration2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Initial\-Configuration2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Initial\-Configuration2 (
+\begin{DoxyParamCaption}
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{q\-\_\-o, }
+\item[{{\bf lmx\-::\-Vector}$<$ T $>$ \&}]{qdot\-\_\-o}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_aeb674ac0fae825ba27739389da86d690}
+Defines initial conditions for second order diff. problems. 
+\begin{DoxyParams}{Parameters}
+{\em q\-\_\-o} & Zero-\/order initial configuration. \\
+\hline
+{\em qdot\-\_\-o} & First-\/order initial configuration. \\
+\hline
+\end{DoxyParams}
+
+
+References lmx\-::\-Configuration$<$ T $>$\-::set\-Initial\-Condition().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a9d8e6aed840c0e58abec933593ed711f}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Integrator1@{set\-Integrator1}}
+\index{set\-Integrator1@{set\-Integrator1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Integrator1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Integrator1 (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{int}]{opt1 = {\ttfamily 0}, }
+\item[{int}]{opt2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_a9d8e6aed840c0e58abec933593ed711f}
+Defines the integrator that will be used for configuration advance \& actualization. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Key of integrator family to use. \\
+\hline
+{\em opt1} & Optional value for some integrators (usually specifies the order). \\
+\hline
+{\em opt2} & Optional value for some integrators. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemDouble_ab74169307a19b84de9eacbf2f72cc969}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Integrator1@{set\-Integrator1}}
+\index{set\-Integrator1@{set\-Integrator1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Integrator1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Integrator1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type, }
+\item[{int}]{opt2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_ab74169307a19b84de9eacbf2f72cc969}
+Defines the integrator that will be used for configuration advance \& actualization. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Key of integrator to use. \\
+\hline
+{\em opt2} & Optional value for some integrators. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemDouble_a3f04c4bdd5053f4cd1d42d86fa62b9f9}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Integrator2@{set\-Integrator2}}
+\index{set\-Integrator2@{set\-Integrator2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Integrator2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Integrator2 (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{int}]{opt1 = {\ttfamily 0}, }
+\item[{int}]{opt2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_a3f04c4bdd5053f4cd1d42d86fa62b9f9}
+Defines the integrator that will be used for configuration advance \& actualization. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Key of integrator family to use. \\
+\hline
+{\em opt1} & Optional value for some integrators (usually specifies the order). \\
+\hline
+{\em opt2} & Optional value for some integrators. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::set\-Integrator2().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a06bcb3ca3b14dd1d43a56876df5be2f7}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Integrator2@{set\-Integrator2}}
+\index{set\-Integrator2@{set\-Integrator2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Integrator2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Integrator2 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type, }
+\item[{int}]{opt2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_a06bcb3ca3b14dd1d43a56876df5be2f7}
+Defines the integrator that will be used for configuration advance \& actualization. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Key of integrator to use. \\
+\hline
+{\em opt2} & Optional value for some integrators. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemDouble_a335cc81dc14a60c647e1b4cef52aeac9}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Output\-File1@{set\-Output\-File1}}
+\index{set\-Output\-File1@{set\-Output\-File1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Output\-File1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Output\-File1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{int}]{diff\-Order}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_a335cc81dc14a60c647e1b4cef52aeac9}
+Defines which variables to store, specifing the file name for each diff-\/order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file for storing variables. \\
+\hline
+{\em diff\-Order} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemDouble_ae34168c45bce6a838d884dbaf505a275}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Output\-File2@{set\-Output\-File2}}
+\index{set\-Output\-File2@{set\-Output\-File2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Output\-File2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Output\-File2 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{int}]{diff\-Order}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_ae34168c45bce6a838d884dbaf505a275}
+Defines which variables to store, specifing the file name for each diff-\/order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file for storing variables. \\
+\hline
+{\em diff\-Order} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemDouble_ac3bfab9528535950de450453520a0f86}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Step\-Triggered@{set\-Step\-Triggered}}
+\index{set\-Step\-Triggered@{set\-Step\-Triggered}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Step\-Triggered}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Step\-Triggered (
+\begin{DoxyParamCaption}
+\item[{void(Sys\-::$\ast$)()}]{step\-Triggered\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_ac3bfab9528535950de450453520a0f86}
+Defines a function call between time steps. \hypertarget{classlmx_1_1DiffProblemDouble_af30336003f2ae2ff91dc73428ac1f55d}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!set\-Time\-Parameters@{set\-Time\-Parameters}}
+\index{set\-Time\-Parameters@{set\-Time\-Parameters}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{set\-Time\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::set\-Time\-Parameters (
+\begin{DoxyParamCaption}
+\item[{double}]{to\-\_\-in, }
+\item[{double}]{tf\-\_\-in, }
+\item[{double}]{step\-\_\-size\-\_\-in}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DiffProblemDouble_af30336003f2ae2ff91dc73428ac1f55d}
+Defines basic time parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\-\_\-in} & Initial time. \\
+\hline
+{\em tf\-\_\-in} & End time \\
+\hline
+{\em step\-\_\-size\-\_\-in} & Prefered time step. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DiffProblemDouble_a9e0c8b706f755e2c142b1c031883307b}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!solve@{solve}}
+\index{solve@{solve}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ virtual void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1DiffProblemDouble_a9e0c8b706f755e2c142b1c031883307b}
+
+
+Implemented in \hyperlink{classlmx_1_1DiffProblemFirstSecond_a0c15ac40c99ebe79b546bf0779599301}{lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$}.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a901247dbeb3ed310bc1c4a79359c8ba2}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!step\-Solve@{step\-Solve}}
+\index{step\-Solve@{step\-Solve}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{step\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ virtual void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::step\-Solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classlmx_1_1DiffProblemDouble_a901247dbeb3ed310bc1c4a79359c8ba2}
+
+
+Implemented in \hyperlink{classlmx_1_1DiffProblemFirstSecond_ad53dc78b8c04c0a6cab59e35836d8e3e}{lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$}.
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ab99b7e0b862abe5ba37719499dddbf55}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!write\-Step\-Files@{write\-Step\-Files}}
+\index{write\-Step\-Files@{write\-Step\-Files}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{write\-Step\-Files}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T $>$ void {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::write\-Step\-Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ab99b7e0b862abe5ba37719499dddbf55}
+When the configuration advances, this method is invoked for writing the requested diff-\/order values. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classlmx_1_1DiffProblemDouble_aa9f4750227ae6f96a9d8f11627083e8d}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!b\-\_\-steptriggered@{b\-\_\-steptriggered}}
+\index{b\-\_\-steptriggered@{b\-\_\-steptriggered}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{b\-\_\-steptriggered}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ bool {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::b\-\_\-steptriggered\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_aa9f4750227ae6f96a9d8f11627083e8d}
+
+
+1 if step\-Triggered function is set. 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ac53d73fc5d13aacb043c9a49aa8af7a7}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ double {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::epsilon\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ac53d73fc5d13aacb043c9a49aa8af7a7}
+
+
+Value for L2 convergence. 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::set\-Convergence().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_aa26e0b530cc5b78b32383515a7932a97}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!file\-Out\-Map1@{file\-Out\-Map1}}
+\index{file\-Out\-Map1@{file\-Out\-Map1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{file\-Out\-Map1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ std\-::map$<$int, std\-::ofstream $\ast$$>$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::file\-Out\-Map1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_aa26e0b530cc5b78b32383515a7932a97}
+
+
+collection of output streams for each diff-\/order requested. 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a17946e26033b4dc383b37756b39097a5}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!file\-Out\-Map2@{file\-Out\-Map2}}
+\index{file\-Out\-Map2@{file\-Out\-Map2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{file\-Out\-Map2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ std\-::map$<$int, std\-::ofstream $\ast$$>$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::file\-Out\-Map2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a17946e26033b4dc383b37756b39097a5}
+
+
+collection of output streams for each diff-\/order requested. 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ad460462bffa8b3425e0e2df46d6bcf63}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!p\-\_\-delta\-\_\-q1@{p\-\_\-delta\-\_\-q1}}
+\index{p\-\_\-delta\-\_\-q1@{p\-\_\-delta\-\_\-q1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{p\-\_\-delta\-\_\-q1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Vector}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::p\-\_\-delta\-\_\-q1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ad460462bffa8b3425e0e2df46d6bcf63}
+
+
+Stores pointer to \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} increment. 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::$\sim$\-Diff\-Problem\-First\-Second().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a0f6147b1376247d0fc18327da7946401}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!p\-\_\-delta\-\_\-q2@{p\-\_\-delta\-\_\-q2}}
+\index{p\-\_\-delta\-\_\-q2@{p\-\_\-delta\-\_\-q2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{p\-\_\-delta\-\_\-q2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Vector}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::p\-\_\-delta\-\_\-q2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a0f6147b1376247d0fc18327da7946401}
+
+
+Stores pointer to \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} increment. 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::$\sim$\-Diff\-Problem\-First\-Second().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a65a47b229f04c1de32d33af03dd8b448}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!step\-Size@{step\-Size}}
+\index{step\-Size@{step\-Size}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{step\-Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ double {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::step\-Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a65a47b229f04c1de32d33af03dd8b448}
+
+
+Value of the time step stored from input. 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a86019217395c38514e7765294dc55ac8}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!step\-Triggered@{step\-Triggered}}
+\index{step\-Triggered@{step\-Triggered}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{step\-Triggered}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ void(Sys\-::$\ast$  {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::step\-Triggered)()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a86019217395c38514e7765294dc55ac8}
+
+
+function called at the end of each time step 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a48be1fc2aba0df868106372d5e31e2ad}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!tf@{tf}}
+\index{tf@{tf}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{tf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ double {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::tf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a48be1fc2aba0df868106372d5e31e2ad}
+
+
+Value of the finish time stored from input. 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ae53777e808b169b5d9974e4e1b5ae88c}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!the\-Configuration1@{the\-Configuration1}}
+\index{the\-Configuration1@{the\-Configuration1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{the\-Configuration1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Configuration}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::the\-Configuration1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ae53777e808b169b5d9974e4e1b5ae88c}
+
+
+Pointer to the \hyperlink{classlmx_1_1Configuration}{Configuration} object, (auto-\/created). 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::get\-Configuration1().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ac19d79f3e7b88a12467a7822e33ca7ab}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!the\-Configuration2@{the\-Configuration2}}
+\index{the\-Configuration2@{the\-Configuration2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{the\-Configuration2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Configuration}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::the\-Configuration2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ac19d79f3e7b88a12467a7822e33ca7ab}
+
+
+Pointer to the \hyperlink{classlmx_1_1Configuration}{Configuration} object, (auto-\/created). 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::get\-Configuration2().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ab280b17787513f600649850f9a343aa6}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!the\-Integrator1@{the\-Integrator1}}
+\index{the\-Integrator1@{the\-Integrator1}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{the\-Integrator1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Integrator\-Base}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::the\-Integrator1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ab280b17787513f600649850f9a343aa6}
+
+
+Pointer to the Integrator object, (auto-\/created). 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::is\-Integrator\-Explicit().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a64e25c04214254252b8750599f779b78}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!the\-Integrator2@{the\-Integrator2}}
+\index{the\-Integrator2@{the\-Integrator2}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{the\-Integrator2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-Integrator\-Base}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::the\-Integrator2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a64e25c04214254252b8750599f779b78}
+
+
+Pointer to the Integrator object, (auto-\/created). 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::is\-Integrator\-Explicit().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_aec50fd5565c52bcb97854648d8b7090b}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!the\-N\-L\-Solver@{the\-N\-L\-Solver}}
+\index{the\-N\-L\-Solver@{the\-N\-L\-Solver}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{the\-N\-L\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ {\bf lmx\-::\-N\-L\-Solver\-Double}$<$T$>$$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::the\-N\-L\-Solver\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_aec50fd5565c52bcb97854648d8b7090b}
+
+
+Pointer to the \hyperlink{classlmx_1_1NLSolver}{N\-L\-Solver} object, (auto-\/created). 
+
+\hypertarget{classlmx_1_1DiffProblemDouble_ad53a4d138b69f0e7c0c9c758f736002c}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!the\-System@{the\-System}}
+\index{the\-System@{the\-System}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{the\-System}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ Sys$\ast$ {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::the\-System\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_ad53a4d138b69f0e7c0c9c758f736002c}
+
+
+Pointer to object where the differential system is defined. 
+
+
+
+Referenced by lmx\-::\-Diff\-Problem\-Double$<$ Sys, T $>$\-::set\-Diff\-System().
+
+\hypertarget{classlmx_1_1DiffProblemDouble_a19b2a71c676c67ee71de28fde7c97d54}{\index{lmx\-::\-Diff\-Problem\-Double@{lmx\-::\-Diff\-Problem\-Double}!to@{to}}
+\index{to@{to}!lmx::DiffProblemDouble@{lmx\-::\-Diff\-Problem\-Double}}
+\subsubsection[{to}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Sys , typename T  = double$>$ double {\bf lmx\-::\-Diff\-Problem\-Double}$<$ Sys, T $>$\-::to\hspace{0.3cm}{\ttfamily [protected]}}}\label{classlmx_1_1DiffProblemDouble_a19b2a71c676c67ee71de28fde7c97d54}
+
+
+Value of the start time stored from input. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__diff__problem__double_8h}{lmx\-\_\-diff\-\_\-problem\-\_\-double.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,282 @@
+\hypertarget{classlmx_1_1DenseMatrix}{\section{lmx\-:\-:Dense\-Matrix$<$ T $>$ Class Template Reference}
+\label{classlmx_1_1DenseMatrix}\index{lmx\-::\-Dense\-Matrix$<$ T $>$@{lmx\-::\-Dense\-Matrix$<$ T $>$}}
+}
+
+
+Template class \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}.  
+
+
+
+
+{\ttfamily \#include $<$/home/daniel.\-iglesias/\-Projects/\-Heat\-Surf/src/\-L\-M\-X/lmx\-\_\-mat\-\_\-dense\-\_\-matrix.\-h$>$}
+
+
+
+Inheritance diagram for lmx\-:\-:Dense\-Matrix$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classlmx_1_1DenseMatrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lmx\-:\-:Dense\-Matrix$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classlmx_1_1DenseMatrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmx_1_1DenseMatrix_ada75efeb7bf6c5220f1f7e718fe3311b}{Dense\-Matrix} ()
+\item 
+\hyperlink{classlmx_1_1DenseMatrix_a240cb7ac78e3d1e29d65e08060dccf5a}{Dense\-Matrix} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type}, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type})
+\item 
+\hyperlink{classlmx_1_1DenseMatrix_a34e6c5c76b6b6f729a745c48a4ce78a9}{Dense\-Matrix} (const \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \&)
+\item 
+\hyperlink{classlmx_1_1DenseMatrix_a8b7a868fe29aa399d104cf46213158fb}{$\sim$\-Dense\-Matrix} ()
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \& \hyperlink{classlmx_1_1DenseMatrix_aea3df37602013fd216dc9a895f71d7b5}{mult} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \& \hyperlink{classlmx_1_1DenseMatrix_abc141337e70e9fee9c56bc4966705f76}{operator=} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \& \hyperlink{classlmx_1_1DenseMatrix_a2ecef4d0da9409fe1f02f0bcadf78222}{mult\-Elements} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \& \hyperlink{classlmx_1_1DenseMatrix_a13fbcfd9a36eda49d800ea4f75226223}{mult\-Elements} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&, const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&)
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \hyperlink{classlmx_1_1DenseMatrix_a2b27d8130aea5d145ec83d81e346e6b1}{operator+} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} \hyperlink{classlmx_1_1DenseMatrix_a1a80039a17afadbcf71529ddf4324ccc}{operator-\/} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&B) const 
+\item 
+\hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}$<$ T $>$ \hyperlink{classlmx_1_1DenseMatrix_a99abe2af4a4f29c52a1ac81b349f959f}{operator$\ast$} (const \hyperlink{classlmx_1_1Matrix}{Matrix}$<$ T $>$ \&B) const 
+\item 
+const T \& \hyperlink{classlmx_1_1DenseMatrix_a3e3551eb4f7f09d28e0966108a02276d}{read\-Element} (\hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} n) const 
+\item 
+void \hyperlink{classlmx_1_1DenseMatrix_a7c3702d29f2ceb974969eb9958e2ffcd}{write\-Element} (T the\-Value, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} n) const 
+\item 
+void \hyperlink{classlmx_1_1DenseMatrix_ac5eaf745aa3eee21569ce04284ed6449}{add\-Element} (const T the\-Value, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} m, \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} n) const 
+\item 
+void \hyperlink{classlmx_1_1DenseMatrix_ad42b0105c37cdd71f696bf939b105c4c}{write\-Sparse\-Pattern} (std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&, std\-::vector$<$ \hyperlink{lmx__mat__data_8h_a49b489a408a211a90e766329c0732d7b}{size\-\_\-type} $>$ \&) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class lmx\-::\-Dense\-Matrix$<$ T $>$}
+
+Template class \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. 
+
+This class allows the creation of dense matrix objects. A \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} object owns two parameters, nrows and mcolumns, that store the dimension of the matrix container. The data is stored in an atribute ($\ast$type\-\_\-matrix) that points to some class which derives from the \hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mrows} & The number of rows of the \hyperlink{classlmx_1_1Data}{Data} Container (\hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}). \\
+\hline
+{\em ncolumns} & The number of columns of the \hyperlink{classlmx_1_1Data}{Data} Container (\hyperlink{classlmx_1_1Data__mat}{Data\-\_\-mat}). \\
+\hline
+{\em reference} & An \hyperlink{classlmx_1_1Elem__ref}{Elem\-\_\-ref} object for r/w data access. \\
+\hline
+{\em $\ast$type\-\_\-matrix} & The pointer to the matrix data container.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Daniel Iglesias . 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmx_1_1DenseMatrix_ada75efeb7bf6c5220f1f7e718fe3311b}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!Dense\-Matrix@{Dense\-Matrix}}
+\index{Dense\-Matrix@{Dense\-Matrix}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{Dense\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::{\bf Dense\-Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DenseMatrix_ada75efeb7bf6c5220f1f7e718fe3311b}
+Empty constructor. \hypertarget{classlmx_1_1DenseMatrix_a240cb7ac78e3d1e29d65e08060dccf5a}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!Dense\-Matrix@{Dense\-Matrix}}
+\index{Dense\-Matrix@{Dense\-Matrix}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{Dense\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::{\bf Dense\-Matrix} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{rows, }
+\item[{{\bf size\-\_\-type}}]{columns}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DenseMatrix_a240cb7ac78e3d1e29d65e08060dccf5a}
+Standard constructor. 
+\begin{DoxyParams}{Parameters}
+{\em rows} & Number of rows in \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. \\
+\hline
+{\em columns} & Number of columns in \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DenseMatrix_a34e6c5c76b6b6f729a745c48a4ce78a9}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!Dense\-Matrix@{Dense\-Matrix}}
+\index{Dense\-Matrix@{Dense\-Matrix}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{Dense\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::{\bf Dense\-Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dense\-Matrix}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DenseMatrix_a34e6c5c76b6b6f729a745c48a4ce78a9}
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} to copy from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DenseMatrix_a8b7a868fe29aa399d104cf46213158fb}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!$\sim$\-Dense\-Matrix@{$\sim$\-Dense\-Matrix}}
+\index{$\sim$\-Dense\-Matrix@{$\sim$\-Dense\-Matrix}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{$\sim$\-Dense\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::$\sim${\bf Dense\-Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlmx_1_1DenseMatrix_a8b7a868fe29aa399d104cf46213158fb}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmx_1_1DenseMatrix_ac5eaf745aa3eee21569ce04284ed6449}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::add\-Element (
+\begin{DoxyParamCaption}
+\item[{const T}]{the\-Value, }
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_ac5eaf745aa3eee21569ce04284ed6449}
+Function adds the value in specified position of \hyperlink{classlmx_1_1Matrix}{Matrix} object. \hypertarget{classlmx_1_1DenseMatrix_aea3df37602013fd216dc9a895f71d7b5}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!mult@{mult}}
+\index{mult@{mult}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix}$<$ T $>$ \& {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::mult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_aea3df37602013fd216dc9a895f71d7b5}
+\hyperlink{classlmx_1_1Matrix}{Matrix} objects multiplication, with result storing in the \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} object. 
+\begin{DoxyParams}{Parameters}
+{\em A} & Left \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+{\em B} & Right \hyperlink{classlmx_1_1Matrix}{Matrix}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to multiplication result in \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix}. 
+\end{DoxyReturn}
+
+
+References lmx\-::mat\-\_\-mat\-\_\-mult().
+
+\hypertarget{classlmx_1_1DenseMatrix_a2ecef4d0da9409fe1f02f0bcadf78222}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix}$<$ T $>$ \& {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a2ecef4d0da9409fe1f02f0bcadf78222}
+Internal product between matrices. Multiplies each element of object to its equivalent in \hyperlink{classlmx_1_1Matrix}{Matrix} B. 
+\begin{DoxyParams}{Parameters}
+{\em B} & \hyperlink{classlmx_1_1Matrix}{Matrix} to multiply to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to internal product result. 
+\end{DoxyReturn}
+
+
+References lmx\-::mat\-\_\-mat\-\_\-mult\-Elements().
+
+\hypertarget{classlmx_1_1DenseMatrix_a13fbcfd9a36eda49d800ea4f75226223}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!mult\-Elements@{mult\-Elements}}
+\index{mult\-Elements@{mult\-Elements}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{mult\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix}$<$ T $>$ \& {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::mult\-Elements (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a13fbcfd9a36eda49d800ea4f75226223}
+Internal product between two \hyperlink{classlmx_1_1Matrix}{Matrix} objects. Multiplies each element in \hyperlink{classlmx_1_1Matrix}{Matrix} A to its equivalent in \hyperlink{classlmx_1_1Matrix}{Matrix} B and saves the result in object from whitch the function is invoked. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Matrix}{Matrix} to multiply. \\
+\hline
+{\em B} & \hyperlink{classlmx_1_1Matrix}{Matrix} to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to internal product result. 
+\end{DoxyReturn}
+
+
+References lmx\-::mat\-\_\-mat\-\_\-mult\-Elements().
+
+\hypertarget{classlmx_1_1DenseMatrix_a99abe2af4a4f29c52a1ac81b349f959f}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix}$<$T$>$ {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a99abe2af4a4f29c52a1ac81b349f959f}
+Overloaded operator for multiplying \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} and \hyperlink{classlmx_1_1Matrix}{Matrix} objects. \hypertarget{classlmx_1_1DenseMatrix_a2b27d8130aea5d145ec83d81e346e6b1}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix} {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a2b27d8130aea5d145ec83d81e346e6b1}
+Overloaded operator for adding elements between a \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} and a \hyperlink{classlmx_1_1Matrix}{Matrix} object. \hypertarget{classlmx_1_1DenseMatrix_a1a80039a17afadbcf71529ddf4324ccc}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix} {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a1a80039a17afadbcf71529ddf4324ccc}
+Overloaded operator for adding elements between a \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} and a \hyperlink{classlmx_1_1Matrix}{Matrix} object. \hypertarget{classlmx_1_1DenseMatrix_abc141337e70e9fee9c56bc4966705f76}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Dense\-Matrix}$<$ T $>$ \& {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_abc141337e70e9fee9c56bc4966705f76}
+Overloaded operator for equaling every element between a \hyperlink{classlmx_1_1DenseMatrix}{Dense\-Matrix} and a \hyperlink{classlmx_1_1Matrix}{Matrix} object of the same type. 
+\begin{DoxyParams}{Parameters}
+{\em A} & \hyperlink{classlmx_1_1Matrix}{Matrix} to be equal to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classlmx_1_1DenseMatrix_a3e3551eb4f7f09d28e0966108a02276d}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!read\-Element@{read\-Element}}
+\index{read\-Element@{read\-Element}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{read\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const T\& {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::read\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a3e3551eb4f7f09d28e0966108a02276d}
+Function that returns the value in specified position of \hyperlink{classlmx_1_1Matrix}{Matrix} object. 
+
+Referenced by lmx\-::\-Vector$<$ T $>$\-::mult(), and lmx\-::\-Dense\-Matrix$<$ double $>$\-::operator$\ast$().
+
+\hypertarget{classlmx_1_1DenseMatrix_a7c3702d29f2ceb974969eb9958e2ffcd}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!write\-Element@{write\-Element}}
+\index{write\-Element@{write\-Element}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{write\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::write\-Element (
+\begin{DoxyParamCaption}
+\item[{T}]{the\-Value, }
+\item[{{\bf size\-\_\-type}}]{m, }
+\item[{{\bf size\-\_\-type}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlmx_1_1DenseMatrix_a7c3702d29f2ceb974969eb9958e2ffcd}
+Function writes the value in specified position of \hyperlink{classlmx_1_1Matrix}{Matrix} object. 
+
+Referenced by lmx\-::\-Dense\-Matrix$<$ double $>$\-::operator$\ast$().
+
+\hypertarget{classlmx_1_1DenseMatrix_ad42b0105c37cdd71f696bf939b105c4c}{\index{lmx\-::\-Dense\-Matrix@{lmx\-::\-Dense\-Matrix}!write\-Sparse\-Pattern@{write\-Sparse\-Pattern}}
+\index{write\-Sparse\-Pattern@{write\-Sparse\-Pattern}!lmx::DenseMatrix@{lmx\-::\-Dense\-Matrix}}
+\subsubsection[{write\-Sparse\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf lmx\-::\-Dense\-Matrix}$<$ T $>$\-::write\-Sparse\-Pattern (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{n\-Rows, }
+\item[{std\-::vector$<$ {\bf size\-\_\-type} $>$ \&}]{n\-Cols}
+\end{DoxyParamCaption}
+) const}}\label{classlmx_1_1DenseMatrix_ad42b0105c37cdd71f696bf939b105c4c}
+Writes in two S\-T\-L vectors the H\-B column and row indexes of the Non-\/zeros. 
+
+Referenced by lmx\-::\-Diff\-Problem\-Second$<$ Sys, T $>$\-::set\-Sparse\-Pattern\-Jacobian(), lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::set\-Sparse\-Pattern\-Jacobian1(), and lmx\-::\-Diff\-Problem\-First\-Second$<$ Sys, T $>$\-::set\-Sparse\-Pattern\-Jacobian2().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-L\-M\-X/\hyperlink{lmx__mat__dense__matrix_8h}{lmx\-\_\-mat\-\_\-dense\-\_\-matrix.\-h}\end{DoxyCompactItemize}

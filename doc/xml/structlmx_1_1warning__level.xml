@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structlmx_1_1warning__level" kind="struct" prot="public">
+    <compoundname>lmx::warning_level</compoundname>
+    <includes refid="lmx__except_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int lmx::warning_level::level</definition>
+        <argsstring>(int l=-2)</argsstring>
+        <name>level</name>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+          <defval>-2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function for setting warning level. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Importance level. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>level&apos;s value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="282" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="282" bodyend="285"/>
+        <referencedby refid="namespacelmx_1a8b100980a9fd681c507d233fc8e4250c" compoundref="lmx__except_8h" startline="289" endline="289">lmx::set_warning_level</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages importance level in warnings. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" line="276" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_except.h" bodystart="276" bodyend="286"/>
+    <listofallmembers>
+      <member refid="structlmx_1_1warning__level_1aecf2fd92bcb3a5a35818f89f9d7e92b3" prot="public" virt="non-virtual"><scope>lmx::warning_level</scope><name>level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

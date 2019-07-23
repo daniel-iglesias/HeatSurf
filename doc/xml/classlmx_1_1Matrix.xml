@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classlmx_1_1Matrix" kind="class" prot="public">
+    <compoundname>lmx::Matrix</compoundname>
+    <derivedcompoundref refid="classlmx_1_1DenseMatrix" prot="public" virt="non-virtual">lmx::DenseMatrix&lt; T &gt;</derivedcompoundref>
+    <includes refid="lmx__mat__dense__matrix_8h" local="no">/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="412">
+        <label>lmx::Matrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1Matrix"/>
+      </node>
+      <node id="413">
+        <label>lmx::DenseMatrix&lt; T &gt;</label>
+        <link refid="classlmx_1_1DenseMatrix"/>
+        <childnode refid="412" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" line="39" column="1" bodyfile="/home/daniel.iglesias/Projects/HeatSurf/src/LMX/lmx_mat_dense_matrix.h" bodystart="39" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
