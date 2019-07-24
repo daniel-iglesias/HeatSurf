@@ -50,10 +50,6 @@ class vtkPoints;
 class vtkFloatArray;
 class vtkUnstructuredGrid;
 
-class vtkRenderWindow;
-class vtkInteractorStyleTrackballCamera;
-class vtkRenderWindowInteractor;
-class vtkRenderer;
 class vtkDataSetMapper;
 class vtkActor;
 class vtkLookupTable;
@@ -90,13 +86,6 @@ public:
 
     void computePowerDensity ( int );
 
-    void drawGeometry( );
-
-    void drawScalar( bool );
-
-    void drawGrid( );
-
-    void drawGridScalar( bool );
 
     virtual void outputPowerFile ( int ) = 0;
 
@@ -112,7 +101,17 @@ public:
 
     void outputBackscattering ( double );
 
+    vtkUnstructuredGrid* getGrid() const
+    { return grid; }
+
+    void calculateScalar();
+
+    vtkFloatArray* getScalar() const
+    { return scalar; }
+
+
 protected:
+
     std::string type;
     int sections, sections3D;
     int sectors, sectors3D;
@@ -123,7 +122,7 @@ protected:
     std::map<int, Node*> grid3Dnodes;
     std::vector< Element* > elements;
     std::vector< Element* > grid3D;
-    std::string plotTitle;
+
 
     vtkPoints* gridPoints;
     vtkFloatArray* scalar;
@@ -133,36 +132,6 @@ protected:
     vtkFloatArray* grid3Dscalar;
     vtkUnstructuredGrid* gridCubes;
 
-    vtkRenderWindow* renWin;
-    vtkInteractorStyleTrackballCamera* style;
-    vtkRenderWindowInteractor* iren;
-    vtkRenderer* ren;
-    vtkDataSetMapper* aDataSetMapper;
-    vtkActor* anActor;
-
-    vtkRenderWindow* grid3DrenWin;
-    vtkInteractorStyleTrackballCamera* grid3Dstyle;
-    vtkRenderWindowInteractor* grid3Diren;
-    vtkRenderer* grid3Dren;
-    vtkDataSetMapper* grid3DDataSetMapper;
-    vtkActor* grid3DActor;
-
-    vtkLookupTable* table;
-    vtkScalarBarActor* barActor;
-
-    vtkLookupTable* grid3Dtable;
-    vtkScalarBarActor* grid3DbarActor;
-
-    vtkAxesActor* axes;
-    vtkOrientationMarkerWidget* widget;
-
-    vtkAxesActor* grid3Daxes;
-    vtkOrientationMarkerWidget* grid3Dwidget;
-
-    vtkPlane* plane;
-    vtkCutter* planeCut;
-    vtkPolyDataMapper* cutMapper;
-    vtkActor* cutActor;
 };
 
 #endif

@@ -39,6 +39,7 @@ SET(HeatSurfSrcs
   ring.cpp
   simulation.cpp
   twoplates.cpp
+  window.cpp
 )
 
 ADD_EXECUTABLE(heatsurf

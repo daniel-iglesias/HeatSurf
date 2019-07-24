@@ -549,15 +549,17 @@ void Simulation::output()
 
         ( *it_geom )->outputPowerDensityFile();
 
-        (*it_geom)->drawGeometry();
+        theWindow.addGeometry( *it_geom );
 
-        (*it_geom)->drawScalar( true );
+//        ( *it_geom )->drawGeometry();
+
+//        ( *it_geom )->drawScalar( true );
 
         ( *it_geom )->outputTable();
 
-       (*it_geom)->drawGrid();
+//        ( *it_geom )->drawGrid();
 
-//       (*it_geom)->drawGridScalar();
+//        ( *it_geom )->drawGridScalar();
 
         ( *it_geom )->outputAnsys3D();
 
@@ -566,5 +568,7 @@ void Simulation::output()
         if ( backscattering_section_distance > 0. )
             ( *it_geom )->outputBackscattering ( backscattering_section_distance );
     }
+    theWindow.drawGeometry();
+    theWindow.drawScalar( true );
 }
 

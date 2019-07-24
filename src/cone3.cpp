@@ -234,8 +234,7 @@ void Cone3::computeNodalPower ( Particle* particle )
             double pi = 3.1416;
             double segmentSize = finalAngle - initialAngle;
             int sector_back = floor( ( (theta) - initialAngle) / ( finalAngle -initialAngle ) /*+ pi*/ * sectors ); // BUG: not clear that this rotation is associated with any parameter. Should be clearer
-            cout << "sector_back = " << sector_back << endl;
-
+            //cout << "sector_back = " << sector_back << endl;
             // ... defining another proximity factor:
             double sector_back_factor =
             1. - fmod ( ( theta /* + pi*/) * sectors, ( segmentSize ) ) / ( segmentSize );

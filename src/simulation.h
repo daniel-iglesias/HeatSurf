@@ -34,9 +34,8 @@
 #include "plate.h"
 //#include "revolute.h"
 #include "twoplates.h"
-
 #include "particle.h"
-
+#include "window.h"
 //////////////////////////////////////////// Doxygen file documentation entry:
 /*!
   \file simulation.h
@@ -67,6 +66,7 @@ public:
 
     void output();
 
+
 private:
     void readGeometry ( std::ifstream & );
 
@@ -84,6 +84,7 @@ private:
     std::vector<Geometry*> geometries;
     std::vector< Particle* > particles; //particles[section][i]
     std::vector<double> theoricParameters;
+    Window theWindow;
     double particle_shifting_x,
     particle_shifting_y,
     beam_opening_x,
