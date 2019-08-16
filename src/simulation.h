@@ -20,6 +20,12 @@
 #ifndef SIMULATION_H
 #define SIMULATION_H
 
+#ifndef _USE_MATH_DEFINES
+#define _USE_MATH_DEFINES
+#endif
+
+#include<math.h>
+
 #include <fstream>
 #include <vector>
 #include <map>
@@ -32,6 +38,7 @@
 #include "twoplates.h"
 
 #include "particle.h"
+#include "common.h"
 
 //////////////////////////////////////////// Doxygen file documentation entry:
 /*!

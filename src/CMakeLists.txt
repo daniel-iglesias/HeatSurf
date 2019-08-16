@@ -24,6 +24,7 @@ INCLUDE_DIRECTORIES(
 )
 
 SET(HeatSurfSrcs 
+  common.cpp
   heatsurf.cpp
   cone.cpp
   cone2.cpp

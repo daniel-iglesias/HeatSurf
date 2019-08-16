@@ -55,6 +55,7 @@ void Simulation::read ( char * file_name )
         else if ( keyword == "PARTICLES" ) readParticles ( input );
 //     else if(keyword == "THEORETICAL") readBeamParameters(input);
         else if ( keyword == "PARTICLEGENERATOR" ) createParticles ( input );
+        else if ( keyword == "DIVERTEDPARTICLEGENERATOR" ) createDivertedParticles ( input );
         else if ( keyword == "SHIFTPARTICLES" )
             input >> particle_shifting_x >> particle_shifting_y;
         else if ( keyword == "STEERBEAM" )
@@ -164,7 +165,7 @@ void Simulation::readGeometry ( std::ifstream & input )
 
      input >> length >> initDiam >> sectors >> width >> orientation; // units [mm]
 
-     geometries.push_back( new Plate("PLATE", length, initDiam, sectors, width, orientation ) );
+//     geometries.push_back( new Plate("PLATE", length, initDiam, sectors, width, orientation ) ); // TODO: Implement Plate class
    }
 
    else if(keyword == "2PLATES"){
@@ -249,7 +250,7 @@ void Simulation::createParticles ( std::ifstream & input )
     double s_x, s_y, sdiv_x, sdiv_y, corr_div_x, corr_div_y ;
     double max_x, max_y;
     double x, xdiv, y, ydiv, z ( 0 ), zdiv ( 0 ), time ( 0 ), phase ( 0 ), energy ( 9 ), loss ( 0 );
-    int i, j=0;
+    int i;
     const gsl_rng_type * T;
     gsl_rng * r;
 
@@ -308,58 +309,86 @@ void Simulation::createParticles ( std::ifstream & input )
     gsl_rng_free ( r );
     std::cout << "Particle size: " << particles.size() << std::endl;
 }
+/** Creates the plasma particles close to a limiter or divertor surface
+    The particles are generated along a revolution surface, around the (x,y)=0 z-axis
+    An input table defines the following input parameters along a local s-axis:
+    - The PDF value for the power density (density of particles)
+    - The direction angles of the particle trajectory (magnetic lines):
+    -- beta_phi is the angle in the x-z plane (=Br/Bz)
+    -- beta_n is the angle in the x-y plane (=Br/Btheta)
+    -- beta_theta is the angle in the y-z plane (=Btheta/Bz), typically very small!
+    Location along x-axis (radius) and z-axis (height) for the first s-cooordinate point is an input
+    Angle between s and x axes is an input
+    Theta is used for the toroidal angle, with limits being variables theta_initial and theta_end
+    With the two previous, all surface source points can be located in global coordinates
+    Total number of particles and total power are inputs
+    Each particle will be assigned equal power (Pt/Np)
+    The direction of each particle path is calculated
 
+*/
 void Simulation::createDivertedParticles ( std::ifstream & input )
 {
     std::ofstream output_p ( "diverted-particles.txt" );
-    double number_of_particles;
+    double number_of_particles, total_power, local_angle, x0, z0;
+    double theta_initial, theta_end;
+    double s, r, theta, x, xdiv, y, ydiv, z ( 0 ), zdiv ( 0 ), time ( 0 ), phase ( 0 ), energy ( 0 ), loss ( 0 );
+    std::string ifile;
+    int i;
+    const gsl_rng_type * T;
+    gsl_rng * rng;
+    gsl_ran_discrete_t * look_up_table;
+
+    // Input name of file
+    input >> ifile;
+    std::ifstream input_data;
+    input_data.open(ifile);
+
+    // From MkniX common.h/cpp...
+    const std::vector<std::vector<double> > vectors = mknix::read_lines(input_data);
+//    std::vector<std::vector<double>> vectors;
+//    std::string line;
+//      while (std::getline(input_data, line)) vectors.push_back(doubles_in_vector(line));
 
     input >> number_of_particles;
     std::cout << "number_of_particles: " << number_of_particles << endl;
-
-    this->readBeamParameters ( input );
-    // read energy, sigma_x, sigma_y, div_x, div_y, corr_x_xdiv, corr_y_ydiv
-
-    double z_i = 0.;
-    double s_x, s_y, sdiv_x, sdiv_y, corr_div_x, corr_div_y ;
-    double max_x, max_y;
-    double x, xdiv, y, ydiv, z ( 0 ), zdiv ( 0 ), time ( 0 ), phase ( 0 ), energy ( 9 ), loss ( 0 );
-    int i, j=0;
-    const gsl_rng_type * T;
-    gsl_rng * r;
+    input >> total_power;
+    std::cout << "total_power: " << total_power << endl;
+    input >> local_angle;
+    std::cout << "local_angle: " << local_angle << endl;
+    input >> x0 >> z0;
+    std::cout << "x0, z0: " << x0 << ", " << z0 << endl;
+    input >> theta_initial >> theta_end;
+    std::cout << "theta_initial, theta_end: " << theta_initial << ", " << theta_end << endl;
 
     // first line of file:
     output_p << "x(mm), xdiv(mrad), y(mm), ydiv(mrad) "
 	     << "z(mm), zdiv(mrad), time(s), phase, energy(eV), loss" << endl;
+
+    energy = total_power/number_of_particles;
 
     /* create a generator chosen by the
     environment variable GSL_RNG_TYPE */
     gsl_rng_env_setup();
 
     T = gsl_rng_default;
-    r = gsl_rng_alloc ( T );
+    rng = gsl_rng_alloc ( T );
+    //Populate the preprocessed look up table with the PDF of the power density
+    look_up_table = gsl_ran_discrete_preproc( vectors[1].size(), &(vectors[1][0]) );
 
-    energy = theoricParameters[0];
-    s_x = theoricParameters[1];
-    s_y = theoricParameters[2];
-    sdiv_x = theoricParameters[3];
-    sdiv_y = theoricParameters[4];
-    corr_div_x = theoricParameters[5];
-    corr_div_y = theoricParameters[6];
-    cout << "corrdiv_x = " << corr_div_x << endl;
-    max_x = 6*s_x;
-    max_y = 6*s_y;
     for ( i=0; i<number_of_particles; ++i )
     {
-        gsl_ran_bivariate_gaussian ( r, s_x, sdiv_x, corr_div_x, &x,  &xdiv );
-        gsl_ran_bivariate_gaussian ( r, s_y, sdiv_y, corr_div_y, &y,  &ydiv );
-        // trying only with circular beam...
-//         r = (min + (max-min) * (double)rand()/RAND_MAX);
-//         x = (1./2.*3.1416*std::pow(s_x,2))*std::exp(-std::pow(r,2)/(2.*std::pow(s_x,2)));
-//         r = (min + (max-min) * (double)rand()/RAND_MAX);
-//         y = (1./2.*3.1416*std::pow(s_y,2))*std::exp(-std::pow(r,2)/(2.*std::pow(s_y,2)));
+        s = gsl_ran_discrete (rng, look_up_table );
+        theta = gsl_ran_flat(rng, theta_initial, theta_end);
+        x = ( x0 + s*cos(local_angle) ) * cos(M_PI*theta/180);
+        y = ( x0 + s*cos(local_angle) ) * sin(M_PI*theta/180);
+        z = z0 + s*sin(local_angle);
 
-//     if( x < max_x || y < max_y ){
+        // For the divergences we use directly the components of the magnetic field
+        // These are stored in vectors with indices [2-4] for x, y, z respectively
+        xdiv = vectors[2][i] * cos(M_PI*theta/180) + vectors[3][i] * sin(M_PI*theta/180);
+        ydiv = -vectors[2][i]* sin(M_PI*theta/180) + vectors[3][i] * cos(M_PI*theta/180);
+        zdiv = vectors[4][i];
+
         output_p << x << " " << xdiv << " "
         << y << " " << ydiv << " "
         << z << " " << zdiv << " "
@@ -380,7 +409,7 @@ void Simulation::createDivertedParticles ( std::ifstream & input )
 //     else // particle too far, drop it!
 //       --i;
     }
-    gsl_rng_free ( r );
+    gsl_rng_free ( rng );
     std::cout << "Particle size: " << particles.size() << std::endl;
 }
 
