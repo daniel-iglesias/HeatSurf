@@ -43,7 +43,7 @@ class Cylinder : public Geometry
 public:
     Cylinder();
 
-    Cylinder ( std::string, double, double, double, int );
+    Cylinder ( std::string, std::string, double, double, double, int );
 
     ~Cylinder();
 

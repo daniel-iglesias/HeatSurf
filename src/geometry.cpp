@@ -55,14 +55,18 @@ Geometry::Geometry()
 }
 
 Geometry::Geometry ( std::string type_in,
+                     std::string name_in,
                      double z0_in,
                      int sectors_in,
-                     double length_in )
+                     double length_in)
         : type ( type_in )
+        , name ( name_in )
         , z0 ( z0_in )
         , sectors ( sectors_in )
         , length ( length_in )
-
+        , shift_x(0)
+        , shift_y(0)
+        , shift_z(0)
 {
 }
 
@@ -70,6 +74,75 @@ Geometry::~Geometry()
 {
 }
 
+void Geometry::setGeometryShift(
+       double geometry_shift_x,
+       double geometry_shift_y,
+       double geometry_shift_z,
+       double geometry_shift_mag )
+{
+shift_x = geometry_shift_x;
+shift_y = geometry_shift_y;
+shift_z = geometry_shift_z;
+shift_mag = geometry_shift_mag;
+}
+
+void Geometry::shiftGeometry( )
+{
+// Take Node x,y and z coordinates
+// Then add the shift in the x,y,z plane multiplied
+// with the shift magnitude to the relative coordinate
+
+// shift nodes
+    for (auto it= nodes.begin(); it!= nodes.end(); ++it){
+//        it->second->applyShift( shift_x * shift_mag,
+//                                shift_y * shift_mag,
+//                                shift_z * shift_mag );
+
+        it->second->setX( it->second->getX() + (shift_x * shift_mag) );
+        it->second->setY( it->second->getY() + (shift_y * shift_mag) );
+        it->second->setZ( it->second->getZ() + (shift_z * shift_mag) );
+        cout<<"x: "<<it->second->getX()<<" y: "<<it->second->getY()<<" z: "<<it->second->getZ()<<endl;
+        }
+
+// shift grid3Dnodes
+    for (auto it= grid3Dnodes.begin(); it!= grid3Dnodes.end(); ++it){
+        it->second->setX( it->second->getX() + (shift_x * shift_mag) );
+        it->second->setY( it->second->getY() + (shift_y * shift_mag) );
+        it->second->setZ( it->second->getZ() + (shift_z * shift_mag) );
+        }
+
+// shift VTK node objects:
+//   Shifting gridPoints:
+double vec[2];
+double NewVecX;
+double NewVecY;
+double NewVecZ;
+
+    for (int i = 0; i<gridPoints->GetNumberOfPoints(); i++){
+        gridPoints->GetPoint(i, vec);
+        NewVecX = vec[0] + (shift_x * shift_mag);
+        NewVecY = vec[1] + (shift_y * shift_mag);
+        NewVecZ = vec[2] + (shift_z * shift_mag);
+//        cout<<  NewVecX << ", " << NewVecY <<", " << NewVecZ << endl;
+        gridPoints->SetPoint(i, NewVecX, NewVecY, NewVecZ);
+        }
+//computeGrid3D();
+
+//   Shifting grid3DPoints:
+double vec2[2];
+double NewVecX2;
+double NewVecY2;
+double NewVecZ2;
+
+    for (int i = 0; i<grid3DPoints->GetNumberOfPoints(); i++){
+        grid3DPoints->GetPoint(i, vec2);
+        NewVecX2 = vec2[0] + (shift_x * shift_mag);
+        NewVecY2 = vec2[1] + (shift_y * shift_mag);
+        NewVecZ2 = vec2[2] + (shift_z * shift_mag);
+//      cout<<  NewVecX << ", " << NewVecY <<", " << NewVecZ << endl;
+        grid3DPoints->SetPoint(i, NewVecX2, NewVecY2, NewVecZ2);
+        }
+}
 
 void Geometry::computeGrid3D( )
 {
@@ -82,18 +155,20 @@ void Geometry::computeGrid3D( )
 
     // Define a regular grid of nodes:
     // Delta_z = sectionDif
-    // Delta_y = Delta_x = 2*(radius/seectors)
+    // Delta_y = Delta_x = 2*(radius/sectors)
     for ( i=0; i<sections3D; ++i )   // for z = i*sectionDif
     {
-        z = i * sectionDif + z0;
+        z = (i * sectionDif + z0);
         for ( j=0; j<=sectors3D; ++j )   // for y = radius*( 2*j/sectors - 1 )
         {
-            y = gridWidth* ( 2.*j/sectors3D - 1. );
+            y = (gridWidth* ( 2.*j/sectors3D - 1. ));
             for ( k=0; k<=sectors3D; ++k )   // for x = radius*( 2*k/sectors - 1 )
             {
-                x = gridWidth* ( 2.*k/sectors3D - 1. );
+                x = (gridWidth* ( 2.*k/sectors3D - 1. ));
                 grid3Dnodes[i*sectNodes*sectNodes + j*sectNodes + k]
                 = new Node ( x, y, z );
+//        cout<<x<<","<<y<<","<<z<<endl;
+
             }
         }
     }
@@ -154,8 +229,8 @@ void Geometry::computeGrid3D( )
                                     it->second->getY(),
                                     it->second->getZ()
                                   );
+//        cout<<it->second->getZ()<<endl;
     }
-
     // And, finally, the vtk cells:
     gridCubes = vtkUnstructuredGrid::New();
     gridCubes->Allocate ( 1000,1000 );
@@ -169,15 +244,12 @@ void Geometry::computeGrid3D( )
                                     ( *it )->geometry->GetPointIds() );
     }
     gridCubes->SetPoints ( grid3DPoints );
-
 }
-
 
 void Geometry::computePowerDensity ( int numParticles )
 {
     std::vector< Element* >::iterator it_elements = elements.begin();
     std::vector<int> connectivity;
-
     // First section nodes Scalar value must be doubled to simulate
     // the half of the element that isn't discretized
     int first_section = 0;
@@ -260,10 +332,11 @@ void Geometry::computePowerDensity ( int numParticles )
     for ( it_nodes = nodes.begin();
             it_nodes!= it_nodes_end;
             ++it_nodes )
-    {
-        x = it_nodes->second->getX();
-        y = it_nodes->second->getY();
-        z = it_nodes->second->getZ();
+    { // Finding the nodes in the local coordinate system
+        x = it_nodes->second->getX() - shift_x * shift_mag;
+        y = it_nodes->second->getY() - shift_y * shift_mag;
+        z = it_nodes->second->getZ() - shift_z * shift_mag;
+//        cout<<"x: "<<x<<" y: "<<y<<" z: "<<z<<endl;
         i = floor ( ( z-z0 ) / sectionDif );
 //          y = gridWidth*( 2.*j/sectors - 1. );
 //          y / gridWidth +1 = ( 2.*j/sectors  );
@@ -302,7 +375,7 @@ void Geometry::computePowerDensity ( int numParticles )
 
 void Geometry::outputAnsys3D()
 {
-    std::ofstream outFile3D ( "Ansys_power_3D.dat" );
+    std::ofstream outFile3D ( name + "_Ansys_power_3D.dat" );
     int i,j,k; // z, y, x indexes
     std::vector<double> x_coords;
     std::vector<double>::iterator it_x_coords;
@@ -341,7 +414,7 @@ void Geometry::outputAnsys3D()
             outFile3D << "\n";
         }
     }
-    std::ofstream outFile2D ( "Ansys_power_2D.dat" );
+    std::ofstream outFile2D ( name + "_Ansys_power_2D.dat" );
     double max_data = 0.0;
 
     outFile2D << "0.0"; // only one "plane" of data
@@ -380,22 +453,24 @@ void Geometry::outputAnsys3D()
 
 void Geometry::outputVTKfiles()
 {
+    std::string name1,name2;
     vtkUnstructuredGridWriter *writer1 = vtkUnstructuredGridWriter::New();
     writer1->SetInputData ( grid );
-    writer1->SetFileName ( "grid.vtk" );
+    name1 = name + "_grid.vtk";
+    writer1->SetFileName ( name1.c_str() );
     writer1->Write();
 
     vtkUnstructuredGridWriter *writer2 = vtkUnstructuredGridWriter::New();
     writer2->SetInputData ( gridCubes );
-    writer2->SetFileName ( "gridCubes.vtk" );
+    name2 = name + "_gridCubes.vtk";
+    writer2->SetFileName ( name2.c_str() );
     writer2->Write();
-
 }
 
 // Not valid for plates geometry!
 void Geometry::outputBackscattering ( double precision )
 {
-    std::ofstream ofile ( "density.dat" );
+    std::ofstream ofile ( name + "_density.dat" );
 
     //supposing al the sections have the same lenght:
     //  number of division of each section:

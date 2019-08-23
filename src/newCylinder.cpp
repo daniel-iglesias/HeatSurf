@@ -31,16 +31,18 @@ newCylinder::newCylinder()
 }
 
 newCylinder::newCylinder ( std::string type_in,
+                     std::string name_in,
                      double z0_in,
                      double length_in,
                      double initDiam_in,
                      double initialAngle_in,
                      double finalAngle_in,
                      int sectors_in )
-        : Geometry ( type_in, z0_in, sectors_in, length_in )
+        : Geometry ( type_in, name_in, z0_in, sectors_in, length_in )
         , initDiam ( initDiam_in )
         , initialAngle ( initialAngle_in)
         , finalAngle ( finalAngle_in)
+
 {
     slope = 0.;
     gridWidth = initDiam/2.;
@@ -79,20 +81,21 @@ void newCylinder::computeGeometry()
     {
         z = i * sectionDif + z0;
         radius = ( initDiam/2. ) - ( z-z0 ) *tan ( slope );
+
 //     radius = (length + z0 - z) * tan(slope);
         for ( j=0; j<sectors; ++j )   //closed chain
         {
             theta = (segmentSize ) * j / sectors + initialAngle; // angle between -pi and pi
-            x = radius * cos ( theta );
-            y = radius * sin ( theta );
+            x = (radius * cos ( theta ));
+            y = (radius * sin ( theta ));
+            //cout << x<< ", "<< y<<", "<<endl;
             nodes[i*sectors + j] = new Node ( x, y, z );
-//       cout << x<< ", "<< y<<", "<< z<<endl;
+//            cout << x<< ", "<< y<<", "<< z<<endl;
         }
     }
 
     theta = segmentSize / sectors; // angle between -pi and pi
-
-    for ( i=0; i<sections-1; ++i )
+        for ( i=0; i<sections-1; ++i )
     {
         zlocal = i * sectionDif;
         ra = ( initDiam/2. ) - zlocal*tan ( slope );
@@ -102,6 +105,7 @@ void newCylinder::computeGeometry()
         a = ra * theta;
         b = rb * theta;
         c = sqrt ( pow ( ra-rb, 2 ) + pow ( sectionDif, 2 ) );
+//        cout<<ra<<","<<rb<<endl;
         for ( j=0; j<sectors-1; ++j )  //last sector is different
         {
             elements.push_back ( new Element ( 0 ) // type quad
@@ -157,8 +161,20 @@ void newCylinder::computeGeometry()
 void newCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
+
+// When function "std::vector rotatePointAroundAxis(double, double, double, std::vector, double)" is ready, the residue will change to this:
+        // double x_p, y_p, zp;
+        // x_p = x+vx*t - shift_x * shift_mag;
+        // y_p = y+vy*t - shift_y * shift_mag;
+        // z_p = z+t-z0;
+        // std::vector rotated_coordinates = rotatePointAroundAxis(x_p, y_p, z_p, rotationVector, angle);
+        // res.writeElement (
+        //  ( pow ( rotated_coordinates[0],2 ) +pow ( rotated_coordinates[1],2 ) - pow ( initDiam/2.,2 ) )
+        //  , 0
+        // );
+
     res.writeElement (
-        ( pow ( x+vx*t,2 ) +pow ( y+vy*t,2 ) - pow ( initDiam/2.,2 ) )
+        ( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) - pow ( initDiam/2.,2 ) )
         , 0
     );
 }
@@ -167,7 +183,7 @@ void newCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf
 {
     double t = conf.readElement ( 0 );
     jac.writeElement (
-        ( 2*vx* ( x+vx*t ) +2*vy* ( y+vy*t ) )
+        ( 2*vx* ( x+vx*t - shift_x * shift_mag ) +2*vy* ( y+vy*t - shift_y * shift_mag ) )
         , 0
         , 0
     );
@@ -199,17 +215,21 @@ void newCylinder::computeIntersection ( Particle* particle )
 void newCylinder::computeNodalPower ( Particle* particle )
 {
         double pi = 3.1416;
-    if ( paramTrajectories.back() > ( z0-particle->getZ() ) &&
-            paramTrajectories.back() <= ( z0-particle->getZ() +length ) )
+    if ( paramTrajectories.back() > ( z0-particle->getZ()/* - shift_z * shift_mag*/) &&
+            paramTrajectories.back() <= ( z0-particle->getZ() + length /*- shift_z * shift_mag*/))
     {
+//        cout << "paramTrajectories.back() = " << paramTrajectories.back() << endl;
+//        cout << " z0-particle->getZ() - shift_z * shift_mag = " <<  z0-particle->getZ() - shift_z * shift_mag << endl;
+//        cout << " z0-particle->getZ() + length - shift_z * shift_mag = " <<  z0-particle->getZ() + length - shift_z * shift_mag << endl;
         // First we compute the intersection point of the last particle computed
         // in the "computeIntersection" function:
         x = particle->getX() + particle->getXdiv() * paramTrajectories.back();
         y = particle->getY() + particle->getYdiv() * paramTrajectories.back();
         z = particle->getZ() + paramTrajectories.back() - z0;
-//     cout << "particle->getZ() = " << particle->getZ() << endl;
-        //   cout << "particle->getZdiv() = " << particle->getZdiv() << endl;
-//     cout << "paramTrajectories.back() = " << paramTrajectories.back() << endl;
+//        cout<<" z: "<<z<<endl;
+//        cout << "particle->getZ() = " << particle->getZ() << endl;
+//        cout << "particle->getZdiv() = " << particle->getZdiv() << endl;
+//        cout << "paramTrajectories.back() = " << paramTrajectories.back() << endl;
 
         // We compute the power (= energy * current) of the particle:
         double particle_power = particle->getEnergy() * 0.1255;
@@ -226,20 +246,20 @@ void newCylinder::computeNodalPower ( Particle* particle )
         if (theta >= initialAngle && theta <= finalAngle){
             double pi = 3.1416;
             double segmentSize = finalAngle - initialAngle;
-            int sector_back = floor ( ( theta - initialAngle) / ( finalAngle -initialAngle ) /*+ pi*/ * sectors ); // BUG: not clear that this rotation is associated with any parameter. Should be clearer
+            int sector_back = floor ( ( theta - initialAngle) / ( finalAngle -initialAngle ) * sectors );
 //      cout << "sector_back = " << sector_back << endl;
         // ... defining another proximity factor:
             double sector_back_factor =
-            1. - fmod ( ( theta /* + pi*/ ) * sectors, ( segmentSize ) ) / ( segmentSize );
-//      cout << "sector_back_factor = " << sector_back_factor << endl;
+            1. - fmod ( ( theta ) * sectors, ( segmentSize ) ) / ( segmentSize );
+//        cout << "sector_back_factor = " << sector_back_factor << endl;
         // Now we distribute the energy of the particle between
         // the nodes in the back section:
 //      cout << nodes.size() << ", trying: " << section_back*sectors + sector_back << endl;
             nodes[section_back*sectors + sector_back]
-            ->addScalar ( particle_power
-                      * section_back_factor
-                      * sector_back_factor
+            ->addScalar ( particle_power *
+            section_back_factor* sector_back_factor
                     );
+//                cout<<"Got here"<<endl;
         // Doing the same for the next node:
             int sector_front = sector_back+1;
         // check if we got into the last node of the section (last sector)
@@ -274,13 +294,13 @@ void newCylinder::computeNodalPower ( Particle* particle )
 
 void newCylinder::outputTable()
 {
-    std::ofstream out ( "top_table.txt" );
+    std::ofstream out ( name + "_top_table.txt" );
 }
 
 
 void newCylinder::outputPowerFile ( int particles )
 {
-    std::ofstream outFile ( "total_power.dat" );
+    std::ofstream outFile ( name + "_total_power.dat" );
     double power2D, z, totalPower ( 0. );
     int i,j;
     double sectionDif = length / ( sections - 1 );
@@ -301,13 +321,14 @@ void newCylinder::outputPowerFile ( int particles )
     }
     cout << "Total Power * particles = " << totalPower << endl;
     cout << "Total Power = " << totalPower / particles << " MW" << endl;
+
 }
 
 void newCylinder::outputPowerDensityFile()
 {
-    std::ofstream outFile ( "power.dat" );
-    std::ofstream outFileParts ( "power_particles.dat" );
-    std::ofstream outFileAnsys ( "Ansys_power_1D.dat" );
+    std::ofstream outFile ( name + "_power.dat" );
+    std::ofstream outFileParts ( name + "_power_particles.dat" );
+    std::ofstream outFileAnsys ( name + "_Ansys_power_1D.dat" );
 
     double power2D, z, totalPower ( 0. );
     int i,j;
@@ -411,7 +432,9 @@ void newCylinder::outputPowerDensityFile()
       ++it_nodes; //get only even nodes
     }
     }
-      cout << "TOTAL POWER = " << totalPower << endl;*/
+      cout << "TOTAL POWER = " << totalPower << endl;
+*/
 }
+
 
 

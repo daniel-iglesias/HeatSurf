@@ -45,7 +45,7 @@ class Cone3 : public Geometry
 public:
     Cone3();
 
-    Cone3 ( std::string, double, double, double, double, double, double, int );
+    Cone3 ( std::string, std::string, double, double, double, double, double, double, int );
 
     ~Cone3();
 

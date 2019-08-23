@@ -43,7 +43,7 @@ class Ogive : public Geometry
 public:
     Ogive();
 
-    Ogive ( std::string, double, double, double, int, double );
+    Ogive ( std::string, std::string, double, double, double, int, double );
 
     ~Ogive();
 

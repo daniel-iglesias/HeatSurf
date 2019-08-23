@@ -31,11 +31,12 @@ Ring::Ring()
 }
 
 Ring::Ring ( std::string type_in,
+             std::string name_in,
              double par0_in,
              double par1_in,
              double par2_in,
              int par3_in )
-        : Geometry ( type_in, par0_in, par3_in, 0. )
+        : Geometry ( type_in, name_in, par0_in, par3_in, 0. )
         , extDiam ( par1_in )
         , intDiam ( par2_in )
 {
@@ -143,7 +144,7 @@ void Ring::computeGeometry()
 }
 
 
-void Ring::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
+void Ring::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf ) // Shift parameters not inputted here
 {
     double t = conf.readElement ( 0 );
     res.writeElement ( 0
@@ -262,13 +263,13 @@ void Ring::computeNodalPower ( Particle* particle )
 
 void Ring::outputTable()
 {
-    std::ofstream out ( "top_table.txt" );
+    std::ofstream out ( name + "top_table.txt" );
 }
 
 
 void Ring::outputPowerFile ( int particles )
 {
-    std::ofstream outFile ( "total_power.dat" );
+    std::ofstream outFile ( name + "total_power.dat" );
     double power2D, z, totalPower;
     int i,j;
     double sectionDif = length / ( sections - 1 );
@@ -293,9 +294,9 @@ void Ring::outputPowerFile ( int particles )
 
 void Ring::outputPowerDensityFile()
 {
-    std::ofstream outFile ( "power.dat" );
-    std::ofstream outFileParts ( "power_particles.dat" );
-    std::ofstream outFileAnsys ( "Ansys_power_1D.dat" );
+    std::ofstream outFile ( name + "power.dat" );
+    std::ofstream outFileParts ( name + "power_particles.dat" );
+    std::ofstream outFileAnsys ( name + "Ansys_power_1D.dat" );
 
     double power2D, z, totalPower;
     int i,j;

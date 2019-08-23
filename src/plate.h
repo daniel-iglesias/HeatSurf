@@ -43,7 +43,7 @@ class Plate : public Geometry
 public:
     Plate();
 
-    Plate ( std::string, double, double, double, double, int );
+    Plate ( std::string, std::string, double, double, double, double, int );
 
     ~Plate();
 

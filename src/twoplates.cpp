@@ -29,12 +29,13 @@
 
 
  TwoPlates::TwoPlates(std::string type_in,
+                      std::string name_in,
                       double length,
                       double initDiam,
                       int sectors,
                       double width_in,
                       double orientation_in)
-   : Geometry(type_in, 0.0, sectors, length)
+   : Geometry(type_in, name_in, 0.0, sectors, length)
      , initSep(initDiam)
      , width(width_in)
      , orientation(orientation_in)
@@ -204,7 +205,7 @@ void TwoPlates::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     res.writeElement (
-        ( pow ( x+vx*t,2 ) +pow ( y+vy*t,2 ) ) *pow ( cos ( slope ),2 )
+        ( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) ) *pow ( cos ( slope ),2 )
         -pow ( t- ( length+z0 ),2 ) *pow ( sin ( slope ),2 )
         , 0
     );
@@ -214,7 +215,7 @@ void TwoPlates::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     jac.writeElement (
-        ( 2*vx* ( x+vx*t ) +2*vy* ( y+vy*t ) ) *pow ( cos ( slope ),2 )
+        ( 2*vx* ( x+vx*t - shift_x * shift_mag ) +2*vy* ( y+vy*t - shift_y * shift_mag ) ) *pow ( cos ( slope ),2 )
         -2* ( t- ( length+z0 ) ) *pow ( sin ( slope ),2 )
         , 0
         , 0
@@ -251,9 +252,9 @@ void TwoPlates::computeNodalPower ( Particle* particle )
 
  void TwoPlates::outputTable()
  {
-   std::ofstream out1("top_table.txt");
-   std::ofstream out2("low_table.txt");
-   std::ofstream out3("top_table.gnu");
+   std::ofstream out1(name + "top_table.txt");
+   std::ofstream out2(name + "low_table.txt");
+   std::ofstream out3(name + "top_table.gnu");
 
    int i,j;
    double y=0, s=0;
@@ -293,7 +294,7 @@ void TwoPlates::computeNodalPower ( Particle* particle )
    std::vector< Element* >::iterator it_elements = elements.begin();
    std::vector<int> connectivity;
    double sectEnergy, totalEnergy=0.;
-   std::ofstream outFile("energy.dat");
+   std::ofstream outFile(name + "energy.dat");
 
    for( it_energies;
         it_energies != energies.end();

@@ -82,8 +82,19 @@ public:
     double getY() { return y; }
     double getZ() { return z; }
 
+    double getShiftX() { return shift_x; }
+    double getShiftY() { return shift_y; }
+    double getShiftZ() { return shift_z; }
+
+    void setX(double x_in) { x=x_in; }
+    void setY(double y_in) { y=y_in; }
+    void setZ(double z_in) { z=z_in; }
+
+    void applyShift (double, double, double);
+
 private:
     double x, y, z, scalar, density;
+    double shift_x, shift_y, shift_z;
     int n_densities3D, n_densities;
 };
 

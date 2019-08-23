@@ -70,7 +70,7 @@ class Geometry
 public:
     Geometry();
 
-    Geometry ( std::string, double, int, double );
+    Geometry ( std::string, std::string, double, int, double);
 
     virtual ~Geometry();
 
@@ -85,7 +85,6 @@ public:
     virtual void computeNodalPower ( Particle* ) = 0;
 
     void computePowerDensity ( int );
-
 
     virtual void outputPowerFile ( int ) = 0;
 
@@ -109,20 +108,26 @@ public:
     vtkFloatArray* getScalar() const
     { return scalar; }
 
+    void setGeometryShift( double, double, double, double );
+
+    void shiftGeometry( );
 
 protected:
 
     std::string type;
+    std::string name;
     int sections, sections3D;
     int sectors, sectors3D;
     double z0, length;
     double gridWidth, gridSpacing;
+    double geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag;
     std::vector< double > paramTrajectories;
     std::map<int, Node*> nodes;
     std::map<int, Node*> grid3Dnodes;
     std::vector< Element* > elements;
     std::vector< Element* > grid3D;
 
+    double shift_x, shift_y, shift_z, shift_mag;
 
     vtkPoints* gridPoints;
     vtkFloatArray* scalar;

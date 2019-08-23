@@ -70,6 +70,8 @@ public:
 private:
     void readGeometry ( std::ifstream & );
 
+    void readGeometryShift ( std::ifstream & );
+
     void readParticles ( std::ifstream & );
 
     void createParticles ( std::ifstream & );
@@ -85,6 +87,7 @@ private:
     std::vector< Particle* > particles; //particles[section][i]
     std::vector<double> theoricParameters;
     Window theWindow;
+
     double particle_shifting_x,
     particle_shifting_y,
     beam_opening_x,

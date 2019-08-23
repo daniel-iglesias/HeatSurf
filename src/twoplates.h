@@ -44,7 +44,7 @@
  public:
      TwoPlates();
 
-     TwoPlates( std::string, double, double, int, double, double );
+     TwoPlates( std::string, std::string, double, double, int, double, double );
 
      ~TwoPlates();
 

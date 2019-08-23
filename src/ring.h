@@ -42,7 +42,7 @@ class Ring : public Geometry
 public:
     Ring();
 
-    Ring ( std::string, double, double, double, int );
+    Ring ( std::string, std::string, double, double, double, int );
 
     ~Ring();
 

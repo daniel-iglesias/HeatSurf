@@ -52,11 +52,16 @@ void Simulation::read ( char * file_name )
     while ( input >> keyword )
     {
         if ( keyword == "GEOMETRY" ) readGeometry ( input );
+
+        else if ( keyword == "SHIFTGEOMETRY" ) readGeometryShift ( input );
+
         else if ( keyword == "PARTICLES" ) readParticles ( input );
 //     else if(keyword == "THEORETICAL") readBeamParameters(input);
         else if ( keyword == "PARTICLEGENERATOR" ) createParticles ( input );
+
         else if ( keyword == "SHIFTPARTICLES" )
             input >> particle_shifting_x >> particle_shifting_y;
+
         else if ( keyword == "STEERBEAM" )
         {
             input >> beam_steering_x >> beam_steering_y;
@@ -77,10 +82,11 @@ void Simulation::readGeometry ( std::ifstream & input )
     input >> keyword;
     if ( keyword == "CONE" )
     {
+        std::string name;
         double z0, length, initDiam;
         int sectors, section_distance;
 
-        input >> z0 >> length >> initDiam >> sectors >> section_distance; // [mm]
+        input >> name >> z0 >> length >> initDiam >> sectors >> section_distance; // [mm]
         cout << "NEW CONE: "
 		<< z0 << ", "
 		<< length << ", "
@@ -88,15 +94,16 @@ void Simulation::readGeometry ( std::ifstream & input )
 		<< sectors << ", "
 		<< section_distance << endl; // [mm]
 
-        geometries.push_back ( new Cone ( "CONE", z0, length, initDiam, sectors ) );
+        geometries.push_back ( new Cone ( "CONE", name, z0, length, initDiam, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
     if ( keyword == "CONE2" )
     {
+        std::string name;
         double z0, length, initDiam, finalDiam;
         int sectors, section_distance;
 
-        input >> z0 >> length >> initDiam >> finalDiam >> sectors >> section_distance; // [mm]
+        input >> name >> z0 >> length >> initDiam >> finalDiam >> sectors >> section_distance; // [mm]
         cout << "NEW CONE2: "
 		<< z0 << ", "
 		<< length << ", "
@@ -105,7 +112,7 @@ void Simulation::readGeometry ( std::ifstream & input )
 		<< sectors << ", "
 		<< section_distance << endl; // [mm]
 
-        geometries.push_back ( new Cone2 ( "CONE2", z0, length, initDiam, finalDiam, sectors ) );
+        geometries.push_back ( new Cone2 ( "CONE2", name, z0, length, initDiam, finalDiam, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
 
@@ -114,10 +121,11 @@ void Simulation::readGeometry ( std::ifstream & input )
 
         if ( keyword == "CONE3" )
     {
-        double z0, length, initDiam, finalDiam,initialAngle, finalAngle;
+        std::string name;
+        double z0, length, initDiam, finalDiam,initialAngle, finalAngle ;
         int sectors, section_distance;
 
-        input >> z0 >> length >> initDiam >> finalDiam >> initialAngle >> finalAngle >>  sectors >> section_distance; // [mm]
+        input >> name >> z0 >> length >> initDiam >> finalDiam >> initialAngle >> finalAngle >>  sectors >> section_distance; // [mm]
         cout << "NEW CONE3: "
 		<< z0 << ", "
 		<< length << ", "
@@ -125,32 +133,35 @@ void Simulation::readGeometry ( std::ifstream & input )
 		<< finalDiam << ", "
 		<< initialAngle << ", "
 		<< finalAngle << ", "
-		<< sectors << ", "
+        << sectors << ", "
 		<< section_distance << endl; // [mm]
 
-        geometries.push_back ( new Cone3 ( "CONE3", z0, length, initDiam, finalDiam, initialAngle, finalAngle,  sectors ) );
+        geometries.push_back ( new Cone3 ( "CONE3", name, z0, length, initDiam, finalDiam, initialAngle, finalAngle,  sectors ) );
         geometries.back()->setSections ( section_distance );
     }
 
-    else if(keyword == "RING"){
+    else if(keyword == "RING")
+    {
+        std::string name;
         double z0, length, internalDiam, externalDiam;
         int sectors, section_distance;
 
-        input >> z0 >> externalDiam >> internalDiam
+        input >> name >> z0 >> externalDiam >> internalDiam
               >> sectors >> section_distance; // [mm]
 
         geometries.push_back
-            ( new Ring("RING", z0, externalDiam, internalDiam, sectors ) );
+            ( new Ring("RING", name, z0, externalDiam, internalDiam, sectors ) );
         geometries.back()->setSections(section_distance);
       }
 
 
     else if ( keyword == "CYLINDER" )
     {
+        std::string name;
         double z0, length, initDiam;
         int sectors, section_distance;
 
-        input >> z0 >> length >> initDiam >> sectors >> section_distance; // [mm]
+        input >> name >> z0 >> length >> initDiam >> sectors >> section_distance; // [mm]
         cout << z0 << ", "
              << length << ", "
              << initDiam << ", "
@@ -158,7 +169,7 @@ void Simulation::readGeometry ( std::ifstream & input )
              << section_distance <<  endl; // [mm]
 
         geometries.push_back
-        ( new Cylinder ( "CYLINDER", z0, length, initDiam, sectors ) );
+        ( new Cylinder ( "CYLINDER", name, z0, length, initDiam, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
 
@@ -166,11 +177,14 @@ void Simulation::readGeometry ( std::ifstream & input )
     //Dan input here
     else if ( keyword == "NEWCYLINDER" )
     {
+        std::string name;
         double z0, length, initDiam, initialAngle, finalAngle;
         int sectors, section_distance;
 
-        input >> z0 >> length >> initDiam >> initialAngle >> finalAngle >> sectors >> section_distance; // [mm]
-        cout << z0 << ", "
+        input >> name >> z0 >> length >> initDiam >> initialAngle >> finalAngle >> sectors >> section_distance; // [mm]
+        cout << "NEW CYLINDER "
+             << name << ", "
+             << z0 << ", "
              << length << ", "
              << initDiam << ", "
              << initialAngle << ", "
@@ -179,12 +193,13 @@ void Simulation::readGeometry ( std::ifstream & input )
              << section_distance <<  endl; // [mm]
 
         geometries.push_back
-        ( new newCylinder ( "NEWCYLINDER", z0, length, initDiam, initialAngle, finalAngle, sectors ) );
+        ( new newCylinder ( "NEWCYLINDER", name, z0, length, initDiam, initialAngle, finalAngle, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
 
     else if ( keyword == "OGIVE" )
     {
+        std::string name;
         double z0, length, initDiam, ogive_radius;
         int sectors, section_distance;
 
@@ -192,7 +207,7 @@ void Simulation::readGeometry ( std::ifstream & input )
         >> ogive_radius; // [mm]
 
         geometries.push_back
-        ( new Ogive ( "OGIVE", z0, length, initDiam, sectors, ogive_radius ) );
+        ( new Ogive ( "OGIVE", name, z0, length, initDiam, sectors, ogive_radius ) );
         geometries.back()->setSections ( section_distance );
     }
 
@@ -208,10 +223,11 @@ void Simulation::readGeometry ( std::ifstream & input )
 
    else if(keyword == "PLATE")
     {
+        std::string name;
         double z0, length, initDiam, angle;
         int sectors, section_distance;
 
-        input >> z0 >> length >> initDiam >> angle >> sectors >> section_distance; // [mm]
+        input >> name >> z0 >> length >> initDiam >> angle >> sectors >> section_distance; // [mm]
         cout << z0 << ", "
              << length << ", "
              << initDiam << ", "
@@ -220,20 +236,40 @@ void Simulation::readGeometry ( std::ifstream & input )
              << section_distance <<  endl; // [mm]
 
         geometries.push_back
-        ( new Plate ( "PLATE", z0, length, initDiam, angle, sectors ) );
+        ( new Plate ( "PLATE", name, z0, length, initDiam, angle, sectors ) );
         geometries.back()->setSections ( section_distance );
     }
 
 
-   else if(keyword == "2PLATES"){
+   else if(keyword == "2PLATES")
+   {
+     std::string name;
      double length, initDiam, width, orientation;
      int sectors;
 
-     input >> length >> initDiam >> sectors >> width >> orientation; // units [mm]
+     input >> name >> length >> initDiam >> sectors >> width >> orientation; // units [mm]
 
-     geometries.push_back( new TwoPlates("2PLATES", length, initDiam, sectors, width, orientation ) );
-   }
+     geometries.push_back( new TwoPlates("2PLATES", name, length, initDiam, sectors, width, orientation ) );
+    }
+
 }
+//****************************************************************************
+
+void Simulation::readGeometryShift ( std::ifstream & input )
+{
+    double geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag; //units [mm]
+
+    input >> geometry_shift_x >> geometry_shift_y >> geometry_shift_z >> geometry_shift_mag;
+
+    cout <<"GEOMETRY SHIFT: " << "X = "
+         << geometry_shift_x << ", Y = "
+         << geometry_shift_y << ", Z = "
+         << geometry_shift_z << ", Magnitude = "
+         << geometry_shift_mag << "\n " << endl;
+
+    geometries.back()->setGeometryShift(geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag);
+}
+
 
 
 void Simulation::readParticles ( std::ifstream & input )
@@ -268,6 +304,7 @@ void Simulation::readParticles ( std::ifstream & input )
         y *= beam_opening_y;
         x += particle_shifting_x;
         y += particle_shifting_y;
+        cout<<"x = "<<x<<", y = "<<y<<endl;
 //        z /*+*/= z;
         xdiv += beam_steering_x;
         ydiv += beam_steering_y;
@@ -508,17 +545,14 @@ void Simulation::compute()
 {
     std::vector< Geometry* >::iterator it_geom;
     std::vector< Particle* >::iterator it_part;
-    for ( it_geom = geometries.begin();
-            it_geom!= geometries.end();
-            ++it_geom
-        )
+
+    for ( it_geom = geometries.begin(); it_geom!= geometries.end(); ++it_geom )
     {
         ( *it_geom )->computeGeometry();
+        ( *it_geom )->computeGrid3D();
+        ( *it_geom )->shiftGeometry();
 
-        for ( it_part = particles.begin();
-                it_part!= particles.end();
-                ++it_part
-            )
+        for ( it_part = particles.begin(); it_part!= particles.end(); ++it_part )
         {
             ( *it_geom )->computeIntersection ( *it_part );
 
@@ -531,43 +565,43 @@ void Simulation::compute()
 //         (*it_geom)->computeNodalPower( theoricParameters );
 //       }
         }
-        ( *it_geom )->computeGrid3D( );
+
         ( *it_geom )->computePowerDensity ( particles.size() );
     }
-
 }
 
 void Simulation::output()
 {
-    std::vector<Geometry*>::iterator it_geom;
-    for ( it_geom = geometries.begin();
-            it_geom!= geometries.end();
-            ++it_geom
-        )
-    {
-        ( *it_geom )->outputPowerFile ( particles.size() );
+// Need to create the files for all geometries
 
-        ( *it_geom )->outputPowerDensityFile();
+        std::vector<Geometry*>::iterator it_geom;
+        for ( it_geom = geometries.begin(); it_geom!= geometries.end(); ++it_geom){
 
-        theWindow.addGeometry( *it_geom );
+            (*it_geom )->outputPowerFile ( particles.size() );
 
-//        ( *it_geom )->drawGeometry();
+            ( *it_geom )->outputPowerDensityFile();
 
-//        ( *it_geom )->drawScalar( true );
+            theWindow.addGeometry( *it_geom );
 
-        ( *it_geom )->outputTable();
+//          ( *it_geom )->drawGeometry(); # Now Part of 'Window' class
 
-//        ( *it_geom )->drawGrid();
+//          ( *it_geom )->drawScalar( true );
 
-//        ( *it_geom )->drawGridScalar();
+            ( *it_geom )->outputTable();
 
-        ( *it_geom )->outputAnsys3D();
+//          ( *it_geom )->drawGrid();
 
-        ( *it_geom )->outputVTKfiles();
+//          ( *it_geom )->drawGridScalar();
 
-        if ( backscattering_section_distance > 0. )
-            ( *it_geom )->outputBackscattering ( backscattering_section_distance );
-    }
+            ( *it_geom )->outputAnsys3D();
+
+            ( *it_geom )->outputVTKfiles();
+
+            if ( backscattering_section_distance > 0. )
+                ( *it_geom )->outputBackscattering ( backscattering_section_distance );
+            }
+
+
     theWindow.drawGeometry();
     theWindow.drawScalar( true );
 }

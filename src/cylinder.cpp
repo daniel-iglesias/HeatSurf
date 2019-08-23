@@ -31,11 +31,12 @@ Cylinder::Cylinder()
 }
 
 Cylinder::Cylinder ( std::string type_in,
+                     std::string name_in,
                      double par0_in,
                      double par1_in,
                      double par2_in,
                      int par3_in )
-        : Geometry ( type_in, par0_in, par3_in, par1_in )
+        : Geometry ( type_in, name_in, par0_in, par3_in, par1_in )
         , initDiam ( par2_in )
 {
     slope = 0.;
@@ -151,7 +152,7 @@ void Cylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     res.writeElement (
-        ( pow ( x+vx*t,2 ) +pow ( y+vy*t,2 ) - pow ( initDiam/2.,2 ) )
+        ( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) - pow ( initDiam/2.,2 ) )
         , 0
     );
 }
@@ -160,7 +161,7 @@ void Cylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     jac.writeElement (
-        ( 2*vx* ( x+vx*t ) +2*vy* ( y+vy*t ) )
+        ( 2*vx* ( x+vx*t - shift_x * shift_mag ) +2*vy* ( y+vy*t - shift_y * shift_mag ) )
         , 0
         , 0
     );
@@ -191,8 +192,8 @@ void Cylinder::computeIntersection ( Particle* particle )
 
 void Cylinder::computeNodalPower ( Particle* particle )
 {
-    if ( paramTrajectories.back() > ( z0-particle->getZ() ) &&
-            paramTrajectories.back() <= ( z0-particle->getZ() +length ) )
+    if ( paramTrajectories.back() > ( z0-particle->getZ() - shift_z * shift_mag) &&
+            paramTrajectories.back() <= ( z0-particle->getZ() +length - shift_z * shift_mag ) )
     {
         // First we compute the intersection point of the last particle computed
         // in the "computeIntersection" function:
@@ -264,13 +265,13 @@ void Cylinder::computeNodalPower ( Particle* particle )
 
 void Cylinder::outputTable()
 {
-    std::ofstream out ( "top_table.txt" );
+    std::ofstream out ( name + "top_table.txt" );
 }
 
 
 void Cylinder::outputPowerFile ( int particles )
 {
-    std::ofstream outFile ( "total_power.dat" );
+    std::ofstream outFile ( name + "total_power.dat" );
     double power2D, z, totalPower ( 0. );
     int i,j;
     double sectionDif = length / ( sections - 1 );
@@ -295,9 +296,9 @@ void Cylinder::outputPowerFile ( int particles )
 
 void Cylinder::outputPowerDensityFile()
 {
-    std::ofstream outFile ( "power.dat" );
-    std::ofstream outFileParts ( "power_particles.dat" );
-    std::ofstream outFileAnsys ( "Ansys_power_1D.dat" );
+    std::ofstream outFile ( name + "power.dat" );
+    std::ofstream outFileParts ( name + "power_particles.dat" );
+    std::ofstream outFileAnsys ( name + "Ansys_power_1D.dat" );
 
     double power2D, z, totalPower ( 0. );
     int i,j;

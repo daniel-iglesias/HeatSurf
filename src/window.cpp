@@ -154,7 +154,7 @@ void Window::drawScalar( bool )
                 }
     }
 
-    table->SetTableRange ( minimum , maximum ) ; // BUG: This should get the maximum range amongst all geometries
+    table->SetTableRange ( minimum , maximum ) ;
     table->SetHueRange ( 0.7, 0 );
 //   table->SetSaturationRange (0, 1);
 //    table->SetValueRange ( 1, 1 );
@@ -255,7 +255,7 @@ void Window::drawGrid()
 //    grid3Dwidget->InteractiveOn();
 //
 }
-//
+////
 void Window::drawGridScalar( bool )
 {
 //    //   # Define the value of a scalar field (in this case the scalar)

@@ -35,4 +35,11 @@ Node::~Node()
 {
 }
 
-
+void Node::applyShift( double x_in, double y_in, double z_in )
+{   shift_x = x_in;
+    shift_y = y_in;
+    shift_z = z_in;
+    x += shift_x;
+    y += shift_y;
+    z += shift_z;
+}

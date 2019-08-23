@@ -31,11 +31,12 @@ Cone::Cone()
 }
 
 Cone::Cone ( std::string type_in,
+             std::string name_in,
              double z0_in,
              double length_in,
              double initDiam_in,
              int sectors_in)
-        : Geometry ( type_in, z0_in, sectors_in, length_in )
+        : Geometry ( type_in, name_in, z0_in, sectors_in, length_in )
         , initDiam ( initDiam_in )
 {
     slope = atan2 ( initDiam/2., length );
@@ -150,7 +151,7 @@ void Cone::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     res.writeElement (
-        ( pow ( x+vx*t,2 ) +pow ( y+vy*t,2 ) ) *pow ( cos ( slope ),2 )
+        ( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) ) *pow ( cos ( slope ),2 )
         -pow ( t- ( length+z0 ),2 ) *pow ( sin ( slope ),2 )
         , 0
     );
@@ -160,7 +161,7 @@ void Cone::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
     jac.writeElement (
-        ( 2*vx* ( x+vx*t ) +2*vy* ( y+vy*t ) ) *pow ( cos ( slope ),2 )
+        ( 2*vx* ( x+vx*t - shift_x * shift_mag ) +2*vy* ( y+vy*t - shift_y * shift_mag ) ) *pow ( cos ( slope ),2 )
         -2* ( t- ( length+z0 ) ) *pow ( sin ( slope ),2 )
         , 0
         , 0
@@ -192,8 +193,8 @@ void Cone::computeIntersection ( Particle* particle )
 
 void Cone::computeNodalPower ( Particle* particle )
 {
-    if ( paramTrajectories.back() > z0 &&
-            paramTrajectories.back() <= ( z0+length ) )
+    if ( paramTrajectories.back() > z0 - shift_z * shift_mag &&
+            paramTrajectories.back() <= ( z0+length - shift_z * shift_mag ) )
     {
         // First we compute the intersection point of the last particle computed
         // in the "computeIntersection" function:
@@ -265,13 +266,13 @@ void Cone::computeNodalPower ( Particle* particle )
 
 void Cone::outputTable()
 {
-    std::ofstream out ( "top_table.txt" );
+    std::ofstream out ( name + "top_table.txt" );
 }
 
 
 void Cone::outputPowerFile ( int particles )
 {
-    std::ofstream outFile ( "total_power.dat" );
+    std::ofstream outFile ( name + "total_power.dat" );
     double power2D, z, totalPower ( 0. );
     int i,j;
     double sectionDif = length / ( sections - 1 );
@@ -296,9 +297,9 @@ void Cone::outputPowerFile ( int particles )
 
 void Cone::outputPowerDensityFile()
 {
-    std::ofstream outFile ( "power.dat" );
-    std::ofstream outFileParts ( "power_particles.dat" );
-    std::ofstream outFileAnsys ( "Ansys_power_1D.dat" );
+    std::ofstream outFile ( name + "power.dat" );
+    std::ofstream outFileParts ( name + "power_particles.dat" );
+    std::ofstream outFileAnsys ( name + "Ansys_power_1D.dat" );
 
     double power2D, z, totalPower ( 0. );
     int i,j;
