@@ -163,7 +163,7 @@ void newCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf 
     double t = conf.readElement ( 0 );
 
 // When function "std::vector rotatePointAroundAxis(double, double, double, std::vector, double)" is ready, the residue will change to this:
-        // double x_p, y_p, zp;
+        // double x_p, y_p, z_p;
         // x_p = x+vx*t - shift_x * shift_mag;
         // y_p = y+vy*t - shift_y * shift_mag;
         // z_p = z+t-z0;

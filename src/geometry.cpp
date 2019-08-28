@@ -74,6 +74,7 @@ Geometry::~Geometry()
 {
 }
 
+
 void Geometry::setGeometryShift(
        double geometry_shift_x,
        double geometry_shift_y,
@@ -101,7 +102,7 @@ void Geometry::shiftGeometry( )
         it->second->setX( it->second->getX() + (shift_x * shift_mag) );
         it->second->setY( it->second->getY() + (shift_y * shift_mag) );
         it->second->setZ( it->second->getZ() + (shift_z * shift_mag) );
-        cout<<"x: "<<it->second->getX()<<" y: "<<it->second->getY()<<" z: "<<it->second->getZ()<<endl;
+//        cout<<"x: "<<it->second->getX()<<" y: "<<it->second->getY()<<" z: "<<it->second->getZ()<<endl;
         }
 
 // shift grid3Dnodes
@@ -143,6 +144,165 @@ double NewVecZ2;
         grid3DPoints->SetPoint(i, NewVecX2, NewVecY2, NewVecZ2);
         }
 }
+
+
+
+void Geometry::setGeometryRotation(
+        double rotationVectorX,
+        double rotationVectorY,
+        double rotationVectorZ,
+        double rotationAngle )
+{
+xVec_Rotation = rotationVectorX;
+yVec_Rotation = rotationVectorY;
+zVec_Rotation = rotationVectorZ;
+angleRotation = rotationAngle;
+
+}
+
+void Geometry::rotateGeometry ( )
+{
+// Rotating each individual coordinate around a point,
+// around a unit vector plane and a set rotation angle
+// Will need to rotate nodes, grid3Dnodes, gridPoints, grid3DPoints
+
+    double u, v, w, angle;
+    double rotationMatrix[4][4];
+    double inputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    double outputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    u = xVec_Rotation;
+    v = yVec_Rotation;
+    w = zVec_Rotation;
+    angle = angleRotation;
+
+if (u > 0.001 || v > 0.001 || w > 0.001 ) //making sure this isnt used if there is no rotation
+{
+// Setting up Rotation matrix
+    double L = (u * u + v * v + w * w);
+    angle = angle * M_PI / 180.0; //converting to radian value
+    double u2 = u * u;
+    double v2 = v * v;
+    double w2 = w * w;
+
+//    cout<< u << ", " << v << ", " << w << endl;
+
+    rotationMatrix[0][0] = (u2 + (v2 + w2) * cos(angle)) / L;
+    rotationMatrix[0][1] = (u * v * (1 - cos(angle)) - w * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[0][2] = (u * w * (1 - cos(angle)) + v * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[0][3] = 0.0;
+
+    rotationMatrix[1][0] = (u * v * (1 - cos(angle)) + w * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[1][1] = (v2 + (u2 + w2) * cos(angle)) / L;
+    rotationMatrix[1][2] = (v * w * (1 - cos(angle)) - u * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[1][3] = 0.0;
+
+    rotationMatrix[2][0] = (u * w * (1 - cos(angle)) - v * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[2][1] = (v * w * (1 - cos(angle)) + u * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[2][2] = (w2 + (u2 + v2) * cos(angle)) / L;
+    rotationMatrix[2][3] = 0.0;
+
+    rotationMatrix[3][0] = 0.0;
+    rotationMatrix[3][1] = 0.0;
+    rotationMatrix[3][2] = 0.0;
+    rotationMatrix[3][3] = 1.0;
+
+// Shifting nodes
+    for (auto it= nodes.begin(); it!= nodes.end(); ++it)
+    {
+        inputMatrix[0][0] = it->second->getX();
+        inputMatrix[1][0] = it->second->getY();
+        inputMatrix[2][0] = it->second->getZ();
+        inputMatrix[3][0] = 1.0;
+
+        for(int i = 0; i < 4; i++ ){
+            for(int j = 0; j < 1; j++){
+                outputMatrix[i][j] = 0;
+                    for(int k = 0; k < 4; k++){
+                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                }
+            }
+        }
+        it->second->setX( outputMatrix[0][0] ) ;
+        it->second->setY( outputMatrix[1][0] ) ;
+        it->second->setZ( outputMatrix[2][0] ) ;
+
+//        cout<< inputMatrix[0][0] << endl;
+//        cout<< outputMatrix[0][0] /*<< ", "<< outputMatrix[1][0] << ", "<< outputMatrix[2][0] */<< endl;
+    }
+
+// Shifting grid3Dnodes
+    for (auto it= grid3Dnodes.begin(); it!= grid3Dnodes.end(); ++it)
+    {
+        inputMatrix[0][0] = it->second->getX();
+        inputMatrix[1][0] = it->second->getY();
+        inputMatrix[2][0] = it->second->getZ();
+        inputMatrix[3][0] = 1.0;
+
+        for(int i = 0; i < 4; i++ ){
+            for(int j = 0; j < 1; j++){
+                outputMatrix[i][j] = 0;
+                    for(int k = 0; k < 4; k++){
+                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                }
+            }
+        }
+        it->second->setX( outputMatrix[0][0] ) ;
+        it->second->setY( outputMatrix[1][0] ) ;
+        it->second->setZ( outputMatrix[2][0] ) ;
+
+    }
+
+// Shifting gridPoints
+    double gridPointsVec[2];
+    for (int a = 0; a<gridPoints->GetNumberOfPoints(); a++)
+    {
+        gridPoints->GetPoint(a, gridPointsVec);
+        inputMatrix[0][0] = gridPointsVec[0];
+        inputMatrix[1][0] = gridPointsVec[1];
+        inputMatrix[2][0] = gridPointsVec[2];
+        inputMatrix[3][0] = 1.0;
+
+        for(int i = 0; i < 4; i++ ){
+            for(int j = 0; j < 1; j++){
+                outputMatrix[i][j] = 0;
+                    for(int k = 0; k < 4; k++){
+                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                }
+            }
+        }
+
+        gridPoints->SetPoint(a, outputMatrix[0][0], outputMatrix[1][0], outputMatrix[2][0]);
+//        cout<< inputMatrix[0][0] << ", "<< inputMatrix[1][0] << ", "<< inputMatrix[2][0] << endl;
+//        cout<< outputMatrix[0][0] << ", "<< outputMatrix[1][0] << ", "<< outputMatrix[2][0] << endl;
+//        cout<< rotationMatrix[0][2] << ", "<< rotationMatrix[1][0] << ", "<< rotationMatrix[2][0] << endl;
+
+    }
+
+// Shifting grid3DPoints
+    double grid3DPointsVec[2];
+    for (int a = 0; a<grid3DPoints->GetNumberOfPoints(); a++)
+    {
+        grid3DPoints->GetPoint(a, grid3DPointsVec);
+        inputMatrix[0][0] = grid3DPointsVec[0];
+        inputMatrix[1][0] = grid3DPointsVec[1];
+        inputMatrix[2][0] = grid3DPointsVec[2];
+        inputMatrix[3][0] = 1.0;
+
+        for(int i = 0; i < 4; i++ ){
+            for(int j = 0; j < 1; j++){
+                outputMatrix[i][j] = 0;
+                    for(int k = 0; k < 4; k++){
+                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                }
+            }
+        }
+
+        grid3DPoints->SetPoint(a, outputMatrix[0][0], outputMatrix[1][0], outputMatrix[2][0]);
+    }
+//    cout<<"got here"<<endl;
+  } // if statement
+}
+
 
 void Geometry::computeGrid3D( )
 {
@@ -329,15 +489,80 @@ void Geometry::computePowerDensity ( int numParticles )
     double sectionDif = length / ( sections3D - 1 );
     int elem_number;
 
-    for ( it_nodes = nodes.begin();
-            it_nodes!= it_nodes_end;
-            ++it_nodes )
+
+// Redefining rotation Matrix
+
+    double u, v, w, angle;
+    double rotationMatrix[4][4];
+    double inputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    double outputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    double temp_x, temp_y, temp_z;
+    u = xVec_Rotation;
+    v = yVec_Rotation;
+    w = zVec_Rotation;
+    angle = - angleRotation; // Rotating back to 0
+
+  if (u > 0.001 || v > 0.001 || w > 0.001 ) // This is done because when u,v,w = 0 there are rounding errors
+  {
+    double L = (u * u + v * v + w * w);
+    angle = angle * M_PI / 180.0; //converting to radian value
+    double u2 = u * u;
+    double v2 = v * v;
+    double w2 = w * w;
+
+    rotationMatrix[0][0] = (u2 + (v2 + w2) * cos(angle)) / L;
+    rotationMatrix[0][1] = (u * v * (1 - cos(angle)) - w * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[0][2] = (u * w * (1 - cos(angle)) + v * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[0][3] = 0.0;
+
+    rotationMatrix[1][0] = (u * v * (1 - cos(angle)) + w * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[1][1] = (v2 + (u2 + w2) * cos(angle)) / L;
+    rotationMatrix[1][2] = (v * w * (1 - cos(angle)) - u * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[1][3] = 0.0;
+
+    rotationMatrix[2][0] = (u * w * (1 - cos(angle)) - v * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[2][1] = (v * w * (1 - cos(angle)) + u * sqrt(L) * sin(angle)) / L;
+    rotationMatrix[2][2] = (w2 + (u2 + v2) * cos(angle)) / L;
+    rotationMatrix[2][3] = 0.0;
+
+    rotationMatrix[3][0] = 0.0;
+    rotationMatrix[3][1] = 0.0;
+    rotationMatrix[3][2] = 0.0;
+    rotationMatrix[3][3] = 1.0;
+
+// Rotating the points back to its original position
+    for ( it_nodes = nodes.begin(); it_nodes!= it_nodes_end; ++it_nodes )
+    {
+        inputMatrix[0][0] = it_nodes->second->getX();
+        inputMatrix[1][0] = it_nodes->second->getY();
+        inputMatrix[2][0] = it_nodes->second->getZ();
+        inputMatrix[3][0] = 1.0;
+
+        for(int i = 0; i < 4; i++ )
+        {
+            for(int j = 0; j < 1; j++){
+                outputMatrix[i][j] = 0;
+                    for(int k = 0; k < 4; k++){
+                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                }
+            }
+        }
+        it_nodes->second->setX( round (outputMatrix[0][0]*1000.0) / 1000.0) ; // Rounding done since there is a rounding error
+        it_nodes->second->setY( round (outputMatrix[1][0]*1000.0) / 1000.0) ;
+        it_nodes->second->setZ( round (outputMatrix[2][0]*1000.0) / 1000.0) ;
+    }
+  }
+
+    for ( it_nodes = nodes.begin(); it_nodes!= it_nodes_end; ++it_nodes )
     { // Finding the nodes in the local coordinate system
+      // Need to subtract rotation shift to x, y, and z
+      //cout<<"x: "<<it_nodes->second->getX()<<" y: "<<it_nodes->second->getY()<<" z: "<<it_nodes->second->getZ()<<endl;
+
         x = it_nodes->second->getX() - shift_x * shift_mag;
         y = it_nodes->second->getY() - shift_y * shift_mag;
         z = it_nodes->second->getZ() - shift_z * shift_mag;
 //        cout<<"x: "<<x<<" y: "<<y<<" z: "<<z<<endl;
-        i = floor ( ( z-z0 ) / sectionDif );
+        i = floor ( ( z - z0 ) / sectionDif );
 //          y = gridWidth*( 2.*j/sectors - 1. );
 //          y / gridWidth +1 = ( 2.*j/sectors  );
         j = floor ( ( y/gridWidth + 1. ) * sectors3D/2. );
@@ -345,17 +570,19 @@ void Geometry::computePowerDensity ( int numParticles )
         k = floor ( ( x/gridWidth + 1. ) * sectors3D/2. );
 
         elem_number = i*sectors3D*sectors3D + j*sectors3D + k;
-//          cout << "x="<< x <<",y="<< y <<", z="<< z << endl;
-//          cout << "i="<< i <<",j="<< j <<", k="<< k
+//        cout << "x="<< x <<",y="<< y <<", z="<< z << endl;
+//        cout << "i="<< i <<",j="<< j <<", k="<< k << endl;
 //              <<"; elem_number="<< elem_number
 //              <<"; elem_size="<< grid3D.size() << endl;
         if ( i < floor ( length/sectionDif ) )
             grid3D[elem_number]->addDensity3D ( it_nodes->second->getDensity() );
+//        cout<<"got here"<<endl;
+//        cout<<floor (length/sectionDif)<<endl;
     }
+
     // Now the mean density is passed to the eight nodes in the vertices of each
     // brick element using the special function node::addDensity3D(double).
     it_elements = grid3D.begin();
-
     for ( it_elements;
             it_elements != grid3D.end();
             ++it_elements )

@@ -55,6 +55,8 @@ void Simulation::read ( char * file_name )
 
         else if ( keyword == "SHIFTGEOMETRY" ) readGeometryShift ( input );
 
+        else if ( keyword == "ROTATEGEOMETRY" ) readGeometryRotation ( input );
+
         else if ( keyword == "PARTICLES" ) readParticles ( input );
 //     else if(keyword == "THEORETICAL") readBeamParameters(input);
         else if ( keyword == "PARTICLEGENERATOR" ) createParticles ( input );
@@ -270,6 +272,22 @@ void Simulation::readGeometryShift ( std::ifstream & input )
     geometries.back()->setGeometryShift(geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag);
 }
 
+//****************************************************************************
+
+void Simulation::readGeometryRotation ( std::ifstream & input )
+{
+   double rotationAngle, rotationVectorX, rotationVectorY, rotationVectorZ;
+
+   input >> rotationVectorX >> rotationVectorY >>rotationVectorZ >> rotationAngle;
+
+   cout << "GEOMETRY ROTATION: "
+        << rotationVectorX << ", "
+        << rotationVectorY << ", "
+        << rotationVectorZ << ", "
+        << rotationAngle << endl;
+
+   geometries.back()->setGeometryRotation(rotationVectorX, rotationVectorY, rotationVectorZ, rotationAngle);
+}
 
 
 void Simulation::readParticles ( std::ifstream & input )
@@ -304,7 +322,7 @@ void Simulation::readParticles ( std::ifstream & input )
         y *= beam_opening_y;
         x += particle_shifting_x;
         y += particle_shifting_y;
-        cout<<"x = "<<x<<", y = "<<y<<endl;
+//        cout<<"x = "<<x<<", y = "<<y<<endl;
 //        z /*+*/= z;
         xdiv += beam_steering_x;
         ydiv += beam_steering_y;
@@ -551,6 +569,7 @@ void Simulation::compute()
         ( *it_geom )->computeGeometry();
         ( *it_geom )->computeGrid3D();
         ( *it_geom )->shiftGeometry();
+        ( *it_geom )->rotateGeometry();
 
         for ( it_part = particles.begin(); it_part!= particles.end(); ++it_part )
         {
@@ -562,17 +581,15 @@ void Simulation::compute()
             }
 
 //       else{
-//         (*it_geom)->computeNodalPower( theoricParameters );
+//       (*it_geom)->computeNodalPower( theoricParameters );
 //       }
         }
-
-        ( *it_geom )->computePowerDensity ( particles.size() );
+       ( *it_geom )->computePowerDensity ( particles.size() );
     }
 }
 
 void Simulation::output()
 {
-// Need to create the files for all geometries
 
         std::vector<Geometry*>::iterator it_geom;
         for ( it_geom = geometries.begin(); it_geom!= geometries.end(); ++it_geom){

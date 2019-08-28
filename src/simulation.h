@@ -72,6 +72,8 @@ private:
 
     void readGeometryShift ( std::ifstream & );
 
+    void readGeometryRotation ( std::ifstream & );
+
     void readParticles ( std::ifstream & );
 
     void createParticles ( std::ifstream & );

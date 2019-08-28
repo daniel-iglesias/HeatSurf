@@ -43,7 +43,7 @@ class newCylinder : public Geometry
 public:
     newCylinder();
 
-    newCylinder ( std::string, std::string, double, double, double, double, double,int );
+    newCylinder ( std::string, std::string, double, double, double, double, double, int );
 
     ~newCylinder();
 

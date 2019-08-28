@@ -112,6 +112,10 @@ public:
 
     void shiftGeometry( );
 
+    void setGeometryRotation ( double, double, double, double );
+
+    void rotateGeometry( );
+
 protected:
 
     std::string type;
@@ -120,14 +124,18 @@ protected:
     int sectors, sectors3D;
     double z0, length;
     double gridWidth, gridSpacing;
-    double geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag;
     std::vector< double > paramTrajectories;
     std::map<int, Node*> nodes;
     std::map<int, Node*> grid3Dnodes;
     std::vector< Element* > elements;
     std::vector< Element* > grid3D;
 
+    double geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag;
     double shift_x, shift_y, shift_z, shift_mag;
+
+    double rotationAngle, rotationVectorX, rotationVectorY, rotationVectorZ;
+    double xVec_Rotation, yVec_Rotation, zVec_Rotation, angleRotation;
+    double u, v, w, angle;
 
     vtkPoints* gridPoints;
     vtkFloatArray* scalar;
