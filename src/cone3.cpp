@@ -160,11 +160,23 @@ void Cone3::computeGeometry()
 void Cone3::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf )
 {
     double t = conf.readElement ( 0 );
+    double x_p, y_p, z_p;
+
+    x_p = x+vx*t - shift_x * shift_mag; // Particles need to be shifted back to the original position
+    y_p = y+vy*t - shift_y * shift_mag;
+    z_p = z+t-z0;
+    std::vector<double> rotated_coordinates = inverseRotatePointAroundGeometryAxis(x_p, y_p, z_p);
+
     res.writeElement (
-        (( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) ) *pow ( cos ( slope ),2 )
-        -pow ( t- ( apparentLength+z0 ),2 )*pow ( sin ( slope ),2 ))
+        ( pow ( rotated_coordinates[0],2 ) +pow ( rotated_coordinates[1],2 ) - pow ( initDiam/2.,2 ) )
         , 0
-    );
+        );
+
+//    res.writeElement (
+//        (( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) ) *pow ( cos ( slope ),2 )
+//        -pow ( t- ( apparentLength+z0 ),2 )*pow ( sin ( slope ),2 ))
+//        , 0
+//    );
 }
 
 void Cone3::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )
@@ -278,7 +290,7 @@ void Cone3::computeNodalPower ( Particle* particle )
                           * ( 1.-sector_back_factor )
                         );
          }
-        }
+      }
     }
 
 

@@ -59,7 +59,6 @@ newCylinder::~newCylinder()
 void newCylinder::setSections ( double distance )
 {
     sections = length /distance + 1 ;
-    std::cout << "Sections = " << sections << std::endl;
 }
 
 
@@ -162,21 +161,22 @@ void newCylinder::residue ( lmx::Vector<double>& res, lmx::Vector<double>& conf 
 {
     double t = conf.readElement ( 0 );
 
-// When function "std::vector rotatePointAroundAxis(double, double, double, std::vector, double)" is ready, the residue will change to this:
-        // double x_p, y_p, z_p;
-        // x_p = x+vx*t - shift_x * shift_mag;
-        // y_p = y+vy*t - shift_y * shift_mag;
-        // z_p = z+t-z0;
-        // std::vector rotated_coordinates = rotatePointAroundAxis(x_p, y_p, z_p, rotationVector, angle);
-        // res.writeElement (
-        //  ( pow ( rotated_coordinates[0],2 ) +pow ( rotated_coordinates[1],2 ) - pow ( initDiam/2.,2 ) )
-        //  , 0
-        // );
+// When function "std::vector rotatePointAroundGeometryAxis(double, double, double)" is ready, the residue will change to this:
+         double x_p, y_p, z_p;
+         x_p = x+vx*t - shift_x * shift_mag;
+         y_p = y+vy*t - shift_y * shift_mag;
+         z_p = z+t-z0;
+         std::vector<double> rotated_coordinates = inverseRotatePointAroundGeometryAxis(x_p, y_p, z_p);
+         res.writeElement (
+          ( pow ( rotated_coordinates[0],2 ) +pow ( rotated_coordinates[1],2 ) - pow ( initDiam/2.,2 ) )
+          , 0
+         );
 
-    res.writeElement (
-        ( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) - pow ( initDiam/2.,2 ) )
-        , 0
-    );
+//    res.writeElement (
+//        ( pow ( x+vx*t - shift_x * shift_mag,2 ) +pow ( y+vy*t - shift_y * shift_mag,2 ) - pow ( initDiam/2.,2 ) )
+//        , 0
+//    );
+
 }
 
 void newCylinder::jacobian ( lmx::Matrix<double>& jac, lmx::Vector<double>& conf )

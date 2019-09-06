@@ -116,6 +116,11 @@ public:
 
     void rotateGeometry( );
 
+    std::vector<double> rotatePointAroundGeometryAxis(double, double, double);
+
+    std::vector<double> inverseRotatePointAroundGeometryAxis(double, double, double);
+
+
 protected:
 
     std::string type;
@@ -136,6 +141,7 @@ protected:
     double rotationAngle, rotationVectorX, rotationVectorY, rotationVectorZ;
     double xVec_Rotation, yVec_Rotation, zVec_Rotation, angleRotation;
     double u, v, w, angle;
+    double rotationMatrix[4][4];
 
     vtkPoints* gridPoints;
     vtkFloatArray* scalar;

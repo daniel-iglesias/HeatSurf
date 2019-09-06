@@ -67,7 +67,32 @@ Geometry::Geometry ( std::string type_in,
         , shift_x(0)
         , shift_y(0)
         , shift_z(0)
+        , xVec_Rotation(0.0001)
+        , yVec_Rotation(0.0001)
+        , zVec_Rotation(0.0001)
+        , angleRotation(0.0)
+        , u(1), v(0), w(0)
+        , angle(0.0)
 {
+  rotationMatrix[0][0] = 1.0; // Initalising Rotation matrix
+  rotationMatrix[0][1] = 0.0;
+  rotationMatrix[0][2] = 0.0;
+  rotationMatrix[0][3] = 0.0;
+
+  rotationMatrix[1][0] = 0.0;
+  rotationMatrix[1][1] = 1.0;
+  rotationMatrix[1][2] = 0.0;
+  rotationMatrix[1][3] = 0.0;
+
+  rotationMatrix[2][0] = 0.0;
+  rotationMatrix[2][1] = 0.0;
+  rotationMatrix[2][2] = 1.0;
+  rotationMatrix[2][3] = 0.0;
+
+  rotationMatrix[3][0] = 0.0;
+  rotationMatrix[3][1] = 0.0;
+  rotationMatrix[3][2] = 0.0;
+  rotationMatrix[3][3] = 1.0;
 }
 
 Geometry::~Geometry()
@@ -93,27 +118,23 @@ void Geometry::shiftGeometry( )
 // Then add the shift in the x,y,z plane multiplied
 // with the shift magnitude to the relative coordinate
 
-// shift nodes
+// Shift nodes
     for (auto it= nodes.begin(); it!= nodes.end(); ++it){
-//        it->second->applyShift( shift_x * shift_mag,
-//                                shift_y * shift_mag,
-//                                shift_z * shift_mag );
-
         it->second->setX( it->second->getX() + (shift_x * shift_mag) );
         it->second->setY( it->second->getY() + (shift_y * shift_mag) );
         it->second->setZ( it->second->getZ() + (shift_z * shift_mag) );
-//        cout<<"x: "<<it->second->getX()<<" y: "<<it->second->getY()<<" z: "<<it->second->getZ()<<endl;
         }
 
-// shift grid3Dnodes
+// Shift grid3Dnodes
     for (auto it= grid3Dnodes.begin(); it!= grid3Dnodes.end(); ++it){
         it->second->setX( it->second->getX() + (shift_x * shift_mag) );
         it->second->setY( it->second->getY() + (shift_y * shift_mag) );
         it->second->setZ( it->second->getZ() + (shift_z * shift_mag) );
         }
 
-// shift VTK node objects:
-//   Shifting gridPoints:
+// Shift VTK node objects:
+
+// Shifting gridPoints:
 double vec[2];
 double NewVecX;
 double NewVecY;
@@ -124,12 +145,10 @@ double NewVecZ;
         NewVecX = vec[0] + (shift_x * shift_mag);
         NewVecY = vec[1] + (shift_y * shift_mag);
         NewVecZ = vec[2] + (shift_z * shift_mag);
-//        cout<<  NewVecX << ", " << NewVecY <<", " << NewVecZ << endl;
         gridPoints->SetPoint(i, NewVecX, NewVecY, NewVecZ);
         }
-//computeGrid3D();
 
-//   Shifting grid3DPoints:
+// Shifting grid3DPoints:
 double vec2[2];
 double NewVecX2;
 double NewVecY2;
@@ -140,12 +159,9 @@ double NewVecZ2;
         NewVecX2 = vec2[0] + (shift_x * shift_mag);
         NewVecY2 = vec2[1] + (shift_y * shift_mag);
         NewVecZ2 = vec2[2] + (shift_z * shift_mag);
-//      cout<<  NewVecX << ", " << NewVecY <<", " << NewVecZ << endl;
         grid3DPoints->SetPoint(i, NewVecX2, NewVecY2, NewVecZ2);
         }
 }
-
-
 
 void Geometry::setGeometryRotation(
         double rotationVectorX,
@@ -157,7 +173,6 @@ xVec_Rotation = rotationVectorX;
 yVec_Rotation = rotationVectorY;
 zVec_Rotation = rotationVectorZ;
 angleRotation = rotationAngle;
-
 }
 
 void Geometry::rotateGeometry ( )
@@ -166,90 +181,59 @@ void Geometry::rotateGeometry ( )
 // around a unit vector plane and a set rotation angle
 // Will need to rotate nodes, grid3Dnodes, gridPoints, grid3DPoints
 
-    double u, v, w, angle;
-    double rotationMatrix[4][4];
-    double inputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
-    double outputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
-    u = xVec_Rotation;
-    v = yVec_Rotation;
-    w = zVec_Rotation;
-    angle = angleRotation;
-
-if (u > 0.001 || v > 0.001 || w > 0.001 ) //making sure this isnt used if there is no rotation
-{
-// Setting up Rotation matrix
-    double L = (u * u + v * v + w * w);
-    angle = angle * M_PI / 180.0; //converting to radian value
-    double u2 = u * u;
-    double v2 = v * v;
-    double w2 = w * w;
-
-//    cout<< u << ", " << v << ", " << w << endl;
-
-    rotationMatrix[0][0] = (u2 + (v2 + w2) * cos(angle)) / L;
-    rotationMatrix[0][1] = (u * v * (1 - cos(angle)) - w * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[0][2] = (u * w * (1 - cos(angle)) + v * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[0][3] = 0.0;
-
-    rotationMatrix[1][0] = (u * v * (1 - cos(angle)) + w * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[1][1] = (v2 + (u2 + w2) * cos(angle)) / L;
-    rotationMatrix[1][2] = (v * w * (1 - cos(angle)) - u * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[1][3] = 0.0;
-
-    rotationMatrix[2][0] = (u * w * (1 - cos(angle)) - v * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[2][1] = (v * w * (1 - cos(angle)) + u * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[2][2] = (w2 + (u2 + v2) * cos(angle)) / L;
-    rotationMatrix[2][3] = 0.0;
-
-    rotationMatrix[3][0] = 0.0;
-    rotationMatrix[3][1] = 0.0;
-    rotationMatrix[3][2] = 0.0;
-    rotationMatrix[3][3] = 1.0;
-
 // Shifting nodes
     for (auto it= nodes.begin(); it!= nodes.end(); ++it)
-    {
-        inputMatrix[0][0] = it->second->getX();
-        inputMatrix[1][0] = it->second->getY();
-        inputMatrix[2][0] = it->second->getZ();
-        inputMatrix[3][0] = 1.0;
+        {
+//            inputMatrix[0][0] = it->second->getX();
+//            inputMatrix[1][0] = it->second->getY();
+//            inputMatrix[2][0] = it->second->getZ();
+//            inputMatrix[3][0] = 1.0;
+//
+//            for(int i = 0; i < 4; i++ ){
+//                for(int j = 0; j < 1; j++){
+//                    outputMatrix[i][j] = 0;
+//                        for(int k = 0; k < 4; k++){
+//                            outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+//                    }
+//                }
+//            }
+//        it->second->setX( outputMatrix[0][0] ) ;
+//        it->second->setY( outputMatrix[1][0] ) ;
+//        it->second->setZ( outputMatrix[2][0] ) ;
+            std::vector<double> rotated_xyz = rotatePointAroundGeometryAxis(it->second->getX(), it->second->getY(), it->second->getZ());
 
-        for(int i = 0; i < 4; i++ ){
-            for(int j = 0; j < 1; j++){
-                outputMatrix[i][j] = 0;
-                    for(int k = 0; k < 4; k++){
-                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
-                }
-            }
-        }
-        it->second->setX( outputMatrix[0][0] ) ;
-        it->second->setY( outputMatrix[1][0] ) ;
-        it->second->setZ( outputMatrix[2][0] ) ;
+            it->second->setX( rotated_xyz[0] ) ;
+            it->second->setY( rotated_xyz[1] ) ;
+            it->second->setZ( rotated_xyz[2] ) ;
 
-//        cout<< inputMatrix[0][0] << endl;
+
 //        cout<< outputMatrix[0][0] /*<< ", "<< outputMatrix[1][0] << ", "<< outputMatrix[2][0] */<< endl;
     }
 
 // Shifting grid3Dnodes
     for (auto it= grid3Dnodes.begin(); it!= grid3Dnodes.end(); ++it)
     {
-        inputMatrix[0][0] = it->second->getX();
-        inputMatrix[1][0] = it->second->getY();
-        inputMatrix[2][0] = it->second->getZ();
-        inputMatrix[3][0] = 1.0;
+//        inputMatrix[0][0] = it->second->getX();
+//        inputMatrix[1][0] = it->second->getY();
+//        inputMatrix[2][0] = it->second->getZ();
+//        inputMatrix[3][0] = 1.0;
+//
+//        for(int i = 0; i < 4; i++ ){
+//            for(int j = 0; j < 1; j++){
+//                outputMatrix[i][j] = 0;
+//                    for(int k = 0; k < 4; k++){
+//                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+//                }
+//            }
+//        }
+//        it->second->setX( outputMatrix[0][0] ) ;
+//        it->second->setY( outputMatrix[1][0] ) ;
+//        it->second->setZ( outputMatrix[2][0] ) ;
+            std::vector<double> rotated_xyz = rotatePointAroundGeometryAxis(it->second->getX(), it->second->getY(), it->second->getZ());
 
-        for(int i = 0; i < 4; i++ ){
-            for(int j = 0; j < 1; j++){
-                outputMatrix[i][j] = 0;
-                    for(int k = 0; k < 4; k++){
-                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
-                }
-            }
-        }
-        it->second->setX( outputMatrix[0][0] ) ;
-        it->second->setY( outputMatrix[1][0] ) ;
-        it->second->setZ( outputMatrix[2][0] ) ;
-
+            it->second->setX( rotated_xyz[0] ) ;
+            it->second->setY( rotated_xyz[1] ) ;
+            it->second->setZ( rotated_xyz[2] ) ;
     }
 
 // Shifting gridPoints
@@ -257,25 +241,28 @@ if (u > 0.001 || v > 0.001 || w > 0.001 ) //making sure this isnt used if there 
     for (int a = 0; a<gridPoints->GetNumberOfPoints(); a++)
     {
         gridPoints->GetPoint(a, gridPointsVec);
-        inputMatrix[0][0] = gridPointsVec[0];
-        inputMatrix[1][0] = gridPointsVec[1];
-        inputMatrix[2][0] = gridPointsVec[2];
-        inputMatrix[3][0] = 1.0;
-
-        for(int i = 0; i < 4; i++ ){
-            for(int j = 0; j < 1; j++){
-                outputMatrix[i][j] = 0;
-                    for(int k = 0; k < 4; k++){
-                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
-                }
-            }
-        }
-
-        gridPoints->SetPoint(a, outputMatrix[0][0], outputMatrix[1][0], outputMatrix[2][0]);
+//        inputMatrix[0][0] = gridPointsVec[0];
+//        inputMatrix[1][0] = gridPointsVec[1];
+//        inputMatrix[2][0] = gridPointsVec[2];
+//        inputMatrix[3][0] = 1.0;
+//
+//        for(int i = 0; i < 4; i++ ){
+//            for(int j = 0; j < 1; j++){
+//                outputMatrix[i][j] = 0;
+//                    for(int k = 0; k < 4; k++){
+//                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+//                }
+//            }
+//        }
+//
+//        gridPoints->SetPoint(a, outputMatrix[0][0], outputMatrix[1][0], outputMatrix[2][0]);
 //        cout<< inputMatrix[0][0] << ", "<< inputMatrix[1][0] << ", "<< inputMatrix[2][0] << endl;
 //        cout<< outputMatrix[0][0] << ", "<< outputMatrix[1][0] << ", "<< outputMatrix[2][0] << endl;
 //        cout<< rotationMatrix[0][2] << ", "<< rotationMatrix[1][0] << ", "<< rotationMatrix[2][0] << endl;
 
+            std::vector<double> rotated_xyz = rotatePointAroundGeometryAxis(gridPointsVec[0], gridPointsVec[1], gridPointsVec[2]);
+
+            gridPoints->SetPoint(a, rotated_xyz[0], rotated_xyz[1], rotated_xyz[2]);
     }
 
 // Shifting grid3DPoints
@@ -283,24 +270,26 @@ if (u > 0.001 || v > 0.001 || w > 0.001 ) //making sure this isnt used if there 
     for (int a = 0; a<grid3DPoints->GetNumberOfPoints(); a++)
     {
         grid3DPoints->GetPoint(a, grid3DPointsVec);
-        inputMatrix[0][0] = grid3DPointsVec[0];
-        inputMatrix[1][0] = grid3DPointsVec[1];
-        inputMatrix[2][0] = grid3DPointsVec[2];
-        inputMatrix[3][0] = 1.0;
+//        inputMatrix[0][0] = grid3DPointsVec[0];
+//        inputMatrix[1][0] = grid3DPointsVec[1];
+//        inputMatrix[2][0] = grid3DPointsVec[2];
+//        inputMatrix[3][0] = 1.0;
+//
+//        for(int i = 0; i < 4; i++ ){
+//            for(int j = 0; j < 1; j++){
+//                outputMatrix[i][j] = 0;
+//                    for(int k = 0; k < 4; k++){
+//                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+//                }
+//            }
+//        }
+//
+//        grid3DPoints->SetPoint(a, outputMatrix[0][0], outputMatrix[1][0], outputMatrix[2][0]);
+            std::vector<double> rotated_xyz = rotatePointAroundGeometryAxis(grid3DPointsVec[0], grid3DPointsVec[1], grid3DPointsVec[2]);
 
-        for(int i = 0; i < 4; i++ ){
-            for(int j = 0; j < 1; j++){
-                outputMatrix[i][j] = 0;
-                    for(int k = 0; k < 4; k++){
-                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
-                }
-            }
-        }
+            grid3DPoints->SetPoint(a, rotated_xyz[0], rotated_xyz[1], rotated_xyz[2]);
 
-        grid3DPoints->SetPoint(a, outputMatrix[0][0], outputMatrix[1][0], outputMatrix[2][0]);
     }
-//    cout<<"got here"<<endl;
-  } // if statement
 }
 
 
@@ -489,69 +478,15 @@ void Geometry::computePowerDensity ( int numParticles )
     double sectionDif = length / ( sections3D - 1 );
     int elem_number;
 
-
-// Redefining rotation Matrix
-
-    double u, v, w, angle;
-    double rotationMatrix[4][4];
-    double inputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
-    double outputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
-    double temp_x, temp_y, temp_z;
-    u = xVec_Rotation;
-    v = yVec_Rotation;
-    w = zVec_Rotation;
-    angle = - angleRotation; // Rotating back to 0
-
-  if (u > 0.001 || v > 0.001 || w > 0.001 ) // This is done because when u,v,w = 0 there are rounding errors
-  {
-    double L = (u * u + v * v + w * w);
-    angle = angle * M_PI / 180.0; //converting to radian value
-    double u2 = u * u;
-    double v2 = v * v;
-    double w2 = w * w;
-
-    rotationMatrix[0][0] = (u2 + (v2 + w2) * cos(angle)) / L;
-    rotationMatrix[0][1] = (u * v * (1 - cos(angle)) - w * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[0][2] = (u * w * (1 - cos(angle)) + v * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[0][3] = 0.0;
-
-    rotationMatrix[1][0] = (u * v * (1 - cos(angle)) + w * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[1][1] = (v2 + (u2 + w2) * cos(angle)) / L;
-    rotationMatrix[1][2] = (v * w * (1 - cos(angle)) - u * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[1][3] = 0.0;
-
-    rotationMatrix[2][0] = (u * w * (1 - cos(angle)) - v * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[2][1] = (v * w * (1 - cos(angle)) + u * sqrt(L) * sin(angle)) / L;
-    rotationMatrix[2][2] = (w2 + (u2 + v2) * cos(angle)) / L;
-    rotationMatrix[2][3] = 0.0;
-
-    rotationMatrix[3][0] = 0.0;
-    rotationMatrix[3][1] = 0.0;
-    rotationMatrix[3][2] = 0.0;
-    rotationMatrix[3][3] = 1.0;
-
 // Rotating the points back to its original position
     for ( it_nodes = nodes.begin(); it_nodes!= it_nodes_end; ++it_nodes )
     {
-        inputMatrix[0][0] = it_nodes->second->getX();
-        inputMatrix[1][0] = it_nodes->second->getY();
-        inputMatrix[2][0] = it_nodes->second->getZ();
-        inputMatrix[3][0] = 1.0;
-
-        for(int i = 0; i < 4; i++ )
-        {
-            for(int j = 0; j < 1; j++){
-                outputMatrix[i][j] = 0;
-                    for(int k = 0; k < 4; k++){
-                        outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
-                }
-            }
-        }
-        it_nodes->second->setX( round (outputMatrix[0][0]*1000.0) / 1000.0) ; // Rounding done since there is a rounding error
-        it_nodes->second->setY( round (outputMatrix[1][0]*1000.0) / 1000.0) ;
-        it_nodes->second->setZ( round (outputMatrix[2][0]*1000.0) / 1000.0) ;
+            std::vector<double> inverse_rotated_xyz = inverseRotatePointAroundGeometryAxis(it_nodes->second->getX(), it_nodes->second->getY(), it_nodes->second->getZ());
+            it_nodes->second->setX( inverse_rotated_xyz[0] ) ;
+            it_nodes->second->setY( inverse_rotated_xyz[1] ) ;
+            it_nodes->second->setZ( inverse_rotated_xyz[2] ) ;
     }
-  }
+
 
     for ( it_nodes = nodes.begin(); it_nodes!= it_nodes_end; ++it_nodes )
     { // Finding the nodes in the local coordinate system
@@ -779,3 +714,135 @@ void Geometry::calculateScalar()
     grid->GetPointData()->SetScalars ( scalar );
 
 }
+
+std::vector<double> Geometry::rotatePointAroundGeometryAxis(double x_in, double y_in, double z_in)
+{
+    double u, v, w, angle;
+    double inputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    double outputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    u = xVec_Rotation;
+    v = yVec_Rotation;
+    w = zVec_Rotation;
+    angle = angleRotation;
+    std::vector<double> rotated_coordinates;
+
+    if (u > 0.001 || v > 0.001 || w > 0.001 ) //making sure this isnt used if there is no rotation
+    {
+// Setting up Rotation matrix
+        double L = (u * u + v * v + w * w);
+        angle = angle * M_PI / 180.0; //converting to radian value
+        double u2 = u * u;
+        double v2 = v * v;
+        double w2 = w * w;
+
+        rotationMatrix[0][0] = (u2 + (v2 + w2) * cos(angle)) / L;
+        rotationMatrix[0][1] = (u * v * (1 - cos(angle)) - w * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[0][2] = (u * w * (1 - cos(angle)) + v * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[0][3] = 0.0;
+
+        rotationMatrix[1][0] = (u * v * (1 - cos(angle)) + w * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[1][1] = (v2 + (u2 + w2) * cos(angle)) / L;
+        rotationMatrix[1][2] = (v * w * (1 - cos(angle)) - u * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[1][3] = 0.0;
+
+        rotationMatrix[2][0] = (u * w * (1 - cos(angle)) - v * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[2][1] = (v * w * (1 - cos(angle)) + u * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[2][2] = (w2 + (u2 + v2) * cos(angle)) / L;
+        rotationMatrix[2][3] = 0.0;
+
+        rotationMatrix[3][0] = 0.0;
+        rotationMatrix[3][1] = 0.0;
+        rotationMatrix[3][2] = 0.0;
+
+        inputMatrix[0][0] = x_in;
+        inputMatrix[1][0] = y_in;
+        inputMatrix[2][0] = z_in;
+        inputMatrix[3][0] = 1.0;
+
+        for(int i = 0; i < 4; i++ ){
+            for(int j = 0; j < 1; j++){
+                outputMatrix[i][j] = 0;
+                for(int k = 0; k < 4; k++){
+                    outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                }
+            }
+        }
+        rotated_coordinates.push_back( outputMatrix[0][0] ); // Rounding done since there is a rounding error for '0'
+        rotated_coordinates.push_back( outputMatrix[1][0] );
+        rotated_coordinates.push_back( outputMatrix[2][0] );
+    }
+    else{
+        rotated_coordinates.push_back( x_in );
+        rotated_coordinates.push_back( y_in );
+        rotated_coordinates.push_back( z_in );
+    }
+    return rotated_coordinates;
+}
+
+std::vector<double> Geometry::inverseRotatePointAroundGeometryAxis(double x_in, double y_in, double z_in)
+{
+    double u, v, w, angle;
+    double inputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    double outputMatrix[4][1] = {0.0, 0.0, 0.0, 0.0};
+    u = xVec_Rotation;
+    v = yVec_Rotation;
+    w = zVec_Rotation;
+    angle =  (-angleRotation); // Rotating back to 0
+    std::vector<double> inverse_rotated_coordinates;
+
+    if (u > 0.001 || v > 0.001 || w > 0.001 )
+    {
+        double L = (u * u + v * v + w * w);
+        angle = angle * M_PI / 180.0; //converting to radian value
+        double u2 = u * u;
+        double v2 = v * v;
+        double w2 = w * w;
+
+        rotationMatrix[0][0] = (u2 + (v2 + w2) * cos(angle)) / L;
+        rotationMatrix[0][1] = (u * v * (1 - cos(angle)) - w * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[0][2] = (u * w * (1 - cos(angle)) + v * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[0][3] = 0.0;
+
+        rotationMatrix[1][0] = (u * v * (1 - cos(angle)) + w * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[1][1] = (v2 + (u2 + w2) * cos(angle)) / L;
+        rotationMatrix[1][2] = (v * w * (1 - cos(angle)) - u * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[1][3] = 0.0;
+
+        rotationMatrix[2][0] = (u * w * (1 - cos(angle)) - v * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[2][1] = (v * w * (1 - cos(angle)) + u * sqrt(L) * sin(angle)) / L;
+        rotationMatrix[2][2] = (w2 + (u2 + v2) * cos(angle)) / L;
+        rotationMatrix[2][3] = 0.0;
+
+        rotationMatrix[3][0] = 0.0;
+        rotationMatrix[3][1] = 0.0;
+        rotationMatrix[3][2] = 0.0;
+        rotationMatrix[3][3] = 1.0;
+
+        inputMatrix[0][0] = x_in;
+        inputMatrix[1][0] = y_in;
+        inputMatrix[2][0] = z_in;
+        inputMatrix[3][0] = 1.0;
+
+            for(int i = 0; i < 4; i++ ){
+                for(int j = 0; j < 1; j++){
+                    outputMatrix[i][j] = 0;
+                        for(int k = 0; k < 4; k++){
+                            outputMatrix[i][j] += rotationMatrix[i][k] * inputMatrix[k][j];
+                    }
+                }
+            }
+
+        inverse_rotated_coordinates.push_back( round (outputMatrix[0][0]*1000.0) / 1000.0) ; // Rounding done since there is a rounding error for '0'
+        inverse_rotated_coordinates.push_back( round (outputMatrix[1][0]*1000.0) / 1000.0) ;
+        inverse_rotated_coordinates.push_back( round (outputMatrix[2][0]*1000.0) / 1000.0) ;
+    }
+    else{
+        inverse_rotated_coordinates.push_back( x_in );
+        inverse_rotated_coordinates.push_back( y_in );
+        inverse_rotated_coordinates.push_back( z_in );
+    }
+    return inverse_rotated_coordinates;
+}
+
+
+

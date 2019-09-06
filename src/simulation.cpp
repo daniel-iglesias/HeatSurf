@@ -118,9 +118,6 @@ void Simulation::readGeometry ( std::ifstream & input )
         geometries.back()->setSections ( section_distance );
     }
 
-    //********************************************************************************************8
-    //Dan input here
-
         if ( keyword == "CONE3" )
     {
         std::string name;
@@ -175,8 +172,6 @@ void Simulation::readGeometry ( std::ifstream & input )
         geometries.back()->setSections ( section_distance );
     }
 
-    //***********************************************************************************
-    //Dan input here
     else if ( keyword == "NEWCYLINDER" )
     {
         std::string name;
@@ -255,11 +250,11 @@ void Simulation::readGeometry ( std::ifstream & input )
     }
 
 }
-//****************************************************************************
+
 
 void Simulation::readGeometryShift ( std::ifstream & input )
 {
-    double geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag; //units [mm]
+    double geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag; //Shift x,y,z unit vector and shift mag is magnitude of shift
 
     input >> geometry_shift_x >> geometry_shift_y >> geometry_shift_z >> geometry_shift_mag;
 
@@ -272,11 +267,9 @@ void Simulation::readGeometryShift ( std::ifstream & input )
     geometries.back()->setGeometryShift(geometry_shift_x, geometry_shift_y, geometry_shift_z, geometry_shift_mag);
 }
 
-//****************************************************************************
-
 void Simulation::readGeometryRotation ( std::ifstream & input )
 {
-   double rotationAngle, rotationVectorX, rotationVectorY, rotationVectorZ;
+   double rotationAngle, rotationVectorX, rotationVectorY, rotationVectorZ;// Roation vector is unit vector point, rotation angle is amount round the axis (clockwise)
 
    input >> rotationVectorX >> rotationVectorY >>rotationVectorZ >> rotationAngle;
 
